@@ -4859,6 +4859,20 @@ select option:not(:first-child) {
 
 /* ================== USER DETAILS POPUP CSS ENDS =============== */
 
+
+/* ******************* Role management css start ************** */
+.role_management_content_container .add_exprense_dropdown_container{
+    width: 125px;
+}
+.role_management_content_container .add_exprense_dropdown_container button {
+    padding: 10px 24px;
+    background: var(--white);
+}
+
+/* ******************* Role management css ends  ************** */
+
+
+
 /* *********************** PRINT MEDIA CODE ******************** */
 /* vocuhar print css  */
 .prit_logo {

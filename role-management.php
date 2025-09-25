@@ -64,6 +64,28 @@ include 'inc/header.php'
                 </a>
             </div>
         </div>
+
+        <div class="role_management_content_container pl_pr">
+            <!-- role dropdown  -->
+            <div class="add_expenses position-relative" id="AddExpenseBtn">
+                Role
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none" class="expIcon">
+                    <path d="M16.5984 7.95898L11.1651 13.3923C10.5234 14.034 9.47344 14.034 8.83177 13.3923L3.39844 7.95898" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+                <div class="add_exprense_dropdown_container">
+                    <button
+                        class="common_payment_popbtns">
+                        Manager
+                    </button>
+                    <button
+                        class="common_payment_popbtns">
+                        Accountant
+                    </button>
+                </div>
+            </div>
+            <!-- role dropdown ends -->
+        </div>
     </div>
 </section>
 
