@@ -4967,26 +4967,34 @@ select option:not(:first-child) {
 .action-col.hide {
     display: none;
 }
-.top_heading svg, .ass_heading svg{
+
+.top_heading svg,
+.ass_heading svg {
     height: 22px;
     width: 22px;
 }
-.top_heading svg:hover{
+
+.top_heading svg:hover {
     transform: scale(1.05);
 }
+
 .role_assign_form .common_form select,
-.role_assign_form .common_form input{
+.role_assign_form .common_form input {
     background-color: transparent;
 }
-.role_assign_form.active{
+
+.role_assign_form.active {
     display: none;
 }
+
 .role_management_content_container .add_expenses {
     margin-bottom: 20px;
 }
-.role_assign_form{
+
+.role_assign_form {
     margin-bottom: 24px;
 }
+
 /* ******************* Role management css ends  ************** */
 
 
