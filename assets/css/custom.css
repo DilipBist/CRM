@@ -801,6 +801,86 @@ SIDE BAR CSS STARTS
     color: var(--primary-color);
 }
 
+
+/* side bar bootom css  */
+.app_side_bar_content {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.admin_botom_drop_down_container {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    padding: 16px clamp(16px, 2vw, 24px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    background-color: var(--dark-theme);
+}
+
+.admin_botom_drop_down_container .common_div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.admin_botom_drop_down_container .common_popup_bg {
+    padding: 16px 8px;
+    border-radius: 12px;
+    background-color: var(--white);
+    width: 230px;
+}
+
+.user_dropdown_wrapper {
+    position: absolute;
+    bottom: 60px;
+    left: 40px;
+    z-index: 100;
+    display: none;
+}
+
+.user_dropdown_wrapper .shape {
+    position: absolute;
+    bottom: -15px;
+    left: 22px;
+}
+
+.activity_dropdown_wrapper {
+    position: absolute;
+    bottom: 60px;
+    left: 24px;
+    z-index: 100;
+    display: none;
+}
+
+.activity_dropdown_wrapper .shape {
+    position: absolute;
+    bottom: -15px;
+    left: 105px;
+}
+
+.admin_botom_drop_down_container .common_popup_bg .links a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    color: var(--neutral-primay);
+    font-size: 14px;
+    font-weight: 500;
+    font-family: var(--lato);
+}
+
+.admin_botom_drop_down_container .common_popup_bg .links a:hover {
+    background-color: var(--active-bg);
+    border-radius: 5px;
+}
+
 /* ######################################
 SIDE BAR CSS ENDS
 ###################################### */
