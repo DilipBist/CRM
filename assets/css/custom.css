@@ -4862,13 +4862,18 @@ select option:not(:first-child) {
 
 
 /* ******************* Role management css start ************** */
-.role_management_content_container{
+.role_management_content_container {
     margin-top: 20px;
 }
+
 .role_management_content_container .add_exprense_dropdown_container {
     width: 125px;
     overflow: hidden;
     left: 0;
+}
+
+.edit_role:hover svg path {
+    stroke: var(--primary-color);
 }
 
 .role_management_content_container .add_exprense_dropdown_container a {
