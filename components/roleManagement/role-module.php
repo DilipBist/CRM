@@ -17,7 +17,7 @@
                               </div>
                           </th>
                           <th colspan="10" class="text-center">PERMISSION</th>
-                          <th class="action-col">ACTION</th>
+                          <td class="action-col <?php echo ($action === 'hide') ? 'hide' : ''; ?> ">ACTION</th>
                       </tr>
                   </thead>
                   <tbody>
@@ -44,7 +44,7 @@
                           <td></td>
                           <td></td>
                           <td></td>
-                          <td></td>
+                          <td class="action-col <?php echo ($action === 'hide') ? 'hide' : ''; ?> "></td>
                       </tr>
 
                       <!-- Project -->
@@ -90,7 +90,7 @@
                           <td></td>
                           <td></td>
                           <td></td>
-                          <td class="action-col"></td>
+                          <td class="action-col <?php echo ($action === 'hide') ? 'hide' : ''; ?> "></td>
                       </tr>
 
                       <!-- Invoice -->
@@ -146,7 +146,7 @@
                           <td></td>
                           <td></td>
                           <td></td>
-                          <td class="action-col"></td>
+                          <td class="action-col <?php echo ($action === 'hide') ? 'hide' : ''; ?> "></td>
                       </tr>
 
                       <!-- Bank Account -->
@@ -202,8 +202,8 @@
                           <td></td>
                           <td></td>
                           <td></td>
-                          <td class="action-col">
-                              <div class="d-flex align-items-center gap-2 justify-content-center">
+                          <td class="action-col <?php echo ($action === 'hide') ? 'hide' : ''; ?> ">
+                              <div class=" d-flex align-items-center gap-2 justify-content-center">
                                   <div class="edit_role cursor-pointer">
                                       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none">
                                           <path d="M9.94745 3.20041L3.78995 9.71791C3.55745 9.96541 3.33245 10.4529 3.28745 10.7904L3.00995 13.2204C2.91245 14.0979 3.54245 14.6979 4.41245 14.5479L6.82745 14.1354C7.16495 14.0754 7.63745 13.8279 7.86995 13.5729L14.0275 7.05541C15.0925 5.93041 15.5725 4.64791 13.915 3.08041C12.265 1.52791 11.0125 2.07541 9.94745 3.20041Z" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
@@ -262,7 +262,7 @@
                           <td>
                               <div class="form-check"><input class="form-check-input" type="checkbox" id="transferSend3Check" name="transfer_send3"><label class="form-check-label" for="transferSend3Check">Send</label></div>
                           </td>
-                          <td class="action-col"></td>
+                          <td class="action-col <?php echo ($action === 'hide') ? 'hide' : ''; ?> "></td>
                       </tr>
 
                       <!-- Customer -->
@@ -300,7 +300,7 @@
                           <td>
                               <div class="form-check"><input class="form-check-input" type="checkbox" id="customerSend3Check" name="customer_send3"><label class="form-check-label" for="customerSend3Check">Send</label></div>
                           </td>
-                          <td class="action-col"></td>
+                          <td class="action-col <?php echo ($action === 'hide') ? 'hide' : ''; ?> "></td>
                       </tr>
                   </tbody>
               </table>

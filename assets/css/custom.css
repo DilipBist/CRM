@@ -4725,8 +4725,8 @@ select option:not(:first-child) {
     justify-content: center;
     align-items: center;
     z-index: 25;
-    visibility: hidden;
-    opacity: 0;
+    /* visibility: hidden;
+    opacity: 0; */
     transition: all 0.3s ease-in-out;
 }
 
@@ -4738,6 +4738,7 @@ select option:not(:first-child) {
 }
 
 .user_details_container,
+.user_details_container_role,
 .add_labour_component_bg .assigned_labour_content_bg,
 .assigned_labour_bg .assigned_labour_content_bg {
     background: var(--white);
@@ -4754,9 +4755,14 @@ select option:not(:first-child) {
 }
 
 .user_details_container::-webkit-scrollbar,
+.user_details_container_role::-webkit-scrollbar,
 .add_labour_component_bg .assigned_labour_content_bg::-webkit-scrollbar,
 .assigned_labour_bg .assigned_labour_content_bg::-webkit-scrollbar {
     display: none;
+}
+
+.user_details_container_role {
+    max-width: 1400px;
 }
 
 .user_details_content,
@@ -4815,12 +4821,19 @@ select option:not(:first-child) {
     margin: 0;
 }
 
+
+
 .user_details_content .title_text p {
     color: var(--text-dark2);
     font-size: 14px;
     font-weight: 400;
     font-family: var(--inter);
     margin: 0;
+}
+
+.user_details_container_role .user_details_content .title_text p {
+    color: var(--text-5C);
+    margin-top: 5px;
 }
 
 .user_details_content .details .detail_heading {
@@ -4952,6 +4965,20 @@ select option:not(:first-child) {
     margin-bottom: 16px;
 }
 
+.action-col.hide {
+    display: none;
+}
+.top_heading svg, .ass_heading svg{
+    height: 22px;
+    width: 22px;
+}
+.top_heading svg:hover{
+    transform: scale(1.05);
+}
+.role_assign_form .common_form select,
+.role_assign_form .common_form input{
+    background-color: transparent;
+}
 /* ******************* Role management css ends  ************** */
 
 

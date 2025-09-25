@@ -4,6 +4,11 @@ include 'inc/header.php'
 ?>
 
 
+<!-- add role popup  -->
+ <?php include 'components/roleManagement/role-add.php' ?>
+<!-- add role popup ends -->
+
+
 <section class="admin_container d-flex">
 
 

@@ -69,13 +69,18 @@
                             </div>
 
                             <div class="col-md-6 col-lg-4">
-                                <label for="gender" class="mb-2">Gender <span class="red">*</span></label>
-                                <select class="form-select" aria-label="select" id="gender" name="gender" required>
-                                    <option value="" disabled hidden selected>Male</option>
-                                    <option value="male">Male</option>
-                                    <option value="female">Felmale</option>
-                                    <option value="other">other</option>
-                                </select>
+                                <div class="slect-status">
+                                    <label for="gender" class="mb-2">Gender <span class="red">*</span></label>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <select class="form-select" aria-label="select" id="gender" name="gender" required>
+                                        <option value="" disabled hidden selected>Male</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Felmale</option>
+                                        <option value="other">other</option>
+                                    </select>
+                                </div>
                             </div>
 
                             <div class="col-md-6 col-lg-4">
@@ -93,13 +98,18 @@
                             </div>
 
                             <div class="col-md-6 col-lg-4">
-                                <label for="gender" class="mb-2">Labor Type <span class="red">*</span></label>
-                                <select class="form-select" aria-label="select" id="gender" name="gender" required>
-                                    <option value="" disabled hidden selected>Select A Type</option>
-                                    <option value="Carpenter">Carpenter</option>
-                                    <option value="Painter">Painter</option>
-                                    <option value="Worker">Worker</option>
-                                </select>
+                                <div class="slect-status">
+                                    <label for="gender" class="mb-2">Labor Type <span class="red">*</span></label>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <select class="form-select" aria-label="select" id="gender" name="gender" required>
+                                        <option value="" disabled hidden selected>Select A Type</option>
+                                        <option value="Carpenter">Carpenter</option>
+                                        <option value="Painter">Painter</option>
+                                        <option value="Worker">Worker</option>
+                                    </select>
+                                </div>
                             </div>
 
                             <div class="col-md-6 col-lg-4">
@@ -110,13 +120,18 @@
                             </div>
 
                             <div class="col-md-6 col-lg-4">
-                                <label for="status" class="mb-2">Status</label>
-                                <select class="form-select" aria-label="select" id="status">
-                                    <option value="" hidden disabled selected>In Progress</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                </select>
+                                <div class="slect-status">
+                                    <label for="status" class="mb-2">Status</label>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <select class="form-select" aria-label="select" id="status">
+                                        <option value="" hidden disabled selected>In Progress</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
                             </div>
 
                             <div class="col-12">
