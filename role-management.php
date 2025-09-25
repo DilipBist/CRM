@@ -85,6 +85,14 @@ include 'inc/header.php'
                 </div>
             </div>
             <!-- role dropdown ends -->
+
+
+            <!-- role permission module  -->
+            <div class="mb-4">
+                <?php include 'components/roleManagement/role-module.php' ?>
+            </div>
+            <!-- role permission module ends  -->
+
         </div>
     </div>
 </section>

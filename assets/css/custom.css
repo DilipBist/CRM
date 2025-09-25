@@ -4861,12 +4861,66 @@ select option:not(:first-child) {
 
 
 /* ******************* Role management css start ************** */
-.role_management_content_container .add_exprense_dropdown_container{
+.role_management_content_container .add_exprense_dropdown_container {
     width: 125px;
+    overflow: hidden;
+    left: 0;
 }
+
 .role_management_content_container .add_exprense_dropdown_container button {
     padding: 10px 24px;
-    background: var(--white);
+}
+
+.permission-container thead tr th,
+.permission-container tbody tr td {
+    padding: 12px 24px;
+}
+
+.permission-container tbody tr td:first-child label,
+.permission-container thead tr th:first-child label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-right: 0;
+    gap: 10px;
+    white-space: nowrap;
+}
+
+.permission-container thead tr th {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-dark2);
+    /* border: 0; */
+    border-top: 1px solid var(--Neutral-Separator, #EBEBEB);
+    border-bottom: 1px solid var(--Neutral-Separator, #EBEBEB);
+    background: var(--Button-soft-color, #CCDDEB);
+}
+
+.permission-container tbody tr td label {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-dark2);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.permission-container label input {
+    height: 16px;
+    width: 16px;
+}
+
+.permission-container label input:checked {
+    background: var(--primary-color);
+}
+
+.role_permission_container .per_heading h3 {
+    font-size: 14px;
+    font-family: var(--inter);
+    color: var(--text-dark2);
+    font-weight: 700;
+    margin-top: 24px;
+    margin-bottom: 16px;
 }
 
 /* ******************* Role management css ends  ************** */
