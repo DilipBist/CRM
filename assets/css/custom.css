@@ -4725,8 +4725,8 @@ select option:not(:first-child) {
     justify-content: center;
     align-items: center;
     z-index: 25;
-    /* visibility: hidden;
-    opacity: 0; */
+    visibility: hidden;
+    opacity: 0;
     transition: all 0.3s ease-in-out;
 }
 
@@ -4961,7 +4961,6 @@ select option:not(:first-child) {
     font-family: var(--inter);
     color: var(--text-dark2);
     font-weight: 700;
-    margin-top: 24px;
     margin-bottom: 16px;
 }
 
@@ -4978,6 +4977,15 @@ select option:not(:first-child) {
 .role_assign_form .common_form select,
 .role_assign_form .common_form input{
     background-color: transparent;
+}
+.role_assign_form.active{
+    display: none;
+}
+.role_management_content_container .add_expenses {
+    margin-bottom: 20px;
+}
+.role_assign_form{
+    margin-bottom: 24px;
 }
 /* ******************* Role management css ends  ************** */
 

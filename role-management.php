@@ -4,9 +4,6 @@ include 'inc/header.php'
 ?>
 
 
-<!-- add role popup  -->
- <?php include 'components/roleManagement/role-add.php' ?>
-<!-- add role popup ends -->
 
 
 <section class="admin_container d-flex">
@@ -59,7 +56,7 @@ include 'inc/header.php'
                 </div>
 
 
-                <a href="#">
+                <a href="#" class="add_role_btn" data-title="Create New Role">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                         <path d="M9.9974 18.3327C14.5807 18.3327 18.3307 14.5827 18.3307 9.99935C18.3307 5.41602 14.5807 1.66602 9.9974 1.66602C5.41406 1.66602 1.66406 5.41602 1.66406 9.99935C1.66406 14.5827 5.41406 18.3327 9.9974 18.3327Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                         <path d="M6.66406 10H13.3307" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -101,6 +98,11 @@ include 'inc/header.php'
         </div>
     </div>
 </section>
+
+
+<!-- add role popup  -->
+<?php include 'components/roleManagement/role-add.php' ?>
+<!-- add role popup ends -->
 
 
 <?php include 'inc/footer.php' ?>

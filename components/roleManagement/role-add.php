@@ -56,6 +56,11 @@
                 ?>
             </div>
             <!-- role permission module ends  -->
+
+            <div class="form_discard_save d-flex align-items-center gap-2 justify-content-end">
+                <button class="discard" type="button">Discard</button>
+                <button type="submit" class="submit">Submit</button>
+            </div>
         </div>
     </div>
 </div>

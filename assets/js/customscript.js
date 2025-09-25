@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initUserPopup();
     initUserDetailsPopup();
     openVoucharPopup();
+    initAddRole();
 
     // ============
     // this this code is just for the page redirect just to show the user the particular page (remove it later)
@@ -1050,6 +1051,8 @@ function initUserPopup() {
         });
     });
 }
+
+// user details poppup 
 function initUserDetailsPopup() {
     const buttons = document.querySelectorAll('.view_user_Details');
     const popUp = document.querySelector('.user_Details_bg');
@@ -1059,6 +1062,44 @@ function initUserDetailsPopup() {
     buttons.forEach(btn => {
         btn.addEventListener('click', () => {
             popUp.classList.add('active');
+        });
+    });
+
+    // Close only when clicking outside the content
+    popUp.addEventListener("click", (e) => {
+        if (e.target === popUp) {
+            popUp.classList.remove("active");
+        }
+    });
+
+    const closeBtn = document.querySelector(".close-user-btn");
+    if (closeBtn) {
+        closeBtn.addEventListener("click", () => {
+            popUp.classList.remove("active");
+        });
+    }
+}
+
+// add role popup funciton
+function initAddRole() {
+    const buttons = document.querySelectorAll('.add_role_btn');
+    const popUp = document.querySelector('.user_Details_bg');
+
+    if (!buttons || !popUp) return;
+
+    buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            popUp.classList.add('active');
+            const form = document.querySelector('.role_assign_form');
+            const title = btn.getAttribute('data-title');
+            const hide = btn.getAttribute('data-hide');
+            const heading = document.querySelector('.user_details_container_role .top_heading h3');
+            const subHeading = document.querySelector('.user_details_container_role .title_text > h4');
+            heading.textContent = title;
+            subHeading.textContent = title;
+            if (hide) {
+                form.classList.add(hide);
+            }
         });
     });
 

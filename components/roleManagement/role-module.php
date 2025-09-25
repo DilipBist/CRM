@@ -17,7 +17,7 @@
                               </div>
                           </th>
                           <th colspan="10" class="text-center">PERMISSION</th>
-                          <td class="action-col <?php echo ($action === 'hide') ? 'hide' : ''; ?> ">ACTION</th>
+                          <th class="action-col <?php echo (isset($action) && $action === 'hide') ? ' hide' : ''; ?>">ACTION</th>
                       </tr>
                   </thead>
                   <tbody>
@@ -44,7 +44,7 @@
                           <td></td>
                           <td></td>
                           <td></td>
-                          <td class="action-col <?php echo ($action === 'hide') ? 'hide' : ''; ?> "></td>
+                          <td class="action-col <?php echo (isset($action) && $action === 'hide') ? ' hide' : ''; ?>"></td>
                       </tr>
 
                       <!-- Project -->
@@ -90,7 +90,7 @@
                           <td></td>
                           <td></td>
                           <td></td>
-                          <td class="action-col <?php echo ($action === 'hide') ? 'hide' : ''; ?> "></td>
+                          <td class="action-col <?php echo (isset($action) && $action === 'hide') ? ' hide' : ''; ?>"></td>
                       </tr>
 
                       <!-- Invoice -->
@@ -146,7 +146,7 @@
                           <td></td>
                           <td></td>
                           <td></td>
-                          <td class="action-col <?php echo ($action === 'hide') ? 'hide' : ''; ?> "></td>
+                          <td class="action-col <?php echo (isset($action) && $action === 'hide') ? ' hide' : ''; ?>"></td>
                       </tr>
 
                       <!-- Bank Account -->
@@ -202,16 +202,16 @@
                           <td></td>
                           <td></td>
                           <td></td>
-                          <td class="action-col <?php echo ($action === 'hide') ? 'hide' : ''; ?> ">
+                          <td class="action-col <?php echo (isset($action) && $action === 'hide') ? ' hide' : ''; ?>">
                               <div class=" d-flex align-items-center gap-2 justify-content-center">
-                                  <div class="edit_role cursor-pointer">
+                                  <div class="edit_role cursor-pointer add_role_btn" data-title="Edit Permission" data-hide="active">
                                       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none">
                                           <path d="M9.94745 3.20041L3.78995 9.71791C3.55745 9.96541 3.33245 10.4529 3.28745 10.7904L3.00995 13.2204C2.91245 14.0979 3.54245 14.6979 4.41245 14.5479L6.82745 14.1354C7.16495 14.0754 7.63745 13.8279 7.86995 13.5729L14.0275 7.05541C15.0925 5.93041 15.5725 4.64791 13.915 3.08041C12.265 1.52791 11.0125 2.07541 9.94745 3.20041Z" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                                           <path d="M8.91406 4.28711C9.23656 6.35711 10.9166 7.93961 13.0016 8.14961" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                                           <path d="M2.25 17H15.75" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                                       </svg>
                                   </div>
-                                  <div class="delete_role cursor-pointer delete">
+                                  <div class="delete_role cursor-pointer delete add_role_btn" data-title="Delete" data-hide="active">
                                       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none">
                                           <path d="M15.75 4.98438C13.2525 4.73687 10.74 4.60938 8.235 4.60938C6.75 4.60938 5.265 4.68438 3.78 4.83438L2.25 4.98438" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                           <path d="M6.375 4.2275L6.54 3.245C6.66 2.5325 6.75 2 8.0175 2H9.9825C11.25 2 11.3475 2.5625 11.46 3.2525L11.625 4.2275" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -262,7 +262,7 @@
                           <td>
                               <div class="form-check"><input class="form-check-input" type="checkbox" id="transferSend3Check" name="transfer_send3"><label class="form-check-label" for="transferSend3Check">Send</label></div>
                           </td>
-                          <td class="action-col <?php echo ($action === 'hide') ? 'hide' : ''; ?> "></td>
+                          <td class="action-col <?php echo (isset($action) && $action === 'hide') ? ' hide' : ''; ?>"></td>
                       </tr>
 
                       <!-- Customer -->
@@ -300,7 +300,7 @@
                           <td>
                               <div class="form-check"><input class="form-check-input" type="checkbox" id="customerSend3Check" name="customer_send3"><label class="form-check-label" for="customerSend3Check">Send</label></div>
                           </td>
-                          <td class="action-col <?php echo ($action === 'hide') ? 'hide' : ''; ?> "></td>
+                          <td class="action-col <?php echo (isset($action) && $action === 'hide') ? ' hide' : ''; ?>"></td>
                       </tr>
                   </tbody>
               </table>
