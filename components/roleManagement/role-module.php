@@ -16,7 +16,7 @@
                                   <label class="form-check-label" for="moduleCheck">MODULE</label>
                               </div>
                           </th>
-                          <th colspan="10">PERMISSION</th>
+                          <th colspan="10" class="text-center">PERMISSION</th>
                           <th class="action-col">ACTION</th>
                       </tr>
                   </thead>

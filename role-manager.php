@@ -39,7 +39,7 @@ include 'inc/header.php'
 
         <div class="admin_list_heading d-flex align-items-center flex-wrap gap-3 justify-content-between outer_padding">
             <div class="left_heading">
-                <h3>Role List</h3>
+                <h3>Role Manager</h3>
                 <p>You can view the User list accordingly.</p>
             </div>
 
@@ -68,7 +68,7 @@ include 'inc/header.php'
         <div class="role_management_content_container pl_pr">
             <!-- role dropdown  -->
             <div class="add_expenses position-relative" id="AddExpenseBtn">
-                Role
+                Manager
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none" class="expIcon">
                     <path d="M16.5984 7.95898L11.1651 13.3923C10.5234 14.034 9.47344 14.034 8.83177 13.3923L3.39844 7.95898" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>

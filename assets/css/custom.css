@@ -3902,7 +3902,8 @@ select option:not(:first-child) {
     background-color: transparent;
 }
 
-.add_exprense_dropdown_container button:hover {
+.add_exprense_dropdown_container button:hover,
+.add_exprense_dropdown_container a:hover {
     background-color: var(--active-bg);
 }
 
@@ -4861,14 +4862,24 @@ select option:not(:first-child) {
 
 
 /* ******************* Role management css start ************** */
+.role_management_content_container{
+    margin-top: 20px;
+}
 .role_management_content_container .add_exprense_dropdown_container {
     width: 125px;
     overflow: hidden;
     left: 0;
 }
 
-.role_management_content_container .add_exprense_dropdown_container button {
+.role_management_content_container .add_exprense_dropdown_container a {
     padding: 10px 24px;
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-dark2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .permission-container thead tr th,
