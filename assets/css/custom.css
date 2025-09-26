@@ -842,8 +842,12 @@ SIDE BAR CSS STARTS
     bottom: 60px;
     left: 40px;
     z-index: 100;
-    display: none;
+    transform: translateY(-16px);
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s ease-in-out;
 }
+
 
 .user_dropdown_wrapper .shape {
     position: absolute;
@@ -856,7 +860,17 @@ SIDE BAR CSS STARTS
     bottom: 60px;
     left: 24px;
     z-index: 100;
-    display: none;
+    transform: translateY(-16px);
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
+
+.activity_dropdown_wrapper.active,
+.user_dropdown_wrapper.active {
+    transform: translateY(0);
+    visibility: visible;
+    opacity: 1;
 }
 
 .activity_dropdown_wrapper .shape {
@@ -1061,6 +1075,7 @@ SIDE BAR CSS ENDS
 .purchase_data_table .table thead tr th {
     /* background-color: var(--white-F7); */
     background: var(--Button-soft-color, #CCDDEB);
+    /* padding: 16px; */
     padding: 8px 16px;
     font-size: 14px;
     font-weight: 700;
@@ -1085,6 +1100,7 @@ SIDE BAR CSS ENDS
     font-weight: 500;
     font-size: 14px;
     padding: 8px 16px;
+    height: 52px;
     background-color: transparent;
     vertical-align: middle;
     white-space: nowrap;
@@ -2913,7 +2929,8 @@ SIDE BAR CSS ENDS
 ============================
 DASHBORD PAGE CSS STATS 
 ============================ */
-.dashboard_page_container {
+.dashboard_page_container,
+.inventory_page_container {
     padding-top: 24px;
 }
 
@@ -3584,7 +3601,8 @@ DASHBORD PAGE CSS ENDS
 /* ++++++++++++++++++++++++++++++++++++++++++
 ASSET FILTER POPUP CSS STARTS 
 ++++++++++++++++++++++++++++++++++++++++++ */
-.asset_filter_btn {
+.asset_filter_btn,
+.asset_filter_btn_inv {
     display: flex;
     height: 40px;
     padding: 10px;
@@ -3639,16 +3657,27 @@ ASSET FILTER POPUP CSS STARTS
 }
 
 .ass_filter_popcontent {
-    padding: 0 24px 24px 24px;
-    border-radius: 12px;
-    border: 1px solid var(--whiteEB, #EBEBEB);
     background: var(--white);
-    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.10);
+    padding: 5px;
     max-width: 850px;
     width: 95%;
     max-height: 95%;
+    border-radius: 12px;
+
     overflow-y: auto;
     clip-path: inset(0 round 12px);
+}
+
+.ass_filter_popcontent .bg_white {
+    border: 1px solid var(--whiteEB, #EBEBEB);
+    background-color: var(--white);
+    border-radius: 9px;
+    width: 100%;
+    height: 100%;
+    padding: 0 24px 24px 24px;
+    border-radius: 12px;
+    background: var(--white);
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.10);
 
 }
 
@@ -5076,6 +5105,25 @@ select option:not(:first-child) {
 }
 
 /* ******************* Role management css ends  ************** */
+
+
+/* ============= INVENTORY CSS STARTS ============ */
+.form_discard_save .submit.view {
+    padding: 8px 16px;
+}
+
+.inventory_transfer_btn {
+    background-color: transparent !important;
+    color: var(--primary-color) !important;
+}
+
+.inventory_transfer_btn:hover {
+    background-color: var(--Button-soft-color) !important;
+}
+.inventory_table{
+    margin-top: 24px;
+}
+/* ============= INVENTORY CSS END============ */
 
 
 

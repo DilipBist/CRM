@@ -30,6 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initUserDetailsPopup();
     openVoucharPopup();
     initAddRole();
+    initSideBarUserDropdown();
 
     // ============
     // this this code is just for the page redirect just to show the user the particular page (remove it later)
@@ -1116,4 +1117,41 @@ function initAddRole() {
             popUp.classList.remove("active");
         });
     }
+}
+
+
+
+
+
+// sidebar bottom user dropdow show hide function
+function initSideBarUserDropdown() {
+    const userBtn = document.getElementById('user_dropdown_btn');
+    const activityBtn = document.getElementById('activity_dropdown_btn');
+    const userDropdown = document.querySelector('.user_dropdown_wrapper');
+    const activityDropdown = document.querySelector('.activity_dropdown_wrapper');
+
+    if (!userBtn || !activityBtn || !userDropdown || !activityDropdown) return;
+
+    // Toggle dropdowns
+    userBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        userDropdown.classList.toggle('active');
+        activityDropdown.classList.remove('active');
+    });
+
+    activityBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        activityDropdown.classList.toggle('active');
+        userDropdown.classList.remove('active');
+    });
+
+    // Close when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!userDropdown.contains(e.target) && !userBtn.contains(e.target)) {
+            userDropdown.classList.remove('active');
+        }
+        if (!activityDropdown.contains(e.target) && !activityBtn.contains(e.target)) {
+            activityDropdown.classList.remove('active');
+        }
+    });
 }
