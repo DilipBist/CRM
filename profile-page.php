@@ -118,7 +118,7 @@ include 'inc/header.php'
                                 <div class="col-md-6">
                                     <div class="input_field">
                                         <label for="number">Phone Number <span class="red">*</span></label>
-                                        <input type="number" placeholder="9841868583" value="9841868583" name="number" id="number" required>
+                                        <input type="tel" placeholder="9841868583" value="9841868583" name="number" id="number" required>
                                     </div>
                                 </div>
                             </div>

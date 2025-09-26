@@ -5210,9 +5210,11 @@ select option:not(:first-child) {
     border: 1px solid var(--Neutral-Separator, #EBEBEB);
     padding: 12px 12px;
 }
-.profile_page_form form .input_wrapper .input_field input:focus{
+
+.profile_page_form form .input_wrapper .input_field input:focus {
     outline: .5px solid #2E81C7;
 }
+
 .change_Tag {
     width: 420px;
 }
@@ -5293,6 +5295,28 @@ select option:not(:first-child) {
 }
 
 /* ----------------- PROFILE PAGE CSS ENDS ------------------------ */
+
+
+/* +++++++++++++++ COMPANY SETTING CSS STARTS +++++++++++++++++++ */
+.company_setting_heading{
+    padding: 24px 0;
+}
+.company_setting_heading h3 {
+    color: var(--text-dark2, #141414);
+    font-size: 24px;
+    font-weight: 800;
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.company_setting_heading p {
+    color: var(--text-dark2, #141414);
+    font-family: var(--inter);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* +++++++++++++++ COMPANY SETTING CSS ENDS +++++++++++++++++++ */
 
 /* ============= INVENTORY CSS STARTS ============ */
 .form_discard_save .submit.view {
