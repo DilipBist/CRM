@@ -31,6 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
     openVoucharPopup();
     initAddRole();
     initSideBarUserDropdown();
+    updateGender();
 
     // ============
     // this this code is just for the page redirect just to show the user the particular page (remove it later)
@@ -1153,5 +1154,33 @@ function initSideBarUserDropdown() {
         if (!activityDropdown.contains(e.target) && !activityBtn.contains(e.target)) {
             activityDropdown.classList.remove('active');
         }
+    });
+}
+
+// update the profile image 
+function previewImage(event) {
+    const file = event.target.files[0];
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+            document.getElementById('profileImage').src = e.target.result;
+        }
+        reader.readAsDataURL(file);
+    }
+}
+
+// update profiel gender select 
+function updateGender() {
+    const options = document.querySelectorAll('.gender-option');
+
+    if (!options) return;
+    options.forEach(option => {
+        option.addEventListener('click', () => {
+            options.forEach(o => {
+                o.classList.remove('selected');
+            });
+
+            option.classList.add('selected');
+        });
     });
 }

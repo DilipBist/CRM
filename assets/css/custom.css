@@ -718,9 +718,9 @@ SIDE BAR CSS STARTS
     stroke: var(--primary-color);
 }
 
-.admin_dash_btns .accordion-button:not(.collapsed) svg path {
+/* .admin_dash_btns .accordion-button:not(.collapsed) svg path {
     fill: var(--primary-color);
-}
+} */
 
 /* ---------- reset accordion css end ----------- */
 
@@ -758,9 +758,9 @@ SIDE BAR CSS STARTS
     stroke: var(--primary-color);
 }
 
-.admin_dash_btns .menu-item:hover svg path {
+/* .admin_dash_btns .menu-item:hover svg path {
     fill: var(--primary-color);
-}
+} */
 
 .admin_dash_btns .menu-item.active {
     /* background: var(--hover-btn); */
@@ -5106,6 +5106,193 @@ select option:not(:first-child) {
 
 /* ******************* Role management css ends  ************** */
 
+/* ----------------- PROFILE PAGE CSS STARTS ------------------------ */
+.profile_page_container .profile_heading h3 {
+    color: var(--text-dark2k, #141414);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.profile_page_container .profile_heading p {
+    color: var(--text-dark2, #141414);
+    font-family: var(--inter);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+.profile_picture_img_wrapper {
+    margin-top: 24px;
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile_picture_img_wrapper .img img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.edit-button {
+    cursor: pointer;
+    color: var(--text-dark2, #141414);
+    font-size: 14px;
+    display: flex;
+    padding: 5px 16px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 12px;
+    background: #F5F5F5;
+    font-weight: 500;
+    border: none;
+}
+
+.profile_img_btn h5 {
+    margin: 0;
+    color: var(--text-dark2, #141414);
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.profile_img_btn p {
+    margin: 0;
+    color: var(--text-5C, #5C5C5C);
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.profile_page_form form .common_row {
+    padding: 32px 0;
+    border-top: 1px solid var(--Neutral-Separator);
+}
+
+.profile_page_form form .name_container h4 {
+    margin: 0;
+    color: var(--text-dark2, #141414);
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-weight: 800;
+}
+
+.profile_page_form form .name_container p {
+    margin: 0;
+    color: var(--text-5C, #5C5C5C);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.profile_page_form form .input_wrapper .input_field {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.profile_page_form form .input_wrapper .input_field label {
+    color: var(--text-dark2, #141414);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.profile_page_form form .input_wrapper .input_field input {
+    width: 420px;
+    border-radius: 8px;
+    border: 1px solid var(--Neutral-Separator, #EBEBEB);
+    padding: 12px 12px;
+}
+.profile_page_form form .input_wrapper .input_field input:focus{
+    outline: .5px solid #2E81C7;
+}
+.change_Tag {
+    width: 420px;
+}
+
+.change_Tag .input_fieldtwo {
+    color: var(--neutral-primay, #005399);
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    height: 44px;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 12px;
+    background: var(--Neutral-background, #F2F6FA);
+    width: max-content;
+}
+
+.gender-selector {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.gender-option {
+    display: flex;
+    height: 48px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 1px solid var(--Neutral-Separator, #EBEBEB);
+    width: 270px;
+}
+
+
+.gender-option.selected {
+    border: 1px solid var(--Neutral-Primary, #005399);
+    background: #F1F9FF;
+    color: var(--neutral-primay);
+}
+
+.gender-option:hover {
+    border: 1px solid var(--Neutral-Primary, #005399);
+    background: #F1F9FF;
+    color: var(--neutral-primay);
+}
+
+.profile_page_form button {
+    color: var(--whiteFC, #FCFCFC);
+    font-family: var(--inter);
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    height: 44px;
+    padding: 8px 20px;
+    border: 1px solid var(--neutral-primay);
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background: var(--neutral-primay, #005399);
+}
+
+.profile_page_form .border_top {
+    border-top: 1px solid var(--Neutral-Separator);
+    padding-top: 24px;
+    margin-top: 28px;
+}
+
+.profile_page_form button:hover {
+    color: var(--neutral-primay);
+    background-color: transparent;
+    border-color: var(--neutral-primay);
+}
+
+/* ----------------- PROFILE PAGE CSS ENDS ------------------------ */
 
 /* ============= INVENTORY CSS STARTS ============ */
 .form_discard_save .submit.view {
@@ -5120,9 +5307,11 @@ select option:not(:first-child) {
 .inventory_transfer_btn:hover {
     background-color: var(--Button-soft-color) !important;
 }
-.inventory_table{
+
+.inventory_table {
     margin-top: 24px;
 }
+
 /* ============= INVENTORY CSS END============ */
 
 
@@ -5449,6 +5638,12 @@ select option:not(:first-child) {
 
     .login_right .c-logo {
         width: 140px;
+    }
+
+    .profile_page_form form .input_wrapper .input_field input,
+    .change_Tag {
+        max-width: 420px;
+        width: 100%;
     }
 }
 
