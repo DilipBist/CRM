@@ -56,7 +56,7 @@ include 'inc/header.php'
                             </div>
                         </div>
                         <div class="col-12">
-                            <a href="project-list.php" class="login">Login</a>
+                            <a href="index.php" class="login">Login</a>
                             <!-- you can use a and button tag both remove which is not in use  -->
                             <!-- <button>Login</button> -->
                         </div>
