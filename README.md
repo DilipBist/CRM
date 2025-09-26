@@ -59,8 +59,11 @@ This project provides a responsive and modular **user interface** for managing c
 
 ## 📸 Screenshots
 - Login View
+
 <img width="1897" height="937" alt="image" src="https://github.com/user-attachments/assets/72c5b787-08ce-433a-96d1-7a39320ef0e7" />
-- Dashboard View 
+
+- Dashboard View
+
 <img width="1907" height="940" alt="image" src="https://github.com/user-attachments/assets/7c623dd0-d622-4253-bdb8-c846483d501f" />
 
 
