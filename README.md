@@ -44,12 +44,6 @@ This project provides a responsive and modular **user interface** for managing c
 
 ---
 
-## 📸 Screenshots
-<img width="1897" height="1608" alt="image" src="https://github.com/user-attachments/assets/ec5b6f00-715f-4270-bc75-8f1956946133" />
-
-
----
-
 ## 📖 Usage
 - Open the **Dashboard** (`index.php`) to view the CRM.  
 - Navigate to different modules:
@@ -59,6 +53,18 @@ This project provides a responsive and modular **user interface** for managing c
   - **Reports** – see summaries and visualizations.  
 
 ⚠️ Reminder: This CRM is a **UI only** – no backend or database connection is included. It is suitable for **prototyping** or **UI demonstration**.
+
+---
+
+
+## 📸 Screenshots
+- Login View
+<img width="1897" height="937" alt="image" src="https://github.com/user-attachments/assets/72c5b787-08ce-433a-96d1-7a39320ef0e7" />
+- Dashboard View 
+<img width="1907" height="940" alt="image" src="https://github.com/user-attachments/assets/7c623dd0-d622-4253-bdb8-c846483d501f" />
+
+
+
 
 ---
 
