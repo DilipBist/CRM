@@ -226,6 +226,7 @@ include 'inc/header.php'
             </div>
 
         </div>
+    </div>
 
 </section>
 
