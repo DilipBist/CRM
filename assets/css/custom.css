@@ -632,6 +632,7 @@ SIDE BAR CSS STARTS
     position: fixed;
     /* border: 2px solid red; */
     top: 90px;
+    padding-bottom: 55px;
 
     overflow-y: auto;
     /* scrollbar-width: thin;
@@ -710,7 +711,7 @@ SIDE BAR CSS STARTS
 
 .accordion-button:not(.collapsed) {
     background: var(--hover-btn);
-    color: var(--primary-color);
+    color: var(--primary-color) !important;
     box-shadow: none;
 }
 
@@ -773,9 +774,9 @@ SIDE BAR CSS STARTS
     stroke: var(--primary-color);
 }
 
-.admin_dash_btns .menu-item.active svg path {
+/* .admin_dash_btns .menu-item.active svg path {
     fill: var(--primary-color);
-}
+} */
 
 .admin_dash_btns .accordion .accordion-body {
     padding: 0;
@@ -893,6 +894,23 @@ SIDE BAR CSS STARTS
 .admin_botom_drop_down_container .common_popup_bg .links a:hover {
     background-color: var(--active-bg);
     border-radius: 5px;
+}
+
+.admin_dash_btns .accordion.inner_accordion .accordion-body {
+    padding-bottom: 0;
+    padding-left: 0;
+}
+
+.left_arrow_container {
+    position: relative;
+}
+
+.left_arrow_container i {
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 13px;
 }
 
 /* ######################################
@@ -5319,6 +5337,7 @@ select option:not(:first-child) {
 
 /* +++++++++++++++ COMPANY SETTING CSS ENDS +++++++++++++++++++ */
 
+
 /* ============= INVENTORY CSS STARTS ============ */
 .form_discard_save .submit.view {
     padding: 8px 16px;
@@ -5568,7 +5587,8 @@ select option:not(:first-child) {
         border-collapse: collapse;
         font-size: 12px;
     }
-    .open_trail_table tfoot tr td{
+
+    .open_trail_table tfoot tr td {
         font-size: 12px;
         padding: 6px;
         border: 1px solid #2b2b2b;
