@@ -5478,9 +5478,26 @@ select option:not(:first-child) {
 
 }
 
+.open_trail_table .common_print_header,
 .inventory_table .common_print_header,
-.inventory_table .payment_print_footer {
+.inventory_table .payment_print_footer,
+.open_trail_table .payment_print_footer {
     display: none;
+}
+
+.open_trail_table tfoot tr td {
+    border-bottom: 1px solid var(--Neutral-Separator, #E9EAEB);
+    background: #F5F5F5;
+    color: var(--text-dark2, #141414);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    height: 52px;
+    padding: 0 16px;
+}
+
+.open_trail_table tfoot tr td:first-child {
+    text-align: end;
 }
 
 /* vocuhar print css   ends*/
@@ -5494,14 +5511,17 @@ select option:not(:first-child) {
 
     /* Only show the printable table */
     #printableTable,
+    .open_trail_table,
     .inventory_table,
     #printSection,
     #printSection *,
     .inventory_table *,
+    .open_trail_table *,
     #printableTable * {
         visibility: visible;
     }
 
+    .open_trail_table,
     .inventory_table,
     #printSection,
     #printableTable {
@@ -5512,12 +5532,15 @@ select option:not(:first-child) {
     }
 
     .inventory_table .common_print_header,
+    .open_trail_table .common_print_header,
+    .open_trail_table .payment_print_footer,
     .inventory_table .payment_print_footer {
         display: block;
     }
 
     #printSection,
-    .inventory_table {
+    .inventory_table,
+    .open_trail_table {
         display: flex;
         flex-direction: column;
         min-height: 100vh;
@@ -5530,7 +5553,8 @@ select option:not(:first-child) {
         page-break-inside: avoid;
     }
 
-    .inventory_table {
+    .inventory_table,
+    .open_trail_table {
         margin: 0 !important;
         width: 100% !important;
         padding: 0 !important;
@@ -5544,9 +5568,14 @@ select option:not(:first-child) {
         border-collapse: collapse;
         font-size: 12px;
     }
+    .open_trail_table tfoot tr td{
+        font-size: 12px;
+        padding: 6px;
+        border: 1px solid #2b2b2b;
+    }
 
     /* reduced the font-size  */
-    .inventory_table table tbody th ,
+    .inventory_table table tbody th,
     .inventory_table table td {
         font-size: 11px !important;
     }
@@ -5562,17 +5591,22 @@ select option:not(:first-child) {
     }
 
     .payment_print_footer .signature_box h4,
+    .open_trail_table .print-body th,
     #printSection .print-body th {
-        background-color: #000 !important;
+        /* background-color: #000 !important; */
+        background: #505050 !important;
         color: white !important;
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
     }
 
+
     #printableTable th,
     .common_table th {
         background-color: #f0f0f0;
     }
+
+
 
     .inventory_table .pagination_class,
     #printableTable .print_pagination {
@@ -5610,14 +5644,17 @@ select option:not(:first-child) {
         width: 150px;
     }
 
-    .inventory_table .common_print_header {
-        margin-bottom: 32px;
+    .inventory_table .common_print_header,
+    .open_trail_table .common_print_header {
+        margin-bottom: 18px;
     }
 
     .wrap_Text {
         white-space: normal !important;
         word-wrap: break-word;
     }
+
+
 
 }
 
