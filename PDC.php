@@ -8,7 +8,7 @@ include 'inc/header.php'
 
 
     <?php
-    $currentPage = 'accounting';
+    $currentPage = 'PDC';
     include 'inc/side-bar.php';
     ?>
 

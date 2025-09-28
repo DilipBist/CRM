@@ -896,10 +896,10 @@ SIDE BAR CSS STARTS
     border-radius: 5px;
 }
 
-.admin_dash_btns .accordion.inner_accordion .accordion-body {
+/* .admin_dash_btns .accordion.inner_accordion .accordion-body {
     padding-bottom: 0;
     padding-left: 0;
-}
+} */
 
 .left_arrow_container {
     position: relative;
