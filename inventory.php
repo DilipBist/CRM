@@ -206,41 +206,70 @@ include 'inc/header.php'
             <!-- inventory chart  -->
 
 
-            <div class="inventory_table common_table" id="printableTable">
-                <div class="table-responsive">
-                    <table class="table table-hover">
-                        <thead>
-                            <tr>
-                                <th scope="col">PO Number</th>
-                                <th scope="col">Date</th>
-                                <th scope="col">Products</th>
-                                <th scope="col">Warehouse</th>
-                                <th scope="col">Quantity</th>
-                                <th scope="col">Rate</th>
-                                <th scope="col">Amount</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                        <tbody>
-                            <?php foreach (array_slice($projectList, 0, 10) as $project): ?>
+            <div class="inventory_table common_table">
+                <div class="common_print_header">
+                    <div class="print-header">
+                        <div class="prit_logo">
+                            <img src="assets/images/logo.svg" alt="logo">
+                        </div>
+                        <h3>Inventory Details</h3>
+                        <div class="last_div">
+                            <p>S.T Builders Pvt.Ltd.</p>
+                            <p>Kathmandu-32,Koteshwor</p>
+                            <p>9863313584</p>
+                            <p>PAN: 601241851</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="print-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
                                 <tr>
-                                    <th scope="row"><?= $project['code'] ?></th>
-                                    <td><?= $project['date'] ?></td>
-                                    <td><?= $project['acc_g_name'] ?></td>
-                                    <td><?= $project['warehouse'] ?></td>
-                                    <td><?= $project['Quantity'] ?></td>
-                                    <td><?= $project['rate'] ?></td>
-                                    <td><?= $project['rate'] ?></td>
+                                    <th scope="col">PO Number</th>
+                                    <th scope="col">Date</th>
+                                    <th scope="col" class="wrap_Text">Products</th>
+                                    <th scope="col" class="wrap_Text">Warehouse</th>
+                                    <th scope="col">Quantity</th>
+                                    <th scope="col">Rate</th>
+                                    <th scope="col">Amount</th>
                                 </tr>
-                            <?php endforeach; ?>
-                        </tbody>
+                            </thead>
+                            <tbody>
+                            <tbody>
+                                <?php foreach (array_slice($projectList, 0, 10) as $project): ?>
+                                    <tr>
+                                        <th scope="row"><?= $project['code'] ?></th>
+                                        <td><?= $project['date'] ?></td>
+                                        <td class="wrap_Text"><?= $project['acc_g_name'] ?></td>
+                                        <td class="wrap_Text"><?= $project['warehouse'] ?></td>
+                                        <td><?= $project['Quantity'] ?></td>
+                                        <td><?= $project['rate'] ?></td>
+                                        <td><?= $project['rate'] ?></td>
+                                    </tr>
+                                <?php endforeach; ?>
+                            </tbody>
 
-                        </tbody>
-                    </table>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="payment_print_footer">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    </p>
+
+                    <div class="issue_sig">
+                        <p>Prepared By</p>
+
+                        <p>Approved By</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="mt-3">
+
+            <div class="mt-3 pagination_class">
                 <?php include 'inc/pagination.php' ?>
             </div>
 

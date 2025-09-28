@@ -1042,7 +1042,7 @@ function initUserPopup() {
     if (!buttons || !popUp) return;
 
     buttons.forEach(btn => {
-        btn.addEventListener('click', () => {
+        btn.addEventListener('click', (e) => {
             e.preventDefault();
             popUp.classList.add('show');
             const title = btn.getAttribute('data-title');
