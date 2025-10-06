@@ -4078,6 +4078,26 @@ select option:not(:first-child) {
     /* transition: all 0.3s ease-in-out; */
 }
 
+.cur_bal p {
+    color: var(--text-dark2);
+    font-size: 15px;
+    margin: 0;
+    font-weight: 600;
+}
+
+.cur_bal span {
+    font-size: 14px;
+    color: var(--text-5C);
+    font-weight: 400;
+    margin: 0;
+}
+
+.cur_bal {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .vouchar_data_bg.active {
     visibility: visible;
     opacity: 1;
@@ -5428,6 +5448,11 @@ select option:not(:first-child) {
     margin-bottom: 49px;
 }
 
+.journal .sec_heading {
+    margin-bottom: 16px !important;
+    margin-top: 16px !important;
+}
+
 .sec_heading .gap {
     display: flex;
     flex-direction: column;
@@ -5618,6 +5643,14 @@ select option:not(:first-child) {
         border: 1px solid #2b2b2b;
     }
 
+    .cur_bal p {
+        font-size: 12px;
+    }
+
+    .cur_bal span {
+        font-size: 12px;
+    }
+
     /* reduced the font-size  */
     .inventory_table table tbody th,
     .inventory_table table td {
@@ -5629,7 +5662,7 @@ select option:not(:first-child) {
     .common_table td,
     #printSection td,
     #printableTable td {
-        border: 1px solid #2b2b2b;
+        border: 1px solid #E9EAEB;
         padding: 6px;
         color: rgb(36, 36, 36) !important;
     }
@@ -5638,8 +5671,8 @@ select option:not(:first-child) {
     .open_trail_table .print-body th,
     #printSection .print-body th {
         /* background-color: #000 !important; */
-        background: #505050 !important;
-        color: white !important;
+        background: var(--Button-soft-color) !important;
+        color: var(--text-dark2) !important;
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
     }
@@ -5697,8 +5730,11 @@ select option:not(:first-child) {
         white-space: normal !important;
         word-wrap: break-word;
     }
-
-
+    #printSection table tfoot tr td{
+        font-weight: 800;
+        color: var(--text-dark2);
+        font-size: 12px;
+    }
 
 }
 

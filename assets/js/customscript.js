@@ -875,8 +875,12 @@ function openVoucharPopup() {
             // if (title && popupTitle1) popupTitle1.textContent = title;
 
             // Hide both forms first
-            journalForm.classList.remove('active');
-            paymentForm.classList.remove('active');
+           if(journalForm){
+             journalForm.classList.remove('active');
+           }
+            if(paymentForm){
+                paymentForm.classList.remove('active');
+            }
 
             // Show the selected form
             if (form === 'journal') journalForm.classList.add('active');
