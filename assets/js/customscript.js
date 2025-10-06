@@ -1184,3 +1184,25 @@ function updateGender() {
         });
     });
 }
+
+
+
+
+// const toggle = document.querySelector(".left_arrow_container");
+// const dropdown = toggle.querySelector(".account_group");
+
+// toggle.addEventListener("click", (e) => {
+//     e.stopPropagation();
+//     const isVisible = dropdown.style.display === "block";
+//     document.querySelectorAll(".account_group").forEach(d => d.style.display = "none");
+
+//     if (!isVisible) {
+//         const rect = toggle.getBoundingClientRect();
+//         dropdown.style.top = rect.top + "px";
+//         dropdown.style.left = rect.right + "px";
+//         dropdown.style.display = "flex";
+//     }
+// });
+// document.addEventListener("click", () => {
+//     document.querySelectorAll(".account_group").forEach(d => d.style.display = "none");
+// });

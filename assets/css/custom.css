@@ -633,10 +633,7 @@ SIDE BAR CSS STARTS
     /* border: 2px solid red; */
     top: 90px;
     padding-bottom: 55px;
-
     overflow-y: auto;
-    /* scrollbar-width: thin;
-    scrollbar-color: rgba(255, 255, 255, 0.5) transparent; */
 
     scrollbar-width: none;
     -ms-overflow-style: none;
@@ -644,32 +641,11 @@ SIDE BAR CSS STARTS
 
 .admin_content::-webkit-scrollbar {
     display: none;
-    /* Chrome, Safari, Opera */
 }
 
-
-/* WebKit browsers (Chrome, Safari, Edge) */
-/* .admin_content::-webkit-scrollbar {
-    width: 2px;
-}
-
-.admin_content:hover::-webkit-scrollbar {
-    width: 3px;
-}
-
-.admin_content::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 2px;
-}
-
-.admin_content::-webkit-scrollbar-thumb {
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 3px;
-} */
 
 .admin_dash_cat h6 {
     color: var(--text-85);
-    /* font-size: clamp(14px, 1vw, 16px); */
     font-size: 13px;
     font-weight: 700;
     padding: 6px 12px;
@@ -713,6 +689,7 @@ SIDE BAR CSS STARTS
     background: var(--hover-btn);
     color: var(--primary-color) !important;
     box-shadow: none;
+    font-weight: 600;
 }
 
 .admin_dash_btns .accordion-button:not(.collapsed) svg path {
@@ -822,6 +799,7 @@ SIDE BAR CSS STARTS
     justify-content: center;
     gap: 22px;
     background-color: var(--dark-theme);
+    z-index: 20;
 }
 
 .admin_botom_drop_down_container .common_div {
@@ -903,6 +881,7 @@ SIDE BAR CSS STARTS
 
 .left_arrow_container {
     position: relative;
+    cursor: pointer;
 }
 
 .left_arrow_container i {
@@ -913,12 +892,52 @@ SIDE BAR CSS STARTS
     right: 13px;
 }
 
+
+/* ******* side bar  inner dropdown css ********  */
+.common_inner_dropdown_container {
+    background-color: var(--whiteFA);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px 8px;
+    color: var(--neutral-primay);
+    width: 100%;
+}
+
+.account_group {
+    position: absolute;
+    right: -200px;
+    top: 0;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    top: 0;
+    z-index: 50;
+}
+
+.left_arrow_container.active i {
+    transform: translateY(-50%) rotate(90deg);
+}
+
+/* .account_group {
+    position: fixed;
+    top: 0;
+    left: 280px;
+    z-index: 9999;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    display: none;
+    width: max-content;
+} */
+
+
+/* ******* side bar  inner dropdown css ends********  */
+
 /* ######################################
 SIDE BAR CSS ENDS
 ###################################### */
 
 
-/* admin top header css starts  */
+
+/**** admin top header css starts  */
 .admin_right_content {
     width: calc(100% - 280px);
 }
@@ -993,7 +1012,7 @@ SIDE BAR CSS ENDS
     background-color: var(--hover-btn);
 }
 
-/* admin top header css ends */
+/*** admin top header css ends */
 
 /* +++++++++ admin list heading css starts ++++++++++ */
 
@@ -1088,7 +1107,9 @@ SIDE BAR CSS ENDS
     stroke: var(--primary-color);
 }
 
-/* ============ COMMON TABLE CSS ============= */
+/* ================
+ COMMON TABLE CSS 
+ =================== */
 .common_table .table thead tr th,
 .purchase_data_table .table thead tr th {
     /* background-color: var(--white-F7); */
@@ -1195,9 +1216,11 @@ SIDE BAR CSS ENDS
     stroke: var(--primary-color);
 }
 
-/* ============ COMMON TABLE CSS ENDS ============= */
+/* =================
+ COMMON TABLE CSS ENDS
+ =================== */
 
-/* +++++++++ admin list heading css ends  ++++++++++ */
+/***** admin list heading css ends  ++++++++++ */
 
 
 

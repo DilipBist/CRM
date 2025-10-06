@@ -10,6 +10,7 @@ include 'inc/header.php'
     <?php
     $currentPage = 'Journal';
     include 'inc/side-bar.php';
+    // include 'inc/demo.php';
     ?>
 
     <div class="admin_right_content ms-auto accounting_container">
