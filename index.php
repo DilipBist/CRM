@@ -6,16 +6,16 @@ include 'inc/header.php'
 <section class="admin_container d-flex">
 
 
-<!-- SIDE BAR  -->
+    <!-- SIDE BAR  -->
     <?php
     $currentPage = 'dashboard';
     include 'inc/side-bar.php';
     ?>
-<!-- SIDE BAR ENDS  -->
+    <!-- SIDE BAR ENDS  -->
 
     <div class="admin_right_content ms-auto">
 
-    <!-- TOP PROFILE HEADER  -->
+        <!-- TOP PROFILE HEADER  -->
         <div class="admin_top_header d-flex align-items-center gap-3 justify-content-between">
             <div class="chart_bread_crump d-flex align-items-center gap-3">
                 <div class="icon">
@@ -46,7 +46,7 @@ include 'inc/header.php'
 
             </div>
         </div>
-    <!-- TOP PROFILE HEADER ENDS  -->
+        <!-- TOP PROFILE HEADER ENDS  -->
 
 
         <div class="dashboard_page_container pl_pr mb-5">
@@ -426,7 +426,6 @@ include 'inc/header.php'
                         </div>
                     </div>
                 </div>
-
 
                 <div class="status_donut_Chart">
                     <h3>Current Status</h3>

@@ -32,6 +32,8 @@ document.addEventListener("DOMContentLoaded", () => {
     initAddRole();
     initSideBarUserDropdown();
     updateGender();
+    setupAccordionSync();
+
 
     // ============
     // this this code is just for the page redirect just to show the user the particular page (remove it later)
@@ -1187,22 +1189,19 @@ function updateGender() {
 
 
 
+function setupAccordionSync() {
+    const purchase = document.getElementById('menu-collapse-purchase');
+    const accounting = document.getElementById('menu-collapse-inner');
 
-// const toggle = document.querySelector(".left_arrow_container");
-// const dropdown = toggle.querySelector(".account_group");
+    if (!purchase || !accounting) return;
 
-// toggle.addEventListener("click", (e) => {
-//     e.stopPropagation();
-//     const isVisible = dropdown.style.display === "block";
-//     document.querySelectorAll(".account_group").forEach(d => d.style.display = "none");
+    // When Purchase opens  close Accounting
+    purchase.addEventListener('show.bs.collapse', () => {
+        new bootstrap.Collapse(accounting, { toggle: false }).hide();
+    });
 
-//     if (!isVisible) {
-//         const rect = toggle.getBoundingClientRect();
-//         dropdown.style.top = rect.top + "px";
-//         dropdown.style.left = rect.right + "px";
-//         dropdown.style.display = "flex";
-//     }
-// });
-// document.addEventListener("click", () => {
-//     document.querySelectorAll(".account_group").forEach(d => d.style.display = "none");
-// });
+    //  When Accounting opens  close Purchase
+    accounting.addEventListener('show.bs.collapse', () => {
+        new bootstrap.Collapse(purchase, { toggle: false }).hide();
+    });
+}
