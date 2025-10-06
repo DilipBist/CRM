@@ -1122,6 +1122,7 @@ SIDE BAR CSS ENDS
     color: var(--text-dark);
     /* border-right: 1px solid var(--login-border); */
     /* border: none; */
+    height: 42px;
 }
 
 .common_table .table tr {

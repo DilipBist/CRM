@@ -188,7 +188,7 @@ $projectList = [
         'p_class' => 'approved',
         'assign' => 'In Progress',
         'assign_class' => 'progress_state'
-        
+
     ],
     [
         'id' => '05',
@@ -466,7 +466,7 @@ $projectList = [
         'p_class' => 'approved',
         'assign' => 'In Progress',
         'assign_class' => 'progress_state'
-        
+
     ],
     [
         'id' => '12',
@@ -530,6 +530,7 @@ $projectList = [
         'ledger' => 'Nepal Investment Bank Limited',
         'requisationnumber' => '1241212593',
         'assign' => 'In Progress',
+        'rate' => '1,196,000',
         'assign_class' => 'progress_state'
     ],
     [
@@ -558,6 +559,7 @@ $projectList = [
         'ledger' => 'Standard Chartered Bank Nepal Limited',
         'timing' => '10:00 AM-05:30 PM',
         'assign' => 'In Progress',
+        'rate' => '1,196,000',
         'assign_class' => 'progress_state'
     ],
     [
@@ -587,6 +589,7 @@ $projectList = [
         'timing' => '10:00 AM-05:30 PM',
         'assing' => 'Just Started',
         'assign' => 'Just Started',
+        'rate' => '1,196,000',
         'assign_class' => 'deal_state'
     ],
 ];
