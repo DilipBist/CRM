@@ -1107,6 +1107,14 @@ SIDE BAR CSS ENDS
     stroke: var(--primary-color);
 }
 
+.activity_list_dropdown a {
+    background-color: transparent;
+    color: var(--primary-color);
+    width: 100%;
+    border: none;
+    border-radius: 0;
+}
+
 /* ================
  COMMON TABLE CSS 
  =================== */
@@ -1816,7 +1824,7 @@ SIDE BAR CSS ENDS
 }
 
 #CloseAttendancePopup,
-#closeChangeLedger ,
+#closeChangeLedger,
 #closeAddLedger {
     position: absolute;
     top: 50%;
@@ -2094,7 +2102,7 @@ SIDE BAR CSS ENDS
 .AttendancePopup.show .attendance_popup_content,
 .add_account_group_popup.show .add_account_group_popup_content,
 .change_ledger_group_popup.show .change_ledger_group_popup_content,
-.change_ledger_group_popup.show .outer_layout ,
+.change_ledger_group_popup.show .outer_layout,
 .add_account_group_popup.show .outer_layout {
     transform: scale(1);
 }
@@ -2102,10 +2110,12 @@ SIDE BAR CSS ENDS
 .add_account_group_popup_content {
     width: 100%;
 }
-.change_ledger_group_popup_content{
+
+.change_ledger_group_popup_content {
     width: 620px;
 }
-.change_ledger_group_popup ,
+
+.change_ledger_group_popup,
 .add_account_group_popup {
     background: rgba(0, 0, 0, 0.6);
 
@@ -5693,6 +5703,7 @@ select option:not(:first-child) {
     .payment_print_footer .signature_box h4,
     .open_trail_table .print-body th,
     #printSection .print-body th,
+    .inventory_table .table thead th,
     #printableTable .table thead th {
         background: var(--Button-soft-color) !important;
         color: var(--text-dark2) !important;
@@ -5703,10 +5714,9 @@ select option:not(:first-child) {
 
     #printableTable th,
     .common_table th {
-        background-color: #f0f0f0;
+        background: var(--Button-soft-color) !important;
+        color: var(--text-dark2) !important;
     }
-
-
 
     .inventory_table .pagination_class,
     #printableTable .print_pagination {
@@ -5960,7 +5970,8 @@ select option:not(:first-child) {
         height: 130px;
         width: 130px;
     }
-    .change_ledger_group_popup_content{
+
+    .change_ledger_group_popup_content {
         width: 100%;
     }
 
