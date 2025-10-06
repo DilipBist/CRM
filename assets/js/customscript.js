@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initSideBarUserDropdown();
     updateGender();
     setupAccordionSync();
+    initChangeLedgerPopup()
 
 
     // ============
@@ -1126,10 +1127,33 @@ function initAddRole() {
         });
     }
 }
+// change ledger popup funciton
+function initChangeLedgerPopup() {
+    const buttons = document.querySelectorAll('.change_ledger_btn');
+    const popUp = document.querySelector('.change_ledger_group_popup');
 
+    if (!buttons || !popUp) return;
 
+    buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            popUp.classList.add('show');
+        });
+    });
 
+    // Close only when clicking outside the content
+    popUp.addEventListener("click", (e) => {
+        if (e.target === popUp) {
+            popUp.classList.remove("show");
+        }
+    });
 
+    const closeBtn = document.querySelector("#closeChangeLedger");
+    if (closeBtn) {
+        closeBtn.addEventListener("click", () => {
+            popUp.classList.remove("show");
+        });
+    }
+}
 
 // sidebar bottom user dropdow show hide function
 function initSideBarUserDropdown() {

@@ -1816,6 +1816,7 @@ SIDE BAR CSS ENDS
 }
 
 #CloseAttendancePopup,
+#closeChangeLedger ,
 #closeAddLedger {
     position: absolute;
     top: 50%;
@@ -2037,6 +2038,7 @@ SIDE BAR CSS ENDS
     font-size: clamp(16px, 1.2vw, 18px);
 }
 
+.change_ledger_group_popup,
 .AttendancePopup,
 .add_account_group_popup {
     position: fixed;
@@ -2056,6 +2058,7 @@ SIDE BAR CSS ENDS
 }
 
 .attendance_popup_content,
+.change_ledger_group_popup_content,
 .add_account_group_popup_content {
     padding: 20px 24px 24px 24px;
     max-width: 900px;
@@ -2075,12 +2078,14 @@ SIDE BAR CSS ENDS
 }
 
 .add_account_group_popup_content::-webkit-scrollbar,
+.change_ledger_group_popup_content::-webkit-scrollbar,
 .attendance_popup_content::-webkit-scrollbar {
     display: none;
 }
 
 /* Show state */
 .AttendancePopup.show,
+.change_ledger_group_popup.show,
 .add_account_group_popup.show {
     visibility: visible;
     opacity: 1;
@@ -2088,6 +2093,8 @@ SIDE BAR CSS ENDS
 
 .AttendancePopup.show .attendance_popup_content,
 .add_account_group_popup.show .add_account_group_popup_content,
+.change_ledger_group_popup.show .change_ledger_group_popup_content,
+.change_ledger_group_popup.show .outer_layout ,
 .add_account_group_popup.show .outer_layout {
     transform: scale(1);
 }
@@ -2095,7 +2102,10 @@ SIDE BAR CSS ENDS
 .add_account_group_popup_content {
     width: 100%;
 }
-
+.change_ledger_group_popup_content{
+    width: 620px;
+}
+.change_ledger_group_popup ,
 .add_account_group_popup {
     background: rgba(0, 0, 0, 0.6);
 
@@ -2596,12 +2606,13 @@ SIDE BAR CSS ENDS
     stroke: var(--red) !important;
 }
 
-.change_ledger_btn{
+.change_ledger_btn {
     background-color: transparent;
     color: var(--text-dark2);
     border: none;
 }
-.openLedgerPopup{
+
+.openLedgerPopup {
     cursor: pointer;
 }
 
@@ -4960,7 +4971,8 @@ select option:not(:first-child) {
 .ass_heading svg:hover {
     transform: scale(1.05);
 }
-.add-labour-btn.print:hover{
+
+.add-labour-btn.print:hover {
     transform: scale(1);
 }
 
@@ -5947,6 +5959,9 @@ select option:not(:first-child) {
     .labour_monlthly_attendance_container .month_DaysContainer .month_Date {
         height: 130px;
         width: 130px;
+    }
+    .change_ledger_group_popup_content{
+        width: 100%;
     }
 
 }
