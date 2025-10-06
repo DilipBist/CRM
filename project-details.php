@@ -238,8 +238,8 @@ include 'inc/header.php'
 
 
                     </div>
+                    <!-- chart list ends -->
                 <?php endif; ?>
-                <!-- chart list ends -->
 
                 <div class="mt46">
                     <div class="row  g-4 g-lg-5">

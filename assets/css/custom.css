@@ -3839,7 +3839,7 @@ ASSET FILTER POPUP CSS ENDS
 }
 
 .approved {
-    border-radius: 12px;
+    border-radius: 20px;
     border: 1px solid rgba(0, 124, 25, 0.60);
     background: rgba(198, 237, 206, 0.60);
     display: flex;
@@ -3853,7 +3853,7 @@ ASSET FILTER POPUP CSS ENDS
 }
 
 .unapproved {
-    border-radius: 12px;
+    border-radius: 20px;
     border: 1px solid rgba(255, 0, 0, 0.50);
     background: rgba(229, 157, 157, 0.60);
     display: flex;
@@ -3867,7 +3867,7 @@ ASSET FILTER POPUP CSS ENDS
 }
 
 .bill {
-    border-radius: 12px;
+    border-radius: 20px;
     border: 1px solid #009BBA;
     background: rgba(11, 197, 234, 0.40);
     display: flex;
@@ -4951,7 +4951,9 @@ select option:not(:first-child) {
 .ass_heading svg:hover {
     transform: scale(1.05);
 }
-
+.add-labour-btn.print:hover{
+    transform: scale(1);
+}
 
 /* assigned labour popup css ends */
 
@@ -5664,13 +5666,13 @@ select option:not(:first-child) {
     #printableTable td {
         border: 1px solid #E9EAEB;
         padding: 6px;
-        color: rgb(36, 36, 36) !important;
+        color: var(--text-dark2) !important;
     }
 
     .payment_print_footer .signature_box h4,
     .open_trail_table .print-body th,
-    #printSection .print-body th {
-        /* background-color: #000 !important; */
+    #printSection .print-body th,
+    #printableTable .table thead th {
         background: var(--Button-soft-color) !important;
         color: var(--text-dark2) !important;
         -webkit-print-color-adjust: exact;
@@ -5730,7 +5732,8 @@ select option:not(:first-child) {
         white-space: normal !important;
         word-wrap: break-word;
     }
-    #printSection table tfoot tr td{
+
+    #printSection table tfoot tr td {
         font-weight: 800;
         color: var(--text-dark2);
         font-size: 12px;

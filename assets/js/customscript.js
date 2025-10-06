@@ -875,10 +875,10 @@ function openVoucharPopup() {
             // if (title && popupTitle1) popupTitle1.textContent = title;
 
             // Hide both forms first
-           if(journalForm){
-             journalForm.classList.remove('active');
-           }
-            if(paymentForm){
+            if (journalForm) {
+                journalForm.classList.remove('active');
+            }
+            if (paymentForm) {
                 paymentForm.classList.remove('active');
             }
 
@@ -1190,7 +1190,6 @@ function updateGender() {
         });
     });
 }
-
 
 
 function setupAccordionSync() {
