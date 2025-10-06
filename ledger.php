@@ -1,5 +1,5 @@
 <?php
-$pageTitle = 'General Ledger';
+$pageTitle = 'Ledger';
 include 'inc/header.php'
 ?>
 
@@ -11,7 +11,7 @@ include 'inc/header.php'
 
 
     <?php
-    $currentPage = 'GeneralLegder';
+    $currentPage = 'Ledger';
     include 'inc/side-bar.php';
     ?>
 
@@ -29,7 +29,7 @@ include 'inc/header.php'
                 <div class="bread_crump_content d-flex align-items-center gap-2">
                     <a href="index.php">Finance Management </a>
                     <span>/</span>
-                    <p>General Ledger</p>
+                    <p>Ledger</p>
                 </div>
             </div>
 
@@ -44,7 +44,7 @@ include 'inc/header.php'
 
         <div class="admin_list_heading d-flex align-items-center flex-wrap gap-3 justify-content-between outer_padding">
             <div class="left_heading">
-                <h3>General Ledger</h3>
+                <h3>Ledger</h3>
                 <p>You can view the Ledger list accordingly.</p>
             </div>
 

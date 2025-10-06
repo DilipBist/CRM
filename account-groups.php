@@ -16,36 +16,33 @@ include 'inc/header.php'
     ?>
 
     <div class="admin_right_content ms-auto accounting_container">
+        <!-- TOP PROFILE HEADER  -->
         <div class="admin_top_header d-flex align-items-center gap-3 justify-content-between">
             <div class="chart_bread_crump d-flex align-items-center gap-3">
                 <div class="icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                         <path d="M9 1.5C7.035 1.5 5.4375 3.0975 5.4375 5.0625C5.4375 6.99 6.945 8.55 8.91 8.6175C8.97 8.61 9.03 8.61 9.075 8.6175C9.09 8.6175 9.0975 8.6175 9.1125 8.6175C9.12 8.6175 9.12 8.6175 9.1275 8.6175C11.0475 8.55 12.555 6.99 12.5625 5.0625C12.5625 3.0975 10.965 1.5 9 1.5Z" fill="#141414" />
-                        <path d="M12.8097 10.6127C10.7172 9.21766 7.30473 9.21766 5.19723 10.6127C4.24473 11.2502 3.71973 12.1127 3.71973 13.0352C3.71973 13.9577 4.24473 14.8127 5.18973 15.4427C6.23973 16.1477 7.61973 16.5002 8.99973 16.5002C10.3797 16.5002 11.7597 16.1477 12.8097 15.4427C13.7547 14.8052 14.2797 13.9502 14.2797 13.0202C14.2722 12.0977 13.7547 11.2427 12.8097 10.6127Z" fill="#141414" />
+                        <path d="M12.8107 10.6127C10.7182 9.21766 7.3057 9.21766 5.1982 10.6127C4.2457 11.2502 3.7207 12.1127 3.7207 13.0352C3.7207 13.9577 4.2457 14.8127 5.1907 15.4427C6.2407 16.1477 7.6207 16.5002 9.0007 16.5002C10.3807 16.5002 11.7607 16.1477 12.8107 15.4427C13.7557 14.8052 14.2807 13.9502 14.2807 13.0202C14.2732 12.0977 13.7557 11.2427 12.8107 10.6127Z" fill="#141414" />
                     </svg>
                 </div>
 
                 <div class="bread_crump_content d-flex align-items-center gap-2">
-                    <a href="account.php">Finance Management </a>
+                    <a href="index.php">Finance Management </a>
                     <span>/</span>
-                    <p>Account Groups</p>
+                    <p>
+                        Accounts Groups
+                    </p>
                 </div>
             </div>
 
             <div class="admin_profile_container d-flex align-items-center gap-3">
-                <a href="#" class="name_tag">
-                    R
-                </a>
 
-                <a href="#" class="bell">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
-                        <path d="M10.5165 2.42578C7.75816 2.42578 5.5165 4.66745 5.5165 7.42578V9.83411C5.5165 10.3424 5.29983 11.1174 5.0415 11.5508L4.08316 13.1424C3.4915 14.1258 3.89983 15.2174 4.98316 15.5841C8.57483 16.7841 12.4498 16.7841 16.0415 15.5841C17.0498 15.2508 17.4915 14.0591 16.9415 13.1424L15.9832 11.5508C15.7332 11.1174 15.5165 10.3424 15.5165 9.83411V7.42578C15.5165 4.67578 13.2665 2.42578 10.5165 2.42578Z" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" />
-                        <path d="M12.0579 2.66719C11.7996 2.59219 11.5329 2.53385 11.2579 2.50052C10.4579 2.40052 9.69128 2.45885 8.97461 2.66719C9.21628 2.05052 9.81628 1.61719 10.5163 1.61719C11.2163 1.61719 11.8163 2.05052 12.0579 2.66719Z" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M13.0166 15.8828C13.0166 17.2578 11.8916 18.3828 10.5166 18.3828C9.83327 18.3828 9.19993 18.0995 8.74993 17.6495C8.29993 17.1995 8.0166 16.5661 8.0166 15.8828" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" />
-                    </svg>
-                </a>
+                <?php include 'components/profile.php' ?>
+                <?php include 'components/notification.php' ?>
+
             </div>
         </div>
+        <!-- TOP PROFILE HEADER ENDS  -->
 
         <div class="admin_list_heading d-flex align-items-center flex-wrap gap-3 justify-content-between outer_padding">
             <div class="left_heading">
