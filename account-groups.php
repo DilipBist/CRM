@@ -3,6 +3,9 @@ $pageTitle = 'Account Groups';
 include 'inc/header.php'
 ?>
 
+<!-- delet popup component  -->
+<?php include 'components/delete-popup.php' ?>
+<!-- delet popup component ends -->
 
 <section class="admin_container d-flex">
 
@@ -66,13 +69,13 @@ include 'inc/header.php'
                     </svg>
                 </div>
 
-                <button class="add_acc_group" id="add_acc_group">
+                <button class="add_acc_group add_acc_groupBtn">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                         <path d="M9.99935 18.3346C14.5827 18.3346 18.3327 14.5846 18.3327 10.0013C18.3327 5.41797 14.5827 1.66797 9.99935 1.66797C5.41602 1.66797 1.66602 5.41797 1.66602 10.0013C1.66602 14.5846 5.41602 18.3346 9.99935 18.3346Z" stroke="#F5F5F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                         <path d="M6.66602 10H13.3327" stroke="#F5F5F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                         <path d="M10 13.3346V6.66797" stroke="#F5F5F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
-                    Add
+                    Add Group
                 </button>
             </div>
         </div>
@@ -99,7 +102,7 @@ include 'inc/header.php'
                             <?php foreach (array_slice($projectList, 0, 11) as $project): ?>
                                 <tr>
                                     <th scope="row"><?= $project['id'] ?></th>
-                                    <td><?= $project['acc_g_name'] ?></td>
+                                    <td class="openLedgerPopup"><?= $project['acc_g_name'] ?></td>
                                     <td><?= $project['num'] ?></td>
                                     <td><?= $project['account_type'] ?></td>
                                     <td><?= $project['pl_type'] ?></td>
@@ -110,14 +113,14 @@ include 'inc/header.php'
                                     </td>
                                     <td>
                                         <div class="table_actions">
-                                            <a href="#" title="View Details" class="openLedgerPopup">
+                                            <a href="#" title="View Details" class="add_acc_groupBtn">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                                                     <path d="M11.6854 8.99945C11.6854 10.4845 10.4854 11.6845 9.00043 11.6845C7.51543 11.6845 6.31543 10.4845 6.31543 8.99945C6.31543 7.51445 7.51543 6.31445 9.00043 6.31445C10.4854 6.31445 11.6854 7.51445 11.6854 8.99945Z" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                                     <path d="M8.99988 15.2016C11.6474 15.2016 14.1149 13.6416 15.8324 10.9416C16.5074 9.88406 16.5074 8.10656 15.8324 7.04906C14.1149 4.34906 11.6474 2.78906 8.99988 2.78906C6.35238 2.78906 3.88488 4.34906 2.16738 7.04906C1.49238 8.10656 1.49238 9.88406 2.16738 10.9416C3.88488 13.6416 6.35238 15.2016 8.99988 15.2016Z" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                                 </svg>
                                             </a>
 
-                                            <a href="#" aria-label="Edit Labout List" title="Edit Labour List">
+                                            <a href="#" aria-label="Edit Labout List" title="Edit Labour List" class="add_acc_groupBtn">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                                                     <path d="M9.94452 2.70041L3.78702 9.21791C3.55452 9.46541 3.32952 9.95291 3.28452 10.2904L3.00702 12.7204C2.90952 13.5979 3.53952 14.1979 4.40952 14.0479L6.82452 13.6354C7.16202 13.5754 7.63452 13.3279 7.86702 13.0729L14.0245 6.55541C15.0895 5.43041 15.5695 4.14791 13.912 2.58041C12.262 1.02791 11.0095 1.57541 9.94452 2.70041Z" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                                                     <path d="M8.91797 3.78711C9.24047 5.85711 10.9205 7.43961 13.0055 7.64961" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
@@ -125,7 +128,7 @@ include 'inc/header.php'
                                                 </svg>
                                             </a>
 
-                                            <a href="#" title="Delete" class="delete">
+                                            <a href="#" title="Delete" class="delete delete_row_btn">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                                                     <path d="M15.75 4.48438C13.2525 4.23687 10.74 4.10938 8.235 4.10938C6.75 4.10938 5.265 4.18438 3.78 4.33438L2.25 4.48438" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                                     <path d="M6.375 3.7275L6.54 2.745C6.66 2.0325 6.75 1.5 8.0175 1.5H9.9825C11.25 1.5 11.3475 2.0625 11.46 2.7525L11.625 3.7275" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -151,160 +154,176 @@ include 'inc/header.php'
             </div>
         </div>
 
-        <!-- Add Account Group pop up  -->
-        <div class="AttendancePopup">
-            <div class="outer_layout">
-                <div class="attendance_popup_content">
-                    <div class="monthly_heading">
-                        Add Account Group
 
-                        <button type="button" id="CloseAttendancePopup">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                <path d="M9.99935 1.66602C5.40768 1.66602 1.66602 5.40768 1.66602 9.99935C1.66602 14.591 5.40768 18.3327 9.99935 18.3327C14.591 18.3327 18.3327 14.591 18.3327 9.99935C18.3327 5.40768 14.591 1.66602 9.99935 1.66602ZM12.7993 11.916C13.041 12.1577 13.041 12.5577 12.7993 12.7993C12.6743 12.9243 12.516 12.9827 12.3577 12.9827C12.1993 12.9827 12.041 12.9243 11.916 12.7993L9.99935 10.8827L8.08268 12.7993C7.95768 12.9243 7.79935 12.9827 7.64102 12.9827C7.48268 12.9827 7.32435 12.9243 7.19935 12.7993C6.95768 12.5577 6.95768 12.1577 7.19935 11.916L9.11602 9.99935L7.19935 8.08268C6.95768 7.84102 6.95768 7.44102 7.19935 7.19935C7.44102 6.95768 7.84102 6.95768 8.08268 7.19935L9.99935 9.11602L11.916 7.19935C12.1577 6.95768 12.5577 6.95768 12.7993 7.19935C13.041 7.44102 13.041 7.84102 12.7993 8.08268L10.8827 9.99935L12.7993 11.916Z" fill="#FF0000" />
-                            </svg>
-                        </button>
-                    </div>
-
-                    <div class="attendance_form mt-4">
-                        <h4>Add Account Group </h4>
-                        <p>Please kindly complete the form to account group registration.</p>
-                        <div class="common_form">
-                            <form action="">
-                                <div class="row g-3 align-items-end">
-
-                                    <div class="col-md-6 col-lg-4">
-                                        <div class="form_input d-flex flex-column gap-2">
-                                            <label for="Name">Name<span>*</span> </label>
-                                            <input type="text" id="Name" name="Name" placeholder="Enter a  Name" required>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6 col-lg-4">
-                                        <div class="form_input d-flex flex-column gap-2">
-                                            <label for="Order">Order<span>*</span> </label>
-                                            <input type="text" id="Order" name="Order" placeholder="Enter a Order " required>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6 col-lg-4">
-                                        <div class="form_input d-flex flex-column gap-2">
-                                            <label for="code">Account Group Code<span>*</span> </label>
-                                            <input type="number" id="code" name="code" required>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6 col-lg-4">
-                                        <label for="acount_type" class="mb-2">Account Type <span class="red">*</span></label>
-                                        <select class="form-select" aria-label="select" id="acount_type" name="acount_type" required>
-                                            <option value="" disabled hidden selected>Select</option>
-                                            <option value="Present" >Present</option>
-                                            <option value="Absent">Absent</option>
-                                            <option value="other">other</option>
-                                        </select>
-                                    </div>
-
-                                    <div class="col-md-6 col-lg-4">
-                                        <label for="bsheet" class="mb-2">Balance Sheet Type <span class="red">*</span></label>
-                                        <select class="form-select" aria-label="select" id="bsheet" name="bsheet" required>
-                                            <option value="" selected hidden disabled>Inventory</option>
-                                            <option value="Inventory" >Inventory</option>
-                                            <option value="Carpenter">Carpenter</option>
-                                            <option value="Painter">Painter</option>
-                                            <option value="Worker">Worker</option>
-                                        </select>
-                                    </div>
-
-                                    <div class="col-12">
-                                        <div class="form_discard_save d-flex align-items-center gap-2 justify-content-end">
-                                            <button class="discard" type="button">Back</button>
-                                            <button type="submit" class="submit">Save</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Add Account Group pop up ends  -->
-
-
-
-
-        <!-- Ledger Mapping popup  -->
-        <div class="monthly_detail_popup_container acc_group_popup" id="monthly-popup">
-            <div class="outer_bg ledger_mapp_width">
-                <div class="monthly_update_details">
-
-                    <div class="monthly_heading">
-                        Ledger Mapping
-
-                        <button type="button" id="CloseMonthlyPopup">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                <path d="M9.99935 1.66602C5.40768 1.66602 1.66602 5.40768 1.66602 9.99935C1.66602 14.591 5.40768 18.3327 9.99935 18.3327C14.591 18.3327 18.3327 14.591 18.3327 9.99935C18.3327 5.40768 14.591 1.66602 9.99935 1.66602ZM12.7993 11.916C13.041 12.1577 13.041 12.5577 12.7993 12.7993C12.6743 12.9243 12.516 12.9827 12.3577 12.9827C12.1993 12.9827 12.041 12.9243 11.916 12.7993L9.99935 10.8827L8.08268 12.7993C7.95768 12.9243 7.79935 12.9827 7.64102 12.9827C7.48268 12.9827 7.32435 12.9243 7.19935 12.7993C6.95768 12.5577 6.95768 12.1577 7.19935 11.916L9.11602 9.99935L7.19935 8.08268C6.95768 7.84102 6.95768 7.44102 7.19935 7.19935C7.44102 6.95768 7.84102 6.95768 8.08268 7.19935L9.99935 9.11602L11.916 7.19935C12.1577 6.95768 12.5577 6.95768 12.7993 7.19935C13.041 7.44102 13.041 7.84102 12.7993 8.08268L10.8827 9.99935L12.7993 11.916Z" fill="#FF0000" />
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="admin_right_content ">
-
-                        <div class="admin_list_heading d-flex flex-wrap align-items-center gap-1 gap-sm-3 justify-content-between my-4">
-                            <div class="left_heading">
-                                <h3>Ledger Mapping list</h3>
-                                <p>You can view the service setup list accordingly.</p>
-                            </div>
-                        </div>
-
-                        <button class="add_acc_group mb-3 mb-lg-4 ms-auto" id="AddLedgerBtn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                <path d="M9.99935 18.3346C14.5827 18.3346 18.3327 14.5846 18.3327 10.0013C18.3327 5.41797 14.5827 1.66797 9.99935 1.66797C5.41602 1.66797 1.66602 5.41797 1.66602 10.0013C1.66602 14.5846 5.41602 18.3346 9.99935 18.3346Z" stroke="#F5F5F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M6.66602 10H13.3327" stroke="#F5F5F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M10 13.3346V6.66797" stroke="#F5F5F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                            Add
-                        </button>
-
-                        <div class="project_list_table">
-                            <div class="common_table">
-                                <div class="table-responsive">
-                                    <table class="table table-hover">
-                                        <thead>
-                                            <tr>
-                                                <th scope="col">SN</th>
-                                                <th scope="col">Ledger</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                        <tbody>
-                                            <?php foreach (array_slice($projectList, 0, 12) as $project): ?>
-                                                <tr>
-                                                    <th scope="row"><?= $project['id'] ?></th>
-                                                    <td><?= $project['ledger'] ?></td>
-                                                </tr>
-                                            <?php endforeach; ?>
-                                        </tbody>
-
-                                        </tbody>
-                                    </table>
-                                </div>
-
-                            </div>
-
-                            <!-- show only 10 table content  -->
-
-                            <div class="mb-3 mt-3">
-                                <?php include 'inc/pagination.php' ?>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <!-- Ledger Mapping popup ends  -->
     </div>
 </section>
 
+
+<!-- Add Account Group pop up  -->
+<div class="AttendancePopup">
+    <div class="outer_layout">
+        <div class="attendance_popup_content">
+            <div class="monthly_heading">
+                Add Account Group
+
+                <button type="button" id="CloseAttendancePopup">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M9.99935 1.66602C5.40768 1.66602 1.66602 5.40768 1.66602 9.99935C1.66602 14.591 5.40768 18.3327 9.99935 18.3327C14.591 18.3327 18.3327 14.591 18.3327 9.99935C18.3327 5.40768 14.591 1.66602 9.99935 1.66602ZM12.7993 11.916C13.041 12.1577 13.041 12.5577 12.7993 12.7993C12.6743 12.9243 12.516 12.9827 12.3577 12.9827C12.1993 12.9827 12.041 12.9243 11.916 12.7993L9.99935 10.8827L8.08268 12.7993C7.95768 12.9243 7.79935 12.9827 7.64102 12.9827C7.48268 12.9827 7.32435 12.9243 7.19935 12.7993C6.95768 12.5577 6.95768 12.1577 7.19935 11.916L9.11602 9.99935L7.19935 8.08268C6.95768 7.84102 6.95768 7.44102 7.19935 7.19935C7.44102 6.95768 7.84102 6.95768 8.08268 7.19935L9.99935 9.11602L11.916 7.19935C12.1577 6.95768 12.5577 6.95768 12.7993 7.19935C13.041 7.44102 13.041 7.84102 12.7993 8.08268L10.8827 9.99935L12.7993 11.916Z" fill="#FF0000" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="attendance_form mt-4">
+                <h4>Add Account Group </h4>
+                <p>Please kindly complete the form to account group registration.</p>
+                <div class="common_form">
+                    <form action="">
+                        <div class="row g-3 align-items-end">
+
+                            <div class="col-md-6 col-lg-4">
+                                <div class="form_input d-flex flex-column gap-2">
+                                    <label for="Name">Name<span>*</span> </label>
+                                    <input type="text" id="Name" name="Name" placeholder="Enter a  Name" required>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4">
+                                <div class="form_input d-flex flex-column gap-2">
+                                    <label for="Order">Order<span>*</span> </label>
+                                    <input type="text" id="Order" name="Order" placeholder="Enter a Order " required>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4">
+                                <div class="form_input d-flex flex-column gap-2">
+                                    <label for="code">Account Group Code<span>*</span> </label>
+                                    <input type="number" id="code" name="code" required>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4">
+                                <div class="slect-status">
+                                    <label for="acount_type" class="mb-2">Account Type <span class="red">*</span></label>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <select class="form-select" aria-label="select" id="acount_type" name="acount_type" required>
+                                        <option value="" disabled hidden selected>Select</option>
+                                        <option value="Present">Present</option>
+                                        <option value="Absent">Absent</option>
+                                        <option value="other">other</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4">
+                                <div class="slect-status">
+                                    <label for="bsheet" class="mb-2">Balance Sheet Type <span class="red">*</span></label>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <select class="form-select" aria-label="select" id="bsheet" name="bsheet" required>
+                                        <option value="" disabled hidden selected>Inventory </option>
+                                        <option value="Inventory">Inventory</option>
+                                        <option value="Carpenter">Carpenter</option>
+                                        <option value="Painter">Painter</option>
+                                        <option value="Worker">Worker</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="form_discard_save d-flex align-items-center gap-2 justify-content-end">
+                                    <button class="discard" type="button">Back</button>
+                                    <button type="submit" class="submit">Save</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Add Account Group pop up ends  -->
+
+<!-- Ledger Mapping popup  -->
+<div class="monthly_detail_popup_container acc_group_popup" id="monthly-popup">
+    <div class="outer_bg ledger_mapp_width">
+        <div class="monthly_update_details">
+
+            <div class="monthly_heading">
+                Ledger Mapping
+
+                <button type="button" id="CloseMonthlyPopup">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M9.99935 1.66602C5.40768 1.66602 1.66602 5.40768 1.66602 9.99935C1.66602 14.591 5.40768 18.3327 9.99935 18.3327C14.591 18.3327 18.3327 14.591 18.3327 9.99935C18.3327 5.40768 14.591 1.66602 9.99935 1.66602ZM12.7993 11.916C13.041 12.1577 13.041 12.5577 12.7993 12.7993C12.6743 12.9243 12.516 12.9827 12.3577 12.9827C12.1993 12.9827 12.041 12.9243 11.916 12.7993L9.99935 10.8827L8.08268 12.7993C7.95768 12.9243 7.79935 12.9827 7.64102 12.9827C7.48268 12.9827 7.32435 12.9243 7.19935 12.7993C6.95768 12.5577 6.95768 12.1577 7.19935 11.916L9.11602 9.99935L7.19935 8.08268C6.95768 7.84102 6.95768 7.44102 7.19935 7.19935C7.44102 6.95768 7.84102 6.95768 8.08268 7.19935L9.99935 9.11602L11.916 7.19935C12.1577 6.95768 12.5577 6.95768 12.7993 7.19935C13.041 7.44102 13.041 7.84102 12.7993 8.08268L10.8827 9.99935L12.7993 11.916Z" fill="#FF0000" />
+                    </svg>
+                </button>
+            </div>
+            <div class="admin_right_content ">
+
+                <div class="admin_list_heading d-flex flex-wrap align-items-center gap-1 gap-sm-3 justify-content-between ">
+                    <div class="left_heading">
+                        <h3>Ledger list</h3>
+                        <p>Cash & Bank</p>
+                    </div>
+                    <button class="add_acc_group mb-3 mb-lg-4 ms-auto" id="AddLedgerBtn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M9.99935 18.3346C14.5827 18.3346 18.3327 14.5846 18.3327 10.0013C18.3327 5.41797 14.5827 1.66797 9.99935 1.66797C5.41602 1.66797 1.66602 5.41797 1.66602 10.0013C1.66602 14.5846 5.41602 18.3346 9.99935 18.3346Z" stroke="#F5F5F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M6.66602 10H13.3327" stroke="#F5F5F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M10 13.3346V6.66797" stroke="#F5F5F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Add
+                    </button>
+                </div>
+
+                <div class="project_list_table">
+                    <div class="common_table">
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">SN</th>
+                                        <th scope="col">Ledger</th>
+                                        <th scope="col">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                <tbody>
+                                    <?php foreach (array_slice($projectList, 0, 12) as $project): ?>
+                                        <tr>
+                                            <th scope="row"><?= $project['id'] ?></th>
+                                            <td><?= $project['ledger'] ?></td>
+                                            <td>
+                                                <button class="change_ledger_btn">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                        <path d="M16.5 9C16.5 13.14 13.14 16.5 9 16.5C4.86 16.5 2.3325 12.33 2.3325 12.33M2.3325 12.33H5.7225M2.3325 12.33V16.08M1.5 9C1.5 4.86 4.83 1.5 9 1.5C14.0025 1.5 16.5 5.67 16.5 5.67M16.5 5.67V1.92M16.5 5.67H13.17" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    <?php endforeach; ?>
+                                </tbody>
+
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+
+                    <!-- show only 10 table content  -->
+
+                    <div class="mb-3 mt-3">
+                        <?php include 'inc/pagination.php' ?>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Ledger Mapping popup ends  -->
 
 <!-- Add Account Group pop up  -->
 <div class="add_account_group_popup">

@@ -2596,6 +2596,15 @@ SIDE BAR CSS ENDS
     stroke: var(--red) !important;
 }
 
+.change_ledger_btn{
+    background-color: transparent;
+    color: var(--text-dark2);
+    border: none;
+}
+.openLedgerPopup{
+    cursor: pointer;
+}
+
 /* ############## ACCOUNTING PAGE CSS ENDS ############### */
 
 

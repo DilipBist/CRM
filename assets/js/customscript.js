@@ -430,7 +430,8 @@ $(function () {
 
     // show and hide attendance 
     const monthAttBtn = $('.month_DaysContainer .month_Date');
-    const addAccBtn = $('#add_acc_group');
+    // const addAccBtn = $('#add_acc_group');
+    const addAccBtn = $('.add_acc_groupBtn');
     const AddLedgerBtn = $('#AddLedgerBtn');
     const AttendancePopup = $('.AttendancePopup');
     const attendance_popup_content = $('.attendance_popup_content');
