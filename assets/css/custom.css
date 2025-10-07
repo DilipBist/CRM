@@ -174,6 +174,10 @@ img {
 }
 
 /* ++++++++ table status color ++++++++ */
+.cursor-pointer {
+    cursor: pointer;
+}
+
 .deal_state {
     background-color: var(--deal-color);
     /* color: var(--text-dark); */
@@ -2193,9 +2197,6 @@ SIDE BAR CSS ENDS
     background-color: var(--active-bg);
 }
 
-.cursor-pointer {
-    cursor: pointer;
-}
 
 .track_list_container {
     display: flex;
@@ -2359,6 +2360,7 @@ SIDE BAR CSS ENDS
 }
 
 .account_buttons button,
+.print,
 .account_buttons .add_purchase,
 .ledger_common_btn {
     color: var(--primary-color);
@@ -2374,7 +2376,8 @@ SIDE BAR CSS ENDS
     font-weight: 400;
 }
 
-.account_buttons button.print {
+.account_buttons button.print,
+.print {
     background-color: var(--primary-color);
     color: var(--white);
 }
@@ -2385,7 +2388,8 @@ SIDE BAR CSS ENDS
     background-color: var(--Button-soft-color);
 }
 
-.account_buttons button.print:hover {
+.account_buttons button.print:hover,
+.print:hover {
     background-color: var(--button-focused);
 }
 
@@ -5527,6 +5531,124 @@ select option:not(:first-child) {
 /* *********************** backup and resotre page css ends *************** */
 
 
+/* ====================== trail balance page css starts ============= */
+.trail_container {
+    max-width: 1550px;
+    margin: auto;
+    padding-top: 24px;
+    padding-bottom: 44px;
+}
+
+.center_div_pagination .pagination_num {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--neutral-primay);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.center_div_pagination .pagination_num .box,
+.center_div_pagination .pagination_num .box2 {
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center_div_pagination .pagination_num .box.active {
+    border: 1px solid var(--Menu-Separator, #C2C2C2);
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.trail_print_table_container {
+    border: 0.5px solid var(--Menu-Separator, #C2C2C2);
+    margin-top: 44px;
+    background: var(--whiteFC, #FCFCFC);
+    box-shadow: 4px 6px 12px 0 rgba(0, 0, 0, 0.15);
+    padding-bottom: 22px;
+}
+
+.trial_print_table_header {
+    padding: 22px 53px;
+}
+
+.trail_print_table_container .print-body {
+    padding: 24px 53px 24px 53px;
+    border-top: 1px solid var(--Menu-Separator, #C2C2C2);
+    border-bottom: 1px solid var(--Menu-Separator, #C2C2C2);
+}
+
+.trail_logo img {
+    width: 82px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.trail_print_table_container .common_table .table tbody tr:nth-child(even) {
+    background-color: var(--whiteFA);
+}
+
+.trail_print_table_container .common_table .table th,
+.trail_print_table_container .common_table .table td {
+    border: 1px solid var(--Menu-Separator, #C2C2C2);
+}
+
+.trail_print_table_container .open_trail_table tfoot tr td {
+    font-size: 14px;
+    background-color: var(--whiteFA);
+    font-weight: 800;
+}
+
+.trail_print_footer {
+    padding: 24px 53px 0 53px;
+}
+
+.trail_print_footer p {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-dark2);
+}
+
+.center_print_div p {
+    color: var(--text-dark2, #141414);
+    margin: 0;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.center_print_div h4 {
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.last_trail_print_header_div p {
+    color: var(--text-dark2, #141414);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+.last_trail_print_header_div{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    text-align: end;
+}
+
+/* ====================== trail balance page ends ============= */
+
 
 /* *********************** PRINT MEDIA CODE ******************** */
 /* vocuhar print css  */
@@ -5739,7 +5861,8 @@ select option:not(:first-child) {
         justify-content: space-between;
     }
 
-    .payment_print_footer {
+    .payment_print_footer,
+    .trail_print_footer {
         margin-top: auto;
         /* prevent footer from splitting across pages */
         page-break-inside: avoid;
@@ -5861,6 +5984,10 @@ select option:not(:first-child) {
         font-size: 12px;
     }
 
+    .open_trail_table table tfoot tr td {
+        border: 1px solid #E9EAEB;
+    }
+
     #printableTable .activity_table .table th,
     #printableTable .backup_table .table th,
     #printableTable .backup_table .table td,
@@ -5877,16 +6004,40 @@ select option:not(:first-child) {
         color: var(--text-dark);
     }
 
-    .activity_table,
-    .backup_table {
-        zoom: 80%;
-    }
-
     .backup_table .action {
         display: none;
         visibility: none;
     }
 
+    .trial_print_table_header {
+        padding: 22px 0px;
+    }
+
+    .trail_print_table_container .print-body,
+    .trail_print_footer {
+        padding: 24px 0;
+    }
+
+    .trail_print_table_container .common_table .table th,
+    .trail_print_table_container .common_table .table td {
+        /* font-size: 9px; */
+        font-size: 12px;
+    }
+
+    .trail_print_table_container {
+        zoom: 85%;
+    }
+
+    .activity_table,
+    .backup_table {
+        zoom: 80%;
+    }
+
+    .trail_print_table_container .print-body {
+        border-bottom: 0;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
 }
 
 

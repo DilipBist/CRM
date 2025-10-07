@@ -26,7 +26,7 @@ include 'inc/header.php'
                 </div>
 
                 <div class="bread_crump_content d-flex align-items-center gap-2">
-                    <a href="opening-trails.php">Account Report  </a>
+                    <a href="opening-trails.php">Account Report </a>
                     <span>/</span>
                     <p> Opening Trail</p>
                 </div>
