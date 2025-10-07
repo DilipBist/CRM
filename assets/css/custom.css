@@ -5640,11 +5640,17 @@ select option:not(:first-child) {
     line-height: normal;
     margin: 0;
 }
-.last_trail_print_header_div{
+
+.last_trail_print_header_div {
     display: flex;
     flex-direction: column;
     gap: 9px;
     text-align: end;
+}
+
+.trail_balancedate .form_input input,
+.trail_balancedate .form-select {
+    background-color: transparent;
 }
 
 /* ====================== trail balance page ends ============= */
