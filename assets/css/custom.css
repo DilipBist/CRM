@@ -5798,7 +5798,6 @@ select option:not(:first-child) {
 
     .activity_table {
         zoom: 80%;
-        /* Reduce size slightly to fit on the page */
     }
 
 }
