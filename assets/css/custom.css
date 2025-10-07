@@ -5653,6 +5653,18 @@ select option:not(:first-child) {
     background-color: transparent;
 }
 
+.trail_table_heading,
+.c_total,
+.c1_total {
+    color: var(--text-dark2);
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.c_total {
+    text-align: end;
+}
+
 /* ====================== trail balance page ends ============= */
 
 

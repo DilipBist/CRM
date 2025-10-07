@@ -142,7 +142,7 @@ include 'inc/header.php'
                 </div>
             </div>
 
-            <div class="trail_print_table_container">
+            <!-- <div class="trail_print_table_container">
                 <div class=" common_table open_trail_table">
                     <div class="trial_print_table_header d-flex align-items-center gap-3 justify-content-between">
                         <div class="trail_logo">
@@ -217,7 +217,296 @@ include 'inc/header.php'
                         </div>
                     </div>
                 </div>
+            </div> -->
+
+
+            <!-- second group wise print table  -->
+            <div class="trail_print_table_container">
+                <div class=" common_table open_trail_table">
+                    <div class="trial_print_table_header d-flex align-items-center gap-3 justify-content-between">
+                        <div class="trail_logo">
+                            <img src="assets/images//logo.svg" alt="">
+                        </div>
+
+                        <div class="center_print_div addAssetBtn cursor-pointer">
+                            <h4>Trail Balance: Datewise</h4>
+                            <p>Data: 01/04/02082-30/04/2082</p>
+                        </div>
+
+                        <div class="last_trail_print_header_div">
+                            <p>S.T Builders Pvt.Ltd.</p>
+                            <p>Kathmandu-32,Koteshwor</p>
+                            <p>9863313584</p>
+                            <p>PAN: 601241851</p>
+                        </div>
+                    </div>
+                    <div class="print-body">
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="wrap_Text">Ledger</th>
+                                        <th scope="col">Opening Debit</th>
+                                        <th scope="col">Opening Credit</th>
+                                        <th scope="col">Debit Amount</th>
+                                        <th scope="col">Credit Amount</th>
+                                        <th scope="col">Closing Debit</th>
+                                        <th scope="col">Closing Credit</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- First group  -->
+                                    <tr>
+                                        <td colspan="7">
+                                            <div class="trail_table_heading">
+                                                Group : LIABILITES
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <?php foreach (array_slice($projectList, 0, 4) as $project): ?>
+                                        <tr>
+                                            <td class="wrap_Text"><?= $project['acc_g_name'] ?></td>
+                                            <td><?= $project['Quantity'] ?></td>
+                                            <td><?= $project['rate'] ?></td>
+                                            <td><?= $project['rate'] ?></td>
+                                            <td><?= $project['Quantity'] ?></td>
+                                            <td><?= $project['rate'] ?></td>
+                                            <td><?= $project['rate'] ?></td>
+                                        </tr>
+                                    <?php endforeach; ?>
+                                    <tr>
+                                        <td>
+                                            <div class="c_total">
+                                                Total
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="c1_total">
+                                                875,100.31
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="c1_total">
+                                                875,100.31
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="c1_total">
+                                                875,100.31
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="c1_total">
+                                                875,100.31
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="c1_total">
+                                                875,100.31
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="c1_total">
+                                                875,100.31
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <!-- First group  -->
+
+                                    <!-- second group  -->
+                                    <tr>
+                                        <td colspan="7">
+                                            <div class="trail_table_heading">
+                                                Group : EXPENDITURE
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <?php foreach (array_slice($projectList, 0, 4) as $project): ?>
+                                        <tr>
+                                            <td class="wrap_Text"><?= $project['acc_g_name'] ?></td>
+                                            <td><?= $project['Quantity'] ?></td>
+                                            <td>-- --</td>
+                                            <td><?= $project['rate'] ?></td>
+                                            <td><?= $project['Quantity'] ?></td>
+                                            <td><?= $project['rate'] ?></td>
+                                            <td><?= $project['rate'] ?></td>
+                                        </tr>
+                                    <?php endforeach; ?>
+                                    <tr>
+                                        <td>
+                                            <div class="c_total">
+                                                Total
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="c1_total">
+                                                875,100.31
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="c1_total">
+                                                -- --
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="c1_total">
+                                                875,100.31
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="c1_total">
+                                                875,100.31
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="c1_total">
+                                                875,100.31
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="c1_total">
+                                                875,100.31
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <!-- second group  -->
+
+                                    <!-- third group  -->
+                                    <tr>
+                                        <td colspan="7">
+                                            <div class="trail_table_heading">
+                                                Group : SUNDRY DEBTORS
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <?php foreach (array_slice($projectList, 0, 4) as $project): ?>
+                                        <tr>
+                                            <td class="wrap_Text"><?= $project['acc_g_name'] ?></td>
+                                            <td><?= $project['Quantity'] ?></td>
+                                            <td>-- --</td>
+                                            <td><?= $project['rate'] ?></td>
+                                            <td><?= $project['Quantity'] ?></td>
+                                            <td><?= $project['rate'] ?></td>
+                                            <td><?= $project['rate'] ?></td>
+                                        </tr>
+                                    <?php endforeach; ?>
+                                    <tr>
+                                        <td>
+                                            <div class="c_total">
+                                                Total
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="c1_total">
+                                                875,100.31
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="c1_total">
+                                                -- --
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="c1_total">
+                                                875,100.31
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="c1_total">
+                                                875,100.31
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="c1_total">
+                                                875,100.31
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="c1_total">
+                                                875,100.31
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <!-- third group  -->
+
+                                    <!-- second group  -->
+                                    <tr>
+                                        <td colspan="7">
+                                            <div class="trail_table_heading">
+                                                Group : EXPENDITURE
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <?php foreach (array_slice($projectList, 0, 4) as $project): ?>
+                                        <tr>
+                                            <td class="wrap_Text"><?= $project['acc_g_name'] ?></td>
+                                            <td><?= $project['Quantity'] ?></td>
+                                            <td>-- --</td>
+                                            <td><?= $project['rate'] ?></td>
+                                            <td><?= $project['Quantity'] ?></td>
+                                            <td><?= $project['rate'] ?></td>
+                                            <td><?= $project['rate'] ?></td>
+                                        </tr>
+                                    <?php endforeach; ?>
+                                    <tr>
+                                        <td>
+                                            <div class="c_total">
+                                                Total
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="c1_total">
+                                                875,100.31
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="c1_total">
+                                                -- --
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="c1_total">
+                                                875,100.31
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="c1_total">
+                                                875,100.31
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="c1_total">
+                                                875,100.31
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="c1_total">
+                                                875,100.31
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <!-- second group  -->
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="trail_print_footer ">
+                        <p>
+                            Filtered Based On: Branch: Head Office**First Segment: Bhupendra Malla’s Site***
+                        </p>
+
+                        <div class="d-flex align-items-center justify-content-between">
+                            <p>Printed Date and Time is 2082/04/30 15:29:15</p>
+
+                            <p>Page No: 1/3</p>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <!-- second group wise print table  -->
+
         </div>
 
     </div>
