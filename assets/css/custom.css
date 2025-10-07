@@ -294,6 +294,19 @@ img {
     text-transform: capitalize;
 }
 
+.success_status {
+    font-size: 14px;
+    color: var(--whiteFC);
+    font-weight: 700;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 12px;
+    border-radius: 12px;
+    background: var(--Neutral-Success, #00CC29);
+}
+
 /* custom container  */
 .l_container {
     width: 99%;
@@ -5768,6 +5781,24 @@ select option:not(:first-child) {
         font-weight: 800;
         color: var(--text-dark2);
         font-size: 12px;
+    }
+
+    #printableTable .activity_table .table th,
+    #printableTable .activity_table .table td {
+        font-size: 12px;
+    }
+
+    #printableTable .activity_table .table td .success_status {
+        padding: 0;
+        width: auto;
+        font-size: 12px;
+        font-weight: 400;
+        color: var(--text-dark);
+    }
+
+    .activity_table {
+        zoom: 80%;
+        /* Reduce size slightly to fit on the page */
     }
 
 }

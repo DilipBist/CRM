@@ -67,6 +67,7 @@ $projectList = [
         'p_status' => 'Approved',
         'p_class' => 'approved',
         'assign_class' => 'deal_state',
+        'action' => 'Insert',
 
     ],
     [
@@ -107,7 +108,8 @@ $projectList = [
         'requisationnumber' => '1241212593',
         'p_status' => 'Used on bill',
         'p_class' => 'bill',
-        'assign_class' => 'progress_state'
+        'assign_class' => 'progress_state',
+        'action' => 'Insert',
     ],
     [
         'id' => '03',
@@ -147,7 +149,8 @@ $projectList = [
         'requisationnumber' => '1241212593',
         'p_status' => 'Used on bill',
         'p_class' => 'bill',
-        'assign_class' => 'progress_state'
+        'assign_class' => 'progress_state',
+        'action' => 'update',
     ],
     [
         'id' => '04',
@@ -187,7 +190,8 @@ $projectList = [
         'p_status' => 'Approved',
         'p_class' => 'approved',
         'assign' => 'In Progress',
-        'assign_class' => 'progress_state'
+        'assign_class' => 'progress_state',
+        'action' => 'Insert',
 
     ],
     [
@@ -228,7 +232,8 @@ $projectList = [
         'p_status' => 'Unapproved',
         'p_class' => 'unapproved',
         'assign' => 'Just Started',
-        'assign_class' => 'deal_state'
+        'assign_class' => 'deal_state',
+        'action' => 'Approved',
     ],
     [
         'id' => '06',
@@ -268,7 +273,8 @@ $projectList = [
         'p_status' => 'Approved',
         'p_class' => 'approved',
         'assign' => 'In Progress',
-        'assign_class' => 'progress_state'
+        'assign_class' => 'progress_state',
+        'action' => 'Approved',
     ],
     [
         'id' => '07',
@@ -308,7 +314,8 @@ $projectList = [
         'p_status' => 'Approved',
         'p_class' => 'approved',
         'assign' => 'In Progress',
-        'assign_class' => 'progress_state'
+        'assign_class' => 'progress_state',
+        'action' => 'Update',
     ],
     [
         'id' => '08',
@@ -348,7 +355,8 @@ $projectList = [
         'p_status' => 'Used on bill',
         'p_class' => 'bill',
         'assign' => 'Just Started',
-        'assign_class' => 'deal_state'
+        'assign_class' => 'deal_state',
+        'action' => 'Approved',
     ],
     [
         'id' => '09',
@@ -387,7 +395,8 @@ $projectList = [
         'p_status' => 'Unapproved',
         'p_class' => 'unapproved',
         'assign' => 'Just Started',
-        'assign_class' => 'deal_state'
+        'assign_class' => 'deal_state',
+        'action' => 'Insert',
     ],
     [
         'id' => '10',
@@ -426,7 +435,8 @@ $projectList = [
         'p_status' => 'Approved',
         'p_class' => 'approved',
         'assign' => 'In Progress',
-        'assign_class' => 'progress_state'
+        'assign_class' => 'progress_state',
+        'action' => 'Insert',
     ],
     [
         'id' => '11',
@@ -465,7 +475,8 @@ $projectList = [
         'p_status' => 'Approved',
         'p_class' => 'approved',
         'assign' => 'In Progress',
-        'assign_class' => 'progress_state'
+        'assign_class' => 'progress_state',
+        'action' => 'Approved',
 
     ],
     [
@@ -501,7 +512,8 @@ $projectList = [
         'p_status' => 'Unapproved',
         'p_class' => 'unapproved',
         'assign' => 'In Progress',
-        'assign_class' => 'progress_state'
+        'assign_class' => 'progress_state',
+        'action' => 'update',
     ],
     [
         'id' => '13',
@@ -531,7 +543,8 @@ $projectList = [
         'requisationnumber' => '1241212593',
         'assign' => 'In Progress',
         'rate' => '1,196,000',
-        'assign_class' => 'progress_state'
+        'assign_class' => 'progress_state',
+        'action' => 'update',
     ],
     [
         'id' => '14',
@@ -560,7 +573,8 @@ $projectList = [
         'timing' => '10:00 AM-05:30 PM',
         'assign' => 'In Progress',
         'rate' => '1,196,000',
-        'assign_class' => 'progress_state'
+        'assign_class' => 'progress_state',
+        'action' => 'update',
     ],
     [
         'id' => '15',
@@ -590,6 +604,7 @@ $projectList = [
         'assing' => 'Just Started',
         'assign' => 'Just Started',
         'rate' => '1,196,000',
-        'assign_class' => 'deal_state'
+        'assign_class' => 'deal_state',
+        'action' => 'Insert',
     ],
 ];
