@@ -1,5 +1,5 @@
 <?php
-$pageTitle = 'Activity List';
+$pageTitle = 'Backup and Restore';
 include 'inc/header.php'
 ?>
 
@@ -11,7 +11,7 @@ include 'inc/header.php'
 
 
     <?php
-    $currentPage = 'ActivityList';
+    $currentPage = 'BackupRestore';
     include 'inc/side-bar.php';
     ?>
 
@@ -29,7 +29,7 @@ include 'inc/header.php'
                 <div class="bread_crump_content d-flex align-items-center gap-2">
                     <a href="#">Data Management </a>
                     <span>/</span>
-                    <p>Activity Logs</p>
+                    <p>Backup & Restore</p>
                 </div>
             </div>
 
@@ -44,75 +44,360 @@ include 'inc/header.php'
 
         <div class="admin_list_heading d-flex align-items-center flex-wrap gap-3 justify-content-between outer_padding">
             <div class="left_heading">
-                <h3>Activity List</h3>
+                <h3>Backup & Restore</h3>
                 <p>You can view the Ledger list accordingly.</p>
-            </div>
-
-            <div class="right_fil_div d-flex align-items-center gap-2 flex-wrap justify-content-md-end">
-                <!-- <div class="search">
-                    <input type="text" placeholder="Search" name="search">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                        <path d="M7.66634 14.0007C11.1641 14.0007 13.9997 11.1651 13.9997 7.66732C13.9997 4.16951 11.1641 1.33398 7.66634 1.33398C4.16854 1.33398 1.33301 4.16951 1.33301 7.66732C1.33301 11.1651 4.16854 14.0007 7.66634 14.0007Z" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M14.6663 14.6673L13.333 13.334" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-
-                </div>
-                <div class="filter">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <path d="M9.11634 18.875C8.71634 18.875 8.32467 18.775 7.95801 18.575C7.22467 18.1667 6.78301 17.425 6.78301 16.5917V12.175C6.78301 11.7583 6.50801 11.1333 6.24967 10.8167L3.13301 7.51667C2.60801 6.99167 2.20801 6.09167 2.20801 5.41667V3.5C2.20801 2.16667 3.21634 1.125 4.49967 1.125H15.4997C16.7663 1.125 17.7913 2.15 17.7913 3.41667V5.25C17.7913 6.125 17.2663 7.11667 16.7747 7.60833L13.1663 10.8C12.8163 11.0917 12.5413 11.7333 12.5413 12.25V15.8333C12.5413 16.575 12.0747 17.4333 11.4913 17.7833L10.3413 18.525C9.96634 18.7583 9.54134 18.875 9.11634 18.875ZM4.49967 2.375C3.91634 2.375 3.45801 2.86667 3.45801 3.5V5.41667C3.45801 5.725 3.70801 6.325 4.02467 6.64167L7.19967 9.98333C7.62467 10.5083 8.04134 11.3833 8.04134 12.1667V16.5833C8.04134 17.125 8.41634 17.3917 8.57467 17.475C8.92467 17.6667 9.34967 17.6667 9.67467 17.4667L10.833 16.725C11.0663 16.5833 11.2997 16.1333 11.2997 15.8333V12.25C11.2997 11.3583 11.733 10.375 12.358 9.85L15.9247 6.69167C16.208 6.40833 16.5497 5.73333 16.5497 5.24167V3.41667C16.5497 2.84167 16.083 2.375 15.508 2.375H4.49967Z" fill="#141414" />
-                        <path d="M5.00006 8.95741C4.88339 8.95741 4.77506 8.92408 4.66672 8.86575C4.37506 8.68241 4.28339 8.29075 4.46672 7.99908L8.57506 1.41575C8.75839 1.12408 9.14172 1.03241 9.43339 1.21575C9.72506 1.39908 9.81672 1.78241 9.63339 2.07408L5.52506 8.65741C5.40839 8.84908 5.20839 8.95741 5.00006 8.95741Z" fill="#141414" />
-                    </svg>
-                </div> -->
-
-                <div class="account_buttons d-flex align-items-center gap-2 flex-wrap">
-                    <?php include 'components/search.php' ?>
-                    <?php
-                    $title = "Purchase Requisition";
-                    $formId = "purchaseForm";
-                    $redirectPage = "purchase-requisation.php";
-                    include 'components/asset-filter.php';
-                    ?>
-
-
-                    <button class="" type="button" onclick="window.print()">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <path d="M6.04297 5.83464H13.9596V4.16797C13.9596 2.5013 13.3346 1.66797 11.4596 1.66797H8.54297C6.66797 1.66797 6.04297 2.5013 6.04297 4.16797V5.83464Z" stroke="#005399" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M13.3346 12.5V15.8333C13.3346 17.5 12.5013 18.3333 10.8346 18.3333H9.16797C7.5013 18.3333 6.66797 17.5 6.66797 15.8333V12.5H13.3346Z" stroke="#005399" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M17.5 8.33203V12.4987C17.5 14.1654 16.6667 14.9987 15 14.9987H13.3333V12.4987H6.66667V14.9987H5C3.33333 14.9987 2.5 14.1654 2.5 12.4987V8.33203C2.5 6.66536 3.33333 5.83203 5 5.83203H15C16.6667 5.83203 17.5 6.66536 17.5 8.33203Z" stroke="#005399" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M14.1654 12.5H13.157H5.83203" stroke="#005399" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M5.83203 9.16797H8.33203" stroke="#005399" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                        Print
-                    </button>
-
-                </div>
-                <div class="add_expenses activity_list_dropdown position-relative" id="AddExpenseBtn">
-                    Choose Role
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none" class="expIcon">
-                        <path d="M16.5984 7.95898L11.1651 13.3923C10.5234 14.034 9.47344 14.034 8.83177 13.3923L3.39844 7.95898" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-
-                    <div class="add_exprense_dropdown_container">
-                        <a href="#">
-                            Admin
-                        </a>
-                        <a href="#">
-                            Project Manager
-                        </a>
-                        <a href="#">
-                            HR Manager
-                        </a>
-                        <a href="#">
-                            Accountant
-                        </a>
-                        <a href="#">
-                            Client
-                        </a>
-                    </div>
-                </div>
             </div>
         </div>
 
+
+        <div class="pl_pr">
+            <div class="backup_filter_button_container d-flex align-items-center gap-3 flex-wrap">
+                <button class="active" data-filter="backup">Backup</button>
+                <button data-filter="upload_restore">Upload & Restore</button>
+            </div>
+
+
+            <div class="backupfilterable_data">
+                <!-- backup data div  -->
+                <div class="data active" data-category="backup">
+                    <div class="account_buttons d-flex align-items-center gap-2 flex-wrap">
+                        <div class="right_fil_div d-flex align-items-center gap-2 flex-wrap justify-content-md-end">
+                            <div class="search">
+                                <input type="text" placeholder="Backup File Name" name="search">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M7.66634 14.0007C11.1641 14.0007 13.9997 11.1651 13.9997 7.66732C13.9997 4.16951 11.1641 1.33398 7.66634 1.33398C4.16854 1.33398 1.33301 4.16951 1.33301 7.66732C1.33301 11.1651 4.16854 14.0007 7.66634 14.0007Z" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M14.6663 14.6673L13.333 13.334" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+
+                            </div>
+
+                            <?php
+                            $title = "Backup Search Form";
+                            include 'components/asset-filter.php';
+                            ?>
+                        </div>
+
+                        <button class="" type="button" onclick="window.print()">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M6.04297 5.83464H13.9596V4.16797C13.9596 2.5013 13.3346 1.66797 11.4596 1.66797H8.54297C6.66797 1.66797 6.04297 2.5013 6.04297 4.16797V5.83464Z" stroke="#005399" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M13.3346 12.5V15.8333C13.3346 17.5 12.5013 18.3333 10.8346 18.3333H9.16797C7.5013 18.3333 6.66797 17.5 6.66797 15.8333V12.5H13.3346Z" stroke="#005399" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M17.5 8.33203V12.4987C17.5 14.1654 16.6667 14.9987 15 14.9987H13.3333V12.4987H6.66667V14.9987H5C3.33333 14.9987 2.5 14.1654 2.5 12.4987V8.33203C2.5 6.66536 3.33333 5.83203 5 5.83203H15C16.6667 5.83203 17.5 6.66536 17.5 8.33203Z" stroke="#005399" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M14.1654 12.5H13.157H5.83203" stroke="#005399" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M5.83203 9.16797H8.33203" stroke="#005399" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            Print
+                        </button>
+
+                        <button class="export" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M13.6997 7.41797C16.6997 7.6763 17.9247 9.21797 17.9247 12.593V12.7013C17.9247 16.4263 16.4331 17.918 12.7081 17.918H7.28307C3.55807 17.918 2.06641 16.4263 2.06641 12.7013V12.593C2.06641 9.24297 3.27474 7.7013 6.22474 7.4263" stroke="#005399" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M10 12.499V3.01562" stroke="#005399" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.7923 4.8737L10.0007 2.08203L7.20898 4.8737" stroke="#005399" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            Export
+                        </button>
+
+                        <button class="print">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M10.0013 18.3346C14.5846 18.3346 18.3346 14.5846 18.3346 10.0013C18.3346 5.41797 14.5846 1.66797 10.0013 1.66797C5.41797 1.66797 1.66797 5.41797 1.66797 10.0013C1.66797 14.5846 5.41797 18.3346 10.0013 18.3346Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M6.66797 10H13.3346" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M10 13.3346V6.66797" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            Backup
+                        </button>
+                    </div>
+                </div>
+                <!-- backup data div  -->
+
+                <!-- uplaod and restore data  -->
+                <div class="data" data-category="upload_restore">
+                    <div class="account_buttons d-flex align-items-center gap-2 flex-wrap">
+                        <div class="right_fil_div d-flex align-items-center gap-2 flex-wrap justify-content-md-end">
+                            <div class="search">
+                                <input type="text" placeholder="Backup File Name" name="search">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M7.66634 14.0007C11.1641 14.0007 13.9997 11.1651 13.9997 7.66732C13.9997 4.16951 11.1641 1.33398 7.66634 1.33398C4.16854 1.33398 1.33301 4.16951 1.33301 7.66732C1.33301 11.1651 4.16854 14.0007 7.66634 14.0007Z" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M14.6663 14.6673L13.333 13.334" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+
+                            </div>
+
+                            <?php
+                            $title = "Backup Search Form";
+                            include 'components/asset-filter.php';
+                            ?>
+                        </div>
+
+                        <button class="" type="button" onclick="window.print()">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M6.04297 5.83464H13.9596V4.16797C13.9596 2.5013 13.3346 1.66797 11.4596 1.66797H8.54297C6.66797 1.66797 6.04297 2.5013 6.04297 4.16797V5.83464Z" stroke="#005399" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M13.3346 12.5V15.8333C13.3346 17.5 12.5013 18.3333 10.8346 18.3333H9.16797C7.5013 18.3333 6.66797 17.5 6.66797 15.8333V12.5H13.3346Z" stroke="#005399" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M17.5 8.33203V12.4987C17.5 14.1654 16.6667 14.9987 15 14.9987H13.3333V12.4987H6.66667V14.9987H5C3.33333 14.9987 2.5 14.1654 2.5 12.4987V8.33203C2.5 6.66536 3.33333 5.83203 5 5.83203H15C16.6667 5.83203 17.5 6.66536 17.5 8.33203Z" stroke="#005399" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M14.1654 12.5H13.157H5.83203" stroke="#005399" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M5.83203 9.16797H8.33203" stroke="#005399" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            Print
+                        </button>
+
+                        <button class="export" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M13.6997 7.41797C16.6997 7.6763 17.9247 9.21797 17.9247 12.593V12.7013C17.9247 16.4263 16.4331 17.918 12.7081 17.918H7.28307C3.55807 17.918 2.06641 16.4263 2.06641 12.7013V12.593C2.06641 9.24297 3.27474 7.7013 6.22474 7.4263" stroke="#005399" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M10 12.499V3.01562" stroke="#005399" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.7923 4.8737L10.0007 2.08203L7.20898 4.8737" stroke="#005399" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            Export
+                        </button>
+
+                        <button class="print">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M10.0013 18.3346C14.5846 18.3346 18.3346 14.5846 18.3346 10.0013C18.3346 5.41797 14.5846 1.66797 10.0013 1.66797C5.41797 1.66797 1.66797 5.41797 1.66797 10.0013C1.66797 14.5846 5.41797 18.3346 10.0013 18.3346Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M6.66797 10H13.3346" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M10 13.3346V6.66797" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            Upload & Restore
+                        </button>
+                    </div>
+                </div>
+                <!-- upload and restore data end -->
+            </div>
+
+
+            <!-- backup data table  -->
+            <div id="printableTable">
+                <div class="common_table backup_table">
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="wrap_Text">Database Name</th>
+                                    <th scope="col" class="wrap_Text">Backup start date </th>
+                                    <th scope="col" class="wrap_Text">End start date</th>
+                                    <th scope="col" class="wrap_Text">Type Database</th>
+                                    <th scope="col" class="wrap_Text">Backup file name</th>
+                                    <th scope="col">File Size</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col" class="action">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            <tbody>
+                                <tr>
+                                    <td class="wrap_Text">PENAHAK_demo</td>
+                                    <td>
+                                        <div class="table_Date_container">
+                                            <p>2025-08-07</p>
+                                            <p>09:15:22</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table_Date_container">
+                                            <p>2025-08-07</p>
+                                            <p>09:15:22</p>
+                                        </div>
+                                    </td>
+                                    <td class="wrap_Text">PANAHAK_COMPANY_DB</td>
+                                    <td class="wrap_Text">D:\DATA\BACKUP\demo\e661cca2-1c78-4b2f-9e19-56080edc9d0a.bak</td>
+                                    <td class="wrap_Text">34 MB</td>
+                                    <td>
+                                        <div class="success_status">
+                                            Success
+                                        </div>
+                                    </td>
+                                    <td class="wrap_Text action">
+                                        <!-- not aviable  -->
+                                        <div class="not-available">
+                                            Not Available
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="wrap_Text">PENAHAK_demo</td>
+                                    <td>
+                                        <div class="table_Date_container">
+                                            <p>2025-08-07</p>
+                                            <p>09:15:22</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table_Date_container">
+                                            <p>2025-08-07</p>
+                                            <p>09:15:22</p>
+                                        </div>
+                                    </td>
+                                    <td class="wrap_Text">PANAHAK_COMPANY_DB</td>
+                                    <td class="wrap_Text">D:\DATA\BACKUP\demo\e661cca2-1c78-4b2f-9e19-56080edc9d0a.bak</td>
+                                    <td class="wrap_Text">34 MB</td>
+                                    <td>
+                                        <div class="text-center">
+                                            -----
+                                        </div>
+                                    </td>
+                                    <td class="wrap_Text action">
+                                        <div class="d-flex align-items-center gap-2 justify-content-center">
+                                            <div class="refresh">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                                                    <path d="M9.5 22H15.5C20.5 22 22.5 20 22.5 15V9C22.5 4 20.5 2 15.5 2H9.5C4.5 2 2.5 4 2.5 9V15C2.5 20 4.5 22 9.5 22Z" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M18 12C18 15.04 15.54 17.5 12.5 17.5C9.46 17.5 7.60999 14.44 7.60999 14.44M7.60999 14.44H10.09M7.60999 14.44V17.19M7 12C7 8.96 9.44 6.5 12.5 6.5C16.17 6.5 18 9.56 18 9.56M18 9.56V6.81M18 9.56H15.56" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="download">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                                                    <path d="M14.0523 10.8242L9.49977 15.3767L4.94727 10.8242" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M9.5 2.625V15.2475" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="wrap_Text">PENAHAK_demo</td>
+                                    <td>
+                                        <div class="table_Date_container">
+                                            <p>2025-08-07</p>
+                                            <p>09:15:22</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table_Date_container">
+                                            <p>2025-08-07</p>
+                                            <p>09:15:22</p>
+                                        </div>
+                                    </td>
+                                    <td class="wrap_Text">PANAHAK_COMPANY_DB</td>
+                                    <td class="wrap_Text">D:\DATA\BACKUP\demo\e661cca2-1c78-4b2f-9e19-56080edc9d0a.bak</td>
+                                    <td class="wrap_Text">34 MB</td>
+                                    <td>
+                                        <div class="success_status">
+                                            Success
+                                        </div>
+                                    </td>
+                                    <td class="wrap_Text action">
+                                        <!-- not aviable  -->
+                                        <div class="not-available">
+                                            Not Available
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="wrap_Text">PENAHAK_demo</td>
+                                    <td>
+                                        <div class="table_Date_container">
+                                            <p>2025-08-07</p>
+                                            <p>09:15:22</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table_Date_container">
+                                            <p>2025-08-07</p>
+                                            <p>09:15:22</p>
+                                        </div>
+                                    </td>
+                                    <td class="wrap_Text">PANAHAK_COMPANY_DB</td>
+                                    <td class="wrap_Text">D:\DATA\BACKUP\demo\e661cca2-1c78-4b2f-9e19-56080edc9d0a.bak</td>
+                                    <td class="wrap_Text">34 MB</td>
+                                    <td>
+                                        <div class="text-center">
+                                            -----
+                                        </div>
+                                    </td>
+                                    <td class="wrap_Text action">
+                                        <div class="d-flex align-items-center gap-2 justify-content-center">
+                                            <div class="refresh">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                                                    <path d="M9.5 22H15.5C20.5 22 22.5 20 22.5 15V9C22.5 4 20.5 2 15.5 2H9.5C4.5 2 2.5 4 2.5 9V15C2.5 20 4.5 22 9.5 22Z" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M18 12C18 15.04 15.54 17.5 12.5 17.5C9.46 17.5 7.60999 14.44 7.60999 14.44M7.60999 14.44H10.09M7.60999 14.44V17.19M7 12C7 8.96 9.44 6.5 12.5 6.5C16.17 6.5 18 9.56 18 9.56M18 9.56V6.81M18 9.56H15.56" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="download">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                                                    <path d="M14.0523 10.8242L9.49977 15.3767L4.94727 10.8242" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M9.5 2.625V15.2475" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="wrap_Text">PENAHAK_demo</td>
+                                    <td>
+                                        <div class="table_Date_container">
+                                            <p>2025-08-07</p>
+                                            <p>09:15:22</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table_Date_container">
+                                            <p>2025-08-07</p>
+                                            <p>09:15:22</p>
+                                        </div>
+                                    </td>
+                                    <td class="wrap_Text">PANAHAK_COMPANY_DB</td>
+                                    <td class="wrap_Text">D:\DATA\BACKUP\demo\e661cca2-1c78-4b2f-9e19-56080edc9d0a.bak</td>
+                                    <td class="wrap_Text">34 MB</td>
+                                    <td>
+                                        <div class="success_status">
+                                            Success
+                                        </div>
+                                    </td>
+                                    <td class="wrap_Text action">
+                                        <!-- not aviable  -->
+                                        <div class="not-available">
+                                            Not Available
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="wrap_Text">PENAHAK_demo</td>
+                                    <td>
+                                        <div class="table_Date_container">
+                                            <p>2025-08-07</p>
+                                            <p>09:15:22</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table_Date_container">
+                                            <p>2025-08-07</p>
+                                            <p>09:15:22</p>
+                                        </div>
+                                    </td>
+                                    <td class="wrap_Text">PANAHAK_COMPANY_DB</td>
+                                    <td class="wrap_Text">D:\DATA\BACKUP\demo\e661cca2-1c78-4b2f-9e19-56080edc9d0a.bak</td>
+                                    <td class="wrap_Text">34 MB</td>
+                                    <td>
+                                        <div class="text-center">
+                                            -----
+                                        </div>
+                                    </td>
+                                    <td class="wrap_Text action">
+                                        <div class="d-flex align-items-center gap-2 justify-content-center">
+                                            <div class="refresh">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                                                    <path d="M9.5 22H15.5C20.5 22 22.5 20 22.5 15V9C22.5 4 20.5 2 15.5 2H9.5C4.5 2 2.5 4 2.5 9V15C2.5 20 4.5 22 9.5 22Z" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M18 12C18 15.04 15.54 17.5 12.5 17.5C9.46 17.5 7.60999 14.44 7.60999 14.44M7.60999 14.44H10.09M7.60999 14.44V17.19M7 12C7 8.96 9.44 6.5 12.5 6.5C16.17 6.5 18 9.56 18 9.56M18 9.56V6.81M18 9.56H15.56" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <div class="download">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                                                    <path d="M14.0523 10.8242L9.49977 15.3767L4.94727 10.8242" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M9.5 2.625V15.2475" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-5 mt-3">
+                <?php include 'inc/pagination.php' ?>
+            </div>
+            <!-- backup data table  -->
+
+        </div>
 
 
     </div>

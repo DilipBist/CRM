@@ -149,9 +149,7 @@ include 'inc/header.php'
                 <div class="account_buttons d-flex align-items-center gap-2 flex-wrap">
                     <?php include 'components/search.php' ?>
                     <?php
-                    $title = "Purchase Requisition";
-                    $formId = "purchaseForm";
-                    $redirectPage = "purchase-requisation.php";
+                    $title = "PDC Form";
                     include 'components/asset-filter.php';
                     ?>
 

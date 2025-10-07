@@ -93,7 +93,7 @@ include 'inc/header.php'
             </button>
         </div>
 
-        <div class="tracking-data-wrapper pl_pr mt-3 mb-5" data-="">
+        <div class="tracking-data-wrapper pl_pr mt-3 mb-5">
             <div class="left_div track_filter_container">
 
                 <!-- live data div  -->

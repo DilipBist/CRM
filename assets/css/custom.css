@@ -307,6 +307,19 @@ img {
     background: var(--Neutral-Success, #00CC29);
 }
 
+.not-available {
+    display: flex;
+    width: 94px;
+    padding: 6px 12px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background: #8B969F;
+    font-size: 14px;
+    color: #F5F5F5;
+    font-weight: 700;
+}
+
 /* custom container  */
 .l_container {
     width: 99%;
@@ -5448,6 +5461,71 @@ select option:not(:first-child) {
 
 /* ============= INVENTORY CSS END============ */
 
+/* *********************** backup and resotre page css starts *************** */
+.backup_filter_button_container {
+    border-bottom: 1px solid var(--Neutral-Separator, #EBEBEB);
+}
+
+.backup_filter_button_container button {
+    border: none;
+    background-color: transparent;
+    color: var(--text-dark2, #141414);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    padding-bottom: 12px;
+    position: relative;
+}
+
+.backup_filter_button_container button.active {
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.backup_filter_button_container button.active::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    height: 1px;
+    left: 0;
+}
+
+.backupfilterable_data {
+    padding: 24px 0;
+}
+
+.backupfilterable_data .data {
+    display: none;
+    align-items: center;
+    justify-content: end;
+}
+
+.backupfilterable_data .active {
+    display: flex;
+}
+
+
+.table_Date_container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.table_Date_container p {
+    margin: 0;
+}
+
+.refresh,
+.download {
+    cursor: pointer;
+}
+
+/* *********************** backup and resotre page css ends *************** */
+
 
 
 /* *********************** PRINT MEDIA CODE ******************** */
@@ -5784,11 +5862,14 @@ select option:not(:first-child) {
     }
 
     #printableTable .activity_table .table th,
+    #printableTable .backup_table .table th,
+    #printableTable .backup_table .table td,
     #printableTable .activity_table .table td {
         font-size: 12px;
     }
 
-    #printableTable .activity_table .table td .success_status {
+    #printableTable .activity_table .table td .success_status,
+    #printableTable .backup_table .table td .success_status {
         padding: 0;
         width: auto;
         font-size: 12px;
@@ -5796,8 +5877,14 @@ select option:not(:first-child) {
         color: var(--text-dark);
     }
 
-    .activity_table {
+    .activity_table,
+    .backup_table {
         zoom: 80%;
+    }
+
+    .backup_table .action {
+        display: none;
+        visibility: none;
     }
 
 }

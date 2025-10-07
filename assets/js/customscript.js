@@ -23,7 +23,10 @@ document.addEventListener("DOMContentLoaded", () => {
     initFileUpload();
     initFileImport();
     initDelRow();
-    initLocationTrackFilter();
+    // Initialize Location Track Filter
+    initFilter('.location_track_btns', '.track_filter_container');
+    // Initialize Backup / Upload Filter
+    initFilter('.backup_filter_button_container', '.backupfilterable_data');
     initLabourPopup();
     initAddLabour();
     initUserPopup();
@@ -760,6 +763,7 @@ function initTaskListPopup() {
         });
     }
 }
+
 // open list massage popup 
 function initTaskMsgPopup() {
     const popupbg = document.querySelector('.list_msg_pop_bg');
@@ -804,6 +808,7 @@ function updateDate() {
     });
 }
 
+// make table cells editable 
 function makeCellsEditable() {
     const td = document.querySelectorAll('.printing_vouchar_container .table tbody td');
     const closeBtn = document.querySelector('.close_focus');
@@ -939,6 +944,8 @@ function initFileUpload() {
         });
     });
 };
+
+
 // Preview function
 function showPreview(fileInput, preview, placeholder) {
     if (!fileInput || !preview || !placeholder) return;
@@ -1011,11 +1018,11 @@ function initFileImport() {
     });
 }
 
+//  ********* filter fucntionality on click (for location and the backuprestore page) ****************** 
 
-// location track filter  track details
-function initLocationTrackFilter() {
-    const buttons = document.querySelectorAll('.location_track_btns button');
-    const items = document.querySelectorAll('.track_filter_container .track_item');
+function initFilter(buttonContainerSelector, itemContainerSelector) {
+    const buttons = document.querySelectorAll(`${buttonContainerSelector} button`);
+    const items = document.querySelectorAll(`${itemContainerSelector} .track_item, ${itemContainerSelector} .data`);
 
     if (!buttons || !items) return;
     buttons.forEach(btn => {
