@@ -149,7 +149,7 @@ include 'inc/header.php'
                             <img src="assets/images//logo.svg" alt="">
                         </div>
 
-                        <div class="center_print_div addAssetBtn cursor-pointer">
+                        <div class="center_print_div addAssetBtn cursor-pointer text-center">
                             <h4>Trail Balance: Datewise</h4>
                             <p>Data: 01/04/02082-30/04/2082</p>
                         </div>
@@ -228,7 +228,7 @@ include 'inc/header.php'
                             <img src="assets/images//logo.svg" alt="">
                         </div>
 
-                        <div class="center_print_div addAssetBtn cursor-pointer">
+                        <div class="center_print_div addAssetBtn cursor-pointer text-center">
                             <h4>Trail Balance: Datewise</h4>
                             <p>Data: 01/04/02082-30/04/2082</p>
                         </div>
