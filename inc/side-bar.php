@@ -353,8 +353,10 @@
 
                                 <a href="#" class="menu-item accordion-button <?php echo ($currentPage === 'openTrail' || $currentPage === 'trailBalance' || $currentPage === 'balanceSheet' || $currentPage === 'profitLoss' || $currentPage === 'daybook' || $currentPage === 'gledger') ? '' : 'collapsed'; ?>" data-bs-toggle="collapse" data-bs-target="#menu-collapse-two" aria-expanded="<?php echo ($currentPage === 'openTrail' || $currentPage === 'trailBalance' || $currentPage === 'balanceSheet' || $currentPage === 'profitLoss' || $currentPage === 'daybook' || $currentPage === 'gledger') ? 'true' : 'false'; ?>"
                                     aria-controls="menu-collapse-two">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                                        <path d="M14.6329 4.3875L10.1779 1.815C9.45043 1.395 8.55043 1.395 7.81543 1.815L3.36793 4.3875C2.64043 4.8075 2.19043 5.5875 2.19043 6.435V11.565C2.19043 12.405 2.64043 13.185 3.36793 13.6125L7.82293 16.185C8.55043 16.605 9.45043 16.605 10.1854 16.185L14.6404 13.6125C15.3679 13.1925 15.8179 12.4125 15.8179 11.565V6.435C15.8104 5.5875 15.3604 4.815 14.6329 4.3875ZM9.00043 5.505C9.96793 5.505 10.7479 6.285 10.7479 7.2525C10.7479 8.22 9.96793 9 9.00043 9C8.03293 9 7.25293 8.22 7.25293 7.2525C7.25293 6.2925 8.03293 5.505 9.00043 5.505ZM11.0104 12.495H6.99043C6.38293 12.495 6.03043 11.82 6.36793 11.3175C6.87793 10.56 7.86793 10.05 9.00043 10.05C10.1329 10.05 11.1229 10.56 11.6329 11.3175C11.9704 11.8125 11.6104 12.495 11.0104 12.495Z" fill="#FCFCFC" />
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none">
+                                        <path d="M22 4.66994V16.74C22 17.7 21.22 18.5999 20.26 18.7199L19.93 18.76C17.75 19.05 14.39 20.1599 12.47 21.2199C12.21 21.3699 11.78 21.3699 11.51 21.2199L11.47 21.2C9.54997 20.15 6.20003 19.05 4.03003 18.76L3.73999 18.7199C2.77999 18.5999 2 17.7 2 16.74V4.65993C2 3.46993 2.96997 2.56994 4.15997 2.66994C6.25997 2.83994 9.43997 3.89997 11.22 5.00997L11.47 5.15993C11.76 5.33994 12.24 5.33994 12.53 5.15993L12.7 5.04995C13.33 4.65995 14.13 4.26994 15 3.91994V7.99996L17 6.66994L19 7.99996V2.77999C19.27 2.72999 19.53 2.69995 19.77 2.67995H19.83C21.02 2.57995 22 3.46994 22 4.66994Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M12 5.48999V20.49" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M19 2.78003V8L17 6.66998L15 8V3.91998C16.31 3.39998 17.77 2.98003 19 2.78003Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                     Account Reports
                                 </a>
@@ -420,6 +422,115 @@
                                             <path d="M21 16L15 22V19C15 17 16 16 18 16H21Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                         </svg>
                                         General ledger
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="admin_dash_cat">
+                <h6>HRMS Management</h6>
+
+                <div class="admin_dash_btns">
+
+                    <div class="accordion d-flex flex-column gap-2">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+
+                                <a href="#" class="menu-item accordion-button <?php echo ($currentPage === '' || $currentPage === '' || $currentPage === '' || $currentPage === '' || $currentPage === '' || $currentPage === '') ? '' : 'collapsed'; ?>" data-bs-toggle="collapse" data-bs-target="#menu-collapse-hrm" aria-expanded="<?php echo ($currentPage === '' || $currentPage === '' || $currentPage === '' || $currentPage === '' || $currentPage === '' || $currentPage === '') ? 'true' : 'false'; ?>"
+                                    aria-controls="menu-collapse-hrm">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none">
+                                        <path opacity="0.8" d="M14.4404 19.0498L15.9604 20.5698L19.0004 17.5298" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path opacity="0.8" d="M12.1596 10.87C12.0596 10.86 11.9396 10.86 11.8296 10.87C9.44961 10.79 7.55961 8.84 7.55961 6.44C7.54961 3.99 9.53961 2 11.9896 2C14.4396 2 16.4296 3.99 16.4296 6.44C16.4296 8.84 14.5296 10.79 12.1596 10.87Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M11.99 21.8102C10.17 21.8102 8.36004 21.3502 6.98004 20.4302C4.56004 18.8102 4.56004 16.1702 6.98004 14.5602C9.73004 12.7202 14.24 12.7202 16.99 14.5602" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    HRMS
+                                </a>
+                            </h2>
+                            <div id="menu-collapse-hrm" class="accordion-collapse collapse <?php echo ($currentPage === '' || $currentPage === '' || $currentPage === '' || $currentPage === '' || $currentPage === '' || $currentPage === '') ? 'show' : ''; ?>"
+                                data-bs-parent="#sidebar-accordion">
+                                <div class="accordion-body">
+                                    <a href="#" class="menu-item  <?php echo ($currentPage === '') ? 'active' : ''; ?>">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none">
+                                            <path d="M21.0802 8.58003V15.42C21.0802 16.54 20.4802 17.58 19.5102 18.15L13.5702 21.58C12.6002 22.14 11.4002 22.14 10.4202 21.58L4.48016 18.15C3.51016 17.59 2.91016 16.55 2.91016 15.42V8.58003C2.91016 7.46003 3.51016 6.41999 4.48016 5.84999L10.4202 2.42C11.3902 1.86 12.5902 1.86 13.5702 2.42L19.5102 5.84999C20.4802 6.41999 21.0802 7.45003 21.0802 8.58003Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M11.9999 10.9998C13.2867 10.9998 14.3299 9.95662 14.3299 8.6698C14.3299 7.38298 13.2867 6.33984 11.9999 6.33984C10.7131 6.33984 9.66992 7.38298 9.66992 8.6698C9.66992 9.95662 10.7131 10.9998 11.9999 10.9998Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M16 16.6599C16 14.8599 14.21 13.3999 12 13.3999C9.79 13.3999 8 14.8599 8 16.6599" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        Employee
+                                    </a>
+                                    <a href="#" class="menu-item  <?php echo ($currentPage === '') ? 'active' : ''; ?>">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none">
+                                            <path d="M12.6604 2.51814L12.6304 2.58814L9.73045 9.31814H6.88045C6.20045 9.31814 5.55045 9.45814 4.96045 9.70814L6.71045 5.52814L6.75045 5.42814L6.82045 5.26814C6.84045 5.20814 6.86045 5.14814 6.89045 5.09814C8.20045 2.06814 9.68045 1.37814 12.6604 2.51814Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M18.0505 9.51807C17.6005 9.37807 17.1205 9.31807 16.6405 9.31807H9.73047L12.6305 2.58807L12.6605 2.51807C12.8105 2.56807 12.9505 2.63807 13.1005 2.69807L15.3105 3.62807C16.5405 4.13807 17.4005 4.66807 17.9205 5.30807C18.0205 5.42807 18.1005 5.53807 18.1705 5.66807C18.2605 5.80807 18.3305 5.94807 18.3705 6.09807C18.4105 6.18807 18.4405 6.27807 18.4605 6.35807C18.7305 7.19807 18.5705 8.22807 18.0505 9.51807Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M21.5222 14.1984V16.1484C21.5222 16.3484 21.5122 16.5484 21.5022 16.7484C21.3122 20.2384 19.3622 21.9984 15.6622 21.9984H7.86221C7.62221 21.9984 7.38221 21.9784 7.15221 21.9484C3.97221 21.7384 2.27221 20.0384 2.06221 16.8584C2.03221 16.6284 2.01221 16.3884 2.01221 16.1484V14.1984C2.01221 12.1884 3.23221 10.4584 4.97221 9.70836C5.57221 9.45836 6.21221 9.31836 6.89221 9.31836H16.6522C17.1422 9.31836 17.6222 9.38836 18.0622 9.51836C20.0522 10.1284 21.5222 11.9884 21.5222 14.1984Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M6.71049 5.52832L4.96049 9.70832C3.22049 10.4583 2.00049 12.1883 2.00049 14.1983V11.2683C2.00049 8.42832 4.02049 6.05832 6.71049 5.52832Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M21.5191 11.2677V14.1977C21.5191 11.9977 20.0591 10.1277 18.0591 9.52766C18.5791 8.22766 18.7291 7.20766 18.4791 6.35766C18.4591 6.26766 18.4291 6.17766 18.3891 6.09766C20.2491 7.05766 21.5191 9.02766 21.5191 11.2677Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        Payroll
+                                    </a>
+                                    <a href="#" class="menu-item  <?php echo ($currentPage === '') ? 'active' : ''; ?>">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                            <path d="M6 1.5V3.75" stroke="#F2F6FA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M12 1.5V3.75" stroke="#F2F6FA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M2.625 6.82031H15.375" stroke="#F2F6FA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M15.75 6.375V12.75C15.75 15 14.625 16.5 12 16.5H6C3.375 16.5 2.25 15 2.25 12.75V6.375C2.25 4.125 3.375 2.625 6 2.625H12C14.625 2.625 15.75 4.125 15.75 6.375Z" stroke="#F2F6FA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M11.7713 10.2734H11.778" stroke="#F2F6FA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M11.7713 12.5234H11.778" stroke="#F2F6FA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M8.99588 10.2734H9.00262" stroke="#F2F6FA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M8.99588 12.5234H9.00262" stroke="#F2F6FA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M6.22049 10.2734H6.22723" stroke="#F2F6FA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M6.22049 12.5234H6.22723" stroke="#F2F6FA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        Holiday
+                                    </a>
+
+                                    <a href="#" class="menu-item  <?php echo ($currentPage === 'daybook') ? 'active' : ''; ?>">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                            <path d="M6 1.5V3.75" stroke="#F2F6FA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M12 1.5V3.75" stroke="#F2F6FA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M2.625 6.82031H15.375" stroke="#F2F6FA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M14.4083 11.8282L11.7533 14.4832C11.6483 14.5882 11.5508 14.7832 11.5283 14.9257L11.3858 15.9382C11.3333 16.3057 11.5883 16.5607 11.9558 16.5082L12.9683 16.3657C13.1108 16.3432 13.3133 16.2457 13.4108 16.1407L16.0658 13.4857C16.5233 13.0282 16.7408 12.4957 16.0658 11.8207C15.3983 11.1532 14.8658 11.3707 14.4083 11.8282Z" stroke="#F2F6FA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M14.0254 12.2109C14.2504 13.0209 14.8804 13.6509 15.6904 13.8759" stroke="#F2F6FA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M9 16.5H6C3.375 16.5 2.25 15 2.25 12.75V6.375C2.25 4.125 3.375 2.625 6 2.625H12C14.625 2.625 15.75 4.125 15.75 6.375V9" stroke="#F2F6FA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M8.99588 10.2734H9.00262" stroke="#F2F6FA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M6.22049 10.2734H6.22723" stroke="#F2F6FA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M6.22049 12.5234H6.22723" stroke="#F2F6FA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        Leave
+                                    </a>
+
+                                    <a href="#" class="menu-item  <?php echo ($currentPage === '') ? 'active' : ''; ?>">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                            <path d="M6 1.5V3.75" stroke="#F2F6FA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M12 1.5V3.75" stroke="#F2F6FA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M2.625 6.82031H15.375" stroke="#F2F6FA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M16.5 14.25C16.5 14.8125 16.3425 15.345 16.065 15.795C15.5475 16.665 14.595 17.25 13.5 17.25C12.7425 17.25 12.0525 16.9725 11.5275 16.5C11.295 16.305 11.0925 16.065 10.935 15.795C10.6575 15.345 10.5 14.8125 10.5 14.25C10.5 12.5925 11.8425 11.25 13.5 11.25C14.4 11.25 15.2025 11.6475 15.75 12.27C16.215 12.8025 16.5 13.4925 16.5 14.25Z" stroke="#F2F6FA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M12.3301 14.2506L13.0726 14.9931L14.6701 13.5156" stroke="#F2F6FA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M15.75 6.375V12.27C15.2025 11.6475 14.4 11.25 13.5 11.25C11.8425 11.25 10.5 12.5925 10.5 14.25C10.5 14.8125 10.6575 15.345 10.935 15.795C11.0925 16.065 11.295 16.305 11.5275 16.5H6C3.375 16.5 2.25 15 2.25 12.75V6.375C2.25 4.125 3.375 2.625 6 2.625H12C14.625 2.625 15.75 4.125 15.75 6.375Z" stroke="#F2F6FA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M8.99588 10.2734H9.00262" stroke="#F2F6FA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M6.22049 10.2734H6.22723" stroke="#F2F6FA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M6.22049 12.5234H6.22723" stroke="#F2F6FA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        Attendence
+                                    </a>
+
+                                    <a href="#" class="menu-item  <?php echo ($currentPage === '') ? 'active' : ''; ?>">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                            <path d="M14.3782 4.98063C14.0557 3.35312 12.8482 2.64062 11.1682 2.64062H4.5832C2.6032 2.64062 1.2832 3.63063 1.2832 5.94063V9.80312C1.2832 11.4681 1.9657 12.4431 3.0907 12.8631C3.2557 12.9231 3.4357 12.9756 3.6232 13.0056C3.9232 13.0731 4.2457 13.1031 4.5832 13.1031H11.1757C13.1557 13.1031 14.4757 12.1131 14.4757 9.80312V5.94063C14.4757 5.58813 14.4457 5.27313 14.3782 4.98063ZM4.1482 9.00063C4.1482 9.30813 3.8932 9.56313 3.5857 9.56313C3.2782 9.56313 3.0232 9.30813 3.0232 9.00063V6.75063C3.0232 6.44313 3.2782 6.18813 3.5857 6.18813C3.8932 6.18813 4.1482 6.44313 4.1482 6.75063V9.00063ZM7.8757 9.85563C6.7807 9.85563 5.8957 8.97063 5.8957 7.87563C5.8957 6.78063 6.7807 5.89563 7.8757 5.89563C8.9707 5.89563 9.8557 6.78063 9.8557 7.87563C9.8557 8.97063 8.9707 9.85563 7.8757 9.85563ZM12.7207 9.00063C12.7207 9.30813 12.4657 9.56313 12.1582 9.56313C11.8507 9.56313 11.5957 9.30813 11.5957 9.00063V6.75063C11.5957 6.44313 11.8507 6.18813 12.1582 6.18813C12.4657 6.18813 12.7207 6.44313 12.7207 6.75063V9.00063Z" fill="#F7F7F7" />
+                                            <path d="M16.7243 8.19363V12.0561C16.7243 14.3661 15.4043 15.3636 13.4168 15.3636H6.83184C6.26934 15.3636 5.76684 15.2811 5.33184 15.1161C4.97934 14.9886 4.67184 14.8011 4.42434 14.5611C4.28934 14.4336 4.39434 14.2311 4.58184 14.2311H11.1668C13.9418 14.2311 15.5918 12.5811 15.5918 9.81363V5.94363C15.5918 5.76363 15.7943 5.65113 15.9218 5.78613C16.4318 6.32613 16.7243 7.11363 16.7243 8.19363Z" fill="#F7F7F7" />
+                                        </svg>
+                                        Assets
+                                    </a>
+
+                                    <a href="#" class="menu-item  <?php echo ($currentPage === '') ? 'active' : ''; ?>">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 22" fill="none">
+                                            <path d="M6.09874 12.0262C4.73084 11.5939 3.29843 11.746 2.11141 12.4641C1.30793 12.9417 0.482725 11.917 1.13279 11.2595C1.2325 11.1629 1.35011 11.0954 1.48755 11.0601C1.97782 10.9351 2.48406 10.8739 2.9852 10.8739C4.15687 10.8739 5.30802 11.2071 6.21571 11.8312C6.17735 11.8955 6.13901 11.9637 6.09874 12.0262ZM5.80406 7.46141C6.64974 7.89491 7.39057 8.58714 8.00481 9.52474C8.13393 9.39033 8.27263 9.25277 8.41071 9.12593C7.48962 8.47094 6.79544 7.71121 6.34284 6.86116C6.33836 6.84917 5.6231 5.52658 4.84262 4.85017C4.55243 4.61418 4.42011 4.517 4.16826 4.63752C3.72593 4.84954 3.66521 4.90002 3.45362 5.33857C3.35966 5.57772 3.33154 5.61179 3.662 6.0068C4.26158 6.67063 5.78803 7.45509 5.80406 7.46141ZM11.1843 7.1131C11.114 6.14891 11.3485 5.18288 11.8586 4.36194C12.4416 3.31635 10.8052 2.62475 10.4364 3.74859C10.1213 4.96013 10.2076 6.27828 10.6691 7.40841C10.8385 7.30808 11.013 7.21089 11.1843 7.1131ZM13.7916 8.13155C13.6497 7.72013 13.5034 7.23868 13.0438 7.07586C12.496 6.83924 12.014 7.1844 11.5237 7.4286C10.2562 8.10126 9.11076 8.98341 8.13533 10.0308C7.23852 10.9918 6.49062 12.1063 5.93834 13.2705C5.6718 13.7999 5.95944 14.4946 6.53089 14.6808L6.98792 14.8474C8.31556 11.8785 10.7855 9.44211 13.7916 8.13155ZM14.473 9.99118C14.2819 9.47439 14.1023 8.98346 13.9425 8.54743C11.0591 9.8063 8.68503 12.1493 7.41047 14.9957L8.87041 15.5195C9.98774 13.068 11.9892 11.0955 14.473 9.99118ZM17.0466 16.9916C16.9225 16.6528 16.7685 16.2363 16.6426 15.8943C15.9554 16.394 15.361 16.9847 14.8522 17.6617L15.9619 18.0579C16.2789 18.1715 16.612 18.0996 16.8491 17.863C17.0869 17.6289 17.1597 17.3027 17.0466 16.9916ZM16.4853 15.4652C16.3191 15.0077 16.1414 14.53 15.9593 14.0391C14.7237 14.7673 13.7086 15.7674 12.9729 16.9898L14.4175 17.5066C14.9934 16.7153 15.6863 16.0332 16.4853 15.4652ZM15.8065 13.6188C15.4115 12.5379 15.0107 11.4615 14.6259 10.4032C12.2628 11.4646 10.3586 13.3374 9.28988 15.6708L12.5472 16.8363C13.3386 15.4992 14.4521 14.4 15.8065 13.6188ZM7.7263 4.79349C7.72502 4.75563 7.7263 4.71777 7.7263 4.68054C7.7263 4.63321 7.7263 4.58525 7.72822 4.53793C7.7295 4.50196 7.73333 4.46662 7.73589 4.43066C7.73972 4.38018 7.7442 4.3297 7.75059 4.27921C7.75443 4.24766 7.75954 4.21674 7.76401 4.18519C7.77232 4.1303 7.78191 4.0754 7.79342 4.02114C7.79917 3.99337 7.80556 3.96624 7.81195 3.93847C7.82538 3.88168 7.84072 3.82552 7.8567 3.76936C7.86437 3.74286 7.87204 3.71698 7.88035 3.69048C7.89761 3.63622 7.91742 3.58321 7.93724 3.53021C7.94811 3.50118 7.95897 3.47278 7.97048 3.44376C7.98838 3.39959 8.00947 3.35668 8.02928 3.31377C8.04718 3.27654 8.0638 3.23868 8.08298 3.20145C8.08681 3.19451 8.09065 3.1882 8.09448 3.18126C8.13731 3.11753 8.1763 3.05001 8.20634 2.98059C8.27346 2.87585 8.28752 2.76289 8.26515 2.65815C8.25109 2.54835 8.19484 2.4455 8.07211 2.36221C8.05549 2.35022 8.03631 2.34328 8.01841 2.33444C8.01074 2.33066 8.00307 2.32624 7.9954 2.32245C7.98198 2.31677 7.96856 2.31046 7.95449 2.30605C7.85989 2.27324 7.75378 2.27008 7.6464 2.31425C7.58312 2.3376 7.52879 2.37483 7.48276 2.42026C7.47765 2.42531 7.47062 2.42973 7.46551 2.43477C7.46359 2.43667 7.46295 2.43856 7.46103 2.44045C7.41373 2.4922 7.37857 2.55467 7.36195 2.62659C7.11331 3.58132 7.37729 4.41418 7.74355 5.04272C7.73397 4.96006 7.72886 4.87679 7.7263 4.79349ZM1.97416 9.056C2.76869 8.70138 3.66354 8.63954 4.5061 8.86986C3.91611 8.40103 3.10816 7.98266 2.11619 7.98266C1.80682 7.98771 1.39837 7.97383 1.23728 8.30005C0.979689 8.75249 1.49987 9.28758 1.97416 9.056ZM3.22124 14.7793C3.34333 14.9743 3.41684 15.1958 3.43666 15.4255C3.63416 15.3049 3.85853 15.233 4.08929 15.2128C3.96976 15.0159 3.89433 14.7945 3.87388 14.5667C3.67637 14.6872 3.452 14.7597 3.22124 14.7793ZM15.1878 4.75633C14.957 4.73425 14.7327 4.66231 14.5333 4.54368C14.5134 4.77149 14.4399 4.99295 14.3204 5.18795C14.5512 5.20751 14.7755 5.28007 14.973 5.4006C14.9922 5.1728 15.0657 4.95133 15.1878 4.75633ZM7.35306 17.6555C7.45086 17.6732 7.54866 17.7072 7.63687 17.7476C7.65477 17.6511 7.68545 17.559 7.7302 17.4693C7.63368 17.4529 7.53588 17.4201 7.44639 17.3772C7.42849 17.4738 7.39717 17.5678 7.35306 17.6555ZM16.732 8.55895C16.6342 8.53939 16.539 8.50847 16.4482 8.46493C16.4303 8.56337 16.3997 8.65739 16.3549 8.7451C16.4514 8.7634 16.5492 8.79369 16.6387 8.83723C16.6573 8.74131 16.6886 8.64603 16.732 8.55895ZM2.05403 3.65222C1.98308 3.54305 1.93002 3.42064 1.8987 3.29317C1.78684 3.36447 1.66156 3.41558 1.53307 3.4465C1.60402 3.55504 1.65835 3.67997 1.6884 3.80555C1.80154 3.73551 1.92554 3.68566 2.05403 3.65222Z" fill="#FAFAFA" />
+                                        </svg>
+                                        Events
                                     </a>
 
                                 </div>
