@@ -5879,15 +5879,15 @@ select option:not(:first-child) {
     .open_trail_table {
         display: flex;
         flex-direction: column;
-        min-height: 100vh;
+        min-height: 100%;
         justify-content: space-between;
     }
 
     .payment_print_footer,
     .trail_print_footer {
-        margin-top: auto;
+        margin-top: auto !important;
         /* prevent footer from splitting across pages */
-        page-break-inside: avoid;
+        page-break-inside: avoid !important;
     }
 
     .inventory_table,
@@ -6006,7 +6006,9 @@ select option:not(:first-child) {
         font-size: 12px;
     }
 
-    .open_trail_table table tfoot tr td {
+    .open_trail_table table tfoot tr td,
+    .trail_print_table_container .common_table .table th,
+    .trail_print_table_container .common_table .table td {
         border: 1px solid #E9EAEB;
     }
 
@@ -6073,6 +6075,13 @@ select option:not(:first-child) {
     .last_trail_print_header_div {
         text-align: end !important;
     }
+
+    .acc_rep_gen_table tfoot tr td,
+    .acc_rep_gen_table .table th,
+    .acc_rep_gen_table .table tr td {
+        font-size: 10px !important;
+    }
+
 }
 
 

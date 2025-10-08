@@ -410,7 +410,7 @@
                                     </a>
 
 
-                                    <a href="#" class="menu-item  <?php echo ($currentPage === 'gledger') ? 'active' : ''; ?>">
+                                    <a href="ar-general-legder.php" class="menu-item  <?php echo ($currentPage === 'gledger') ? 'active' : ''; ?>">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none">
                                             <path d="M8 2V5" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                                             <path d="M16 2V5" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />

@@ -339,7 +339,7 @@ include 'inc/header.php'
 
 
             <!-- day book payment/receipt vouchar table   -->
-              <h1 class="text-center mt-5">Payment/ Receipt Vouchar Table</h1>
+            <h1 class="text-center mt-5">Payment/ Receipt Vouchar Table</h1>
             <div class="trail_print_table_container">
                 <div class=" common_table open_trail_table">
                     <div class="trial_print_table_header d-flex align-items-center gap-3 justify-content-between">
@@ -438,7 +438,7 @@ include 'inc/header.php'
                                             <div class="trail_table_heading">60,000</div>
                                         </td>
                                     </tr>
-                                    
+
                                     <tr>
                                         <td rowspan="3">PAY-00001-82/83</td>
                                         <td>Purchase A/C</td>
