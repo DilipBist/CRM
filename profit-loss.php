@@ -368,7 +368,31 @@ include 'inc/header.php'
                                         <option value="3">Three</option>
                                     </select>
                                 </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="form_input">
+                                        <label>Include Closing Stock</label>
+                                    </div>
+                                    <div class="height50 clickable-area">
+                                        <div class="loc_selct_box">
+                                            <div class="btn-box">
+                                                <input type="checkbox" class="stock-checkbox" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="form_input">
+                                        <label>Include Stock with zero balance</label>
+                                    </div>
+                                    <div class="height50 clickable-area">
+                                        <div class="loc_selct_box">
+                                            <div class="btn-box">
+                                                <input type="checkbox" class="stock-checkbox" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
                                 <div class="col-12">
                                     <div class="form_discard_save d-flex align-items-center gap-2 justify-content-end mt-2">

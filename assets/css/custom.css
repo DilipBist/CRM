@@ -5579,7 +5579,7 @@ select option:not(:first-child) {
 }
 
 .trail_print_table_container .print-body {
-    padding: 24px clamp(16px, 4vw, 53px) 24px clamp(16px, 4vw, 53px) ;
+    padding: 24px clamp(16px, 4vw, 53px) 24px clamp(16px, 4vw, 53px);
     border-top: 1px solid var(--Menu-Separator, #C2C2C2);
     border-bottom: 1px solid var(--Menu-Separator, #C2C2C2);
 }
@@ -5607,6 +5607,10 @@ select option:not(:first-child) {
 
 .trail_print_footer {
     padding: 24px clamp(20px, 4vw, 53px) 0 clamp(20px, 4vw, 53px);
+}
+
+.stock-checkbox {
+    display: none;
 }
 
 .trail_print_footer p {
@@ -6056,11 +6060,13 @@ select option:not(:first-child) {
         margin-bottom: 0;
         padding-bottom: 0;
     }
+
     .trial_print_table_header {
         display: flex;
         flex-direction: row !important;
     }
-    .last_trail_print_header_div{
+
+    .last_trail_print_header_div {
         text-align: end !important;
     }
 }
@@ -6267,10 +6273,12 @@ select option:not(:first-child) {
     .change_ledger_group_popup_content {
         width: 100%;
     }
+
     .trial_print_table_header {
         flex-direction: column;
     }
-    .last_trail_print_header_div{
+
+    .last_trail_print_header_div {
         text-align: center;
     }
 

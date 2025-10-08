@@ -36,7 +36,8 @@ document.addEventListener("DOMContentLoaded", () => {
     initSideBarUserDropdown();
     updateGender();
     setupAccordionSync();
-    initChangeLedgerPopup()
+    initChangeLedgerPopup();
+    initStockCheckboxToggles();
 
 
     // ============
@@ -336,6 +337,27 @@ function initLocationDataShow() {
             data.classList.toggle('active');
         })
     })
+}
+
+// toggle the radio button css 
+function initStockCheckboxToggles() {
+    document.querySelectorAll('.clickable-area').forEach((area) => {
+        area.addEventListener('click', function (e) {
+            // Skip if clicking directly on the checkbox 
+            if (e.target.type === 'checkbox') return;
+
+            const checkbox = this.querySelector('.stock-checkbox');
+            const btnBox = this.querySelector('.btn-box');
+            const locBox = this.querySelector('.loc_selct_box');
+
+            // Toggle checkbox
+            checkbox.checked = !checkbox.checked;
+
+            btnBox.classList.toggle('active', checkbox.checked);
+            locBox.classList.toggle('active', checkbox.checked);
+            this.classList.toggle('active', checkbox.checked);
+        });
+    });
 }
 
 // Add assets popup show hide 
