@@ -6025,7 +6025,8 @@ select option:not(:first-child) {
         font-weight: 400;
         color: var(--text-dark);
     }
-    .open_trail_table .trail_table_heading{
+
+    .open_trail_table .trail_table_heading {
         font-size: 12px;
     }
 
