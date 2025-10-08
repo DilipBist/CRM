@@ -383,10 +383,10 @@ include 'inc/header.php'
                                         <tr>
                                             <td class="wrap_Text"><?= $project['acc_g_name'] ?></td>
                                             <td><?= $project['Quantity'] ?></td>
-                                            <td>-- --</td>
+                                            <td><?= $project['rate'] ?></td>
                                             <td><?= $project['rate'] ?></td>
                                             <td><?= $project['Quantity'] ?></td>
-                                            <td><?= $project['rate'] ?></td>
+                                            <td>-- --</td>
                                             <td><?= $project['rate'] ?></td>
                                         </tr>
                                     <?php endforeach; ?>
@@ -418,7 +418,7 @@ include 'inc/header.php'
                                         </td>
                                         <td>
                                             <div class="c1_total">
-                                                875,100.31
+                                                -- --
                                             </div>
                                         </td>
                                         <td>
@@ -429,11 +429,11 @@ include 'inc/header.php'
                                     </tr>
                                     <!-- third group  -->
 
-                                    <!-- second group  -->
+                                    <!-- fourth group  -->
                                     <tr>
                                         <td colspan="7">
                                             <div class="trail_table_heading">
-                                                Group : EXPENDITURE
+                                                Group : CASH & BANK
                                             </div>
                                         </td>
                                     </tr>
@@ -485,7 +485,65 @@ include 'inc/header.php'
                                             </div>
                                         </td>
                                     </tr>
-                                    <!-- second group  -->
+                                    <!-- fourth group  -->
+
+                                    <!-- fifth group  -->
+                                    <tr>
+                                        <td colspan="7">
+                                            <div class="trail_table_heading">
+                                                Group : LOANS & ADVANCE
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <?php foreach (array_slice($projectList, 0, 2) as $project): ?>
+                                        <tr>
+                                            <td class="wrap_Text"><?= $project['acc_g_name'] ?></td>
+                                            <td><?= $project['Quantity'] ?></td>
+                                            <td><?= $project['rate'] ?></td>
+                                            <td><?= $project['rate'] ?></td>
+                                            <td>-- --</td>
+                                            <td><?= $project['rate'] ?></td>
+                                            <td><?= $project['rate'] ?></td>
+                                        </tr>
+                                    <?php endforeach; ?>
+                                    <tr>
+                                        <td>
+                                            <div class="c_total">
+                                                Total
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="c1_total">
+                                                875,100.31
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="c1_total">
+                                                875,100.31
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="c1_total">
+                                                875,100.31
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="c1_total">
+                                                -- --
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="c1_total">
+                                                875,100.31
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="c1_total">
+                                                875,100.31
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <!-- fifth group  -->
 
                                 </tbody>
                             </table>
