@@ -64,7 +64,7 @@ include 'inc/header.php'
                     ?>
                 </div>
 
-                <a href="#">
+                <a href="add-employee.php">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                         <path d="M9.9974 18.3327C14.5807 18.3327 18.3307 14.5827 18.3307 9.99935C18.3307 5.41602 14.5807 1.66602 9.9974 1.66602C5.41406 1.66602 1.66406 5.41602 1.66406 9.99935C1.66406 14.5827 5.41406 18.3327 9.9974 18.3327Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                         <path d="M6.66406 10H13.3307" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -135,7 +135,7 @@ include 'inc/header.php'
                                                 </svg>
                                             </a>
 
-                                            <a href="#" aria-label="Edit user List" title="Edit user List" class="edit-user" data-title="Edit User">
+                                            <a href="add-employee.php" aria-label="Edit user List" title="Edit user List" class="edit-user" data-title="Edit User">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                                                     <path d="M9.94452 2.70041L3.78702 9.21791C3.55452 9.46541 3.32952 9.95291 3.28452 10.2904L3.00702 12.7204C2.90952 13.5979 3.53952 14.1979 4.40952 14.0479L6.82452 13.6354C7.16202 13.5754 7.63452 13.3279 7.86702 13.0729L14.0245 6.55541C15.0895 5.43041 15.5695 4.14791 13.912 2.58041C12.262 1.02791 11.0095 1.57541 9.94452 2.70041Z" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                                                     <path d="M8.91797 3.78711C9.24047 5.85711 10.9205 7.43961 13.0055 7.64961" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
@@ -182,7 +182,7 @@ include 'inc/header.php'
 <!-- Employee detials popup component  -->
 
 
-<!-- change password popup  -->
+<!-- employee change password popup  -->
 <div class="add-asset-filter-component">
     <div class="add_asset_filter_bg">
         <div class="ass_filter_popcontent">
@@ -241,6 +241,6 @@ include 'inc/header.php'
         </div>
     </div>
 </div>
-<!-- change password popup  -->
+<!--empoyee change password popup  -->
 
 <?php include 'inc/footer.php' ?>
