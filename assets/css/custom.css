@@ -273,11 +273,12 @@ img {
 .user_active {
     display: flex;
     width: 80px;
-    padding: 6px 12px;
+    padding: 4px 12px;
     justify-content: center;
     align-items: center;
     font-size: 14px;
-    border-radius: 15px;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 124, 25, 0.70);
     background: #CCF0CE;
     color: rgba(0, 124, 25, 0.70);
     font-weight: 700;
@@ -286,11 +287,12 @@ img {
 .user_inactive {
     display: flex;
     width: 80px;
-    padding: 6px 12px;
+    padding: 4px 12px;
     justify-content: center;
     align-items: center;
     font-size: 14px;
-    border-radius: 15px;
+    border-radius: 12px;
+    border: 1px solid rgba(92, 92, 92, 0.70);
     background: #CECECE;
     color: rgba(0, 124, 25, 0.70);
     font-weight: 700;
@@ -5670,6 +5672,22 @@ select option:not(:first-child) {
 }
 
 /* ====================== trail balance page ends ============= */
+
+/* ****************** EMPLOYEE PAGE CSS STARTS ******************* */
+.table_profile_image {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.table_profile_image img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+/* ****************** EMPLOYEE PAGE CSS ENDS******************* */
 
 
 /* *********************** PRINT MEDIA CODE ******************** */
