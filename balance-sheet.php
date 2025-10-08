@@ -1,5 +1,5 @@
 <?php
-$pageTitle = 'Profit Loss';
+$pageTitle = 'Balance Sheet';
 include 'inc/header.php'
 ?>
 
@@ -8,7 +8,7 @@ include 'inc/header.php'
 
     <!-- SIDE BAR  -->
     <?php
-    $currentPage = 'profitLoss';
+    $currentPage = 'balanceSheet';
     include 'inc/side-bar.php';
     ?>
     <!-- SIDE BAR ENDS  -->
@@ -28,7 +28,7 @@ include 'inc/header.php'
                 <div class="bread_crump_content d-flex align-items-center gap-2">
                     <a href="opening-trails.php">Account Report </a>
                     <span>/</span>
-                    <p> Profit & Loss</p>
+                    <p> Blance Sheet</p>
                 </div>
             </div>
 
@@ -150,7 +150,7 @@ include 'inc/header.php'
                         </div>
 
                         <div class="center_print_div addAssetBtn cursor-pointer text-center">
-                            <h4>Profit and Loss</h4>
+                            <h4>Balance Sheet</h4>
                             <p>As On DAte : 2082/04/30</p>
                         </div>
 
@@ -167,7 +167,7 @@ include 'inc/header.php'
                                 <table class="table table-hover">
                                     <thead>
                                         <tr>
-                                            <th scope="col">Expense</th>
+                                            <th scope="col">Labilities</th>
                                             <th scope="col">Total</th>
                                             <th scope="col">Group Total</th>
                                         </tr>
@@ -177,7 +177,7 @@ include 'inc/header.php'
                                         <tr>
                                             <td>
                                                 <div class="trail_table_heading">
-                                                    Group : LIABILITES
+                                                    Duty & Taxes
                                                 </div>
                                             </td>
                                             <td></td>
@@ -187,37 +187,94 @@ include 'inc/header.php'
                                                 </div>
                                             </td>
                                         </tr>
-                                        <?php foreach (array_slice($projectList, 0, 4) as $project): ?>
-                                            <tr>
-                                                <td class="wrap_Text"><?= $project['acc_g_name'] ?></td>
-                                                <td><?= $project['Quantity'] ?></td>
-                                                <td></td>
-                                            </tr>
-                                        <?php endforeach; ?>
+                                        <tr>
+                                            <td>Tds Payable Ledger</td>
+                                            <td>4,542.030</td>
+                                            <td></td>
+                                        </tr>
                                         <!-- First group  -->
 
                                         <!-- second group  -->
                                         <tr>
                                             <td>
                                                 <div class="trail_table_heading">
-                                                    INDIRECT EXPENSES
+                                                    RESERVE & SURPLUS
                                                 </div>
                                             </td>
+                                            <td>2,7550.00</td>
+                                            <td>
+                                                <div class="c1_total">
+                                                    2,7550.00
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>PROFIT & LOSS</td>
+                                            <td>0.000</td>
                                             <td></td>
+                                        </tr>
+                                        <!-- second group  -->
+
+                                        <!-- third group  -->
+                                        <tr>
+                                            <td>
+                                                <div class="trail_table_heading">
+                                                    SUNDRY CREDITORS
+                                                </div>
+                                            </td>
+                                            <td>0.000</td>
+                                            <td>
+                                                <div class="c1_total">
+                                                    0.000
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Maa Manakamana Traders(Pepsicola)</td>
+                                            <td>0.000</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Mahalaxmi International</td>
+                                            <td>0.000</td>
                                             <td>
                                                 <div class="c1_total">
                                                     17,99,160
                                                 </div>
                                             </td>
                                         </tr>
-                                        <?php foreach (array_slice($projectList, 0, 4) as $project): ?>
-                                            <tr>
-                                                <td class="wrap_Text"><?= $project['acc_g_name'] ?></td>
-                                                <td><?= $project['Quantity'] ?></td>
-                                                <td></td>
-                                            </tr>
-                                        <?php endforeach; ?>
-                                        <!-- second group  -->
+                                        <tr>
+                                            <td>Sita Dhuwani Sewa </td>
+                                            <td>15,000.00</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ram Kumar Suppliers </td>
+                                            <td>17,99,160</td>
+                                            <td></td>
+                                        </tr>
+                                        <!-- third group  -->
+
+                                        <!-- fourth group  -->
+                                        <tr>
+                                            <td>
+                                                <div class="trail_table_heading">
+                                                    LIABILITIES
+                                                </div>
+                                            </td>
+                                            <td>0.000</td>
+                                            <td>
+                                                <div class="c1_total">
+                                                    14455566
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Maa Manakamana Traders(Pepsicola)</td>
+                                            <td>5,035.0</td>
+                                            <td></td>
+                                        </tr>
+                                        <!-- fourth group  -->
                                     </tbody>
                                     <tfoot>
                                         <tr>
@@ -225,21 +282,15 @@ include 'inc/header.php'
                                             <td>349661.67</td>
                                             <td>349661.67</td>
                                         </tr>
-                                        <tr>
-                                            <td>Net Total</td>
-                                            <td>349661.67</td>
-                                            <td></td>
-                                        </tr>
                                     </tfoot>
                                 </table>
                             </div>
-
 
                             <div class="table-responsive w-100">
                                 <table class="table table-hover">
                                     <thead>
                                         <tr>
-                                            <th scope="col">Income</th>
+                                            <th scope="col">Assets</th>
                                             <th scope="col">Total</th>
                                             <th scope="col">Group Total</th>
                                         </tr>
@@ -249,7 +300,7 @@ include 'inc/header.php'
                                         <tr>
                                             <td>
                                                 <div class="trail_table_heading">
-                                                    Income
+                                                    Duty & Taxes
                                                 </div>
                                             </td>
                                             <td></td>
@@ -259,30 +310,100 @@ include 'inc/header.php'
                                                 </div>
                                             </td>
                                         </tr>
-                                        <?php foreach (array_slice($projectList, 0, 3) as $project): ?>
-                                            <tr>
-                                                <td class="wrap_Text"><?= $project['acc_g_name'] ?></td>
-                                                <td><?= $project['Quantity'] ?></td>
-                                                <td></td>
-                                            </tr>
-                                        <?php endforeach; ?>
+                                        <tr>
+                                            <td>Tds Payable Ledger</td>
+                                            <td>4,542.030</td>
+                                            <td></td>
+                                        </tr>
                                         <!-- First group  -->
+
+                                        <!-- second group  -->
+                                        <tr>
+                                            <td>
+                                                <div class="trail_table_heading">
+                                                    RESERVE & SURPLUS
+                                                </div>
+                                            </td>
+                                            <td>2,7550.00</td>
+                                            <td>
+                                                <div class="c1_total">
+                                                    2,7550.00
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>PROFIT & LOSS</td>
+                                            <td>0.000</td>
+                                            <td></td>
+                                        </tr>
+                                        <!-- second group  -->
+
+                                        <!-- third group  -->
+                                        <tr>
+                                            <td>
+                                                <div class="trail_table_heading">
+                                                    SUNDRY CREDITORS
+                                                </div>
+                                            </td>
+                                            <td>0.000</td>
+                                            <td>
+                                                <div class="c1_total">
+                                                    0.000
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Maa Manakamana Traders(Pepsicola)</td>
+                                            <td>0.000</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Mahalaxmi International</td>
+                                            <td>0.000</td>
+                                            <td>
+                                                <div class="c1_total">
+                                                    17,99,160
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sita Dhuwani Sewa </td>
+                                            <td>15,000.00</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ram Kumar Suppliers </td>
+                                            <td>17,99,160</td>
+                                            <td></td>
+                                        </tr>
+                                        <!-- third group  -->
+
+                                        <!-- fourth group  -->
+                                        <tr>
+                                            <td>
+                                                <div class="trail_table_heading">
+                                                    LIABILITIES
+                                                </div>
+                                            </td>
+                                            <td>0.000</td>
+                                            <td>
+                                                <div class="c1_total">
+                                                    14455566
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Maa Manakamana Traders(Pepsicola)</td>
+                                            <td>5,035.0</td>
+                                            <td></td>
+                                        </tr>
+                                        <!-- fourth group  -->
                                     </tbody>
                                     <tfoot>
                                         <tr>
                                             <td>Total</td>
                                             <td>349661.67</td>
                                             <td>349661.67</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Net Loss</td>
-                                            <td>349661.67</td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Net Total</td>
-                                            <td>349661.67</td>
-                                            <td></td>
                                         </tr>
                                     </tfoot>
                                 </table>
@@ -313,7 +434,7 @@ include 'inc/header.php'
 
 </section>
 
-<!-- search profit loss popup  -->
+<!-- trail balance search popup  -->
 <div class="add-asset-filter-component">
     <div class="add_asset_filter_bg">
         <div class="ass_filter_popcontent">
@@ -336,7 +457,7 @@ include 'inc/header.php'
                         <form action="">
                             <div class="row g-3 align-items-end">
 
-                                <div class="col-md-6 col-lg-4">
+                                <div class="col-md-6">
                                     <div class="form_input d-flex flex-column gap-2 position-relative">
                                         <label for="fromdate">As at Date</label>
                                         <input type="text" class="date-picker" id="fromdate" placeholder="MM/DD/YYYY">
@@ -355,7 +476,7 @@ include 'inc/header.php'
                                     </div>
                                 </div>
 
-                                <div class="col-md-6  col-lg-4 slect-status">
+                                <div class="col-md-6 slect-status">
                                     <label for="Report" class="mb-2">Report Type <span class="red">*</span></label>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                         <path d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
@@ -368,7 +489,7 @@ include 'inc/header.php'
                                         <option value="3">Three</option>
                                     </select>
                                 </div>
-                                <div class="col-md-6 col-lg-4">
+                                <div class="col-md-6">
                                     <div class="form_input">
                                         <label>Include Closing Stock</label>
                                     </div>
@@ -381,7 +502,7 @@ include 'inc/header.php'
                                     </div>
                                 </div>
 
-                                <div class="col-md-6 col-lg-4">
+                                <div class="col-md-6 ">
                                     <div class="form_input">
                                         <label>Include Stock with zero balance</label>
                                     </div>
@@ -409,7 +530,7 @@ include 'inc/header.php'
         </div>
     </div>
 </div>
-<!-- search profit loss popup  -->
+<!-- trail balance search popup  -->
 
 
 <?php include 'inc/footer.php' ?>

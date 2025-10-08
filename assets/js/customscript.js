@@ -342,10 +342,7 @@ function initLocationDataShow() {
 // toggle the radio button css 
 function initStockCheckboxToggles() {
     document.querySelectorAll('.clickable-area').forEach((area) => {
-        area.addEventListener('click', function (e) {
-            // Skip if clicking directly on the checkbox 
-            if (e.target.type === 'checkbox') return;
-
+        area.addEventListener('click', function () {
             const checkbox = this.querySelector('.stock-checkbox');
             const btnBox = this.querySelector('.btn-box');
             const locBox = this.querySelector('.loc_selct_box');

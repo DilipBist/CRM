@@ -177,7 +177,7 @@ include 'inc/header.php'
 
 
 
-<!-- search filter popup  -->
+<!-- search open trails popup  -->
 <div class="add-asset-filter-component">
     <div class="add_asset_filter_bg">
         <div class="ass_filter_popcontent">
@@ -335,6 +335,6 @@ include 'inc/header.php'
         </div>
     </div>
 </div>
-<!-- search filter popup  -->
+<!-- search open trail popup  -->
 
 <?php include 'inc/footer.php' ?>

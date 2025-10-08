@@ -573,7 +573,7 @@ include 'inc/header.php'
 
 </section>
 
-<!-- trail balance search popup  -->
+<!-- search trail balance popup   -->
 <div class="add-asset-filter-component">
     <div class="add_asset_filter_bg">
         <div class="ass_filter_popcontent">
@@ -685,7 +685,7 @@ include 'inc/header.php'
         </div>
     </div>
 </div>
-<!-- trail balance search popup  -->
+<!-- search trail balance popup  -->
 
 
 <?php include 'inc/footer.php' ?>
