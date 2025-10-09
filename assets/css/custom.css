@@ -2120,7 +2120,8 @@ SIDE BAR CSS ENDS
     scrollbar-width: none;
     -ms-overflow-style: none;
 }
-.inner_salary_heading{
+
+.inner_salary_heading {
     padding: 10px;
     display: flex;
     align-items: center;
@@ -2128,20 +2129,23 @@ SIDE BAR CSS ENDS
     gap: 10px;
     flex-wrap: wrap;
 }
-.inner_salary_heading h3{
+
+.inner_salary_heading h3 {
     font-size: 14px;
     font-weight: 700;
     color: var(--text-dark2);
 }
-.inner_salary_heading .add_earning{
+
+.inner_salary_heading .add_earning {
     display: flex;
     align-items: center;
     gap: 8px;
     font-size: 14px;
     color: var(--neutral-primay);
     font-weight: 500;
-cursor: pointer;
+    cursor: pointer;
 }
+
 .add_account_group_popup_content::-webkit-scrollbar,
 .change_ledger_group_popup_content::-webkit-scrollbar,
 .attendance_popup_content::-webkit-scrollbar {
@@ -5539,6 +5543,14 @@ select option:not(:first-child) {
     display: flex;
 }
 
+.event_filter .data {
+    all: unset;
+    display: none;
+}
+
+.event_filter .active {
+    display: block;
+}
 
 .table_Date_container {
     display: flex;

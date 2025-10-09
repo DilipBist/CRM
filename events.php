@@ -77,79 +77,257 @@ include 'inc/header.php'
         </div>
 
 
-        <div class="project_list_table pl_pr">
-            <div class="common_table">
-                <div class="table-responsive">
-                    <table class="table table-hover">
-                        <thead>
-                            <tr>
-                                <th scope="col">SN</th>
-                                <th scope="col">Event Name</th>
-                                <th scope="col">Description</th>
-                                <th scope="col">Start Date</th>
-                                <th scope="col">End Date</th>
-                                <th scope="col">Location</th>
-                                <th scope="col">Status</th>
-                                <th scope="col">Action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                        <tbody>
-                            <?php foreach ($projectList as $project): ?>
-                                <tr>
-                                    <td><?= $project['id'] ?></td>
-                                    <td>Annual Company Retreat </td>
-                                    <td>A week-long retreat for team building and strategy sessions.</td>
-                                    <td><?= $project['date'] ?></td>
-                                    <td><?= $project['date'] ?></td>
-                                    <td>Office</td>
-                                    <td>
-                                        <!--
+        <div class="pl_pr mt-3">
+            <div class="backup_filter_button_container d-flex align-items-center gap-3 flex-wrap">
+                <button class="active" data-filter="today_event">Today’s Events</button>
+                <button data-filter="upcomming_event">Upcoming Events</button>
+                <button data-filter="past_event">Past Events</button>
+            </div>
+
+
+            <div class="backupfilterable_data event_filter">
+                <!-- Today’s Events data   -->
+                <div class="data active" data-category="today_event">
+                    <h4>Today’s Events</h4>
+                    <div class="event_Table">
+                        <div class="common_table">
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">SN</th>
+                                            <th scope="col">Event Name</th>
+                                            <th scope="col">Description</th>
+                                            <th scope="col">Start Date</th>
+                                            <th scope="col">End Date</th>
+                                            <th scope="col">Location</th>
+                                            <th scope="col">Status</th>
+                                            <th scope="col">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tbody>
+                                        <?php foreach ($projectList as $project): ?>
+                                            <tr>
+                                                <td><?= $project['id'] ?></td>
+                                                <td>Annual Company Retreat </td>
+                                                <td>A week-long retreat for team building and strategy sessions.</td>
+                                                <td><?= $project['date'] ?></td>
+                                                <td><?= $project['date'] ?></td>
+                                                <td>Office</td>
+                                                <td>
+                                                    <!--
                                         total two status and two classes accordion to the status of user
                                         (user_active class for paid  and user_inactive class for unpaid  ) 
                                         add above class accordion to state 
                                         -->
-                                        <div class="<?= $project['user_status_class'] ?>">
-                                            <?= $project['user_status'] ?>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="table_actions">
+                                                    <div class="<?= $project['user_status_class'] ?>">
+                                                        <?= $project['user_status'] ?>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="table_actions">
 
-                                            <a href="#" aria-label="Edit user List" class="add_acc_groupBtn">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                                                    <path d="M9.94452 2.70041L3.78702 9.21791C3.55452 9.46541 3.32952 9.95291 3.28452 10.2904L3.00702 12.7204C2.90952 13.5979 3.53952 14.1979 4.40952 14.0479L6.82452 13.6354C7.16202 13.5754 7.63452 13.3279 7.86702 13.0729L14.0245 6.55541C15.0895 5.43041 15.5695 4.14791 13.912 2.58041C12.262 1.02791 11.0095 1.57541 9.94452 2.70041Z" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                                    <path d="M8.91797 3.78711C9.24047 5.85711 10.9205 7.43961 13.0055 7.64961" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                                    <path d="M2.25 16.5H15.75" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                                </svg>
-                                            </a>
+                                                        <a href="#" aria-label="Edit user List" class="add_acc_groupBtn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                                <path d="M9.94452 2.70041L3.78702 9.21791C3.55452 9.46541 3.32952 9.95291 3.28452 10.2904L3.00702 12.7204C2.90952 13.5979 3.53952 14.1979 4.40952 14.0479L6.82452 13.6354C7.16202 13.5754 7.63452 13.3279 7.86702 13.0729L14.0245 6.55541C15.0895 5.43041 15.5695 4.14791 13.912 2.58041C12.262 1.02791 11.0095 1.57541 9.94452 2.70041Z" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                                                <path d="M8.91797 3.78711C9.24047 5.85711 10.9205 7.43961 13.0055 7.64961" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                                                <path d="M2.25 16.5H15.75" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                                            </svg>
+                                                        </a>
 
-                                            <a href="#"
-                                                title="Delete"
-                                                class="delete_row_btn delete"
-                                                data-title="Edit User">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                                                    <path d="M15.75 4.48438C13.2525 4.23687 10.74 4.10938 8.235 4.10938C6.75 4.10938 5.265 4.18438 3.78 4.33438L2.25 4.48438" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                    <path d="M6.375 3.7275L6.54 2.745C6.66 2.0325 6.75 1.5 8.0175 1.5H9.9825C11.25 1.5 11.3475 2.0625 11.46 2.7525L11.625 3.7275" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                    <path d="M14.1373 6.85547L13.6498 14.408C13.5673 15.5855 13.4998 16.5005 11.4073 16.5005H6.5923C4.4998 16.5005 4.4323 15.5855 4.3498 14.408L3.8623 6.85547" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                    <path d="M7.74707 12.375H10.2446" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                    <path d="M7.125 9.375H10.875" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </td>
-                                </tr>
-                            <?php endforeach; ?>
-                        </tbody>
+                                                        <a href="#"
+                                                            title="Delete"
+                                                            class="delete_row_btn delete"
+                                                            data-title="Edit User">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                                <path d="M15.75 4.48438C13.2525 4.23687 10.74 4.10938 8.235 4.10938C6.75 4.10938 5.265 4.18438 3.78 4.33438L2.25 4.48438" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                                <path d="M6.375 3.7275L6.54 2.745C6.66 2.0325 6.75 1.5 8.0175 1.5H9.9825C11.25 1.5 11.3475 2.0625 11.46 2.7525L11.625 3.7275" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                                <path d="M14.1373 6.85547L13.6498 14.408C13.5673 15.5855 13.4998 16.5005 11.4073 16.5005H6.5923C4.4998 16.5005 4.4323 15.5855 4.3498 14.408L3.8623 6.85547" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                                <path d="M7.74707 12.375H10.2446" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                                <path d="M7.125 9.375H10.875" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        <?php endforeach; ?>
+                                    </tbody>
 
-                        </tbody>
-                    </table>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+
+                        <div class="mb-5 mt-3">
+                            <?php include 'inc/pagination.php' ?>
+                        </div>
+                    </div>
                 </div>
+                <!-- Today’s Events data   -->
 
-            </div>
+                <!-- Upcoming Events data div  -->
+                <div class="data" data-category="upcomming_event">
+                   <h4> Upcoming Events</h4>
+                    <div class="event_Table">
+                        <div class="common_table">
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">SN</th>
+                                            <th scope="col">Event Name</th>
+                                            <th scope="col">Description</th>
+                                            <th scope="col">Start Date</th>
+                                            <th scope="col">End Date</th>
+                                            <th scope="col">Location</th>
+                                            <th scope="col">Status</th>
+                                            <th scope="col">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tbody>
+                                        <?php foreach ($projectList as $project): ?>
+                                            <tr>
+                                                <td><?= $project['id'] ?></td>
+                                                <td>Annual Company Retreat </td>
+                                                <td>A week-long retreat for team building and strategy sessions.</td>
+                                                <td><?= $project['date'] ?></td>
+                                                <td><?= $project['date'] ?></td>
+                                                <td>Office</td>
+                                                <td>
+                                                    <!--
+                                        total two status and two classes accordion to the status of user
+                                        (user_active class for paid  and user_inactive class for unpaid  ) 
+                                        add above class accordion to state 
+                                        -->
+                                                    <div class="<?= $project['user_status_class'] ?>">
+                                                        <?= $project['user_status'] ?>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="table_actions">
 
-            <div class="mb-5 mt-3">
-                <?php include 'inc/pagination.php' ?>
+                                                        <a href="#" aria-label="Edit user List" class="add_acc_groupBtn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                                <path d="M9.94452 2.70041L3.78702 9.21791C3.55452 9.46541 3.32952 9.95291 3.28452 10.2904L3.00702 12.7204C2.90952 13.5979 3.53952 14.1979 4.40952 14.0479L6.82452 13.6354C7.16202 13.5754 7.63452 13.3279 7.86702 13.0729L14.0245 6.55541C15.0895 5.43041 15.5695 4.14791 13.912 2.58041C12.262 1.02791 11.0095 1.57541 9.94452 2.70041Z" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                                                <path d="M8.91797 3.78711C9.24047 5.85711 10.9205 7.43961 13.0055 7.64961" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                                                <path d="M2.25 16.5H15.75" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                                            </svg>
+                                                        </a>
+
+                                                        <a href="#"
+                                                            title="Delete"
+                                                            class="delete_row_btn delete"
+                                                            data-title="Edit User">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                                <path d="M15.75 4.48438C13.2525 4.23687 10.74 4.10938 8.235 4.10938C6.75 4.10938 5.265 4.18438 3.78 4.33438L2.25 4.48438" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                                <path d="M6.375 3.7275L6.54 2.745C6.66 2.0325 6.75 1.5 8.0175 1.5H9.9825C11.25 1.5 11.3475 2.0625 11.46 2.7525L11.625 3.7275" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                                <path d="M14.1373 6.85547L13.6498 14.408C13.5673 15.5855 13.4998 16.5005 11.4073 16.5005H6.5923C4.4998 16.5005 4.4323 15.5855 4.3498 14.408L3.8623 6.85547" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                                <path d="M7.74707 12.375H10.2446" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                                <path d="M7.125 9.375H10.875" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        <?php endforeach; ?>
+                                    </tbody>
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+
+                        <div class="mb-5 mt-3">
+                            <?php include 'inc/pagination.php' ?>
+                        </div>
+                    </div>
+                </div>
+                <!-- Upcoming Events data div  -->
+
+                <!-- Past event data  -->
+                <div class="data" data-category="past_event">
+                    <h4>Past Events</h4>
+                    <div class="event_Table">
+                        <div class="common_table">
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">SN</th>
+                                            <th scope="col">Event Name</th>
+                                            <th scope="col">Description</th>
+                                            <th scope="col">Start Date</th>
+                                            <th scope="col">End Date</th>
+                                            <th scope="col">Location</th>
+                                            <th scope="col">Status</th>
+                                            <th scope="col">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tbody>
+                                        <?php foreach ($projectList as $project): ?>
+                                            <tr>
+                                                <td><?= $project['id'] ?></td>
+                                                <td>Annual Company Retreat </td>
+                                                <td>A week-long retreat for team building and strategy sessions.</td>
+                                                <td><?= $project['date'] ?></td>
+                                                <td><?= $project['date'] ?></td>
+                                                <td>Office</td>
+                                                <td>
+                                                    <!--
+                                        total two status and two classes accordion to the status of user
+                                        (user_active class for paid  and user_inactive class for unpaid  ) 
+                                        add above class accordion to state 
+                                        -->
+                                                    <div class="<?= $project['user_status_class'] ?>">
+                                                        <?= $project['user_status'] ?>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="table_actions">
+
+                                                        <a href="#" aria-label="Edit user List" class="add_acc_groupBtn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                                <path d="M9.94452 2.70041L3.78702 9.21791C3.55452 9.46541 3.32952 9.95291 3.28452 10.2904L3.00702 12.7204C2.90952 13.5979 3.53952 14.1979 4.40952 14.0479L6.82452 13.6354C7.16202 13.5754 7.63452 13.3279 7.86702 13.0729L14.0245 6.55541C15.0895 5.43041 15.5695 4.14791 13.912 2.58041C12.262 1.02791 11.0095 1.57541 9.94452 2.70041Z" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                                                <path d="M8.91797 3.78711C9.24047 5.85711 10.9205 7.43961 13.0055 7.64961" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                                                <path d="M2.25 16.5H15.75" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                                            </svg>
+                                                        </a>
+
+                                                        <a href="#"
+                                                            title="Delete"
+                                                            class="delete_row_btn delete"
+                                                            data-title="Edit User">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                                <path d="M15.75 4.48438C13.2525 4.23687 10.74 4.10938 8.235 4.10938C6.75 4.10938 5.265 4.18438 3.78 4.33438L2.25 4.48438" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                                <path d="M6.375 3.7275L6.54 2.745C6.66 2.0325 6.75 1.5 8.0175 1.5H9.9825C11.25 1.5 11.3475 2.0625 11.46 2.7525L11.625 3.7275" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                                <path d="M14.1373 6.85547L13.6498 14.408C13.5673 15.5855 13.4998 16.5005 11.4073 16.5005H6.5923C4.4998 16.5005 4.4323 15.5855 4.3498 14.408L3.8623 6.85547" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                                <path d="M7.74707 12.375H10.2446" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                                <path d="M7.125 9.375H10.875" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        <?php endforeach; ?>
+                                    </tbody>
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+
+                        <div class="mb-5 mt-3">
+                            <?php include 'inc/pagination.php' ?>
+                        </div>
+                    </div>
+                </div>
+                <!-- Past event data end -->
             </div>
         </div>
     </div>
