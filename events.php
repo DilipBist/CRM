@@ -159,17 +159,13 @@ include 'inc/header.php'
                             </div>
 
                         </div>
-
-                        <div class="mb-5 mt-3">
-                            <?php include 'inc/pagination.php' ?>
-                        </div>
                     </div>
                 </div>
                 <!-- Today’s Events data   -->
 
                 <!-- Upcoming Events data div  -->
                 <div class="data" data-category="upcomming_event">
-                   <h4> Upcoming Events</h4>
+                    <h4> Upcoming Events</h4>
                     <div class="event_Table">
                         <div class="common_table">
                             <div class="table-responsive">
@@ -239,10 +235,6 @@ include 'inc/header.php'
                                 </table>
                             </div>
 
-                        </div>
-
-                        <div class="mb-5 mt-3">
-                            <?php include 'inc/pagination.php' ?>
                         </div>
                     </div>
                 </div>
@@ -321,13 +313,12 @@ include 'inc/header.php'
                             </div>
 
                         </div>
-
-                        <div class="mb-5 mt-3">
-                            <?php include 'inc/pagination.php' ?>
-                        </div>
                     </div>
                 </div>
                 <!-- Past event data end -->
+            </div>
+            <div class="mb-5">
+                <?php include 'inc/pagination.php' ?>
             </div>
         </div>
     </div>
