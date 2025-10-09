@@ -441,7 +441,7 @@
                         <div class="accordion-item">
                             <h2 class="accordion-header">
 
-                                <a href="#" class="menu-item accordion-button <?php echo ($currentPage === 'employee' || $currentPage === 'payroll' || $currentPage === '' || $currentPage === '' || $currentPage === '' || $currentPage === '') ? '' : 'collapsed'; ?>" data-bs-toggle="collapse" data-bs-target="#menu-collapse-hrm" aria-expanded="<?php echo ($currentPage === 'employee' || $currentPage === 'payroll' || $currentPage === '' || $currentPage === '' || $currentPage === '' || $currentPage === '') ? 'true' : 'false'; ?>"
+                                <a href="#" class="menu-item accordion-button <?php echo ($currentPage === 'employee' || $currentPage === 'payroll' || $currentPage === 'Holiday' || $currentPage === '' || $currentPage === '' || $currentPage === '') ? '' : 'collapsed'; ?>" data-bs-toggle="collapse" data-bs-target="#menu-collapse-hrm" aria-expanded="<?php echo ($currentPage === 'employee' || $currentPage === 'payroll' || $currentPage === 'Holiday' || $currentPage === '' || $currentPage === '' || $currentPage === '') ? 'true' : 'false'; ?>"
                                     aria-controls="menu-collapse-hrm">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none">
                                         <path opacity="0.8" d="M14.4404 19.0498L15.9604 20.5698L19.0004 17.5298" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -451,7 +451,7 @@
                                     HRMS
                                 </a>
                             </h2>
-                            <div id="menu-collapse-hrm" class="accordion-collapse collapse <?php echo ($currentPage === 'employee' || $currentPage === 'payroll' || $currentPage === '' || $currentPage === '' || $currentPage === '' || $currentPage === '') ? 'show' : ''; ?>"
+                            <div id="menu-collapse-hrm" class="accordion-collapse collapse <?php echo ($currentPage === 'employee' || $currentPage === 'payroll' || $currentPage === 'Holiday' || $currentPage === '' || $currentPage === '' || $currentPage === '') ? 'show' : ''; ?>"
                                 data-bs-parent="#sidebar-accordion">
                                 <div class="accordion-body">
                                     <a href="employee.php" class="menu-item  <?php echo ($currentPage === 'employee') ? 'active' : ''; ?>">
@@ -472,7 +472,7 @@
                                         </svg>
                                         Payroll
                                     </a>
-                                    <a href="#" class="menu-item  <?php echo ($currentPage === '') ? 'active' : ''; ?>">
+                                    <a href="holyday.php" class="menu-item  <?php echo ($currentPage === 'Holiday') ? 'active' : ''; ?>">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                                             <path d="M6 1.5V3.75" stroke="#F2F6FA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                                             <path d="M12 1.5V3.75" stroke="#F2F6FA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
