@@ -55,7 +55,7 @@ include 'inc/header.php'
         <div class="add_employee_form_container pl_pr mb-5">
             <div class="common_form">
                 <form action="">
-                    <div class="row">
+                    <div class="row g-4">
                         <div class="col-md-6">
                             <div class="common_employee_bg">
                                 <div class="heading">
@@ -79,7 +79,7 @@ include 'inc/header.php'
 
                                         <div class="col-md-6">
                                             <div class="form_input d-flex flex-column gap-2">
-                                                <label for="Phone1">Phone 1<span>*</span></label>
+                                                <label for="Phone1">Phone 1 <span class="red">*</span></label>
                                                 <input type="tel" placeholder="Enter Employee Number" name="Phone1" id="Phone1" required>
                                             </div>
                                         </div>
@@ -93,7 +93,7 @@ include 'inc/header.php'
 
                                         <div class="col-md-6">
                                             <div class="form_input d-flex flex-column gap-2 position-relative">
-                                                <label for="dob">Date of Birth <span>*</span></label>
+                                                <label for="dob">Date of Birth <span class="red">*</span></label>
                                                 <input type="text" class="date-picker" id="dob" name="dob" placeholder="MM/DD/YYYY">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="calender" width="21" height="20" viewBox="0 0 21 20" fill="none">
                                                     <path d="M7.33203 1.66602V4.16602" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
@@ -112,7 +112,7 @@ include 'inc/header.php'
 
 
                                         <div class="col-md-6 slect-status">
-                                            <label for="Gender" class="mb-2">Gender<span>*</span></label>
+                                            <label for="Gender" class="mb-2">Gender <span class="red">*</span></label>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                                 <path d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                                             </svg>
@@ -151,6 +151,241 @@ include 'inc/header.php'
                                 </div>
                             </div>
                         </div>
+
+                        <div class="col-md-6">
+                            <div class="common_employee_bg">
+                                <div class="heading">
+                                    <h3>Company Detail</h3>
+                                </div>
+                                <div class="content">
+                                    <div class="row g-3 align-items-end">
+                                        <div class="col-md-6">
+                                            <div class="form_input d-flex flex-column gap-2">
+                                                <label for="eid">Employee ID <span>*</span></label>
+                                                <input type="text" placeholder="Auto Generated" name="eid" id="eid" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="form_input d-flex flex-column gap-2">
+                                                <label for="cemail">Email <span>*</span></label>
+                                                <input type="email" placeholder="Enter Employee Email" name="cemail" id="cemail" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form_input d-flex flex-column gap-2">
+                                                        <label for="Password">Password <span class="red">*</span></label>
+                                                        <input type="password" placeholder="Enter Employee Password" name="Password" id="Password" required>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6 slect-status">
+                                                    <label for="Branch" class="mb-2">Select Branch <span class="red">*</span></label>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                        <path d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                    <select class="form-select" aria-label="select" id="Branch" name="Branch" required>
+
+                                                        <option value="" selected disabled hidden>Select Branch</option>
+                                                        <option value="1">Male</option>
+                                                        <option value="2">Female</option>
+                                                        <option value="3">Other</option>
+                                                    </select>
+                                                    <div class="sub_tag">
+                                                        <p>Create Branch. </p>
+                                                        <a href="#">Click Here</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 slect-status">
+                                            <label for="Department" class="mb-2">Select Department <span class="red">*</span></label>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                <path d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            <select class="form-select" aria-label="select" id="Department" name="Department" required>
+
+                                                <option value="" selected disabled hidden>Select Department</option>
+                                                <option value="1">Male</option>
+                                                <option value="2">Female</option>
+                                                <option value="3">Other</option>
+                                            </select>
+                                            <div class="sub_tag">
+                                                <p>Create Department. </p>
+                                                <a href="#">Click Here</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 slect-status">
+                                            <label for="Designation" class="mb-2">Select Designation <span class="red">*</span></label>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                <path d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            <select class="form-select" aria-label="select" id="Designation" name="Designation" required>
+
+                                                <option value="" selected disabled hidden>Select Designation</option>
+                                                <option value="1">Male</option>
+                                                <option value="2">Female</option>
+                                                <option value="3">Other</option>
+                                            </select>
+                                            <div class="sub_tag">
+                                                <p>Create Designation. </p>
+                                                <a href="#">Click Here</a>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-md-6">
+                                            <div class="form_input d-flex flex-column gap-2 position-relative">
+                                                <label for="dob">Date of Joining <span class="red">*</span></label>
+                                                <input type="text" class="date-picker" id="dob" name="dob" placeholder="MM/DD/YYYY">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="calender" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                                    <path d="M7.33203 1.66602V4.16602" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M14 1.66602V4.16602" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M3.58203 7.57422H17.7487" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M18.166 7.08268V14.166C18.166 16.666 16.916 18.3327 13.9993 18.3327H7.33268C4.41602 18.3327 3.16602 16.666 3.16602 14.166V7.08268C3.16602 4.58268 4.41602 2.91602 7.33268 2.91602H13.9993C16.916 2.91602 18.166 4.58268 18.166 7.08268Z" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M13.7441 11.4167H13.7516" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M13.7441 13.9167H13.7516" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M10.6621 11.4167H10.6696" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M10.6621 13.9167H10.6696" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M7.5781 11.4167H7.58559" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M7.5781 13.9167H7.58559" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-md-6 slect-status">
+                                            <label for="Status" class="mb-2">Status <span class="red">*</span></label>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                <path d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            <select class="form-select" aria-label="select" id="Status" name="Status" required>
+                                                <option value="" selected disabled hidden>Active</option>
+                                                <option value="1">Male</option>
+                                                <option value="2">Female</option>
+                                                <option value="3">Other</option>
+                                            </select>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="common_employee_bg">
+                                <div class="heading">
+                                    <h3>Bank Account Detail</h3>
+                                </div>
+                                <div class="content">
+                                    <div class="row g-3 align-items-end">
+                                        <div class="col-md-6">
+                                            <div class="form_input d-flex flex-column gap-2">
+                                                <label for="acc_name">Account Holder Name <span>*</span></label>
+                                                <input type="text" placeholder="Enter Account Holder Name" name="acc_name" id="acc_name" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="form_input d-flex flex-column gap-2">
+                                                <label for="acc_num">Account Number <span>*</span></label>
+                                                <input type="number" placeholder="Enter Account Number" name="acc_num" id="acc_num" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="form_input d-flex flex-column gap-2">
+                                                <label for="bank_name">Bank Name<span class="red">*</span></label>
+                                                <input type="text" placeholder="Enter Bank Name" name="bank_name" id="bank_name" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="form_input d-flex flex-column gap-2">
+                                                <label for="bank_branch">Branch</label>
+                                                <input type="tel" placeholder="Enter Branch" name="bank_branch" id="bank_branch">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="common_employee_bg">
+                                <div class="heading">
+                                    <h3>Documents</h3>
+                                </div>
+                                <div class="content">
+                                    <div class="row g-3 align-items-end">
+                                        <div class="col-md-6">
+                                            <div class="upload-container document_upload">
+                                                <div>
+                                                    <label class="up_label">Resume File <span>*</span></label>
+                                                    <label class="file-upload" data-upload="Resume">
+                                                        <div class="placeholder-data">
+                                                            <p>Choose a file or drag & drop it here</p>
+                                                        </div>
+                                                        <input type="file" name="Resume" required>
+                                                        <div class="preview" data-preview="Resume"></div>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="upload-container document_upload">
+                                                <div>
+                                                    <label class="up_label">Offer Letter <span>*</span></label>
+                                                    <label class="file-upload" data-upload="Letter">
+                                                        <div class="placeholder-data">
+                                                            <p>Choose a file or drag & drop it here</p>
+                                                        </div>
+                                                        <input type="file" name="Letter" required>
+                                                        <div class="preview" data-preview="Letter"></div>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="upload-container document_upload">
+                                                <div>
+                                                    <label class="up_label">Agreement <span>*</span></label>
+                                                    <label class="file-upload" data-upload="Agreement">
+                                                        <div class="placeholder-data">
+                                                            <p>Choose a file or drag & drop it here</p>
+                                                        </div>
+                                                        <input type="file" name="Agreement" required>
+                                                        <div class="preview" data-preview="Agreement"></div>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="upload-container document_upload">
+                                                <div>
+                                                    <label class="up_label">Certificate <span>*</span></label>
+                                                    <label class="file-upload" data-upload="Certificate">
+                                                        <div class="placeholder-data">
+                                                            <p>Choose a file or drag & drop it here</p>
+                                                        </div>
+                                                        <input type="file" name="Certificate" required>
+                                                        <div class="preview" data-preview="Certificate"></div>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="form_discard_save d-flex align-items-center gap-2 justify-content-end mt-5">
@@ -160,7 +395,6 @@ include 'inc/header.php'
                 </form>
             </div>
         </div>
-
     </div>
 </section>
 

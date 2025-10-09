@@ -5696,15 +5696,18 @@ select option:not(:first-child) {
     border-radius: 18px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.15);
 }
-.common_employee_bg .content{
+
+.common_employee_bg .content {
     padding: 20px;
 }
-.common_employee_bg .heading{
+
+.common_employee_bg .heading {
     border-bottom: 1px solid var(--Neutral-Separator, #EBEBEB);
     padding: 12px 20px;
     position: relative;
 }
-.common_employee_bg .heading::before{
+
+.common_employee_bg .heading::before {
     content: '';
     position: absolute;
     top: 50%;
@@ -5715,6 +5718,7 @@ select option:not(:first-child) {
     width: 3px;
     border-radius: 3px;
 }
+
 .common_employee_bg .heading h3 {
     color: var(--text-dark2, #141414);
     font-size: 18px;
@@ -5722,6 +5726,62 @@ select option:not(:first-child) {
     font-weight: 700;
     line-height: normal;
     margin: 0;
+}
+
+.sub_tag {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    font-size: 10px;
+    font-weight: 400;
+    color: var(--text-dark2);
+    margin-top: 5px;
+}
+
+.sub_tag p {
+    margin: 0;
+}
+
+.sub_tag a {
+    color: var(--neutral-primay);
+}
+
+.document_upload {
+    max-width: 2000px !important;
+    width: 100% !important;
+}
+
+.document_upload>div {
+    width: 100%;
+}
+
+.document_upload .file-upload {
+    max-width: 2000px;
+    width: 100% !important;
+    border-radius: 8px;
+    border: 1px solid var(--whiteEB, #EBEBEB);
+    padding: 8px 16px !important;
+    outline-color: var(--login-border) !important;
+    box-shadow: none;
+    background: var(--whiteFA);
+    align-items: start;
+    height: auto;
+}
+
+.document_upload .file-upload p {
+    margin: 0;
+    color: var(--text-85);
+    text-align: left;
+    margin-right: auto;
+}
+
+.document_upload .preview img {
+    max-height: 100px !important;
+    object-position: top;
+}
+
+.document_upload .remove-btn {
+    top: 8px;
 }
 
 /* ****************** EMPLOYEE PAGE CSS ENDS******************* */
