@@ -2120,7 +2120,28 @@ SIDE BAR CSS ENDS
     scrollbar-width: none;
     -ms-overflow-style: none;
 }
-
+.inner_salary_heading{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.inner_salary_heading h3{
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-dark2);
+}
+.inner_salary_heading .add_earning{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: var(--neutral-primay);
+    font-weight: 500;
+cursor: pointer;
+}
 .add_account_group_popup_content::-webkit-scrollbar,
 .change_ledger_group_popup_content::-webkit-scrollbar,
 .attendance_popup_content::-webkit-scrollbar {
