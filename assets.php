@@ -71,7 +71,7 @@ include 'inc/header.php'
                         <path d="M6.66602 10H13.3327" stroke="#F5F5F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                         <path d="M10 13.3346V6.66797" stroke="#F5F5F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
-                    Add Assets 
+                    Add Assets
                 </button>
             </div>
         </div>
@@ -84,10 +84,10 @@ include 'inc/header.php'
                         <thead>
                             <tr>
                                 <th scope="col">SN</th>
-                                <th scope="col">Holiday Name</th>
-                                <th scope="col">Day</th>
-                                <th scope="col">Description</th>
-                                <th scope="col">Date</th>
+                                <th scope="col">Assets Name</th>
+                                <th scope="col">Assets User</th>
+                                <th scope="col">Designation</th>
+                                <th scope="col">Purchase Date</th>
                                 <th scope="col">Status</th>
                                 <th scope="col">Action</th>
                             </tr>
@@ -97,9 +97,14 @@ include 'inc/header.php'
                             <?php foreach ($projectList as $project): ?>
                                 <tr>
                                     <td><?= $project['id'] ?></td>
-                                    <td>New Year</td>
-                                    <td>Sunday</td>
-                                    <td>First day of the new year </td>
+                                    <td>Dell Laptop</td>
+                                    <td>
+                                        <div class="table_profile_image">
+                                            <img src="assets/images/profileimg.jpg" alt="profile image">
+                                            <?= $project['labour_name'] ?>
+                                        </div>
+                                    </td>
+                                    <td><?= $project['user_role'] ?></td>
                                     <td><?= $project['date'] ?></td>
                                     <td>
                                         <!--
@@ -159,7 +164,7 @@ include 'inc/header.php'
     <div class="outer_layout">
         <div class="attendance_popup_content">
             <div class="monthly_heading">
-                Holiday
+                Assets
 
                 <button type="button" id="CloseAttendancePopup">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -169,22 +174,44 @@ include 'inc/header.php'
             </div>
 
             <div class="attendance_form mt-4">
-                <h4>Add Holiday </h4>
-                <p>Please kindly complete the form to Add Holiday</p>
+                <h4>Add Assets </h4>
+                <p>Please kindly complete the form to Add Assets</p>
                 <div class="common_form">
                     <form action="">
                         <div class="row g-3 align-items-end">
 
                             <div class="col-md-6">
-                                <div class="form_input d-flex flex-column gap-2">
-                                    <label for="Tittle">Tittle<span>*</span> </label>
-                                    <input type="text" id="Tittle" name="Tittle" placeholder="Enter a Title " required>
+                                <div class="slect-status">
+                                    <label for="asset_name" class="mb-2">Assets Name <span class="red">*</span></label>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <select class="form-select" aria-label="select" id="asset_name" name="asset_name" required>
+                                        <option value="" disabled hidden selected>Select</option>
+                                        <option value="Active">Active</option>
+                                        <option value="InActive">InActive</option>
+                                    </select>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-6">
+                                <div class="slect-status">
+                                    <label for="asset_user" class="mb-2">Assets User <span class="red">*</span></label>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <select class="form-select" aria-label="select" id="asset_user" name="asset_user" required>
+                                        <option value="" disabled hidden selected>Select</option>
+                                        <option value="Active">Active</option>
+                                        <option value="InActive">InActive</option>
+                                    </select>
                                 </div>
                             </div>
 
                             <div class="col-md-6">
                                 <div class="form_input d-flex flex-column gap-2 position-relative">
-                                    <label for="Date ">Date <span class="red">*</span></label>
+                                    <label for="Date ">Purchase Date <span class="red">*</span></label>
                                     <input type="text" class="date-picker" id="Date " name="Date " placeholder="MM/DD/YYYY">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="calender" width="21" height="20" viewBox="0 0 21 20" fill="none">
                                         <path d="M7.33203 1.66602V4.16602" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
@@ -201,14 +228,6 @@ include 'inc/header.php'
                                 </div>
                             </div>
 
-
-                            <div class="col-md-6">
-                                <div class="form_input d-flex flex-column gap-2">
-                                    <label for="Description">Description<span>*</span> </label>
-                                    <input type="text" id="Description" name="Description" placeholder="Enter a Description " required>
-                                </div>
-                            </div>
-
                             <div class="col-md-6">
                                 <div class="slect-status">
                                     <label for="Status" class="mb-2">Status <span class="red">*</span></label>
@@ -220,6 +239,21 @@ include 'inc/header.php'
                                         <option value="Active">Active</option>
                                         <option value="InActive">InActive</option>
                                     </select>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-6">
+                                <div class="form_input d-flex flex-column gap-2">
+                                    <label for="Serial_Number">Serial Number<span>*</span> </label>
+                                    <input type="number" id="Serial_Number" name="Serial_Number" required>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form_input d-flex flex-column gap-2">
+                                    <label for="Model">Model<span>*</span> </label>
+                                    <input type="number" id="Model" name="Model" required>
                                 </div>
                             </div>
 
