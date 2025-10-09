@@ -441,7 +441,7 @@
                         <div class="accordion-item">
                             <h2 class="accordion-header">
 
-                                <a href="#" class="menu-item accordion-button <?php echo ($currentPage === 'employee' || $currentPage === 'payroll' || $currentPage === 'Holiday' || $currentPage === '' || $currentPage === '' || $currentPage === '') ? '' : 'collapsed'; ?>" data-bs-toggle="collapse" data-bs-target="#menu-collapse-hrm" aria-expanded="<?php echo ($currentPage === 'employee' || $currentPage === 'payroll' || $currentPage === 'Holiday' || $currentPage === '' || $currentPage === '' || $currentPage === '') ? 'true' : 'false'; ?>"
+                                <a href="#" class="menu-item accordion-button <?php echo ($currentPage === 'employee' || $currentPage === 'payroll' || $currentPage === 'Holiday' || $currentPage === 'Assets' || $currentPage === '' || $currentPage === '') ? '' : 'collapsed'; ?>" data-bs-toggle="collapse" data-bs-target="#menu-collapse-hrm" aria-expanded="<?php echo ($currentPage === 'employee' || $currentPage === 'payroll' || $currentPage === 'Holiday' || $currentPage === 'Assets' || $currentPage === '' || $currentPage === '') ? 'true' : 'false'; ?>"
                                     aria-controls="menu-collapse-hrm">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none">
                                         <path opacity="0.8" d="M14.4404 19.0498L15.9604 20.5698L19.0004 17.5298" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -451,7 +451,7 @@
                                     HRMS
                                 </a>
                             </h2>
-                            <div id="menu-collapse-hrm" class="accordion-collapse collapse <?php echo ($currentPage === 'employee' || $currentPage === 'payroll' || $currentPage === 'Holiday' || $currentPage === '' || $currentPage === '' || $currentPage === '') ? 'show' : ''; ?>"
+                            <div id="menu-collapse-hrm" class="accordion-collapse collapse <?php echo ($currentPage === 'employee' || $currentPage === 'payroll' || $currentPage === 'Holiday' || $currentPage === 'Assets' || $currentPage === '' || $currentPage === '') ? 'show' : ''; ?>"
                                 data-bs-parent="#sidebar-accordion">
                                 <div class="accordion-body">
                                     <a href="employee.php" class="menu-item  <?php echo ($currentPage === 'employee') ? 'active' : ''; ?>">
@@ -488,7 +488,7 @@
                                         Holiday
                                     </a>
 
-                                    <a href="#" class="menu-item  <?php echo ($currentPage === 'daybook') ? 'active' : ''; ?>">
+                                    <a href="#" class="menu-item  <?php echo ($currentPage === '') ? 'active' : ''; ?>">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                                             <path d="M6 1.5V3.75" stroke="#F2F6FA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                                             <path d="M12 1.5V3.75" stroke="#F2F6FA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
@@ -518,7 +518,7 @@
                                         Attendence
                                     </a>
 
-                                    <a href="#" class="menu-item  <?php echo ($currentPage === '') ? 'active' : ''; ?>">
+                                    <a href="assets.php" class="menu-item  <?php echo ($currentPage === 'Assets') ? 'active' : ''; ?>">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                                             <path d="M14.3782 4.98063C14.0557 3.35312 12.8482 2.64062 11.1682 2.64062H4.5832C2.6032 2.64062 1.2832 3.63063 1.2832 5.94063V9.80312C1.2832 11.4681 1.9657 12.4431 3.0907 12.8631C3.2557 12.9231 3.4357 12.9756 3.6232 13.0056C3.9232 13.0731 4.2457 13.1031 4.5832 13.1031H11.1757C13.1557 13.1031 14.4757 12.1131 14.4757 9.80312V5.94063C14.4757 5.58813 14.4457 5.27313 14.3782 4.98063ZM4.1482 9.00063C4.1482 9.30813 3.8932 9.56313 3.5857 9.56313C3.2782 9.56313 3.0232 9.30813 3.0232 9.00063V6.75063C3.0232 6.44313 3.2782 6.18813 3.5857 6.18813C3.8932 6.18813 4.1482 6.44313 4.1482 6.75063V9.00063ZM7.8757 9.85563C6.7807 9.85563 5.8957 8.97063 5.8957 7.87563C5.8957 6.78063 6.7807 5.89563 7.8757 5.89563C8.9707 5.89563 9.8557 6.78063 9.8557 7.87563C9.8557 8.97063 8.9707 9.85563 7.8757 9.85563ZM12.7207 9.00063C12.7207 9.30813 12.4657 9.56313 12.1582 9.56313C11.8507 9.56313 11.5957 9.30813 11.5957 9.00063V6.75063C11.5957 6.44313 11.8507 6.18813 12.1582 6.18813C12.4657 6.18813 12.7207 6.44313 12.7207 6.75063V9.00063Z" fill="#F7F7F7" />
                                             <path d="M16.7243 8.19363V12.0561C16.7243 14.3661 15.4043 15.3636 13.4168 15.3636H6.83184C6.26934 15.3636 5.76684 15.2811 5.33184 15.1161C4.97934 14.9886 4.67184 14.8011 4.42434 14.5611C4.28934 14.4336 4.39434 14.2311 4.58184 14.2311H11.1668C13.9418 14.2311 15.5918 12.5811 15.5918 9.81363V5.94363C15.5918 5.76363 15.7943 5.65113 15.9218 5.78613C16.4318 6.32613 16.7243 7.11363 16.7243 8.19363Z" fill="#F7F7F7" />

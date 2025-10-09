@@ -1,5 +1,5 @@
 <?php
-$pageTitle = 'Holiday';
+$pageTitle = 'Assets';
 include 'inc/header.php'
 ?>
 
@@ -12,7 +12,7 @@ include 'inc/header.php'
 
 
     <?php
-    $currentPage = 'Holiday';
+    $currentPage = 'Assets';
     include 'inc/side-bar.php';
     ?>
 
@@ -30,7 +30,7 @@ include 'inc/header.php'
                 <div class="bread_crump_content d-flex align-items-center gap-2">
                     <a href="employee.php">HRMS </a>
                     <span>/</span>
-                    <p>Holiday</p>
+                    <p>Assets</p>
                 </div>
             </div>
 
@@ -45,8 +45,8 @@ include 'inc/header.php'
 
         <div class="admin_list_heading d-flex align-items-center flex-wrap gap-3 justify-content-between outer_padding">
             <div class="left_heading">
-                <h3>Holidays List</h3>
-                <p>You can view the Holidays list accordingly.</p>
+                <h3>Assets List</h3>
+                <p>You can view the Assets list accordingly.</p>
             </div>
 
             <div class="right_fil_div d-flex align-items-center gap-2 flex-wrap justify-content-md-end">
@@ -71,7 +71,7 @@ include 'inc/header.php'
                         <path d="M6.66602 10H13.3327" stroke="#F5F5F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                         <path d="M10 13.3346V6.66797" stroke="#F5F5F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
-                    Add Holiday
+                    Add Assets 
                 </button>
             </div>
         </div>
