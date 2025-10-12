@@ -3957,6 +3957,20 @@ ASSET FILTER POPUP CSS ENDS
     font-weight: 700;
 }
 
+.absent_state {
+    border-radius: 12px;
+    border: 1px solid rgba(255, 0, 0, 0.50);
+    background: rgba(229, 157, 157, 0.60);
+    display: flex;
+    width: max-content;
+    padding: 4px 12px;
+    justify-content: center;
+    align-items: center;
+    color: #FD2D2D;
+    font-size: 14px;
+    font-weight: 700;
+}
+
 .unapproved {
     border-radius: 20px;
     border: 1px solid rgba(255, 0, 0, 0.50);
@@ -5999,14 +6013,17 @@ select option:not(:first-child) {
 .employee_leave_list_common_box.bgGroup2 {
     background-color: #E5ECF6;
 }
-.remainaing_leave_tag.pink{
+
+.remainaing_leave_tag.pink {
     color: #FD3995;
     background: #FFEDF6;
 }
-.remainaing_leave_tag.purple{
+
+.remainaing_leave_tag.purple {
     color: #AB47BC;
     background: #F7EEF9;
 }
+
 /* ======================= LEAVE PAGE CSS ENDS ====================== */
 
 /* setting icon css  */
