@@ -3942,6 +3942,19 @@ ASSET FILTER POPUP CSS ENDS
     font-size: 14px;
     font-weight: 700;
 }
+.approved2 {
+    border-radius: 12px;
+    border: 1px solid rgba(0, 124, 25, 0.70);
+    background: #CCF0CE;
+    display: flex;
+    width: max-content;
+    padding: 4px 12px;
+    justify-content: center;
+    align-items: center;
+    color: rgba(0, 124, 25, 0.60);
+    font-size: 14px;
+    font-weight: 700;
+}
 
 .unapproved {
     border-radius: 20px;
@@ -5842,7 +5855,6 @@ select option:not(:first-child) {
     flex-direction: column;
     justify-content: end;
     width: 100%;
-    border: 1px solid red;
 }
 
 .leave_list_common_box .list_heading p {
@@ -5874,7 +5886,6 @@ select option:not(:first-child) {
     left: 0;
     width: 50%;
     height: 100%;
-    border: 1px solid;
 }
 
 .leave_list_common_box .shape img {
@@ -6441,6 +6452,10 @@ select option:not(:first-child) {
     .AttendancePopup,
     .add_account_group_popup {
         width: 100%;
+    }
+
+    .leave_list_common_box {
+        max-width: 600px;
     }
 }
 
