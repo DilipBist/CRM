@@ -5858,7 +5858,14 @@ select option:not(:first-child) {
     width: 100%;
 }
 
-.leave_list_common_box .list_heading p {
+.employee_leave_list_common_box .list_heading {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.leave_list_common_box .list_heading p,
+.employee_leave_list_common_box .list_heading p {
     color: #6B7280;
     text-align: right;
     font-family: var(--inter);
@@ -5870,7 +5877,9 @@ select option:not(:first-child) {
     padding-bottom: 12px;
 }
 
-.leave_list_common_box .list_heading h4 {
+
+.leave_list_common_box .list_heading h4,
+.employee_leave_list_common_box .list_heading h4 {
     margin: 0;
     color: #202C4B;
     text-align: right;
@@ -5910,8 +5919,97 @@ select option:not(:first-child) {
     left: 40px;
 }
 
+.employee_leave_list_common_box {
+    background: #E3F5FF;
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    max-width: 400px;
+    border-top-right-radius: 0;
+}
+
+.employee_leave_list_common_box .list_heading p,
+.employee_leave_list_common_box .list_heading h4 {
+    text-align: start;
+}
+
+.employee_leave_list_common_box .list_heading p {
+    font-size: 14px;
+    padding-bottom: 6px;
+}
+
+.employee_leave_list_common_box .list_heading h4 {
+    font-size: 18px;
+}
+
+.employee_leave_list_common_box .shape {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+}
+
+.employee_leave_list_common_box .shape img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.employee_leave_list_common_box .shape .inner_icon {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    top: 25px;
+    right: 20px;
+}
+
+.remainaing_leave_tag {
+    color: #3B7080;
+    font-family: var(--inter);
+    font-size: 10.5px;
+    font-style: normal;
+    font-weight: 600;
+    width: max-content;
+    border-radius: 4px;
+    background: #EDF2F4;
+    display: flex;
+    height: 18.5px;
+    padding: 2px 6.809px 3.5px 7.19px;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    margin-top: 6px;
+}
+
+.remainaing_leave_tag.blue {
+    color: #1B84FF;
+    background-color: #D6E9FF;
+}
+
+.employee_leave_list_common_box.bgGroup2 {
+    background-color: #E5ECF6;
+}
+.remainaing_leave_tag.pink{
+    color: #FD3995;
+    background: #FFEDF6;
+}
+.remainaing_leave_tag.purple{
+    color: #AB47BC;
+    background: #F7EEF9;
+}
 /* ======================= LEAVE PAGE CSS ENDS ====================== */
 
+/* setting icon css  */
 .settting_page {
     position: fixed;
     top: 50%;
@@ -5934,19 +6032,24 @@ select option:not(:first-child) {
 .settting_page:hover svg path {
     stroke: var(--neutral-primay);
 }
+
 .rotate-icon {
-  animation: rotate 2s linear infinite;
-  transform-origin: center;
+    animation: rotate 2s linear infinite;
+    transform-origin: center;
 }
 
 @keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
+
+/* setting icon css  */
+
 
 /* *********************** PRINT MEDIA CODE ******************** */
 /* vocuhar print css  */
@@ -6447,6 +6550,11 @@ select option:not(:first-child) {
         max-width: 420px;
         width: 100%;
     }
+
+    .leave_list_common_box,
+    .employee_leave_list_common_box {
+        max-width: 600px;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -6465,6 +6573,7 @@ select option:not(:first-child) {
     .track_profile_container {
         width: 260px;
     }
+
 }
 
 @media (max-width: 992px) {
@@ -6491,9 +6600,7 @@ select option:not(:first-child) {
         width: 100%;
     }
 
-    .leave_list_common_box {
-        max-width: 600px;
-    }
+
 }
 
 @media (max-width: 768px) {
