@@ -5824,6 +5824,82 @@ select option:not(:first-child) {
 /* ****************** EMPLOYEE PAGE CSS ENDS******************* */
 
 
+/* ======================= LEAVE PAGE CSS STARTS ====================== */
+.leave_list_common_box {
+    background: #E3F5FF;
+    border-radius: 16px;
+    padding: 24px;
+    height: 112px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    max-width: 400px;
+}
+
+.leave_list_common_box .list_heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 100%;
+    border: 1px solid red;
+}
+
+.leave_list_common_box .list_heading p {
+    color: #6B7280;
+    text-align: right;
+    font-family: var(--inter);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    margin: 0;
+    padding-bottom: 12px;
+}
+
+.leave_list_common_box .list_heading h4 {
+    margin: 0;
+    color: #202C4B;
+    text-align: right;
+    font-family: var(--inter);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 21.6px;
+}
+
+.leave_list_common_box .shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    border: 1px solid;
+}
+
+.leave_list_common_box .shape img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.leave_list_common_box .shape .inner_icon {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background-color: var(--white);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    top: 35px;
+    left: 40px;
+}
+
+/* ======================= LEAVE PAGE CSS ENDS ====================== */
+
 /* *********************** PRINT MEDIA CODE ******************** */
 /* vocuhar print css  */
 .prit_logo {
@@ -6472,8 +6548,9 @@ select option:not(:first-child) {
         width: 100%;
     }
 }
+
 @media (max-width: 420px) {
-    .delete_inner_content_container{
+    .delete_inner_content_container {
         width: 320px;
     }
 }
