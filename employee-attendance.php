@@ -140,8 +140,7 @@ include 'inc/header.php'
                         <thead>
                             <tr>
                                 <th scope="col">SN</th>
-                                <th scope="col">Name</th>
-                                <th scope="col">Designation</th>
+                                <th scope="col">Date</th>
                                 <th scope="col">Check In</th>
                                 <th scope="col">Check Out</th>
                                 <th scope="col">Late</th>
@@ -155,25 +154,20 @@ include 'inc/header.php'
                             <?php foreach ($projectList as $project): ?>
                                 <tr>
                                     <td><?= $project['id'] ?></td>
-                                    <td>
-                                        <div class="table_profile_image">
-                                            <img src="assets/images/profileimg.jpg" alt="profile image">
-                                            <?= $project['labour_name'] ?>
-                                        </div>
-                                    </td>
-                                    <td><?= $project['user_role'] ?></td>
+                                    <td><?= $project['date'] ?></td>
                                     <td>09:00 AM </td>
                                     <td>06:45 PM </td>
                                     <td>30 Min</td>
                                     <td>30 Min</td>
                                     <td>
-                                        <div class="approved2">
+                                        <!-- for present status  -->
+                                        <!-- <div class="approved2">
                                             Present
-                                        </div>
-                                        <!-- use below class for absent  -->
-                                        <!-- <div class="absent_state">
-                                            Absent
                                         </div> -->
+                                        <!-- use below class for absent  -->
+                                        <div class="absent_state">
+                                            Absent
+                                        </div>
                                     </td>
                                     <td>
                                         <div class="table_actions">
