@@ -1,5 +1,5 @@
 <?php
-$pageTitle = 'Admin Attendance';
+$pageTitle = 'Employee Attendance';
 include 'inc/header.php'
 ?>
 
@@ -45,7 +45,7 @@ include 'inc/header.php'
 
         <div class="admin_list_heading d-flex align-items-center flex-wrap gap-3 justify-content-between outer_padding">
             <div class="left_heading">
-                <h3>Attendance List</h3>
+                <h3>Employee Attendance</h3>
                 <p>You can view the Attendance list accordingly.</p>
             </div>
 
@@ -75,8 +75,8 @@ include 'inc/header.php'
                             </div>
                         </div>
                         <div class="list_heading">
-                            <p>Total Present</p>
-                            <h4>180/200</h4>
+                            <p>Total Hour Today</p>
+                            <h4>7/8 Hours</h4>
                         </div>
                     </div>
                 </div>
@@ -92,8 +92,8 @@ include 'inc/header.php'
                             </div>
                         </div>
                         <div class="list_heading">
-                            <p>Total Half Day</p>
-                            <h4>10</h4>
+                            <p>Total Hours Week</p>
+                            <h4>10/40 Hours</h4>
                         </div>
                     </div>
                 </div>
@@ -109,8 +109,8 @@ include 'inc/header.php'
                             </div>
                         </div>
                         <div class="list_heading">
-                            <p>On Leave Employee</p>
-                            <h4>10</h4>
+                            <p>Total Hours Month</p>
+                            <h4>75/90</h4>
                         </div>
                     </div>
                 </div>
@@ -126,8 +126,8 @@ include 'inc/header.php'
                             </div>
                         </div>
                         <div class="list_heading">
-                            <p>Late Login</p>
-                            <h4>10</h4>
+                            <p>Overtime this Month</p>
+                            <h4>16/28</h4>
                         </div>
                     </div>
                 </div>

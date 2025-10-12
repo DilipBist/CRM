@@ -5865,6 +5865,10 @@ select option:not(:first-child) {
     max-width: 400px;
 }
 
+.leave_list_common_box.bg_next {
+    background: #E5ECF6;
+}
+
 .leave_list_common_box .list_heading {
     display: flex;
     flex-direction: column;
