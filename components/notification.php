@@ -68,7 +68,6 @@
 </div>
 
 
-
 <div class="notification_popup_bg">
 
 </div>

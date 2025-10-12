@@ -3942,6 +3942,7 @@ ASSET FILTER POPUP CSS ENDS
     font-size: 14px;
     font-weight: 700;
 }
+
 .approved2 {
     border-radius: 12px;
     border: 1px solid rgba(0, 124, 25, 0.70);
@@ -5910,6 +5911,42 @@ select option:not(:first-child) {
 }
 
 /* ======================= LEAVE PAGE CSS ENDS ====================== */
+
+.settting_page {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -2px;
+    width: 40px;
+    height: 40px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    z-index: 999;
+    cursor: pointer;
+    background-color: var(--neutral-primay);
+    border: 1px solid var(--neutral-primay);
+}
+
+.settting_page:hover {
+    background-color: transparent;
+}
+
+.settting_page:hover svg path {
+    stroke: var(--neutral-primay);
+}
+.rotate-icon {
+  animation: rotate 2s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 
 /* *********************** PRINT MEDIA CODE ******************** */
 /* vocuhar print css  */
