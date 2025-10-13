@@ -4054,6 +4054,7 @@ ASSET FILTER POPUP CSS ENDS
     background-color: var(--whiteFA);
     border: 1px solid var(--Menu-Separator);
     padding: 12px;
+    outline-color: var(--hold-color);
 }
 
 .purchase_data_table .inner_input {
@@ -4080,6 +4081,7 @@ ASSET FILTER POPUP CSS ENDS
 .purchase_data_table table tfoot tr:last-child td:last-child {
     background: transparent;
 }
+
 
 /* add purchase requisation css  ends */
 
@@ -4122,6 +4124,32 @@ select option:not(:first-child) {
 .expense_common_table_container .common_table table tbody th {
     height: 52px;
     border: 1px solid var(--Menu-Separator);
+}
+
+
+.add_inventory_table table tfoot tr:nth-child(2) td,
+.add_inventory_table table tfoot tr:last-child td:nth-child(2),
+.add_inventory_table table tfoot tr:last-child td:last-child {
+    background: transparent;
+}
+
+.add_inventory_table table tfoot tr:nth-child(2) td:nth-last-child(-n+2),
+.add_inventory_table table tfoot tr:nth-child(3) {
+    background-color: var(--whiteFA);
+}
+
+.add_inventory_table table tfoot tr:nth-child(3) td:nth-last-child(-n+2) {
+    background-color: transparent;
+}
+
+.amount_text {
+    font-weight: 800;
+    font-size: 14px;
+    color: var(--text-dark2);
+}
+
+.purchase_data_table.add_inventory_table table tfoot tr:nth-child(3) td {
+    background: transparent !important;
 }
 
 /* ======================== Purchase requisation page css ends ========== */

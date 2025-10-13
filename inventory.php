@@ -54,14 +54,14 @@ include 'inc/header.php'
 
 
                 <div class="right_fil_div d-flex align-items-center gap-2 flex-wrap justify-content-md-end">
-                    <div class="search">
+                    <!-- <div class="search">
                         <input type="text" placeholder="Search" name="search">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                             <path d="M7.66634 14.0007C11.1641 14.0007 13.9997 11.1651 13.9997 7.66732C13.9997 4.16951 11.1641 1.33398 7.66634 1.33398C4.16854 1.33398 1.33301 4.16951 1.33301 7.66732C1.33301 11.1651 4.16854 14.0007 7.66634 14.0007Z" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                             <path d="M14.6663 14.6673L13.333 13.334" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
 
-                    </div>
+                    </div> -->
 
                     <div class="filter_comp">
                         <div class="asset_filter_btn_inv addAssetBtn">
@@ -104,7 +104,7 @@ include 'inc/header.php'
                     </div>
                     <!-- button div ends -->
 
-                    <a href="#">
+                    <a href="add-inventory.php">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                             <path d="M9.99935 18.3327C14.5827 18.3327 18.3327 14.5827 18.3327 9.99935C18.3327 5.41602 14.5827 1.66602 9.99935 1.66602C5.41602 1.66602 1.66602 5.41602 1.66602 9.99935C1.66602 14.5827 5.41602 18.3327 9.99935 18.3327Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                             <path d="M6.66602 10H13.3327" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -283,7 +283,7 @@ include 'inc/header.php'
 
 
 
-<!-- search filter popup  -->
+<!-- search inventory form  popup  -->
 <div class="add-asset-filter-component">
     <div class="add_asset_filter_bg">
         <div class="ass_filter_popcontent">
@@ -441,6 +441,6 @@ include 'inc/header.php'
         </div>
     </div>
 </div>
-<!-- search filter popup  -->
+<!-- search inventory form popup  -->
 
 <?php include 'inc/footer.php' ?>

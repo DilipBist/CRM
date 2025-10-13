@@ -38,6 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
     setupAccordionSync();
     initChangeLedgerPopup();
     initStockCheckboxToggles();
+    initInventoryRowAdd();
 
 
     // ============
@@ -752,6 +753,48 @@ function initRowAdd() {
         `;
 
         document.querySelector(".purchase_data_table table tbody").insertAdjacentHTML("beforeend", newTr);
+    });
+}
+function initInventoryRowAdd() {
+    const addInventoryRow = document.getElementById('addInventoryRow');
+
+    if (!addInventoryRow) return;
+
+    addInventoryRow.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        const newTr = `
+         <tr>
+            <td>
+                <div class="inner_input">
+                    <input type="text" placeholder="Items">
+                    <textarea name="description" placeholder="Description" rows="3"></textarea>
+                </div>
+            </td>
+            <td>
+                <div class="inner_input">
+                    <input type="number" placeholder="Unit">
+                </div>
+            </td>
+            <td>
+                <div class="inner_input">
+                    <input type="number" placeholder="Qty">
+                </div>
+            </td>
+            <td>
+                <div class="inner_input">
+                    <input type="number" placeholder="Rate">
+                </div>
+            </td>    
+            <td>
+                <div class="amount_text">
+                    8000
+                </div>
+            </td>   
+         </tr>
+        `;
+
+        document.querySelector(".add_inventory_table table tbody").insertAdjacentHTML("beforeend", newTr);
     });
 }
 

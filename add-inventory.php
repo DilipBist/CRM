@@ -1,5 +1,5 @@
 <?php
-$pageTitle = 'Add Purchase Requisation';
+$pageTitle = 'Add Inventory';
 include 'inc/header.php'
 ?>
 
@@ -7,41 +7,42 @@ include 'inc/header.php'
 <section class="admin_container d-flex">
 
     <?php
-    $currentPage = 'projectlist';
+    $currentPage = 'addInventory';
     include 'inc/side-bar.php';
     ?>
 
     <div class="admin_right_content project__Details ms-auto">
-        <!-- top profile header  -->
+
+        <!-- TOP PROFILE HEADER  -->
         <div class="admin_top_header d-flex align-items-center gap-3 justify-content-between">
             <div class="chart_bread_crump d-flex align-items-center gap-3">
                 <div class="icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                         <path d="M9 1.5C7.035 1.5 5.4375 3.0975 5.4375 5.0625C5.4375 6.99 6.945 8.55 8.91 8.6175C8.97 8.61 9.03 8.61 9.075 8.6175C9.09 8.6175 9.0975 8.6175 9.1125 8.6175C9.12 8.6175 9.12 8.6175 9.1275 8.6175C11.0475 8.55 12.555 6.99 12.5625 5.0625C12.5625 3.0975 10.965 1.5 9 1.5Z" fill="#141414" />
-                        <path d="M12.8088 10.6127C10.7162 9.21766 7.30375 9.21766 5.19625 10.6127C4.24375 11.2502 3.71875 12.1127 3.71875 13.0352C3.71875 13.9577 4.24375 14.8127 5.18875 15.4427C6.23875 16.1477 7.61875 16.5002 8.99875 16.5002C10.3787 16.5002 11.7587 16.1477 12.8088 15.4427C13.7537 14.8052 14.2788 13.9502 14.2788 13.0202C14.2713 12.0977 13.7537 11.2427 12.8088 10.6127Z" fill="#141414" />
+                        <path d="M12.8107 10.6127C10.7182 9.21766 7.3057 9.21766 5.1982 10.6127C4.2457 11.2502 3.7207 12.1127 3.7207 13.0352C3.7207 13.9577 4.2457 14.8127 5.1907 15.4427C6.2407 16.1477 7.6207 16.5002 9.0007 16.5002C10.3807 16.5002 11.7607 16.1477 12.8107 15.4427C13.7557 14.8052 14.2807 13.9502 14.2807 13.0202C14.2732 12.0977 13.7557 11.2427 12.8107 10.6127Z" fill="#141414" />
                     </svg>
                 </div>
 
                 <div class="bread_crump_content d-flex align-items-center gap-2">
-                    <a href="project-list.php">Project Management</a>
+                    <a href="inventory.php">Inventory Management </a>
                     <span>/</span>
-                    <p> Add Purchase Requisition</p>
+                    <p> Add Inventory</p>
                 </div>
             </div>
 
             <div class="admin_profile_container d-flex align-items-center gap-3">
+
                 <?php include 'components/profile.php' ?>
+
+
                 <?php include 'components/notification.php' ?>
             </div>
         </div>
-        <!-- top profile header ends -->
+        <!-- TOP PROFILE HEADER ENDS  -->
 
         <div class="add_purchase_requisation_data_container pl_pr">
             <div class="add_heading">
-                <a href="project-details.php">
-                    Back
-                </a>
-                <h3>Add Purchase Requisition</h3>
+                <h3>Add Inventory</h3>
                 <p>Please kindly fill up the following form</p>
             </div>
 
@@ -91,14 +92,22 @@ include 'inc/header.php'
                                 </select>
                             </div>
 
-                            <div class="col-md-6 col-lg-4 col-xxl-3">
-                                <div class="form_input d-flex flex-column gap-2">
-                                    <label for="quantity">Quantity <span>*</span></label>
-                                    <input type="number" placeholder="Enter a Quantity" name="quantity" id="quantity" required>
-                                </div>
+                            <div class="col-md-6 col-lg-4 col-xxl-3 slect-status">
+                                <label for="Project" class="mb-2">Project <span class="red">*</span></label>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <select class="form-select" aria-label="select" id="Project" name="Project" required>
+
+                                    <option value="" disabled selected hidden>Select Project </option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
                             </div>
 
-                            <div class="col-12">
+                            <!-- shipping address  -->
+                            <!-- <div class="col-12">
                                 <div class="add_heading mb-0 mt-4">
                                     <h3>Shipping Address</h3>
                                     <p>Please kindly fill up the following form</p>
@@ -117,8 +126,11 @@ include 'inc/header.php'
                                     <option value="2">Two</option>
                                     <option value="3">Three</option>
                                 </select>
-                            </div>
+                            </div> -->
+                            <!-- shipping address  -->
 
+
+                            <!-- products add form  -->
                             <div class="col-12">
                                 <div class="inner_project_table_wrapper">
                                     <div class="add_project_inner_form d-flex align-items-center gap-2 flex-wrap mt-4 justify-content-between">
@@ -127,7 +139,7 @@ include 'inc/header.php'
                                             <p>Please kindly fill up the following form</p>
                                         </div>
 
-                                        <a href="#" id="addItemBtn">
+                                        <a href="#" id="addInventoryRow">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                                 <path d="M9.99935 18.3327C14.5827 18.3327 18.3327 14.5827 18.3327 9.99935C18.3327 5.41602 14.5827 1.66602 9.99935 1.66602C5.41602 1.66602 1.66602 5.41602 1.66602 9.99935C1.66602 14.5827 5.41602 18.3327 9.99935 18.3327Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                                 <path d="M6.66602 10H13.3327" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -138,7 +150,7 @@ include 'inc/header.php'
                                     </div>
 
                                     <div class="inner_product_table_container">
-                                        <div class="purchase_data_table">
+                                        <div class="purchase_data_table add_inventory_table">
                                             <div class="table-responsive">
                                                 <table class="table">
                                                     <thead>
@@ -146,6 +158,8 @@ include 'inc/header.php'
                                                             <th scope="col">Particular</th>
                                                             <th scope="col">Unit</th>
                                                             <th scope="col">Quantity</th>
+                                                            <th scope="col">Rate</th>
+                                                            <th scope="col">Amount </th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
@@ -167,20 +181,36 @@ include 'inc/header.php'
                                                                     <input type="number" placeholder="Qty">
                                                                 </div>
                                                             </td>
+                                                            <td>
+                                                                <div class="inner_input">
+                                                                    <input type="number" placeholder="Rate">
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="amount_text">
+                                                                    8000
+                                                                </div>
+                                                            </td>
                                                         </tr>
                                                     </tbody>
                                                     <tfoot>
                                                         <tr>
+                                                            <td></td>
+                                                            <td></td>
                                                             <td></td>
                                                             <td>Sub Total (Rs)</td=>
                                                             <td>NA</td>
                                                         </tr>
                                                         <tr>
                                                             <td></td>
+                                                            <td></td>
+                                                            <td></td>
                                                             <td>Tax (Rs.) </td=>
                                                             <td>NA</td>
                                                         </tr>
                                                         <tr>
+                                                            <td></td>
+                                                            <td></td>
                                                             <td></td>
                                                             <td>Total Amount (Rs.)</td>
                                                             <td>NA</td>
@@ -192,6 +222,8 @@ include 'inc/header.php'
                                     </div>
                                 </div>
                             </div>
+                            <!-- products add form  -->
+
 
                             <div class="col-12 ">
                                 <div class="form_discard_save d-flex align-items-center gap-2 justify-content-end mt-2">
