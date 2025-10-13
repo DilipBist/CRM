@@ -3784,7 +3784,8 @@ ASSET FILTER POPUP CSS STARTS
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 20;
+    z-index: 100;
+    /* z-index: 20; */
     visibility: hidden;
     opacity: 0;
     transition: all 0.3s ease-in-out;
@@ -3802,7 +3803,8 @@ ASSET FILTER POPUP CSS STARTS
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 20;
+    z-index: 100;
+    /* z-index: 20; */
     visibility: hidden;
     opacity: 0;
     transition: all 0.3s ease-in-out;
@@ -4246,10 +4248,11 @@ select option:not(:first-child) {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 20;
+    z-index: 100;
+    /* z-index: 20; */
     visibility: hidden;
     opacity: 0;
-    /* transition: all 0.3s ease-in-out; */
+    transition: all 0.3s ease-in-out;
 }
 
 .cur_bal p {
@@ -6952,7 +6955,7 @@ select option:not(:first-child) {
 
     .sidebar_close,
     .side_bar_menu_btn {
-        display: block;
+        display: flex;
     }
 
 }
@@ -7040,13 +7043,16 @@ select option:not(:first-child) {
         width: 80px;
     }
 
-    .admin_list_heading .left_heading h3 {
+    .admin_list_heading .left_heading h3, .Common_vouchar_data_container .inner_content .main_heading .left h3{
         font-size: 20px;
         margin-bottom: 5px;
     }
 
     .chart_bread_crump .bread_crump_content p {
         font-size: 16px;
+    }
+    .pb36{
+        padding-bottom: 16px;
     }
 }
 
