@@ -1,9 +1,13 @@
 <!-- cRM SIDE BAR   -->
- <div class="sidebar_overlay_bg"></div>
+<div class="sidebar_overlay_bg"></div>
 <div class="app_side_bar">
     <div class="app_side_bar_content">
-        <div class="side_bar_logo">
+        <div class="side_bar_logo d-flex align-items-center gap-3 justify-content-between">
             <img src="assets/images/ST_white_logo.svg" alt="St Builders">
+
+            <div class="sidebar_close">
+                <i class="ri-close-line"></i>
+            </div>
         </div>
 
         <div class="admin_content" id="sidebar-accordion">

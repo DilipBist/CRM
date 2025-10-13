@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     // calling the functions 
+    sideBarToggle();
     initToastMsg();
     initProfilePopup();
     initNotificationPopup();
@@ -75,7 +76,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
+// open close side bar  
+const sideBarToggle = () => {
+    const menuBtn = document.querySelector('.side_bar_menu_btn');
+    const sideBar = document.querySelector('.app_side_bar');
+    const closeBtn = document.querySelector('.sidebar_close');
+    const sideBarBg = document.querySelector('.sidebar_overlay_bg');
 
+    if(!sideBar) return;
+
+    menuBtn.addEventListener('click', () =>{
+        sideBar.classList.add('active');
+        sideBarBg.classList.add('active');
+    })
+    closeBtn.addEventListener('click', () =>{
+        sideBar.classList.remove('active');
+        sideBarBg.classList.remove('active');
+    })
+    sideBarBg.addEventListener('click', () =>{
+        sideBar.classList.remove('active');
+        sideBarBg.classList.remove('active');
+    })
+}
 
 // delete row of the table 
 function initDelRow() {

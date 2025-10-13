@@ -625,7 +625,7 @@ login css ends
 /* ######################################
 SIDE BAR CSS STARTS 
 ###################################### */
-.sidebar_overlay_bg{
+.sidebar_overlay_bg {
     background-color: rgba(0, 0, 0, 0.6);
     position: fixed;
     top: 0;
@@ -633,7 +633,24 @@ SIDE BAR CSS STARTS
     height: 100%;
     width: 100%;
     z-index: 9997;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s ease-in-out;
 }
+
+.sidebar_close {
+    font-size: 26px;
+    cursor: pointer;
+    display: none;
+}
+
+.side_bar_menu_btn {
+    font-size: 28px;
+    color: var(--text-dark2);
+    cursor: pointer;
+    display: none;
+}
+
 .app_side_bar {
     width: 280px;
     position: fixed;
@@ -643,6 +660,7 @@ SIDE BAR CSS STARTS
     height: 100vh;
     color: var(--whiteFC);
     font-weight: 500;
+    transition: all .5s ease-in-out;
 }
 
 .side_bar_logo {
@@ -6905,8 +6923,12 @@ select option:not(:first-child) {
     }
 
     .app_side_bar {
-        /* display: none; */
+        transform: translateX(-100%);
         z-index: 9999;
+    }
+
+    .app_side_bar.active {
+        transform: translateX(0);
     }
 
     .admin_right_content {
@@ -6919,9 +6941,20 @@ select option:not(:first-child) {
         width: 100%;
     }
 
-    .admin_profile_container .bell {
+    .sidebar_overlay_bg.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .main_notification_container {
         display: none;
     }
+
+    .sidebar_close,
+    .side_bar_menu_btn {
+        display: block;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -7003,6 +7036,18 @@ select option:not(:first-child) {
         text-align: center;
     }
 
+    .side_bar_logo img {
+        width: 80px;
+    }
+
+    .admin_list_heading .left_heading h3 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .chart_bread_crump .bread_crump_content p {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -7026,6 +7071,20 @@ select option:not(:first-child) {
 
     .live_Data_container {
         width: 100%;
+    }
+
+    /* .chart_bread_crump .icon, */
+    .chart_bread_crump .bread_crump_content p,
+    .chart_bread_crump .bread_crump_content span {
+        display: none
+    }
+
+    .Common_vouchar_data_container .inner_content {
+        padding: 0 16px 16px 16px;
+    }
+
+    .right_fil_div {
+        gap: 12px !important;
     }
 }
 

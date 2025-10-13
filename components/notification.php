@@ -68,6 +68,10 @@
 </div>
 
 
+<div class="side_bar_menu_btn">
+    <i class="ri-menu-unfold-line"></i>
+</div>
+
 <div class="notification_popup_bg">
 
 </div>
