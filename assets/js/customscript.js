@@ -787,8 +787,19 @@ function initInventoryRowAdd() {
                 </div>
             </td>    
             <td>
-                <div class="amount_text">
-                    8000
+                <div class='d-flex align-items-center gap-2 flex-wrap justify-content-between'>
+                    <div class="amount_text">
+                        8000
+                    </div>
+                    <div class='row_Del_Btn'>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                        <path d="M14.875 4.23698C12.5162 4.00323 10.1433 3.88281 7.7775 3.88281C6.375 3.88281 4.9725 3.95365 3.57 4.09531L2.125 4.23698" stroke="#F5F5F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6.01953 3.52172L6.17536 2.5938C6.2887 1.92089 6.3737 1.41797 7.57078 1.41797H9.42662C10.6237 1.41797 10.7158 1.94922 10.822 2.60089L10.9779 3.52172" stroke="#F5F5F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M13.3526 6.47266L12.8922 13.6056C12.8143 14.7177 12.7505 15.5818 10.7743 15.5818H6.22677C4.25052 15.5818 4.18677 14.7177 4.10885 13.6056L3.64844 6.47266" stroke="#F5F5F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.31641 11.6875H9.67516" stroke="#F5F5F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6.73047 8.85547H10.2721" stroke="#F5F5F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
                 </div>
             </td>   
          </tr>

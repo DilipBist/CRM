@@ -1,5 +1,5 @@
 <?php
-$pageTitle = 'Add Inventory';
+$pageTitle = 'Stock Transfer';
 include 'inc/header.php'
 ?>
 
@@ -7,7 +7,7 @@ include 'inc/header.php'
 <section class="admin_container d-flex">
 
     <?php
-    $currentPage = 'addInventory';
+    $currentPage = 'stockTransfer';
     include 'inc/side-bar.php';
     ?>
 
@@ -26,7 +26,7 @@ include 'inc/header.php'
                 <div class="bread_crump_content d-flex align-items-center gap-2">
                     <a href="inventory.php">Inventory Management </a>
                     <span>/</span>
-                    <p> Add Inventory</p>
+                    <p> Stock Transfer</p>
                 </div>
             </div>
 
@@ -42,21 +42,15 @@ include 'inc/header.php'
 
         <div class="add_purchase_requisation_data_container pl_pr">
             <div class="add_heading">
-                <h3>Add Inventory</h3>
+                <h3> Stock Transfer</h3>
                 <p>Please kindly fill up the following form</p>
             </div>
 
-            <!-- Add inventory form  -->
+            <!--  Stock Transfer form  -->
             <div class="add_purchase_form">
                 <div class="common_form">
                     <form action="">
                         <div class="row g-3 align-items-end">
-                            <div class="col-md-6 col-lg-4 col-xxl-3">
-                                <div class="form_input d-flex flex-column gap-2">
-                                    <label for="ponum">Purchase Order Number <span>*</span></label>
-                                    <input type="number" placeholder="#P0001" name="ponum" id="ponum" required>
-                                </div>
-                            </div>
 
                             <div class="col-md-6 col-lg-4 col-xxl-3">
                                 <div class="form_input d-flex flex-column gap-2 position-relative">
@@ -79,11 +73,11 @@ include 'inc/header.php'
 
 
                             <div class="col-md-6 col-lg-4 col-xxl-3 slect-status">
-                                <label for="Supplier" class="mb-2">Supplier <span class="red">*</span></label>
+                                <label for="transferType" class="mb-2">Transfer Type <span class="red">*</span></label>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                     <path d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
-                                <select class="form-select" aria-label="select" id="Supplier" name="Supplier" required>
+                                <select class="form-select" aria-label="select" id="transferType" name="transferType" required>
 
                                     <option value="" disabled selected hidden>Select </option>
                                     <option value="1">One</option>
@@ -93,18 +87,69 @@ include 'inc/header.php'
                             </div>
 
                             <div class="col-md-6 col-lg-4 col-xxl-3 slect-status">
-                                <label for="Project" class="mb-2">Project <span class="red">*</span></label>
+                                <label for="From" class="mb-2">From <span class="red">*</span></label>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                     <path d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
-                                <select class="form-select" aria-label="select" id="Project" name="Project" required>
+                                <select class="form-select" aria-label="select" id="From" name="From" required>
 
-                                    <option value="" disabled selected hidden>Select Project </option>
+                                    <option value="" disabled selected hidden>Warehouse </option>
                                     <option value="1">One</option>
                                     <option value="2">Two</option>
                                     <option value="3">Three</option>
                                 </select>
                             </div>
+
+                            <div class="col-md-6 col-lg-4 col-xxl-3 slect-status">
+                                <label for="transferTwo" class="mb-2">Transfer To <span class="red">*</span></label>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <select class="form-select" aria-label="select" id="transferTwo" name="transferTwo" required>
+
+                                    <option value="" disabled selected hidden>Summary </option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <!-- shipping address  -->
+                            <div class="col-12">
+                                <div class="add_heading mb-0 mt-4">
+                                    <h3>Shipping Address</h3>
+                                    <p>Please kindly fill up the following form</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4 slect-status">
+                                <label for="shipping_address" class="mb-2">Shipping Address <span class="red">*</span></label>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <select class="form-select" aria-label="select" id="shipping_address" name="shipping_address" required>
+
+                                    <option value="" disabled selected hidden>Enter Name </option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4">
+                                <div class="form_input d-flex flex-column gap-2">
+                                    <label for="phoneNumber">Phone Number <span>*</span></label>
+                                    <input type="tel" placeholder="Enter your Number" name="phoneNumber" id="phoneNumber" required>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4">
+                                <div class="form_input d-flex flex-column gap-2">
+                                    <label for="receiverName">Receiver Name <span>*</span></label>
+                                    <input type="text" placeholder="Enter your Name" name="receiverName" id="receiverName" required>
+                                </div>
+                            </div>
+                            <!-- shipping address  -->
 
 
                             <!-- products add form  -->
@@ -212,7 +257,7 @@ include 'inc/header.php'
                     </form>
                 </div>
             </div>
-            <!-- Add inventory form ends  -->
+            <!--  Stock Transfer form ends  -->
         </div>
 
 
