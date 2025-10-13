@@ -83,17 +83,17 @@ const sideBarToggle = () => {
     const closeBtn = document.querySelector('.sidebar_close');
     const sideBarBg = document.querySelector('.sidebar_overlay_bg');
 
-    if(!sideBar) return;
+    if (!sideBar) return;
 
-    menuBtn.addEventListener('click', () =>{
+    menuBtn.addEventListener('click', () => {
         sideBar.classList.add('active');
         sideBarBg.classList.add('active');
     })
-    closeBtn.addEventListener('click', () =>{
+    closeBtn.addEventListener('click', () => {
         sideBar.classList.remove('active');
         sideBarBg.classList.remove('active');
     })
-    sideBarBg.addEventListener('click', () =>{
+    sideBarBg.addEventListener('click', () => {
         sideBar.classList.remove('active');
         sideBarBg.classList.remove('active');
     })
