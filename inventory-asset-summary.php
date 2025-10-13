@@ -7,7 +7,7 @@ include 'inc/header.php'
 <section class="admin_container d-flex">
 
     <?php
-    $currentPage = 'assetInventory';
+    $currentPage = 'inventory';
     include 'inc/side-bar.php';
     ?>
 
@@ -255,9 +255,7 @@ include 'inc/header.php'
                                 <div class="col-12">
                                     <div class="form_discard_save d-flex align-items-center gap-2 justify-content-end mt-2">
                                         <button class="discard popup-btn1" type="button">Back</button>
-                                        <!-- use button if need the button tag  -->
-                                        <!-- <button type="submit" class="submit popup-btn2 view">View report</button> -->
-                                        <a href="search-inventory.php" class="submit popup-btn2 view">View report</a>
+                                        <button type="submit" class="submit popup-btn2 view">View report</button>
                                     </div>
                                 </div>
                             </div>
