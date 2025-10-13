@@ -7,7 +7,7 @@ include 'inc/header.php'
 <section class="admin_container d-flex">
 
     <?php
-    $currentPage = 'projectlist';
+    $currentPage = 'purchaseRequisation';
     include 'inc/side-bar.php';
     ?>
 
@@ -23,7 +23,7 @@ include 'inc/header.php'
                 </div>
 
                 <div class="bread_crump_content d-flex align-items-center gap-2">
-                    <a href="project-list.php">Project Management</a>
+                    <a href="purchase-entries-requisation.php">Purchase Entries</a>
                     <span>/</span>
                     <p> Add Purchase Requisition</p>
                 </div>
@@ -38,9 +38,6 @@ include 'inc/header.php'
 
         <div class="add_purchase_requisation_data_container pl_pr">
             <div class="add_heading">
-                <a href="project-details.php">
-                    Back
-                </a>
                 <h3>Add Purchase Requisition</h3>
                 <p>Please kindly fill up the following form</p>
             </div>

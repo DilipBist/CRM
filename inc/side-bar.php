@@ -1,4 +1,5 @@
 <!-- cRM SIDE BAR   -->
+ <div class="sidebar_overlay_bg"></div>
 <div class="app_side_bar">
     <div class="app_side_bar_content">
         <div class="side_bar_logo">

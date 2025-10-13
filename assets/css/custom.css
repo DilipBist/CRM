@@ -625,6 +625,15 @@ login css ends
 /* ######################################
 SIDE BAR CSS STARTS 
 ###################################### */
+.sidebar_overlay_bg{
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9997;
+}
 .app_side_bar {
     width: 280px;
     position: fixed;
@@ -6896,7 +6905,8 @@ select option:not(:first-child) {
     }
 
     .app_side_bar {
-        display: none;
+        /* display: none; */
+        z-index: 9999;
     }
 
     .admin_right_content {
@@ -6909,7 +6919,9 @@ select option:not(:first-child) {
         width: 100%;
     }
 
-
+    .admin_profile_container .bell {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
