@@ -89,7 +89,7 @@
                 <h6>Inventory Management</h6>
 
                 <div class="admin_dash_btns">
-                    <a href="inventory.php" class="menu-item <?php echo ($currentPage === 'inventory' || $currentPage === 'addInventory' || $currentPage === 'stockTransfer' || $currentPage === 'assetInventory') ? 'active' : ''; ?>">
+                    <a href="inventory.php" class="menu-item <?php echo ($currentPage === 'inventory') ? 'active' : ''; ?>">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                             <path d="M10.5 5.0625H7.5C6.78 5.0625 5.4375 5.0625 5.4375 3C5.4375 0.9375 6.78 0.9375 7.5 0.9375H10.5C11.22 0.9375 12.5625 0.9375 12.5625 3C12.5625 3.72 12.5625 5.0625 10.5 5.0625ZM7.5 2.0625C6.7575 2.0625 6.5625 2.0625 6.5625 3C6.5625 3.9375 6.7575 3.9375 7.5 3.9375H10.5C11.4375 3.9375 11.4375 3.7425 11.4375 3C11.4375 2.0625 11.2425 2.0625 10.5 2.0625H7.5Z" fill="#FCFCFC" />
                             <path d="M11.25 17.0638H6.75C2.535 17.0638 1.6875 15.1288 1.6875 12.0013V7.50129C1.6875 4.08129 2.925 2.61879 5.97 2.46129C6.2775 2.44629 6.5475 2.67879 6.5625 2.99379C6.5775 3.30879 6.3375 3.56379 6.03 3.57879C3.9 3.69879 2.8125 4.33629 2.8125 7.50129V12.0013C2.8125 14.7763 3.36 15.9388 6.75 15.9388H11.25C14.64 15.9388 15.1875 14.7763 15.1875 12.0013V7.50129C15.1875 4.33629 14.1 3.69879 11.97 3.57879C11.6625 3.56379 11.4225 3.29379 11.4375 2.98629C11.4525 2.67879 11.7225 2.43879 12.03 2.45379C15.075 2.61879 16.3125 4.08129 16.3125 7.49379V11.9938C16.3125 15.1288 15.465 17.0638 11.25 17.0638Z" fill="#FCFCFC" />
@@ -109,7 +109,7 @@
                         <div class="accordion-item">
                             <h2 class="accordion-header">
 
-                                <a href="#" class="menu-item accordion-button <?php echo ($currentPage === 'Journal' || $currentPage === 'Payment' || $currentPage === 'Receipt' || $currentPage === 'PDC' || $currentPage === 'Contra' || $currentPage === 'GeneralLegder' || $currentPage === 'accountingGroup' || $currentPage === 'Ledger') ? '' : 'collapsed'; ?>" data-bs-toggle="collapse" data-bs-target="#menu-collapse-one" aria-expanded="<?php echo ($currentPage === '' || $currentPage === '' || $currentPage === 'Receipt' || $currentPage === 'PDC' || $currentPage === 'Contra' || $currentPage === 'GeneralLegder' || $currentPage === 'accountingGroup' || $currentPage === 'Ledger') ? 'true' : 'false'; ?>"
+                                <a href="#" class="menu-item accordion-button <?php echo ($currentPage === 'Journal' || $currentPage === 'Payment' || $currentPage === 'Receipt' || $currentPage === 'PDC' || $currentPage === 'Contra' || $currentPage === 'GeneralLegder' || $currentPage === 'accountingGroup' || $currentPage === 'Ledger' || $currentPage === 'purchaseRequisation') ? '' : 'collapsed'; ?>" data-bs-toggle="collapse" data-bs-target="#menu-collapse-one" aria-expanded="<?php echo ($currentPage === '' || $currentPage === '' || $currentPage === 'Receipt' || $currentPage === 'PDC' || $currentPage === 'Contra' || $currentPage === 'GeneralLegder' || $currentPage === 'accountingGroup' || $currentPage === 'Ledger' || $currentPage === 'purchaseRequisation') ? 'true' : 'false'; ?>"
                                     aria-controls="menu-collapse-one">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none">
                                         <path d="M5 23.75C3.34 23.75 1.78 22.87 0.939999 21.44C0.489999 20.72 0.25 19.87 0.25 19C0.25 16.38 2.38 14.25 5 14.25C7.62 14.25 9.75 16.38 9.75 19C9.75 19.87 9.51 20.72 9.06 21.45C8.22 22.87 6.66 23.75 5 23.75ZM5 15.75C3.21 15.75 1.75 17.21 1.75 19C1.75 19.59 1.91 20.17 2.22 20.67C2.81 21.67 3.85 22.25 5 22.25C6.15 22.25 7.19 21.66 7.78 20.68C8.09 20.17 8.25 19.6 8.25 19C8.25 17.21 6.79 15.75 5 15.75Z" fill="#FCFCFC" />
@@ -122,7 +122,7 @@
                                 </a>
                             </h2>
 
-                            <div id="menu-collapse-one" class="accordion-collapse collapse <?php echo ($currentPage === 'Journal' || $currentPage === 'Payment' || $currentPage === 'Receipt' || $currentPage === 'PDC' || $currentPage === 'Contra' || $currentPage === 'GeneralLegder' || $currentPage === 'accountingGroup' || $currentPage === 'Ledger') ? 'show' : ''; ?>"
+                            <div id="menu-collapse-one" class="accordion-collapse collapse <?php echo ($currentPage === 'Journal' || $currentPage === 'Payment' || $currentPage === 'Receipt' || $currentPage === 'PDC' || $currentPage === 'Contra' || $currentPage === 'GeneralLegder' || $currentPage === 'accountingGroup' || $currentPage === 'Ledger' || $currentPage === 'purchaseRequisation') ? 'show' : ''; ?>"
                                 data-bs-parent="#sidebar-accordion">
                                 <div class="accordion-body">
 
@@ -272,24 +272,10 @@
                                     <!-- inner accordion   -->
 
                                     <div class="purchse_dropdown">
-                                        <!-- <a href="#" class="menu-item left_arrow_container <?php echo ($currentPage === 'userlist') ? '' : ''; ?>">
-                                            <div class="d-flex align-items-center gap-2">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none">
-                                                    <path d="M2.00049 8.5H13.5005" stroke="#FCFCFC" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                                    <path d="M6.00049 16.5H8.00049" stroke="#FCFCFC" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                                    <path d="M10.5005 16.5H14.5005" stroke="#FCFCFC" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                                    <path d="M22.0005 11.03V16.11C22.0005 19.62 21.1105 20.5 17.5605 20.5H6.44049C2.89049 20.5 2.00049 19.62 2.00049 16.11V7.89C2.00049 4.38 2.89049 3.5 6.44049 3.5H13.5005" stroke="#FCFCFC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                    <path d="M16.5005 6L18.0005 7.5L22.0005 3.5" stroke="#FCFCFC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                </svg>
-                                                Purchase Entries
-                                            </div>
-
-                                            <i class="ri-arrow-right-s-line"></i>
-                                        </a> -->
                                         <div class="accordion d-flex flex-column gap-2 inner_accordion">
                                             <div class="accordion-item">
                                                 <h2 class="accordion-header">
-                                                    <a href="#" class="menu-item accordion-button <?php echo ($currentPage === '') ? '' : 'collapsed'; ?>" data-bs-toggle="collapse" data-bs-target="#menu-collapse-purchase" aria-expanded="<?php echo ($currentPage === '') ? 'true' : 'false'; ?>"
+                                                    <a href="#" class="menu-item accordion-button <?php echo ($currentPage === '' || $currentPage === 'purchaseRequisation') ? '' : 'collapsed'; ?>" data-bs-toggle="collapse" data-bs-target="#menu-collapse-purchase" aria-expanded="<?php echo ($currentPage === '' || $currentPage === 'purchaseRequisation') ? 'true' : 'false'; ?>"
                                                         aria-controls="menu-collapse-purchase">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none">
                                                             <path d="M2.00049 8.5H13.5005" stroke="#FCFCFC" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
@@ -301,10 +287,10 @@
                                                         Purchase Entries
                                                     </a>
                                                 </h2>
-                                                <div id="menu-collapse-purchase" class="accordion-collapse collapse <?php echo ($currentPage === '') ? 'show' : ''; ?>"
+                                                <div id="menu-collapse-purchase" class="accordion-collapse collapse <?php echo ($currentPage === '' || $currentPage === 'purchaseRequisation') ? 'show' : ''; ?>"
                                                     data-bs-parent="#sidebar-accordion2">
                                                     <div class="accordion-body pb-0">
-                                                        <a href="#" class="menu-item  <?php echo ($currentPage === '') ? 'active' : ''; ?>">
+                                                        <a href="purchase-entries-requisation.php" class="menu-item  <?php echo ($currentPage === 'purchaseRequisation') ? 'active' : ''; ?>">
                                                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none">
                                                                 <path d="M20 7.04V16.96C20 18.48 19.86 19.56 19.5 20.33C19.5 20.34 19.49 20.36 19.48 20.37C19.26 20.65 18.97 20.79 18.63 20.79C18.1 20.79 17.46 20.44 16.77 19.7C15.95 18.82 14.69 18.89 13.97 19.85L12.96 21.19C12.56 21.73 12.03 22 11.5 22C10.97 22 10.44 21.73 10.04 21.19L9.02002 19.84C8.31002 18.89 7.05999 18.82 6.23999 19.69L6.22998 19.7C5.09998 20.91 4.10002 21.09 3.52002 20.37C3.51002 20.36 3.5 20.34 3.5 20.33C3.14 19.56 3 18.48 3 16.96V7.04C3 5.52 3.14 4.44 3.5 3.67C3.5 3.66 3.50002 3.65 3.52002 3.64C4.09002 2.91 5.09998 3.09 6.22998 4.3L6.23999 4.31C7.05999 5.18 8.31002 5.11 9.02002 4.16L10.04 2.81C10.44 2.27 10.97 2 11.5 2C12.03 2 12.56 2.27 12.96 2.81L13.97 4.15C14.69 5.11 15.95 5.18 16.77 4.3C17.46 3.56 18.1 3.21 18.63 3.21C18.97 3.21 19.26 3.36 19.48 3.64C19.5 3.65 19.5 3.66 19.5 3.67C19.86 4.44 20 5.52 20 7.04Z" stroke="#FCFCFC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                                                 <path d="M8 10.25H16" stroke="#FCFCFC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />

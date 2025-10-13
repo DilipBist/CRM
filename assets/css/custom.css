@@ -5553,6 +5553,11 @@ select option:not(:first-child) {
 .inventory_table {
     margin-top: 24px;
 }
+.calender_icon.bg{
+    border-radius: 10px;
+background: rgba(13, 153, 255, 0.10);
+padding: 10px;
+}
 
 /* ============= INVENTORY CSS END============ */
 

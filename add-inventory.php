@@ -7,7 +7,7 @@ include 'inc/header.php'
 <section class="admin_container d-flex">
 
     <?php
-    $currentPage = 'addInventory';
+    $currentPage = 'inventory';
     include 'inc/side-bar.php';
     ?>
 

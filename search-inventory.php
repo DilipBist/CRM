@@ -1,5 +1,5 @@
 <?php
-$pageTitle = 'Inventory';
+$pageTitle = 'Search Inventory';
 include 'inc/header.php'
 ?>
 
