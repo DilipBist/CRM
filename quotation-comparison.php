@@ -205,6 +205,26 @@ include 'inc/header.php'
                         <form action="">
                             <div class="row g-3 align-items-end">
 
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="form_input d-flex flex-column gap-2">
+                                        <label for="project_name">Project Name <span>*</span></label>
+                                        <input type="text" placeholder="Enter your Project Name" name="project_name" id="project_name" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="form_input d-flex flex-column gap-2">
+                                        <label for="Description">Description <span>*</span></label>
+                                        <input type="text" placeholder="Enter Description" name="Description" id="Description" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="form_input d-flex flex-column gap-2">
+                                        <label for="unit">Unit <span>*</span></label>
+                                        <input type="number" placeholder="Enter unit" name="unit" id="unit" required>
+                                    </div>
+                                </div>
 
                                 <div class="col-12">
                                     <div class="form_discard_save d-flex align-items-center gap-2 justify-content-end mt-2">
