@@ -2352,6 +2352,12 @@ SIDE BAR CSS ENDS
 .hover:hover{
     color: var(--primary-color);
 }
+.w_max{
+    width: 100px;
+}
+.w_max .inner_input input{
+    width: 100%;
+}
 .accounting_details_container {
     border-top: 1px solid var(--Menu-Separator, #C2C2C2);
     padding: 24px 36px;
