@@ -25,7 +25,7 @@ include 'inc/header.php'
                 </div>
 
                 <div class="bread_crump_content d-flex align-items-center gap-2">
-                    <a href="inventory.php">Purchase Managemen</a>
+                    <a href="purchase-order.php">Purchase Management</a>
                     <span>/</span>
                     <p> Product List</p>
                 </div>

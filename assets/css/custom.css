@@ -2349,7 +2349,9 @@ SIDE BAR CSS ENDS
 
 
 /* ############## ACCOUNTING PAGE CSS STARTS ############### */
-
+.hover:hover{
+    color: var(--primary-color);
+}
 .accounting_details_container {
     border-top: 1px solid var(--Menu-Separator, #C2C2C2);
     padding: 24px 36px;

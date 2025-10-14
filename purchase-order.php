@@ -198,12 +198,16 @@ include 'inc/header.php'
                             <tbody>
                                 <?php foreach (array_slice($projectList, 0, 12) as $project): ?>
                                     <tr>
-                                        <th scope="row"><?= $project['requisationnumber'] ?></th>
+                                        <td>
+                                            <a href="order-number.php" class="hover">
+                                                <?= $project['requisationnumber'] ?>
+                                            </a>
+                                        </td>
                                         <td><?= $project['Supplier'] ?></td>
                                         <td><?= $project['date'] ?></td>
                                         <td>
                                             <!--
-                                        total three status and three classes accordion to the status 
+                                        total three status and three classe s accordion to the status 
                                         (approved, unapproved and bill)
                                         add above class accordion to state 
                                         -->
