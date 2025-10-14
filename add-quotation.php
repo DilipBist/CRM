@@ -1,5 +1,5 @@
 <?php
-$pageTitle = 'Add Purchase Order';
+$pageTitle = 'Add Quotation';
 include 'inc/header.php'
 ?>
 
@@ -7,7 +7,7 @@ include 'inc/header.php'
 <section class="admin_container d-flex">
 
     <?php
-    $currentPage = 'purchaseOrder';
+    $currentPage = 'quotation';
     include 'inc/side-bar.php';
     ?>
 
@@ -23,9 +23,9 @@ include 'inc/header.php'
                 </div>
 
                 <div class="bread_crump_content d-flex align-items-center gap-2">
-                    <a href="purchase-entries-requisation.php">Purchase Entries</a>
+                    <a href="quotation.php">Purchase Entries</a>
                     <span>/</span>
-                    <p> Add Purchase Order</p>
+                    <p>Add Quotation</p>
                 </div>
             </div>
 
@@ -38,7 +38,7 @@ include 'inc/header.php'
 
         <div class="add_purchase_requisation_data_container pl_pr">
             <div class="add_heading">
-                <h3>Add Purchase Order</h3>
+                <h3>Add Quotation</h3>
                 <p>Please kindly fill up the following form</p>
             </div>
 
@@ -111,33 +111,20 @@ include 'inc/header.php'
                                 </div>
                             </div>
 
-                            <div class="col-md-6 col-lg-4 slect-status">
+                            <div class="col-md-6 col-lg-4 col-xxl-3 slect-status">
                                 <label for="shipping_address" class="mb-2">Shipping Address <span class="red">*</span></label>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                     <path d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                                 <select class="form-select" aria-label="select" id="shipping_address" name="shipping_address" required>
 
-                                    <option value="" disabled selected hidden>Select Shipping Address </option>
+                                    <option value="" disabled selected hidden>Select Address </option>
                                     <option value="1">One</option>
                                     <option value="2">Two</option>
                                     <option value="3">Three</option>
                                 </select>
                             </div>
 
-                            <div class="col-md-6 col-lg-4">
-                                <div class="form_input d-flex flex-column gap-2">
-                                    <label for="phoneNumber">Phone Number <span>*</span></label>
-                                    <input type="tel" placeholder="Enter your Number" name="phoneNumber" id="phoneNumber" required>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 col-lg-4">
-                                <div class="form_input d-flex flex-column gap-2">
-                                    <label for="receiverName">Receiver Name <span>*</span></label>
-                                    <input type="text" placeholder="Enter your Name" name="receiverName" id="receiverName" required>
-                                </div>
-                            </div>
                             <!-- shipping address  -->
 
 
