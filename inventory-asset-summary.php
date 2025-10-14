@@ -91,7 +91,7 @@ include 'inc/header.php'
             </div>
         </div>
 
-        <div class="pl_pr">
+        <div class="pl_pr mb-5">
 
             <div class="common_table inventory_table mt-0">
                 <div class="table-responsive">

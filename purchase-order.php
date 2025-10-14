@@ -145,7 +145,6 @@ include 'inc/header.php'
                 <div class="account_buttons d-flex align-items-center gap-2 flex-wrap">
                     <?php include 'components/search.php' ?>
 
-
                     <button type="button" onclick="window.print()">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                             <path d="M6.04102 5.83464H13.9577V4.16797C13.9577 2.5013 13.3327 1.66797 11.4577 1.66797H8.54102C6.66602 1.66797 6.04102 2.5013 6.04102 4.16797V5.83464Z" stroke="#005399" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
@@ -156,6 +155,17 @@ include 'inc/header.php'
                         </svg>
                         Print
                     </button>
+
+                    <a href="project-unit.php" class="ledger_common_btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M19.1676 14.9232C19.1843 15.5482 19.0176 16.1399 18.7176 16.6483C18.551 16.9483 18.326 17.2233 18.076 17.4483C17.501 17.9816 16.7426 18.3066 15.9009 18.3316C14.6843 18.3566 13.6093 17.7316 13.0176 16.7733C12.701 16.2816 12.5093 15.6899 12.501 15.0649C12.476 14.0149 12.9426 13.0649 13.6926 12.4399C14.2593 11.9733 14.976 11.6816 15.7593 11.6649C17.601 11.6233 19.126 13.0816 19.1676 14.9232Z" stroke="#005399" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M14.5352 15.024L15.3768 15.824L17.1185 14.1406" stroke="#005399" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M2.64258 6.20312L10.0009 10.4614L17.3092 6.2281" stroke="#005399" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M10 18.0115V10.4531" stroke="#005399" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M18.0088 7.64297V12.3597C18.0088 12.4013 18.0088 12.4346 18.0005 12.4763C17.4172 11.968 16.6672 11.668 15.8338 11.668C15.0505 11.668 14.3255 11.943 13.7505 12.4013C12.9838 13.0097 12.5005 13.9513 12.5005 15.0013C12.5005 15.6263 12.6755 16.218 12.9838 16.718C13.0588 16.8513 13.1505 16.9763 13.2505 17.093L11.7255 17.9347C10.7755 18.468 9.2255 18.468 8.2755 17.9347L3.82551 15.468C2.81717 14.9096 1.99219 13.5097 1.99219 12.3597V7.64297C1.99219 6.49297 2.81717 5.09299 3.82551 4.53465L8.2755 2.06797C9.2255 1.53464 10.7755 1.53464 11.7255 2.06797L16.1755 4.53465C17.1838 5.09299 18.0088 6.49297 18.0088 7.64297Z" stroke="#005399" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Product List
+                    </a>
 
                     <a href="add-purchase-order.php" class="print">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
