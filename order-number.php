@@ -52,7 +52,7 @@ include 'inc/header.php'
                             <div class="col-md-4 col-lg-3">
                                 <div class="form_input d-flex flex-column gap-2">
                                     <label for="ponum">Purchase Order Number <span>*</span></label>
-                                    <input type="number"  name="ponum" id="ponum" value="546498984" required>
+                                    <input type="number" name="ponum" id="ponum" value="546498984" required>
                                 </div>
                             </div>
 
@@ -258,6 +258,142 @@ include 'inc/header.php'
             <!-- add purchase order form ends  -->
         </div>
 
+        <!-- print table  -->
+        <div id="printSection" class="paymentV order_num_print">
+            <div class="common_print_header">
+                <div class="print-header">
+                    <div class="prit_logo">
+                        <img src="assets/images/logo.svg" alt="logo">
+                    </div>
+                    <h3>Purchase Order</h3>
+                    <div class="last_div">
+                        <p>S.T Builders Pvt.Ltd.</p>
+                        <p>Kathmandu-32,Koteshwor</p>
+                        <p>9863313584</p>
+                        <p>PAN: 601241851</p>
+                    </div>
+                </div>
+
+                <div class="sec_heading d-flex align-items-center justify-content-between gap-3">
+                    <div class="gap">
+                        <p>Company’s Name : Sita Dhuwani Sewa</p>
+                        <p>Receiver’s Name : Gita</p>
+                        <p>Phone No : 107659660</p>
+                    </div>
+                    <div class="gap">
+                        <p>Voucher No :PO-00001-82/83</p>
+                        <p>Date :01/04/2082</p>
+                        <p>Address : Dhapakhel , Lalitpur</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="print-body">
+                <div class="purchase_data_table add_inventory_table">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">SN</th>
+                                    <th scope="col">Product</th>
+                                    <th scope="col">Quantity</th>
+                                    <th scope="col">Rate</th>
+                                    <th scope="col">Amount </th>
+                                    <th scope="col">Adjustment </th>
+                                    <th scope="col">Net Amount </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="w_max">
+                                        <div class="inner_input">
+                                            <input type="number" placeholder="SN" value="10">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="inner_input">
+                                            <input type="text" placeholder="Product" value="Dhunga">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="inner_input">
+                                            <input type="text" placeholder="Qty" value="8 TP">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="inner_input">
+                                            <input type="number" placeholder="Rate" value="8000">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="inner_input">
+                                            <input type="number" placeholder="Amount" value="8000">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="inner_input">
+                                            <input type="number" placeholder="Adjustment" value="8000">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="inner_input">
+                                            <input type="number" placeholder="NetAmount" value="8000">
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Sub Total (Rs)</td=>
+                                    <td>NA</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Tax (Rs.) </td=>
+                                    <td>NA</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Total Amount (Rs.)</td>
+                                    <td>NA</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="payment_print_footer">
+                <p>
+                    Amount in Words : Eight Thousand Rupees And Zero Paisa Only.
+                </p>
+                <div class="d-flex gap-4 cdiv">
+                    <p>Remarks</p>
+                    <p>: Location : Manita Gurung ( Hattiban ) Receiver Name : Balkrishna Chaudhary
+                        Contact No : 9862695583 </p>
+                </div>
+
+                <div class="issue_sig">
+                    <p>Issued By</p>
+
+                    <p>Received By</p>
+                </div>
+            </div>
+        </div>
+        <!-- print table  -->
 
     </div>
 </section>

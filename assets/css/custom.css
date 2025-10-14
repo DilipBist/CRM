@@ -2349,15 +2349,18 @@ SIDE BAR CSS ENDS
 
 
 /* ############## ACCOUNTING PAGE CSS STARTS ############### */
-.hover:hover{
+.hover:hover {
     color: var(--primary-color);
 }
-.w_max{
+
+.w_max {
     width: 100px;
 }
-.w_max .inner_input input{
+
+.w_max .inner_input input {
     width: 100%;
 }
+
 .accounting_details_container {
     border-top: 1px solid var(--Menu-Separator, #C2C2C2);
     padding: 24px 36px;
@@ -6774,7 +6777,6 @@ select option:not(:first-child) {
 
     .trail_print_table_container .common_table .table th,
     .trail_print_table_container .common_table .table td {
-        /* font-size: 9px; */
         font-size: 12px;
     }
 
@@ -6804,10 +6806,28 @@ select option:not(:first-child) {
 
     .acc_rep_gen_table tfoot tr td,
     .acc_rep_gen_table .table th,
+    .acc_rep_gen_table .table th,
     .acc_rep_gen_table .table tr td {
         font-size: 10px !important;
     }
 
+    .order_num_print .table tr td,
+    .order_num_print .table tr th {
+        font-size: 10px !important;
+        height: auto !important;
+    }
+
+    .order_num_print .inner_input input {
+        font-size: 10px;
+        padding: 4px !important;
+    }
+
+    .w_max .inner_input input {
+        width: 40px;
+    }
+    .order_num_print{
+        zoom: 75%;
+    }
 }
 
 
