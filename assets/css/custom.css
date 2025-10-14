@@ -2349,8 +2349,15 @@ SIDE BAR CSS ENDS
 
 
 /* ############## ACCOUNTING PAGE CSS STARTS ############### */
+.hover{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
 .hover:hover {
     color: var(--primary-color);
+
 }
 
 .w_max {
@@ -6825,8 +6832,12 @@ select option:not(:first-child) {
     .w_max .inner_input input {
         width: 40px;
     }
-    .order_num_print{
+
+    .order_num_print {
         zoom: 75%;
+    }
+    .hideCol{
+        display: none !important;
     }
 }
 

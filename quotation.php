@@ -194,7 +194,11 @@ include 'inc/header.php'
                                     <tr>
                                         <td><?= $project['date'] ?></td>
                                         <th scope="row"><?= $project['requisationnumber'] ?></th>
-                                        <td><?= $project['Supplier'] ?></td>
+                                        <td>
+                                            <a href="quotation-comparison.php" class="hover">
+                                                <?= $project['Supplier'] ?>
+                                            </a>
+                                        </td>
                                         <td>
                                             <!--
                                         total three status and three classes accordion to the status 
