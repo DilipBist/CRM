@@ -2349,12 +2349,13 @@ SIDE BAR CSS ENDS
 
 
 /* ############## ACCOUNTING PAGE CSS STARTS ############### */
-.hover{
+.hover {
     display: flex;
     align-items: center;
     height: 100%;
     width: 100%;
 }
+
 .hover:hover {
     color: var(--primary-color);
 
@@ -6836,7 +6837,8 @@ select option:not(:first-child) {
     .order_num_print {
         zoom: 75%;
     }
-    .hideCol{
+
+    .hideCol {
         display: none !important;
     }
 }
