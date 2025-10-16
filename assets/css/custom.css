@@ -657,7 +657,7 @@ SIDE BAR CSS STARTS
     top: 0;
     left: 0;
     background-color: var(--dark-theme);
-    height: 100dvh;
+    height: 100svh;
     color: var(--whiteFC);
     font-weight: 500;
     transition: all .5s ease-in-out;
@@ -6405,6 +6405,17 @@ select option:not(:first-child) {
     max-width: 80%;
 }
 
+/* geo fence image  */
+.geo_fence_map {
+    border-radius: 12px;
+    border: 1px solid var(--Neutral-Separator, #EBEBEB);
+    background: var(--white);
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.10);
+    padding: 24px;
+    height: 650px;
+    overflow: hidden;
+}
+
 /* ******************************** CHAT PAGE CSS ENDS ****************** */
 
 
@@ -7134,6 +7145,10 @@ select option:not(:first-child) {
 
     .right_fil_div {
         gap: 12px !important;
+    }
+
+    .geo_fence_map {
+        height: 320px;
     }
 }
 

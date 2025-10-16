@@ -61,11 +61,11 @@ include 'inc/header.php'
         </div>
 
 
-        <div class="pl_pr">
+        <div class="pl_pr mb-5">
             <div class="geo_fence_Search_form">
                 <div class="common_form">
                     <form action="">
-                        <div class="row g-3 align-items-end">
+                        <div class="row g-3">
                             <div class="col-lg-4 col-xxl-3">
                                 <div class="row g-3">
                                     <div class="col-12">
@@ -136,13 +136,13 @@ include 'inc/header.php'
                             </div>
                             <div class="col-lg-8 col-xxl-9">
                                 <div class="geo_fence_map">
-                                    
+                                    <img src="assets/images/geoimage.png" class="h-100 w-100 object-fit-cover" alt="map image">
                                 </div>
                             </div>
                             <div class="col-12 ">
                                 <div class="form_discard_save d-flex align-items-center gap-2 justify-content-end mt-2">
                                     <button class="discard popup-btn1" type="button">Discard</button>
-                                    <button type="submit" class="submit popup-btn2">Create</button>
+                                    <button type="submit" class="submit popup-btn2">Submit</button>
                                 </div>
                             </div>
                         </div>
