@@ -62,7 +62,78 @@ include 'inc/header.php'
 
 
         <div class="pl_pr">
+            <div class="geo_fence_Search_form">
+                <div class="common_form">
+                    <form action="">
+                        <div class="row g-3 align-items-end">
+                            <div class="col-lg-4 col-xxl-3">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="form_input d-flex flex-column gap-2">
+                                            <label for="fence_num">Fence Name <span>*</span></label>
+                                            <input type="text" placeholder="#P0001" name="fence_num" id="fence_num" required>
+                                        </div>
+                                    </div>
 
+                                    <div class="col-md-6 col-lg-4 col-xxl-3">
+                                        <div class="form_input d-flex flex-column gap-2 position-relative">
+                                            <label for="date">Date</label>
+                                            <input type="text" class="date-picker" id="date" placeholder="MM/DD/YYYY">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="calender" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                                <path d="M7.33203 1.66602V4.16602" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M14 1.66602V4.16602" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M3.58203 7.57422H17.7487" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M18.166 7.08268V14.166C18.166 16.666 16.916 18.3327 13.9993 18.3327H7.33268C4.41602 18.3327 3.16602 16.666 3.16602 14.166V7.08268C3.16602 4.58268 4.41602 2.91602 7.33268 2.91602H13.9993C16.916 2.91602 18.166 4.58268 18.166 7.08268Z" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M13.7441 11.4167H13.7516" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M13.7441 13.9167H13.7516" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M10.6621 11.4167H10.6696" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M10.6621 13.9167H10.6696" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M7.5781 11.4167H7.58559" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M7.5781 13.9167H7.58559" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-md-6 col-lg-4 col-xxl-3 slect-status">
+                                        <label for="Supplier" class="mb-2">Supplier <span class="red">*</span></label>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                            <path d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <select class="form-select" aria-label="select" id="Supplier" name="Supplier" required>
+
+                                            <option value="" disabled selected hidden>Select </option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-md-6 col-lg-4 col-xxl-3 slect-status">
+                                        <label for="Project" class="mb-2">Project <span class="red">*</span></label>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                            <path d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <select class="form-select" aria-label="select" id="Project" name="Project" required>
+
+                                            <option value="" disabled selected hidden>Select Project </option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 ">
+                                <div class="form_discard_save d-flex align-items-center gap-2 justify-content-end mt-2">
+                                    <button class="discard popup-btn1" type="button">Discard</button>
+                                    <button type="submit" class="submit popup-btn2">Create</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 </section>
