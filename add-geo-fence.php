@@ -67,17 +67,41 @@ include 'inc/header.php'
                     <form action="">
                         <div class="row g-3 align-items-end">
                             <div class="col-lg-4 col-xxl-3">
-                                <div class="row">
+                                <div class="row g-3">
                                     <div class="col-12">
                                         <div class="form_input d-flex flex-column gap-2">
                                             <label for="fence_num">Fence Name <span>*</span></label>
-                                            <input type="text" placeholder="#P0001" name="fence_num" id="fence_num" required>
+                                            <input type="text" placeholder="Enter a Name" name="fence_num" id="fence_num" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form_input d-flex flex-column gap-2">
+                                            <label for="fence_type">Fence Type <span>*</span></label>
+                                            <input type="text" placeholder="Enter a Type" name="fence_type" id="fence_type" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form_input d-flex flex-column gap-2">
+                                            <label for="site_name">Site Name <span>*</span></label>
+                                            <input type="text" placeholder="Enter a Site Name" name="site_name" id="site_name" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form_input d-flex flex-column gap-2">
+                                            <label for="Assigned">Assigned To (Workers/Equip.) <span>*</span></label>
+                                            <input type="text" placeholder="Enter a Name " name="Assigned" id="Assigned" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form_input d-flex flex-column gap-2">
+                                            <label for="active_time">Active Time<span>*</span></label>
+                                            <input type="time" placeholder="Enter a Time " name="active_time" id="active_time" required>
                                         </div>
                                     </div>
 
-                                    <div class="col-md-6 col-lg-4 col-xxl-3">
+                                    <div class="col-12">
                                         <div class="form_input d-flex flex-column gap-2 position-relative">
-                                            <label for="date">Date</label>
+                                            <label for="date">Created on</label>
                                             <input type="text" class="date-picker" id="date" placeholder="MM/DD/YYYY">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="calender" width="21" height="20" viewBox="0 0 21 20" fill="none">
                                                 <path d="M7.33203 1.66602V4.16602" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
@@ -94,34 +118,25 @@ include 'inc/header.php'
                                         </div>
                                     </div>
 
-
-                                    <div class="col-md-6 col-lg-4 col-xxl-3 slect-status">
-                                        <label for="Supplier" class="mb-2">Supplier <span class="red">*</span></label>
+                                    <div class="col-12 slect-status">
+                                        <label for="Status" class="mb-2">Status <span class="red">*</span></label>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                             <path d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                                         </svg>
-                                        <select class="form-select" aria-label="select" id="Supplier" name="Supplier" required>
+                                        <select class="form-select" aria-label="select" id="Status" name="Status" required>
 
-                                            <option value="" disabled selected hidden>Select </option>
+                                            <option value="" disabled selected hidden>Active </option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
                                             <option value="3">Three</option>
                                         </select>
                                     </div>
 
-                                    <div class="col-md-6 col-lg-4 col-xxl-3 slect-status">
-                                        <label for="Project" class="mb-2">Project <span class="red">*</span></label>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                            <path d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                        <select class="form-select" aria-label="select" id="Project" name="Project" required>
-
-                                            <option value="" disabled selected hidden>Select Project </option>
-                                            <option value="1">One</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
-                                        </select>
-                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-xxl-9">
+                                <div class="geo_fence_map">
+                                    
                                 </div>
                             </div>
                             <div class="col-12 ">
