@@ -6416,6 +6416,26 @@ select option:not(:first-child) {
     overflow: hidden;
 }
 
+.model_tag {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-dark2);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.model_tag .tag {
+    width: 36px;
+    height: 36px;
+    background-color: var(--whiteEB);
+    border-radius: 50%;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* ******************************** CHAT PAGE CSS ENDS ****************** */
 
 
