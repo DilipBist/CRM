@@ -543,7 +543,7 @@
                         <div class="accordion-item">
                             <h2 class="accordion-header">
 
-                                <a href="#" class="menu-item accordion-button <?php echo ($currentPage === 'vehicleList' || $currentPage === 'vehicleMaintainance' || $currentPage === '' || $currentPage === '' || $currentPage === '' || $currentPage === '' || $currentPage === '' || $currentPage === '' || $currentPage === '') ? '' : 'collapsed'; ?>" data-bs-toggle="collapse" data-bs-target="#menu-collapse-vehicle" aria-expanded="<?php echo ($currentPage === 'vehicleList' || $currentPage === 'vehicleMaintainance' || $currentPage === '' || $currentPage === '' || $currentPage === '' || $currentPage === ' ' || $currentPage === '' || $currentPage === '' || $currentPage === '') ? 'true' : 'false'; ?>"
+                                <a href="#" class="menu-item accordion-button <?php echo ($currentPage === 'vehicleList' || $currentPage === 'vehicleMaintainance' || $currentPage === 'driverlist' || $currentPage === '' || $currentPage === '' || $currentPage === '' || $currentPage === '' || $currentPage === '' || $currentPage === '') ? '' : 'collapsed'; ?>" data-bs-toggle="collapse" data-bs-target="#menu-collapse-vehicle" aria-expanded="<?php echo ($currentPage === 'vehicleList' || $currentPage === 'vehicleMaintainance' || $currentPage === '' || $currentPage === '' || $currentPage === '' || $currentPage === ' ' || $currentPage === '' || $currentPage === '' || $currentPage === '') ? 'true' : 'false'; ?>"
                                     aria-controls="menu-collapse-vehicle">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none">
                                         <path d="M13.001 14.75H2.00098C1.59098 14.75 1.25098 14.41 1.25098 14V6C1.25098 3.38 3.38098 1.25 6.00098 1.25H15.001C15.411 1.25 15.751 1.59 15.751 2V12C15.751 13.52 14.521 14.75 13.001 14.75ZM2.75098 13.25H13.001C13.691 13.25 14.251 12.69 14.251 12V2.75H6.00098C4.21098 2.75 2.75098 4.21 2.75098 6V13.25Z" fill="#fff" />
@@ -555,7 +555,7 @@
                                     Vehicle
                                 </a>
                             </h2>
-                            <div id="menu-collapse-vehicle" class="accordion-collapse collapse <?php echo ($currentPage === 'vehicleList' || $currentPage === 'vehicleMaintainance' || $currentPage === '' || $currentPage === '' || $currentPage === '' || $currentPage === '' || $currentPage === '' || $currentPage === '' || $currentPage === '') ? 'show' : ''; ?>"
+                            <div id="menu-collapse-vehicle" class="accordion-collapse collapse <?php echo ($currentPage === 'vehicleList' || $currentPage === 'vehicleMaintainance' || $currentPage === 'driverlist' || $currentPage === '' || $currentPage === '' || $currentPage === '' || $currentPage === '' || $currentPage === '' || $currentPage === '') ? 'show' : ''; ?>"
                                 data-bs-parent="#sidebar-accordion">
                                 <div class="accordion-body">
                                     <a href="vehicle-list.php" class="menu-item  <?php echo ($currentPage === 'vehicleList') ? 'active' : ''; ?>">
@@ -568,7 +568,7 @@
                                         </svg>
                                         Vehicle List
                                     </a>
-                                    <a href="#" class="menu-item  <?php echo ($currentPage === '') ? 'active' : ''; ?>">
+                                    <a href="driver-list.php" class="menu-item  <?php echo ($currentPage === 'driverlist') ? 'active' : ''; ?>">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none">
                                             <path d="M12.0002 22.7501C11.3302 22.7501 10.6502 22.5801 10.0502 22.2301L4.11016 18.8001C2.91016 18.1001 2.16016 16.8101 2.16016 15.4201V8.58011C2.16016 7.19011 2.91016 5.90011 4.11016 5.20011L10.0502 1.77012C11.2502 1.07012 12.7402 1.07012 13.9502 1.77012L19.8902 5.20011C21.0902 5.90011 21.8402 7.19011 21.8402 8.58011V15.4201C21.8402 16.8101 21.0902 18.1001 19.8902 18.8001L13.9502 22.2301C13.3502 22.5801 12.6702 22.7501 12.0002 22.7501ZM12.0002 2.7501C11.5902 2.7501 11.1702 2.8601 10.8002 3.0701L4.86016 6.5001C4.12016 6.9301 3.66016 7.72011 3.66016 8.58011V15.4201C3.66016 16.2701 4.12016 17.0701 4.86016 17.5001L10.8002 20.9301C11.5402 21.3601 12.4602 21.3601 13.2002 20.9301L19.1402 17.5001C19.8802 17.0701 20.3402 16.2801 20.3402 15.4201V8.58011C20.3402 7.73011 19.8802 6.9301 19.1402 6.5001L13.2002 3.0701C12.8302 2.8601 12.4102 2.7501 12.0002 2.7501Z" fill="#fff" />
                                             <path d="M11.9999 11.7501C10.2999 11.7501 8.91992 10.37 8.91992 8.67004C8.91992 6.97004 10.2999 5.59009 11.9999 5.59009C13.6999 5.59009 15.0799 6.97004 15.0799 8.67004C15.0799 10.37 13.6999 11.7501 11.9999 11.7501ZM11.9999 7.09009C11.1299 7.09009 10.4199 7.80004 10.4199 8.67004C10.4199 9.54004 11.1299 10.2501 11.9999 10.2501C12.8699 10.2501 13.5799 9.54004 13.5799 8.67004C13.5799 7.80004 12.8699 7.09009 11.9999 7.09009Z" fill="#fff" />
