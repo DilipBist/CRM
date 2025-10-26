@@ -320,7 +320,6 @@ include 'inc/header.php'
 
 
 <!-- view driver details popup  -->
-<!-- user details popup up  -->
 <div class="user_Details_bg">
     <div class="user_details_container">
         <div class="user_details_content">
