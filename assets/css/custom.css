@@ -6449,6 +6449,9 @@ select option:not(:first-child) {
     min-height: 145px;
     height: auto;
 }
+.driver_list_form .license_pc .file-upload {
+    max-width: 360px;
+}
 
 
 /* *********************** PRINT MEDIA CODE ******************** */
