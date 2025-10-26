@@ -6444,6 +6444,11 @@ select option:not(:first-child) {
 
 /* ******************************** CHAT PAGE CSS ENDS ****************** */
 
+.driver_list_form .file-upload {
+    max-width: 1000px;
+    min-height: 145px;
+    height: auto;
+}
 
 
 /* *********************** PRINT MEDIA CODE ******************** */
