@@ -426,7 +426,6 @@ function initAddAssetsPopup() {
 
 }
 // Initialize CKEditor
-// ClassicEditor.create(document.querySelector('#editor'));
 let editorInstance;
 
 ClassicEditor

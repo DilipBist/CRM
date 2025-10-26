@@ -68,9 +68,9 @@ include 'inc/header.php'
 
                 <?php include 'components/search.php' ?>
 
-                <div class="filter_comp">
+                <!-- <div class="filter_comp">
                     <?php include 'components/filter.php' ?>
-                </div>
+                </div> -->
 
                 <div class="track_btns_container d-flex align-items-center gap-2">
                     <a href="labour-track.php">

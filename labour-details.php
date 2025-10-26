@@ -213,7 +213,7 @@ include 'inc/header.php'
                 <div class="month_DaysContainer mt-3">
                     <div class="month_Date present">
                         <h4>1</h4>
-                        <h6>10AM-6PM</h6>
+                        <h6>1000</h6>
                         <p>Sky Walk Tower</p>
 
                         <div class="plus_icon">
@@ -227,7 +227,7 @@ include 'inc/header.php'
 
                     <div class="month_Date present">
                         <h4>2</h4>
-                        <h6>10AM-6PM</h6>
+                        <h6>7000</h6>
                         <p>Sky Walk Tower</p>
                         <div class="plus_icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
@@ -240,7 +240,7 @@ include 'inc/header.php'
 
                     <div class="month_Date half-day">
                         <h4>3</h4>
-                        <h6>10AM-6PM</h6>
+                        <h6>5000</h6>
                         <p>Sky Walk Tower</p>
                         <div class="plus_icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
@@ -253,7 +253,7 @@ include 'inc/header.php'
 
                     <div class="month_Date half-day">
                         <h4>4</h4>
-                        <h6>10AM-6PM</h6>
+                        <h6>9000</h6>
                         <p>Sky Walk Tower</p>
                         <div class="plus_icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
@@ -266,7 +266,7 @@ include 'inc/header.php'
 
                     <div class="month_Date half-day">
                         <h4>5</h4>
-                        <h6>10AM-6PM</h6>
+                        <h6>7000</h6>
                         <p>Sky Walk Tower</p>
                         <div class="plus_icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
@@ -279,7 +279,7 @@ include 'inc/header.php'
 
                     <div class="month_Date present">
                         <h4>6</h4>
-                        <h6>10AM-6PM</h6>
+                        <h6>7000</h6>
                         <p>Sky Walk Tower</p>
                         <div class="plus_icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">

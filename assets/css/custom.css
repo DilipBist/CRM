@@ -3181,13 +3181,16 @@ DASHBORD PAGE CSS STATS
 }
 
 #pieChart {
-    width: 85px !important;
-    height: 85px !important;
+    width: 95px !important;
+    height: 95px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .piechard_relative {
-    height: 85px;
-    width: 85px;
+    height: 95px;
+    width: 95px;
 }
 
 .canvus_content {
@@ -3195,7 +3198,7 @@ DASHBORD PAGE CSS STATS
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 2;
+    /* z-index: 2; */
     text-align: center;
     width: 80%;
     height: 80%;
@@ -3203,7 +3206,7 @@ DASHBORD PAGE CSS STATS
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
+    padding: 10px;
 }
 
 .p-title {

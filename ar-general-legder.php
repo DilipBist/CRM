@@ -146,7 +146,7 @@ include 'inc/header.php'
                 <div class=" common_table open_trail_table acc_rep_gen_table">
                     <div class="trial_print_table_header d-flex align-items-center gap-3 justify-content-between">
                         <div class="trail_logo">
-                            <img src="assets/images//logo.svg" alt="">
+                            <img src="assets/images/logo.svg" alt="">
                         </div>
 
                         <div class="center_print_div addAssetBtn cursor-pointer text-center">

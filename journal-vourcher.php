@@ -49,7 +49,6 @@ include 'inc/header.php'
             </div>
 
 
-
             <div class="right_fil_div d-flex align-items-center gap-2 flex-wrap justify-content-md-end">
                 <div class="search">
                     <input type="text" placeholder="Voucher No." name="search">
@@ -60,9 +59,9 @@ include 'inc/header.php'
 
                 </div>
 
-                <div class="filter_comp">
+                <!-- <div class="filter_comp">
                     <?php include 'components/filter.php' ?>
-                </div>
+                </div> -->
 
                 <a href="#" class="common_payment_popbtns">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">

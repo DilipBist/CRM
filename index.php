@@ -129,16 +129,16 @@ include 'inc/header.php'
                         <canvas id="pieChart">
                         </canvas>
                         <div class="canvus_content">
-                            <h6>62</h6>
-                            <p>Completed</p>
+                            <h6>7,000</h6>
+                            <p>Total <br> Income</p>
                         </div>
                     </div>
                     <div>
-                        <p class="p-title">All Projects</p>
+                        <p class="p-title">Income</p>
                         <div class="legend">
-                            <div><span style="background-color: var(--green-donutchart)"></span> Complete</div>
-                            <div><span style="background-color: var(--blue-donutchart)"></span> Pending</div>
-                            <div><span style="background-color: var(--black-donutchart)"></span> Not Start</div>
+                            <div><span style="background-color: var(--green-donutchart)"></span> Total Expenses</div>
+                            <div><span style="background-color: var(--blue-donutchart)"></span> Total income</div>
+                            <div><span style="background-color: var(--black-donutchart)"></span> Due/ Bank</div>
                         </div>
                     </div>
                 </div>
