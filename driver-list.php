@@ -111,7 +111,7 @@ include 'inc/header.php'
                                     </td>
                                     <td>
                                         <div class="table_actions">
-                                            <a href="#" title="View Details" class="">
+                                            <a href="#" title="View Details" class="view_user_Details">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                                                     <path d="M11.6854 8.99945C11.6854 10.4845 10.4854 11.6845 9.00043 11.6845C7.51543 11.6845 6.31543 10.4845 6.31543 8.99945C6.31543 7.51445 7.51543 6.31445 9.00043 6.31445C10.4854 6.31445 11.6854 7.51445 11.6854 8.99945Z" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                                     <path d="M8.99988 15.2016C11.6474 15.2016 14.1149 13.6416 15.8324 10.9416C16.5074 9.88406 16.5074 8.10656 15.8324 7.04906C14.1149 4.34906 11.6474 2.78906 8.99988 2.78906C6.35238 2.78906 3.88488 4.34906 2.16738 7.04906C1.49238 8.10656 1.49238 9.88406 2.16738 10.9416C3.88488 13.6416 6.35238 15.2016 8.99988 15.2016Z" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -324,7 +324,7 @@ include 'inc/header.php'
     <div class="user_details_container">
         <div class="user_details_content">
             <div class="top_heading">
-                <h3>User Details</h3>
+                <h3>Registration</h3>
                 <div class="close-user-btn">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                         <path d="M8.9974 0.666016C4.40573 0.666016 0.664062 4.40768 0.664062 8.99935C0.664062 13.591 4.40573 17.3327 8.9974 17.3327C13.5891 17.3327 17.3307 13.591 17.3307 8.99935C17.3307 4.40768 13.5891 0.666016 8.9974 0.666016ZM11.7974 10.916C12.0391 11.1577 12.0391 11.5577 11.7974 11.7993C11.6724 11.9243 11.5141 11.9827 11.3557 11.9827C11.1974 11.9827 11.0391 11.9243 10.9141 11.7993L8.9974 9.88268L7.08073 11.7993C6.95573 11.9243 6.7974 11.9827 6.63906 11.9827C6.48073 11.9827 6.3224 11.9243 6.1974 11.7993C5.95573 11.5577 5.95573 11.1577 6.1974 10.916L8.11406 8.99935L6.1974 7.08268C5.95573 6.84102 5.95573 6.44102 6.1974 6.19935C6.43906 5.95768 6.83906 5.95768 7.08073 6.19935L8.9974 8.11602L10.9141 6.19935C11.1557 5.95768 11.5557 5.95768 11.7974 6.19935C12.0391 6.44102 12.0391 6.84102 11.7974 7.08268L9.88073 8.99935L11.7974 10.916Z" fill="#FF0000" />
@@ -333,8 +333,67 @@ include 'inc/header.php'
             </div>
 
             <div class="title_text">
-                <h4>User Details</h4>
-                <p>You can view the User detail accordingly.</p>
+                <h4>Driver Registration</h4>
+                <p>Please kindly complete the form to add driver registration.</p>
+            </div>
+
+
+            <div class="details">
+                <div class="row g-3 g-md-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="detail_heading">
+                            Name
+                        </div>
+                        <div class="detail_text">
+                            1241241234
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="detail_heading">
+                            Email
+                        </div>
+                        <div class="detail_text">
+                            rohanshrestha020@gmail.com
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="detail_heading">
+                            Address
+                        </div>
+                        <div class="detail_text">
+                            Thankot, Kathmandu
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="detail_heading">
+                            License Number
+                        </div>
+                        <div class="detail_text">
+                            1241241234
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="detail_heading">
+                            Citizenship Number
+                        </div>
+                        <div class="detail_text">
+                            2354-21434
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="driver_document_details">
+                <h3>Document Details</h3>
+
+                <div class="document_images">
+                    <div class="document_image">
+                        <p>License Document</p>
+                        <div class="img">
+
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>

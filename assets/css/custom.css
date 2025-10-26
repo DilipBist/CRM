@@ -6458,6 +6458,7 @@ select option:not(:first-child) {
     max-width: 360px;
 }
 
+/* ck editor css  */
 #toggleToolbar {
     position: absolute;
     top: 5px;
@@ -6479,6 +6480,36 @@ select option:not(:first-child) {
     border-top-right-radius: 8px !important;
     border: 1px solid var(--whiteEB, #EBEBEB) !important;
 }
+
+/* ck editor css ends */
+
+/* ***************** driver list page css **************  */
+.driver_document_details {
+    padding-top: 24px;
+    border-top: 1px solid var(--Neutral-Separator);
+    margin-top: 24px;
+}
+
+.driver_document_details h3 {
+    font-size: 16px;
+    margin: 0;
+    color: var(--text-dark2);
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.document_image p {
+    font-weight: 500;
+    color: var(--text-5C);
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.document_image .img {
+    height: 160px;
+}
+
+/* ***************** driver list page css ends **************  */
 
 /* *********************** PRINT MEDIA CODE ******************** */
 /* vocuhar print css  */
