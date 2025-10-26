@@ -72,11 +72,7 @@ include 'inc/header.php'
 
                 </div>
 
-                <?php
-                $title = "Task List";
-                include 'components/asset-filter.php'
-                ?>
-
+        
                 <!-- button div  -->
                 <div class="account_buttons d-flex align-items-center gap-2 flex-wrap">
 

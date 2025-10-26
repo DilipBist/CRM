@@ -426,7 +426,30 @@ function initAddAssetsPopup() {
 
 }
 // Initialize CKEditor
-ClassicEditor.create(document.querySelector('#editor'));
+// ClassicEditor.create(document.querySelector('#editor'));
+let editorInstance;
+
+ClassicEditor
+    .create(document.querySelector('#editor'))
+    .then(editor => {
+        editorInstance = editor;
+
+        const toolbar = editor.ui.view.toolbar.element;
+
+        // Hide toolbar initially
+        toolbar.style.display = 'none';
+
+        // Toggle on button click
+        document.getElementById('toggleToolbar').addEventListener('click', () => {
+            if (toolbar.style.display === 'none') {
+                toolbar.style.display = '';  // show
+            } else {
+                toolbar.style.display = 'none';  // hide
+            }
+        });
+    })
+    .catch(error => console.error(error));
+
 
 $(function () {
     // show date picker 
