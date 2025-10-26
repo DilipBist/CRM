@@ -93,12 +93,22 @@ include 'inc/header.php'
                             <?php foreach ($projectList as $project): ?>
                                 <tr>
                                     <td><?= $project['id'] ?></td>
-                                    <td>Civic</td>
+                                    <td>Rohan Dangol</td>
                                     <td>Four Wheeler</td>
                                     <td>Diesel</td>
                                     <td>124141214</td>
                                     <td>9841868583</td>
                                     <td>1241212593</td>
+                                    <td>
+                                        <!--
+                                        total two status and two classes accordion to the status of Driver
+                                        (user_active class for active Driver and user_inactive class for inactive Driver ) 
+                                        add above class accordion to state 
+                                        -->
+                                        <div class="<?= $project['user_status_class'] ?>">
+                                            <?= $project['user_status'] ?>
+                                        </div>
+                                    </td>
                                     <td>
                                         <div class="table_actions">
                                             <a href="#" title="View Details" class="add_acc_groupBtn">
@@ -147,12 +157,12 @@ include 'inc/header.php'
 </section>
 
 
-<!-- Add holiday  pop up  -->
+<!-- Add Driver  pop up  -->
 <div class="AttendancePopup">
     <div class="outer_layout">
         <div class="attendance_popup_content">
             <div class="monthly_heading">
-                Holiday
+                Registration
 
                 <button type="button" id="CloseAttendancePopup">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -162,47 +172,56 @@ include 'inc/header.php'
             </div>
 
             <div class="attendance_form mt-4">
-                <h4>Add Holiday </h4>
-                <p>Please kindly complete the form to Add Holiday</p>
+                <h4>Driver Registration </h4>
+                <p>Please kindly complete the form to add driver registration.</p>
                 <div class="common_form">
                     <form action="">
                         <div class="row g-3 align-items-end">
 
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-lg-4">
                                 <div class="form_input d-flex flex-column gap-2">
-                                    <label for="Tittle">Tittle<span>*</span> </label>
-                                    <input type="text" id="Tittle" name="Tittle" placeholder="Enter a Title " required>
+                                    <label for="Name">Name<span>*</span> </label>
+                                    <input type="text" id="Name" name="Name" placeholder="Enter your name" required>
                                 </div>
                             </div>
 
-                            <div class="col-md-6">
-                                <div class="form_input d-flex flex-column gap-2 position-relative">
-                                    <label for="Date ">Date <span class="red">*</span></label>
-                                    <input type="text" class="date-picker" id="Date " name="Date " placeholder="MM/DD/YYYY">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="calender" width="21" height="20" viewBox="0 0 21 20" fill="none">
-                                        <path d="M7.33203 1.66602V4.16602" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M14 1.66602V4.16602" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M3.58203 7.57422H17.7487" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M18.166 7.08268V14.166C18.166 16.666 16.916 18.3327 13.9993 18.3327H7.33268C4.41602 18.3327 3.16602 16.666 3.16602 14.166V7.08268C3.16602 4.58268 4.41602 2.91602 7.33268 2.91602H13.9993C16.916 2.91602 18.166 4.58268 18.166 7.08268Z" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M13.7441 11.4167H13.7516" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M13.7441 13.9167H13.7516" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M10.6621 11.4167H10.6696" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M10.6621 13.9167H10.6696" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M7.5781 11.4167H7.58559" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M7.5781 13.9167H7.58559" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </div>
-                            </div>
-
-
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-lg-4">
                                 <div class="form_input d-flex flex-column gap-2">
-                                    <label for="Description">Description<span>*</span> </label>
-                                    <input type="text" id="Description" name="Description" placeholder="Enter a Description " required>
+                                    <label for="Email">Email<span>*</span> </label>
+                                    <input type="email" id="Email" name="Email" placeholder="Enter your email" required>
                                 </div>
                             </div>
 
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-lg-4">
+                                <div class="form_input d-flex flex-column gap-2">
+                                    <label for="Address">Address<span>*</span> </label>
+                                    <input type="text" id="Address" name="Address" placeholder="Enter your address" required>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4">
+                                <div class="form_input d-flex flex-column gap-2">
+                                    <label for="license_num">License Number<span>*</span> </label>
+                                    <input type="number" id="license_num" name="license_num" placeholder="Enter your address" required>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4">
+                                <div class="form_input d-flex flex-column gap-2">
+                                    <label for="phone_num">Phone Number<span>*</span> </label>
+                                    <input type="tel" id="phone_num" name="phone_num" placeholder="+977 Enter your number" required>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4">
+                                <div class="form_input d-flex flex-column gap-2">
+                                    <label for="citizen_num">Citizenship Number<span>*</span> </label>
+                                    <input type="number" id="citizen_num" name="citizen_num" placeholder="Enter Citizenship Number" required>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-6 col-lg-4">
                                 <div class="slect-status">
                                     <label for="Status" class="mb-2">Status <span class="red">*</span></label>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -215,7 +234,6 @@ include 'inc/header.php'
                                     </select>
                                 </div>
                             </div>
-
 
                             <div class="col-12">
                                 <div class="form_discard_save d-flex align-items-center gap-2 justify-content-end">
@@ -230,7 +248,7 @@ include 'inc/header.php'
         </div>
     </div>
 </div>
-<!-- Add holiday pop up ends  -->
+<!-- Add Driver pop up ends  -->
 
 
 <?php include 'inc/footer.php' ?>
