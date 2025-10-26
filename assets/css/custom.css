@@ -657,7 +657,8 @@ SIDE BAR CSS STARTS
     top: 0;
     left: 0;
     background-color: var(--dark-theme);
-    height: 100svh;
+    /* vh, svh tried  */
+    height: 100lvh;
     color: var(--whiteFC);
     font-weight: 500;
     transition: all .5s ease-in-out;
