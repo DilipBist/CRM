@@ -6507,6 +6507,7 @@ select option:not(:first-child) {
 
 .document_image .img {
     height: 160px;
+    background-color: #F5F5F5;
 }
 
 /* ***************** driver list page css ends **************  */
