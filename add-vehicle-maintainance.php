@@ -47,12 +47,7 @@ include 'inc/header.php'
                 <div class="common_form">
                     <form action="">
                         <div class="row g-3 align-items-end">
-                            <div class="col-md-6 col-lg-4 col-xxl-3">
-                                <div class="form_input d-flex flex-column gap-2">
-                                    <label for="ponum">Purchase Order Number <span>*</span></label>
-                                    <input type="number" placeholder="#P0001" name="ponum" id="ponum" required>
-                                </div>
-                            </div>
+
 
                             <div class="col-md-6 col-lg-4 col-xxl-3">
                                 <div class="form_input d-flex flex-column gap-2 position-relative">
@@ -73,13 +68,34 @@ include 'inc/header.php'
                                 </div>
                             </div>
 
+                            <div class="col-md-6 col-lg-4 col-xxl-3">
+                                <div class="form_input d-flex flex-column gap-2">
+                                    <label for="vehicle_name">Vehicle Name <span>*</span></label>
+                                    <input type="text" placeholder="Enter Vehicle Name" name="vehicle_name" id="vehicle_name" required>
+                                </div>
+                            </div>
+
 
                             <div class="col-md-6 col-lg-4 col-xxl-3 slect-status">
-                                <label for="Supplier" class="mb-2">Supplier <span class="red">*</span></label>
+                                <label for="requisation_type" class="mb-2">Requisition Type <span class="red">*</span></label>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                     <path d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
-                                <select class="form-select" aria-label="select" id="Supplier" name="Supplier" required>
+                                <select class="form-select" aria-label="select" id="requisation_type" name="requisation_type" required>
+
+                                    <option value="" disabled selected hidden>Select </option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4 col-xxl-3 slect-status">
+                                <label for="Priority" class="mb-2">Priority <span class="red"> *</span></label>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <select class="form-select" aria-label="select" id="Priority" name="Priority" required>
 
                                     <option value="" disabled selected hidden>Select </option>
                                     <option value="1">One</option>
@@ -90,31 +106,39 @@ include 'inc/header.php'
 
                             <div class="col-md-6 col-lg-4 col-xxl-3">
                                 <div class="form_input d-flex flex-column gap-2">
-                                    <label for="quantity">Quantity <span>*</span></label>
-                                    <input type="number" placeholder="Enter a Quantity" name="quantity" id="quantity" required>
-                                </div>
-                            </div>
-
-                            <div class="col-12">
-                                <div class="add_heading mb-0 mt-4">
-                                    <h3>Shipping Address</h3>
-                                    <p>Please kindly fill up the following form</p>
+                                    <label for="request_from">Request From <span>*</span></label>
+                                    <input type="text" placeholder="Enter a Name" name="request_from" id="request_from" required>
                                 </div>
                             </div>
 
                             <div class="col-md-6 col-lg-4 col-xxl-3 slect-status">
-                                <label for="shipping_address" class="mb-2">Shipping Address <span class="red">*</span></label>
+                                <label for="maintainance_type" class="mb-2">Maintenance Type <span class="red">*</span></label>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                     <path d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
-                                <select class="form-select" aria-label="select" id="shipping_address" name="shipping_address" required>
+                                <select class="form-select" aria-label="select" id="maintainance_type" name="maintainance_type" required>
 
-                                    <option value="" disabled selected hidden>Enter Name </option>
+                                    <option value="" disabled selected hidden>Select </option>
                                     <option value="1">One</option>
                                     <option value="2">Two</option>
                                     <option value="3">Three</option>
                                 </select>
                             </div>
+
+                            <div class="col-md-6 col-lg-4 col-xxl-3">
+                                <div class="form_input d-flex flex-column gap-2">
+                                    <label for="Charge">Charge <span>*</span></label>
+                                    <input type="number" placeholder="Enter a Charge" name="Charge" id="Charge" required>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4 col-xxl-3">
+                                <div class="form_input d-flex flex-column gap-2">
+                                    <label for="service_title">Service Tittle <span>*</span></label>
+                                    <input type="text" placeholder="Enter a Name" name="service_title" id="service_title" required>
+                                </div>
+                            </div>
+
 
                             <div class="col-12">
                                 <div class="inner_project_table_wrapper">
@@ -134,24 +158,29 @@ include 'inc/header.php'
                                         </a>
                                     </div>
 
-                                    <div class="inner_product_table_container">
-                                        <div class="purchase_data_table">
+                                    <div class="common_table">
+                                        <div class="vehicle_maintainance_Table">
                                             <div class="table-responsive">
                                                 <table class="table">
                                                     <thead>
                                                         <tr>
                                                             <th scope="col">Particular</th>
+                                                            <th scope="col">Item</th>
                                                             <th scope="col">Unit</th>
                                                             <th scope="col">Quantity</th>
+                                                            <th scope="col">Amount</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                         <tr>
                                                             <td>
                                                                 <div class="inner_input">
-                                                                    <input type="text" placeholder="Items">
-
-                                                                    <textarea name="description" placeholder="Description" rows="3"></textarea>
+                                                                    <input type="text" placeholder="Choose">
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="inner_input">
+                                                                    <input type="text" placeholder="Choose">
                                                                 </div>
                                                             </td>
                                                             <td>
@@ -164,20 +193,17 @@ include 'inc/header.php'
                                                                     <input type="number" placeholder="Qty">
                                                                 </div>
                                                             </td>
+                                                            <td>
+                                                                <div class="inner_input">
+                                                                    <input type="number" placeholder="Rate">
+                                                                </div>
+                                                            </td>
                                                         </tr>
                                                     </tbody>
                                                     <tfoot>
                                                         <tr>
                                                             <td></td>
-                                                            <td>Sub Total (Rs)</td=>
-                                                            <td>NA</td>
-                                                        </tr>
-                                                        <tr>
                                                             <td></td>
-                                                            <td>Tax (Rs.) </td=>
-                                                            <td>NA</td>
-                                                        </tr>
-                                                        <tr>
                                                             <td></td>
                                                             <td>Total Amount (Rs.)</td>
                                                             <td>NA</td>

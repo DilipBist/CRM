@@ -1775,7 +1775,8 @@ SIDE BAR CSS ENDS
     margin: 0;
 }
 
-.purchase_data_table {
+.purchase_data_table,
+.vehicle_maintainance_Table {
     margin-top: 18px;
 }
 
@@ -4096,7 +4097,9 @@ ASSET FILTER POPUP CSS ENDS
     margin-bottom: 8px;
 }
 
+.vehicle_maintainance_Table .inner_input textarea,
 .purchase_data_table .inner_input textarea,
+.vehicle_maintainance_Table .inner_input input,
 .purchase_data_table .inner_input input {
     border-radius: 8px;
     background-color: var(--whiteFA);
@@ -4105,17 +4108,20 @@ ASSET FILTER POPUP CSS ENDS
     outline-color: var(--hold-color);
 }
 
-.purchase_data_table .inner_input {
+.purchase_data_table .inner_input,
+.vehicle_maintainance_Table .inner_input {
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
+.vehicle_maintainance_Table table tbody tr td,
 .purchase_data_table table tbody tr td {
-    padding-bottom: 24px;
-    padding-top: 16px;
+    padding-bottom: 24px !important;
+    padding-top: 16px !important;
 }
 
+.vehicle_maintainance_Table table tfoot tr td,
 .purchase_data_table table tfoot tr td {
     background: var(--whiteFA);
     height: 52px;
