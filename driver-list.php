@@ -345,7 +345,7 @@ include 'inc/header.php'
                             Name
                         </div>
                         <div class="detail_text">
-                            1241241234
+                            Rohan Dangol
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4">
@@ -362,6 +362,14 @@ include 'inc/header.php'
                         </div>
                         <div class="detail_text">
                             Thankot, Kathmandu
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="detail_heading">
+                            Phone Number
+                        </div>
+                        <div class="detail_text">
+                            9841868583
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4">
