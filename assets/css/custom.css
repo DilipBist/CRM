@@ -6506,8 +6506,14 @@ select option:not(:first-child) {
 }
 
 .document_image .img {
-    height: 160px;
+    min-height: 165px;
     background-color: #F5F5F5;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.document_image .img img {
+    width: 100%;
 }
 
 /* ***************** driver list page css ends **************  */

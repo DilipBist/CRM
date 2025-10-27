@@ -387,10 +387,38 @@ include 'inc/header.php'
                 <h3>Document Details</h3>
 
                 <div class="document_images">
-                    <div class="document_image">
-                        <p>License Document</p>
-                        <div class="img">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="document_image">
+                                <p>License Document</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="document_image">
+                                <p>Citizenship Document</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-lg-4">
+                            <div class="document_image">
+                                <div class="img">
 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="document_image">
+                                <div class="img">
+                                    <img src="assets/images/thumb.jpg" alt="CitizenImage">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="document_image">
+                                <div class="img">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
