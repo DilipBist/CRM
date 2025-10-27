@@ -1663,6 +1663,7 @@ SIDE BAR CSS ENDS
     margin-bottom: 10px;
 }
 
+.project_expense_container_new p,
 .project_expense_container p {
     color: var(--text-5C);
     font-size: clamp(16px, 1vw, 18px);
@@ -1689,18 +1690,37 @@ SIDE BAR CSS ENDS
     border: 1px solid var(--Button-soft-color, #CCDDEB);
 }
 
+.project_expense_container_new {
+    border-radius: 29px;
+    border: 1px solid var(--Button-soft-color, #CCDDEB);
+    overflow: hidden;
+}
+
+.project_expense_container_new .inner_content {
+    padding: clamp(16px, 2vw, 24px);
+    padding-top: 5px;
+}
+
+.project_expense_container_new>h3 {
+    padding: 16px;
+    margin: 0;
+    background-color: var(--Button-soft-color);
+}
+
 .expense_table .table thead tr th,
 .expense_table .table tbody tr td,
 .expense_table .table tbody tr th {
     padding: 12px 16px;
 }
 
+.project_expense_container_new ul,
 .project_expense_container ul {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
+.project_expense_container_new ul li,
 .project_expense_container ul li {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1742,7 +1762,7 @@ SIDE BAR CSS ENDS
 }
 
 .mt26 {
-    margin-top: 26px;
+    margin-top: 20px;
 }
 
 .attach_file_info>h4 span {

@@ -72,9 +72,9 @@ include 'inc/header.php'
                         <div class="less_p">
                             In Progress
                         </div>
-                        <div class="more_p">
+                        <!-- <div class="more_p">
                             High Priority
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 
@@ -356,48 +356,50 @@ include 'inc/header.php'
                         <div class="col-xl-4">
                             <div class="d-flex flex-column gap-4">
                                 <!-- project details  -->
-                                <div class="project_expense_container p-detail">
+                                <div class="project_expense_container_new p-detail">
                                     <h3>Project Details</h3>
-                                    <p>Detailed information about the project</p>
+                                    <div class="inner_content">
+                                        <p>Detailed information about the project</p>
 
-                                    <ul>
-                                        <li>
-                                            <p>Project Name:</p>
-                                            <p>Sky walk Tower</p>
-                                        </li>
-                                        <li>
-                                            <p>Project Id:</p>
-                                            <p>#ID1287956401</p>
-                                        </li>
-                                        <li>
-                                            <p>Project Address:</p>
-                                            <p>Hattiban</p>
-                                        </li>
-                                        <li>
-                                            <p>Project Owner Name:</p>
-                                            <p>Rohan Dangol</p>
-                                        </li>
-                                        <li>
-                                            <p>Estimated Budget:</p>
-                                            <p>Rs. 50,00,000</p>
-                                        </li>
-                                        <li>
-                                            <p>Created By:</p>
-                                            <p>Rohan Dangol</p>
-                                        </li>
-                                        <li>
-                                            <p>Estimated Month:</p>
-                                            <p>9 Month</p>
-                                        </li>
-                                        <li>
-                                            <p>Start Date:</p>
-                                            <p>08 March 2025</p>
-                                        </li>
-                                        <li>
-                                            <p>End Date:</p>
-                                            <p>08 March 2025</p>
-                                        </li>
-                                    </ul>
+                                        <ul>
+                                            <li>
+                                                <p>Project Name:</p>
+                                                <p>Sky walk Tower</p>
+                                            </li>
+                                            <li>
+                                                <p>Project Id:</p>
+                                                <p>#ID1287956401</p>
+                                            </li>
+                                            <li>
+                                                <p>Project Address:</p>
+                                                <p>Hattiban</p>
+                                            </li>
+                                            <li>
+                                                <p>Project Owner Name:</p>
+                                                <p>Rohan Dangol</p>
+                                            </li>
+                                            <li>
+                                                <p>Estimated Budget:</p>
+                                                <p>Rs. 50,00,000</p>
+                                            </li>
+                                            <li>
+                                                <p>Created By:</p>
+                                                <p>Rohan Dangol</p>
+                                            </li>
+                                            <li>
+                                                <p>Estimated Month:</p>
+                                                <p>9 Month</p>
+                                            </li>
+                                            <li>
+                                                <p>Start Date:</p>
+                                                <p>08 March 2025</p>
+                                            </li>
+                                            <li>
+                                                <p>End Date:</p>
+                                                <p>08 March 2025</p>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                                 <!-- project details ends  -->
 
@@ -405,9 +407,59 @@ include 'inc/header.php'
                                 <div class="project_expense_container att_heading">
                                     <h3>Attachments</h3>
 
-                                    <div class="d-flex flex-column gap-3 gap-md-4 mt26">
+                                    <div class="d-flex flex-column gap-3 gap-md-3 mt26">
                                         <div class="attach_file_info">
                                             <h4>Design & Sketch <span>*</span></h4>
+
+                                            <div class="outer_bg1 d-flex align-items-center gap-3 justify-content-between">
+                                                <div class="file_info d-flex align-items-center gap-2">
+                                                    <div>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
+                                                            <path opacity="0.4" d="M26.1673 9.11232V16.2173L24.2657 14.584C23.3557 13.8023 21.8856 13.8023 20.9756 14.584L16.1223 18.749C15.2123 19.5306 13.7423 19.5306 12.8323 18.749L12.4356 18.4223C11.6073 17.699 10.289 17.629 9.35565 18.259L3.61565 22.109L3.48732 22.2023C3.05565 21.269 2.83398 20.1607 2.83398 18.889V9.11232C2.83398 4.86565 5.36565 2.33398 9.61232 2.33398H19.389C23.6357 2.33398 26.1673 4.86565 26.1673 9.11232Z" fill="#141414" />
+                                                            <path d="M10.9993 12.11C12.5328 12.11 13.776 10.8668 13.776 9.33331C13.776 7.7998 12.5328 6.55664 10.9993 6.55664C9.46581 6.55664 8.22266 7.7998 8.22266 9.33331C8.22266 10.8668 9.46581 12.11 10.9993 12.11Z" fill="#141414" />
+                                                            <path d="M26.1663 16.2176V18.8893C26.1663 23.136 23.6347 25.6676 19.388 25.6676H9.61133C6.63633 25.6676 4.48966 24.4193 3.48633 22.2026L3.61466 22.1093L9.35466 18.2593C10.288 17.6293 11.6063 17.6993 12.4347 18.4226L12.8313 18.7493C13.7413 19.531 15.2113 19.531 16.1213 18.7493L20.9747 14.5843C21.8847 13.8026 23.3547 13.8026 24.2647 14.5843L26.1663 16.2176Z" fill="#141414" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="d-flex flex-column gap-1">
+                                                        <h6>File2024</h6>
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <p>JPEG</p>
+                                                            <div class="dot"></div>
+                                                            <p>1.2 MB</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="file_download d-flex align-items-center gap-2">
+                                                    <a href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                                            <path d="M13.4842 10.0009C13.4842 11.6509 12.1509 12.9842 10.5009 12.9842C8.85091 12.9842 7.51758 11.6509 7.51758 10.0009C7.51758 8.35091 8.85091 7.01758 10.5009 7.01758C12.1509 7.01758 13.4842 8.35091 13.4842 10.0009Z" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path d="M10.4999 16.8913C13.4415 16.8913 16.1832 15.1579 18.0915 12.1579C18.8415 10.9829 18.8415 9.00794 18.0915 7.83294C16.1832 4.83294 13.4415 3.09961 10.4999 3.09961C7.5582 3.09961 4.81654 4.83294 2.9082 7.83294C2.1582 9.00794 2.1582 10.9829 2.9082 12.1579C4.81654 15.1579 7.5582 16.8913 10.4999 16.8913Z" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                    </a>
+
+                                                    <a href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                                            <path d="M15.5581 12.0254L10.4997 17.0837L5.44141 12.0254" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path d="M10.5 2.91602V16.941" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                    </a>
+
+                                                    <a href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="del" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                                            <path d="M18 4.98307C15.225 4.70807 12.4333 4.56641 9.65 4.56641C8 4.56641 6.35 4.64974 4.7 4.81641L3 4.98307" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path d="M7.58398 4.14102L7.76732 3.04935C7.90065 2.25768 8.00065 1.66602 9.40898 1.66602H11.5923C13.0007 1.66602 13.109 2.29102 13.234 3.05768L13.4173 4.14102" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path d="M16.2077 7.61719L15.666 16.0089C15.5743 17.3172 15.4993 18.3339 13.1743 18.3339H7.82435C5.49935 18.3339 5.42435 17.3172 5.33268 16.0089L4.79102 7.61719" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path d="M9.10742 13.75H11.8824" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path d="M8.41602 10.416H12.5827" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="attach_file_info">
+                                            <h4>Bill of quantities <span>*</span></h4>
 
                                             <div class="outer_bg1 d-flex align-items-center gap-3 justify-content-between">
                                                 <div class="file_info d-flex align-items-center gap-2">
@@ -471,7 +523,7 @@ include 'inc/header.php'
                                                     <div class="d-flex flex-column gap-1">
                                                         <h6>File2024</h6>
                                                         <div class="d-flex align-items-center gap-2">
-                                                            <p>JPEG</p>
+                                                            <p>Pdf</p>
                                                             <div class="dot"></div>
                                                             <p>1.2 MB</p>
                                                         </div>
