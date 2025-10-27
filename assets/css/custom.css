@@ -658,7 +658,8 @@ SIDE BAR CSS STARTS
     left: 0;
     background-color: var(--dark-theme);
     /* vh, svh tried  */
-    height: 100lvh;
+    /* height: 100vh; */
+    height: 100%;
     color: var(--whiteFC);
     font-weight: 500;
     transition: all .5s ease-in-out;
@@ -6422,9 +6423,11 @@ select option:not(:first-child) {
     background: var(--white);
     box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.10);
     padding: 24px;
-    height: 650px;
+    min-height: 750px;
+    height: 100%;
     overflow: hidden;
 }
+
 
 .model_tag {
     display: flex;
