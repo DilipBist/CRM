@@ -59,7 +59,7 @@ include 'inc/header.php'
 
                 </div>
 
-                <button class="add_acc_group add_acc_groupBtn">
+                <button class="add_acc_group">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                         <path d="M9.99935 18.3346C14.5827 18.3346 18.3327 14.5846 18.3327 10.0013C18.3327 5.41797 14.5827 1.66797 9.99935 1.66797C5.41602 1.66797 1.66602 5.41797 1.66602 10.0013C1.66602 14.5846 5.41602 18.3346 9.99935 18.3346Z" stroke="#F5F5F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                         <path d="M6.66602 10H13.3327" stroke="#F5F5F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -155,90 +155,9 @@ include 'inc/header.php'
 </section>
 
 
-<!-- Add holiday  pop up  -->
-<div class="AttendancePopup">
-    <div class="outer_layout">
-        <div class="attendance_popup_content">
-            <div class="monthly_heading">
-                Holiday
 
-                <button type="button" id="CloseAttendancePopup">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <path d="M9.99935 1.66602C5.40768 1.66602 1.66602 5.40768 1.66602 9.99935C1.66602 14.591 5.40768 18.3327 9.99935 18.3327C14.591 18.3327 18.3327 14.591 18.3327 9.99935C18.3327 5.40768 14.591 1.66602 9.99935 1.66602ZM12.7993 11.916C13.041 12.1577 13.041 12.5577 12.7993 12.7993C12.6743 12.9243 12.516 12.9827 12.3577 12.9827C12.1993 12.9827 12.041 12.9243 11.916 12.7993L9.99935 10.8827L8.08268 12.7993C7.95768 12.9243 7.79935 12.9827 7.64102 12.9827C7.48268 12.9827 7.32435 12.9243 7.19935 12.7993C6.95768 12.5577 6.95768 12.1577 7.19935 11.916L9.11602 9.99935L7.19935 8.08268C6.95768 7.84102 6.95768 7.44102 7.19935 7.19935C7.44102 6.95768 7.84102 6.95768 8.08268 7.19935L9.99935 9.11602L11.916 7.19935C12.1577 6.95768 12.5577 6.95768 12.7993 7.19935C13.041 7.44102 13.041 7.84102 12.7993 8.08268L10.8827 9.99935L12.7993 11.916Z" fill="#FF0000" />
-                    </svg>
-                </button>
-            </div>
+<div class="vehicle_list_popup_outer_bg">
 
-            <div class="attendance_form mt-4">
-                <h4>Add Holiday </h4>
-                <p>Please kindly complete the form to Add Holiday</p>
-                <div class="common_form">
-                    <form action="">
-                        <div class="row g-3 align-items-end">
-
-                            <div class="col-md-6">
-                                <div class="form_input d-flex flex-column gap-2">
-                                    <label for="Tittle">Tittle<span>*</span> </label>
-                                    <input type="text" id="Tittle" name="Tittle" placeholder="Enter a Title " required>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="form_input d-flex flex-column gap-2 position-relative">
-                                    <label for="Date ">Date <span class="red">*</span></label>
-                                    <input type="text" class="date-picker" id="Date " name="Date " placeholder="MM/DD/YYYY">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="calender" width="21" height="20" viewBox="0 0 21 20" fill="none">
-                                        <path d="M7.33203 1.66602V4.16602" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M14 1.66602V4.16602" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M3.58203 7.57422H17.7487" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M18.166 7.08268V14.166C18.166 16.666 16.916 18.3327 13.9993 18.3327H7.33268C4.41602 18.3327 3.16602 16.666 3.16602 14.166V7.08268C3.16602 4.58268 4.41602 2.91602 7.33268 2.91602H13.9993C16.916 2.91602 18.166 4.58268 18.166 7.08268Z" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M13.7441 11.4167H13.7516" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M13.7441 13.9167H13.7516" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M10.6621 11.4167H10.6696" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M10.6621 13.9167H10.6696" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M7.5781 11.4167H7.58559" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M7.5781 13.9167H7.58559" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </div>
-                            </div>
-
-
-                            <div class="col-md-6">
-                                <div class="form_input d-flex flex-column gap-2">
-                                    <label for="Description">Description<span>*</span> </label>
-                                    <input type="text" id="Description" name="Description" placeholder="Enter a Description " required>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="slect-status">
-                                    <label for="Status" class="mb-2">Status <span class="red">*</span></label>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                        <path d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                    <select class="form-select" aria-label="select" id="Status" name="Status" required>
-                                        <option value="" disabled hidden selected>Select</option>
-                                        <option value="Active">Active</option>
-                                        <option value="InActive">InActive</option>
-                                    </select>
-                                </div>
-                            </div>
-
-
-                            <div class="col-12">
-                                <div class="form_discard_save d-flex align-items-center gap-2 justify-content-end">
-                                    <button class="discard" type="button">Back</button>
-                                    <button type="submit" class="submit">Submit</button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
 </div>
-<!-- Add holiday pop up ends  -->
-
 
 <?php include 'inc/footer.php' ?>

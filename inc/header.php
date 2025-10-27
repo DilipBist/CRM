@@ -19,7 +19,7 @@
     <!-- MonthSelect plugin for month/year picker -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/plugins/monthSelect/style.css">
     <!-- custom css  -->
-    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/custom.css?v=1.0.1">
 </head>
 
 
