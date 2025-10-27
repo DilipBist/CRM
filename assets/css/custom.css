@@ -6516,6 +6516,10 @@ select option:not(:first-child) {
     width: 100%;
 }
 
+.hide_arrow .file-item .remove-btn {
+    display: none !important;
+}
+
 /* ***************** driver list page css ends **************  */
 
 /* *********************** PRINT MEDIA CODE ******************** */

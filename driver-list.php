@@ -237,7 +237,7 @@ include 'inc/header.php'
 
 
                             <div class="col-12">
-                                <div class="upload-container license_pc">
+                                <div class="upload-container license_pc hide_arrow">
                                     <div>
                                         <label class="up_label">License Document <span>*</span></label>
                                         <label class="file-upload" data-upload="license_Document">
@@ -262,7 +262,7 @@ include 'inc/header.php'
                                 <label class="up_label">Citizenship <span>*</span></label>
                                 <div class="row">
                                     <div class="col-12 col-md-6">
-                                        <div class="upload-container">
+                                        <div class="upload-container hide_arrow">
                                             <div class="w-100">
                                                 <label class="file-upload" data-upload="citizenFront">
                                                     <div class="placeholder-data">
@@ -282,7 +282,7 @@ include 'inc/header.php'
                                         </div>
                                     </div>
                                     <div class="col-12 col-md-6">
-                                        <div class="upload-container">
+                                        <div class="upload-container hide_arrow">
                                             <div class="w-100">
                                                 <label class="file-upload" data-upload="citizenBack">
                                                     <div class="placeholder-data">
