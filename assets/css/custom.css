@@ -656,10 +656,10 @@ SIDE BAR CSS STARTS
     position: fixed;
     top: 0;
     left: 0;
+    bottom: 0;
     background-color: var(--dark-theme);
-    /* vh, svh tried  */
-    /* height: 100vh; */
-    height: 100%;
+    height: 100vh;
+    height: 100dvh;
     color: var(--whiteFC);
     font-weight: 500;
     transition: all .5s ease-in-out;
@@ -3218,7 +3218,7 @@ DASHBORD PAGE CSS STATS
 }
 
 .canvus_content h6 {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 400;
     color: #828690;
     margin: 0;
@@ -3226,7 +3226,7 @@ DASHBORD PAGE CSS STATS
 
 .canvus_content p {
     color: #828690;
-    font-size: 11px;
+    font-size: 10px;
     font-style: normal;
     font-weight: 400;
 }
@@ -4499,7 +4499,7 @@ select option:not(:first-child) {
 .foucus_popup {
     position: fixed;
     background: var(--whiteFA);
-    z-index: 50;
+    z-index: 200;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
@@ -4518,7 +4518,7 @@ select option:not(:first-child) {
     width: 100vw;
     height: 100vh;
     background: var(--common-pupbg);
-    z-index: 49;
+    z-index: 199;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.5s ease-in-out;
