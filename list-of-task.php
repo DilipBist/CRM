@@ -100,7 +100,7 @@ include 'inc/header.php'
                             <path d="M6.66602 10H13.3327" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                             <path d="M10 13.3327V6.66602" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
-                        Add
+                        Add Task
                     </a>
                 </div>
                 <!-- button div  -->
