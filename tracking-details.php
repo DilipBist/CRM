@@ -57,7 +57,7 @@ include 'inc/header.php'
 
                 <?php include 'components/search.php' ?>
 
-                <div class="filter_comp">
+                <!-- <div class="filter_comp">
                     <?php include 'components/filter.php' ?>
                 </div>
 
@@ -70,7 +70,7 @@ include 'inc/header.php'
                         </svg>
                         Track
                     </a>
-                </div>
+                </div> -->
 
             </div>
         </div>

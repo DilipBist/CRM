@@ -68,10 +68,6 @@ include 'inc/header.php'
 
                 <?php include 'components/search.php' ?>
 
-                <!-- <div class="filter_comp">
-                    <?php include 'components/filter.php' ?>
-                </div> -->
-
                 <div class="track_btns_container d-flex align-items-center gap-2">
                     <a href="labour-track.php">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -121,6 +117,7 @@ include 'inc/header.php'
                         <thead>
                             <tr>
                                 <th scope="col">SN</th>
+                                <th scope="col">Citizen Id</th>
                                 <th scope="col">Labor Name</th>
                                 <th scope="col">Phone No</th>
                                 <th scope="col">Gender</th>
@@ -135,6 +132,7 @@ include 'inc/header.php'
                             <?php foreach ($projectList as $project): ?>
                                 <tr>
                                     <th scope="row"><?= $project['id'] ?></th>
+                                    <td>#ID4587893004</td>
                                     <td><?= $project['labour_name'] ?></td>
                                     <td><?= $project['labour_contact'] ?></td>
                                     <td><?= $project['gender'] ?></td>
