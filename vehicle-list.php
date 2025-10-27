@@ -157,7 +157,52 @@ include 'inc/header.php'
 
 
 <div class="vehicle_list_popup_outer_bg">
+    <div class="vehicle_list_popup_content">
+        <div class="heading_container">
+            <div class="heading">
+                <h3>Setup Vehicle Registration</h3>
+                <p>You can set the vehicle registration list accordingly.</p>
+            </div>
+            <div class="vehicle_pop_close_btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <path d="M3.75 3.75L14.2493 14.2493" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M3.75071 14.2493L14.25 3.75" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+        </div>
 
+        <div class="vehicle_registration_steps">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="steps_container d-flex align-items-center justify-content-between">
+                        <div class="steps active">
+                            <div class="circle">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                                    <path d="M14.794 23.2841C15.1145 23.3587 15.1439 23.7785 14.8317 23.8826L12.9883 24.4892C8.35666 25.9826 5.91833 24.7342 4.41333 20.1026L2.91999 15.4942C1.42666 10.8626 2.66333 8.41255 7.29499 6.91922L8.07566 6.66069C8.47852 6.52727 8.86807 6.9304 8.74927 7.33781C8.66533 7.62565 8.58569 7.92946 8.50833 8.24922L7.36499 13.1376C6.08166 18.6326 7.95999 21.6659 13.455 22.9726L14.794 23.2841Z" fill="#005399" />
+                                    <path d="M20.0345 3.7446L18.0861 3.2896C14.1895 2.36794 11.8678 3.12627 10.5028 5.9496C10.1528 6.66127 9.87281 7.5246 9.63948 8.51627L8.49615 13.4046C7.35281 18.2813 8.85781 20.6846 13.7228 21.8396L15.6828 22.3063C16.3595 22.4696 16.9895 22.5746 17.5728 22.6213C21.2128 22.9713 23.1495 21.2679 24.1295 17.0563L25.2728 12.1796C26.4161 7.30294 24.9228 4.88794 20.0345 3.7446ZM17.8411 15.5513C17.7361 15.9479 17.3861 16.2046 16.9895 16.2046C16.9195 16.2046 16.8495 16.1929 16.7678 16.1813L13.3728 15.3179C12.9061 15.2013 12.6261 14.7229 12.7428 14.2563C12.8595 13.7896 13.3378 13.5096 13.8045 13.6263L17.1995 14.4896C17.6778 14.6063 17.9578 15.0846 17.8411 15.5513ZM21.2595 11.6079C21.1545 12.0046 20.8045 12.2613 20.4078 12.2613C20.3378 12.2613 20.2678 12.2496 20.1861 12.2379L14.5278 10.8029C14.0611 10.6863 13.7811 10.2079 13.8978 9.74127C14.0145 9.2746 14.4928 8.9946 14.9595 9.11127L20.6178 10.5463C21.0961 10.6513 21.3761 11.1296 21.2595 11.6079Z" fill="#005399" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="steps">
+                            <div class="circle">
+
+                            </div>
+                        </div>
+                        <div class="steps">
+                            <div class="circle">
+
+                            </div>
+                        </div>
+                        <div class="steps">
+                            <div class="circle">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <?php include 'inc/footer.php' ?>

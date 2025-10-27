@@ -6525,6 +6525,98 @@ select option:not(:first-child) {
 
 /* ***************** driver list page css ends **************  */
 
+
+/* ==================== VEHICLE LIST PAGE CSS STARTS =============== */
+.vehicle_list_popup_outer_bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 150;
+    background-color: var(--common-pupbg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vehicle_list_popup_content {
+    background-color: var(--white);
+    height: 85%;
+    max-width: 1050px;
+    width: 90%;
+    border-radius: 24px;
+    padding: clamp(16px, 3vw, 44px);
+}
+
+.heading_container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.heading_container .heading h3 {
+    font-size: clamp(20px, 2vw, 24px);
+    font-weight: 800;
+    font-family: var(--lato);
+    color: var(--text-dark2);
+    margin-bottom: 2px;
+}
+
+.heading_container .heading p {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-dark2);
+    margin: 0;
+}
+
+.vehicle_pop_close_btn {
+    cursor: pointer;
+}
+
+.vehicle_registration_steps .steps {
+    height: 62px;
+    width: 62px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F5F5F5;
+    position: relative;
+    z-index: 2;
+    border: 10px solid var(--white);
+}
+
+.vehicle_registration_steps .steps.active {
+    background-color: #EBF6FF;
+}
+
+.vehicle_registration_steps .steps_container {
+    position: relative;
+}
+
+.vehicle_registration_steps .steps_container::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    border-top: 3px dashed #EBEBEB;
+    z-index: 1;
+    transform: translateY(-50%);
+    border-image: repeating-linear-gradient(to right,
+            #EBEBEB 0,
+            #EBEBEB 10px,
+            transparent 10px,
+            transparent 20px) 1;
+}
+
+/* ==================== VEHICLE LIST PAGE CSS ENDS =============== */
+
 /* *********************** PRINT MEDIA CODE ******************** */
 /* vocuhar print css  */
 .prit_logo {
