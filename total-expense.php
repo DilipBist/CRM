@@ -77,9 +77,7 @@ include 'inc/header.php'
 
                 </div>
 
-                <div class="filter_comp">
-                    <?php include 'components/filter.php' ?>
-                </div>
+        
 
                 <div class="add_expenses position-relative" id="AddExpenseBtn">
                     Add Expenses
