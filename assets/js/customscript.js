@@ -550,33 +550,22 @@ function initDatePickers() {
             if (input._flatpickr) input._flatpickr.open();
         });
     });
-
     // --- Date Range Picker ---
-    const dateRangeInput = document.getElementById("dateRangePicker");
-    if (dateRangeInput && typeof flatpickr !== "undefined" && typeof monthSelectPlugin !== "undefined") {
-        flatpickr(dateRangeInput, {
-            mode: "range",
-            plugins: [new monthSelectPlugin({ shorthand: false, dateFormat: "F, Y" })],
-            onClose: function (selectedDates, dateStr, instance) {
-                if (selectedDates.length === 2) {
-                    const start = selectedDates[0];
-                    const end = selectedDates[1];
-                    instance.input.value = `${instance.formatDate(start, "F, Y")} - ${instance.formatDate(end, "F, Y")}`;
-                }
-            }
-        });
+    flatpickr("#dateRangePicker", {
+        mode: "range",
+        dateFormat: "Y-m-d"
     }
-
+    );
     // --- Month Picker ---
-    const monthInput = document.getElementById("monthPicker");
-    if (monthInput && typeof flatpickr !== "undefined" && typeof monthSelectPlugin !== "undefined") {
-        flatpickr(monthInput, {
-            plugins: [new monthSelectPlugin({ shorthand: false, dateFormat: "F, Y", altFormat: "F, Y" })],
-            onChange: function (selectedDates, dateStr, instance) {
-                instance.input.value = dateStr;
-            }
-        });
-    }
+    flatpickr("#monthPicker", {
+        plugins: [
+            new monthSelectPlugin({
+                shorthand: true,
+                dateFormat: "Y-m",
+                altFormat: "F Y",
+            })
+        ],
+    });
 }
 
 /* ============================
