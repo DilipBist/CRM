@@ -41,6 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initStockCheckboxToggles();
     initInventoryRowAdd();
     initAddVehicleRow();
+    initshowMsgHistory();
 
 
 
@@ -1415,4 +1416,16 @@ function setupAccordionSync() {
     accounting.addEventListener('show.bs.collapse', () => {
         new bootstrap.Collapse(purchase, { toggle: false }).hide();
     });
+}
+
+
+// show all msg history 
+function initshowMsgHistory() {
+    const msgHistoryBtn = document.querySelector('.Msg_history_btn');
+    const msgBoxContainer = document.querySelector('.msg_history_container')
+    if (!msgHistoryBtn) return;
+    msgHistoryBtn.addEventListener('click', () => {
+        msgBoxContainer.classList.add('showAll');
+        msgHistoryBtn.style.display = 'none';
+    })
 }

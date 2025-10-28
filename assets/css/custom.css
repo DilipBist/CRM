@@ -6635,6 +6635,121 @@ select option:not(:first-child) {
             transparent 20px) 1;
 }
 
+/* list of task masg popup history css  */
+
+
+.Msg_history_btn {
+    font-size: 12px;
+    background-color: transparent;
+    border: none;
+    text-decoration: underline;
+    color: var(--text-dark2);
+    font-weight: 700;
+}
+
+.msg_history_container {
+    margin-bottom: 20px;
+    max-height: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    /* for Firefox */
+    scrollbar-color: var(--neutral-primay) #f5f5f5;
+    /* for Firefox */
+}
+
+/* Chrome, Edge, Safari custom scrollbar */
+.msg_history_container::-webkit-scrollbar {
+    width: 6px;
+}
+
+.msg_history_container::-webkit-scrollbar-track {
+    background: #f5f5f5;
+    border-radius: 10px;
+}
+
+.msg_history_container::-webkit-scrollbar-thumb {
+    background-color: var(--neutral-primay);
+    border-radius: 10px;
+    border: 2px solid #f5f5f5;
+}
+
+.msg_history_container::-webkit-scrollbar-thumb:hover {
+    background-color: var(--primary-color);
+}
+
+.msger_profile {
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.msger_profile img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.msg_history_container .description_message {
+    gap: 16px;
+    display: none;
+}
+
+.msg_history_container .description_message:first-child {
+    display: flex;
+}
+
+.msg_history_container.showAll .description_message {
+    display: flex;
+}
+
+.description_message .msg_box {
+    background-color: var(--whiteFA);
+    border-radius: 5px;
+    max-width: 250px;
+    width: 100%;
+    padding: 12px;
+    position: relative;
+}
+
+.description_message .msg_box svg {
+    position: absolute;
+    top: 0;
+    left: -5px;
+}
+
+.description_message .msg_box .name {
+    font-size: 12px;
+    font-weight: 600;
+    color: #2C2C2E;
+}
+
+.description_message .msg_box .tag {
+    font-size: 12px;
+    font-weight: 400;
+    color: #666668;
+}
+
+.description_message .msg_box p {
+    font-size: 12px;
+    color: #2C2C2E;
+    margin: 0;
+    padding: 1px 0;
+}
+
+.description_message .msg_box .time {
+    color: #666668;
+    font-size: 12px;
+    text-align: end;
+}
+
+/* list of task masg popup history css ends */
 /* ==================== VEHICLE LIST PAGE CSS ENDS =============== */
 
 /* *********************** PRINT MEDIA CODE ******************** */

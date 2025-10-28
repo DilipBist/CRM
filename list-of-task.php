@@ -201,16 +201,122 @@ include 'inc/header.php'
                 </svg>
             </div>
 
-            <div class="c_asset_sub_heading">
+            <div class="c_asset_sub_heading d-flex align-items-center gap-3 justify-content-between">
                 <h5 class="m-0">Message</h5>
+                <button class="Msg_history_btn">Show all history</button>
             </div>
 
             <div class="asset_filter_form">
+                <div class="msg_history_container">
+                    <div class="description_message">
+                        <div class="msger_profile">
+                            <img src="assets/images/chatProfile/cp3.png" alt="prfileImage">
+                        </div>
+                        <div class="msg_box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="7" viewBox="0 0 8 7" fill="none">
+                                <path d="M4.80342 0C4.80342 0 1.74201 0 0.961943 0C0.18188 0 0.00158763 0.800308 0.721863 1.60062C1.44214 2.40093 4.53699 5.06862 4.80342 5.86893C5.06985 6.66924 4.80342 0 4.80342 0Z" fill="#FAFAFC" />
+                                <rect width="3.20123" height="6.40247" transform="matrix(-1 0 0 1 8.00391 0)" fill="#FAFAFC" />
+                            </svg>
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="name">
+                                    Jav
+                                </div>
+                                <div class="tag">
+                                    Engineering
+                                </div>
+                            </div>
+                            <p>I’m down! Any ideas??</p>
+                            <div class="time">11:35 AM</div>
+                        </div>
+                    </div>
+                    <div class="description_message">
+                        <div class="msger_profile">
+                            <img src="assets/images/chatProfile/cp3.png" alt="prfileImage">
+                        </div>
+                        <div class="msg_box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="7" viewBox="0 0 8 7" fill="none">
+                                <path d="M4.80342 0C4.80342 0 1.74201 0 0.961943 0C0.18188 0 0.00158763 0.800308 0.721863 1.60062C1.44214 2.40093 4.53699 5.06862 4.80342 5.86893C5.06985 6.66924 4.80342 0 4.80342 0Z" fill="#FAFAFC" />
+                                <rect width="3.20123" height="6.40247" transform="matrix(-1 0 0 1 8.00391 0)" fill="#FAFAFC" />
+                            </svg>
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="name">
+                                    Jav
+                                </div>
+                                <div class="tag">
+                                    Engineering
+                                </div>
+                            </div>
+                            <p>I’m down! Any ideas??</p>
+                            <div class="time">11:35 AM</div>
+                        </div>
+                    </div>
+                    <div class="description_message">
+                        <div class="msger_profile">
+                            <img src="assets/images/chatProfile/cp3.png" alt="prfileImage">
+                        </div>
+                        <div class="msg_box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="7" viewBox="0 0 8 7" fill="none">
+                                <path d="M4.80342 0C4.80342 0 1.74201 0 0.961943 0C0.18188 0 0.00158763 0.800308 0.721863 1.60062C1.44214 2.40093 4.53699 5.06862 4.80342 5.86893C5.06985 6.66924 4.80342 0 4.80342 0Z" fill="#FAFAFC" />
+                                <rect width="3.20123" height="6.40247" transform="matrix(-1 0 0 1 8.00391 0)" fill="#FAFAFC" />
+                            </svg>
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="name">
+                                    Jav
+                                </div>
+                                <div class="tag">
+                                    Engineering
+                                </div>
+                            </div>
+                            <p>I’m down! Any ideas??</p>
+                            <div class="time">11:35 AM</div>
+                        </div>
+                    </div>
+                    <div class="description_message">
+                        <div class="msger_profile">
+                            <img src="assets/images/chatProfile/cp3.png" alt="prfileImage">
+                        </div>
+                        <div class="msg_box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="7" viewBox="0 0 8 7" fill="none">
+                                <path d="M4.80342 0C4.80342 0 1.74201 0 0.961943 0C0.18188 0 0.00158763 0.800308 0.721863 1.60062C1.44214 2.40093 4.53699 5.06862 4.80342 5.86893C5.06985 6.66924 4.80342 0 4.80342 0Z" fill="#FAFAFC" />
+                                <rect width="3.20123" height="6.40247" transform="matrix(-1 0 0 1 8.00391 0)" fill="#FAFAFC" />
+                            </svg>
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="name">
+                                    Jav
+                                </div>
+                                <div class="tag">
+                                    Engineering
+                                </div>
+                            </div>
+                            <p>I’m down! Any ideas??</p>
+                            <div class="time">11:35 AM</div>
+                        </div>
+                    </div>
+                    <div class="description_message">
+                        <div class="msger_profile">
+                            <img src="assets/images/chatProfile/cp3.png" alt="prfileImage">
+                        </div>
+                        <div class="msg_box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="7" viewBox="0 0 8 7" fill="none">
+                                <path d="M4.80342 0C4.80342 0 1.74201 0 0.961943 0C0.18188 0 0.00158763 0.800308 0.721863 1.60062C1.44214 2.40093 4.53699 5.06862 4.80342 5.86893C5.06985 6.66924 4.80342 0 4.80342 0Z" fill="#FAFAFC" />
+                                <rect width="3.20123" height="6.40247" transform="matrix(-1 0 0 1 8.00391 0)" fill="#FAFAFC" />
+                            </svg>
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="name">
+                                    Jav
+                                </div>
+                                <div class="tag">
+                                    Engineering
+                                </div>
+                            </div>
+                            <p>I’m down! Any ideas??</p>
+                            <div class="time">11:35 AM</div>
+                        </div>
+                    </div>
+                </div>
                 <div class="common_form">
                     <form action="">
                         <div class="row g-3 align-items-end">
-
-
                             <div class="col-12">
                                 <div class="form_input d-flex flex-column gap-2">
                                     <label for="assigned_name">Description <span>*</span></label>
