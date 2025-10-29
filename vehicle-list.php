@@ -175,29 +175,74 @@ include 'inc/header.php'
             <div class="row justify-content-center">
                 <div class="col-lg-10">
                     <div class="steps_container d-flex align-items-center justify-content-between">
-                        <div class="steps active">
-                            <div class="circle">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                                    <path d="M14.794 23.2841C15.1145 23.3587 15.1439 23.7785 14.8317 23.8826L12.9883 24.4892C8.35666 25.9826 5.91833 24.7342 4.41333 20.1026L2.91999 15.4942C1.42666 10.8626 2.66333 8.41255 7.29499 6.91922L8.07566 6.66069C8.47852 6.52727 8.86807 6.9304 8.74927 7.33781C8.66533 7.62565 8.58569 7.92946 8.50833 8.24922L7.36499 13.1376C6.08166 18.6326 7.95999 21.6659 13.455 22.9726L14.794 23.2841Z" fill="#005399" />
-                                    <path d="M20.0345 3.7446L18.0861 3.2896C14.1895 2.36794 11.8678 3.12627 10.5028 5.9496C10.1528 6.66127 9.87281 7.5246 9.63948 8.51627L8.49615 13.4046C7.35281 18.2813 8.85781 20.6846 13.7228 21.8396L15.6828 22.3063C16.3595 22.4696 16.9895 22.5746 17.5728 22.6213C21.2128 22.9713 23.1495 21.2679 24.1295 17.0563L25.2728 12.1796C26.4161 7.30294 24.9228 4.88794 20.0345 3.7446ZM17.8411 15.5513C17.7361 15.9479 17.3861 16.2046 16.9895 16.2046C16.9195 16.2046 16.8495 16.1929 16.7678 16.1813L13.3728 15.3179C12.9061 15.2013 12.6261 14.7229 12.7428 14.2563C12.8595 13.7896 13.3378 13.5096 13.8045 13.6263L17.1995 14.4896C17.6778 14.6063 17.9578 15.0846 17.8411 15.5513ZM21.2595 11.6079C21.1545 12.0046 20.8045 12.2613 20.4078 12.2613C20.3378 12.2613 20.2678 12.2496 20.1861 12.2379L14.5278 10.8029C14.0611 10.6863 13.7811 10.2079 13.8978 9.74127C14.0145 9.2746 14.4928 8.9946 14.9595 9.11127L20.6178 10.5463C21.0961 10.6513 21.3761 11.1296 21.2595 11.6079Z" fill="#005399" />
-                                </svg>
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="steps active">
+                                <div class="circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                                        <path d="M14.794 23.2841C15.1145 23.3587 15.1439 23.7785 14.8317 23.8826L12.9883 24.4892C8.35666 25.9826 5.91833 24.7342 4.41333 20.1026L2.91999 15.4942C1.42666 10.8626 2.66333 8.41255 7.29499 6.91922L8.07566 6.66069C8.47852 6.52727 8.86807 6.9304 8.74927 7.33781C8.66533 7.62565 8.58569 7.92946 8.50833 8.24922L7.36499 13.1376C6.08166 18.6326 7.95999 21.6659 13.455 22.9726L14.794 23.2841Z" fill="#005399" />
+                                        <path d="M20.0345 3.7446L18.0861 3.2896C14.1895 2.36794 11.8678 3.12627 10.5028 5.9496C10.1528 6.66127 9.87281 7.5246 9.63948 8.51627L8.49615 13.4046C7.35281 18.2813 8.85781 20.6846 13.7228 21.8396L15.6828 22.3063C16.3595 22.4696 16.9895 22.5746 17.5728 22.6213C21.2128 22.9713 23.1495 21.2679 24.1295 17.0563L25.2728 12.1796C26.4161 7.30294 24.9228 4.88794 20.0345 3.7446ZM17.8411 15.5513C17.7361 15.9479 17.3861 16.2046 16.9895 16.2046C16.9195 16.2046 16.8495 16.1929 16.7678 16.1813L13.3728 15.3179C12.9061 15.2013 12.6261 14.7229 12.7428 14.2563C12.8595 13.7896 13.3378 13.5096 13.8045 13.6263L17.1995 14.4896C17.6778 14.6063 17.9578 15.0846 17.8411 15.5513ZM21.2595 11.6079C21.1545 12.0046 20.8045 12.2613 20.4078 12.2613C20.3378 12.2613 20.2678 12.2496 20.1861 12.2379L14.5278 10.8029C14.0611 10.6863 13.7811 10.2079 13.8978 9.74127C14.0145 9.2746 14.4928 8.9946 14.9595 9.11127L20.6178 10.5463C21.0961 10.6513 21.3761 11.1296 21.2595 11.6079Z" fill="#005399" />
+                                    </svg>
+                                </div>
                             </div>
+                            <p>Basic Details</p>
                         </div>
-                        <div class="steps">
-                            <div class="circle">
 
+                        <div>
+                            <div class="steps">
+                                <div class="circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                                        <path d="M9.33594 2.33203V5.83203" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M18.6641 2.33203V5.83203" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M8.16406 15.168H17.4974" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M8.16406 19.832H13.9974" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M18.6667 4.08203C22.5517 4.29203 24.5 5.7737 24.5 11.257V18.467C24.5 23.2737 23.3333 25.677 17.5 25.677H10.5C4.66667 25.677 3.5 23.2737 3.5 18.467V11.257C3.5 5.7737 5.44833 4.3037 9.33333 4.08203H18.6667Z" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
                             </div>
+                            <p>Properties</p>
                         </div>
-                        <div class="steps">
-                            <div class="circle">
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="steps">
+                                <div class="circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                                        <path d="M11.1562 21.0013V15.168" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M13.9974 18.082H8.16406" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M9.33594 2.33203V5.83203" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M18.6641 2.33203V5.83203" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M18.4419 3.98828C22.3385 4.12828 24.3102 5.56328 24.4269 11.0466L24.5785 18.2449C24.6719 23.0516 23.5635 25.4666 17.7302 25.5949L10.7302 25.7349C4.89688 25.8516 3.68354 23.4716 3.59021 18.6766L3.42688 11.4666C3.31021 5.98328 5.23521 4.46661 9.10854 4.17495L18.4419 3.98828Z" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <p>Additional Feature</p>
+                        </div>
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="steps">
+                                <div class="circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                                        <path d="M18.0924 3.30078H9.9024C6.9974 3.30078 6.35573 4.74745 5.9824 6.52078L4.66406 12.8324H23.3307L22.0124 6.52078C21.6391 4.74745 20.9974 3.30078 18.0924 3.30078Z" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M25.6562 23.122C25.7845 24.487 24.6878 25.6654 23.2878 25.6654H21.0945C19.8345 25.6654 19.6595 25.1287 19.4378 24.4637L19.2045 23.7637C18.8778 22.807 18.6678 22.1654 16.9878 22.1654H11.0145C9.33449 22.1654 9.08949 22.8887 8.79782 23.7637L8.56449 24.4637C8.34282 25.1287 8.16782 25.6654 6.90782 25.6654H4.71449C3.31449 25.6654 2.21782 24.487 2.34616 23.122L2.99949 16.017C3.16282 14.267 3.50116 12.832 6.55782 12.832H21.4445C24.5012 12.832 24.8395 14.267 25.0028 16.017L25.6562 23.122Z" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M4.66667 9.33203H3.5" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M24.5026 9.33203H23.3359" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M14 3.5V5.83333" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M12.25 5.83203H15.75" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M7 17.5H10.5" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M17.5 17.5H21" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <p>Vehicle Specification</p>
+                        </div>
+                    </div>
+                </div>
 
-                            </div>
-                        </div>
-                        <div class="steps">
-                            <div class="circle">
+                <div class="col-12">
+                    <div class="registration_title">
+                        <h3>Basic Details</h3>
+                        <p>Please kindly complete the form to add basic details .</p>
+                    </div>
 
-                            </div>
-                        </div>
+                    <div class="vehicle_image_select_container">
+
                     </div>
                 </div>
             </div>
