@@ -1168,12 +1168,12 @@ include 'inc/header.php'
                                 <div class="col-md-6 slect-status">
                                     <label for="Group" class="mb-2">Group by <span class="red">*</span></label>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                        <path d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898" stroke="#848484" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                     <select class="form-select" aria-label="select" id="Group" name="Group" required>
 
                                         <option value="" hidden disabled selected>Day Book</option>
-                                        <option value="1">One</option>
+                                        <option value="1">Day Book</option>
                                         <option value="2">Two</option>
                                         <option value="3">Three</option>
                                     </select>
@@ -1182,14 +1182,17 @@ include 'inc/header.php'
                                 <div class="col-md-6 slect-status">
                                     <label for="Module" class="mb-2">Module <span class="red">*</span></label>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                        <path d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898" stroke="#848484" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                     <select class="form-select" aria-label="select" id="Module" name="Module" required>
 
-                                        <option value="" hidden disabled selected>Day Book</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
+                                        <option value="" hidden disabled selected>Journal Voucher</option>
+                                        <option value="Journal">Journal Voucher</option>
+                                        <option value="Cash">Cash Bank</option>
+                                        <option value="Invoice">Purchase Invoice</option>
+                                        <option value="Return">Purchase Return</option>
+                                        <option value="Payment">Payment Voucher</option>
+                                        <option value="Receipt">Receipt Voucher</option>
                                     </select>
                                 </div>
 

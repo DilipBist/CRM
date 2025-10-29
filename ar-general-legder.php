@@ -296,7 +296,7 @@ include 'inc/header.php'
                                 <div class="col-md-6  col-lg-4 slect-status">
                                     <label for="Project" class="mb-2">Project <span class="red">*</span></label>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                        <path d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898" stroke="#848484" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                     <select class="form-select" aria-label="select" id="Project" name="Project" required>
 
@@ -310,39 +310,38 @@ include 'inc/header.php'
                                 <div class="col-md-6  col-lg-4 slect-status">
                                     <label for="group" class="mb-2">Report group by <span class="red">*</span></label>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                        <path d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898" stroke="#848484" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                     <select class="form-select" aria-label="select" id="group" name="group" required>
 
                                         <option value="" hidden disabled selected>Ledger</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
+                                        <option value="1">Legger</option>
+                                        <option value="2">Sub Ledger</option>
+                                        <option value="3">Sub Ledger Transction Details</option>
                                     </select>
                                 </div>
 
                                 <div class="col-md-6  col-lg-4 slect-status">
                                     <label for="Type" class="mb-2">Report Type <span class="red">*</span></label>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                        <path d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898" stroke="#848484" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                     <select class="form-select" aria-label="select" id="Type" name="Type" required>
 
                                         <option value="" hidden disabled selected>Ledger Summary</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
+                                        <option value="1">Ledger Summary</option>
+                                        <option value="2">Ledger Details</option>
                                     </select>
                                 </div>
 
                                 <div class="col-md-6  col-lg-4 slect-status">
                                     <label for="Data" class="mb-2">Filter Data <span class="red">*</span></label>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                        <path d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898" stroke="#848484" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                     <select class="form-select" aria-label="select" id="Data" name="Data" required>
 
-                                        <option value="" hidden disabled selected>Ledger Summary</option>
+                                        <option value="" hidden disabled selected>Select</option>
                                         <option value="1">One</option>
                                         <option value="2">Two</option>
                                         <option value="3">Three</option>
