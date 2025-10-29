@@ -6568,6 +6568,7 @@ select option:not(:first-child) {
     width: 90%;
     border-radius: 24px;
     padding: clamp(16px, 3vw, 44px);
+    overflow-y: auto;
 }
 
 .heading_container {
@@ -6642,7 +6643,7 @@ select option:not(:first-child) {
 }
 
 .registration_title {
-    padding: 44px 0px 34px 0;
+    padding: 24px 0px 4px 0;
 }
 
 .registration_title p {
@@ -6663,7 +6664,65 @@ select option:not(:first-child) {
     border: 1px solid var(--Neutral-Separator, #EBEBEB);
     background: var(--white);
     padding: 24px;
-    width: max-content;
+    max-width: 470px;
+    width: 100%;
+}
+
+.vehicle_image_select_container .heading h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-dark2);
+    margin-bottom: 4px;
+}
+
+.vehicle_image_select_container .heading .file_num {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-85);
+}
+
+.vehicle_image_select_container .heading p {
+    color: var(--text-5C);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.image_photo {
+    width: 200px;
+    height: 130px;
+    border: 1px solid var(--whiteEB);
+    background-color: #F5F5F5;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.image_photo img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.image_add_btn {
+    background-color: var(--Menu-Separator);
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    cursor: pointer;
+}
+
+.image_photo input[type="file"] {
+    display: none;
+    height: 100%;
+    width: 100%;
 }
 
 /* list of task masg popup history css  */

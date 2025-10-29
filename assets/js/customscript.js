@@ -1429,3 +1429,20 @@ function initshowMsgHistory() {
         msgHistoryBtn.style.display = 'none';
     })
 }
+
+
+// add image preview 
+const fileInput = document.getElementById('fileInput');
+const imagePreview = document.getElementById('carimagePreview');
+if (fileInput) {
+    fileInput.addEventListener('change', (event) => {
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                imagePreview.innerHTML = `<img src="${e.target.result}" alt="Preview">`;
+            };
+            reader.readAsDataURL(file);
+        }
+    });
+}

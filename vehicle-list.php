@@ -242,7 +242,29 @@ include 'inc/header.php'
                     </div>
 
                     <div class="vehicle_image_select_container">
+                        <div class="heading">
+                            <div class="d-flex align-items-center gap-2">
+                                <h3>Vehicle Image</h3>
+                                <div class="file_num">(1 file)</div>
+                            </div>
+                            <p>Please upload your remaining document.</p>
+                        </div>
 
+                        <div class="d-flex align-items-center gap-3 flex-wrap">
+                            <div class="image_photo">
+                                <img src="assets/images/car.png" alt="car">
+                            </div>
+
+                            <div class="image_photo" id="carimagePreview">
+                                <label for="fileInput" class="image_add_btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M6 12H18" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M12 18V6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </label>
+                                <input type="file" id="fileInput" accept="image/*">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
