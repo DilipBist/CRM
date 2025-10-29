@@ -6636,10 +6636,23 @@ select option:not(:first-child) {
     background-color: #EBF6FF;
 }
 
+.vehicle_registration_steps .steps.light_green {
+    background-color: #E2F5E6;
+}
+
 .vehicle_registration_steps .steps_container p {
     font-size: 14px;
     font-weight: 600;
     color: var(--text-dark2);
+}
+.kg{
+    color: var(--text-85) !important;
+}
+.vehicle_registration_steps .steps_container p.light_green {
+    color: #008F1D;
+}
+.vehicle_registration_steps .steps_container p.active {
+    color: var(--neutral-primay);
 }
 
 .vehicle_registration_steps .steps_container {
@@ -6854,6 +6867,29 @@ select option:not(:first-child) {
     padding-bottom: 10px;
 }
 
+.next_Swap_buttons_container .previous_btn {
+    padding: 8px 16px;
+    background-color: var(--whiteEB);
+    border-radius: 12px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    font-size: 14px;
+    color: var(--text-dark2);
+    font-weight: 500;
+    cursor: pointer;
+}
+.next_Swap_buttons_container .previous_btn.disabled{
+    color: var(--Menu-Separator);
+}
+.editor_tag{
+    font-size: 14px;
+    font-weight: 500;
+    font-family: var(--inter);
+    color: var(--text-dark2);
+}
 /* list of task masg popup history css  */
 
 

@@ -430,27 +430,27 @@ function initAddAssetsPopup() {
 // Initialize CKEditor
 let editorInstance;
 
-ClassicEditor
-    .create(document.querySelector('#editor'))
-    .then(editor => {
-        editorInstance = editor;
+const EditorWraper = document.querySelectorAll('.editor-wrapper')
+if (EditorWraper) {
+    EditorWraper.forEach((wrapper) => {
+        const textarea = wrapper.querySelector('.editor');
+        const toggleBtn = wrapper.querySelector('#toggleToolbar');
 
-        const toolbar = editor.ui.view.toolbar.element;
+        ClassicEditor.create(textarea)
+            .then(editor => {
+                const toolbar = editor.ui.view.toolbar.element;
+                toolbar.style.display = 'none'; // Hide toolbar initially
 
-        // Hide toolbar initially
-        toolbar.style.display = 'none';
+                toggleBtn.addEventListener('click', () => {
+                    toolbar.style.display = (toolbar.style.display === 'none') ? '' : 'none';
+                });
 
-        // Toggle on button click
-        document.getElementById('toggleToolbar').addEventListener('click', () => {
-            if (toolbar.style.display === 'none') {
-                toolbar.style.display = '';  // show
-            } else {
-                toolbar.style.display = 'none';  // hide
-            }
-        });
-    })
-    .catch(error => console.error(error));
+                editorInstances.push(editor);
+            })
+            .catch(error => console.error(error));
+    });
 
+}
 
 $(function () {
     // show date picker 
