@@ -172,7 +172,7 @@ include 'inc/header.php'
         </div>
 
         <div class="vehicle_registration_steps">
-            <div class="row justify-content-center">
+            <div class="row justify-content-center g-3">
                 <div class="col-lg-10">
                     <div class="steps_container d-flex align-items-center justify-content-between">
                         <div class="d-flex flex-column align-items-center">
@@ -267,9 +267,140 @@ include 'inc/header.php'
                         </div>
                     </div>
                 </div>
+
+                <div class="col-12">
+                    <div class="form_input d-flex flex-column gap-2">
+                        <label for="des">Description <span>*</span></label>
+                        <div class="position-relative">
+                            <textarea name="content" id="editor" placeholder="Write something awesome..."></textarea>
+                            <button id="toggleToolbar" type="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.777778 1.55556C0.35 1.55556 0 1.20556 0 0.777778C0 0.35 0.35 0 0.777778 0H13.2222C13.65 0 14 0.35 14 0.777778C14 1.20556 13.65 1.55556 13.2222 1.55556H0.777778ZM8.55556 3.11111H0.777778C0.35 3.11111 0 3.46111 0 3.88889C0 4.31667 0.35 4.66667 0.777778 4.66667H8.55556C8.98333 4.66667 9.33333 4.31667 9.33333 3.88889C9.33333 3.46111 8.98333 3.11111 8.55556 3.11111ZM8.55556 9.33333H0.777778C0.35 9.33333 0 9.68333 0 10.1111C0 10.5389 0.35 10.8889 0.777778 10.8889H8.55556C8.98333 10.8889 9.33333 10.5389 9.33333 10.1111C9.33333 9.68333 8.98333 9.33333 8.55556 9.33333ZM13.2222 7.77778H0.777778C0.35 7.77778 0 7.42778 0 7C0 6.57222 0.35 6.22222 0.777778 6.22222H13.2222C13.65 6.22222 14 6.57222 14 7C14 7.42778 13.65 7.77778 13.2222 7.77778ZM0.777778 14H13.2222C13.65 14 14 13.65 14 13.2222C14 12.7944 13.65 12.4444 13.2222 12.4444H0.777778C0.35 12.4444 0 12.7944 0 13.2222C0 13.65 0.35 14 0.777778 14Z" fill="#141414" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="multi_select_tag">
+                <div class="form_input d-flex flex-column gap-2">
+                    <label for="des">Service <span>*</span></label>
+                    <div class="multi-select">
+                        <div class="select-box" id="selectBox">
+                            <div class="tags" id="tags"></div>
+                        </div>
+                        <div class="options" id="options">
+                            <div class="option" data-value="1">Tour Package</div>
+                            <div class="option" data-value="2">Wedding</div>
+                            <div class="option" data-value="3">Airport Transfer</div>
+                            <div class="option" data-value="4">Transfer</div>
+                            <div class="option" data-value="5">Airport</div>
+                            <div class="option" data-value="6">Option</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vehicle_details_Form ">
+                <div class="registration_title">
+                    <h3>Vehicle Details</h3>
+                    <p>Please kindly complete the form to add driver registration.</p>
+                </div>
+                <div class="common_form">
+                    <div class="row g-3 align-items-end">
+                        <div class="col-md-6 col-lg-4  slect-status">
+                            <label for="Category" class="mb-2">Category <span class="red">*</span></label>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898" stroke="#848484" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <select class="form-select" aria-label="select" id="Category">
+
+                                <option value="" selected disabled hidden>Select category</option>
+                                <option value="2">Two Wheeler</option>
+                                <option value="3">Four Wheeler</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4  slect-status">
+                            <label for="Category" class="mb-2">Model <span class="red">*</span></label>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898" stroke="#848484" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <select class="form-select" aria-label="select" id="Model">
+
+                                <option value="" selected disabled hidden>Select model</option>
+                                <option value="2">Two Wheeler</option>
+                                <option value="3">Four Wheeler</option>
+                            </select>
+                        </div>
+
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class="form_input d-flex flex-column gap-2">
+                                <label for="register_number">Registration Number <span class="red">*</span></label>
+                                <input type="text" placeholder="Enter your registration number" name="register_number" id="register_number" required>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class="form_input d-flex flex-column gap-2 position-relative">
+                                <label for="start_date">Year of Manufacture <span>*</span></label>
+                                <input type="text" class="date-picker" id="start_date" placeholder="MM/DD/YYYY">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="calender" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                    <path d="M7.33203 1.66602V4.16602" stroke="#848484" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M14 1.66602V4.16602" stroke="#848484" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M3.58203 7.57422H17.7487" stroke="#848484" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M18.166 7.08268V14.166C18.166 16.666 16.916 18.3327 13.9993 18.3327H7.33268C4.41602 18.3327 3.16602 16.666 3.16602 14.166V7.08268C3.16602 4.58268 4.41602 2.91602 7.33268 2.91602H13.9993C16.916 2.91602 18.166 4.58268 18.166 7.08268Z" stroke="#848484" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M13.7441 11.4167H13.7516" stroke="#848484" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M13.7441 13.9167H13.7516" stroke="#848484" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M10.6621 11.4167H10.6696" stroke="#848484" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M10.6621 13.9167H10.6696" stroke="#848484" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M7.5781 11.4167H7.58559" stroke="#848484" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M7.5781 13.9167H7.58559" stroke="#848484" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4  slect-status">
+                            <label for="fuel_type" class="mb-2">Fuel Type <span class="red">*</span></label>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898" stroke="#848484" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <select class="form-select" aria-label="select" id="fuel_type">
+
+                                <option value="" selected disabled hidden>Select fuel type</option>
+                                <option value="2">Petrol</option>
+                                <option value="3">Diesel</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4  slect-status">
+                            <label for="transmisson_type" class="mb-2">Transmission Type <span class="red">*</span></label>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898" stroke="#848484" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <select class="form-select" aria-label="select" id="transmisson_type">
+
+                                <option value="" selected disabled hidden>Enter transmission type</option>
+                                <option value="2">Two Wheeler</option>
+                                <option value="3">Four Wheeler</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class="form_input d-flex flex-column gap-2">
+                                <label for="vehicle_color">Vehicle Color <span>*</span></label>
+                                <input type="text" placeholder="Enter Color" name="vehicle_color" id="vehicle_color" required>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+</div>
 </div>
 
 <?php include 'inc/footer.php' ?>

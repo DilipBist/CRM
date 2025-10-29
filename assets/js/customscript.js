@@ -42,6 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initInventoryRowAdd();
     initAddVehicleRow();
     initshowMsgHistory();
+    customSelectDropdown();
 
 
 
@@ -535,7 +536,6 @@ $(function () {
     $('#closeAddLedger').on('click', function () {
         add_account_group_popup.removeClass('show');
     });
-
 
 });
 
@@ -1445,4 +1445,83 @@ if (fileInput) {
             reader.readAsDataURL(file);
         }
     });
+}
+
+
+// custom multiple select dropdown 
+function customSelectDropdown() {
+
+    const selectBox = document.getElementById('selectBox');
+    const optionsBox = document.getElementById('options');
+    const tagsContainer = document.getElementById('tags');
+    const optionElements = document.querySelectorAll('.multi_select_tag .options .option');
+    let selectedValues = [];
+
+    // Toggle dropdown open/close
+    selectBox.addEventListener('click', (e) => {
+        e.stopPropagation();
+        optionsBox.style.display = optionsBox.style.display === 'block' ? 'none' : 'block';
+    });
+
+    // Handle option click
+    optionElements.forEach(option => {
+        option.addEventListener('click', () => {
+            const value = option.dataset.value;
+
+            if (selectedValues.includes(value)) {
+                // Deselect
+                selectedValues = selectedValues.filter(v => v !== value);
+                option.classList.remove('selected');
+            } else {
+                // Select
+                selectedValues.push(value);
+                option.classList.add('selected');
+            }
+
+            updateTags();
+        });
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', () => {
+        optionsBox.style.display = 'none';
+    });
+
+    // Update tags (add cross button)
+    function updateTags() {
+        tagsContainer.innerHTML = '';
+        selectedValues.forEach(value => {
+            const option = [...optionElements].find(o => o.dataset.value === value);
+            const tag = document.createElement('div');
+            tag.classList.add('tag');
+
+            // Tag label
+            const label = document.createElement('span');
+            label.textContent = option.textContent;
+
+            // Cross button
+            const closeBtn = document.createElement('span');
+            closeBtn.classList.add('tag-close');
+            closeBtn.innerHTML = `
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M8.0026 14.6654C11.6693 14.6654 14.6693 11.6654 14.6693 7.9987C14.6693 4.33203 11.6693 1.33203 8.0026 1.33203C4.33594 1.33203 1.33594 4.33203 1.33594 7.9987C1.33594 11.6654 4.33594 14.6654 8.0026 14.6654Z" stroke="#141414" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6.11719 9.88661L9.89052 6.11328" stroke="#141414" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9.89052 9.88661L6.11719 6.11328" stroke="#141414" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                `;
+
+            // Remove tag and unselect option on click
+            closeBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                selectedValues = selectedValues.filter(v => v !== value);
+                option.classList.remove('selected');
+                updateTags();
+            });
+
+            tag.appendChild(label);
+            tag.appendChild(closeBtn);
+            tagsContainer.appendChild(tag);
+        });
+    }
+
 }
