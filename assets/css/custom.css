@@ -1479,7 +1479,18 @@ SIDE BAR CSS ENDS
 .form_discard_save .discard:hover {
     background-color: var(--hold-color);
 }
-
+.form_discard_save .skip_btn {
+    border-radius: 12px;
+    padding: 8px 20px;
+    font-weight: 500;
+    background: #F5DFDF;
+    color: #D30E0E;
+    font-size: 14px;
+    border: 1px solid #F5DFDF;
+}
+.form_discard_save .skip_btn:hover{
+    background: #eac9c9;
+}
 .form_discard_save .submit {
     border-radius: 12px;
     background: var(--neutral-primay, #005399);
