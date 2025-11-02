@@ -6573,16 +6573,13 @@ select option:not(:first-child) {
     display: flex;
     align-items: center;
     justify-content: center;
-    visibility: hidden;
-    opacity: 0;
-    transform: scale(0.8);
-    transition: all .5s ease-in-out;
+    display: none;
 }
-.vehicle_list_popup_outer_bg.show{
-    visibility: visible;
-    opacity: 1;
-    transform: scale(1);
+
+.vehicle_list_popup_outer_bg.show {
+    display: flex;
 }
+
 .vehicle_list_popup_content {
     background-color: var(--white);
     height: 85%;
@@ -6594,7 +6591,17 @@ select option:not(:first-child) {
 
     scrollbar-color: var(--neutral-primay) #f5f5f5;
     clip-path: inset(0 round 24px);
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all .5s ease-in-out;
 
+}
+
+.vehicle_list_popup_content.show {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
 }
 
 /* Chrome, Edge, Safari custom scrollbar */
@@ -7205,48 +7212,56 @@ select option:not(:first-child) {
 .gap20 {
     gap: 20px;
 }
-.vehicle_final_details_showCase_wrapper .back_btn_wrapper{
+
+.vehicle_final_details_showCase_wrapper .back_btn_wrapper {
     border-bottom: 1px solid var(--Neutral-Separator);
     padding: 18px clamp(16px, 2vw, 32px);
     height: 65px;
 }
-.vehicle_final_details_showCase_wrapper .back_btn_wrapper button{
+
+.vehicle_final_details_showCase_wrapper .back_btn_wrapper button {
     background-color: transparent;
     border: none;
     display: flex;
     align-items: center;
     gap: 5px;
 }
-.data_success_wrapper{
+
+.data_success_wrapper {
     height: calc(100vh - 65px);
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.data_success_wrapper .tick_img{
+
+.data_success_wrapper .tick_img {
     height: 120px;
     width: 120px;
 }
-.data_success_wrapper .tick_img .img.active{
+
+.data_success_wrapper .tick_img .img.active {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
-.data_success_wrapper .content h3{
+
+.data_success_wrapper .content h3 {
     font-size: clamp(20px, 2vw, 24px);
     color: var(--text-dark2);
     font-weight: 800;
     margin-top: 14px;
     margin-bottom: 8px;
 }
-.data_success_wrapper .content p{
+
+.data_success_wrapper .content p {
     margin: 0;
     font-size: 14px;
     color: var(--text-dark2);
     font-weight: 400;
     font-family: var(--inter);
 }
-.data_success_wrapper .content a{
+
+.data_success_wrapper .content a {
     background-color: var(--neutral-primay);
     color: var(--white);
     padding: 8px 16px;
@@ -7259,20 +7274,24 @@ select option:not(:first-child) {
     border-radius: 12px;
     border: 1px solid var(--neutral-primay);
 }
-.data_success_wrapper .content a:hover{
+
+.data_success_wrapper .content a:hover {
     color: var(--primary-color);
     background-color: transparent;
 }
-.data_success_wrapper .company_logo{
+
+.data_success_wrapper .company_logo {
     width: 130px;
     position: absolute;
     bottom: 24px;
     left: 50%;
     transform: translateX(-50%);
 }
+
 .hidden {
     display: none;
 }
+
 /* vehicle list form detials fill up details page css ends */
 
 /* ==================== VEHICLE LIST PAGE CSS ENDS =============== */

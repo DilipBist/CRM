@@ -44,6 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initshowMsgHistory();
     customSelectDropdown();
     setupMultiStepForms();
+    initAddVehiclePopup();
 
 
 
@@ -1458,7 +1459,7 @@ function customSelectDropdown() {
     const optionElements = document.querySelectorAll('.multi_select_tag .options .option');
     let selectedValues = [];
 
-    if(!selectBox) return;
+    if (!selectBox) return;
 
     // Toggle dropdown open/close
     selectBox.addEventListener('click', (e) => {
@@ -1529,9 +1530,6 @@ function customSelectDropdown() {
 
 }
 
-
-
-
 // show and hide the form steps vehicle list page
 function setupMultiStepForms() {
     const firstForm = document.getElementById('form1');
@@ -1566,4 +1564,35 @@ function setupMultiStepForms() {
         thirdForm.classList.add('hidden');
         fourthForm.classList.remove('hidden');
     });
+}
+
+
+// add vehicle list popu function show hide 
+function initAddVehiclePopup() {
+    const button = document.querySelector('.addVehicleBtn');
+    const popUp = document.querySelector('.vehicle_list_popup_outer_bg');
+    const innerContent = document.querySelector('.vehicle_list_popup_content');
+
+    if (!button || !popUp) return;
+
+    button.addEventListener('click', () => {
+        popUp.classList.add('show');
+        innerContent.classList.add('show');
+    });
+
+    // Close only when clicking outside the content
+    popUp.addEventListener("click", (e) => {
+        if (e.target === popUp) {
+            popUp.classList.remove("show");
+            innerContent.classList.remove("show");
+        }
+    });
+
+    const closeBtn = document.querySelector(".vehicle_pop_close_btn");
+    if (closeBtn) {
+        closeBtn.addEventListener("click", () => {
+            popUp.classList.remove("show");
+            innerContent.classList.remove("show");
+        });
+    }
 }
