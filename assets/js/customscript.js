@@ -190,7 +190,12 @@ var mySwiperLogin = new Swiper(".mySwiperLogin", {
     loop: true
 });
 
-
+// vehicle slider 
+var vehicleSlider = new Swiper(".vehicleSlider", {
+    pagination: {
+        el: ".swiper-pagination",
+    },
+});
 
 // profile popup code 
 function initProfilePopup() {
@@ -1569,16 +1574,18 @@ function setupMultiStepForms() {
 
 // add vehicle list popu function show hide 
 function initAddVehiclePopup() {
-    const button = document.querySelector('.addVehicleBtn');
+    const buttons = document.querySelectorAll('.addVehicleBtn');
     const popUp = document.querySelector('.vehicle_list_popup_outer_bg');
     const innerContent = document.querySelector('.vehicle_list_popup_content');
 
-    if (!button || !popUp) return;
+    if (!buttons || !popUp) return;
 
-    button.addEventListener('click', () => {
-        popUp.classList.add('show');
-        innerContent.classList.add('show');
-    });
+    buttons.forEach(btn=>{
+       btn.addEventListener('click', () => {
+           popUp.classList.add('show');
+           innerContent.classList.add('show');
+       });
+   })
 
     // Close only when clicking outside the content
     popUp.addEventListener("click", (e) => {

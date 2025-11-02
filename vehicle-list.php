@@ -120,7 +120,7 @@ include 'inc/header.php';
                                     <td>1241212593</td>
                                     <td>
                                         <div class="table_actions">
-                                            <a href="#" title="View Details" class="add_acc_groupBtn">
+                                            <a href="vehicle-form-details.php" title="View Details">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                                                     viewBox="0 0 18 18" fill="none">
                                                     <path
@@ -133,7 +133,7 @@ include 'inc/header.php';
                                                         stroke-linejoin="round" />
                                                 </svg>
                                             </a>
-                                            <a href="#" aria-label="Edit user List" class="add_acc_groupBtn">
+                                            <a href="#" aria-label="Edit user List" class="addVehicleBtn">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                                                     viewBox="0 0 18 18" fill="none">
                                                     <path

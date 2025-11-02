@@ -38,9 +38,35 @@ include 'inc/header.php';
         <div class="inner_frame">
             <div class="row g-3 g-md-4 g-lg-5">
                 <div class="col-md-4 col-lg-3 col-xxl-2">
-                    <div class="car_slider_wrappper">
-                        <img src="assets/images/car.png" alt="car Image">
+                    <div class="car_slider_image_wrapper">
+                        <div class="swiper vehicleSlider">
+                            <div class="swiper-wrapper"> 
+                                <div class="swiper-slide">
+                                    <div class="car_slider_wrappper">
+                                        <img src="assets/images/car.png" alt="car Image">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="car_slider_wrappper">
+                                        <img src="assets/images/car.png" alt="car Image">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="car_slider_wrappper">
+                                        <img src="assets/images/car.png" alt="car Image">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="car_slider_wrappper">
+                                        <img src="assets/images/car.png" alt="car Image">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+
                     </div>
+
                 </div>
                 <div class="col-md-4 col-lg-3 col-xxl-2">
                     <div class="content_h_wrapper d-flex flex-column justify-content-between h-100">

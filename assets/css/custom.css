@@ -7142,6 +7142,7 @@ select option:not(:first-child) {
 
 .car_slider_wrappper {
     height: 165px;
+    width: 100%;
     border-radius: 12px;
     overflow: hidden;
 }
@@ -7291,7 +7292,12 @@ select option:not(:first-child) {
 .hidden {
     display: none;
 }
-
+.vehicleSlider .swiper-pagination-bullet{
+    background-color: #C2C2C2 ;
+}
+.vehicleSlider .swiper-pagination-bullet-active{
+    background-color: var(--white);
+}
 /* vehicle list form detials fill up details page css ends */
 
 /* ==================== VEHICLE LIST PAGE CSS ENDS =============== */
@@ -7896,6 +7902,7 @@ select option:not(:first-child) {
         left: 0;
         width: 100%;
         background-color: var(--white);
+        z-index: 5;
     }
 
 }
