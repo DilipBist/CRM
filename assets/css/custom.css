@@ -6573,8 +6573,16 @@ select option:not(:first-child) {
     display: flex;
     align-items: center;
     justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all .5s ease-in-out;
 }
-
+.vehicle_list_popup_outer_bg.show{
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+}
 .vehicle_list_popup_content {
     background-color: var(--white);
     height: 85%;
@@ -7261,6 +7269,9 @@ select option:not(:first-child) {
     bottom: 24px;
     left: 50%;
     transform: translateX(-50%);
+}
+.hidden {
+    display: none;
 }
 /* vehicle list form detials fill up details page css ends */
 

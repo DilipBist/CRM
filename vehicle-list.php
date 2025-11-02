@@ -1,19 +1,19 @@
 <?php
-    $pageTitle = 'Vehicle List';
-    include 'inc/header.php';
+$pageTitle = 'Vehicle List';
+include 'inc/header.php';
 ?>
 
 
 <!-- delet popup component  -->
-<?php include 'components/delete-popup.php'?>
+<?php include 'components/delete-popup.php' ?>
 <!-- delet popup component ends -->
 
 <section class="admin_container d-flex">
 
 
     <?php
-        $currentPage = 'vehicleList';
-        include 'inc/side-bar.php';
+    $currentPage = 'vehicleList';
+    include 'inc/side-bar.php';
     ?>
 
     <div class="admin_right_content ms-auto user_list">
@@ -39,8 +39,8 @@
             </div>
 
             <div class="admin_profile_container d-flex align-items-center gap-3">
-                <?php include 'components/profile.php'?>
-                <?php include 'components/notification.php'?>
+                <?php include 'components/profile.php' ?>
+                <?php include 'components/notification.php' ?>
             </div>
         </div>
         <!-- top profile header  -->
@@ -102,78 +102,78 @@
                         <tbody>
                         <tbody>
                             <?php foreach ($projectList as $project): ?>
-                            <tr>
-                                <td><?php echo $project['id']?></td>
-                                <td>
-                                    <div class="model_tag">
-                                        <div class="tag">
-                                            A
+                                <tr>
+                                    <td><?php echo $project['id'] ?></td>
+                                    <td>
+                                        <div class="model_tag">
+                                            <div class="tag">
+                                                A
+                                            </div>
+                                            Honda
                                         </div>
-                                        Honda
-                                    </div>
-                                </td>
-                                <td>Civic</td>
-                                <td>Four Wheeler</td>
-                                <td>Diesel</td>
-                                <td>124141214</td>
-                                <td>9841868583</td>
-                                <td>1241212593</td>
-                                <td>
-                                    <div class="table_actions">
-                                        <a href="#" title="View Details" class="add_acc_groupBtn">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                                viewBox="0 0 18 18" fill="none">
-                                                <path
-                                                    d="M11.6854 8.99945C11.6854 10.4845 10.4854 11.6845 9.00043 11.6845C7.51543 11.6845 6.31543 10.4845 6.31543 8.99945C6.31543 7.51445 7.51543 6.31445 9.00043 6.31445C10.4854 6.31445 11.6854 7.51445 11.6854 8.99945Z"
-                                                    stroke="#141414" stroke-width="1.5" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                                <path
-                                                    d="M8.99988 15.2016C11.6474 15.2016 14.1149 13.6416 15.8324 10.9416C16.5074 9.88406 16.5074 8.10656 15.8324 7.04906C14.1149 4.34906 11.6474 2.78906 8.99988 2.78906C6.35238 2.78906 3.88488 4.34906 2.16738 7.04906C1.49238 8.10656 1.49238 9.88406 2.16738 10.9416C3.88488 13.6416 6.35238 15.2016 8.99988 15.2016Z"
-                                                    stroke="#141414" stroke-width="1.5" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                            </svg>
-                                        </a>
-                                        <a href="#" aria-label="Edit user List" class="add_acc_groupBtn">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                                viewBox="0 0 18 18" fill="none">
-                                                <path
-                                                    d="M9.94452 2.70041L3.78702 9.21791C3.55452 9.46541 3.32952 9.95291 3.28452 10.2904L3.00702 12.7204C2.90952 13.5979 3.53952 14.1979 4.40952 14.0479L6.82452 13.6354C7.16202 13.5754 7.63452 13.3279 7.86702 13.0729L14.0245 6.55541C15.0895 5.43041 15.5695 4.14791 13.912 2.58041C12.262 1.02791 11.0095 1.57541 9.94452 2.70041Z"
-                                                    stroke="#141414" stroke-width="1.5" stroke-miterlimit="10"
-                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                <path
-                                                    d="M8.91797 3.78711C9.24047 5.85711 10.9205 7.43961 13.0055 7.64961"
-                                                    stroke="#141414" stroke-width="1.5" stroke-miterlimit="10"
-                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                <path d="M2.25 16.5H15.75" stroke="#141414" stroke-width="1.5"
-                                                    stroke-miterlimit="10" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                            </svg>
-                                        </a>
+                                    </td>
+                                    <td>Civic</td>
+                                    <td>Four Wheeler</td>
+                                    <td>Diesel</td>
+                                    <td>124141214</td>
+                                    <td>9841868583</td>
+                                    <td>1241212593</td>
+                                    <td>
+                                        <div class="table_actions">
+                                            <a href="#" title="View Details" class="add_acc_groupBtn">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                    viewBox="0 0 18 18" fill="none">
+                                                    <path
+                                                        d="M11.6854 8.99945C11.6854 10.4845 10.4854 11.6845 9.00043 11.6845C7.51543 11.6845 6.31543 10.4845 6.31543 8.99945C6.31543 7.51445 7.51543 6.31445 9.00043 6.31445C10.4854 6.31445 11.6854 7.51445 11.6854 8.99945Z"
+                                                        stroke="#141414" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path
+                                                        d="M8.99988 15.2016C11.6474 15.2016 14.1149 13.6416 15.8324 10.9416C16.5074 9.88406 16.5074 8.10656 15.8324 7.04906C14.1149 4.34906 11.6474 2.78906 8.99988 2.78906C6.35238 2.78906 3.88488 4.34906 2.16738 7.04906C1.49238 8.10656 1.49238 9.88406 2.16738 10.9416C3.88488 13.6416 6.35238 15.2016 8.99988 15.2016Z"
+                                                        stroke="#141414" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </a>
+                                            <a href="#" aria-label="Edit user List" class="add_acc_groupBtn">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                    viewBox="0 0 18 18" fill="none">
+                                                    <path
+                                                        d="M9.94452 2.70041L3.78702 9.21791C3.55452 9.46541 3.32952 9.95291 3.28452 10.2904L3.00702 12.7204C2.90952 13.5979 3.53952 14.1979 4.40952 14.0479L6.82452 13.6354C7.16202 13.5754 7.63452 13.3279 7.86702 13.0729L14.0245 6.55541C15.0895 5.43041 15.5695 4.14791 13.912 2.58041C12.262 1.02791 11.0095 1.57541 9.94452 2.70041Z"
+                                                        stroke="#141414" stroke-width="1.5" stroke-miterlimit="10"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path
+                                                        d="M8.91797 3.78711C9.24047 5.85711 10.9205 7.43961 13.0055 7.64961"
+                                                        stroke="#141414" stroke-width="1.5" stroke-miterlimit="10"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M2.25 16.5H15.75" stroke="#141414" stroke-width="1.5"
+                                                        stroke-miterlimit="10" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </a>
 
-                                        <a href="#" title="Delete" class="delete_row_btn delete" data-title="Edit User">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                                viewBox="0 0 18 18" fill="none">
-                                                <path
-                                                    d="M15.75 4.48438C13.2525 4.23687 10.74 4.10938 8.235 4.10938C6.75 4.10938 5.265 4.18438 3.78 4.33438L2.25 4.48438"
-                                                    stroke="#141414" stroke-width="1.5" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                                <path
-                                                    d="M6.375 3.7275L6.54 2.745C6.66 2.0325 6.75 1.5 8.0175 1.5H9.9825C11.25 1.5 11.3475 2.0625 11.46 2.7525L11.625 3.7275"
-                                                    stroke="#141414" stroke-width="1.5" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                                <path
-                                                    d="M14.1373 6.85547L13.6498 14.408C13.5673 15.5855 13.4998 16.5005 11.4073 16.5005H6.5923C4.4998 16.5005 4.4323 15.5855 4.3498 14.408L3.8623 6.85547"
-                                                    stroke="#141414" stroke-width="1.5" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                                <path d="M7.74707 12.375H10.2446" stroke="#141414" stroke-width="1.5"
-                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                <path d="M7.125 9.375H10.875" stroke="#141414" stroke-width="1.5"
-                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </td>
-                            </tr>
+                                            <a href="#" title="Delete" class="delete_row_btn delete" data-title="Edit User">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                    viewBox="0 0 18 18" fill="none">
+                                                    <path
+                                                        d="M15.75 4.48438C13.2525 4.23687 10.74 4.10938 8.235 4.10938C6.75 4.10938 5.265 4.18438 3.78 4.33438L2.25 4.48438"
+                                                        stroke="#141414" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path
+                                                        d="M6.375 3.7275L6.54 2.745C6.66 2.0325 6.75 1.5 8.0175 1.5H9.9825C11.25 1.5 11.3475 2.0625 11.46 2.7525L11.625 3.7275"
+                                                        stroke="#141414" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path
+                                                        d="M14.1373 6.85547L13.6498 14.408C13.5673 15.5855 13.4998 16.5005 11.4073 16.5005H6.5923C4.4998 16.5005 4.4323 15.5855 4.3498 14.408L3.8623 6.85547"
+                                                        stroke="#141414" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M7.74707 12.375H10.2446" stroke="#141414" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M7.125 9.375H10.875" stroke="#141414" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
                             <?php endforeach; ?>
                         </tbody>
 
@@ -184,7 +184,7 @@
             </div>
 
             <div class="mb-5 mt-3">
-                <?php include 'inc/pagination.php'?>
+                <?php include 'inc/pagination.php' ?>
             </div>
         </div>
     </div>
@@ -210,319 +210,317 @@
         </div>
 
         <!-- Basic details form fillup -->
-        <div class="vehicle_basic_detail d-none">
-            <div class="vehicle_registration_steps">
-                <div class="row justify-content-center g-3">
-                    <div class="col-lg-10">
-                        <div class="steps_container d-flex align-items-center justify-content-between">
-                            <div class="d-flex flex-column align-items-center">
-                                <div class="steps active">
-                                    <div class="circle">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
-                                            viewBox="0 0 28 28" fill="none">
-                                            <path
-                                                d="M14.794 23.2841C15.1145 23.3587 15.1439 23.7785 14.8317 23.8826L12.9883 24.4892C8.35666 25.9826 5.91833 24.7342 4.41333 20.1026L2.91999 15.4942C1.42666 10.8626 2.66333 8.41255 7.29499 6.91922L8.07566 6.66069C8.47852 6.52727 8.86807 6.9304 8.74927 7.33781C8.66533 7.62565 8.58569 7.92946 8.50833 8.24922L7.36499 13.1376C6.08166 18.6326 7.95999 21.6659 13.455 22.9726L14.794 23.2841Z"
-                                                fill="#005399" />
-                                            <path
-                                                d="M20.0345 3.7446L18.0861 3.2896C14.1895 2.36794 11.8678 3.12627 10.5028 5.9496C10.1528 6.66127 9.87281 7.5246 9.63948 8.51627L8.49615 13.4046C7.35281 18.2813 8.85781 20.6846 13.7228 21.8396L15.6828 22.3063C16.3595 22.4696 16.9895 22.5746 17.5728 22.6213C21.2128 22.9713 23.1495 21.2679 24.1295 17.0563L25.2728 12.1796C26.4161 7.30294 24.9228 4.88794 20.0345 3.7446ZM17.8411 15.5513C17.7361 15.9479 17.3861 16.2046 16.9895 16.2046C16.9195 16.2046 16.8495 16.1929 16.7678 16.1813L13.3728 15.3179C12.9061 15.2013 12.6261 14.7229 12.7428 14.2563C12.8595 13.7896 13.3378 13.5096 13.8045 13.6263L17.1995 14.4896C17.6778 14.6063 17.9578 15.0846 17.8411 15.5513ZM21.2595 11.6079C21.1545 12.0046 20.8045 12.2613 20.4078 12.2613C20.3378 12.2613 20.2678 12.2496 20.1861 12.2379L14.5278 10.8029C14.0611 10.6863 13.7811 10.2079 13.8978 9.74127C14.0145 9.2746 14.4928 8.9946 14.9595 9.11127L20.6178 10.5463C21.0961 10.6513 21.3761 11.1296 21.2595 11.6079Z"
-                                                fill="#005399" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <p class="active">Basic Details</p>
-                            </div>
-
-                            <div>
-                                <div class="steps">
-                                    <div class="circle">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
-                                            viewBox="0 0 28 28" fill="none">
-                                            <path d="M9.33594 2.33203V5.83203" stroke="#141414" stroke-width="1.5"
-                                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M18.6641 2.33203V5.83203" stroke="#141414" stroke-width="1.5"
-                                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M8.16406 15.168H17.4974" stroke="#141414" stroke-width="1.5"
-                                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M8.16406 19.832H13.9974" stroke="#141414" stroke-width="1.5"
-                                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                            <path
-                                                d="M18.6667 4.08203C22.5517 4.29203 24.5 5.7737 24.5 11.257V18.467C24.5 23.2737 23.3333 25.677 17.5 25.677H10.5C4.66667 25.677 3.5 23.2737 3.5 18.467V11.257C3.5 5.7737 5.44833 4.3037 9.33333 4.08203H18.6667Z"
-                                                stroke="#141414" stroke-width="1.5" stroke-miterlimit="10"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <p>Properties</p>
-                            </div>
-                            <div class="d-flex flex-column align-items-center">
-                                <div class="steps">
-                                    <div class="circle">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
-                                            viewBox="0 0 28 28" fill="none">
-                                            <path d="M11.1562 21.0013V15.168" stroke="#141414" stroke-width="1.5"
-                                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M13.9974 18.082H8.16406" stroke="#141414" stroke-width="1.5"
-                                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M9.33594 2.33203V5.83203" stroke="#141414" stroke-width="1.5"
-                                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M18.6641 2.33203V5.83203" stroke="#141414" stroke-width="1.5"
-                                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                            <path
-                                                d="M18.4419 3.98828C22.3385 4.12828 24.3102 5.56328 24.4269 11.0466L24.5785 18.2449C24.6719 23.0516 23.5635 25.4666 17.7302 25.5949L10.7302 25.7349C4.89688 25.8516 3.68354 23.4716 3.59021 18.6766L3.42688 11.4666C3.31021 5.98328 5.23521 4.46661 9.10854 4.17495L18.4419 3.98828Z"
-                                                stroke="#141414" stroke-width="1.5" stroke-miterlimit="10"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <p>Additional Feature</p>
-                            </div>
-                            <div class="d-flex flex-column align-items-center">
-                                <div class="steps">
-                                    <div class="circle">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
-                                            viewBox="0 0 28 28" fill="none">
-                                            <path
-                                                d="M18.0924 3.30078H9.9024C6.9974 3.30078 6.35573 4.74745 5.9824 6.52078L4.66406 12.8324H23.3307L22.0124 6.52078C21.6391 4.74745 20.9974 3.30078 18.0924 3.30078Z"
-                                                stroke="#141414" stroke-width="1.5" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                            <path
-                                                d="M25.6562 23.122C25.7845 24.487 24.6878 25.6654 23.2878 25.6654H21.0945C19.8345 25.6654 19.6595 25.1287 19.4378 24.4637L19.2045 23.7637C18.8778 22.807 18.6678 22.1654 16.9878 22.1654H11.0145C9.33449 22.1654 9.08949 22.8887 8.79782 23.7637L8.56449 24.4637C8.34282 25.1287 8.16782 25.6654 6.90782 25.6654H4.71449C3.31449 25.6654 2.21782 24.487 2.34616 23.122L2.99949 16.017C3.16282 14.267 3.50116 12.832 6.55782 12.832H21.4445C24.5012 12.832 24.8395 14.267 25.0028 16.017L25.6562 23.122Z"
-                                                stroke="#141414" stroke-width="1.5" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                            <path d="M4.66667 9.33203H3.5" stroke="#141414" stroke-width="1.5"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M24.5026 9.33203H23.3359" stroke="#141414" stroke-width="1.5"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M14 3.5V5.83333" stroke="#141414" stroke-width="1.5"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M12.25 5.83203H15.75" stroke="#141414" stroke-width="1.5"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M7 17.5H10.5" stroke="#141414" stroke-width="1.5"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M17.5 17.5H21" stroke="#141414" stroke-width="1.5"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <p>Vehicle Specification</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12">
-                        <div class="registration_title">
-                            <h3>Basic Details</h3>
-                            <p>Please kindly complete the form to add basic details .</p>
-                        </div>
-
-                        <div class="vehicle_image_select_container">
-                            <div class="heading">
-                                <div class="d-flex align-items-center gap-2">
-                                    <h3>Vehicle Image</h3>
-                                    <div class="file_num">(1 file)</div>
-                                </div>
-                                <p>Please upload your remaining document.</p>
-                            </div>
-
-                            <div class="d-flex align-items-center gap-3 flex-wrap">
-                                <div class="image_photo">
-                                    <img src="assets/images/car.png" alt="car">
-                                </div>
-
-                                <div class="image_photo" id="carimagePreview">
-                                    <label for="fileInput" class="image_add_btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none">
-                                            <path d="M6 12H18" stroke="white" stroke-width="1.5" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                            <path d="M12 18V6" stroke="white" stroke-width="1.5" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </svg>
-                                    </label>
-                                    <input type="file" id="fileInput" accept="image/*">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12">
-                        <div class="form_input d-flex flex-column gap-2">
-                            <label for="des">Description <span>*</span></label>
-                            <div class="editor-wrapper position-relative">
-                                <textarea name="content" class='editor'
-                                    placeholder="Write something awesome..."></textarea>
-                                <button id="toggleToolbar" type="button">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
-                                        fill="none">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M0.777778 1.55556C0.35 1.55556 0 1.20556 0 0.777778C0 0.35 0.35 0 0.777778 0H13.2222C13.65 0 14 0.35 14 0.777778C14 1.20556 13.65 1.55556 13.2222 1.55556H0.777778ZM8.55556 3.11111H0.777778C0.35 3.11111 0 3.46111 0 3.88889C0 4.31667 0.35 4.66667 0.777778 4.66667H8.55556C8.98333 4.66667 9.33333 4.31667 9.33333 3.88889C9.33333 3.46111 8.98333 3.11111 8.55556 3.11111ZM8.55556 9.33333H0.777778C0.35 9.33333 0 9.68333 0 10.1111C0 10.5389 0.35 10.8889 0.777778 10.8889H8.55556C8.98333 10.8889 9.33333 10.5389 9.33333 10.1111C9.33333 9.68333 8.98333 9.33333 8.55556 9.33333ZM13.2222 7.77778H0.777778C0.35 7.77778 0 7.42778 0 7C0 6.57222 0.35 6.22222 0.777778 6.22222H13.2222C13.65 6.22222 14 6.57222 14 7C14 7.42778 13.65 7.77778 13.2222 7.77778ZM0.777778 14H13.2222C13.65 14 14 13.65 14 13.2222C14 12.7944 13.65 12.4444 13.2222 12.4444H0.777778C0.35 12.4444 0 12.7944 0 13.2222C0 13.65 0.35 14 0.777778 14Z"
-                                            fill="#141414" />
+        <div class="vehicle_registration_steps vehicle_basic_detail" id="form1">
+            <div class="row justify-content-center g-3">
+                <div class="col-lg-10">
+                    <div class="steps_container d-flex align-items-center justify-content-between">
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="steps active">
+                                <div class="circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                        viewBox="0 0 28 28" fill="none">
+                                        <path
+                                            d="M14.794 23.2841C15.1145 23.3587 15.1439 23.7785 14.8317 23.8826L12.9883 24.4892C8.35666 25.9826 5.91833 24.7342 4.41333 20.1026L2.91999 15.4942C1.42666 10.8626 2.66333 8.41255 7.29499 6.91922L8.07566 6.66069C8.47852 6.52727 8.86807 6.9304 8.74927 7.33781C8.66533 7.62565 8.58569 7.92946 8.50833 8.24922L7.36499 13.1376C6.08166 18.6326 7.95999 21.6659 13.455 22.9726L14.794 23.2841Z"
+                                            fill="#005399" />
+                                        <path
+                                            d="M20.0345 3.7446L18.0861 3.2896C14.1895 2.36794 11.8678 3.12627 10.5028 5.9496C10.1528 6.66127 9.87281 7.5246 9.63948 8.51627L8.49615 13.4046C7.35281 18.2813 8.85781 20.6846 13.7228 21.8396L15.6828 22.3063C16.3595 22.4696 16.9895 22.5746 17.5728 22.6213C21.2128 22.9713 23.1495 21.2679 24.1295 17.0563L25.2728 12.1796C26.4161 7.30294 24.9228 4.88794 20.0345 3.7446ZM17.8411 15.5513C17.7361 15.9479 17.3861 16.2046 16.9895 16.2046C16.9195 16.2046 16.8495 16.1929 16.7678 16.1813L13.3728 15.3179C12.9061 15.2013 12.6261 14.7229 12.7428 14.2563C12.8595 13.7896 13.3378 13.5096 13.8045 13.6263L17.1995 14.4896C17.6778 14.6063 17.9578 15.0846 17.8411 15.5513ZM21.2595 11.6079C21.1545 12.0046 20.8045 12.2613 20.4078 12.2613C20.3378 12.2613 20.2678 12.2496 20.1861 12.2379L14.5278 10.8029C14.0611 10.6863 13.7811 10.2079 13.8978 9.74127C14.0145 9.2746 14.4928 8.9946 14.9595 9.11127L20.6178 10.5463C21.0961 10.6513 21.3761 11.1296 21.2595 11.6079Z"
+                                            fill="#005399" />
                                     </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="multi_select_tag">
-                    <div class="form_input d-flex flex-column gap-2">
-                        <label for="des">Service <span>*</span></label>
-                        <div class="multi-select">
-                            <div class="select-box" id="selectBox">
-                                <div class="tags" id="tags"></div>
-                            </div>
-                            <div class="options" id="options">
-                                <div class="option" data-value="1">Tour Package</div>
-                                <div class="option" data-value="2">Wedding</div>
-                                <div class="option" data-value="3">Airport Transfer</div>
-                                <div class="option" data-value="4">Transfer</div>
-                                <div class="option" data-value="5">Airport</div>
-                                <div class="option" data-value="6">Option</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="vehicle_details_Form ">
-                    <div class="registration_title">
-                        <h3>Vehicle Details</h3>
-                        <p>Please kindly complete the form to add driver registration.</p>
-                    </div>
-                    <div class="common_form">
-                        <div class="row g-3 align-items-end">
-                            <div class="col-md-6 col-lg-4  slect-status">
-                                <label for="Category" class="mb-2">Category <span class="red">*</span></label>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
-                                    fill="none">
-                                    <path
-                                        d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898"
-                                        stroke="#848484" stroke-width="1.5" stroke-miterlimit="10"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                                <select class="form-select" aria-label="select" id="Category">
-
-                                    <option value="" selected disabled hidden>Select category</option>
-                                    <option value="2">Two Wheeler</option>
-                                    <option value="3">Four Wheeler</option>
-                                </select>
-                            </div>
-
-                            <div class="col-md-6 col-lg-4  slect-status">
-                                <label for="Category" class="mb-2">Model <span class="red">*</span></label>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
-                                    fill="none">
-                                    <path
-                                        d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898"
-                                        stroke="#848484" stroke-width="1.5" stroke-miterlimit="10"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                                <select class="form-select" aria-label="select" id="Model">
-
-                                    <option value="" selected disabled hidden>Select model</option>
-                                    <option value="2">Two Wheeler</option>
-                                    <option value="3">Four Wheeler</option>
-                                </select>
-                            </div>
-
-
-                            <div class="col-md-6 col-lg-4">
-                                <div class="form_input d-flex flex-column gap-2">
-                                    <label for="register_number">Registration Number <span class="red">*</span></label>
-                                    <input type="text" placeholder="Enter your registration number"
-                                        name="register_number" id="register_number" required>
                                 </div>
                             </div>
+                            <p class="active">Basic Details</p>
+                        </div>
 
-                            <div class="col-md-6 col-lg-4">
-                                <div class="form_input d-flex flex-column gap-2 position-relative">
-                                    <label for="start_date">Year of Manufacture <span>*</span></label>
-                                    <input type="text" class="date-picker" id="start_date" placeholder="MM/DD/YYYY">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="calender" width="21" height="20"
-                                        viewBox="0 0 21 20" fill="none">
-                                        <path d="M7.33203 1.66602V4.16602" stroke="#848484" stroke-width="1.5"
+                        <div>
+                            <div class="steps">
+                                <div class="circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                        viewBox="0 0 28 28" fill="none">
+                                        <path d="M9.33594 2.33203V5.83203" stroke="#141414" stroke-width="1.5"
                                             stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M14 1.66602V4.16602" stroke="#848484" stroke-width="1.5"
+                                        <path d="M18.6641 2.33203V5.83203" stroke="#141414" stroke-width="1.5"
                                             stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M3.58203 7.57422H17.7487" stroke="#848484" stroke-width="1.5"
+                                        <path d="M8.16406 15.168H17.4974" stroke="#141414" stroke-width="1.5"
+                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M8.16406 19.832H13.9974" stroke="#141414" stroke-width="1.5"
                                             stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                                         <path
-                                            d="M18.166 7.08268V14.166C18.166 16.666 16.916 18.3327 13.9993 18.3327H7.33268C4.41602 18.3327 3.16602 16.666 3.16602 14.166V7.08268C3.16602 4.58268 4.41602 2.91602 7.33268 2.91602H13.9993C16.916 2.91602 18.166 4.58268 18.166 7.08268Z"
-                                            stroke="#848484" stroke-width="1.5" stroke-miterlimit="10"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M13.7441 11.4167H13.7516" stroke="#848484" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M13.7441 13.9167H13.7516" stroke="#848484" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M10.6621 11.4167H10.6696" stroke="#848484" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M10.6621 13.9167H10.6696" stroke="#848484" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M7.5781 11.4167H7.58559" stroke="#848484" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M7.5781 13.9167H7.58559" stroke="#848484" stroke-width="2"
+                                            d="M18.6667 4.08203C22.5517 4.29203 24.5 5.7737 24.5 11.257V18.467C24.5 23.2737 23.3333 25.677 17.5 25.677H10.5C4.66667 25.677 3.5 23.2737 3.5 18.467V11.257C3.5 5.7737 5.44833 4.3037 9.33333 4.08203H18.6667Z"
+                                            stroke="#141414" stroke-width="1.5" stroke-miterlimit="10"
                                             stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                 </div>
                             </div>
-
-                            <div class="col-md-6 col-lg-4  slect-status">
-                                <label for="fuel_type" class="mb-2">Fuel Type <span class="red">*</span></label>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
-                                    fill="none">
-                                    <path
-                                        d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898"
-                                        stroke="#848484" stroke-width="1.5" stroke-miterlimit="10"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                                <select class="form-select" aria-label="select" id="fuel_type">
-
-                                    <option value="" selected disabled hidden>Select fuel type</option>
-                                    <option value="2">Petrol</option>
-                                    <option value="3">Diesel</option>
-                                </select>
-                            </div>
-
-                            <div class="col-md-6 col-lg-4  slect-status">
-                                <label for="transmisson_type" class="mb-2">Transmission Type <span
-                                        class="red">*</span></label>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
-                                    fill="none">
-                                    <path
-                                        d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898"
-                                        stroke="#848484" stroke-width="1.5" stroke-miterlimit="10"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                                <select class="form-select" aria-label="select" id="transmisson_type">
-
-                                    <option value="" selected disabled hidden>Enter transmission type</option>
-                                    <option value="2">Two Wheeler</option>
-                                    <option value="3">Four Wheeler</option>
-                                </select>
-                            </div>
-
-                            <div class="col-md-6 col-lg-4">
-                                <div class="form_input d-flex flex-column gap-2">
-                                    <label for="vehicle_color">Vehicle Color <span>*</span></label>
-                                    <input type="text" placeholder="Enter Color" name="vehicle_color" id="vehicle_color"
-                                        required>
+                            <p>Properties</p>
+                        </div>
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="steps">
+                                <div class="circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                        viewBox="0 0 28 28" fill="none">
+                                        <path d="M11.1562 21.0013V15.168" stroke="#141414" stroke-width="1.5"
+                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M13.9974 18.082H8.16406" stroke="#141414" stroke-width="1.5"
+                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M9.33594 2.33203V5.83203" stroke="#141414" stroke-width="1.5"
+                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M18.6641 2.33203V5.83203" stroke="#141414" stroke-width="1.5"
+                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M18.4419 3.98828C22.3385 4.12828 24.3102 5.56328 24.4269 11.0466L24.5785 18.2449C24.6719 23.0516 23.5635 25.4666 17.7302 25.5949L10.7302 25.7349C4.89688 25.8516 3.68354 23.4716 3.59021 18.6766L3.42688 11.4666C3.31021 5.98328 5.23521 4.46661 9.10854 4.17495L18.4419 3.98828Z"
+                                            stroke="#141414" stroke-width="1.5" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
                                 </div>
                             </div>
-
+                            <p>Additional Feature</p>
+                        </div>
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="steps">
+                                <div class="circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                        viewBox="0 0 28 28" fill="none">
+                                        <path
+                                            d="M18.0924 3.30078H9.9024C6.9974 3.30078 6.35573 4.74745 5.9824 6.52078L4.66406 12.8324H23.3307L22.0124 6.52078C21.6391 4.74745 20.9974 3.30078 18.0924 3.30078Z"
+                                            stroke="#141414" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M25.6562 23.122C25.7845 24.487 24.6878 25.6654 23.2878 25.6654H21.0945C19.8345 25.6654 19.6595 25.1287 19.4378 24.4637L19.2045 23.7637C18.8778 22.807 18.6678 22.1654 16.9878 22.1654H11.0145C9.33449 22.1654 9.08949 22.8887 8.79782 23.7637L8.56449 24.4637C8.34282 25.1287 8.16782 25.6654 6.90782 25.6654H4.71449C3.31449 25.6654 2.21782 24.487 2.34616 23.122L2.99949 16.017C3.16282 14.267 3.50116 12.832 6.55782 12.832H21.4445C24.5012 12.832 24.8395 14.267 25.0028 16.017L25.6562 23.122Z"
+                                            stroke="#141414" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M4.66667 9.33203H3.5" stroke="#141414" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M24.5026 9.33203H23.3359" stroke="#141414" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M14 3.5V5.83333" stroke="#141414" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M12.25 5.83203H15.75" stroke="#141414" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M7 17.5H10.5" stroke="#141414" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M17.5 17.5H21" stroke="#141414" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <p>Vehicle Specification</p>
                         </div>
                     </div>
                 </div>
-                <div class="next_Swap_buttons_container d-flex align-items-center gap-3 justify-content-between">
-                    <div class="previous_btn disabled">Previous</div>
-                    <div class="form_discard_save d-flex align-items-center gap-3">
-                        <button class="discard" type="button">Back</button>
-                        <button type="submit" class="submit px-3">Save & Next</button>
+
+                <div class="col-12">
+                    <div class="registration_title">
+                        <h3>Basic Details</h3>
+                        <p>Please kindly complete the form to add basic details .</p>
                     </div>
+
+                    <div class="vehicle_image_select_container">
+                        <div class="heading">
+                            <div class="d-flex align-items-center gap-2">
+                                <h3>Vehicle Image</h3>
+                                <div class="file_num">(1 file)</div>
+                            </div>
+                            <p>Please upload your remaining document.</p>
+                        </div>
+
+                        <div class="d-flex align-items-center gap-3 flex-wrap">
+                            <div class="image_photo">
+                                <img src="assets/images/car.png" alt="car">
+                            </div>
+
+                            <div class="image_photo" id="carimagePreview">
+                                <label for="fileInput" class="image_add_btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none">
+                                        <path d="M6 12H18" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M12 18V6" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </label>
+                                <input type="file" id="fileInput" accept="image/*">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="form_input d-flex flex-column gap-2">
+                        <label for="des">Description <span>*</span></label>
+                        <div class="editor-wrapper position-relative">
+                            <textarea name="content" class='editor'
+                                placeholder="Write something awesome..."></textarea>
+                            <button id="toggleToolbar" type="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                                    fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M0.777778 1.55556C0.35 1.55556 0 1.20556 0 0.777778C0 0.35 0.35 0 0.777778 0H13.2222C13.65 0 14 0.35 14 0.777778C14 1.20556 13.65 1.55556 13.2222 1.55556H0.777778ZM8.55556 3.11111H0.777778C0.35 3.11111 0 3.46111 0 3.88889C0 4.31667 0.35 4.66667 0.777778 4.66667H8.55556C8.98333 4.66667 9.33333 4.31667 9.33333 3.88889C9.33333 3.46111 8.98333 3.11111 8.55556 3.11111ZM8.55556 9.33333H0.777778C0.35 9.33333 0 9.68333 0 10.1111C0 10.5389 0.35 10.8889 0.777778 10.8889H8.55556C8.98333 10.8889 9.33333 10.5389 9.33333 10.1111C9.33333 9.68333 8.98333 9.33333 8.55556 9.33333ZM13.2222 7.77778H0.777778C0.35 7.77778 0 7.42778 0 7C0 6.57222 0.35 6.22222 0.777778 6.22222H13.2222C13.65 6.22222 14 6.57222 14 7C14 7.42778 13.65 7.77778 13.2222 7.77778ZM0.777778 14H13.2222C13.65 14 14 13.65 14 13.2222C14 12.7944 13.65 12.4444 13.2222 12.4444H0.777778C0.35 12.4444 0 12.7944 0 13.2222C0 13.65 0.35 14 0.777778 14Z"
+                                        fill="#141414" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="multi_select_tag">
+                <div class="form_input d-flex flex-column gap-2">
+                    <label for="des">Service <span>*</span></label>
+                    <div class="multi-select">
+                        <div class="select-box" id="selectBox">
+                            <div class="tags" id="tags"></div>
+                        </div>
+                        <div class="options" id="options">
+                            <div class="option" data-value="1">Tour Package</div>
+                            <div class="option" data-value="2">Wedding</div>
+                            <div class="option" data-value="3">Airport Transfer</div>
+                            <div class="option" data-value="4">Transfer</div>
+                            <div class="option" data-value="5">Airport</div>
+                            <div class="option" data-value="6">Option</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vehicle_details_Form ">
+                <div class="registration_title">
+                    <h3>Vehicle Details</h3>
+                    <p>Please kindly complete the form to add driver registration.</p>
+                </div>
+                <div class="common_form">
+                    <div class="row g-3 align-items-end">
+                        <div class="col-md-6 col-lg-4  slect-status">
+                            <label for="Category" class="mb-2">Category <span class="red">*</span></label>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                fill="none">
+                                <path
+                                    d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898"
+                                    stroke="#848484" stroke-width="1.5" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <select class="form-select" aria-label="select" id="Category">
+
+                                <option value="" selected disabled hidden>Select category</option>
+                                <option value="2">Two Wheeler</option>
+                                <option value="3">Four Wheeler</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4  slect-status">
+                            <label for="Category" class="mb-2">Model <span class="red">*</span></label>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                fill="none">
+                                <path
+                                    d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898"
+                                    stroke="#848484" stroke-width="1.5" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <select class="form-select" aria-label="select" id="Model">
+
+                                <option value="" selected disabled hidden>Select model</option>
+                                <option value="2">Two Wheeler</option>
+                                <option value="3">Four Wheeler</option>
+                            </select>
+                        </div>
+
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class="form_input d-flex flex-column gap-2">
+                                <label for="register_number">Registration Number <span class="red">*</span></label>
+                                <input type="text" placeholder="Enter your registration number"
+                                    name="register_number" id="register_number" required>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class="form_input d-flex flex-column gap-2 position-relative">
+                                <label for="start_date">Year of Manufacture <span>*</span></label>
+                                <input type="text" class="date-picker" id="start_date" placeholder="MM/DD/YYYY">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="calender" width="21" height="20"
+                                    viewBox="0 0 21 20" fill="none">
+                                    <path d="M7.33203 1.66602V4.16602" stroke="#848484" stroke-width="1.5"
+                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M14 1.66602V4.16602" stroke="#848484" stroke-width="1.5"
+                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M3.58203 7.57422H17.7487" stroke="#848484" stroke-width="1.5"
+                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M18.166 7.08268V14.166C18.166 16.666 16.916 18.3327 13.9993 18.3327H7.33268C4.41602 18.3327 3.16602 16.666 3.16602 14.166V7.08268C3.16602 4.58268 4.41602 2.91602 7.33268 2.91602H13.9993C16.916 2.91602 18.166 4.58268 18.166 7.08268Z"
+                                        stroke="#848484" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M13.7441 11.4167H13.7516" stroke="#848484" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M13.7441 13.9167H13.7516" stroke="#848484" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M10.6621 11.4167H10.6696" stroke="#848484" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M10.6621 13.9167H10.6696" stroke="#848484" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M7.5781 11.4167H7.58559" stroke="#848484" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M7.5781 13.9167H7.58559" stroke="#848484" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4  slect-status">
+                            <label for="fuel_type" class="mb-2">Fuel Type <span class="red">*</span></label>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                fill="none">
+                                <path
+                                    d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898"
+                                    stroke="#848484" stroke-width="1.5" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <select class="form-select" aria-label="select" id="fuel_type">
+
+                                <option value="" selected disabled hidden>Select fuel type</option>
+                                <option value="2">Petrol</option>
+                                <option value="3">Diesel</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4  slect-status">
+                            <label for="transmisson_type" class="mb-2">Transmission Type <span
+                                    class="red">*</span></label>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                fill="none">
+                                <path
+                                    d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898"
+                                    stroke="#848484" stroke-width="1.5" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <select class="form-select" aria-label="select" id="transmisson_type">
+
+                                <option value="" selected disabled hidden>Enter transmission type</option>
+                                <option value="2">Two Wheeler</option>
+                                <option value="3">Four Wheeler</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class="form_input d-flex flex-column gap-2">
+                                <label for="vehicle_color">Vehicle Color <span>*</span></label>
+                                <input type="text" placeholder="Enter Color" name="vehicle_color" id="vehicle_color"
+                                    required>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="next_Swap_buttons_container d-flex align-items-center gap-3 justify-content-between">
+                <div class="previous_btn disabled">Previous</div>
+                <div class="form_discard_save d-flex align-items-center gap-3">
+                    <button class="discard" type="button">Back</button>
+                    <button type="submit" class="submit px-3">Save & Next</button>
                 </div>
             </div>
         </div>
 
         <!-- poperties details form fillup  -->
-        <div class="vehicle_registration_steps d-none">
+        <div class="vehicle_registration_steps hidden" id="form2">
             <div class="row justify-content-center g-3">
                 <div class="col-lg-10">
                     <div class="steps_container d-flex align-items-center justify-content-between">
@@ -773,7 +771,7 @@
         </div>
 
         <!-- Additional features form fillup   -->
-        <div class="vehicle_registration_steps d-none">
+        <div class="vehicle_registration_steps hidden" id="form3">
             <div class="row justify-content-center g-3">
                 <div class="col-lg-10">
                     <div class="steps_container d-flex align-items-center justify-content-between">
@@ -938,7 +936,7 @@
         </div>
 
         <!-- Addition featutes form fillup  -->
-        <div class="vehicle_registration_steps">
+        <div class="vehicle_registration_steps hidden" id="form4">
             <div class="row justify-content-center g-3">
                 <div class="col-lg-10">
                     <div class="steps_container d-flex align-items-center justify-content-between">
@@ -1355,7 +1353,7 @@
                 <div class="previous_btn">Previous</div>
                 <div class="form_discard_save d-flex align-items-center gap-3">
                     <button class="discard" type="button">Back</button>
-                    <button type="submit" class="submit px-3">Sumbit</button>
+                    <a href="vehicle-form-details.php" type="submit" class="submit px-3">Sumbit</a>
                 </div>
             </div>
         </div>
@@ -1363,4 +1361,4 @@
 </div>
 </div>
 
-<?php include 'inc/footer.php'?>
+<?php include 'inc/footer.php' ?>

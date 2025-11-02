@@ -43,6 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initAddVehicleRow();
     initshowMsgHistory();
     customSelectDropdown();
+    setupMultiStepForms();
 
 
 
@@ -1457,6 +1458,8 @@ function customSelectDropdown() {
     const optionElements = document.querySelectorAll('.multi_select_tag .options .option');
     let selectedValues = [];
 
+    if(!selectBox) return;
+
     // Toggle dropdown open/close
     selectBox.addEventListener('click', (e) => {
         e.stopPropagation();
@@ -1524,4 +1527,43 @@ function customSelectDropdown() {
         });
     }
 
+}
+
+
+
+
+// show and hide the form steps vehicle list page
+function setupMultiStepForms() {
+    const firstForm = document.getElementById('form1');
+    const secondForm = document.getElementById('form2');
+    const thirdForm = document.getElementById('form3');
+    const fourthForm = document.getElementById('form4');
+
+    // Check if forms exist
+    if (!firstForm || !secondForm || !thirdForm || !fourthForm) {
+        return;
+    }
+
+    const firstSubmit = firstForm.querySelector('.submit');
+    const secondSubmit = secondForm.querySelector('.submit');
+    const thirdSubmit = thirdForm.querySelector('.submit');
+
+
+    firstSubmit.addEventListener('click', (e) => {
+        e.preventDefault();
+        firstForm.classList.add('hidden');
+        secondForm.classList.remove('hidden');
+    });
+
+    secondSubmit.addEventListener('click', (e) => {
+        e.preventDefault();
+        secondForm.classList.add('hidden');
+        thirdForm.classList.remove('hidden');
+    });
+
+    thirdSubmit.addEventListener('click', (e) => {
+        e.preventDefault();
+        thirdForm.classList.add('hidden');
+        fourthForm.classList.remove('hidden');
+    });
 }
