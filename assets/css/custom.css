@@ -7032,7 +7032,7 @@ select option:not(:first-child) {
     padding-bottom: 40px;
 }
 
-.vehicle_additional_details_chekbox .checkbox_wrappper label {
+.checkbox_wrappper label {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -7041,7 +7041,7 @@ select option:not(:first-child) {
     cursor: pointer;
 }
 
-.vehicle_additional_details_chekbox .checkbox_wrappper .form-check {
+.checkbox_wrappper .form-check {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -7057,6 +7057,7 @@ select option:not(:first-child) {
 /* vehicle list form detials fill up details page css starts  */
 .vehicle_form_details_wrapper {
     padding: 0 clamp(16px, 2vw, 32px);
+    margin-bottom: clamp(44px, 5vw, 84px);
 }
 
 .vehicle_form_details_wrapper .header {
@@ -7196,7 +7197,71 @@ select option:not(:first-child) {
 .gap20 {
     gap: 20px;
 }
-
+.vehicle_final_details_showCase_wrapper .back_btn_wrapper{
+    border-bottom: 1px solid var(--Neutral-Separator);
+    padding: 18px clamp(16px, 2vw, 32px);
+    height: 65px;
+}
+.vehicle_final_details_showCase_wrapper .back_btn_wrapper button{
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.data_success_wrapper{
+    height: calc(100vh - 65px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.data_success_wrapper .tick_img{
+    height: 120px;
+    width: 120px;
+}
+.data_success_wrapper .tick_img .img.active{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.data_success_wrapper .content h3{
+    font-size: clamp(20px, 2vw, 24px);
+    color: var(--text-dark2);
+    font-weight: 800;
+    margin-top: 14px;
+    margin-bottom: 8px;
+}
+.data_success_wrapper .content p{
+    margin: 0;
+    font-size: 14px;
+    color: var(--text-dark2);
+    font-weight: 400;
+    font-family: var(--inter);
+}
+.data_success_wrapper .content a{
+    background-color: var(--neutral-primay);
+    color: var(--white);
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 420px;
+    width: 100%;
+    margin-top: 24px;
+    border-radius: 12px;
+    border: 1px solid var(--neutral-primay);
+}
+.data_success_wrapper .content a:hover{
+    color: var(--primary-color);
+    background-color: transparent;
+}
+.data_success_wrapper .company_logo{
+    width: 130px;
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+}
 /* vehicle list form detials fill up details page css ends */
 
 /* ==================== VEHICLE LIST PAGE CSS ENDS =============== */
