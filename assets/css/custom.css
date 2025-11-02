@@ -7292,12 +7292,15 @@ select option:not(:first-child) {
 .hidden {
     display: none;
 }
-.vehicleSlider .swiper-pagination-bullet{
-    background-color: #C2C2C2 ;
+
+.vehicleSlider .swiper-pagination-bullet {
+    background-color: #C2C2C2;
 }
-.vehicleSlider .swiper-pagination-bullet-active{
+
+.vehicleSlider .swiper-pagination-bullet-active {
     background-color: var(--white);
 }
+
 /* vehicle list form detials fill up details page css ends */
 
 /* ==================== VEHICLE LIST PAGE CSS ENDS =============== */

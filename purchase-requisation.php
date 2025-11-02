@@ -64,11 +64,12 @@ include 'inc/header.php'
             <div class="requistation_btns_container d-flex align-items-center justify-content-end">
                 <div class="account_buttons d-flex align-items-center gap-2 flex-wrap">
                     <?php include 'components/search.php' ?>
+                    
                     <?php
-                    $title = "Purchase Requisition";
-                    $formId = "purchaseForm";
-                    $redirectPage = "purchase-requisation.php";
-                    include 'components/asset-filter.php';
+                    // $title = "Purchase Requisition";
+                    // $formId = "purchaseForm";
+                    // $redirectPage = "purchase-requisation.php";
+                    // include 'components/asset-filter.php';
                     ?>
                     <a href="add-purchase-requisation.php" class="add_purchase">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
