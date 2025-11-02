@@ -241,7 +241,6 @@ include 'inc/header.php'
                         </div>
 
                         <form action="">
-
                             <div class="monthly_purchase_heading">
                                 <div class="select_box ">
                                     <!-- Date Range Picker -->

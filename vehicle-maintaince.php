@@ -141,7 +141,7 @@ include 'inc/header.php'
                                                     <path d="M7.125 9.375H10.875" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                                 </svg>
                                             </a>
-                                        </div>
+                                        </div> 
                                     </td>
                                 </tr>
                             <?php endforeach; ?>

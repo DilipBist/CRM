@@ -74,4 +74,4 @@ This project provides a responsive and modular **user interface** for managing c
 
 ## 📜 License
 
-This project is licensed under the **Copyright (c) 2025 Dilip Bist**.
+This project is licensed under the **Copyright (c) 2025 Megaweb Link(Dilip Bist)**.
