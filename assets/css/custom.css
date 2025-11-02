@@ -1479,6 +1479,7 @@ SIDE BAR CSS ENDS
 .form_discard_save .discard:hover {
     background-color: var(--hold-color);
 }
+
 .form_discard_save .skip_btn {
     border-radius: 12px;
     padding: 8px 20px;
@@ -1488,9 +1489,11 @@ SIDE BAR CSS ENDS
     font-size: 14px;
     border: 1px solid #F5DFDF;
 }
-.form_discard_save .skip_btn:hover{
+
+.form_discard_save .skip_btn:hover {
     background: #eac9c9;
 }
+
 .form_discard_save .submit {
     border-radius: 12px;
     background: var(--neutral-primay, #005399);
@@ -6656,12 +6659,15 @@ select option:not(:first-child) {
     font-weight: 600;
     color: var(--text-dark2);
 }
-.kg{
+
+.kg {
     color: var(--text-85) !important;
 }
+
 .vehicle_registration_steps .steps_container p.light_green {
     color: #008F1D;
 }
+
 .vehicle_registration_steps .steps_container p.active {
     color: var(--neutral-primay);
 }
@@ -6892,15 +6898,18 @@ select option:not(:first-child) {
     font-weight: 500;
     cursor: pointer;
 }
-.next_Swap_buttons_container .previous_btn.disabled{
+
+.next_Swap_buttons_container .previous_btn.disabled {
     color: var(--Menu-Separator);
 }
-.editor_tag{
+
+.editor_tag {
     font-size: 14px;
     font-weight: 500;
     font-family: var(--inter);
     color: var(--text-dark2);
 }
+
 /* list of task masg popup history css  */
 
 
@@ -7016,6 +7025,180 @@ select option:not(:first-child) {
 }
 
 /* list of task masg popup history css ends */
+
+/* vehicle addtional details checkbox  */
+.vehicle_additional_details_chekbox {
+    padding-top: 16px;
+    padding-bottom: 40px;
+}
+
+.vehicle_additional_details_chekbox .checkbox_wrappper label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-dark2);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.vehicle_additional_details_chekbox .checkbox_wrappper .form-check {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    padding: 20px 16px;
+    border-radius: 12px;
+    border: 1px solid var(--Neutral-Separator);
+}
+
+/* vehicle addtional details checkbox  */
+
+/* vehicle list form detials fill up details page css starts  */
+.vehicle_form_details_wrapper {
+    padding: 0 clamp(16px, 2vw, 32px);
+}
+
+.vehicle_form_details_wrapper .header {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.vehicle_form_details_wrapper .header .back_btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    color: var(--text-dark2);
+    font-weight: 500;
+}
+
+.vehicle_form_details_wrapper .header .approve_btn {
+    border-radius: 12px;
+    border: 1px solid var(--Neutral-Primary, #005399);
+    background: #F2F6FA;
+    display: flex;
+    height: 40px;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: max-content;
+    font-size: 14px;
+    color: var(--neutral-primay);
+    font-weight: 600;
+}
+
+.vehicle_form_details_wrapper .header .approve_btn:hover {
+    background: #e9f4ff;
+}
+
+.vehicle_form_details_wrapper .inner_frame {
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid var(--Neutral-Separator, #EBEBEB);
+    background: var(--whiteFA);
+    margin: 24px 0 0px 0;
+}
+
+.vehicle_form_details_wrapper .top_frame {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.vehicle_form_details_wrapper p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text-dark2);
+}
+
+.vehicle_form_details_wrapper h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-dark2);
+    margin-bottom: 20px;
+}
+
+.car_slider_wrappper {
+    height: 165px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.car_slider_wrappper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content_h_wrapper p {
+    font-size: 14px;
+    color: var(--text-5C);
+    font-weight: 400;
+    padding-bottom: 8px;
+}
+
+.content_h_wrapper h4 {
+    color: var(--text-dark2);
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.car_color_box .box {
+    background-color: #10078E;
+    height: 18px;
+    width: 18px;
+    border-radius: 4px;
+}
+
+.ser_type>div {
+    font-size: 14px;
+    color: var(--whiteFC);
+    font-weight: 600;
+    padding: 8px 16px;
+    width: max-content;
+    border-radius: 12px;
+    background-color: var(--text-dark2);
+}
+
+.vehicle_form_details_wrapper .top_frame {
+    background-color: var(--white);
+    padding-bottom: 32px;
+}
+
+.common_padding_top_down {
+    padding: 40px 0;
+    margin: 40px 0;
+    border-top: 1px solid var(--Neutral-Separator);
+    border-bottom: 1px solid var(--Neutral-Separator);
+}
+
+.common_padding_top_down .external_setup,
+.cpadding_bottom .external_setup {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.cpadding_bottom {
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid var(--Neutral-Separator);
+}
+
+.gap20 {
+    gap: 20px;
+}
+
+/* vehicle list form detials fill up details page css ends */
+
 /* ==================== VEHICLE LIST PAGE CSS ENDS =============== */
 
 /* *********************** PRINT MEDIA CODE ******************** */
@@ -7606,6 +7789,18 @@ select option:not(:first-child) {
     .sidebar_close,
     .side_bar_menu_btn {
         display: flex;
+    }
+
+    .vehicle_form_details_wrapper .top_frame {
+        position: static;
+    }
+
+    .vehicle_form_details_wrapper .top_frame .header {
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: var(--white);
     }
 
 }
