@@ -7302,8 +7302,25 @@ select option:not(:first-child) {
 }
 
 /* vehicle list form detials fill up details page css ends */
-
 /* ==================== VEHICLE LIST PAGE CSS ENDS =============== */
+
+/* *************** LIVE LOCATION PAGE CSS STARTS *************** */
+.engine_status{
+    font-size: 12px ;
+    color: var(--text-dark2);
+    font-weight: 400;
+}
+.dot_color_div{
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    background-color: #007C19;
+}
+.dot_color_div.red{
+    background-color: #F00;
+}
+/* *************** LIVE LOCATION PAGE CSS ENDS *************** */
+
 
 /* *********************** PRINT MEDIA CODE ******************** */
 /* vocuhar print css  */
