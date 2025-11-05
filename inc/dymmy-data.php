@@ -608,3 +608,389 @@ $projectList = [
         'action' => 'Insert',
     ],
 ];
+
+
+$chatProfiles = [
+    [
+        'id' => 'chat1',
+        'name' => 'Olivia Johnson',
+        'time' => '08:12 AM',
+        'message' => 'Sent you the document 📄',
+        'image' => './assets/images/chatProfile/cp1.jpg',
+        'status' => 'online',
+        'unread' => 0
+    ],
+    [
+        'id' => 'chat2',
+        'name' => 'Ethan Miller',
+        'time' => 'Tuesday',
+        'message' => 'Missed Video Call',
+        'image' => './assets/images/chatProfile/cp2.png',
+        'status' => 'offline',
+        'unread' => 0,
+        'type' => 'call_missed'
+    ],
+    [
+        'id' => 'chat3',
+        'name' => 'Sophia Martinez',
+        'time' => '02:40 PM',
+        'message' => 'Hey, how are you? 🔥',
+        'image' => './assets/images/chatProfile/cp3.png',
+        'status' => 'online',
+        'unread' => 12
+    ],
+    [
+        'id' => 'chat4',
+        'name' => 'Liam Anderson',
+        'time' => 'Sunday',
+        'message' => 'Haha oh man 😂',
+        'image' => './assets/images/chatProfile/cp4.jpg',
+        'status' => 'online',
+        'unread' => 25
+    ],
+    [
+        'id' => 'chat5',
+        'name' => 'Emma Davis',
+        'time' => '01:15 PM',
+        'message' => 'Do you know which one to pick?',
+        'image' => './assets/images/chatProfile/cp5.jpg',
+        'status' => 'online',
+        'unread' => 0
+    ],
+    [
+        'id' => 'chat6',
+        'name' => 'Noah Wilson',
+        'time' => '',
+        'message' => 'Incoming Video Call 📞',
+        'image' => './assets/images/chatProfile/cp6.jpg',
+        'status' => 'online',
+        'unread' => 0,
+        'type' => 'incoming_call'
+    ],
+    [
+        'id' => 'chat7',
+        'name' => 'Ava Thomas',
+        'time' => '02:40 PM',
+        'message' => 'Photo sent 📸',
+        'image' => './assets/images/chatProfile/cp7.jpg',
+        'status' => 'online',
+        'unread' => 25
+    ],
+    [
+        'id' => 'chat8',
+        'name' => 'William Garcia',
+        'time' => '09:02 AM',
+        'message' => 'Can you call me later?',
+        'image' => './assets/images/chatProfile/cp1.jpg',
+        'status' => 'online',
+        'unread' => 0
+    ],
+];
+
+
+
+$chatConversations = [
+    'chat1' => [
+        'name' => 'Olivia Johnson',
+        'image' => './assets/images/chatProfile/cp1.jpg',
+        'status' => 'Online',
+        'messages' => [
+            [
+                'from' => 'Olivia Johnson',
+                'text' => 'Hey John! Did you finish reviewing the presentation? I just added a few points about the quarterly results and the new marketing plan.',
+                'time' => '08:00 AM',
+                'side' => 'left'
+            ],
+            [
+                'from' => 'You',
+                'text' => 'Yes, I went through it. I think the flow is good now, but we might want to simplify the final slide a bit.',
+                'time' => '08:05 AM',
+                'side' => 'right'
+            ],
+            [
+                'from' => 'Olivia Johnson',
+                'text' => 'Agreed! Also, can you double-check the revenue forecast section? There was a small formatting issue last time.',
+                'time' => '08:06 AM',
+                'side' => 'left'
+            ],
+            [
+                'from' => 'You',
+                'text' => 'Already fixed it! I also added a note under the “Key Insights” section to make it clearer for new clients.',
+                'time' => '08:08 AM',
+                'side' => 'right'
+            ],
+            [
+                'from' => 'Olivia Johnson',
+                'text' => 'Perfect. You’re a lifesaver! Let’s run through it one more time before the meeting just to be safe.',
+                'time' => '08:09 AM',
+                'side' => 'left'
+            ],
+        ]
+    ],
+
+    'chat2' => [
+        'name' => 'Ethan Miller',
+        'image' => './assets/images/chatProfile/cp2.png',
+        'status' => 'Last seen today at 06:00 AM',
+        'messages' => [
+            [
+                'from' => 'Ethan Miller',
+                'text' => 'Hey man, I’m outside. Can you open the door? My hands are full with coffee ☕ and bagels.',
+                'time' => '06:12 AM',
+                'side' => 'left'
+            ],
+            [
+                'from' => 'You',
+                'text' => 'Coming! Give me a second 🚪. Also, thanks for grabbing breakfast, I forgot to eat before leaving.',
+                'time' => '06:13 AM',
+                'side' => 'right'
+            ],
+            [
+                'from' => 'Ethan Miller',
+                'text' => 'No problem! But seriously, next time it’s your turn. It’s freezing out here 🥶.',
+                'time' => '06:14 AM',
+                'side' => 'left'
+            ],
+            [
+                'from' => 'You',
+                'text' => 'Haha deal! Also, I need to show you something cool later — just finished coding that feature we talked about.',
+                'time' => '06:15 AM',
+                'side' => 'right'
+            ],
+            [
+                'from' => 'Ethan Miller',
+                'text' => 'Nice! Can’t wait to see it in action. Let’s check it out after lunch.',
+                'time' => '06:16 AM',
+                'side' => 'left'
+            ],
+        ]
+    ],
+
+    'chat3' => [
+        'name' => 'Sophia Martinez',
+        'image' => './assets/images/chatProfile/cp3.png',
+        'status' => 'Online',
+        'messages' => [
+            [
+                'from' => 'Sophia Martinez',
+                'text' => 'Morning! Did you get the photos I sent last night? I tried some new filters and editing styles.',
+                'time' => '09:45 AM',
+                'side' => 'left'
+            ],
+            [
+                'from' => 'You',
+                'text' => 'Yep! They look amazing 😍. The lighting and color tones are perfect — looks like something out of a magazine.',
+                'time' => '09:46 AM',
+                'side' => 'right'
+            ],
+            [
+                'from' => 'Sophia Martinez',
+                'text' => 'Thanks! I’ve been experimenting with natural light lately. I think I’m finally getting the hang of it 📸.',
+                'time' => '09:48 AM',
+                'side' => 'left'
+            ],
+            [
+                'from' => 'You',
+                'text' => 'It really shows. You should post them online! Your portfolio would get so much attention.',
+                'time' => '09:49 AM',
+                'side' => 'right'
+            ],
+            [
+                'from' => 'Sophia Martinez',
+                'text' => 'That’s the plan! I’m just working on captions and layout. Maybe you can help me pick which ones to feature?',
+                'time' => '09:51 AM',
+                'side' => 'left'
+            ],
+        ]
+    ],
+
+    'chat4' => [
+        'name' => 'Liam Anderson',
+        'image' => './assets/images/chatProfile/cp4.jpg',
+        'status' => 'Online',
+        'messages' => [
+            [
+                'from' => 'Liam Anderson',
+                'text' => 'Game night tonight? 🎮 We’re thinking about playing FIFA and maybe some Rocket League after.',
+                'time' => '02:40 PM',
+                'side' => 'left'
+            ],
+            [
+                'from' => 'You',
+                'text' => 'Absolutely! I’ll bring snacks 🍕 and maybe some drinks too. Been waiting all week for this.',
+                'time' => '02:41 PM',
+                'side' => 'right'
+            ],
+            [
+                'from' => 'Liam Anderson',
+                'text' => 'Perfect, see you at 8! Make sure to bring your controller — last time we had to share and it was chaos 😂.',
+                'time' => '02:42 PM',
+                'side' => 'left'
+            ],
+            [
+                'from' => 'You',
+                'text' => 'Got it! Also, should I bring my headset? Might be fun to play online for a few rounds.',
+                'time' => '02:43 PM',
+                'side' => 'right'
+            ],
+            [
+                'from' => 'Liam Anderson',
+                'text' => 'Yeah definitely! We can squad up and crush some matches before the pizza gets cold 🍕🔥.',
+                'time' => '02:45 PM',
+                'side' => 'left'
+            ],
+        ]
+    ],
+
+    'chat5' => [
+        'name' => 'Emma Davis',
+        'image' => './assets/images/chatProfile/cp5.jpg',
+        'status' => 'Online',
+        'messages' => [
+            [
+                'from' => 'Emma Davis',
+                'text' => 'Hey, are we still on for brunch tomorrow? There’s a new café downtown — I heard their croissants are amazing.',
+                'time' => '11:00 AM',
+                'side' => 'left'
+            ],
+            [
+                'from' => 'You',
+                'text' => 'Yes! Can’t wait 🥐☕. Let’s meet around 10 AM? I’ve been craving a proper cappuccino all week.',
+                'time' => '11:02 AM',
+                'side' => 'right'
+            ],
+            [
+                'from' => 'Emma Davis',
+                'text' => 'Perfect! I’ll book the table then 😄. Also, bring your camera — the place has this aesthetic vibe you’ll love.',
+                'time' => '11:03 AM',
+                'side' => 'left'
+            ],
+            [
+                'from' => 'You',
+                'text' => 'Sounds awesome! I’ll take a few shots for my travel journal. Maybe we can explore the bookstore next door too?',
+                'time' => '11:04 AM',
+                'side' => 'right'
+            ],
+            [
+                'from' => 'Emma Davis',
+                'text' => 'Ooh yes, it’s such a cozy spot! They have a small art section now too. Perfect morning plan 💕.',
+                'time' => '11:05 AM',
+                'side' => 'left'
+            ],
+        ]
+    ],
+
+    'chat6' => [
+        'name' => 'Noah Wilson',
+        'image' => './assets/images/chatProfile/cp6.jpg',
+        'status' => 'Online',
+        'messages' => [
+            [
+                'from' => 'Noah Wilson',
+                'text' => 'Incoming video call... 📞 Wanted to quickly go over the code changes I pushed last night.',
+                'time' => '12:10 PM',
+                'side' => 'left'
+            ],
+            [
+                'from' => 'You',
+                'text' => 'Can’t talk now, in a meeting. Call later? Maybe around 3 PM once I’m done with client updates.',
+                'time' => '12:11 PM',
+                'side' => 'right'
+            ],
+            [
+                'from' => 'Noah Wilson',
+                'text' => 'Sure thing, no worries! I’ll send you a summary in Slack so you can review it later.',
+                'time' => '12:12 PM',
+                'side' => 'left'
+            ],
+            [
+                'from' => 'You',
+                'text' => 'Thanks! Oh and don’t forget to merge the staging branch before pushing to main. It had some fixes from QA.',
+                'time' => '12:13 PM',
+                'side' => 'right'
+            ],
+            [
+                'from' => 'Noah Wilson',
+                'text' => 'Got it. I’ll handle that first thing after lunch. Appreciate the heads-up!',
+                'time' => '12:15 PM',
+                'side' => 'left'
+            ],
+        ]
+    ],
+
+    'chat7' => [
+        'name' => 'Ava Thomas',
+        'image' => './assets/images/chatProfile/cp7.jpg',
+        'status' => 'Online',
+        'messages' => [
+            [
+                'from' => 'Ava Thomas',
+                'text' => 'I sent you the photo from last night! The one where we all tried to fit into a single selfie 😂.',
+                'time' => '03:05 PM',
+                'side' => 'left'
+            ],
+            [
+                'from' => 'You',
+                'text' => 'Haha that’s hilarious! Can’t believe how everyone’s face got squished together 😅.',
+                'time' => '03:06 PM',
+                'side' => 'right'
+            ],
+            [
+                'from' => 'Ava Thomas',
+                'text' => 'Told you it was worth it! I might print it — it’s too good not to. We should make it a tradition every year.',
+                'time' => '03:07 PM',
+                'side' => 'left'
+            ],
+            [
+                'from' => 'You',
+                'text' => 'Deal! Next time we’ll plan it properly though, maybe a tripod and some lighting 🤣.',
+                'time' => '03:08 PM',
+                'side' => 'right'
+            ],
+            [
+                'from' => 'Ava Thomas',
+                'text' => 'Haha yes! Imagine us doing a full photoshoot just for a goofy group picture 😂.',
+                'time' => '03:09 PM',
+                'side' => 'left'
+            ],
+        ]
+    ],
+
+    'chat8' => [
+        'name' => 'William Garcia',
+        'image' => './assets/images/chatProfile/cp2.png',
+        'status' => 'Online',
+        'messages' => [
+            [
+                'from' => 'William Garcia',
+                'text' => 'Hey, can you send me that report again? I think my email deleted it automatically — tech issues as usual 😩.',
+                'time' => '09:00 AM',
+                'side' => 'left'
+            ],
+            [
+                'from' => 'You',
+                'text' => 'Sure! Sending it right now 📤. It’s the version with updated charts and performance metrics.',
+                'time' => '09:01 AM',
+                'side' => 'right'
+            ],
+            [
+                'from' => 'William Garcia',
+                'text' => 'Got it, thanks a ton! This version looks much better. The graphs are cleaner now.',
+                'time' => '09:02 AM',
+                'side' => 'left'
+            ],
+            [
+                'from' => 'You',
+                'text' => 'Yep, I used the new design template from marketing. Should be easier to present during the meeting.',
+                'time' => '09:03 AM',
+                'side' => 'right'
+            ],
+            [
+                'from' => 'William Garcia',
+                'text' => 'Nice work, man. This will really help us make a strong impression. Appreciate your quick help as always 🙌.',
+                'time' => '09:04 AM',
+                'side' => 'left'
+            ],
+        ]
+    ],
+];
