@@ -1,14 +1,16 @@
+<!-- NOTE: select account groupwise summary then open this page design  -->
 <?php
-$pageTitle = 'Account Report General LEdger';
+$pageTitle = 'Account Groupwise Summary';
 include 'inc/header.php'
 ?>
+
 
 <section class="admin_container d-flex">
 
 
     <!-- SIDE BAR  -->
     <?php
-    $currentPage = 'gledger';
+    $currentPage = 'trailBalance';
     include 'inc/side-bar.php';
     ?>
     <!-- SIDE BAR ENDS  -->
@@ -28,7 +30,7 @@ include 'inc/header.php'
                 <div class="bread_crump_content d-flex align-items-center gap-2">
                     <a href="opening-trails.php">Account Report </a>
                     <span>/</span>
-                    <p>General Ledger</p>
+                    <p> Trail Balance</p>
                 </div>
             </div>
 
@@ -41,6 +43,7 @@ include 'inc/header.php'
 
 
         <div class="trail_container pl_pr">
+            <!-- trail balance buttons container  -->
             <div class="trail_balance_buttons_container d-flex align-items-center justify-content-between gap-3 flex-wrap">
                 <div class="fist_buttons d-flex align-items-center gap-3 flex-wrap">
                     <button class="ledger_common_btn">
@@ -141,17 +144,18 @@ include 'inc/header.php'
                     </button>
                 </div>
             </div>
+            <!-- trail balance buttons container  -->
 
             <div class="trail_print_table_container">
-                <div class=" common_table open_trail_table acc_rep_gen_table">
+                <div class=" common_table open_trail_table">
                     <div class="trial_print_table_header d-flex align-items-center gap-3 justify-content-between">
                         <div class="trail_logo">
-                            <img src="assets/images/logo.svg" alt="">
+                            <img src="assets/images//logo.svg" alt="">
                         </div>
 
                         <div class="center_print_div addAssetBtn cursor-pointer text-center">
-                            <h4>General Ledger Summary: Ledger wise</h4>
-                            <p>As On DAte : 2082/04/30</p>
+                            <h4>Trail Balance: Datewise</h4>
+                            <p>Data: 01/04/02082-30/04/2082</p>
                         </div>
 
                         <div class="last_trail_print_header_div">
@@ -167,36 +171,32 @@ include 'inc/header.php'
                                 <thead>
                                     <tr>
                                         <th scope="col">SN</th>
-                                        <th scope="col">Ledger</th>
-                                        <th scope="col">Short Name</th>
+                                        <th scope="col" class="wrap_Text">Ledger</th>
                                         <th scope="col">Opening Debit</th>
                                         <th scope="col">Opening Credit</th>
                                         <th scope="col">Debit Amount</th>
                                         <th scope="col">Credit Amount</th>
-                                        <th scope="col">Debit Balance</th>
-                                        <th scope="col">Credit Amount</th>
+                                        <th scope="col">Closing Debit</th>
+                                        <th scope="col">Closing Credit</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <?php foreach (array_slice($projectList, 0, 11) as $project): ?>
                                         <tr>
-                                            <td><?= $project['id'] ?></td>
+                                            <td scope="row"><?= $project['id'] ?></td>
                                             <td class="wrap_Text"><?= $project['acc_g_name'] ?></td>
-                                            <td><?= $project['Quantity'] ?></td>
-                                            <td><?= $project['Quantity'] ?></td>
-                                            <td><?= $project['Quantity'] ?></td>
-                                            <td><?= $project['Quantity'] ?></td>
-                                            <td><?= $project['Quantity'] ?></td>
-                                            <td><?= $project['Quantity'] ?></td>
-                                            <td><?= $project['Quantity'] ?></td>
+                                            <td><?= $project['rate'] ?></td>
+                                            <td><?= $project['rate'] ?></td>
+                                            <td><?= $project['rate'] ?></td>
+                                            <td><?= $project['rate'] ?></td>
+                                            <td><?= $project['rate'] ?></td>
+                                            <td><?= $project['rate'] ?></td>
                                         </tr>
                                     <?php endforeach; ?>
                                 </tbody>
                                 <tfoot>
                                     <tr>
-                                        <td></td>
-                                        <td></td>
-                                        <td>Total</td>
+                                        <td colspan="2"></td>
                                         <td>349661.67</td>
                                         <td>349661.67</td>
                                         <td>349661.67</td>
@@ -209,7 +209,7 @@ include 'inc/header.php'
                         </div>
                     </div>
 
-                    <div class="trail_print_footer">
+                    <div class="trail_print_footer ">
                         <p>
                             Filtered Based On: Branch: Head Office**First Segment: Bhupendra Malla’s Site***
                         </p>
@@ -225,9 +225,12 @@ include 'inc/header.php'
         </div>
 
     </div>
+
+    </div>
+
 </section>
 
-<!-- search general report popup  -->
+<!-- search trail balance popup   -->
 <div class="add-asset-filter-component">
     <div class="add_asset_filter_bg">
         <div class="ass_filter_popcontent">
@@ -241,7 +244,7 @@ include 'inc/header.php'
 
                 <div class="c_asset_sub_heading">
                     <h5>Search </h5>
-                    <p>Please kindly complete the form of General ledger</p>
+                    <p>Please kindly complete the form to account group registration.</p>
                 </div>
 
                 <!-- add asset form  -->
@@ -250,9 +253,24 @@ include 'inc/header.php'
                         <form action="">
                             <div class="row g-3 align-items-end">
 
-                                <div class="col-md-6 col-lg-4">
+                                <div class="col-md-6  slect-status">
+                                    <label for="Group" class="mb-2">Group by <span class="red">*</span></label>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <select class="form-select" aria-label="select" id="Group" required>
+
+                                        <option value="" hidden disabled selected>With Opening trail</option>
+                                        <option value="1">With Opening Trail</option>
+                                        <option value="2">Account Groupwise(With Opening Trail) </option>
+                                        <option value="3">Account Groupwise Summary(With Opening Trial)</option>
+                                    </select>
+                                </div>
+
+
+                                <div class="col-md-6">
                                     <div class="form_input d-flex flex-column gap-2 position-relative">
-                                        <label for="fromdate">Form Date</label>
+                                        <label for="fromdate">From Date</label>
                                         <input type="text" class="date-picker" id="fromdate" placeholder="MM/DD/YYYY">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="calender" width="21" height="20" viewBox="0 0 21 20" fill="none">
                                             <path d="M7.33203 1.66602V4.16602" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
@@ -269,104 +287,18 @@ include 'inc/header.php'
                                     </div>
                                 </div>
 
-                                <div class="col-md-6 col-lg-4">
-                                    <div class="form_input d-flex flex-column gap-2 position-relative">
-                                        <label for="todate">To Date</label>
-                                        <input type="text" class="date-picker" id="todate" placeholder="MM/DD/YYYY">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="calender" width="21" height="20" viewBox="0 0 21 20" fill="none">
-                                            <path d="M7.33203 1.66602V4.16602" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M14 1.66602V4.16602" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M3.58203 7.57422H17.7487" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M18.166 7.08268V14.166C18.166 16.666 16.916 18.3327 13.9993 18.3327H7.33268C4.41602 18.3327 3.16602 16.666 3.16602 14.166V7.08268C3.16602 4.58268 4.41602 2.91602 7.33268 2.91602H13.9993C16.916 2.91602 18.166 4.58268 18.166 7.08268Z" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M13.7441 11.4167H13.7516" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M13.7441 13.9167H13.7516" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M10.6621 11.4167H10.6696" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M10.6621 13.9167H10.6696" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M7.5781 11.4167H7.58559" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M7.5781 13.9167H7.58559" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6  col-lg-4 slect-status">
-                                    <label for="Project" class="mb-2">Project <span class="red">*</span></label>
+                                <div class="col-md-6  slect-status">
+                                    <label for="Group" class="mb-2">Project <span class="red">*</span></label>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                        <path d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898" stroke="#848484" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
-                                    <select class="form-select" aria-label="select" id="Project" name="Project" required>
+                                    <select class="form-select" aria-label="select" id="Group" required>
 
-                                        <option value="" hidden disabled selected>Select</option>
+                                        <option value="" hidden disabled selected>Select </option>
                                         <option value="1">One</option>
                                         <option value="2">Two</option>
                                         <option value="3">Three</option>
                                     </select>
-                                </div>
-
-                                <div class="col-md-6  col-lg-4 slect-status">
-                                    <label for="group" class="mb-2">Report group by <span class="red">*</span></label>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                        <path d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898" stroke="#848484" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                    <select class="form-select" aria-label="select" id="group" name="group" required>
-
-                                        <option value="" hidden disabled selected>Ledger</option>
-                                        <option value="1">Legger</option>
-                                        <option value="2">Sub Ledger</option>
-                                        <option value="3">Sub Ledger Transction Details</option>
-                                    </select>
-                                </div>
-
-                                <div class="col-md-6  col-lg-4 slect-status">
-                                    <label for="Type" class="mb-2">Report Type <span class="red">*</span></label>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                        <path d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898" stroke="#848484" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                    <select class="form-select" aria-label="select" id="Type" name="Type" required>
-
-                                        <option value="" hidden disabled selected>Ledger Summary</option>
-                                        <option value="1">Ledger Summary</option>
-                                        <option value="2">Ledger Details</option>
-                                    </select>
-                                </div>
-
-                                <div class="col-md-6  col-lg-4 slect-status">
-                                    <label for="Data" class="mb-2">Filter Data <span class="red">*</span></label>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                        <path d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898" stroke="#848484" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                    <select class="form-select" aria-label="select" id="Data" name="Data" required>
-
-                                        <option value="" hidden disabled selected>Select</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
-                                </div>
-
-                                <div class="col-md-6 col-lg-4">
-                                    <div class="form_input">
-                                        <label>With ledger Info</label>
-                                    </div>
-                                    <div class="height50 clickable-area">
-                                        <div class="loc_selct_box">
-                                            <div class="btn-box">
-                                                <input type="checkbox" class="stock-checkbox" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6 col-lg-4">
-                                    <div class="form_input">
-                                        <label>Report of Profit and loss ledger only</label>
-                                    </div>
-                                    <div class="height50 clickable-area">
-                                        <div class="loc_selct_box">
-                                            <div class="btn-box">
-                                                <input type="checkbox" class="stock-checkbox" />
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
 
                                 <div class="col-12">
@@ -384,7 +316,7 @@ include 'inc/header.php'
         </div>
     </div>
 </div>
-<!-- search profit loss popup  -->
+<!-- search trail balance popup  -->
 
 
 <?php include 'inc/footer.php' ?>

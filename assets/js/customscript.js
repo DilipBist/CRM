@@ -1751,8 +1751,10 @@ function initAddVehiclePopup() {
 function initChatSystem() {
   const profiles = document.querySelectorAll(".chat_profile[data-chat]");
   const chats = document.querySelectorAll(".chat_box_right");
+  const overlay = document.querySelector(".chat_profile_verlay");
+  const closeChatProfileBtn = document.querySelectorAll(".closeChatProfileBtn");
 
-  if (!profiles.length || !chats.length) return;
+  if (!profiles.length || !chats.length || !overlay) return;
 
   profiles.forEach((profile) => {
     profile.addEventListener("click", () => {
@@ -1763,11 +1765,40 @@ function initChatSystem() {
 
       const chatId = profile.getAttribute("data-chat");
       const targetChat = document.getElementById(chatId);
+
+      overlay.classList.add("active");
       if (targetChat) targetChat.style.display = "block";
     });
   });
 
-  // show first chat by default
-  chats.forEach((c, i) => (c.style.display = i === 0 ? "block" : "none"));
-  profiles[0].classList.add("active_chat");
+  // Hide all chats when overlay or close button is clicked
+  const closeAll = () => {
+    overlay.classList.remove("active");
+    profiles.forEach((p) => p.classList.remove("active_chat"));
+    chats.forEach((c) => (c.style.display = "none"));
+  };
+
+  overlay.addEventListener("click", closeAll);
+  closeChatProfileBtn.forEach(btn => {
+    btn.addEventListener("click", closeAll);
+  });
+
+  // Handle screen size
+  function handleScreenSize() {
+    if (window.innerWidth >= 768) {
+      chats.forEach((c, i) => (c.style.display = i === 0 ? "block" : "none"));
+      profiles.forEach((p, i) => p.classList.toggle("active_chat", i === 0));
+    } else {
+      chats.forEach((c) => (c.style.display = "none"));
+      profiles.forEach((p) => p.classList.remove("active_chat"));
+      overlay.classList.remove("active");
+    }
+  }
+
+  // Run once on load
+  handleScreenSize();
+
+  // Run whenever the window is resized
+  window.addEventListener("resize", handleScreenSize);
 }
+

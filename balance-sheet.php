@@ -425,6 +425,114 @@ include 'inc/header.php'
                 </div>
             </div>
 
+            <h1 class="mt-5 text-center">Second Table</h1>
+            <div class="trail_print_table_container">
+                <div class=" common_table open_trail_table">
+                    <div class="trial_print_table_header d-flex align-items-center gap-3 justify-content-between">
+                        <div class="trail_logo">
+                            <img src="assets/images//logo.svg" alt="">
+                        </div>
+
+                        <div class="center_print_div addAssetBtn cursor-pointer text-center">
+                            <h4>Balance Sheet</h4>
+                            <p>As On DAte : 2082/04/30</p>
+                        </div>
+
+                        <div class="last_trail_print_header_div">
+                            <p>S.T Builders Pvt.Ltd.</p>
+                            <p>Kathmandu-32,Koteshwor</p>
+                            <p>9863313584</p>
+                            <p>PAN: 601241851</p>
+                        </div>
+                    </div>
+                    <div class="print-body">
+                        <div class="group_table d-flex flex-column flex-md-row gap-3">
+                            <div class="table-responsive w-100">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Liabilites</th>
+                                            <th scope="col">Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td> Duty and Taxes</td>
+                                            <td>-2.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>RESERVE & SURPLUS</td>
+                                            <td>17,99,160</td>
+                                        </tr>
+                                        <tr>
+                                            <td>SUNDRY CREDITORS</td>
+                                            <td>17,99,160</td>
+                                        </tr>
+                                        <tr>
+                                            <td>LIABILITIES</td>
+                                            <td>17,99,160</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td>Net Total</td>
+                                            <td>349661.67</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+
+
+                            <div class="table-responsive w-100">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Assets</th>
+                                            <th scope="col">Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>CURRENT ASSETS</td>
+                                            <td>-2.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>LOANS & ADVANCE</td>
+                                            <td>-2.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>FIXED ASSETS</td>
+                                            <td>-2.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>STOCK ON HAND</td>
+                                            <td>-2.000</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td>Total</td>
+                                            <td>349661.67</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="trail_print_footer ">
+                        <p>
+                            Filtered Based On: Branch: Head Office**First Segment: Bhupendra Malla’s Site***
+                        </p>
+
+                        <div class="d-flex align-items-center justify-content-between">
+                            <p>Printed Date and Time is 2082/04/30 15:29:15</p>
+
+                            <p>Page No: 1/3</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
 

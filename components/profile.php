@@ -16,7 +16,7 @@
                 <h6>Rohan Dangol</h6>
                 <p>info@gmail.com</p>
             </div>
-
+ 
         </div>
 
         <div class="profile_popup_content">

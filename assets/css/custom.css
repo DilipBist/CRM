@@ -6147,6 +6147,13 @@ select option:not(:first-child) {
   display: flex;
   gap: 16px;
 }
+.chat_profile_search_container {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  background: var(--white);
+}
 
 .chat_profile_search_container input {
   border: 1px solid #e5e7eb;
@@ -6161,7 +6168,9 @@ select option:not(:first-child) {
 
 .chat_box_container .chat_box_left {
   width: 400px;
+  flex-shrink: 0;
   padding: clamp(16px, 3vw, 24px);
+  padding-top: 0;
   height: 100%;
   overflow-y: auto;
 
@@ -6208,7 +6217,7 @@ select option:not(:first-child) {
   margin-bottom: 16px;
 }
 
-.chat_profile_search_container h3 {
+.chat_box_container .c_heaidng {
   color: #202c4b;
   font-size: 16px;
   font-weight: 600;
@@ -6297,7 +6306,7 @@ select option:not(:first-child) {
 }
 
 .chat_box_right {
-  /* width: calc(100% - 400px); */
+  width: calc(100% - 400px);
   display: none;
 }
 
@@ -6467,6 +6476,24 @@ select option:not(:first-child) {
   align-items: center;
   justify-content: center;
   border: 1px solid var(--neutral-primay);
+}
+.chat_profile_verlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--common-pupbg);
+  display: none;
+}
+.closeChatProfileBtn {
+  position: absolute;
+  top: 20px;
+  right: 16px;
+  cursor: pointer;
+  display: none;
 }
 /* chart search box css  */
 
@@ -7849,6 +7876,12 @@ select option:not(:first-child) {
   .track_profile_container {
     width: 260px;
   }
+  .chat_box_container .chat_box_left {
+    width: auto;
+  }
+  .chat_box_msg_type_container {
+    width: calc(100% - 320px);
+  }
 }
 
 @media (max-width: 992px) {
@@ -7906,8 +7939,11 @@ select option:not(:first-child) {
     background-color: var(--white);
     z-index: 5;
   }
-  .chat_box_container .chat_box_left {
-    width: 320px;
+  .chat_box_msg_type_container {
+    width: 95%;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
@@ -8013,6 +8049,33 @@ select option:not(:first-child) {
   .chat_box_container .chat_box_left {
     width: unset;
     width: 100%;
+    padding: 0;
+  }
+  .chat_box_right {
+    position: absolute;
+    z-index: 100;
+    background-color: var(--white);
+    width: 95%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10%;
+    height: 80vh;
+    border-radius: 10px;
+  }
+  .input_Extra_Feilds {
+    gap: 10px;
+  }
+  .right_chat_content_wrapper .chat_content > p {
+    max-width: 95%;
+  }
+  .chat_box_msg_type_container .input_box input {
+    padding-right: 140px;
+  }
+  .chat_profile_verlay.active {
+    display: block;
+  }
+  .closeChatProfileBtn {
+    display: flex;
   }
 }
 

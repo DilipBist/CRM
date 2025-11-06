@@ -143,7 +143,7 @@ include 'inc/header.php'
             </div>
 
             <!--day book journal table  -->
-            <!-- <div class="trail_print_table_container">
+            <div class="trail_print_table_container">
                 <div class=" common_table open_trail_table">
                     <div class="trial_print_table_header d-flex align-items-center gap-3 justify-content-between">
                         <div class="trail_logo">
@@ -334,277 +334,9 @@ include 'inc/header.php'
                         </div>
                     </div>
                 </div>
-            </div> -->
+            </div>
             <!--day book jouranal table  -->
 
-
-            <!-- day book payment/receipt vouchar table   -->
-            <h1 class="text-center mt-5">Payment/ Receipt Vouchar Table</h1>
-            <div class="trail_print_table_container">
-                <div class=" common_table open_trail_table">
-                    <div class="trial_print_table_header d-flex align-items-center gap-3 justify-content-between">
-                        <div class="trail_logo">
-                            <img src="assets/images//logo.svg" alt="">
-                        </div>
-
-                        <div class="center_print_div addAssetBtn cursor-pointer text-center">
-                            <h4>Day Book</h4>
-                            <p>Data: 01/04/02082-30/04/2082</p>
-                        </div>
-
-                        <div class="last_trail_print_header_div">
-                            <p>S.T Builders Pvt.Ltd.</p>
-                            <p>Kathmandu-32,Koteshwor</p>
-                            <p>9863313584</p>
-                            <p>PAN: 601241851</p>
-                        </div>
-                    </div>
-                    <div class="print-body">
-                        <div class="table-responsive w-100">
-                            <table class="table table-hover">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Date</th>
-                                        <th scope="col">Voucher No</th>
-                                        <th scope="col">Ledger</th>
-                                        <th scope="col">Debit</th>
-                                        <th scope="col">Credit</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-
-                                    <!-- first data  -->
-                                    <tr>
-                                        <td></td>
-                                        <td class="wrap_Text" colspan="2">
-                                            <div class="trail_table_heading text-center">Opening</div>
-                                        </td>
-                                        <td>1,529.00</td>
-                                        <td>
-                                            -- --
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td rowspan="12">2082/04/01</td>
-                                        <td rowspan="4">CB-00001-82/83</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>PURCHASE A/C</td>
-                                        <td>-2.000</td>
-                                        <td>-- --</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>Sita Dhuwani Sewa </td>
-                                        <td>-- --</td>
-                                        <td>4,542.030</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>
-                                            <div class="trail_table_heading text-end">Total</div>
-                                        </td>
-                                        <td>
-                                            <div class="trail_table_heading">60,000</div>
-                                        </td>
-                                        <td>
-                                            <div class="trail_table_heading">60,000</div>
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td rowspan="3">PAY-00001-82/83</td>
-                                        <td>Purchase A/C</td>
-                                        <td>-2.000</td>
-                                        <td>-- --</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>Kitchen Expense </td>
-                                        <td>4,542.030</td>
-                                        <td>-- --</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>
-                                            <div class="trail_table_heading text-end">Total</div>
-                                        </td>
-                                        <td>
-                                            <div class="trail_table_heading">60,000</div>
-                                        </td>
-                                        <td>
-                                            <div class="trail_table_heading">60,000</div>
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td rowspan="3">PAY-00001-82/83</td>
-                                        <td>Purchase A/C</td>
-                                        <td>-2.000</td>
-                                        <td>-- --</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>Kitchen Expense </td>
-                                        <td>4,542.030</td>
-                                        <td>-- --</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>
-                                            <div class="trail_table_heading text-end">Total</div>
-                                        </td>
-                                        <td>
-                                            <div class="trail_table_heading">60,000</div>
-                                        </td>
-                                        <td>
-                                            <div class="trail_table_heading">60,000</div>
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>
-                                            <div class="trail_table_heading text-end">Day Total</div>
-                                        </td>
-                                        <td></td>
-                                        <td>
-                                            <div class="trail_table_heading">0.000</div>
-                                        </td>
-                                        <td>
-                                            <div class="trail_table_heading">0.000</div>
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>
-                                            <div class="trail_table_heading text-end">Day Cash close</div>
-                                        </td>
-                                        <td></td>
-                                        <td>
-                                            <div class="trail_table_heading">0.000</div>
-                                        </td>
-                                        <td>
-                                            <div class="trail_table_heading">0.000</div>
-                                        </td>
-                                    </tr>
-                                    <!-- first data  -->
-
-
-                                    <!-- SECOND DATA  -->
-                                    <tr>
-                                        <td rowspan="11">2082/04/01</td>
-                                        <td rowspan="4">JV-00072-82/83</td>
-                                        <td>CASH A/C</td>
-                                        <td>-2.000</td>
-                                        <td>-- --</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>Siddhartha Bank Limited</td>
-                                        <td>-- --</td>
-                                        <td>4,542.030</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td colspan="3">Remarks : Manita Gurung ( Hattiban ) / Against PO- 001 / Challan no- 391</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="trail_table_heading text-end">Total</div>
-                                        </td>
-                                        <td>
-                                            <div class="trail_table_heading">60,000</div>
-                                        </td>
-                                        <td>
-                                            <div class="trail_table_heading">60,000</div>
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td rowspan="5">JV-00072-82/83</td>
-                                        <td>CASH A/C</td>
-                                        <td>-2.000</td>
-                                        <td>-- --</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>Siddhartha Bank Limited</td>
-                                        <td>-- --</td>
-                                        <td>4,542.030</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>VALUE ADDED TAX</td>
-                                        <td>-- --</td>
-                                        <td>4,542.030</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td colspan="3">Remarks : Dillibazar Office / Against PO- 002 / Challan no- 9</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>
-                                            <div class="trail_table_heading text-end"> Total</div>
-                                        </td>
-                                        <td>
-                                            <div class="trail_table_heading">0.000</div>
-                                        </td>
-                                        <td>
-                                            <div class="trail_table_heading">0.000</div>
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>
-                                            <div class="trail_table_heading text-end">Day Total</div>
-                                        </td>
-                                        <td></td>
-                                        <td>
-                                            <div class="trail_table_heading">0.000</div>
-                                        </td>
-                                        <td>
-                                            <div class="trail_table_heading">0.000</div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="trail_table_heading text-end">Day Cash close</div>
-                                        </td>
-                                        <td></td>
-                                        <td>
-                                            <div class="trail_table_heading">0.000</div>
-                                        </td>
-                                        <td>
-                                            <div class="trail_table_heading">0.000</div>
-                                        </td>
-                                    </tr>
-                                    <!-- SECOND DATA  -->
-
-
-                                </tbody>
-
-                            </table>
-                        </div>
-
-                    </div>
-
-                    <div class="trail_print_footer ">
-                        <p>
-                            Filtered Based On: Branch: Head Office**First Segment: Bhupendra Malla’s Site***
-                        </p>
-
-                        <div class="d-flex align-items-center justify-content-between">
-                            <p>Printed Date and Time is 2082/04/30 15:29:15</p>
-
-                            <p>Page No: 1/3</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- day book payment/receipt vouchar table   -->
 
             <!-- day book of cash bank  -->
             <h1 class="text-center mt-5">Cash bank Table</h1>
@@ -835,7 +567,6 @@ include 'inc/header.php'
                 </div>
             </div>
             <!-- day book of cash bank  -->
-
 
             <!-- day book purchase invoice table  -->
             <h1 class="text-center mt-5">Purchase Incovice/Return Same table</h1>
@@ -1092,9 +823,275 @@ include 'inc/header.php'
                     </div>
                 </div>
             </div>
-            <!-- day book purchase invoice table  -->
+            <!-- day book purchase invoice table  --> 
+
+            <!-- day book payment/receipt vouchar table   -->
+            <h1 class="text-center mt-5">Payment/ Receipt Vouchar Table</h1>
+            <div class="trail_print_table_container">
+                <div class=" common_table open_trail_table">
+                    <div class="trial_print_table_header d-flex align-items-center gap-3 justify-content-between">
+                        <div class="trail_logo">
+                            <img src="assets/images//logo.svg" alt="">
+                        </div>
+
+                        <div class="center_print_div addAssetBtn cursor-pointer text-center">
+                            <h4>Day Book</h4>
+                            <p>Data: 01/04/02082-30/04/2082</p>
+                        </div>
+
+                        <div class="last_trail_print_header_div">
+                            <p>S.T Builders Pvt.Ltd.</p>
+                            <p>Kathmandu-32,Koteshwor</p>
+                            <p>9863313584</p>
+                            <p>PAN: 601241851</p>
+                        </div>
+                    </div>
+                    <div class="print-body">
+                        <div class="table-responsive w-100">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Date</th>
+                                        <th scope="col">Voucher No</th>
+                                        <th scope="col">Ledger</th>
+                                        <th scope="col">Debit</th>
+                                        <th scope="col">Credit</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    <!-- first data  -->
+                                    <tr>
+                                        <td></td>
+                                        <td class="wrap_Text" colspan="2">
+                                            <div class="trail_table_heading text-center">Opening</div>
+                                        </td>
+                                        <td>1,529.00</td>
+                                        <td>
+                                            -- --
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td rowspan="12">2082/04/01</td>
+                                        <td rowspan="4">CB-00001-82/83</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>PURCHASE A/C</td>
+                                        <td>-2.000</td>
+                                        <td>-- --</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Sita Dhuwani Sewa </td>
+                                        <td>-- --</td>
+                                        <td>4,542.030</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div class="trail_table_heading text-end">Total</div>
+                                        </td>
+                                        <td>
+                                            <div class="trail_table_heading">60,000</div>
+                                        </td>
+                                        <td>
+                                            <div class="trail_table_heading">60,000</div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td rowspan="3">PAY-00001-82/83</td>
+                                        <td>Purchase A/C</td>
+                                        <td>-2.000</td>
+                                        <td>-- --</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Kitchen Expense </td>
+                                        <td>4,542.030</td>
+                                        <td>-- --</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div class="trail_table_heading text-end">Total</div>
+                                        </td>
+                                        <td>
+                                            <div class="trail_table_heading">60,000</div>
+                                        </td>
+                                        <td>
+                                            <div class="trail_table_heading">60,000</div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td rowspan="3">PAY-00001-82/83</td>
+                                        <td>Purchase A/C</td>
+                                        <td>-2.000</td>
+                                        <td>-- --</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Kitchen Expense </td>
+                                        <td>4,542.030</td>
+                                        <td>-- --</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div class="trail_table_heading text-end">Total</div>
+                                        </td>
+                                        <td>
+                                            <div class="trail_table_heading">60,000</div>
+                                        </td>
+                                        <td>
+                                            <div class="trail_table_heading">60,000</div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div class="trail_table_heading text-end">Day Total</div>
+                                        </td>
+                                        <td></td>
+                                        <td>
+                                            <div class="trail_table_heading">0.000</div>
+                                        </td>
+                                        <td>
+                                            <div class="trail_table_heading">0.000</div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div class="trail_table_heading text-end">Day Cash close</div>
+                                        </td>
+                                        <td></td>
+                                        <td>
+                                            <div class="trail_table_heading">0.000</div>
+                                        </td>
+                                        <td>
+                                            <div class="trail_table_heading">0.000</div>
+                                        </td>
+                                    </tr>
+                                    <!-- first data  -->
 
 
+                                    <!-- SECOND DATA  -->
+                                    <tr>
+                                        <td rowspan="11">2082/04/01</td>
+                                        <td rowspan="4">JV-00072-82/83</td>
+                                        <td>CASH A/C</td>
+                                        <td>-2.000</td>
+                                        <td>-- --</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Siddhartha Bank Limited</td>
+                                        <td>-- --</td>
+                                        <td>4,542.030</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td colspan="3">Remarks : Manita Gurung ( Hattiban ) / Against PO- 001 / Challan no- 391</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="trail_table_heading text-end">Total</div>
+                                        </td>
+                                        <td>
+                                            <div class="trail_table_heading">60,000</div>
+                                        </td>
+                                        <td>
+                                            <div class="trail_table_heading">60,000</div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td rowspan="5">JV-00072-82/83</td>
+                                        <td>CASH A/C</td>
+                                        <td>-2.000</td>
+                                        <td>-- --</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Siddhartha Bank Limited</td>
+                                        <td>-- --</td>
+                                        <td>4,542.030</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>VALUE ADDED TAX</td>
+                                        <td>-- --</td>
+                                        <td>4,542.030</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td colspan="3">Remarks : Dillibazar Office / Against PO- 002 / Challan no- 9</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div class="trail_table_heading text-end"> Total</div>
+                                        </td>
+                                        <td>
+                                            <div class="trail_table_heading">0.000</div>
+                                        </td>
+                                        <td>
+                                            <div class="trail_table_heading">0.000</div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div class="trail_table_heading text-end">Day Total</div>
+                                        </td>
+                                        <td></td>
+                                        <td>
+                                            <div class="trail_table_heading">0.000</div>
+                                        </td>
+                                        <td>
+                                            <div class="trail_table_heading">0.000</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="trail_table_heading text-end">Day Cash close</div>
+                                        </td>
+                                        <td></td>
+                                        <td>
+                                            <div class="trail_table_heading">0.000</div>
+                                        </td>
+                                        <td>
+                                            <div class="trail_table_heading">0.000</div>
+                                        </td>
+                                    </tr>
+                                    <!-- SECOND DATA  -->
+
+
+                                </tbody>
+
+                            </table>
+                        </div>
+
+                    </div>
+
+                    <div class="trail_print_footer ">
+                        <p>
+                            Filtered Based On: Branch: Head Office**First Segment: Bhupendra Malla's Site***
+                        </p>
+
+                        <div class="d-flex align-items-center justify-content-between">
+                            <p>Printed Date and Time is 2082/04/30 15:29:15</p>
+
+                            <p>Page No: 1/3</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- day book payment/receipt vouchar table   -->
 
         </div>
 
@@ -1127,7 +1124,7 @@ include 'inc/header.php'
                         <form action="">
                             <div class="row g-3 align-items-end">
 
-                                <div class="col-md-6">
+                                <div class="col-md-6 col-lg-4">
                                     <div class="form_input d-flex flex-column gap-2 position-relative">
                                         <label for="fromdate">From Date</label>
                                         <input type="text" class="date-picker" id="fromdate" placeholder="MM/DD/YYYY">
@@ -1146,7 +1143,7 @@ include 'inc/header.php'
                                     </div>
                                 </div>
 
-                                <div class="col-md-6">
+                                <div class="col-md-6 col-lg-4">
                                     <div class="form_input d-flex flex-column gap-2 position-relative">
                                         <label for="todate">To Date</label>
                                         <input type="text" class="date-picker" id="todate" placeholder="MM/DD/YYYY">
@@ -1165,21 +1162,21 @@ include 'inc/header.php'
                                     </div>
                                 </div>
 
-                                <div class="col-md-6 slect-status">
+                                <div class="col-md-6 col-lg-4 slect-status">
                                     <label for="Group" class="mb-2">Group by <span class="red">*</span></label>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                         <path d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898" stroke="#848484" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                     <select class="form-select" aria-label="select" id="Group" name="Group" required>
 
-                                        <option value="" hidden disabled selected>Day Book</option>
+                                        <option value="" hidden disabled selected>Day Book Journal </option>
                                         <option value="1">Day Book</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
+                                        <!-- <option value="2">Two</option>
+                                        <option value="3">Three</option> -->
                                     </select>
                                 </div>
 
-                                <div class="col-md-6 slect-status">
+                                <div class="col-md-6 col-lg-4 slect-status">
                                     <label for="Module" class="mb-2">Module <span class="red">*</span></label>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                         <path d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898" stroke="#848484" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
@@ -1197,7 +1194,7 @@ include 'inc/header.php'
                                 </div>
 
 
-                                <div class="col-md-6">
+                                <div class="col-md-6 col-lg-4">
                                     <div class="form_input">
                                         <label>With narration</label>
                                     </div>
@@ -1210,7 +1207,7 @@ include 'inc/header.php'
                                     </div>
                                 </div>
 
-                                <div class="col-md-6 ">
+                                <div class="col-md-6 col-lg-4">
                                     <div class="form_input">
                                         <label>With petty Cah?</label>
                                     </div>

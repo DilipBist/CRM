@@ -50,219 +50,62 @@ include 'inc/header.php'
         </div>
 
         <!-- chatbox container  -->
-        <div class="chat_box_container   pl_pr">
+        <div class="chat_box_container pl_pr">
             <div class="chat_box_left">
                 <h2>Chats</h2>
 
                 <div class="chat_profile_search_container">
                     <input type="text" placeholder="Search For Contacts or Messages">
-
-                    <h3>All Chats</h3>
                 </div>
+
+                <h3 class="c_heaidng">All Chats</h3>
 
                 <!-- chat profiles  -->
                 <div class="all_Chat_profiles_list_container d-flex flex-column gap-2">
-                    <!-- <div class="chat_profile active_chat d-flex gap-2">
-                        <div class="img active">
-                            <img src="./assets//images/chatProfile/cp1.jpg" alt="Profile Image">
-
-                            <div class="active_dot"></div>
-                        </div>
-
-                        <div class="right_part w-100">
-                            <div class="d-flex align-items-center justify-content-between gap-2">
-                                <div class="name">
-                                    Anthony Lewis
-                                </div>
-                                <div class="time">
-                                    02:40 PM
-                                </div>
-                            </div>
-                            <div class="msg_container d-flex justify-content-between gap-2 mt-1">
-                                <div class="msg">
-                                    is typing...
-                                </div>
+                    <?php foreach ($chatProfiles as $chat): ?>
+                        <div class="chat_profile d-flex gap-2" data-chat="<?= htmlspecialchars($chat['id']) ?>">
+                            <div class="img <?= $chat['status'] === 'online' ? 'active' : '' ?>">
+                                <img src="<?= htmlspecialchars($chat['image']) ?>" alt="<?= htmlspecialchars($chat['name']) ?>">
+                                <?php if ($chat['status'] === 'online'): ?>
+                                    <div class="active_dot"></div>
+                                <?php endif; ?>
                             </div>
 
-                        </div>
-                    </div> -->
-
-                    <div class="all_Chat_profiles_list_container d-flex flex-column gap-2">
-                        <?php foreach ($chatProfiles as $chat): ?>
-                            <div class="chat_profile d-flex gap-2" data-chat="<?= htmlspecialchars($chat['id']) ?>">
-                                <div class="img <?= $chat['status'] === 'online' ? 'active' : '' ?>">
-                                    <img src="<?= htmlspecialchars($chat['image']) ?>" alt="<?= htmlspecialchars($chat['name']) ?>">
-                                    <?php if ($chat['status'] === 'online'): ?>
-                                        <div class="active_dot"></div>
+                            <div class="right_part w-100">
+                                <div class="d-flex align-items-center justify-content-between gap-2">
+                                    <div class="name"><?= htmlspecialchars($chat['name']) ?></div>
+                                    <?php if (!empty($chat['time'])): ?>
+                                        <div class="time"><?= htmlspecialchars($chat['time']) ?></div>
                                     <?php endif; ?>
                                 </div>
 
-                                <div class="right_part w-100">
-                                    <div class="d-flex align-items-center justify-content-between gap-2">
-                                        <div class="name"><?= htmlspecialchars($chat['name']) ?></div>
-                                        <?php if (!empty($chat['time'])): ?>
-                                            <div class="time"><?= htmlspecialchars($chat['time']) ?></div>
-                                        <?php endif; ?>
-                                    </div>
+                                <div class="msg_container d-flex justify-content-between gap-2 mt-1">
+                                    <?php if (!empty($chat['type']) && $chat['type'] === 'call_missed'): ?>
+                                        <div class="call_missed"><?= htmlspecialchars($chat['message']) ?></div>
+                                    <?php elseif (!empty($chat['type']) && $chat['type'] === 'incoming_call'): ?>
+                                        <div class="incomming_call"><?= htmlspecialchars($chat['message']) ?></div>
+                                    <?php else: ?>
+                                        <div class="msg"><?= htmlspecialchars($chat['message']) ?></div>
+                                    <?php endif; ?>
 
-                                    <div class="msg_container d-flex justify-content-between gap-2 mt-1">
-                                        <?php if (!empty($chat['type']) && $chat['type'] === 'call_missed'): ?>
-                                            <div class="call_missed"><?= htmlspecialchars($chat['message']) ?></div>
-                                        <?php elseif (!empty($chat['type']) && $chat['type'] === 'incoming_call'): ?>
-                                            <div class="incomming_call"><?= htmlspecialchars($chat['message']) ?></div>
-                                        <?php else: ?>
-                                            <div class="msg"><?= htmlspecialchars($chat['message']) ?></div>
-                                        <?php endif; ?>
-
-                                        <?php if (!empty($chat['unread'])): ?>
-                                            <div class="msg_num"><?= htmlspecialchars($chat['unread']) ?></div>
-                                        <?php endif; ?>
-                                    </div>
+                                    <?php if (!empty($chat['unread'])): ?>
+                                        <div class="msg_num"><?= htmlspecialchars($chat['unread']) ?></div>
+                                    <?php endif; ?>
                                 </div>
                             </div>
-                        <?php endforeach; ?>
-                    </div>
-
+                        </div>
+                    <?php endforeach; ?>
                 </div>
                 <!-- chat profiles  -->
 
             </div>
 
             <!-- chat box design  -->
-            <!-- <div class="chat_box_right" id="chat1">
-                <div class="top_profile_bar">
-                    <div class="chat_profile d-flex gap-2">
-                        <div class="img active">
-                            <img src="./assets//images/chatProfile/cp1.jpg" alt="Profile Image">
-
-                            <div class="active_dot"></div>
-                        </div>
-
-                        <div class="right_part w-100">
-                            <div class="d-flex align-items-center justify-content-between gap-2">
-                                <div class="name">
-                                    Anthony Lewis
-                                </div>
-                            </div>
-                            <div class="msg_container">
-                                <div class="msg">
-                                    Online
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="right_chat_content_wrapper">
-                    <div class="content d-flex flex-column gap-3">
-                        <div class="left_chat d-flex gap-2 align-items-end">
-                            <div class="img">
-                                <img src="./assets//images/chatProfile/cp1.jpg" alt="Profile Image">
-                            </div>
-                            <div class="d-flex flex-column gap-2">
-                                <div class="chat_content">
-                                    <p>Hi John, I wanted to update you on a new company policy regarding remote work.
-                                    </p>
-                                    <div class="messager_name d-flex align-items-center gap-3">
-                                        <h5>Anthony Lewis</h5>
-                                        <p>08:00 AM</p>
-                                    </div>
-                                </div>
-                                <div class="chat_content">
-                                    <p>Do you have a moment?</p>
-                                    <div class="messager_name d-flex align-items-center gap-3">
-                                        <h5>Anthony Lewis</h5>
-                                        <p>08:00 AM</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="right_chat d-flex gap-2 align-items-end justify-content-end">
-                            <div class="d-flex flex-column gap-2 align-items-end">
-                                <div class="chat_content">
-                                    <p>Hi John, I wanted to update you on a new company policy regarding remote work.
-                                    </p>
-                                    <div class="messager_name d-flex align-items-center gap-3">
-                                        <h5>Anthony Lewis</h5>
-                                        <p>08:00 AM</p>
-                                    </div>
-                                </div>
-                                <div class="chat_content">
-                                    <p>Do you have a moment?</p>
-                                    <div class="messager_name d-flex align-items-center gap-3">
-                                        <p>08:00 AM</p>
-                                        <h5>You</h5>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="img">
-                                <img src="./assets//images/chatProfile/cp2.png" alt="Profile Image">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="content d-flex flex-column gap-3">
-                        <div class="left_chat d-flex gap-2 align-items-end">
-                            <div class="img">
-                                <img src="./assets//images/chatProfile/cp1.jpg" alt="Profile Image">
-                            </div>
-                            <div class="d-flex flex-column gap-2">
-                                <div class="chat_content">
-                                    <p>Hi John, I wanted to update you on a new company policy regarding remote work.
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem ut a vero
-                                        corrupti, quam cupiditate culpa aut in? Suscipit harum tenetur pariatur natus
-                                        praesentium accusamus temporibus possimus enim fugiat expedita?</p>
-                                    <div class="messager_name d-flex align-items-center gap-3">
-                                        <h5>Anthony Lewis</h5>
-                                        <p>08:00 AM</p>
-                                    </div>
-                                </div>
-                                <div class="chat_content">
-                                    <p>Do you have a moment?</p>
-                                    <div class="messager_name d-flex align-items-center gap-3">
-                                        <h5>Anthony Lewis</h5>
-                                        <p>08:00 AM</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="right_chat d-flex gap-2 align-items-end justify-content-end">
-                            <div class="d-flex flex-column gap-2 align-items-end">
-                                <div class="chat_content">
-                                    <p>Hi John, I wanted to update you on a new company policy regarding remote work.
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate optio dolorem
-                                        provident nulla voluptatum nisi numquam autem omnis. Quidem necessitatibus
-                                        dolores aliquid culpa omnis, maiores incidunt officia libero et corporis?</p>
-                                    <div class="messager_name d-flex align-items-center gap-3">
-                                        <h5>Anthony Lewis</h5>
-                                        <p>08:00 AM</p>
-                                    </div>
-                                </div>
-                                <div class="chat_content">
-                                    <p>Do you have a moment? Lorem ipsum dolor sit amet.</p>
-                                    <div class="messager_name d-flex align-items-center gap-3">
-                                        <p>08:00 AM</p>
-                                        <h5>You</h5>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="img">
-                                <img src="./assets//images/chatProfile/cp2.png" alt="Profile Image">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-
-
+            <div class="chat_profile_verlay"></div>
             <?php foreach ($chatConversations as $chatId => $chat): ?>
                 <div class="chat_box_right" id="<?= htmlspecialchars($chatId) ?>">
                     <div class="top_profile_bar">
-                        <div class="chat_profile d-flex gap-2">
+                        <div class="chat_profile d-flex gap-2 position-relative">
                             <div class="img active">
                                 <img src="<?= htmlspecialchars($chat['image']) ?>" alt="Profile Image">
                                 <div class="active_dot"></div>
@@ -274,6 +117,12 @@ include 'inc/header.php'
                                 <div class="msg_container">
                                     <div class="msg"><?= htmlspecialchars($chat['status']) ?></div>
                                 </div>
+                            </div>
+
+                            <div class="closeChatProfileBtn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M9.99935 1.66406C5.40768 1.66406 1.66602 5.40573 1.66602 9.9974C1.66602 14.5891 5.40768 18.3307 9.99935 18.3307C14.591 18.3307 18.3327 14.5891 18.3327 9.9974C18.3327 5.40573 14.591 1.66406 9.99935 1.66406ZM12.7993 11.9141C13.041 12.1557 13.041 12.5557 12.7993 12.7974C12.6743 12.9224 12.516 12.9807 12.3577 12.9807C12.1993 12.9807 12.041 12.9224 11.916 12.7974L9.99935 10.8807L8.08268 12.7974C7.95768 12.9224 7.79935 12.9807 7.64102 12.9807C7.48268 12.9807 7.32435 12.9224 7.19935 12.7974C6.95768 12.5557 6.95768 12.1557 7.19935 11.9141L9.11602 9.9974L7.19935 8.08073C6.95768 7.83906 6.95768 7.43906 7.19935 7.1974C7.44102 6.95573 7.84102 6.95573 8.08268 7.1974L9.99935 9.11406L11.916 7.1974C12.1577 6.95573 12.5577 6.95573 12.7993 7.1974C13.041 7.43906 13.041 7.83906 12.7993 8.08073L10.8827 9.9974L12.7993 11.9141Z" fill="#FF0000" />
+                                </svg>
                             </div>
                         </div>
                     </div>

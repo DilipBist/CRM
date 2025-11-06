@@ -304,6 +304,110 @@ include 'inc/header.php'
                 </div>
             </div>
 
+            <h1 class="mt-5 text-center">Second Table</h1>
+            <div class="trail_print_table_container">
+                <div class=" common_table open_trail_table">
+                    <div class="trial_print_table_header d-flex align-items-center gap-3 justify-content-between">
+                        <div class="trail_logo">
+                            <img src="assets/images//logo.svg" alt="">
+                        </div>
+
+                        <div class="center_print_div addAssetBtn cursor-pointer text-center">
+                            <h4>Profit and Loss</h4>
+                            <p>As On DAte : 2082/04/30</p>
+                        </div>
+
+                        <div class="last_trail_print_header_div">
+                            <p>S.T Builders Pvt.Ltd.</p>
+                            <p>Kathmandu-32,Koteshwor</p>
+                            <p>9863313584</p>
+                            <p>PAN: 601241851</p>
+                        </div>
+                    </div>
+                    <div class="print-body">
+                        <div class="group_table d-flex flex-column flex-md-row gap-3">
+                            <div class="table-responsive w-100">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Expense</th>
+                                            <th scope="col">Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td> EXPENDITURE</td>
+                                            <td>-2.000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>INDIRECT EXPENSES</td>
+                                            <td>17,99,160</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td>Total</td>
+                                            <td>349661.67</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Net Total</td>
+                                            <td>349661.67</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+
+
+                            <div class="table-responsive w-100">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Income</th>
+                                            <th scope="col">Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="trail_table_heading">
+                                                    Income
+                                                </div>
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td>Total</td>
+                                            <td>349661.67</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Net Loss</td>
+                                            <td>349661.67</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Net Total</td>
+                                            <td>349661.67</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="trail_print_footer ">
+                        <p>
+                            Filtered Based On: Branch: Head Office**First Segment: Bhupendra Malla’s Site***
+                        </p>
+
+                        <div class="d-flex align-items-center justify-content-between">
+                            <p>Printed Date and Time is 2082/04/30 15:29:15</p>
+
+                            <p>Page No: 1/3</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
 
