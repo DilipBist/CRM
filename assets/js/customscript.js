@@ -61,11 +61,30 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+
+  const formSubmit = document.querySelector(".g-form form");
+  if (formSubmit) {
+    formSubmit.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const group = document.getElementById("group").value;
+      if (group === "Ledger") {
+        window.location.href = "legder-details.php";
+      } else if (group === "sub-ledger") {
+        window.location.href = "group-sub-ledger.php";
+      } else if (group === "g-ledger") {
+        window.location.href = "group-ledger.php";
+      } else if (group === "sub-ledger-transaction") {
+        window.location.href = "sub-ledger-transaction.php";
+      } else {
+        alert("Please select a valid report group.");
+      }
+    });            
+  }
   // ============
   // this this code is just for the page redirect (code ends)
   // ============
 
-  // show hide the add expense dropdown
+  // show hide the add expense dropdown 
   const AddExpenseBtn = document.getElementById("AddExpenseBtn");
   const AddExpenseicon = document.querySelector(".expIcon");
   const expenseDropdown = document.querySelector(
@@ -1779,7 +1798,7 @@ function initChatSystem() {
   };
 
   overlay.addEventListener("click", closeAll);
-  closeChatProfileBtn.forEach(btn => {
+  closeChatProfileBtn.forEach((btn) => {
     btn.addEventListener("click", closeAll);
   });
 
@@ -1801,4 +1820,3 @@ function initChatSystem() {
   // Run whenever the window is resized
   window.addEventListener("resize", handleScreenSize);
 }
-

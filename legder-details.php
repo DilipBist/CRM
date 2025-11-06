@@ -1,5 +1,5 @@
 <?php
-$pageTitle = 'Account Report General LEdger';
+$pageTitle = 'ledger Details';
 include 'inc/header.php'
 ?>
 
@@ -41,6 +41,7 @@ include 'inc/header.php'
 
 
         <div class="trail_container pl_pr">
+            <!-- buttons -->
             <div class="trail_balance_buttons_container d-flex align-items-center justify-content-between gap-3 flex-wrap">
                 <div class="fist_buttons d-flex align-items-center gap-3 flex-wrap">
                     <button class="ledger_common_btn">
@@ -141,6 +142,7 @@ include 'inc/header.php'
                     </button>
                 </div>
             </div>
+            <!-- buttons -->
 
             <div class="trail_print_table_container">
                 <div class=" common_table open_trail_table acc_rep_gen_table">
@@ -166,9 +168,9 @@ include 'inc/header.php'
                             <table class="table table-hover">
                                 <thead>
                                     <tr>
-                                        <th scope="col">SN</th>
-                                        <th scope="col">Ledger</th>
-                                        <th scope="col">Short Name</th>
+                                        <th scope="col">Date</th>
+                                        <th scope="col">Voucher No</th>
+                                        <th scope="col">Description</th>
                                         <th scope="col">Opening Debit</th>
                                         <th scope="col">Opening Credit</th>
                                         <th scope="col">Debit Amount</th>
