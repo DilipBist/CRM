@@ -141,8 +141,6 @@ include 'inc/header.php'
 
         </div>
         <!-- journal vouchar list table  -->
-
-
     </div>
 </section>
 
@@ -163,8 +161,6 @@ include 'inc/header.php'
                 </div>
 
 
-
-
                 <!-- vouchar table  -->
 
                 <div class="vouchar_data_Table_container">
@@ -177,7 +173,7 @@ include 'inc/header.php'
                             </div>
 
                             <div class="account_buttons d-flex align-items-center gap-2 flex-wrap">
-                                <button class="import" type="button" onclick="document.getElementById('fileInput').click()">
+                                <!-- <button class="import" type="button" onclick="document.getElementById('fileInput').click()">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                         <path d="M9.99935 18.3346C14.5827 18.3346 18.3327 14.5846 18.3327 10.0013C18.3327 5.41797 14.5827 1.66797 9.99935 1.66797C5.41602 1.66797 1.66602 5.41797 1.66602 10.0013C1.66602 14.5846 5.41602 18.3346 9.99935 18.3346Z" stroke="#005399" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                         <path d="M6.66602 10H13.3327" stroke="#005399" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -185,7 +181,7 @@ include 'inc/header.php'
                                     </svg>
                                     <input type="file" id="fileInput" style="display:none" />
                                     Import
-                                </button>
+                                </button> -->
                                 <button class="email" type="button">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                         <path d="M10.8832 9.11719C12.7582 10.9922 12.7582 14.0255 10.8832 15.8922C9.00821 17.7589 5.97487 17.7672 4.1082 15.8922C2.24154 14.0172 2.2332 10.9839 4.1082 9.11719" stroke="#005399" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
