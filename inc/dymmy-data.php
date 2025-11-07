@@ -994,3 +994,395 @@ $chatConversations = [
         ]
     ],
 ];
+
+
+$parts = [
+    [
+        'part_name' => 'Aalok Hardware - Aal00201',
+        'opening_values' => [0.000, 0.000, 0.000],
+        'adjustment_values' => [-2.000, -2.000, -2.000],
+        'transactions' => [
+            [
+                'date' => '18/04/2082',
+                'voucher' => 'JV-00058-82/83',
+                'type' => 'Payment Voucher',
+                'desc' => 'Being materials purchased for Thankot Site (Menuka Sigdel)',
+                'debit' => '4,542.030',
+                'credit' => '0.00',
+                'balance' => '4,542.030 DR'
+            ],
+            [
+                'date' => '19/04/2082',
+                'voucher' => 'JV-00060-82/83',
+                'type' => 'Payment Voucher',
+                'desc' => 'Being materials purchased for Kalanki Site (Bipin Gautam)',
+                'debit' => '2,350.000',
+                'credit' => '0.00',
+                'balance' => '6,892.030 DR'
+            ],
+            [
+                'date' => '19/04/2082',
+                'voucher' => 'JV-00060-82/83',
+                'type' => 'Payment Voucher',
+                'desc' => 'Being materials purchased for Kalanki Site (Bipin Gautam)',
+                'debit' => '2,350.000',
+                'credit' => '0.00',
+                'balance' => '6,892.030 DR'
+            ],
+            [
+                'date' => '19/04/2082',
+                'voucher' => 'JV-00060-82/83',
+                'type' => 'Payment Voucher',
+                'desc' => 'Being materials purchased for Kalanki Site (Bipin Gautam)',
+                'debit' => '2,350.000',
+                'credit' => '0.00',
+                'balance' => '6,892.030 DR'
+            ],
+            [
+                'date' => '21/04/2082',
+                'voucher' => 'JV-00061-82/83',
+                'type' => 'Purchase Entry',
+                'desc' => 'Being payment for pipes and fittings (Hari Bahadur)',
+                'debit' => '6,000.000',
+                'credit' => '0.00',
+                'balance' => '12,892.030 DR'
+            ]
+        ],
+        'total' => '27,550.00'
+    ],
+    [
+        'part_name' => 'Sharma Traders - SHM00981',
+        'opening_values' => [1.000, 1.000, 1.000],
+        'adjustment_values' => [2.000, 2.000, 2.000],
+        'transactions' => [
+            [
+                'date' => '15/04/2082',
+                'voucher' => 'JV-00040-82/83',
+                'type' => 'Purchase Voucher',
+                'desc' => 'Materials purchased for Satdobato Site (Kiran Lama)',
+                'debit' => '8,000.000',
+                'credit' => '0.00',
+                'balance' => '8,000.000 DR'
+            ],
+            [
+                'date' => '17/04/2082',
+                'voucher' => 'JV-00045-82/83',
+                'type' => 'Purchase Voucher',
+                'desc' => 'Cement and sand for Balkot Site (Sarita Basnet)',
+                'debit' => '3,200.000',
+                'credit' => '0.00',
+                'balance' => '11,200.000 DR'
+            ],
+            [
+                'date' => '17/04/2082',
+                'voucher' => 'JV-00045-82/83',
+                'type' => 'Purchase Voucher',
+                'desc' => 'Cement and sand for Balkot Site (Sarita Basnet)',
+                'debit' => '3,200.000',
+                'credit' => '0.00',
+                'balance' => '11,200.000 DR'
+            ],
+            [
+                'date' => '17/04/2082',
+                'voucher' => 'JV-00045-82/83',
+                'type' => 'Purchase Voucher',
+                'desc' => 'Cement and sand for Balkot Site (Sarita Basnet)',
+                'debit' => '3,200.000',
+                'credit' => '0.00',
+                'balance' => '11,200.000 DR'
+            ],
+            [
+                'date' => '17/04/2082',
+                'voucher' => 'JV-00045-82/83',
+                'type' => 'Purchase Voucher',
+                'desc' => 'Cement and sand for Balkot Site (Sarita Basnet)',
+                'debit' => '3,200.000',
+                'credit' => '0.00',
+                'balance' => '11,200.000 DR'
+            ],
+        ],
+        'total' => '11,200.000'
+    ]
+];
+
+
+
+$ledgerData = [
+    [
+        "subLedger" => "Sub Leger : No Subledger",
+        "entries" => [
+            [
+                "ledger" => "Machhapuchchhre Bank Limited",
+                "shortName" => "Aal000201",
+                "openingDebit" => -2.000,
+                "openingCredit" => -2.000,
+                "debitAmount" => -2.000,
+                "creditAmount" => -2.000,
+                "debitBalance" => -2.000,
+                "creditBalance" => -2.000,
+            ],
+            [
+                "ledger" => "Mahakalaxmi Bikas Bank Limited",
+                "shortName" => "Aal000201",
+                "openingDebit" => 4542.030,
+                "openingCredit" => 4542.030,
+                "debitAmount" => 4542.030,
+                "creditAmount" => 4542.030,
+                "debitBalance" => 4542.030,
+                "creditBalance" => 4542.030,
+            ],
+            [
+                "ledger" => "Nabil Bank Limited",
+                "shortName" => "Aal000201",
+                "openingDebit" => 2755.00,
+                "openingCredit" => 2755.00,
+                "debitAmount" => 2755.00,
+                "creditAmount" => 2755.00,
+                "debitBalance" => 2755.00,
+                "creditBalance" => 2755.00,
+            ],
+            [
+                "ledger" => "Narayani Development Bank Limited	",
+                "shortName" => "Aal000201",
+                "openingDebit" => 2755.00,
+                "openingCredit" => 2755.00,
+                "debitAmount" => 2755.00,
+                "creditAmount" => 2755.00,
+                "debitBalance" => 2755.00,
+                "creditBalance" => 2755.00,
+            ],
+            [
+                "ledger" => "Sanima Bank Limited",
+                "shortName" => "Aal000201",
+                "openingDebit" => 2755.00,
+                "openingCredit" => 2755.00,
+                "debitAmount" => 2755.00,
+                "creditAmount" => 2755.00,
+                "debitBalance" => 2755.00,
+                "creditBalance" => 2755.00,
+            ],
+            [
+                "ledger" => "Siddhartha Bank Limited",
+                "shortName" => "Aal000201",
+                "openingDebit" => 2755.00,
+                "openingCredit" => 2755.00,
+                "debitAmount" => 2755.00,
+                "creditAmount" => 2755.00,
+                "debitBalance" => 2755.00,
+                "creditBalance" => 2755.00,
+            ],
+            [
+                "ledger" => "Mahalxmi Bikas Bank OD",
+                "shortName" => "Aal000201",
+                "openingDebit" => 2755.00,
+                "openingCredit" => 2755.00,
+                "debitAmount" => 2755.00,
+                "creditAmount" => 2755.00,
+                "debitBalance" => 2755.00,
+                "creditBalance" => 2755.00,
+            ]
+        ],
+        "total" => [
+            "openingDebit" => 0.000,
+            "openingCredit" => 0.000,
+            "debitAmount" => 0.000
+        ]
+    ],
+    [
+        "subLedger" => "Sub Leger : Baliram Thakur",
+        "entries" => [
+            [
+                "ledger" => "Wages Payable",
+                "shortName" => "Aal000201",
+                "openingDebit" => 5035.00,
+                "openingCredit" => 5035.00,
+                "debitAmount" => 5035.00,
+                "creditAmount" => 5035.00,
+                "debitBalance" => 5035.00,
+                "creditBalance" => 5035.00,
+            ],
+            [
+                "ledger" => "Wages Payable",
+                "shortName" => "Aal000202",
+                "openingDebit" => 5035.00,
+                "openingCredit" => 5035.00,
+                "debitAmount" => 5035.00,
+                "creditAmount" => 5035.00,
+                "debitBalance" => 5035.00,
+                "creditBalance" => 5035.00,
+            ],
+            [
+                "ledger" => "Wages Payable",
+                "shortName" => "Aal000202",
+                "openingDebit" => 5035.00,
+                "openingCredit" => 5035.00,
+                "debitAmount" => 5035.00,
+                "creditAmount" => 5035.00,
+                "debitBalance" => 5035.00,
+                "creditBalance" => 5035.00,
+            ]
+        ],
+        "total" => [
+            "openingDebit" => 0.000,
+            "openingCredit" => 0.000,
+            "debitAmount" => 0.000
+        ]
+    ],
+    [
+        "subLedger" => "Sub Leger : Baliram Thakur",
+        "entries" => [
+            [
+                "ledger" => "Wages Payable",
+                "shortName" => "Aal000201",
+                "openingDebit" => 5035.00,
+                "openingCredit" => 5035.00,
+                "debitAmount" => 5035.00,
+                "creditAmount" => 5035.00,
+                "debitBalance" => 5035.00,
+                "creditBalance" => 5035.00,
+            ],
+            [
+                "ledger" => "Wages Payable",
+                "shortName" => "Aal000202",
+                "openingDebit" => 5035.00,
+                "openingCredit" => 5035.00,
+                "debitAmount" => 5035.00,
+                "creditAmount" => 5035.00,
+                "debitBalance" => 5035.00,
+                "creditBalance" => 5035.00,
+            ],
+            [
+                "ledger" => "Wages Payable",
+                "shortName" => "Aal000202",
+                "openingDebit" => 5035.00,
+                "openingCredit" => 5035.00,
+                "debitAmount" => 5035.00,
+                "creditAmount" => 5035.00,
+                "debitBalance" => 5035.00,
+                "creditBalance" => 5035.00,
+            ]
+        ],
+        "total" => [
+            "openingDebit" => 0.000,
+            "openingCredit" => 0.000,
+            "debitAmount" => 0.000
+        ]
+    ],
+    [
+        "subLedger" => "Sub Leger : Baliram Thakur",
+        "entries" => [
+            [
+                "ledger" => "Wages Payable",
+                "shortName" => "Aal000201",
+                "openingDebit" => 5035.00,
+                "openingCredit" => 5035.00,
+                "debitAmount" => 5035.00,
+                "creditAmount" => 5035.00,
+                "debitBalance" => 5035.00,
+                "creditBalance" => 5035.00,
+            ],
+            [
+                "ledger" => "Wages Payable",
+                "shortName" => "Aal000202",
+                "openingDebit" => 5035.00,
+                "openingCredit" => 5035.00,
+                "debitAmount" => 5035.00,
+                "creditAmount" => 5035.00,
+                "debitBalance" => 5035.00,
+                "creditBalance" => 5035.00,
+            ],
+            [
+                "ledger" => "Wages Payable",
+                "shortName" => "Aal000202",
+                "openingDebit" => 5035.00,
+                "openingCredit" => 5035.00,
+                "debitAmount" => 5035.00,
+                "creditAmount" => 5035.00,
+                "debitBalance" => 5035.00,
+                "creditBalance" => 5035.00,
+            ]
+        ],
+        "total" => [
+            "openingDebit" => 0.000,
+            "openingCredit" => 0.000,
+            "debitAmount" => 0.000
+        ]
+    ]
+];
+
+
+$groupbyledger = [
+    [
+        "name" => " Leger : Aalok Hardware",
+        "category" => [
+            [
+                "Ledger" => "No Subledger",
+                "sname" => "Aal000201",
+                "openingDebit" => "-2.000",
+            ]
+        ],
+        "total" => [
+            "openingDebit" => "0.000",
+        ]
+    ], [
+        "name" => " Leger : Rophan",
+        "category" => [
+            [
+                "Ledger" => "No Subledger",
+                "sname" => "Aal000201",
+                "openingDebit" => "-2.000",
+            ]
+        ],
+        "total" => [
+            "openingDebit" => "0.000",
+        ]
+    ], [
+        "name" => " Leger : Aalok Hardware",
+        "category" => [
+            [
+                "Ledger" => "No Subledger",
+                "sname" => "Aal000201",
+                "openingDebit" => "-2.000",
+            ]
+        ],
+        "total" => [
+            "openingDebit" => "0.000",
+        ]
+    ], [
+        "name" => " Leger : Aalok Hardware",
+        "category" => [
+            [
+                "Ledger" => "No Subledger",
+                "sname" => "Aal000201",
+                "openingDebit" => "-2.000",
+            ]
+        ],
+        "total" => [
+            "openingDebit" => "0.000",
+        ]
+    ], [
+        "name" => " Leger : Aalok Hardware",
+        "category" => [
+            [
+                "Ledger" => "No Subledger",
+                "sname" => "Aal000201",
+                "openingDebit" => "-2.000",
+            ]
+        ],
+        "total" => [
+            "openingDebit" => "0.000",
+        ]
+    ], [
+        "name" => " Leger : Aalok Hardware",
+        "category" => [
+            [
+                "Ledger" => "No Subledger",
+                "sname" => "Aal000201",
+                "openingDebit" => "-2.000",
+            ]
+        ],
+        "total" => [
+            "openingDebit" => "0.000",
+        ]
+    ],
+];

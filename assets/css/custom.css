@@ -321,7 +321,12 @@ img {
   color: #f5f5f5;
   font-weight: 700;
 }
-
+.table_bold_Text {
+  font-size: 14px;
+  color: var(--text-dark2);
+  font-weight: 800;
+  font-family: var(--lato);
+}
 /* custom container  */
 .l_container {
   width: 99%;
@@ -7490,9 +7495,9 @@ select option:not(:first-child) {
   border-bottom: 1px solid var(--Neutral-Separator, #e9eaeb);
   background: #f5f5f5;
   color: var(--text-dark2, #141414);
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
-  font-weight: 900;
+  font-weight: 800;
   height: 52px;
   padding: 0 16px;
 }

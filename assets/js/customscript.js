@@ -78,13 +78,13 @@ document.addEventListener("DOMContentLoaded", () => {
       } else {
         alert("Please select a valid report group.");
       }
-    });            
+    });
   }
   // ============
   // this this code is just for the page redirect (code ends)
   // ============
 
-  // show hide the add expense dropdown 
+  // show hide the add expense dropdown
   const AddExpenseBtn = document.getElementById("AddExpenseBtn");
   const AddExpenseicon = document.querySelector(".expIcon");
   const expenseDropdown = document.querySelector(

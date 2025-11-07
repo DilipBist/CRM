@@ -3,6 +3,8 @@ $pageTitle = 'ledger Details';
 include 'inc/header.php'
 ?>
 
+<h1 class="text-center">Ledger Details page</h1>
+
 <section class="admin_container d-flex">
 
 
@@ -171,32 +173,111 @@ include 'inc/header.php'
                                         <th scope="col">Date</th>
                                         <th scope="col">Voucher No</th>
                                         <th scope="col">Description</th>
-                                        <th scope="col">Opening Debit</th>
-                                        <th scope="col">Opening Credit</th>
+                                        <th scope="col">Ledger</th>
+                                        <th scope="col">Remarks</th>
                                         <th scope="col">Debit Amount</th>
                                         <th scope="col">Credit Amount</th>
-                                        <th scope="col">Debit Balance</th>
-                                        <th scope="col">Credit Amount</th>
+                                        <th scope="col">Balance</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <?php foreach (array_slice($projectList, 0, 11) as $project): ?>
+                                <tbody>
+                                    <?php foreach ($parts as $part): ?>
+                                        <!-- Opening Row -->
                                         <tr>
-                                            <td><?= $project['id'] ?></td>
-                                            <td class="wrap_Text"><?= $project['acc_g_name'] ?></td>
-                                            <td><?= $project['Quantity'] ?></td>
-                                            <td><?= $project['Quantity'] ?></td>
-                                            <td><?= $project['Quantity'] ?></td>
-                                            <td><?= $project['Quantity'] ?></td>
-                                            <td><?= $project['Quantity'] ?></td>
-                                            <td><?= $project['Quantity'] ?></td>
-                                            <td><?= $project['Quantity'] ?></td>
+                                            <td colspan="5">
+                                                <div class="table_bold_Text">
+                                                    Part Name: <?= htmlspecialchars($part['part_name']) ?>
+                                                </div>
+                                            </td>
+                                            <?php foreach ($part['opening_values'] as $value): ?>
+                                                <td>
+                                                    <div class="table_bold_Text"><?= number_format($value, 3) ?></div>
+                                                </td>
+                                            <?php endforeach; ?>
                                         </tr>
+
+                                        <!-- Adjustment Row -->
+                                        <tr>
+                                            <td colspan="5">
+                                                <div class="table_bold_Text">
+                                                    Part Name: <?= htmlspecialchars($part['part_name']) ?>
+                                                </div>
+                                            </td>
+                                            <?php foreach ($part['adjustment_values'] as $adj): ?>
+                                                <td><?= number_format($adj, 3) ?></td>
+                                            <?php endforeach; ?>
+                                        </tr>
+
+                                        <!-- Opening Balance -->
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td>Opening Balance</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+
+                                        <!-- Transaction Rows -->
+                                        <?php foreach ($part['transactions'] as $txn): ?>
+                                            <tr>
+                                                <td><?= htmlspecialchars($txn['date']) ?></td>
+                                                <td><?= htmlspecialchars($txn['voucher']) ?></td>
+                                                <td><?= htmlspecialchars($txn['type']) ?></td>
+                                                <td></td>
+                                                <td><?= htmlspecialchars($txn['desc']) ?></td>
+                                                <td><?= htmlspecialchars($txn['debit']) ?></td>
+                                                <td><?= htmlspecialchars($txn['credit']) ?></td>
+                                                <td><?= htmlspecialchars($txn['balance']) ?></td>
+                                            </tr>
+                                        <?php endforeach; ?>
+
+                                        <!-- Totals -->
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>
+                                                <div class="table_bold_Text text-end">Total (Head Office)</div>
+                                            </td>
+                                            <td>
+                                                <div class="table_bold_Text"><?= $part['total'] ?></div>
+                                            </td>
+                                            <td>
+                                                <div class="table_bold_Text"><?= $part['total'] ?></div>
+                                            </td>
+                                            <td>
+                                                <div class="table_bold_Text"><?= $part['total'] ?></div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td>
+                                                <div class="table_bold_Text">Total</div>
+                                            </td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>
+                                                <div class="table_bold_Text"><?= $part['total'] ?></div>
+                                            </td>
+                                            <td>
+                                                <div class="table_bold_Text"><?= $part['total'] ?></div>
+                                            </td>
+                                            <td>
+                                                <div class="table_bold_Text"><?= $part['total'] ?></div>
+                                            </td>
+                                        </tr>
+
                                     <?php endforeach; ?>
                                 </tbody>
                                 <tfoot>
                                     <tr>
-                                        <td></td>
                                         <td></td>
                                         <td>Total</td>
                                         <td>349661.67</td>
