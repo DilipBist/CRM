@@ -7770,6 +7770,12 @@ select option:not(:first-child) {
   .hideCol {
     display: none !important;
   }
+  .table_bold_Text {
+    font-size: 12px;
+  }
+  .font14Table table tr td {
+    font-size: 12px !important;
+  }
 }
 
 /* *********************** PRINT MEDIA CODE ******************** */

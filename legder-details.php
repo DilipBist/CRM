@@ -147,7 +147,7 @@ include 'inc/header.php'
             <!-- buttons -->
 
             <div class="trail_print_table_container">
-                <div class=" common_table open_trail_table acc_rep_gen_table">
+                <div class=" common_table open_trail_table font14Table">
                     <div class="trial_print_table_header d-flex align-items-center gap-3 justify-content-between">
                         <div class="trail_logo">
                             <img src="assets/images/logo.svg" alt="">
@@ -201,7 +201,7 @@ include 'inc/header.php'
                                         <tr>
                                             <td colspan="5">
                                                 <div class="table_bold_Text">
-                                                    Part Name: <?= htmlspecialchars($part['part_name']) ?>
+                                                    Branch Name: <?= htmlspecialchars($part['branch']) ?>
                                                 </div>
                                             </td>
                                             <?php foreach ($part['adjustment_values'] as $adj): ?>
@@ -213,7 +213,7 @@ include 'inc/header.php'
                                         <tr>
                                             <td></td>
                                             <td></td>
-                                            <td>Opening Balance</td>
+                                            <td class="wrap_Text">Opening Balance</td>
                                             <td></td>
                                             <td></td>
                                             <td></td>
@@ -226,9 +226,9 @@ include 'inc/header.php'
                                             <tr>
                                                 <td><?= htmlspecialchars($txn['date']) ?></td>
                                                 <td><?= htmlspecialchars($txn['voucher']) ?></td>
-                                                <td><?= htmlspecialchars($txn['type']) ?></td>
+                                                <td class="wrap_Text"><?= htmlspecialchars($txn['type']) ?></td>
                                                 <td></td>
-                                                <td><?= htmlspecialchars($txn['desc']) ?></td>
+                                                <td class="wrap_Text"><?= htmlspecialchars($txn['desc']) ?></td>
                                                 <td><?= htmlspecialchars($txn['debit']) ?></td>
                                                 <td><?= htmlspecialchars($txn['credit']) ?></td>
                                                 <td><?= htmlspecialchars($txn['balance']) ?></td>
@@ -279,10 +279,10 @@ include 'inc/header.php'
                                 <tfoot>
                                     <tr>
                                         <td></td>
-                                        <td>Total</td>
-                                        <td>349661.67</td>
-                                        <td>349661.67</td>
-                                        <td>349661.67</td>
+                                        <td></td>
+                                        <td>Net Total</td>
+                                        <td></td>
+                                        <td></td>
                                         <td>349661.67</td>
                                         <td>349661.67</td>
                                         <td>349661.67</td>

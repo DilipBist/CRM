@@ -999,6 +999,7 @@ $chatConversations = [
 $parts = [
     [
         'part_name' => 'Aalok Hardware - Aal00201',
+        'branch' => 'Head Office',
         'opening_values' => [0.000, 0.000, 0.000],
         'adjustment_values' => [-2.000, -2.000, -2.000],
         'transactions' => [
@@ -1048,10 +1049,11 @@ $parts = [
                 'balance' => '12,892.030 DR'
             ]
         ],
-        'total' => '27,550.00'
+        'total' => '27,550.00' 
     ],
     [
         'part_name' => 'Sharma Traders - SHM00981',
+        'branch' => 'Head Office',
         'opening_values' => [1.000, 1.000, 1.000],
         'adjustment_values' => [2.000, 2.000, 2.000],
         'transactions' => [
