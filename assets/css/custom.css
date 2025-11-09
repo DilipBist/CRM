@@ -321,12 +321,14 @@ img {
   color: #f5f5f5;
   font-weight: 700;
 }
+
 .table_bold_Text {
   font-size: 14px;
   color: var(--text-dark2);
   font-weight: 800;
   font-family: var(--lato);
 }
+
 /* custom container  */
 .l_container {
   width: 99%;
@@ -371,8 +373,8 @@ img {
   }
 }
 
-.ck.ck-editor__main > .ck-editor__editable:not(.ck-focused),
-.ck.ck-toolbar.ck-toolbar_grouping > .ck-toolbar__items {
+.ck.ck-editor__main>.ck-editor__editable:not(.ck-focused),
+.ck.ck-toolbar.ck-toolbar_grouping>.ck-toolbar__items {
   background: var(--whiteFA);
 }
 
@@ -1706,7 +1708,7 @@ SIDE BAR CSS ENDS
   padding-top: 5px;
 }
 
-.project_expense_container_new > h3 {
+.project_expense_container_new>h3 {
   padding: 16px;
   margin: 0;
   background-color: var(--Button-soft-color);
@@ -1757,7 +1759,7 @@ SIDE BAR CSS ENDS
   background-color: var(--text-85);
 }
 
-.attach_file_info > h4 {
+.attach_file_info>h4 {
   font-size: 14px;
   color: var(--text-dark2);
   font-family: var(--lato);
@@ -1770,7 +1772,7 @@ SIDE BAR CSS ENDS
   margin-top: 20px;
 }
 
-.attach_file_info > h4 span {
+.attach_file_info>h4 span {
   color: var(--red);
 }
 
@@ -1821,7 +1823,7 @@ SIDE BAR CSS ENDS
   height: 100%;
 }
 
-.lb_monthly_update > p {
+.lb_monthly_update>p {
   font-size: clamp(16px, 1.2vw, 18px);
 }
 
@@ -2034,7 +2036,7 @@ SIDE BAR CSS ENDS
   height: 8px;
 }
 
-.week_names > div {
+.week_names>div {
   width: 140px;
 }
 
@@ -2075,18 +2077,12 @@ SIDE BAR CSS ENDS
   overflow: hidden;
 }
 
-.labour_monlthly_attendance_container
-  .month_DaysContainer
-  .month_Date:hover
-  .plus_icon {
+.labour_monlthly_attendance_container .month_DaysContainer .month_Date:hover .plus_icon {
   right: 10px;
   transition: all 0.5s ease-in-out;
 }
 
-.labour_monlthly_attendance_container
-  .month_DaysContainer
-  .month_Date
-  .plus_icon {
+.labour_monlthly_attendance_container .month_DaysContainer .month_Date .plus_icon {
   position: absolute;
   top: 10px;
   transition: all 0.3s ease-in-out;
@@ -2238,13 +2234,13 @@ SIDE BAR CSS ENDS
   background: rgba(0, 0, 0, 0.6);
 }
 
-.attendance_form > h4 {
+.attendance_form>h4 {
   color: var(--text-dark2, #141414);
   font-size: 18px;
   font-weight: 700;
 }
 
-.attendance_form > p {
+.attendance_form>p {
   color: var(--text-5C, #5c5c5c);
   font-size: 14px;
 }
@@ -2291,7 +2287,7 @@ SIDE BAR CSS ENDS
   gap: 28px;
 }
 
-.track_list_container > div {
+.track_list_container>div {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2552,7 +2548,7 @@ SIDE BAR CSS ENDS
   font-weight: 700;
 }
 
-.voucher_print_container table tbody tr p > span {
+.voucher_print_container table tbody tr p>span {
   font-weight: 400;
 }
 
@@ -2805,23 +2801,23 @@ SIDE BAR CSS ENDS
   border-bottom: 1px solid var(--Neutral-Separator);
 }
 
-.profile_popup_content .profile__detail > img,
-.notifcationpopup_content .profile__detail > img {
+.profile_popup_content .profile__detail>img,
+.notifcationpopup_content .profile__detail>img {
   height: 40px;
   width: 40px;
   border-radius: 50%;
   object-fit: cover;
 }
 
-.profile_popup_content .profile__detail > div,
-.notifcationpopup_content .profile__detail > div {
+.profile_popup_content .profile__detail>div,
+.notifcationpopup_content .profile__detail>div {
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
 
-.profile_popup_content .profile__detail > div a,
-.notifcationpopup_content .profile__detail > div a {
+.profile_popup_content .profile__detail>div a,
+.notifcationpopup_content .profile__detail>div a {
   color: var(--text-5C, #5c5c5c);
   font-size: 14px;
   font-style: normal;
@@ -2829,8 +2825,8 @@ SIDE BAR CSS ENDS
   line-height: 16px;
 }
 
-.profile_popup_content .profile__detail > div h5,
-.notifcationpopup_content .profile__detail > div h5 {
+.profile_popup_content .profile__detail>div h5,
+.notifcationpopup_content .profile__detail>div h5 {
   font-size: 14px;
   font-weight: 600;
   line-height: 16px;
@@ -2839,8 +2835,8 @@ SIDE BAR CSS ENDS
   padding: 0;
 }
 
-.profile_popup_content .profile__detail > div p,
-.notifcationpopup_content .profile__detail > div p {
+.profile_popup_content .profile__detail>div p,
+.notifcationpopup_content .profile__detail>div p {
   color: var(--neutral-primay);
   font-size: 14px;
   font-weight: 700;
@@ -2851,8 +2847,8 @@ SIDE BAR CSS ENDS
   flex-shrink: 0;
 }
 
-.profile_popup_content .profile__detail > div p::before,
-.notifcationpopup_content .profile__detail > div p::before {
+.profile_popup_content .profile__detail>div p::before,
+.notifcationpopup_content .profile__detail>div p::before {
   height: 6px;
   width: 6px;
   border-radius: 13px;
@@ -2864,8 +2860,8 @@ SIDE BAR CSS ENDS
   flex-shrink: 0;
 }
 
-.profile_popup_content > a,
-.notifcationpopup_content > a {
+.profile_popup_content>a,
+.notifcationpopup_content>a {
   padding: 16px 8px;
   border-bottom: 1px solid var(--Neutral-Separator);
   width: 100%;
@@ -2878,11 +2874,11 @@ SIDE BAR CSS ENDS
   color: var(--text-dark2);
 }
 
-.profile_popup_content > a:hover {
+.profile_popup_content>a:hover {
   background: var(--active-bg);
 }
 
-.profile_popup_content > a:last-child {
+.profile_popup_content>a:last-child {
   border-bottom: 0;
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -2897,7 +2893,7 @@ SIDE BAR CSS ENDS
   right: 10px;
 }
 
-.main_profile > img {
+.main_profile>img {
   height: 30px;
   width: 30px;
   object-fit: cover;
@@ -3314,7 +3310,7 @@ DASHBORD PAGE CSS STATS
   margin: 0;
 }
 
-.payment_card .payment_small_title > div {
+.payment_card .payment_small_title>div {
   color: #828690;
   font-family: Poppins;
   font-size: 14px;
@@ -3393,7 +3389,7 @@ DASHBORD PAGE CSS STATS
 .fourth_chart_table_container {
   margin-top: 28px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 28px;
 }
 
@@ -4542,14 +4538,14 @@ select option:not(:first-child) {
   cursor: pointer;
 }
 
-.foucus_popup .selectable_data > div {
+.foucus_popup .selectable_data>div {
   padding: 8px 16px;
   font-size: 14px;
   color: var(--text-dark2);
   cursor: pointer;
 }
 
-.foucus_popup .selectable_data > div:hover {
+.foucus_popup .selectable_data>div:hover {
   background-color: var(--active-bg);
 }
 
@@ -5040,11 +5036,7 @@ select option:not(:first-child) {
   height: 40px;
 }
 
-.playback_data_container
-  .body
-  form
-  .monthly_purchase_heading
-  #dateRangePicker::placeholder {
+.playback_data_container .body form .monthly_purchase_heading #dateRangePicker::placeholder {
   color: var(--text-85);
   font-size: 14px;
   font-weight: 400;
@@ -5877,7 +5869,7 @@ select option:not(:first-child) {
   width: 100% !important;
 }
 
-.document_upload > div {
+.document_upload>div {
   width: 100%;
 }
 
@@ -6152,6 +6144,7 @@ select option:not(:first-child) {
   display: flex;
   gap: 16px;
 }
+
 .chat_profile_search_container {
   position: sticky;
   top: 0;
@@ -6215,7 +6208,7 @@ select option:not(:first-child) {
   font-size: 14px;
 }
 
-.chat_box_container .chat_box_left > h2 {
+.chat_box_container .chat_box_left>h2 {
   font-size: 18px;
   color: #202c4b;
   font-weight: 600;
@@ -6361,7 +6354,7 @@ select option:not(:first-child) {
   padding: 10px 16px;
 }
 
-.right_chat_content_wrapper .chat_content > p {
+.right_chat_content_wrapper .chat_content>p {
   margin: 0;
   color: #6b7280;
   border-radius: 16px 16px 16px 0;
@@ -6374,7 +6367,7 @@ select option:not(:first-child) {
   font-weight: 400;
 }
 
-.right_chat_content_wrapper .right_chat .chat_content > p {
+.right_chat_content_wrapper .right_chat .chat_content>p {
   margin-left: auto;
   border-radius: 16px 16px 0 16px;
 }
@@ -6429,9 +6422,11 @@ select option:not(:first-child) {
   width: calc(100% - 705px);
   border-top: 1px solid #e5e7eb;
 }
+
 .chat_box_msg_type_container .input_box {
   position: relative;
 }
+
 .mic_Svg {
   position: absolute;
   top: 50%;
@@ -6439,6 +6434,7 @@ select option:not(:first-child) {
   transform: translateY(-50%);
   cursor: pointer;
 }
+
 .chat_box_msg_type_container .input_box input {
   border-radius: 8px;
   background: #f8f9fa;
@@ -6450,12 +6446,14 @@ select option:not(:first-child) {
   padding-right: 185px;
   width: 100%;
 }
+
 .chat_box_msg_type_container .input_box input::placeholder {
   color: #6b7280;
   font-weight: 400;
   font-size: 14px;
   font-family: var(--inter);
 }
+
 .input_Extra_Feilds {
   display: flex;
   align-items: center;
@@ -6465,12 +6463,14 @@ select option:not(:first-child) {
   right: 16px;
   transform: translateY(-50%);
 }
+
 .input_Extra_Feilds .emoj,
 .input_Extra_Feilds .file_add,
 .input_Extra_Feilds .dot,
 .input_Extra_Feilds button {
   cursor: pointer;
 }
+
 .chat_box_msg_type_container button {
   border-radius: 8px;
   background-color: var(--neutral-primay);
@@ -6482,6 +6482,7 @@ select option:not(:first-child) {
   justify-content: center;
   border: 1px solid var(--neutral-primay);
 }
+
 .chat_profile_verlay {
   position: fixed;
   top: 0;
@@ -6493,6 +6494,7 @@ select option:not(:first-child) {
   background-color: var(--common-pupbg);
   display: none;
 }
+
 .closeChatProfileBtn {
   position: absolute;
   top: 20px;
@@ -6500,6 +6502,7 @@ select option:not(:first-child) {
   cursor: pointer;
   display: none;
 }
+
 /* chart search box css  */
 
 /* ******************************** CHAT PAGE CSS ENDS ****************** */
@@ -6524,8 +6527,8 @@ select option:not(:first-child) {
   width: max-content;
 }
 
-.ck-rounded-corners .ck.ck-editor__main > .ck-editor__editable,
-.ck.ck-editor__main > .ck-editor__editable.ck-rounded-corners {
+.ck-rounded-corners .ck.ck-editor__main>.ck-editor__editable,
+.ck.ck-editor__main>.ck-editor__editable.ck-rounded-corners {
   border-bottom-left-radius: 8px !important;
   border-bottom-right-radius: 8px !important;
   border: 1px solid var(--whiteEB, #ebebeb) !important;
@@ -6717,14 +6720,11 @@ select option:not(:first-child) {
   width: 90%;
   border-top: 3px dashed #ebebeb;
   z-index: 1;
-  border-image: repeating-linear-gradient(
-      to right,
+  border-image: repeating-linear-gradient(to right,
       #ebebeb 0,
       #ebebeb 10px,
       transparent 10px,
-      transparent 20px
-    )
-    1;
+      transparent 20px) 1;
 }
 
 .registration_title {
@@ -6908,10 +6908,8 @@ select option:not(:first-child) {
   background: transparent;
 }
 
-.vehicle_list_popup_outer_bg
-  .ck.ck-editor__main
-  > .ck-editor__editable:not(.ck-focused),
-.ck.ck-toolbar.ck-toolbar_grouping > .ck-toolbar__items {
+.vehicle_list_popup_outer_bg .ck.ck-editor__main>.ck-editor__editable:not(.ck-focused),
+.ck.ck-toolbar.ck-toolbar_grouping>.ck-toolbar__items {
   background: transparent;
 }
 
@@ -7194,7 +7192,7 @@ select option:not(:first-child) {
   border-radius: 4px;
 }
 
-.ser_type > div {
+.ser_type>div {
   font-size: 14px;
   color: var(--whiteFC);
   font-weight: 600;
@@ -7344,6 +7342,365 @@ select option:not(:first-child) {
 
 /* *************** LIVE LOCATION PAGE CSS ENDS *************** */
 
+/* =============== Supervisor Dashboard CSS STARTS =============== */
+
+.supervisor_top_chart_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: clamp(16px, 3vw, 38px);
+  font-family: var(--inter);
+}
+
+.supervisor_top_chart_container .light_blue {
+  background: #e3f5ff;
+}
+
+.supervisor_top_chart_container .light_grey {
+  background: #e5ecf6;
+}
+
+.supervisor_top_chart_container .c_div {
+  padding: clamp(16px, 3vw, 24px);
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.supervisor_top_chart_container .left_content_div h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-dark2);
+  margin: 0;
+}
+
+.supervisor_top_chart_container .left_content_div h5 {
+  font-size: clamp(16px, 2vw, 18px);
+  font-weight: 800;
+  color: var(--text-dark2);
+  margin: 0;
+  font-family: var(--lato);
+  padding-top: 8px;
+}
+
+.supervisor_top_chart_container .left_content_div p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #45556c;
+  margin: 0;
+  padding-top: 10px;
+}
+
+.supervisor_top_chart_container .right_content_div {
+  height: 36px;
+  width: 36px;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.supervisor_top_chart_container .right_content_div.light_orange {
+  background: #fff7ed;
+}
+
+.supervisor_top_chart_container .right_content_div.light_green {
+  background: #f0fdf4;
+}
+
+.supervisor_chart_container .weekly_chart,
+.supervisor_chart_container .bujet_chart {
+  background: var(--white);
+  border-radius: 14px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+  padding: 25px 45px 25px 25px;
+}
+
+.supervisor_chart_container .weekly_chart h3,
+.supervisor_chart_container .bujet_chart h3 {
+  margin: 0 0 20px 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-dark2);
+}
+
+.supervisor_chart_container .weekly_chart canvas {
+  width: 100%;
+  height: 320px !important;
+}
+
+.supervisor_chart_container .bujet_chart canvas {
+  height: 280px !important;
+}
+
+.labour_chart_container canvas {
+  height: 180px !important;
+  margin-top: 20px;
+}
+.labour_chart_container  h4{
+  color: #45556C;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;;
+}
+.labour_chart_container button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 8px;
+  background-color: var(--neutral-primay);
+  color: var(--white);
+  padding: 8px 16px;
+  border: none;
+  margin-top: 20px;
+  border-radius: 12px;
+  font-size: 16px;
+}
+.custom-legend {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 12px;
+  font-size: 13px;
+  color: #333;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.legend-item svg {
+  width: 16px;
+  height: 16px;
+}
+
+.active_project_Container {
+  padding: 24px;
+  border-radius: 14px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: var(--white);
+}
+
+.active_project_Container h4 {
+  font-size: 14px;
+  margin-bottom: 24px;
+  color: var(--text-dark2);
+  font-weight: 400;
+}
+
+.active_project_table table thead tr th {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-dark2);
+  padding: 12px 16px;
+  border: 0;
+  border-bottom: 1px solid var(--Neutral-Separator, #e9eaeb);
+  background: var(--Button-soft-color, #ccddeb);
+}
+
+.active_project_table table thead tr th:first-child {
+  border-top-left-radius: 8px !important;
+}
+
+.active_project_table table thead tr th:last-child {
+  border-top-right-radius: 8px !important;
+}
+
+.task_progress meter {
+  width: 80px;
+  height: 12px;
+  border-radius: 10px;
+}
+
+/* WebKit browsers (Chrome, Safari, Edge) */
+.task_progress meter::-webkit-meter-bar {
+  background: rgba(3, 2, 19, 0.2);
+  border-radius: 10px;
+}
+
+.task_progress meter::-webkit-meter-optimum-value {
+  background: #030213;
+  border-radius: 10px;
+}
+
+.task_progress meter::-webkit-meter-suboptimum-value {
+  background: #030213;
+}
+
+.task_progress meter::-webkit-meter-even-less-good-value {
+  background: #030213;
+}
+
+/* Firefox */
+.task_progress meter::-moz-meter-bar {
+  background: #030213;
+  border-radius: 10px;
+}
+
+.task_progress,
+.table_txt {
+  color: #45556C;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.active_project_table table tr td button.green {
+  display: flex;
+  height: 22px;
+  padding: 2px 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 8px;
+  border: 1px solid #B9F8CF;
+  background: #DCFCE7;
+  color: #016630;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.active_project_table table tr td button.red {
+  display: flex;
+  height: 22px;
+  padding: 2px 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 8px;
+  border: 1px solid #FFC9C9;
+  background: #FFE2E2;
+  color: #9F0712;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.active_project_table table tr td button.orange {
+  display: flex;
+  height: 22px;
+  padding: 2px 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 8px;
+  border: 1px solid #FFD6A7;
+  background: #FFEDD4;
+  color: #9F2D00;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.active_project_table table tbody tr td {
+  color: #0A0A0A;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  padding: 8px;
+}
+
+.right_labour_management {
+  border-radius: 14px;
+  border: 1px solid #E2E8F0;
+  background: #FFF;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.10), 0 2px 4px -2px rgba(0, 0, 0, 0.10);
+  padding: clamp(16px, 3vw, 24px);
+}
+
+.right_labour_management h4 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 0;
+  color: #1D293D;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.right_labour_management .total_labour_tag {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px;
+  border-radius: 10px;
+  background: var(--Button-soft-color, #CCDDEB);
+  margin-top: 30px;
+}
+
+.right_labour_management .total_labour_tag p {
+  color: #45556C;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+.right_labour_management .total_labour_tag h4 {
+  font-size: 14px;
+  color: var(--text-dark2);
+  font-weight: 400;
+}
+
+.labour_track_container .labour_present {
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #B9F8CF;
+  background: #F0FDF4;
+}
+
+.labour_track_container .labour_absent {
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #FFC9C9;
+  background: #FEF2F2;
+}
+
+.labour_track_container .labour_present h4 {
+  color: #016630;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.labour_track_container .labour_absent h4 {
+  color: #9F0712;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.labour_track_container .labour_present p {
+  color: #00A63E;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
+  padding-top: 8px;
+}
+
+.labour_track_container .labour_absent p {
+  color: #E7000B;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
+  padding-top: 8px;
+}
+
+/*=============== Supervisor Dashboard CSS ENDS ===============  */
+
 /* *********************** PRINT MEDIA CODE ******************** */
 /* vocuhar print css  */
 .prit_logo {
@@ -7411,7 +7768,7 @@ select option:not(:first-child) {
   border-top: 1px solid var(--Icon-color);
 }
 
-.payment_print_footer > p,
+.payment_print_footer>p,
 .payment_print_footer p {
   color: #000;
   font-size: 10px;
@@ -7424,7 +7781,7 @@ select option:not(:first-child) {
   max-width: 320px;
 }
 
-.payment_print_footer > p:first-child {
+.payment_print_footer>p:first-child {
   margin-top: 10px;
 }
 
@@ -7508,6 +7865,7 @@ select option:not(:first-child) {
 
 /* vocuhar print css   ends*/
 @media print {
+
   /* Hide everything on the page */
   body * {
     visibility: hidden;
@@ -7770,9 +8128,11 @@ select option:not(:first-child) {
   .hideCol {
     display: none !important;
   }
+
   .table_bold_Text {
     font-size: 12px;
   }
+
   .font14Table table tr td {
     font-size: 12px !important;
   }
@@ -7887,9 +8247,11 @@ select option:not(:first-child) {
   .track_profile_container {
     width: 260px;
   }
+
   .chat_box_container .chat_box_left {
     width: auto;
   }
+
   .chat_box_msg_type_container {
     width: calc(100% - 320px);
   }
@@ -7950,6 +8312,7 @@ select option:not(:first-child) {
     background-color: var(--white);
     z-index: 5;
   }
+
   .chat_box_msg_type_container {
     width: 95%;
     right: auto;
@@ -8016,10 +8379,7 @@ select option:not(:first-child) {
     height: 320px;
   }
 
-  .labour_monlthly_attendance_container
-    .month_DaysContainer
-    .month_Date
-    .plus_icon {
+  .labour_monlthly_attendance_container .month_DaysContainer .month_Date .plus_icon {
     right: 10px;
   }
 
@@ -8057,11 +8417,13 @@ select option:not(:first-child) {
   .pb36 {
     padding-bottom: 16px;
   }
+
   .chat_box_container .chat_box_left {
     width: unset;
     width: 100%;
     padding: 0;
   }
+
   .chat_box_right {
     position: absolute;
     z-index: 100;
@@ -8073,18 +8435,23 @@ select option:not(:first-child) {
     height: 80vh;
     border-radius: 10px;
   }
+
   .input_Extra_Feilds {
     gap: 10px;
   }
-  .right_chat_content_wrapper .chat_content > p {
+
+  .right_chat_content_wrapper .chat_content>p {
     max-width: 95%;
   }
+
   .chat_box_msg_type_container .input_box input {
     padding-right: 140px;
   }
+
   .chat_profile_verlay.active {
     display: block;
   }
+
   .closeChatProfileBtn {
     display: flex;
   }
@@ -8131,7 +8498,7 @@ select option:not(:first-child) {
     height: 320px;
   }
 
-  .track_list_container > div {
+  .track_list_container>div {
     width: max-content;
     max-width: 420px;
     width: 100%;

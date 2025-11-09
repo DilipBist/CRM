@@ -1820,3 +1820,204 @@ function initChatSystem() {
   // Run whenever the window is resized
   window.addEventListener("resize", handleScreenSize);
 }
+
+// supervisor dashboard charts
+// weekly task chart
+const taskChart = document.getElementById("taskChart");
+if (taskChart) {
+  const ctx = taskChart.getContext("2d");
+  new Chart(ctx, {
+    type: "bar",
+    data: {
+      labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+      datasets: [
+        {
+          label: "Completed",
+          data: [13, 16, 18, 17, 20, 8, 5],
+          backgroundColor: "#10B981",
+          barPercentage: 0.8,
+          categoryPercentage: 0.8,
+        },
+        {
+          label: "Scheduled",
+          data: [15, 17, 19, 18, 19, 10, 6],
+          backgroundColor: "#94A3B8",
+          barPercentage: 0.8,
+          categoryPercentage: 0.8,
+        },
+      ],
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      scales: {
+        x: {
+          grid: { display: false },
+          ticks: {
+            color: "#64748B",
+            font: { size: 12 },
+          },
+        },
+        y: {
+          beginAtZero: true,
+          grid: {
+            color: "#eee",
+            drawBorder: false,
+          },
+          ticks: {
+            stepSize: 5,
+            color: "#64748B",
+            font: { size: 12 },
+          },
+        },
+      },
+      plugins: {
+        legend: {
+          position: "bottom",
+          labels: {
+            usePointStyle: true,
+            pointStyle: "rectRounded",
+            boxWidth: 10,
+            boxHeight: 10,
+            color: "#555",
+            padding: 15,
+            font: { size: 14 },
+          },
+        },
+      },
+    },
+  });
+}
+
+// Labour management weekly attendance chart
+const labAttChart = document.getElementById("labourChart");
+if (labAttChart) {
+  const ctx = labAttChart.getContext("2d");
+  new Chart(ctx, {
+    type: "bar",
+    data: {
+      labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+      datasets: [
+        {
+          label: "Present",
+          data: [13, 16, 18, 17, 20, 8, 5],
+          backgroundColor: "#CCDDEB",
+          barPercentage: 0.8,
+          categoryPercentage: 0.8,
+        }
+      ],
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      scales: {
+        x: {
+          grid: { display: false },
+          ticks: {
+            color: "#666",
+            font: { size: 12 },
+          },
+        },
+        y: {
+          beginAtZero: true,
+          grid: {
+            color: "#eee",
+            drawBorder: false,
+          },
+          ticks: {
+            stepSize: 5,
+            color: "#666",
+            font: { size: 12 },
+          },
+        },
+      },
+      plugins: { legend: { display: false } },
+    },
+  });
+}
+
+// Budjet trackingn chart
+const BudjetChart = document.getElementById("budgetChart");
+if (BudjetChart) {
+  const ctx = BudjetChart.getContext("2d");
+  new Chart(ctx, {
+    type: "line",
+    data: {
+      labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+      datasets: [
+        {
+          label: "Budget",
+          data: [480, 550, 500, 600, 650, 610],
+          borderColor: "#3B82F6",
+          backgroundColor: "transparent",
+          tension: 0.4, // smooth curve
+          borderWidth: 2,
+          pointBackgroundColor: "#fff",
+          pointBorderColor: "#2196F3",
+          pointBorderWidth: 2,
+          pointRadius: 4,
+        },
+        {
+          label: "Spent",
+          data: [460, 520, 480, 590, 640, 600],
+          borderColor: "#F97316",
+          backgroundColor: "transparent",
+          tension: 0.4,
+          borderWidth: 2,
+          pointBackgroundColor: "#fff",
+          pointBorderColor: "#FB8C00",
+          pointBorderWidth: 2,
+          pointRadius: 4,
+        },
+      ],
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      scales: {
+        x: {
+          grid: { color: "#eee", borderDash: [6, 3] },
+          ticks: { color: "#64748B", font: { size: 12 } },
+        },
+        y: {
+          beginAtZero: true,
+          grid: { color: "#eee", borderDash: [6, 3] },
+          ticks: { stepSize: 200, color: "#64748B", font: { size: 12 } },
+        },
+      },
+      plugins: { legend: { display: false } },
+    },
+  });
+}
+// Custom legend with SVG icons
+const legendContainer = document.getElementById("chartLegend");
+if (legendContainer) {
+  legendContainer.innerHTML = `
+      <div class="legend-item" data-dataset="0">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <g clip-path="url(#clip0_21257_91950)">
+            <path d="M0 7.00033H4.66667M4.66667 7.00033C4.66667 6.38149 4.9125 5.78799 5.35008 5.35041C5.78767 4.91282 6.38116 4.66699 7 4.66699C7.61884 4.66699 8.21233 4.91282 8.64992 5.35041C9.0875 5.78799 9.33333 6.38149 9.33333 7.00033M4.66667 7.00033C4.66667 7.61916 4.9125 8.21266 5.35008 8.65024C5.78767 9.08783 6.38116 9.33366 7 9.33366C7.61884 9.33366 8.21233 9.08783 8.64992 8.65024C9.0875 8.21266 9.33333 7.61916 9.33333 7.00033M9.33333 7.00033H14" stroke="#3B82F6" stroke-width="1.75"/>
+          </g>
+          <defs>
+            <clipPath id="clip0_21257_91950">
+              <rect width="14" height="14" fill="white"/>
+            </clipPath>
+          </defs>
+        </svg>
+        <span style="color: #3B82F6; font-size: 16px;">Budget</span>
+      </div>
+      <div class="legend-item" data-dataset="1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <g clip-path="url(#clip0_21257_91955)">
+            <path d="M0 7.00033H4.66667M4.66667 7.00033C4.66667 6.38149 4.9125 5.78799 5.35008 5.35041C5.78767 4.91282 6.38116 4.66699 7 4.66699C7.61884 4.66699 8.21233 4.91282 8.64992 5.35041C9.0875 5.78799 9.33333 6.38149 9.33333 7.00033M4.66667 7.00033C4.66667 7.61916 4.9125 8.21266 5.35008 8.65024C5.78767 9.08783 6.38116 9.33366 7 9.33366C7.61884 9.33366 8.21233 9.08783 8.64992 8.65024C9.0875 8.21266 9.33333 7.61916 9.33333 7.00033M9.33333 7.00033H14" stroke="#F97316" stroke-width="1.75"/>
+          </g>
+          <defs>
+            <clipPath id="clip0_21257_91955">
+              <rect width="14" height="14" fill="white"/>
+            </clipPath>
+          </defs>
+        </svg>
+        <span style="color: #F97316; font-size: 16px;">Spent</span>
+      </div>
+    `;
+}
