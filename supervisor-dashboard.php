@@ -283,6 +283,79 @@ include 'inc/header.php'
                                     </div>
                                 </div>
                             </div>
+
+
+                            <div class="att_work_time_container mt-4">
+                                <h4>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <g clip-path="url(#clip0_21257_92563)">
+                                            <path d="M10 5V10L13.3333 11.6667" stroke="#314158" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M10.0013 18.3337C14.6037 18.3337 18.3346 14.6027 18.3346 10.0003C18.3346 5.39795 14.6037 1.66699 10.0013 1.66699C5.39893 1.66699 1.66797 5.39795 1.66797 10.0003C1.66797 14.6027 5.39893 18.3337 10.0013 18.3337Z" stroke="#314158" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_21257_92563">
+                                                <rect width="20" height="20" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    Attendance & Work Time
+                                </h4>
+
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="box">
+                                            <h4>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                    <path d="M6.66797 11.3337L10.0013 8.00033L6.66797 4.66699" stroke="#00A63E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M10 8H2" stroke="#00A63E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M10 2H12.6667C13.0203 2 13.3594 2.14048 13.6095 2.39052C13.8595 2.64057 14 2.97971 14 3.33333V12.6667C14 13.0203 13.8595 13.3594 13.6095 13.6095C13.3594 13.8595 13.0203 14 12.6667 14H10" stroke="#00A63E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                                Clock In
+                                            </h4>
+                                            <p>07:45 AM</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="box2">
+                                            <h4>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                    <path d="M10.668 11.3337L14.0013 8.00033L10.668 4.66699" stroke="#F54900" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M14 8H6" stroke="#F54900" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M6 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V3.33333C2 2.97971 2.14048 2.64057 2.39052 2.39052C2.64057 2.14048 2.97971 2 3.33333 2H6" stroke="#F54900" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                                Clock Out
+                                            </h4>
+                                            <p>In Progress</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="box">
+                                            <h4>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                    <path d="M6.66797 11.3337L10.0013 8.00033L6.66797 4.66699" stroke="#00A63E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M10 8H2" stroke="#00A63E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M10 2H12.6667C13.0203 2 13.3594 2.14048 13.6095 2.39052C13.8595 2.64057 14 2.97971 14 3.33333V12.6667C14 13.0203 13.8595 13.3594 13.6095 13.6095C13.3594 13.8595 13.0203 14 12.6667 14H10" stroke="#00A63E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                                Clock In
+                                            </h4>
+                                            <p>07:45 AM</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="box">
+                                            <h4>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                    <path d="M6.66797 11.3337L10.0013 8.00033L6.66797 4.66699" stroke="#00A63E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M10 8H2" stroke="#00A63E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M10 2H12.6667C13.0203 2 13.3594 2.14048 13.6095 2.39052C13.8595 2.64057 14 2.97971 14 3.33333V12.6667C14 13.0203 13.8595 13.3594 13.6095 13.6095C13.3594 13.8595 13.0203 14 12.6667 14H10" stroke="#00A63E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                                Clock In
+                                            </h4>
+                                            <p>07:45 AM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-5">

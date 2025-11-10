@@ -7440,13 +7440,16 @@ select option:not(:first-child) {
   height: 180px !important;
   margin-top: 20px;
 }
-.labour_chart_container  h4{
+
+.labour_chart_container h4 {
   color: #45556C;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  ;
 }
-.labour_chart_container button{
+
+.labour_chart_container button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7460,6 +7463,7 @@ select option:not(:first-child) {
   border-radius: 12px;
   font-size: 16px;
 }
+
 .custom-legend {
   display: flex;
   justify-content: center;
@@ -7697,6 +7701,69 @@ select option:not(:first-child) {
   line-height: 24px;
   margin: 0;
   padding-top: 8px;
+}
+
+.att_work_time_container {
+  padding: clamp(16px, 3vw, 24px);
+  border-radius: 14px;
+  border: 1px solid #E2E8F0;
+  background: var(--white);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.10), 0 2px 4px -2px rgba(0, 0, 0, 0.10);
+}
+
+.att_work_time_container h4 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #1D293D;
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+
+.att_work_time_container .box {
+  border-radius: 10px;
+  border: 1px solid #B9F8CF;
+  background: #F0FDF4;
+  padding: 14px;
+  height: 100px;
+}
+
+.att_work_time_container .box h4 {
+  color: #016630;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.att_work_time_container .box p {
+  color: #00A63E;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.att_work_time_container .box2 {
+  border-radius: 10px;
+  border: 1px solid #FFD6A7;
+  background: #FFF7ED;
+  height: 100px;
+  padding: 14px;
+}
+
+.att_work_time_container .box2 h4 {
+  color: #9F2D00;
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.att_work_time_container .box2 p {
+  color: #F54900;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px
 }
 
 /*=============== Supervisor Dashboard CSS ENDS ===============  */
