@@ -7416,7 +7416,7 @@ select option:not(:first-child) {
   border-radius: 14px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
-  padding: 25px 45px 25px 25px;
+  padding: clamp(16px, 2vw, 25px) clamp(24px, 3vw, 45px) clamp(16px, 2vw, 25px) clamp(16px, 2vw, 25px);
 }
 
 .supervisor_chart_container .weekly_chart h3,
@@ -7511,11 +7511,11 @@ select option:not(:first-child) {
 }
 
 .active_project_table table thead tr th:first-child {
-  border-top-left-radius: 8px !important;
+  border-top-left-radius: 16px !important;
 }
 
 .active_project_table table thead tr th:last-child {
-  border-top-right-radius: 8px !important;
+  border-top-right-radius: 16px !important;
 }
 
 .task_progress meter {
@@ -7725,7 +7725,6 @@ select option:not(:first-child) {
   border: 1px solid #B9F8CF;
   background: #F0FDF4;
   padding: 14px;
-  height: 100px;
 }
 
 .att_work_time_container .box h4 {
@@ -7747,7 +7746,6 @@ select option:not(:first-child) {
   border-radius: 10px;
   border: 1px solid #FFD6A7;
   background: #FFF7ED;
-  height: 100px;
   padding: 14px;
 }
 
@@ -7764,6 +7762,214 @@ select option:not(:first-child) {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px
+}
+
+.att_work_time_container .box3 {
+  border-radius: 10px;
+  border: 1px solid #BEDBFF;
+  background: #EFF6FF;
+  padding: 14px;
+}
+
+.att_work_time_container .box3 h4 {
+  color: #193CB8;
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.att_work_time_container .box3 p {
+  color: #155DFC;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px
+}
+
+.att_work_time_container .box4 {
+  border-radius: 10px;
+  border: 1px solid #E9D4FF;
+  background: #FAF5FF;
+  padding: 14px;
+}
+
+.att_work_time_container .box4 h4 {
+  color: #6E11B0;
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.att_work_time_container .box4 p {
+  color: #9810FA;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px
+}
+
+.att_work_time_container h5 {
+  color: #45556C;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.activity_list_container .activities h5 {
+  color: #314158;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  margin: 0;
+  margin-bottom: 2px;
+}
+
+.activity_list_container .activities p {
+  color: #62748E;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  margin: 0;
+}
+
+.activity_list_container .activities .right_div p {
+  color: #90A1B9;
+  ;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  margin: 0;
+}
+
+.activity_list_container .activities {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  border-radius: 10px;
+  border: 1px solid #E2E8F0;
+  background: var(--white);
+  padding: 10px 8px;
+}
+
+.activity_list_container .activities .left_div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.site_image_upload_container {
+  padding: clamp(16px, 3vw, 24px);
+  border-radius: 14px;
+  border-radius: 14px;
+  border: 1px solid #E2E8F0;
+  background: var(--white);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.10), 0 2px 4px -2px rgba(0, 0, 0, 0.10);
+}
+
+.site_image_upload_container h4 {
+  color: #1D293D;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.site_image_upload_container button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 100%;
+  background: #1f6feb;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+  position: relative;
+}
+
+.site_image_upload_container button:hover {
+  background: #263448;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.photo-card {
+  border-radius: 10px;
+  border: 1px solid #E2E8F0;
+  padding: 2px;
+  font-size: 12px;
+  background: var(--white);
+}
+
+.photo-card img {
+  width: 100%;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.photo-card .info {
+  margin-top: 4px;
+  padding: 5px;
+}
+
+.photo-card .title {
+  color: #314158;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.photo-card .time {
+  color: #90A1B9;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.site_image_upload_container button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 100%;
+  background: #314158;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+  position: relative;
+}
+
+.site_image_upload_container button:hover {
+  background: #28384e;
+}
+
+.site_image_upload_container button input[type="file"] {
+  position: absolute;
+  opacity: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
 }
 
 /*=============== Supervisor Dashboard CSS ENDS ===============  */

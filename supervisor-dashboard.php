@@ -285,74 +285,175 @@ include 'inc/header.php'
                             </div>
 
 
-                            <div class="att_work_time_container mt-4">
-                                <h4>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                        <g clip-path="url(#clip0_21257_92563)">
-                                            <path d="M10 5V10L13.3333 11.6667" stroke="#314158" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M10.0013 18.3337C14.6037 18.3337 18.3346 14.6027 18.3346 10.0003C18.3346 5.39795 14.6037 1.66699 10.0013 1.66699C5.39893 1.66699 1.66797 5.39795 1.66797 10.0003C1.66797 14.6027 5.39893 18.3337 10.0013 18.3337Z" stroke="#314158" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
-                                        </g>
-                                        <defs>
-                                            <clipPath id="clip0_21257_92563">
-                                                <rect width="20" height="20" fill="white" />
-                                            </clipPath>
-                                        </defs>
-                                    </svg>
-                                    Attendance & Work Time
-                                </h4>
+                            <div class="row g-3 mt-3">
+                                <div class="col-lg-6">
+                                    <div class="att_work_time_container">
+                                        <h4>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                <g clip-path="url(#clip0_21257_92563)">
+                                                    <path d="M10 5V10L13.3333 11.6667" stroke="#314158" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M10.0013 18.3337C14.6037 18.3337 18.3346 14.6027 18.3346 10.0003C18.3346 5.39795 14.6037 1.66699 10.0013 1.66699C5.39893 1.66699 1.66797 5.39795 1.66797 10.0003C1.66797 14.6027 5.39893 18.3337 10.0013 18.3337Z" stroke="#314158" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_21257_92563">
+                                                        <rect width="20" height="20" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            Attendance & Work Time
+                                        </h4>
 
-                                <div class="row g-3">
-                                    <div class="col-md-6">
-                                        <div class="box">
-                                            <h4>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                                    <path d="M6.66797 11.3337L10.0013 8.00033L6.66797 4.66699" stroke="#00A63E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
-                                                    <path d="M10 8H2" stroke="#00A63E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
-                                                    <path d="M10 2H12.6667C13.0203 2 13.3594 2.14048 13.6095 2.39052C13.8595 2.64057 14 2.97971 14 3.33333V12.6667C14 13.0203 13.8595 13.3594 13.6095 13.6095C13.3594 13.8595 13.0203 14 12.6667 14H10" stroke="#00A63E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
-                                                </svg>
-                                                Clock In
-                                            </h4>
-                                            <p>07:45 AM</p>
+                                        <div class="row g-3 mb-3">
+                                            <div class="col-md-6">
+                                                <div class="box">
+                                                    <h4>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                            <path d="M6.66797 11.3337L10.0013 8.00033L6.66797 4.66699" stroke="#00A63E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path d="M10 8H2" stroke="#00A63E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path d="M10 2H12.6667C13.0203 2 13.3594 2.14048 13.6095 2.39052C13.8595 2.64057 14 2.97971 14 3.33333V12.6667C14 13.0203 13.8595 13.3594 13.6095 13.6095C13.3594 13.8595 13.0203 14 12.6667 14H10" stroke="#00A63E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                        Clock In
+                                                    </h4>
+                                                    <p>07:45 AM</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="box2">
+                                                    <h4>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                            <path d="M10.668 11.3337L14.0013 8.00033L10.668 4.66699" stroke="#F54900" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path d="M14 8H6" stroke="#F54900" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path d="M6 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V3.33333C2 2.97971 2.14048 2.64057 2.39052 2.39052C2.64057 2.14048 2.97971 2 3.33333 2H6" stroke="#F54900" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                        Clock Out
+                                                    </h4>
+                                                    <p>In Progress</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="box3">
+                                                    <h4>
+                                                        Avg Work Hours
+                                                    </h4>
+                                                    <p>9.2 hrs</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="box4">
+                                                    <h4>
+                                                        Overtime
+                                                    </h4>
+                                                    <p>2.5 hrs</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <h5>Recent Activity</h5>
+
+                                        <div class="activity_list_container mt-3 d-flex flex-column gap-2">
+                                            <div class="activities">
+                                                <div class="left_div">
+                                                    <div class="icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                            <path d="M5 8.5L7.5 6L5 3.5" stroke="#00C950" stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path d="M7.5 6H1.5" stroke="#00C950" stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path d="M7.5 1.5H9.5C9.76522 1.5 10.0196 1.60536 10.2071 1.79289C10.3946 1.98043 10.5 2.23478 10.5 2.5V9.5C10.5 9.76522 10.3946 10.0196 10.2071 10.2071C10.0196 10.3946 9.76522 10.5 9.5 10.5H7.5" stroke="#00C950" stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                    </div>
+                                                    <div>
+                                                        <h5>Ramesh Kumar</h5>
+                                                        <p>Clocked In</p>
+                                                    </div>
+                                                </div>
+                                                <div class="right_div">
+                                                    <p>07:30 AM</p>
+                                                </div>
+                                            </div>
+                                            <div class="activities">
+                                                <div class="left_div">
+                                                    <div class="icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                            <path d="M5 8.5L7.5 6L5 3.5" stroke="#00C950" stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path d="M7.5 6H1.5" stroke="#00C950" stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path d="M7.5 1.5H9.5C9.76522 1.5 10.0196 1.60536 10.2071 1.79289C10.3946 1.98043 10.5 2.23478 10.5 2.5V9.5C10.5 9.76522 10.3946 10.0196 10.2071 10.2071C10.0196 10.3946 9.76522 10.5 9.5 10.5H7.5" stroke="#00C950" stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                    </div>
+                                                    <div>
+                                                        <h5>Ramesh Kumar</h5>
+                                                        <p>Clocked In</p>
+                                                    </div>
+                                                </div>
+                                                <div class="right_div">
+                                                    <p>07:30 AM</p>
+                                                </div>
+                                            </div>
+                                            <div class="activities">
+                                                <div class="left_div">
+                                                    <div class="icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                            <path d="M8 8.5L10.5 6L8 3.5" stroke="#FF6900" stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path d="M10.5 6H4.5" stroke="#FF6900" stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path d="M4.5 10.5H2.5C2.23478 10.5 1.98043 10.3946 1.79289 10.2071C1.60536 10.0196 1.5 9.76522 1.5 9.5V2.5C1.5 2.23478 1.60536 1.98043 1.79289 1.79289C1.98043 1.60536 2.23478 1.5 2.5 1.5H4.5" stroke="#FF6900" stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                    </div>
+                                                    <div>
+                                                        <h5>Vijay Singh</h5>
+                                                        <p>Clocked Out</p>
+                                                    </div>
+                                                </div>
+                                                <div class="right_div">
+                                                    <p>05:15 PM</p>
+                                                </div>
+                                            </div>
+                                            <div class="activities">
+                                                <div class="left_div">
+                                                    <div class="icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                            <path d="M10.8662 9.00011L6.86619 2.00011C6.77897 1.84621 6.65249 1.71821 6.49965 1.62915C6.34681 1.54009 6.17308 1.49316 5.99619 1.49316C5.81929 1.49316 5.64556 1.54009 5.49272 1.62915C5.33988 1.71821 5.2134 1.84621 5.12619 2.00011L1.12619 9.00011C1.03803 9.15279 0.9918 9.32606 0.99219 9.50237C0.99258 9.67867 1.03957 9.85174 1.12841 10.004C1.21724 10.1563 1.34476 10.2824 1.49803 10.3695C1.65131 10.4566 1.82489 10.5017 2.00119 10.5001H10.0012C10.1766 10.4999 10.3489 10.4536 10.5008 10.3658C10.6527 10.2779 10.7788 10.1517 10.8664 9.99967C10.9541 9.84768 11.0002 9.67531 11.0002 9.49986C11.0001 9.32441 10.9539 9.15206 10.8662 9.00011Z" stroke="#FB2C36" stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path d="M6 4.5V6.5" stroke="#FB2C36" stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path d="M6 8.5H6.005" stroke="#FB2C36" stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                    </div>
+                                                    <div>
+                                                        <h5>Anil Verma</h5>
+                                                        <p>Late Arrival</p>
+                                                    </div>
+                                                </div>
+                                                <div class="right_div">
+                                                    <p>09:20 AM</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
-                                        <div class="box2">
-                                            <h4>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                                    <path d="M10.668 11.3337L14.0013 8.00033L10.668 4.66699" stroke="#F54900" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
-                                                    <path d="M14 8H6" stroke="#F54900" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
-                                                    <path d="M6 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V3.33333C2 2.97971 2.14048 2.64057 2.39052 2.39052C2.64057 2.14048 2.97971 2 3.33333 2H6" stroke="#F54900" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
-                                                </svg>
-                                                Clock Out
-                                            </h4>
-                                            <p>In Progress</p>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="site_image_upload_container">
+                                        <h4>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                <path d="M12.0846 3.33301H7.91797L5.83464 5.83301H3.33464C2.89261 5.83301 2.46868 6.0086 2.15612 6.32116C1.84356 6.63372 1.66797 7.05765 1.66797 7.49967V14.9997C1.66797 15.4417 1.84356 15.8656 2.15612 16.1782C2.46868 16.4907 2.89261 16.6663 3.33464 16.6663H16.668C17.11 16.6663 17.5339 16.4907 17.8465 16.1782C18.159 15.8656 18.3346 15.4417 18.3346 14.9997V7.49967C18.3346 7.05765 18.159 6.63372 17.8465 6.32116C17.5339 6.0086 17.11 5.83301 16.668 5.83301H14.168L12.0846 3.33301Z" stroke="#314158" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M10 13.333C11.3807 13.333 12.5 12.2137 12.5 10.833C12.5 9.4523 11.3807 8.33301 10 8.33301C8.61929 8.33301 7.5 9.4523 7.5 10.833C7.5 12.2137 8.61929 13.333 10 13.333Z" stroke="#314158" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            Site Photo Updates
+                                        </h4>
+
+                                        <div class="photo-grid" id="photo-grid">
+
                                         </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="box">
-                                            <h4>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                                    <path d="M6.66797 11.3337L10.0013 8.00033L6.66797 4.66699" stroke="#00A63E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
-                                                    <path d="M10 8H2" stroke="#00A63E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
-                                                    <path d="M10 2H12.6667C13.0203 2 13.3594 2.14048 13.6095 2.39052C13.8595 2.64057 14 2.97971 14 3.33333V12.6667C14 13.0203 13.8595 13.3594 13.6095 13.6095C13.3594 13.8595 13.0203 14 12.6667 14H10" stroke="#00A63E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
-                                                </svg>
-                                                Clock In
-                                            </h4>
-                                            <p>07:45 AM</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="box">
-                                            <h4>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                                    <path d="M6.66797 11.3337L10.0013 8.00033L6.66797 4.66699" stroke="#00A63E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
-                                                    <path d="M10 8H2" stroke="#00A63E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
-                                                    <path d="M10 2H12.6667C13.0203 2 13.3594 2.14048 13.6095 2.39052C13.8595 2.64057 14 2.97971 14 3.33333V12.6667C14 13.0203 13.8595 13.3594 13.6095 13.6095C13.3594 13.8595 13.0203 14 12.6667 14H10" stroke="#00A63E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
-                                                </svg>
-                                                Clock In
-                                            </h4>
-                                            <p>07:45 AM</p>
-                                        </div>
+                                        <button type="button" id="uploadButton">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M8 2V10" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M11.3346 5.33333L8.0013 2L4.66797 5.33333" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M14 10V12.6667C14 13.0203 13.8595 13.3594 13.6095 13.6095C13.3594 13.8595 13.0203 14 12.6667 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V10" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            Upload Site Photo
+                                            <input
+                                                type="file"
+                                                id="sitePhoto"
+                                                accept="image/*"
+                                                multiple
+                                                aria-label="Upload site photos" />
+                                        </button>
                                     </div>
                                 </div>
                             </div>

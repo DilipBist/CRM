@@ -2021,3 +2021,39 @@ if (legendContainer) {
       </div>
     `;
 }
+
+const sitePhoto = document.getElementById('sitePhoto');
+if (sitePhoto) {
+  sitePhoto.addEventListener('change', function (event) {
+    const files = event.target.files;
+    const grid = document.getElementById('photo-grid');
+
+    for (let file of files) {
+      const reader = new FileReader();
+
+      reader.onload = function (e) {
+        const now = new Date();
+        const options = { month: 'short', day: 'numeric' };
+        const date = now.toLocaleDateString('en-US', options);
+        const time = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+
+        const card = document.createElement('div');
+        card.classList.add('photo-card');
+
+        card.innerHTML = `
+            <img src="${e.target.result}" alt="Uploaded photo">
+            <div class="info">
+              <div class="title">Foundation - ${date}</div>
+              <div class="time">${time}</div>
+            </div>
+          `;
+
+        grid.appendChild(card);
+      };
+
+      reader.readAsDataURL(file);
+    }
+
+    event.target.value = '';
+  });
+}
