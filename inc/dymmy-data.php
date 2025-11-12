@@ -1049,7 +1049,7 @@ $parts = [
                 'balance' => '12,892.030 DR'
             ]
         ],
-        'total' => '27,550.00' 
+        'total' => '27,550.00'
     ],
     [
         'part_name' => 'Sharma Traders - SHM00981',
@@ -1326,7 +1326,8 @@ $groupbyledger = [
         "total" => [
             "openingDebit" => "0.000",
         ]
-    ], [
+    ],
+    [
         "name" => " Leger : Rophan",
         "category" => [
             [
@@ -1338,43 +1339,8 @@ $groupbyledger = [
         "total" => [
             "openingDebit" => "0.000",
         ]
-    ], [
-        "name" => " Leger : Aalok Hardware",
-        "category" => [
-            [
-                "Ledger" => "No Subledger",
-                "sname" => "Aal000201",
-                "openingDebit" => "-2.000",
-            ]
-        ],
-        "total" => [
-            "openingDebit" => "0.000",
-        ]
-    ], [
-        "name" => " Leger : Aalok Hardware",
-        "category" => [
-            [
-                "Ledger" => "No Subledger",
-                "sname" => "Aal000201",
-                "openingDebit" => "-2.000",
-            ]
-        ],
-        "total" => [
-            "openingDebit" => "0.000",
-        ]
-    ], [
-        "name" => " Leger : Aalok Hardware",
-        "category" => [
-            [
-                "Ledger" => "No Subledger",
-                "sname" => "Aal000201",
-                "openingDebit" => "-2.000",
-            ]
-        ],
-        "total" => [
-            "openingDebit" => "0.000",
-        ]
-    ], [
+    ],
+    [
         "name" => " Leger : Aalok Hardware",
         "category" => [
             [
@@ -1387,4 +1353,65 @@ $groupbyledger = [
             "openingDebit" => "0.000",
         ]
     ],
+    [
+        "name" => " Leger : Aalok Hardware",
+        "category" => [
+            [
+                "Ledger" => "No Subledger",
+                "sname" => "Aal000201",
+                "openingDebit" => "-2.000",
+            ]
+        ],
+        "total" => [
+            "openingDebit" => "0.000",
+        ]
+    ],
+    [
+        "name" => " Leger : Aalok Hardware",
+        "category" => [
+            [
+                "Ledger" => "No Subledger",
+                "sname" => "Aal000201",
+                "openingDebit" => "-2.000",
+            ]
+        ],
+        "total" => [
+            "openingDebit" => "0.000",
+        ]
+    ],
+    [
+        "name" => " Leger : Aalok Hardware",
+        "category" => [
+            [
+                "Ledger" => "No Subledger",
+                "sname" => "Aal000201",
+                "openingDebit" => "-2.000",
+            ]
+        ],
+        "total" => [
+            "openingDebit" => "0.000",
+        ]
+    ],
+];
+
+
+$projects = [
+    [
+        "name" => "Downtown Complex - Phase 2",
+        "progress" => 78,
+        "status" => "On Track",
+        "color" => "primaryColor"
+    ],
+    [
+        "name" => "Riverside Apartments - Plumbing",
+        "progress" => 92,
+        "status" => "Ahead",
+        "color" => "successColor"
+    ],
+    [
+        "name" => "Green Valley Homes - Installation",
+        "progress" => 45,
+        "status" => "Behind",
+        "color" => "dangerColor"
+    ]
 ];

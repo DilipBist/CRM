@@ -150,7 +150,9 @@ include 'inc/header.php'
 
     </div>
 </section>
-
+<!-- Vouchar inner popup   -->
+<?php include 'components/vouchar-inner-popup.php' ?>
+<!-- Vouchar inner popup   -->
 
 
 <div class="vouchar-popup-content">

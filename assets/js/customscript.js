@@ -45,6 +45,38 @@ document.addEventListener("DOMContentLoaded", () => {
   setupMultiStepForms();
   initAddVehiclePopup();
   initChatSystem();
+  addLedgerPopup();
+  addGeneralLedgerPopup();
+  // bar chart 
+  createTaskChart("taskChart", {
+    completedColor: "#10B981",
+    scheduledColor: "#94A3B8",
+  }
+  );
+  createTaskChart("taskChart_two", {
+    completedColor: "#51A6ED",
+  });
+  createTaskChart("weeklyCompletionChart", {
+    completedColor: "#3B82F6",
+    scheduledColor: "#94A3B8",
+    labels: ["Week 1", "Week 2", "Week 3", "Week 4"],
+    completedData: [25, 32, 28, 38],
+    completedLabel: 'Completed',
+    scheduledLabel: 'Target',
+    width: 0.9,
+    borderRadius: 5
+  }); 
+  createTaskChart("productivityChart", {
+    completedColor: "#3B82F6",
+    scheduledColor: "#94A3B8",
+    labels: ["Jun", "Jul", "Aug", "Sep", "Oct", "Nov"],
+    completedData: [25, 25, 50, 70, 65, 30],
+    scheduledData: [20, 23, 60, 75, 65, 35],
+    completedLabel: 'Productivity',
+    scheduledLabel: 'Efficiency',
+    width: 0.95,
+    borderRadius: 3
+  });
 
   // ============
   // this this code is just for the page redirect just to show the user the particular page (remove it later)
@@ -871,6 +903,257 @@ function initPurchaseChart() {
   purchaseChart.render();
 }
 
+// =====================  supervisor dashboard charts ==================
+
+// weekly task chart
+function createTaskChart(canvasId, options = {}) {
+  const chartElement = document.getElementById(canvasId);
+  if (!chartElement) return;
+  const ctx = chartElement.getContext("2d");
+
+  // default chart setting 
+  const defaultConfig = {
+    labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+    completedData: [13, 16, 18, 17, 20, 8, 5],
+    scheduledData: [15, 17, 19, 18, 19, 10, 6],
+    completedColor: "#10B981",
+    scheduledColor: "#94A3B8",
+    borderRadius: 0,
+    completedLabel: "Completed",
+    scheduledLabel: "Scheduled",
+    barPercentage: 0.8,
+  };
+
+  const cfg = { ...defaultConfig, ...options };
+
+  return new Chart(ctx, {
+    type: "bar",
+    data: {
+      labels: cfg.labels,
+      datasets: [
+        {
+          label: cfg.completedLabel,
+          data: cfg.completedData,
+          backgroundColor: cfg.completedColor,
+          borderRadius: cfg.borderRadius,
+          barPercentage: cfg.width,
+          categoryPercentage: 0.8,
+        },
+        {
+          label: cfg.scheduledLabel,
+          data: cfg.scheduledData,
+          backgroundColor: cfg.scheduledColor,
+          borderRadius: cfg.borderRadius,
+          barPercentage: cfg.width,
+          categoryPercentage: 0.8,
+        },
+      ],
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      scales: {
+        x: {
+          grid: { display: false },
+          ticks: {
+            color: "#64748B",
+            font: { size: 12 },
+          },
+        },
+        y: {
+          beginAtZero: true,
+          grid: {
+            color: "#eee",
+            drawBorder: false,
+          },
+          ticks: {
+            stepSize: 5,
+            color: "#64748B",
+            font: { size: 12 },
+          },
+        },
+      },
+      plugins: {
+        legend: {
+          position: "bottom",
+          labels: {
+            usePointStyle: true,
+            pointStyle: "rectRounded",
+            boxWidth: 10,
+            boxHeight: 10,
+            color: "#555",
+            padding: 15,
+            font: { size: 14 },
+          },
+        },
+      },
+    },
+  });
+}
+
+
+// Daily Progress Line Chart
+const dailyCtx = document.getElementById("dailyProgressChart")
+if (dailyCtx) {
+  const ctx = dailyCtx.getContext("2d");
+  new Chart(ctx, {
+    type: "line",
+    data: {
+      labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+      datasets: [{
+        label: "Progress %",
+        data: [75, 80, 65, 90, 85, 78, 50],
+        borderColor: "#3B82F6",
+        backgroundColor: "transparent",
+        tension: 0.4,
+        fill: true,
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: { legend: { display: false } },
+      scales: { y: { beginAtZero: true, max: 100 } }
+    }
+  });
+}
+
+
+// Labour management weekly attendance chart
+const labAttChart = document.getElementById("labourChart");
+if (labAttChart) {
+  const ctx = labAttChart.getContext("2d");
+  new Chart(ctx, {
+    type: "bar",
+    data: {
+      labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+      datasets: [
+        {
+          label: "Present",
+          data: [13, 16, 18, 17, 20, 8, 5],
+          backgroundColor: "#CCDDEB",
+          barPercentage: 0.8,
+          categoryPercentage: 0.8,
+        }
+      ],
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      scales: {
+        x: {
+          grid: { display: false },
+          ticks: {
+            color: "#666",
+            font: { size: 12 },
+          },
+        },
+        y: {
+          beginAtZero: true,
+          grid: {
+            color: "#eee",
+            drawBorder: false,
+          },
+          ticks: {
+            stepSize: 5,
+            color: "#666",
+            font: { size: 12 },
+          },
+        },
+      },
+      plugins: { legend: { display: false } },
+    },
+  });
+}
+
+// Budjet trackingn chart
+const BudjetChart = document.getElementById("budgetChart");
+if (BudjetChart) {
+  const ctx = BudjetChart.getContext("2d");
+  new Chart(ctx, {
+    type: "line",
+    data: {
+      labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+      datasets: [
+        {
+          label: "Budget",
+          data: [480, 550, 500, 600, 650, 610],
+          borderColor: "#3B82F6",
+          backgroundColor: "transparent",
+          tension: 0.4, // smooth curve
+          borderWidth: 2,
+          pointBackgroundColor: "#fff",
+          pointBorderColor: "#2196F3",
+          pointBorderWidth: 2,
+          pointRadius: 4,
+        },
+        {
+          label: "Spent",
+          data: [460, 520, 480, 590, 640, 600],
+          borderColor: "#F97316",
+          backgroundColor: "transparent",
+          tension: 0.4,
+          borderWidth: 2,
+          pointBackgroundColor: "#fff",
+          pointBorderColor: "#FB8C00",
+          pointBorderWidth: 2,
+          pointRadius: 4,
+        },
+      ],
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      scales: {
+        x: {
+          grid: { color: "#eee", borderDash: [6, 3] },
+          ticks: { color: "#64748B", font: { size: 12 } },
+        },
+        y: {
+          beginAtZero: true,
+          grid: { color: "#eee", borderDash: [6, 3] },
+          ticks: { stepSize: 200, color: "#64748B", font: { size: 12 } },
+        },
+      },
+      plugins: { legend: { display: false } },
+    },
+  });
+}
+// Custom legend with SVG icons
+const legendContainer = document.getElementById("chartLegend");
+if (legendContainer) {
+  legendContainer.innerHTML = `
+      <div class="legend-item" data-dataset="0">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <g clip-path="url(#clip0_21257_91950)">
+            <path d="M0 7.00033H4.66667M4.66667 7.00033C4.66667 6.38149 4.9125 5.78799 5.35008 5.35041C5.78767 4.91282 6.38116 4.66699 7 4.66699C7.61884 4.66699 8.21233 4.91282 8.64992 5.35041C9.0875 5.78799 9.33333 6.38149 9.33333 7.00033M4.66667 7.00033C4.66667 7.61916 4.9125 8.21266 5.35008 8.65024C5.78767 9.08783 6.38116 9.33366 7 9.33366C7.61884 9.33366 8.21233 9.08783 8.64992 8.65024C9.0875 8.21266 9.33333 7.61916 9.33333 7.00033M9.33333 7.00033H14" stroke="#3B82F6" stroke-width="1.75"/>
+          </g>
+          <defs>
+            <clipPath id="clip0_21257_91950">
+              <rect width="14" height="14" fill="white"/>
+            </clipPath>
+          </defs>
+        </svg>
+        <span style="color: #3B82F6; font-size: 16px;">Budget</span>
+      </div>
+      <div class="legend-item" data-dataset="1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <g clip-path="url(#clip0_21257_91955)">
+            <path d="M0 7.00033H4.66667M4.66667 7.00033C4.66667 6.38149 4.9125 5.78799 5.35008 5.35041C5.78767 4.91282 6.38116 4.66699 7 4.66699C7.61884 4.66699 8.21233 4.91282 8.64992 5.35041C9.0875 5.78799 9.33333 6.38149 9.33333 7.00033M4.66667 7.00033C4.66667 7.61916 4.9125 8.21266 5.35008 8.65024C5.78767 9.08783 6.38116 9.33366 7 9.33366C7.61884 9.33366 8.21233 9.08783 8.64992 8.65024C9.0875 8.21266 9.33333 7.61916 9.33333 7.00033M9.33333 7.00033H14" stroke="#F97316" stroke-width="1.75"/>
+          </g>
+          <defs>
+            <clipPath id="clip0_21257_91955">
+              <rect width="14" height="14" fill="white"/>
+            </clipPath>
+          </defs>
+        </svg>
+        <span style="color: #F97316; font-size: 16px;">Spent</span>
+      </div>
+    `;
+}
+
+
+
+
 // Add the class to the select box
 function initSelectClassAdd() {
   const selects = document.querySelectorAll("select");
@@ -1144,14 +1427,14 @@ function updateDate() {
   });
 }
 
-// make table cells editable
+// make table cells editable and show popup on focus
 function makeCellsEditable() {
   const td = document.querySelectorAll(
     ".printing_vouchar_container .table tbody td"
   );
-  const closeBtn = document.querySelector(".close_focus");
-  const popup = document.querySelector(".foucus_popup");
-  const overlay = document.querySelector(".focus_popup_overlay");
+  const closeBtn = document.querySelector(".vouchar_inner_popup_wrapper .close-btn");
+  const popup = document.querySelector(".vouchar_inner_popup_wrapper");
+
   let focusedCell = null;
 
   if (!td || !closeBtn) return;
@@ -1166,30 +1449,23 @@ function makeCellsEditable() {
 
       if (isFirstChild) {
         popup.classList.add("active");
-        overlay.classList.add("active");
       } else {
         popup.classList.remove("active");
-        overlay.classList.remove("active");
       }
     });
   });
-
   // Close popup
   closeBtn.addEventListener("click", () => {
     popup.classList.remove("active");
-    overlay.classList.remove("active");
   });
 
-  // Clicking a selectable item
-  document.querySelectorAll(".selectable_data div").forEach((item) => {
-    item.addEventListener("click", () => {
-      if (focusedCell) {
-        focusedCell.textContent = item.textContent;
-        popup.classList.remove("active");
-        overlay.classList.remove("active");
-      }
-    });
+  // Close popup on Escape key
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && popup.classList.contains("active")) {
+      popup.classList.remove("active");
+    }
   });
+
 }
 
 // open common voucar popup
@@ -1821,239 +2097,139 @@ function initChatSystem() {
   window.addEventListener("resize", handleScreenSize);
 }
 
-// supervisor dashboard charts
-// weekly task chart
-const taskChart = document.getElementById("taskChart");
-if (taskChart) {
-  const ctx = taskChart.getContext("2d");
-  new Chart(ctx, {
-    type: "bar",
-    data: {
-      labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
-      datasets: [
-        {
-          label: "Completed",
-          data: [13, 16, 18, 17, 20, 8, 5],
-          backgroundColor: "#10B981",
-          barPercentage: 0.8,
-          categoryPercentage: 0.8,
-        },
-        {
-          label: "Scheduled",
-          data: [15, 17, 19, 18, 19, 10, 6],
-          backgroundColor: "#94A3B8",
-          barPercentage: 0.8,
-          categoryPercentage: 0.8,
-        },
-      ],
-    },
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-      scales: {
-        x: {
-          grid: { display: false },
-          ticks: {
-            color: "#64748B",
-            font: { size: 12 },
-          },
-        },
-        y: {
-          beginAtZero: true,
-          grid: {
-            color: "#eee",
-            drawBorder: false,
-          },
-          ticks: {
-            stepSize: 5,
-            color: "#64748B",
-            font: { size: 12 },
-          },
-        },
-      },
-      plugins: {
-        legend: {
-          position: "bottom",
-          labels: {
-            usePointStyle: true,
-            pointStyle: "rectRounded",
-            boxWidth: 10,
-            boxHeight: 10,
-            color: "#555",
-            padding: 15,
-            font: { size: 14 },
-          },
-        },
-      },
-    },
-  });
-}
+// supervisor dashboard 
 
-// Labour management weekly attendance chart
-const labAttChart = document.getElementById("labourChart");
-if (labAttChart) {
-  const ctx = labAttChart.getContext("2d");
-  new Chart(ctx, {
-    type: "bar",
-    data: {
-      labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
-      datasets: [
-        {
-          label: "Present",
-          data: [13, 16, 18, 17, 20, 8, 5],
-          backgroundColor: "#CCDDEB",
-          barPercentage: 0.8,
-          categoryPercentage: 0.8,
-        }
-      ],
-    },
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-      scales: {
-        x: {
-          grid: { display: false },
-          ticks: {
-            color: "#666",
-            font: { size: 12 },
-          },
-        },
-        y: {
-          beginAtZero: true,
-          grid: {
-            color: "#eee",
-            drawBorder: false,
-          },
-          ticks: {
-            stepSize: 5,
-            color: "#666",
-            font: { size: 12 },
-          },
-        },
-      },
-      plugins: { legend: { display: false } },
-    },
-  });
-}
-
-// Budjet trackingn chart
-const BudjetChart = document.getElementById("budgetChart");
-if (BudjetChart) {
-  const ctx = BudjetChart.getContext("2d");
-  new Chart(ctx, {
-    type: "line",
-    data: {
-      labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
-      datasets: [
-        {
-          label: "Budget",
-          data: [480, 550, 500, 600, 650, 610],
-          borderColor: "#3B82F6",
-          backgroundColor: "transparent",
-          tension: 0.4, // smooth curve
-          borderWidth: 2,
-          pointBackgroundColor: "#fff",
-          pointBorderColor: "#2196F3",
-          pointBorderWidth: 2,
-          pointRadius: 4,
-        },
-        {
-          label: "Spent",
-          data: [460, 520, 480, 590, 640, 600],
-          borderColor: "#F97316",
-          backgroundColor: "transparent",
-          tension: 0.4,
-          borderWidth: 2,
-          pointBackgroundColor: "#fff",
-          pointBorderColor: "#FB8C00",
-          pointBorderWidth: 2,
-          pointRadius: 4,
-        },
-      ],
-    },
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-      scales: {
-        x: {
-          grid: { color: "#eee", borderDash: [6, 3] },
-          ticks: { color: "#64748B", font: { size: 12 } },
-        },
-        y: {
-          beginAtZero: true,
-          grid: { color: "#eee", borderDash: [6, 3] },
-          ticks: { stepSize: 200, color: "#64748B", font: { size: 12 } },
-        },
-      },
-      plugins: { legend: { display: false } },
-    },
-  });
-}
-// Custom legend with SVG icons
-const legendContainer = document.getElementById("chartLegend");
-if (legendContainer) {
-  legendContainer.innerHTML = `
-      <div class="legend-item" data-dataset="0">
-        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-          <g clip-path="url(#clip0_21257_91950)">
-            <path d="M0 7.00033H4.66667M4.66667 7.00033C4.66667 6.38149 4.9125 5.78799 5.35008 5.35041C5.78767 4.91282 6.38116 4.66699 7 4.66699C7.61884 4.66699 8.21233 4.91282 8.64992 5.35041C9.0875 5.78799 9.33333 6.38149 9.33333 7.00033M4.66667 7.00033C4.66667 7.61916 4.9125 8.21266 5.35008 8.65024C5.78767 9.08783 6.38116 9.33366 7 9.33366C7.61884 9.33366 8.21233 9.08783 8.64992 8.65024C9.0875 8.21266 9.33333 7.61916 9.33333 7.00033M9.33333 7.00033H14" stroke="#3B82F6" stroke-width="1.75"/>
-          </g>
-          <defs>
-            <clipPath id="clip0_21257_91950">
-              <rect width="14" height="14" fill="white"/>
-            </clipPath>
-          </defs>
-        </svg>
-        <span style="color: #3B82F6; font-size: 16px;">Budget</span>
-      </div>
-      <div class="legend-item" data-dataset="1">
-        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-          <g clip-path="url(#clip0_21257_91955)">
-            <path d="M0 7.00033H4.66667M4.66667 7.00033C4.66667 6.38149 4.9125 5.78799 5.35008 5.35041C5.78767 4.91282 6.38116 4.66699 7 4.66699C7.61884 4.66699 8.21233 4.91282 8.64992 5.35041C9.0875 5.78799 9.33333 6.38149 9.33333 7.00033M4.66667 7.00033C4.66667 7.61916 4.9125 8.21266 5.35008 8.65024C5.78767 9.08783 6.38116 9.33366 7 9.33366C7.61884 9.33366 8.21233 9.08783 8.64992 8.65024C9.0875 8.21266 9.33333 7.61916 9.33333 7.00033M9.33333 7.00033H14" stroke="#F97316" stroke-width="1.75"/>
-          </g>
-          <defs>
-            <clipPath id="clip0_21257_91955">
-              <rect width="14" height="14" fill="white"/>
-            </clipPath>
-          </defs>
-        </svg>
-        <span style="color: #F97316; font-size: 16px;">Spent</span>
-      </div>
-    `;
-}
-
+// upload and display photos with drag-and-drop supervisor dashboard 
 const sitePhoto = document.getElementById('sitePhoto');
-if (sitePhoto) {
-  sitePhoto.addEventListener('change', function (event) {
-    const files = event.target.files;
-    const grid = document.getElementById('photo-grid');
+const uploadButton = document.getElementById('uploadButton');
+const grid = document.getElementById('photo-grid');
 
-    for (let file of files) {
-      const reader = new FileReader();
+function handleFiles(files) {
+  for (const file of files) {
+    const reader = new FileReader();
 
-      reader.onload = function (e) {
-        const now = new Date();
-        const options = { month: 'short', day: 'numeric' };
-        const date = now.toLocaleDateString('en-US', options);
-        const time = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    reader.onload = (e) => {
+      const now = new Date();
+      const date = now.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+      const time = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
 
-        const card = document.createElement('div');
-        card.classList.add('photo-card');
+      const card = document.createElement('div');
+      card.className = 'photo-card';
+      card.innerHTML = `
+        <img src="${e.target.result}" alt="Uploaded photo" loading="lazy">
+        <div class="info">
+          <div class="title">Foundation - ${date}</div>
+          <div class="time">${time}</div>
+        </div>
+        <button class="removeBtn" aria-label="Remove photo">&times;</button>
+      `;
+      grid.appendChild(card);
+    };
 
-        card.innerHTML = `
-            <img src="${e.target.result}" alt="Uploaded photo">
-            <div class="info">
-              <div class="title">Foundation - ${date}</div>
-              <div class="time">${time}</div>
-            </div>
-          `;
+    reader.onerror = () => console.error(`Failed to read file: ${file.name}`);
+    reader.readAsDataURL(file);
+  }
+}
 
-        grid.appendChild(card);
-      };
-
-      reader.readAsDataURL(file);
-    }
-
-    event.target.value = '';
+if (sitePhoto && uploadButton && grid) {
+  sitePhoto.addEventListener('change', (e) => {
+    handleFiles(e.target.files);
+    e.target.value = '';
   });
+
+  grid.addEventListener('click', (e) => {
+    if (e.target.classList.contains('removeBtn')) {
+      e.target.closest('.photo-card').remove();
+    }
+  });
+
+  uploadButton.addEventListener('dragover', (e) => {
+    e.preventDefault();
+    uploadButton.classList.add('dragover');
+  });
+
+  uploadButton.addEventListener('dragleave', () => {
+    uploadButton.classList.remove('dragover');
+  });
+
+  uploadButton.addEventListener('drop', (e) => {
+    e.preventDefault();
+    uploadButton.classList.remove('dragover');
+    handleFiles(e.dataTransfer.files);
+  });
+}
+
+
+
+
+const customSelects = document.querySelectorAll(".vouchar_inner_popup_wrapper .custom-select");
+customSelects.forEach((select) => {
+  const selected = select.querySelector(".selected");
+  const optionsContainer = select.querySelector(".options-container");
+  const searchBox = select.querySelector(".search-box");
+  const optionsList = select.querySelectorAll(".options-list li");
+
+
+  // Initially hide all options
+  optionsList.forEach((o) => (o.style.display = "none"));
+
+  selected.addEventListener("click", () => {
+    optionsContainer.classList.toggle("active");
+    searchBox.value = "";
+    searchBox.focus();
+
+    // Hide all options when opened
+    optionsList.forEach((o) => (o.style.display = "none"));
+  });
+
+  optionsList.forEach((o) => {
+    o.addEventListener("click", () => {
+      selected.textContent = o.textContent;
+      optionsContainer.classList.remove("active");
+    });
+  });
+
+  // Filter options only when searching
+  searchBox.addEventListener("keyup", (e) => {
+    const term = e.target.value.toLowerCase().trim();
+    optionsList.forEach((o) => {
+      const text = o.textContent.toLowerCase();
+      o.style.display = text.includes(term) && term.length > 0 ? "block" : "none";
+    });
+  });
+  // Close dropdown when clicking outside
+  document.addEventListener("click", (e) => {
+    if (!select.contains(e.target)) {
+      optionsContainer.classList.remove("active");
+    }
+  });
+});
+
+
+function addGeneralLedgerPopup() {
+  const addButton = document.querySelector("#First_popup_btn");
+  if (addButton) {
+    const closeBtn = document.querySelector(".vouchar_inner_popup_wrapper2 .close-btn");
+    // Add button action
+    addButton.addEventListener("click", () => {
+      document.querySelector(".vouchar_inner_popup_wrapper2").classList.add("active");
+    });
+    closeBtn.addEventListener("click", () => {
+      document.querySelector(".vouchar_inner_popup_wrapper2").classList.remove("active");
+    });
+  }
+}
+
+function addLedgerPopup() {
+  const addButton = document.querySelector("#second_popup_btn");
+  if (addButton) {
+    const closeBtn = document.querySelector(".vouchar_inner_popup_wrapper3 .close-btn");
+    // Add button action
+    addButton.addEventListener("click", () => {
+      document.querySelector(".vouchar_inner_popup_wrapper3").classList.add("active");
+    });
+    closeBtn.addEventListener("click", () => {
+      document.querySelector(".vouchar_inner_popup_wrapper3").classList.remove("active");
+    });
+  }
 }

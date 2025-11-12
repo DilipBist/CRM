@@ -7913,6 +7913,7 @@ select option:not(:first-child) {
   padding: 2px;
   font-size: 12px;
   background: var(--white);
+  position: relative;
 }
 
 .photo-card img {
@@ -7972,7 +7973,429 @@ select option:not(:first-child) {
   cursor: pointer;
 }
 
+.photo-card .removeBtn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: none;
+  color: white;
+  font-size: 18px;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo-card .removeBtn:hover {
+  background-color: rgba(255, 0, 0, 0.8);
+}
+
+#uploadButton.dragover {
+  background: #0056b3;
+  border: 2px dashed white;
+}
+
 /*=============== Supervisor Dashboard CSS ENDS ===============  */
+
+
+/* ******************** VOUCHAR INNER POPUP CSS (JOURNAL, PAYMENT, RECEIPT) ****************** */
+.vouchar_inner_popup_wrapper {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 105;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.vouchar_inner_popup_wrapper2,
+.vouchar_inner_popup_wrapper3 {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 106;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.vouchar_inner_popup_wrapper.active,
+.vouchar_inner_popup_wrapper3.active,
+.vouchar_inner_popup_wrapper2.active {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+  transition: all 0.1s ease-in-out;
+}
+
+.vouchar_inner_popup_wrapper .inner_bg,
+.vouchar_inner_popup_wrapper3 .inner_bg,
+.vouchar_inner_popup_wrapper2 .inner_bg {
+  background-color: var(--white);
+  padding: 6px;
+  border-radius: 12px;
+  min-width: 400px;
+  max-width: 860px;
+  width: 95%;
+}
+
+.vouchar_inner_popup_wrapper .inner_bg .inner_content,
+.vouchar_inner_popup_wrapper3 .inner_bg .inner_content,
+.vouchar_inner_popup_wrapper2 .inner_bg .inner_content {
+  background-color: var(--white);
+  padding: 0 24px 24px 24px;
+  border-radius: 12px;
+  border: 1px solid var(--Neutral-Separator, #EBEBEB);
+  background: #FFF;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.10);
+}
+
+.vouchar_inner_popup_wrapper .inner_bg .top_header,
+.vouchar_inner_popup_wrapper3 .inner_bg .top_header,
+.vouchar_inner_popup_wrapper2 .inner_bg .top_header {
+  font-size: 14px;
+  color: var(--text-dark2);
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--Neutral-Separator);
+  margin-bottom: 16px;
+  padding-top: 10px;
+}
+
+.vouchar_inner_popup_wrapper .inner_bg .heading h4,
+.vouchar_inner_popup_wrapper3 .inner_bg .heading h4,
+.vouchar_inner_popup_wrapper2 .inner_bg .heading h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-dark2);
+  margin-bottom: 5px;
+}
+
+.vouchar_inner_popup_wrapper .inner_bg .heading p,
+.vouchar_inner_popup_wrapper3 .inner_bg .heading p,
+.vouchar_inner_popup_wrapper2 .inner_bg .heading p {
+  color: var(--text-5C);
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.vouchar_inner_popup_wrapper .inner_bg .top_header .close-btn,
+.vouchar_inner_popup_wrapper3 .inner_bg .top_header .close-btn,
+.vouchar_inner_popup_wrapper2 .inner_bg .top_header .close-btn {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* custom select box  */
+.vouchar_inner_popup_wrapper .custom-select {
+  width: 100%;
+  position: relative;
+}
+
+.vouchar_inner_popup_wrapper .custom-select label {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--text-dark2);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.vouchar_inner_popup_wrapper .required {
+  color: red;
+}
+
+.vouchar_inner_popup_wrapper .select-box {
+  position: relative;
+}
+
+.vouchar_inner_popup_wrapper .selected {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--whiteEB, #ebebeb);
+  padding: 8px 16px;
+  outline-color: var(--login-border) !important;
+  box-shadow: none;
+  background: var(--whiteFA);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vouchar_inner_popup_wrapper .selected .placeholder {
+  color: grey;
+  background-color: transparent;
+}
+
+.vouchar_inner_popup_wrapper .options-container {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  background: var(--whiteFA);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  display: none;
+  flex-direction: column;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  z-index: 100;
+}
+
+.vouchar_inner_popup_wrapper .options-container.active {
+  display: flex;
+}
+
+.vouchar_inner_popup_wrapper .search-box {
+  border: none;
+  border-bottom: 1px solid var(--Neutral-background);
+  padding: 10px;
+  font-size: 14px;
+  outline: none;
+  width: 100%;
+  background: transparent;
+}
+
+.vouchar_inner_popup_wrapper .search-box::placeholder {
+  color: var(--text-5C);
+}
+
+.vouchar_inner_popup_wrapper .options-list {
+  max-height: 150px;
+  overflow-y: auto;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.vouchar_inner_popup_wrapper .options-list li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.vouchar_inner_popup_wrapper .options-list li:hover {
+  background: #f5f5f5;
+}
+
+.vouchar_inner_popup_wrapper .add-option {
+  border-top: 1px solid #eee;
+  text-align: center;
+  padding: 10px;
+}
+
+.vouchar_inner_popup_wrapper .add-option button {
+  border: none;
+  background: none;
+  color: var(--primary-color);
+  width: 100%;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* ******************** VOUCHAR INNER POPUP CSS (JOURNAL, PAYMENT, RECEIPT) ****************** */
+
+
+/* ======================= SUB CONTRACT DASHOBORD PAGE CSS STRATS ======================= */
+.subcontract_work_progress_wrapper {
+  padding: clamp(16px, 2vw, 24px);
+  border-radius: 14px;
+  border: 1px solid #E2E8F0;
+  background: var(--white);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.10), 0 2px 4px -2px rgba(0, 0, 0, 0.10);
+}
+
+.subcontract_work_progress_wrapper .heading h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  color: #1D293D;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+
+.subcontract_work_progress_wrapper .heading .date {
+  color: #45556C;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.subcontract_work_progress_wrapper .active_progress_bar_wrapper h4 {
+  color: #314158;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.subcontract_work_progress_wrapper .progress_bars_section .progress_card {
+  padding: 16px;
+  border-radius: 10px;
+  border: 1px solid #E2E8F0;
+  background: #F8FAFC;
+  margin-bottom: 12px;
+}
+
+.primaryColor {
+  color: #155DFC;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.successColor {
+  color: #00A63E;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.dangerColor {
+  color: #F54900;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.subcontract_work_progress_wrapper .progress_bars_section .progress_card .cardbody h5 {
+  color: #1D293D;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.subcontract_work_progress_wrapper .progress_bars_section .progress_card .cardbody .progressBar {
+  background: #030213;
+}
+
+.subcontract_work_progress_wrapper .progress_bars_section .progress_card .cardbody .progress {
+  border-radius: 20px;
+  background: #E2E8F0;
+}
+
+.subcontract_work_progress_wrapper .progress_bars_section .progress_card .cardbody small {
+  color: #314158;
+  text-align: right;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.subcontract_work_progress_wrapper .chart_Section .chart_first_card,
+.subcontract_effencicy_wrapper .chart_first_card {
+  padding: 16px;
+  border-radius: 14px;
+  border: 1px solid #BEDBFF;
+  background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%);
+  height: 280px;
+}
+
+.subcontract_work_progress_wrapper .chart_Section .chart_first_card .bottom_text div {
+  color: #45556C;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.subcontract_work_progress_wrapper .chart_Section .chart_first_card .bottom_text .green {
+  color: #00A63E;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.subcontract_work_progress_wrapper .chart_Section .chart_first_card h6 {
+  color: #1D293D;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.button_soft_bg {
+  background: var(--Button-soft-color) !important;
+  border: 0 !important;
+}
+
+#weeklyCompletionChart {
+  height: 220px !important;
+  width: 100% !important;
+}
+
+#dailyProgressChart {
+  height: 180px !important;
+  width: 100% !important;
+}
+
+.subcontract_work_progress_wrapper .summar_card {
+  border-radius: 10px;
+  border: 1px solid #E2E8F0;
+  background: var(--white);
+  padding: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.subcontract_work_progress_wrapper .summar_card h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.subcontract_work_progress_wrapper .summar_card p {
+  margin: 0;
+  color: #62748E;
+  text-align: center;
+  font-size: 12px;
+}
+
+.subcontract_effencicy_wrapper .chart_first_card {
+  height: 320px;
+}
+.subcontract_effencicy_wrapper .chart_first_card  #productivityChart{
+  height: 260px !important;
+  width: 100% !important;
+}
+
+/* ======================= SUB CONTRACT DASHOBORD PAGE CSS STRATS ======================= */
+
 
 /* *********************** PRINT MEDIA CODE ******************** */
 /* vocuhar print css  */

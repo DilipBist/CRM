@@ -363,7 +363,7 @@ include 'inc/header.php'
                             <div class="col-12">
                                 <div class="upload-container">
                                     <div>
-                                        <label class="up_label">Upload Design & Drawaing <span>*</span></label>
+                                        <label class="up_label">Upload Image <span>*</span></label>
                                         <label class="file-upload" data-upload="design">
                                             <div class="placeholder-data">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
@@ -373,7 +373,7 @@ include 'inc/header.php'
                                                     <path d="M15.2405 24.3604C14.9872 24.3604 14.7339 24.2671 14.5339 24.0671L13.2138 22.7471C12.8272 22.3604 12.8272 21.7204 13.2138 21.3338C13.6005 20.9471 14.2405 20.9471 14.6272 21.3338L15.2672 21.9738L17.4005 20.0004C17.8138 19.6271 18.4405 19.6538 18.8138 20.0538C19.1872 20.4538 19.1605 21.0938 18.7605 21.4671L15.9205 24.0938C15.7205 24.2671 15.4805 24.3604 15.2405 24.3604Z" fill="#141414" />
                                                 </svg>
                                                 <p>Choose a file or drag & drop it here</p>
-                                                <span>Upload the Design & Drawing</span>
+                                                <span>Upload Image</span>
                                             </div>
                                             <input type="file" name="design" required>
                                             <div class="preview" data-preview="design"></div>

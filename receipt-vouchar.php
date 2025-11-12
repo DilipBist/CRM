@@ -376,52 +376,9 @@ include 'inc/header.php'
 
 
 
-    <!-- focus select data popup  -->
-    <div class="focus_popup_overlay"></div>
-    <div class="foucus_popup">
-        <div class="list_heading">
-            <h4>List of Ledger Accounts</h4>
-            <div class="close_focus">
-                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
-                    <path d="M6.5 1C3.745 1 1.5 3.245 1.5 6C1.5 8.755 3.745 11 6.5 11C9.255 11 11.5 8.755 11.5 6C11.5 3.245 9.255 1 6.5 1ZM8.18 7.15C8.325 7.295 8.325 7.535 8.18 7.68C8.105 7.755 8.01 7.79 7.915 7.79C7.82 7.79 7.725 7.755 7.65 7.68L6.5 6.53L5.35 7.68C5.275 7.755 5.18 7.79 5.085 7.79C4.99 7.79 4.895 7.755 4.82 7.68C4.675 7.535 4.675 7.295 4.82 7.15L5.97 6L4.82 4.85C4.675 4.705 4.675 4.465 4.82 4.32C4.965 4.175 5.205 4.175 5.35 4.32L6.5 5.47L7.65 4.32C7.795 4.175 8.035 4.175 8.18 4.32C8.325 4.465 8.325 4.705 8.18 4.85L7.03 6L8.18 7.15Z" fill="#FF0000" />
-                </svg>
-            </div>
-        </div>
-
-        <div class="selectable_data">
-            <div>
-                ABC Company
-            </div>
-            <div>
-                EFG Company
-            </div>
-            <div>
-                SOMETHING Company
-            </div>
-            <div>
-                NOTHING Company
-            </div>
-            <div>
-                ABC Company
-            </div>
-            <div>
-                ABC Company
-            </div>
-            <div>
-                ABC Company
-            </div>
-            <div>
-                ABC Company
-            </div>
-            <div>
-                ABC Company
-            </div>
-            <div>
-                ABC Company lorem
-            </div>
-        </div>
-    </div>
-    <!-- focus select data popup ends -->
+    <!-- Vouchar inner popup   -->
+    <?php include 'components/vouchar-inner-popup.php' ?>
+    <!-- Vouchar inner popup   -->
 </div>
 
 <!-- print table  -->
@@ -541,7 +498,7 @@ include 'inc/header.php'
                                                 <path d="M15.2405 24.3604C14.9872 24.3604 14.7339 24.2671 14.5339 24.0671L13.2138 22.7471C12.8272 22.3604 12.8272 21.7204 13.2138 21.3338C13.6005 20.9471 14.2405 20.9471 14.6272 21.3338L15.2672 21.9738L17.4005 20.0004C17.8138 19.6271 18.4405 19.6538 18.8138 20.0538C19.1872 20.4538 19.1605 21.0938 18.7605 21.4671L15.9205 24.0938C15.7205 24.2671 15.4805 24.3604 15.2405 24.3604Z" fill="#141414" />
                                             </svg>
                                             <p>Choose a file or drag & drop it here</p>
-                                            <span>Upload the Design & Drawing</span>
+                                            <span>Upload the Image</span>
                                         </div>
                                         <input type="file" name="voucharImage" required>
                                         <div class="preview" data-preview="voucharImage"></div>
