@@ -8691,6 +8691,468 @@ select option:not(:first-child) {
   height: 320px !important;
 }
 
+.chart_remaining_data_list .box_list_container .bx {
+  border-radius: 10px;
+  border: 1px solid #E2E8F0;
+  background: var(--white);
+  padding: 14px;
+}
+
+.chart_remaining_data_list .box_list_container .bx h3 {
+  color: #1D293D;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.chart_remaining_data_list .box_list_container .bx h4 {
+  color: var(--charcoal-blue);
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.chart_remaining_data_list .box_list_container .bx .icon {
+  color: #E7000B;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.chart_remaining_data_list .box_list_container .bx p {
+  margin: 0;
+  color: #62748E;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.chart_remaining_data_list .bottom_row {
+  padding-top: 18px;
+  border-top: 1px solid var(--whiteEB);
+  margin-top: 24px;
+}
+
+.chart_remaining_data_list .bottom_row .box {
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #FFC9C9;
+  background: #FEF2F2;
+}
+
+.chart_remaining_data_list .bottom_row .box h4 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #9F0712;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.chart_remaining_data_list .bottom_row .box p {
+  color: #E7000B;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.chart_remaining_data_list .bottom_row .box2 {
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #B9F8CF;
+  background: #F0FDF4;
+}
+
+.chart_remaining_data_list .bottom_row .box2 h4 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #016630;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.chart_remaining_data_list .bottom_row .box2 p {
+  color: #00A63E;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.purhcase_dashboard_chart_wrappper .right_section_wrapper .payment_status_box_wrapper {
+  border-radius: 14px;
+  border: 1px solid #E2E8F0;
+  background: var(--white);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.10), 0 2px 4px -2px rgba(0, 0, 0, 0.10);
+  padding: clamp(16px, 2vw, 24px);
+}
+
+.purhcase_dashboard_chart_wrappper .right_section_wrapper .payment_status_box_wrapper .heading h4 {
+  display: flex;
+  align-items: center;
+  color: #1D293D;
+  font-size: 16px;
+  font-weight: 400;
+  gap: 8px;
+  margin: 0;
+}
+
+.purhcase_dashboard_chart_wrappper .right_section_wrapper .payment_status_box_wrapper .heading .tag {
+  color: var(--white);
+  font-size: 12px;
+  font-weight: 400;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.00);
+  background: var(--neutral-primay, #005399);
+  padding: 2px 8px;
+  width: max-content;
+}
+
+.purhcase_dashboard_chart_wrappper .right_section_wrapper .pending_payment_wrapper .box {
+  border-radius: 8px;
+  background: #CDD7ED;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.10), 0 1px 2px -1px rgba(0, 0, 0, 0.10);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.purhcase_dashboard_chart_wrappper .right_section_wrapper .pending_payment_wrapper .box p {
+  color: var(--text-5C);
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.purhcase_dashboard_chart_wrappper .right_section_wrapper .pending_payment_wrapper .box h5 {
+  color: var(--text-dark2);
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.purhcase_dashboard_chart_wrappper .right_section_wrapper .pending_payment_wrapper .box.red h5,
+.purhcase_dashboard_chart_wrappper .right_section_wrapper .pending_payment_wrapper .box.red p {
+  color: #A70A0A;
+}
+
+.purhcase_dashboard_chart_wrappper .right_section_wrapper .pending_payment_wrapper .box.green h5,
+.purhcase_dashboard_chart_wrappper .right_section_wrapper .pending_payment_wrapper .box.green p {
+  color: #0E8826;
+}
+
+.purhcase_dashboard_chart_wrappper .right_section_wrapper .pending_payment_wrapper {
+  border-radius: 10px;
+  background: linear-gradient(94deg, #005399 1.25%, #005399 1.38%, #BCD7EE 86.07%);
+  padding: 17px;
+}
+
+.purhcase_dashboard_chart_wrappper .right_section_wrapper .pending_payment_wrapper>h5 {
+  color: #F2F6FA;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.purhcase_dashboard_chart_wrappper .right_section_wrapper .pending_payment_wrapper>h4 {
+  font-size: 24px;
+  color: #F2F6FA;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.purhcase_dashboard_chart_wrappper .right_section_wrapper .pending_list_data .tag {
+  border-radius: 12px;
+  background: #CECECE;
+  font-size: 14px;
+  color: var(--text-5C);
+  padding: 4px 8px;
+}
+
+.purhcase_dashboard_chart_wrappper .right_section_wrapper .pending_list_data .tag.red {
+  background: #FB2C36;
+  color: var(--white);
+}
+
+.purhcase_dashboard_chart_wrappper .right_section_wrapper .pending_list_data .tag.green {
+  background: #00C950;
+  color: var(--white);
+}
+
+.purhcase_dashboard_chart_wrappper .right_section_wrapper .pending_list_data .c_heading h4 {
+  color: #1D293D;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.purhcase_dashboard_chart_wrappper .right_section_wrapper .pending_list_data .c_heading p {
+  color: #45556C;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.purhcase_dashboard_chart_wrappper .right_section_wrapper .pending_list_data .box {
+  border-radius: 10px;
+  border: 1px solid #E2E8F0;
+  background: var(--white);
+  padding: 16px;
+}
+
+.purhcase_dashboard_chart_wrappper .right_section_wrapper .pending_list_data .box>h3 {
+  color: #1D293D;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  padding: 8px 0;
+}
+
+.purhcase_dashboard_chart_wrappper .right_section_wrapper .pending_list_data .box .last_div p:first-child {
+  margin: 0;
+  color: #62748E;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.purhcase_dashboard_chart_wrappper .right_section_wrapper .pending_list_data .box .last_div p {
+  color: #45556C;
+  font-size: 12px;
+  margin: 0;
+  font-weight: 400;
+}
+
+.purhcase_dashboard_chart_wrappper .right_section_wrapper .pending_list_data .box .last_div p.red {
+  color: #E7000B;
+  font-size: 12px;
+  margin: 0;
+  font-weight: 400;
+}
+
+.purhcase_dashboard_chart_wrappper .right_section_wrapper .pending_list_data {
+  max-height: 450px;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  cursor: pointer;
+}
+
+.purhcase_dashboard_chart_wrappper .right_section_wrapper .pending_list_data::-webkit-scrollbar {
+  display: none;
+}
+
+.purhcase_dashboard_chart_wrappper .right_section_wrapper .action_box {
+  border-radius: 10px;
+  border: 1px solid #FFC9C9;
+  background: #FEF2F2;
+  padding: 14px;
+  margin-top: 32px;
+  position: relative;
+}
+
+.purhcase_dashboard_chart_wrappper .right_section_wrapper .action_box::before {
+  content: '';
+  position: absolute;
+  top: -16px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--whiteEB);
+}
+
+.purhcase_dashboard_chart_wrappper .right_section_wrapper .action_box h4 {
+  color: #9F0712;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.purhcase_dashboard_chart_wrappper .right_section_wrapper .action_box p {
+  margin: 0;
+  color: #E7000B;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: var(--inter);
+}
+
+.purhcase_dashboard_chart_wrappper .right_section_wrapper .recent_supplier_box_wrapper {
+  border-radius: 14px;
+  border: 1px solid #E2E8F0;
+  background: var(--white);
+  padding: clamp(16px, 2vw, 24px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.10), 0 2px 4px -2px rgba(0, 0, 0, 0.10);
+}
+
+.purhcase_dashboard_chart_wrappper .right_section_wrapper .recent_supplier_box_wrapper .heading h4 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #1D293D;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.purhcase_dashboard_chart_wrappper .right_section_wrapper .recent_supplier_box_wrapper .heading .top_tag {
+  border-radius: 8px;
+  border: 1px solid #8EC5FF;
+  color: #155DFC;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 4px 8px;
+  width: max-content;
+}
+
+.purhcase_dashboard_chart_wrappper .right_section_wrapper .call_active_box_wrapper .call_box {
+  padding: 16px;
+  border-radius: 10px;
+  border: 1px solid #E2E8F0;
+  background: #FFF;
+}
+
+.purhcase_dashboard_chart_wrappper .right_section_wrapper .call_active_box_wrapper .call_box .left_div .name_bx {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #2B7FFF 0%, #155DFC 100%);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.10), 0 1px 2px -1px rgba(0, 0, 0, 0.10);
+  font-size: 14px;
+  color: var(--white);
+}
+
+.purhcase_dashboard_chart_wrappper .right_section_wrapper .call_active_box_wrapper .call_box .left_div .name_bx.grey {
+  background: linear-gradient(135deg, #62748E 0%, #45556C 100%);
+}
+
+.purhcase_dashboard_chart_wrappper .right_section_wrapper .call_active_box_wrapper .call_box .left_div .name_bx.orange {
+  background: linear-gradient(135deg, #FF6900 0%, #F54900 100%);
+}
+
+.purhcase_dashboard_chart_wrappper .right_section_wrapper .call_active_box_wrapper .call_box .left_div .name_bx.purple {
+  background: linear-gradient(135deg, #AD46FF 0%, #9810FA 100%);
+}
+
+.purhcase_dashboard_chart_wrappper .right_section_wrapper .call_active_box_wrapper .call_box .left_div .name_bx.green {
+  background: linear-gradient(135deg, #00C950 0%, #00A63E 100%);
+}
+
+.purhcase_dashboard_chart_wrappper .right_section_wrapper .call_active_box_wrapper .call_box .rating_order_bx {
+  color: #45556C;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.purhcase_dashboard_chart_wrappper .right_section_wrapper .call_active_box_wrapper .call_box .rating_order_bx .order {
+  color: #45556C;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.purhcase_dashboard_chart_wrappper .right_section_wrapper .call_active_box_wrapper .call_box .fist_div .details h3 {
+  color: #1D293D;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 2px;
+}
+
+.purhcase_dashboard_chart_wrappper .right_section_wrapper .call_active_box_wrapper .call_box .fist_div .details h6 {
+  color: #62748E;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.purhcase_dashboard_chart_wrappper .right_section_wrapper .call_active_box_wrapper .call_box .fist_div .active_tag {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--white);
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.00);
+  background: #00C950;
+  padding: 4px 8px;
+  width: max-content;
+}
+
+.purhcase_dashboard_chart_wrappper .right_section_wrapper .call_active_box_wrapper .call_box .button_div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.purhcase_dashboard_chart_wrappper .right_section_wrapper .call_active_box_wrapper .call_box .button_div button {
+  border-radius: 8px;
+  border: 1px solid #CAD5E2;
+  background: var(--white);
+  width: 100%;
+  padding: 5px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--text-dark);
+  font-weight: 400;
+}
+
+.purhcase_dashboard_chart_wrappper .right_section_wrapper .call_active_box_wrapper {
+  max-height: 520px;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  cursor: pointer;
+}
+
+.purhcase_dashboard_chart_wrappper .right_section_wrapper .call_active_box_wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.purhcase_dashboard_chart_wrappper .right_section_wrapper .recent_supplier_box_wrapper .active_div_wrappper {
+  position: relative;
+  margin-top: 32px;
+}
+
+.purhcase_dashboard_chart_wrappper .right_section_wrapper .recent_supplier_box_wrapper .active_div_wrappper::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -16px;
+  height: 1px;
+  width: 100%;
+  background-color: var(--whiteEB);
+}
+
+.purhcase_dashboard_chart_wrappper .right_section_wrapper .recent_supplier_box_wrapper .active_div_wrappper .box {
+  color: #193CB8;
+  font-size: 12px;
+  font-weight: 400;
+  border-radius: 10px;
+  border: 1px solid #BEDBFF;
+  background: #EFF6FF;
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.purhcase_dashboard_chart_wrappper .right_section_wrapper .recent_supplier_box_wrapper .active_div_wrappper .box p,
+.purhcase_dashboard_chart_wrappper .right_section_wrapper .recent_supplier_box_wrapper .active_div_wrappper .box h4 {
+  margin: 0;
+}
+
+.purhcase_dashboard_chart_wrappper .right_section_wrapper .recent_supplier_box_wrapper .active_div_wrappper .box.green {
+  color: #016630;
+  border: 1px solid #B9F8CF;
+  background: #F0FDF4;
+}
+
 /* *************** PURCHASE DASHBOARD CSS ENDS ************** */
 
 
