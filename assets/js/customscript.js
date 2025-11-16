@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
     scheduledLabel: 'Target',
     width: 0.9,
     borderRadius: 5
-  }); 
+  });
   createTaskChart("productivityChart", {
     completedColor: "#3B82F6",
     scheduledColor: "#94A3B8",
@@ -77,6 +77,14 @@ document.addEventListener("DOMContentLoaded", () => {
     width: 0.95,
     borderRadius: 3
   });
+  // RUN CHART
+  loadInventoryBarChart();
+  // Load the chart
+  loadSpendChart();
+  // Run the chart
+  loadStockPieChart();
+  loadPurhcaseOrdrChart();
+
 
   // ============
   // this this code is just for the page redirect just to show the user the particular page (remove it later)
@@ -627,25 +635,32 @@ function initDatePickers() {
   });
 }
 
+// dashboard chart starts 
+
 /* ============================
    LINE CHART
 ============================ */
 function initLineChart() {
-  const lineCanvas = document.getElementById("lineChart");
-  if (!lineCanvas) return;
+  const canvas = document.getElementById("lineChart");
+  if (!canvas) return;
 
-  lineCanvas.height = 40;
-  const ctx = lineCanvas.getContext("2d");
+  canvas.height = 40;
+  const ctx = canvas.getContext("2d");
+
+  // Dummy data
+  const data = {
+    labels: ["Jan", "Feb", "Mar", "Apr", "May"],
+    values: [100000, 250000, 150000, 300000, 200000],
+  };
+
   new Chart(ctx, {
     type: "line",
     data: {
-      labels: ["Jan", "Feb", "Mar", "Apr", "May"],
+      labels: data.labels,
       datasets: [
         {
           label: "Balance",
-          data: [
-            100000, 250000, 150000, 300000, 200000, 350000, 220000, 400000,
-          ],
+          data: data.values,
           borderColor: "#AADB9D",
           backgroundColor: "rgba(54, 210, 33, 0.05)",
           fill: true,
@@ -665,23 +680,27 @@ function initLineChart() {
    DOUGHNUT CHART
 ============================ */
 function initDoughnutChart() {
-  const pieCanvas = document.getElementById("pieChart");
-  if (!pieCanvas) return;
+  const canvas = document.getElementById("pieChart");
+  if (!canvas) return;
 
-  const rootStyles = getComputedStyle(document.documentElement);
-  const green = rootStyles.getPropertyValue("--green-donutchart").trim();
-  const blue = rootStyles.getPropertyValue("--blue-donutchart").trim();
-  const black = rootStyles.getPropertyValue("--black-donutchart").trim();
+  const root = getComputedStyle(document.documentElement);
+  const colors = [
+    root.getPropertyValue("--green-donutchart").trim(),
+    root.getPropertyValue("--blue-donutchart").trim(),
+    root.getPropertyValue("--black-donutchart").trim(),
+  ];
 
-  const ctx = pieCanvas.getContext("2d");
+  const data = [20, 50, 30];
+
+  const ctx = canvas.getContext("2d");
   new Chart(ctx, {
     type: "doughnut",
     data: {
       labels: ["Complete", "Pending", "Not Start"],
       datasets: [
         {
-          data: [20, 50, 30],
-          backgroundColor: [green, blue, black],
+          data,
+          backgroundColor: colors,
           borderWidth: 0,
         },
       ],
@@ -694,27 +713,32 @@ function initDoughnutChart() {
   });
 }
 
+
 /* ============================
-   DOUGHNUT CHART CURRENT STATUS
+   DOUGHNUT — CURRENT STATUS
 ============================ */
 function initCurrentStatusChart() {
-  const pieCanvas = document.getElementById("statusChart");
-  if (!pieCanvas) return;
+  const canvas = document.getElementById("statusChart");
+  if (!canvas) return;
 
-  const rootStyles = getComputedStyle(document.documentElement);
-  const green = rootStyles.getPropertyValue("--lightgreen-donutchart").trim();
-  const blue = rootStyles.getPropertyValue("--bluedark-donutchart").trim();
-  const black = rootStyles.getPropertyValue("--black-donutchart").trim();
+  const root = getComputedStyle(document.documentElement);
+  const colors = [
+    root.getPropertyValue("--lightgreen-donutchart").trim(),
+    root.getPropertyValue("--bluedark-donutchart").trim(),
+    root.getPropertyValue("--black-donutchart").trim(),
+  ];
 
-  const ctx = pieCanvas.getContext("2d");
+  const data = [22, 50, 28];
+
+  const ctx = canvas.getContext("2d");
   new Chart(ctx, {
     type: "doughnut",
     data: {
       labels: ["Cash Balance", "Bank Balance", "Status"],
       datasets: [
         {
-          data: [22, 50, 28],
-          backgroundColor: [green, blue, black],
+          data,
+          backgroundColor: colors,
           borderWidth: 0,
           borderRadius: 10,
           spacing: 10,
@@ -729,45 +753,38 @@ function initCurrentStatusChart() {
   });
 }
 
+
 /* ============================
-   CASH CHART
+   CASH CHART (ApexCharts)
 ============================ */
-let cashChart; // global reference for filter buttons
+let cashChart;
+
 function initCashChart() {
   const el = document.querySelector("#cash-chart");
   if (!el) return;
 
+  // Dummy data
+  const cashIn = [350, 340, 330, 335, 340, 345, 350, 370, 600, 650];
+  const cashOut = [150, 250, 90, 120, 0, 0, 0, 0, 0, 0];
+  const months = ["Jul", "Aug", "Sep", "Oct", "Nov", "Dec", "Jan", "Feb", "Mar", "Apr"];
+
   const options = {
     chart: { type: "bar", height: 350, toolbar: { show: false } },
     series: [
-      {
-        name: "Cash In",
-        data: [350, 340, 330, 335, 340, 345, 350, 370, 600, 650],
-      },
-      { name: "Cash Out", data: [150, 250, 90, 120, 0, 0, 0, 0, 0, 0] },
+      { name: "Cash In", data: cashIn },
+      { name: "Cash Out", data: cashOut },
     ],
     colors: ["#51A6ED", "#DE4949"],
-    xaxis: {
-      categories: [
-        "Jul",
-        "Aug",
-        "Sep",
-        "Oct",
-        "Nov",
-        "Dec",
-        "Jan",
-        "Feb",
-        "Mar",
-        "Apr",
-      ],
-    },
+    xaxis: { categories: months },
     legend: {
       position: "bottom",
       horizontalAlign: "center",
       markers: { width: 12, height: 12, radius: 12 },
       itemMargin: { horizontal: 10, vertical: 5 },
     },
-    plotOptions: { bar: { borderRadius: 0, columnWidth: "80%" } },
+    plotOptions: {
+      bar: { borderRadius: 0, columnWidth: "80%" },
+    },
     grid: { borderColor: "#e6e6e6" },
     dataLabels: { enabled: false },
   };
@@ -856,37 +873,43 @@ window.updateChart = function (type, el) {
 };
 
 /* ============================
-   PURCHASE CHART
+ Monthly PURCHASE CHART
 ============================ */
 function initPurchaseChart() {
   const el = document.querySelector("#chart");
   if (!el) return;
 
+  // Dummy Data (easy to replace later)
+  const months = [
+    "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+    "Jul", "Aug", "Sep", "Oct", "Nov", "Dec",
+  ];
+
+  const purchaseData = [
+    650, 340, 0, 335, 640, 400,
+    350, 70, 0, 650, 280, 360,
+  ];
+
   const options = {
-    chart: { type: "bar", height: 250, toolbar: { show: false } },
-    colors: ["#0D99FF"],
-    xaxis: {
-      categories: [
-        "Jan",
-        "Feb",
-        "Mar",
-        "Apr",
-        "May",
-        "Jun",
-        "Jul",
-        "Aug",
-        "Sep",
-        "Oct",
-        "Nov",
-        "Dec",
-      ],
+    chart: {
+      type: "bar",
+      height: 250,
+      toolbar: { show: false }
     },
+
+    colors: ["#0D99FF"],
+
+    xaxis: {
+      categories: months
+    },
+
     series: [
       {
         name: "Purchase",
-        data: [650, 340, 0, 335, 640, 400, 350, 70, 0, 650, 280, 360],
+        data: purchaseData,
       },
     ],
+
     plotOptions: {
       bar: {
         columnWidth: "40%",
@@ -894,17 +917,19 @@ function initPurchaseChart() {
         borderRadiusApplication: "end",
       },
     },
+
     dataLabels: { enabled: false },
     grid: { borderColor: "#e6e6e6" },
     legend: { show: false },
   };
 
-  const purchaseChart = new ApexCharts(el, options);
-  purchaseChart.render();
+  const chart = new ApexCharts(el, options);
+  chart.render();
 }
+// dashboard chart end 
+
 
 // =====================  supervisor dashboard charts ==================
-
 // weekly task chart
 function createTaskChart(canvasId, options = {}) {
   const chartElement = document.getElementById(canvasId);
@@ -990,7 +1015,6 @@ function createTaskChart(canvasId, options = {}) {
     },
   });
 }
-
 
 // Daily Progress Line Chart
 const dailyCtx = document.getElementById("dailyProgressChart")
@@ -1150,9 +1174,347 @@ if (legendContainer) {
       </div>
     `;
 }
+// =====================  supervisor dashboard charts ends ==================
+
+//+++++++++++++++++++++++  prchase dashboard charts ++++++++++++
+
+// ++++++ Materials Stock Level chart ++++++++
+// Stock Pie
+function loadStockPieChart() {
+  const canvas = document.getElementById('stockPie');
+  if (!canvas) return;
+
+  const ctx = canvas.getContext("2d");
+
+  // Dummy data (replace with backend later)
+  const data = {
+    labels: ['High Stock', 'Low Stock', 'Out of Stock'],
+    values: [55, 30, 15],
+    colors: ['#10B981', '#EF4444', '#3B82F6']
+  };
+
+  new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+      labels: data.labels,
+      datasets: [{
+        data: data.values,
+        backgroundColor: data.colors,
+        borderWidth: 0,
+        spacing: 5
+      }]
+    },
+
+    options: {
+      cutout: '70%',
+      plugins: {
+        legend: {
+          display: true,
+          position: 'bottom',
+          labels: {
+            usePointStyle: true,
+            pointStyle: 'circle',
+            padding: 20,
+            maxWidth: 1000
+          }
+        }
+      },
+      layout: {
+        padding: {
+          top: 0,
+          bottom: 0
+        }
+      }
+    }
+  });
+}
+// bar chart
+function loadInventoryBarChart() {
+  const canvas = document.getElementById('inventoryBar');
+  if (!canvas) return;
+
+  const ctx = canvas.getContext("2d");
+
+  // Dummy data (can be replaced later with backend values)
+  const data = {
+    labels: ["Cement", "Steel Bars", "Bricks", "Sand", "Gravel", "Paint"],
+    values: [3000, 12000, 15000, 8500, 3200, 7800],
+    colors: ['#10B981', '#3B82F6', '#10B981', '#EF4444', '#3B82F6', '#EF4444']
+  };
+
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: data.labels,
+      datasets: [
+        {
+          data: data.values,
+          backgroundColor: data.colors,
+          borderWidth: 0,
+          spacing: 5
+        }
+      ]
+    },
+
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      scales: {
+        x: {
+          ticks: { font: { size: 10 } }
+        },
+        y: {
+          ticks: { font: { size: 10 } }
+        }
+      },
+      plugins: {
+        legend: { display: false }
+      }
+    }
+  });
+}
+// ++++++ Materials Stock Level chart ++++++++
 
 
+// montly spending chart 
+function loadSpendChart() {
+  const canvas = document.getElementById("spendChart");
+  if (!canvas) return;
 
+  const ctx = canvas.getContext("2d");
+
+  // Dummy data  
+  const data = {
+    actual: [4, 4.1, 3.9, 3.8, 4, 4.1, 4],
+    budget: [4, 4, 4, 4, 4, 4, 4],
+    months: ["May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov"]
+  };
+
+  buildSpendChart(ctx, data);
+}
+
+function buildSpendChart(ctx, data) {
+  // Create gradients
+  const blueGradient = ctx.createLinearGradient(0, 0, 0, 300);
+  blueGradient.addColorStop(0.3, "rgba(59, 130, 246, 0.30)");
+  blueGradient.addColorStop(0.95, "rgba(59, 130, 246, 0.00)");
+
+  const greenGradient = ctx.createLinearGradient(0, 0, 0, 300);
+  greenGradient.addColorStop(0.05, "#10B9814D");
+  greenGradient.addColorStop(0.95, "#10B98100");
+
+  new Chart(ctx, {
+    type: "line",
+    data: {
+      labels: data.months,
+      datasets: [
+        // Actual Spending (Blue)
+        {
+          label: "Actual Spending (₹L)",
+          data: data.actual,
+          borderColor: "#3B82F6",
+          backgroundColor: blueGradient,
+          borderWidth: 3,
+          fill: true,
+          tension: 0.4,
+          pointRadius: 0
+        },
+
+        // Budget (Green)
+        {
+          label: "Budget (₹L)",
+          data: data.budget,
+          borderColor: "#10B981",
+          backgroundColor: greenGradient,
+          borderWidth: 2,
+          borderDash: [6, 6],    // dashed line
+          fill: true,
+          tension: 0.4,
+          pointRadius: 0
+        }
+      ]
+    },
+
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: {
+          display: true,
+          position: 'bottom',
+          labels: {
+            usePointStyle: true,
+            pointStyle: 'circle',
+            boxWidth: 8,
+            boxHeight: 8,
+            padding: 16,
+          }
+        }
+      },
+      scales: {
+        x: {
+          grid: {
+            display: false,
+          }
+        },
+        y: {
+          title: {
+            display: true,
+            text: "₹ Lakhs",
+            font: { size: 12 }
+          },
+          grid: { color: "#eee" },
+          beginAtZero: false
+        }
+      }
+    }
+  });
+}
+
+// puchase order chart 
+function loadPurhcaseOrdrChart() {
+  const canvas = document.getElementById("purhcaseOrdrChart");
+  if (!canvas) return;
+
+  const ctx = canvas.getContext("2d");
+
+  new Chart(ctx, {
+    type: "bar",
+    data: {
+      labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "July"],
+      datasets: [
+        {
+          label: "Sales",
+          data: [120, 150, 180, 90, 200, 100, 180],
+          backgroundColor: "#005399",
+          borderRadius: 5
+        }
+      ]
+    },
+    options: {
+      maintainAspectRatio: false,
+      responsive: true,
+      scales: {
+        x: { grid: { display: false } },
+        y: { beginAtZero: true }
+      },
+      plugins: { legend: { display: false } }
+    }
+  });
+}
+function loadPriceChart() {
+  const canvas = document.getElementById("priceChart");
+  if (!canvas) return;
+
+  const ctx = canvas.getContext("2d");
+
+  const months = ["May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov"];
+
+  const data = {
+    bricks: [70, 72, 74, 73, 75, 74, 76],
+    cement: [380, 395, 410, 405, 420, 430, 440],
+    paint: [300, 295, 305, 308, 315, 320, 325],
+    steel: [650, 670, 690, 680, 705, 700, 720]
+  };
+
+  new Chart(ctx, {
+    type: "line",
+    data: {
+      labels: months,
+      datasets: [
+        {
+          label: "Bricks (₹/pc)",
+          data: data.bricks,
+          borderColor: "#F97316",
+          tension: 0.4,
+          borderWidth: 2,
+
+          pointRadius: 4,
+          pointHoverRadius: 5,
+          pointBackgroundColor: "#FFFFFF",
+          pointBorderColor: "#F97316",
+          pointBorderWidth: 2
+        },
+        {
+          label: "Cement (₹/bag)",
+          data: data.cement,
+          borderColor: "#3B82F6",
+          tension: 0.4,
+          borderWidth: 2,
+
+          pointRadius: 4,
+          pointHoverRadius: 5,
+          pointBackgroundColor: "#FFFFFF",
+          pointBorderColor: "#3B82F6",
+          pointBorderWidth: 2
+        },
+        {
+          label: "Paint (₹/L)",
+          data: data.paint,
+          borderColor: "#8B5CF6",
+          tension: 0.4,
+          borderWidth: 2,
+
+          pointRadius: 4,
+          pointHoverRadius: 5,
+          pointBackgroundColor: "#FFFFFF",
+          pointBorderColor: "#8B5CF6",
+          pointBorderWidth: 2
+        },
+        {
+          label: "Steel (₹/kg)",
+          data: data.steel,
+          borderColor: "#64748B",
+          tension: 0.4,
+          borderWidth: 2,
+
+          pointRadius: 4,
+          pointHoverRadius: 5,
+          pointBackgroundColor: "#FFFFFF",
+          pointBorderColor: "#64748B",
+          pointBorderWidth: 2
+        }
+      ]
+    },
+
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: {
+          position: "bottom",
+          labels: {
+            usePointStyle: true,
+            pointStyle: "circle",
+            boxWidth: 8,
+            boxHeight: 8,
+            padding: 20,
+            font: { size: 12 }
+          }
+        }
+      },
+
+      scales: {
+        y: {
+          title: {
+            display: true,
+            text: "Price (₹)",
+            font: { size: 12 }
+          },
+          grid: { color: "rgba(0,0,0,0.06)" }
+        },
+        x: {
+          grid: { color: "rgba(0,0,0,0.06)" }
+        }
+      }
+    }
+  });
+}
+
+loadPriceChart();
+
+
+// +++++++++++++++++  prchase dashboard charts ends ++++++++++++++++
 
 // Add the class to the select box
 function initSelectClassAdd() {

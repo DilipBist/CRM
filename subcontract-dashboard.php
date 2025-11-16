@@ -43,8 +43,7 @@ include 'inc/header.php'
             </div>
         </div>
         <!-- TOP PROFILE HEADER ENDS  -->
-
-
+         
         <!-- dashboard container  -->
         <div class="dashboard_page_container pl_pr mb-5">
 
@@ -84,7 +83,7 @@ include 'inc/header.php'
                 <div class="row g-4">
                     <div class="col-lg-7">
                         <div class="subcontract_work_progress_wrapper">
-                            <div class="heading d-flex flex-wrap align-items-center justify-content-between gap-3 mb-4 mb-lg-5">
+                            <div class="heading d-flex flex-wrap align-items-center justify-content-between gap-3 mb-4">
                                 <h3>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                         <g clip-path="url(#clip0_21262_95266)">

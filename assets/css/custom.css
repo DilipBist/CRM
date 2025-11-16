@@ -99,6 +99,9 @@
   --Neutral-Gray-100: #edf2f7;
   --common-pupbg: rgba(0, 0, 0, 0.3);
   --button-focused: #00427a;
+  --chart-border: #E2E8F0;
+  --charcoal-blue: #314158;
+  --storm-blue: #1D293D;
 
   --lato: "Lato", sans-serif;
   --inter: "inter", sans-serif;
@@ -7615,7 +7618,7 @@ select option:not(:first-child) {
 
 .right_labour_management {
   border-radius: 14px;
-  border: 1px solid #E2E8F0;
+  border: 1px solid var(--chart-border);
   background: #FFF;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.10), 0 2px 4px -2px rgba(0, 0, 0, 0.10);
   padding: clamp(16px, 3vw, 24px);
@@ -7626,7 +7629,7 @@ select option:not(:first-child) {
   align-items: center;
   gap: 5px;
   margin: 0;
-  color: #1D293D;
+  color: var(--storm-blue);
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
@@ -7706,7 +7709,7 @@ select option:not(:first-child) {
 .att_work_time_container {
   padding: clamp(16px, 3vw, 24px);
   border-radius: 14px;
-  border: 1px solid #E2E8F0;
+  border: 1px solid var(--chart-border);
   background: var(--white);
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.10), 0 2px 4px -2px rgba(0, 0, 0, 0.10);
 }
@@ -7715,7 +7718,7 @@ select option:not(:first-child) {
   display: flex;
   align-items: center;
   gap: 5px;
-  color: #1D293D;
+  color: var(--storm-blue);
   font-size: 16px;
   margin-bottom: 24px;
 }
@@ -7816,7 +7819,7 @@ select option:not(:first-child) {
 }
 
 .activity_list_container .activities h5 {
-  color: #314158;
+  color: var(--charcoal-blue);
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
@@ -7847,7 +7850,7 @@ select option:not(:first-child) {
   align-items: center;
   gap: 16px;
   border-radius: 10px;
-  border: 1px solid #E2E8F0;
+  border: 1px solid var(--chart-border);
   background: var(--white);
   padding: 10px 8px;
 }
@@ -7862,13 +7865,13 @@ select option:not(:first-child) {
   padding: clamp(16px, 3vw, 24px);
   border-radius: 14px;
   border-radius: 14px;
-  border: 1px solid #E2E8F0;
+  border: 1px solid var(--chart-border);
   background: var(--white);
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.10), 0 2px 4px -2px rgba(0, 0, 0, 0.10);
 }
 
 .site_image_upload_container h4 {
-  color: #1D293D;
+  color: var(--storm-blue);
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
@@ -7909,7 +7912,7 @@ select option:not(:first-child) {
 
 .photo-card {
   border-radius: 10px;
-  border: 1px solid #E2E8F0;
+  border: 1px solid var(--chart-border);
   padding: 2px;
   font-size: 12px;
   background: var(--white);
@@ -7929,7 +7932,7 @@ select option:not(:first-child) {
 }
 
 .photo-card .title {
-  color: #314158;
+  color: var(--charcoal-blue);
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
@@ -7948,7 +7951,7 @@ select option:not(:first-child) {
   justify-content: center;
   gap: 6px;
   width: 100%;
-  background: #314158;
+  background: var(--charcoal-blue);
   color: white;
   padding: 10px;
   border: none;
@@ -8225,7 +8228,7 @@ select option:not(:first-child) {
 .subcontract_work_progress_wrapper {
   padding: clamp(16px, 2vw, 24px);
   border-radius: 14px;
-  border: 1px solid #E2E8F0;
+  border: 1px solid var(--chart-border);
   background: var(--white);
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.10), 0 2px 4px -2px rgba(0, 0, 0, 0.10);
 }
@@ -8235,7 +8238,7 @@ select option:not(:first-child) {
   align-items: center;
   gap: 8px;
   margin: 0;
-  color: #1D293D;
+  color: var(--storm-blue);
   font-size: 16px;
   font-weight: 400;
 }
@@ -8252,7 +8255,7 @@ select option:not(:first-child) {
 }
 
 .subcontract_work_progress_wrapper .active_progress_bar_wrapper h4 {
-  color: #314158;
+  color: var(--charcoal-blue);
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -8264,7 +8267,7 @@ select option:not(:first-child) {
 .subcontract_work_progress_wrapper .progress_bars_section .progress_card {
   padding: 16px;
   border-radius: 10px;
-  border: 1px solid #E2E8F0;
+  border: 1px solid var(--chart-border);
   background: #F8FAFC;
   margin-bottom: 12px;
 }
@@ -8291,7 +8294,7 @@ select option:not(:first-child) {
 }
 
 .subcontract_work_progress_wrapper .progress_bars_section .progress_card .cardbody h5 {
-  color: #1D293D;
+  color: var(--storm-blue);
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -8305,11 +8308,11 @@ select option:not(:first-child) {
 
 .subcontract_work_progress_wrapper .progress_bars_section .progress_card .cardbody .progress {
   border-radius: 20px;
-  background: #E2E8F0;
+  background: var(--chart-border);
 }
 
 .subcontract_work_progress_wrapper .progress_bars_section .progress_card .cardbody small {
-  color: #314158;
+  color: var(--charcoal-blue);
   text-align: right;
   font-size: 14px;
   font-weight: 400;
@@ -8340,7 +8343,7 @@ select option:not(:first-child) {
 }
 
 .subcontract_work_progress_wrapper .chart_Section .chart_first_card h6 {
-  color: #1D293D;
+  color: var(--storm-blue);
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -8364,7 +8367,7 @@ select option:not(:first-child) {
 
 .subcontract_work_progress_wrapper .summar_card {
   border-radius: 10px;
-  border: 1px solid #E2E8F0;
+  border: 1px solid var(--chart-border);
   background: var(--white);
   padding: 13px;
   display: flex;
@@ -8389,12 +8392,306 @@ select option:not(:first-child) {
 .subcontract_effencicy_wrapper .chart_first_card {
   height: 320px;
 }
-.subcontract_effencicy_wrapper .chart_first_card  #productivityChart{
+
+.subcontract_effencicy_wrapper .chart_first_card #productivityChart {
   height: 260px !important;
   width: 100% !important;
 }
 
 /* ======================= SUB CONTRACT DASHOBORD PAGE CSS STRATS ======================= */
+
+
+/* *************** PURCHASE DASHBOARD CSS STARTS ************** */
+.clock_sign {
+  display: flex;
+  width: 36px;
+  height: 36px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #FFEDD4 0%, #FFD6A7 100%);
+}
+
+.purchase_dashboard_common_card_wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: clamp(16px, 3vw, 38px);
+  font-family: var(--inter);
+}
+
+.purchase_dashboard_common_card_wrapper .light_blue {
+  background: #e3f5ff;
+}
+
+.purchase_dashboard_common_card_wrapper .light_grey {
+  background: #e5ecf6;
+}
+
+.purchase_dashboard_common_card_wrapper .c_div {
+  padding: clamp(16px, 3vw, 24px);
+  border-radius: 16px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.purchase_dashboard_common_card_wrapper .common_card .heading .numbering {
+  color: #1C1C1C;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 12px;
+}
+
+.purchase_dashboard_common_card_wrapper .common_card .heading h4 {
+  color: var(--black-100, #1C1C1C);
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.purchase_dashboard_common_card_wrapper .common_card .heading {
+  margin-bottom: 13px;
+}
+
+.purchase_dashboard_common_card_wrapper .common_card .progress {
+  border-radius: 12px;
+  background: #E6EAEE;
+}
+
+.purchase_dashboard_common_card_wrapper .common_card .progressBar {
+  border-radius: 4px;
+  background: #888;
+}
+
+.purchase_dashboard_common_card_wrapper .common_card small {
+  color: var(--storm-blue);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-wrap: nowrap;
+}
+
+.purchase_dashboard_common_card_wrapper .common_card .clock_sign.green {
+  border-radius: 14px;
+  background: linear-gradient(135deg, #DCFCE7 0%, #B9F8CF 100%);
+}
+
+.purchase_dashboard_common_card_wrapper .common_card .clock_sign.purple {
+  border-radius: 14px;
+  background: linear-gradient(135deg, #F3E8FF 0%, #E9D4FF 100%);
+}
+
+.purchase_dashboard_common_card_wrapper .common_card .clock_sign.blue {
+  border-radius: 14px;
+  background: linear-gradient(135deg, #DBEAFE 0%, #BEDBFF 100%);
+}
+
+.inctext {
+  color: #155DFC;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.purchase_dashboard_common_card_wrapper #lineChart {
+  width: 100% !important;
+  height: 30px !important;
+}
+
+.purhcase_dashboard_chart_wrappper .material_stock_chart,
+.purhcase_dashboard_chart_wrappper .chart_remaining_data_list,
+.purhcase_dashboard_chart_wrappper .monthly_spends_div_wrappper {
+  padding: clamp(16px, 2.5vw, 24px);
+  border-radius: 14px;
+  border: 1px solid var(--chart-border);
+  background: var(--white);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.10), 0 2px 4px -2px rgba(0, 0, 0, 0.10);
+}
+
+.purhcase_dashboard_chart_wrappper .material_stock_chart h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--storm-blue);
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.stocj_pie_chart {
+  border-radius: 14px;
+  border: 1px solid var(--chart-border);
+  background: #F8FAFC;
+  padding: 17px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.material_inventory_chart_wrppper {
+  border-radius: 14px;
+  border-radius: 14px;
+  border: 1px solid #BEDBFF;
+  background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%);
+  padding: 17px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.stocj_pie_chart h4,
+.material_inventory_chart_wrppper h4 {
+  color: var(--charcoal-blue);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+#inventoryBar {
+  height: 300px !important;
+  width: 100% !important;
+  margin-top: 16px;
+}
+
+.purhcase_dashboard_chart_wrappper .monthly_spends_div_wrappper .heading h4 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--storm-blue);
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.purhcase_dashboard_chart_wrappper .monthly_spends_div_wrappper .heading p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #E7000B;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.purhcase_dashboard_chart_wrappper .monthly_spends_div_wrappper .tag_boxs .cdiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.purhcase_dashboard_chart_wrappper .monthly_spends_div_wrappper .tag_boxs .cdiv p {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.purhcase_dashboard_chart_wrappper .monthly_spends_div_wrappper .tag_boxs .cdiv h4 {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.purhcase_dashboard_chart_wrappper .monthly_spends_div_wrappper .tag_boxs .cdiv.blue {
+  border-radius: 10px;
+  border: 1px solid #BEDBFF;
+  background: #EFF6FF;
+  padding: 12px;
+}
+
+.purhcase_dashboard_chart_wrappper .monthly_spends_div_wrappper .tag_boxs .cdiv.blue p {
+  color: #193CB8;
+}
+
+.purhcase_dashboard_chart_wrappper .monthly_spends_div_wrappper .tag_boxs .cdiv.blue h4 {
+  color: #155DFC;
+}
+
+.purhcase_dashboard_chart_wrappper .monthly_spends_div_wrappper .tag_boxs .cdiv.green {
+  border-radius: 10px;
+  border: 1px solid #B9F8CF;
+  background: #F0FDF4;
+  padding: 12px;
+}
+
+.purhcase_dashboard_chart_wrappper .monthly_spends_div_wrappper .tag_boxs .cdiv.green p {
+  color: #00A63E;
+}
+
+.purhcase_dashboard_chart_wrappper .monthly_spends_div_wrappper .tag_boxs .cdiv.green h4 {
+  color: #016630;
+}
+
+.purhcase_dashboard_chart_wrappper .monthly_spends_div_wrappper .tag_boxs .cdiv.purple {
+  border-radius: 10px;
+  border: 1px solid #E9D4FF;
+  background: #FAF5FF;
+  padding: 12px;
+}
+
+.purhcase_dashboard_chart_wrappper .monthly_spends_div_wrappper .tag_boxs .cdiv.purple p {
+  color: #9810FA;
+}
+
+.purhcase_dashboard_chart_wrappper .monthly_spends_div_wrappper .tag_boxs .cdiv.purple h4 {
+  color: #6E11B0;
+}
+
+.purhcase_dashboard_chart_wrappper .monthly_spends_div_wrappper .tag_boxs .cdiv.red {
+  border-radius: 10px;
+  border: 1px solid #FFD6A7;
+  background: #FFF7ED;
+  padding: 12px;
+}
+
+.purhcase_dashboard_chart_wrappper .monthly_spends_div_wrappper .tag_boxs .cdiv.red p {
+  color: #F54900;
+}
+
+.purhcase_dashboard_chart_wrappper .monthly_spends_div_wrappper .tag_boxs .cdiv.red {
+  color: #9F2D00;
+}
+
+.spending_vs_bujet_Chart .chart,
+.purchase_odr_per_month_chart_wrapper .chart {
+  border-radius: 14px;
+  border: 1px solid #E2E8F0;
+  background: linear-gradient(135deg, #EFF6FF 0%, #F8FAFC 100%);
+  padding: 16px 16px 16px 20px;
+}
+
+.spending_vs_bujet_Chart h4,
+.purchase_odr_per_month_chart_wrapper h4 {
+  color: var(--charcoal-blue);
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+#spendChart {
+  height: 320px !important;
+  width: 100% !important;
+}
+
+#purhcaseOrdrChart {
+  height: 220px !important;
+  width: 100% !important;
+}
+
+.price-chart-container {
+  width: 100%;
+  padding: 17px;
+  border-radius: 14px;
+  border: 1px solid #E2E8F0;
+  background: linear-gradient(135deg, #F8FAFC 0%, #EFF6FF 100%);
+}
+
+#priceChart {
+  height: 320px !important;
+}
+
+/* *************** PURCHASE DASHBOARD CSS ENDS ************** */
 
 
 /* *********************** PRINT MEDIA CODE ******************** */
