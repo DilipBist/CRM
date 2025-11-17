@@ -9156,6 +9156,29 @@ select option:not(:first-child) {
 /* *************** PURCHASE DASHBOARD CSS ENDS ************** */
 
 
+/* ================ RECEPTIONIST DASHBOARD STARTS =================== */
+
+.purchase_dashboard_common_card_wrapper .common_card .clock_sign.white_bg {
+  border-radius: 10px;
+  background: #EFF6FF;
+}
+
+.purchase_dashboard_common_card_wrapper .common_card .clock_sign.light_green {
+  background: #ECFDF5;
+}
+
+.purchase_dashboard_common_card_wrapper .common_card .clock_sign.light_green2 {
+  background: #F5F3FF;
+}
+
+.purchase_dashboard_common_card_wrapper .common_card .clock_sign.light_orange {
+  background: #FFFBEB;
+}
+
+/* ================ RECEPTIONIST DASHBOARD ENDS  =================== */
+
+
+
 /* *********************** PRINT MEDIA CODE ******************** */
 /* vocuhar print css  */
 .prit_logo {
