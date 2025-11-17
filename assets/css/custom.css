@@ -99,9 +99,9 @@
   --Neutral-Gray-100: #edf2f7;
   --common-pupbg: rgba(0, 0, 0, 0.3);
   --button-focused: #00427a;
-  --chart-border: #E2E8F0;
+  --chart-border: #e2e8f0;
   --charcoal-blue: #314158;
-  --storm-blue: #1D293D;
+  --storm-blue: #1d293d;
 
   --lato: "Lato", sans-serif;
   --inter: "inter", sans-serif;
@@ -7445,11 +7445,10 @@ select option:not(:first-child) {
 }
 
 .labour_chart_container h4 {
-  color: #45556C;
+  color: #45556c;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  ;
 }
 
 .labour_chart_container button {
@@ -7554,7 +7553,7 @@ select option:not(:first-child) {
 
 .task_progress,
 .table_txt {
-  color: #45556C;
+  color: #45556c;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -7568,8 +7567,8 @@ select option:not(:first-child) {
   align-items: center;
   gap: 4px;
   border-radius: 8px;
-  border: 1px solid #B9F8CF;
-  background: #DCFCE7;
+  border: 1px solid #b9f8cf;
+  background: #dcfce7;
   color: #016630;
   font-size: 12px;
   font-weight: 400;
@@ -7584,9 +7583,9 @@ select option:not(:first-child) {
   align-items: center;
   gap: 4px;
   border-radius: 8px;
-  border: 1px solid #FFC9C9;
-  background: #FFE2E2;
-  color: #9F0712;
+  border: 1px solid #ffc9c9;
+  background: #ffe2e2;
+  color: #9f0712;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
@@ -7600,16 +7599,16 @@ select option:not(:first-child) {
   align-items: center;
   gap: 4px;
   border-radius: 8px;
-  border: 1px solid #FFD6A7;
-  background: #FFEDD4;
-  color: #9F2D00;
+  border: 1px solid #ffd6a7;
+  background: #ffedd4;
+  color: #9f2d00;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
 }
 
 .active_project_table table tbody tr td {
-  color: #0A0A0A;
+  color: #0a0a0a;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -7619,8 +7618,9 @@ select option:not(:first-child) {
 .right_labour_management {
   border-radius: 14px;
   border: 1px solid var(--chart-border);
-  background: #FFF;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.10), 0 2px 4px -2px rgba(0, 0, 0, 0.10);
+  background: #fff;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -2px rgba(0, 0, 0, 0.1);
   padding: clamp(16px, 3vw, 24px);
 }
 
@@ -7641,12 +7641,12 @@ select option:not(:first-child) {
   gap: 16px;
   padding: 18px;
   border-radius: 10px;
-  background: var(--Button-soft-color, #CCDDEB);
+  background: var(--Button-soft-color, #ccddeb);
   margin-top: 30px;
 }
 
 .right_labour_management .total_labour_tag p {
-  color: #45556C;
+  color: #45556c;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -7663,15 +7663,15 @@ select option:not(:first-child) {
 .labour_track_container .labour_present {
   padding: 14px;
   border-radius: 10px;
-  border: 1px solid #B9F8CF;
-  background: #F0FDF4;
+  border: 1px solid #b9f8cf;
+  background: #f0fdf4;
 }
 
 .labour_track_container .labour_absent {
   padding: 14px;
   border-radius: 10px;
-  border: 1px solid #FFC9C9;
-  background: #FEF2F2;
+  border: 1px solid #ffc9c9;
+  background: #fef2f2;
 }
 
 .labour_track_container .labour_present h4 {
@@ -7682,14 +7682,14 @@ select option:not(:first-child) {
 }
 
 .labour_track_container .labour_absent h4 {
-  color: #9F0712;
+  color: #9f0712;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
 }
 
 .labour_track_container .labour_present p {
-  color: #00A63E;
+  color: #00a63e;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -7698,7 +7698,7 @@ select option:not(:first-child) {
 }
 
 .labour_track_container .labour_absent p {
-  color: #E7000B;
+  color: #e7000b;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -7711,7 +7711,8 @@ select option:not(:first-child) {
   border-radius: 14px;
   border: 1px solid var(--chart-border);
   background: var(--white);
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.10), 0 2px 4px -2px rgba(0, 0, 0, 0.10);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -2px rgba(0, 0, 0, 0.1);
 }
 
 .att_work_time_container h4 {
@@ -7725,8 +7726,8 @@ select option:not(:first-child) {
 
 .att_work_time_container .box {
   border-radius: 10px;
-  border: 1px solid #B9F8CF;
-  background: #F0FDF4;
+  border: 1px solid #b9f8cf;
+  background: #f0fdf4;
   padding: 14px;
 }
 
@@ -7739,7 +7740,7 @@ select option:not(:first-child) {
 }
 
 .att_work_time_container .box p {
-  color: #00A63E;
+  color: #00a63e;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -7747,13 +7748,13 @@ select option:not(:first-child) {
 
 .att_work_time_container .box2 {
   border-radius: 10px;
-  border: 1px solid #FFD6A7;
-  background: #FFF7ED;
+  border: 1px solid #ffd6a7;
+  background: #fff7ed;
   padding: 14px;
 }
 
 .att_work_time_container .box2 h4 {
-  color: #9F2D00;
+  color: #9f2d00;
   font-size: 14px;
   margin-bottom: 10px;
   font-weight: 400;
@@ -7761,21 +7762,21 @@ select option:not(:first-child) {
 }
 
 .att_work_time_container .box2 p {
-  color: #F54900;
+  color: #f54900;
   font-size: 14px;
   font-weight: 400;
-  line-height: 20px
+  line-height: 20px;
 }
 
 .att_work_time_container .box3 {
   border-radius: 10px;
-  border: 1px solid #BEDBFF;
-  background: #EFF6FF;
+  border: 1px solid #bedbff;
+  background: #eff6ff;
   padding: 14px;
 }
 
 .att_work_time_container .box3 h4 {
-  color: #193CB8;
+  color: #193cb8;
   font-size: 14px;
   margin-bottom: 10px;
   font-weight: 400;
@@ -7783,21 +7784,21 @@ select option:not(:first-child) {
 }
 
 .att_work_time_container .box3 p {
-  color: #155DFC;
+  color: #155dfc;
   font-size: 14px;
   font-weight: 400;
-  line-height: 20px
+  line-height: 20px;
 }
 
 .att_work_time_container .box4 {
   border-radius: 10px;
-  border: 1px solid #E9D4FF;
-  background: #FAF5FF;
+  border: 1px solid #e9d4ff;
+  background: #faf5ff;
   padding: 14px;
 }
 
 .att_work_time_container .box4 h4 {
-  color: #6E11B0;
+  color: #6e11b0;
   font-size: 14px;
   margin-bottom: 10px;
   font-weight: 400;
@@ -7805,14 +7806,14 @@ select option:not(:first-child) {
 }
 
 .att_work_time_container .box4 p {
-  color: #9810FA;
+  color: #9810fa;
   font-size: 14px;
   font-weight: 400;
-  line-height: 20px
+  line-height: 20px;
 }
 
 .att_work_time_container h5 {
-  color: #45556C;
+  color: #45556c;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -7828,7 +7829,7 @@ select option:not(:first-child) {
 }
 
 .activity_list_container .activities p {
-  color: #62748E;
+  color: #62748e;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
@@ -7836,8 +7837,7 @@ select option:not(:first-child) {
 }
 
 .activity_list_container .activities .right_div p {
-  color: #90A1B9;
-  ;
+  color: #90a1b9;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
@@ -7867,7 +7867,8 @@ select option:not(:first-child) {
   border-radius: 14px;
   border: 1px solid var(--chart-border);
   background: var(--white);
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.10), 0 2px 4px -2px rgba(0, 0, 0, 0.10);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -2px rgba(0, 0, 0, 0.1);
 }
 
 .site_image_upload_container h4 {
@@ -7939,7 +7940,7 @@ select option:not(:first-child) {
 }
 
 .photo-card .time {
-  color: #90A1B9;
+  color: #90a1b9;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
@@ -8004,7 +8005,6 @@ select option:not(:first-child) {
 
 /*=============== Supervisor Dashboard CSS ENDS ===============  */
 
-
 /* ******************** VOUCHAR INNER POPUP CSS (JOURNAL, PAYMENT, RECEIPT) ****************** */
 .vouchar_inner_popup_wrapper {
   background-color: rgba(0, 0, 0, 0.5);
@@ -8065,9 +8065,9 @@ select option:not(:first-child) {
   background-color: var(--white);
   padding: 0 24px 24px 24px;
   border-radius: 12px;
-  border: 1px solid var(--Neutral-Separator, #EBEBEB);
-  background: #FFF;
-  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.10);
+  border: 1px solid var(--Neutral-Separator, #ebebeb);
+  background: #fff;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.1);
 }
 
 .vouchar_inner_popup_wrapper .inner_bg .top_header,
@@ -8223,14 +8223,14 @@ select option:not(:first-child) {
 
 /* ******************** VOUCHAR INNER POPUP CSS (JOURNAL, PAYMENT, RECEIPT) ****************** */
 
-
 /* ======================= SUB CONTRACT DASHOBORD PAGE CSS STRATS ======================= */
 .subcontract_work_progress_wrapper {
   padding: clamp(16px, 2vw, 24px);
   border-radius: 14px;
   border: 1px solid var(--chart-border);
   background: var(--white);
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.10), 0 2px 4px -2px rgba(0, 0, 0, 0.10);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -2px rgba(0, 0, 0, 0.1);
 }
 
 .subcontract_work_progress_wrapper .heading h3 {
@@ -8243,9 +8243,8 @@ select option:not(:first-child) {
   font-weight: 400;
 }
 
-
 .subcontract_work_progress_wrapper .heading .date {
-  color: #45556C;
+  color: #45556c;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -8268,26 +8267,26 @@ select option:not(:first-child) {
   padding: 16px;
   border-radius: 10px;
   border: 1px solid var(--chart-border);
-  background: #F8FAFC;
+  background: #f8fafc;
   margin-bottom: 12px;
 }
 
 .primaryColor {
-  color: #155DFC;
+  color: #155dfc;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
 }
 
 .successColor {
-  color: #00A63E;
+  color: #00a63e;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
 }
 
 .dangerColor {
-  color: #F54900;
+  color: #f54900;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
@@ -8323,20 +8322,20 @@ select option:not(:first-child) {
 .subcontract_effencicy_wrapper .chart_first_card {
   padding: 16px;
   border-radius: 14px;
-  border: 1px solid #BEDBFF;
-  background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%);
+  border: 1px solid #bedbff;
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
   height: 280px;
 }
 
 .subcontract_work_progress_wrapper .chart_Section .chart_first_card .bottom_text div {
-  color: #45556C;
+  color: #45556c;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
 }
 
 .subcontract_work_progress_wrapper .chart_Section .chart_first_card .bottom_text .green {
-  color: #00A63E;
+  color: #00a63e;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
@@ -8384,7 +8383,7 @@ select option:not(:first-child) {
 
 .subcontract_work_progress_wrapper .summar_card p {
   margin: 0;
-  color: #62748E;
+  color: #62748e;
   text-align: center;
   font-size: 12px;
 }
@@ -8400,7 +8399,6 @@ select option:not(:first-child) {
 
 /* ======================= SUB CONTRACT DASHOBORD PAGE CSS STRATS ======================= */
 
-
 /* *************** PURCHASE DASHBOARD CSS STARTS ************** */
 .clock_sign {
   display: flex;
@@ -8409,7 +8407,7 @@ select option:not(:first-child) {
   justify-content: center;
   align-items: center;
   border-radius: 14px;
-  background: linear-gradient(135deg, #FFEDD4 0%, #FFD6A7 100%);
+  background: linear-gradient(135deg, #ffedd4 0%, #ffd6a7 100%);
 }
 
 .purchase_dashboard_common_card_wrapper {
@@ -8438,14 +8436,14 @@ select option:not(:first-child) {
 }
 
 .purchase_dashboard_common_card_wrapper .common_card .heading .numbering {
-  color: #1C1C1C;
+  color: #1c1c1c;
   font-size: 18px;
   font-weight: 800;
   line-height: 12px;
 }
 
 .purchase_dashboard_common_card_wrapper .common_card .heading h4 {
-  color: var(--black-100, #1C1C1C);
+  color: var(--black-100, #1c1c1c);
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 12px;
@@ -8457,7 +8455,7 @@ select option:not(:first-child) {
 
 .purchase_dashboard_common_card_wrapper .common_card .progress {
   border-radius: 12px;
-  background: #E6EAEE;
+  background: #e6eaee;
 }
 
 .purchase_dashboard_common_card_wrapper .common_card .progressBar {
@@ -8475,21 +8473,21 @@ select option:not(:first-child) {
 
 .purchase_dashboard_common_card_wrapper .common_card .clock_sign.green {
   border-radius: 14px;
-  background: linear-gradient(135deg, #DCFCE7 0%, #B9F8CF 100%);
+  background: linear-gradient(135deg, #dcfce7 0%, #b9f8cf 100%);
 }
 
 .purchase_dashboard_common_card_wrapper .common_card .clock_sign.purple {
   border-radius: 14px;
-  background: linear-gradient(135deg, #F3E8FF 0%, #E9D4FF 100%);
+  background: linear-gradient(135deg, #f3e8ff 0%, #e9d4ff 100%);
 }
 
 .purchase_dashboard_common_card_wrapper .common_card .clock_sign.blue {
   border-radius: 14px;
-  background: linear-gradient(135deg, #DBEAFE 0%, #BEDBFF 100%);
+  background: linear-gradient(135deg, #dbeafe 0%, #bedbff 100%);
 }
 
 .inctext {
-  color: #155DFC;
+  color: #155dfc;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
@@ -8507,7 +8505,8 @@ select option:not(:first-child) {
   border-radius: 14px;
   border: 1px solid var(--chart-border);
   background: var(--white);
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.10), 0 2px 4px -2px rgba(0, 0, 0, 0.10);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -2px rgba(0, 0, 0, 0.1);
 }
 
 .purhcase_dashboard_chart_wrappper .material_stock_chart h3 {
@@ -8523,7 +8522,7 @@ select option:not(:first-child) {
 .stocj_pie_chart {
   border-radius: 14px;
   border: 1px solid var(--chart-border);
-  background: #F8FAFC;
+  background: #f8fafc;
   padding: 17px;
   height: 400px;
   overflow: hidden;
@@ -8532,8 +8531,8 @@ select option:not(:first-child) {
 .material_inventory_chart_wrppper {
   border-radius: 14px;
   border-radius: 14px;
-  border: 1px solid #BEDBFF;
-  background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%);
+  border: 1px solid #bedbff;
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
   padding: 17px;
   height: 400px;
   overflow: hidden;
@@ -8567,7 +8566,7 @@ select option:not(:first-child) {
   display: flex;
   align-items: center;
   gap: 8px;
-  color: #E7000B;
+  color: #e7000b;
   font-size: 16px;
   font-weight: 400;
   margin: 0;
@@ -8595,28 +8594,28 @@ select option:not(:first-child) {
 
 .purhcase_dashboard_chart_wrappper .monthly_spends_div_wrappper .tag_boxs .cdiv.blue {
   border-radius: 10px;
-  border: 1px solid #BEDBFF;
-  background: #EFF6FF;
+  border: 1px solid #bedbff;
+  background: #eff6ff;
   padding: 12px;
 }
 
 .purhcase_dashboard_chart_wrappper .monthly_spends_div_wrappper .tag_boxs .cdiv.blue p {
-  color: #193CB8;
+  color: #193cb8;
 }
 
 .purhcase_dashboard_chart_wrappper .monthly_spends_div_wrappper .tag_boxs .cdiv.blue h4 {
-  color: #155DFC;
+  color: #155dfc;
 }
 
 .purhcase_dashboard_chart_wrappper .monthly_spends_div_wrappper .tag_boxs .cdiv.green {
   border-radius: 10px;
-  border: 1px solid #B9F8CF;
-  background: #F0FDF4;
+  border: 1px solid #b9f8cf;
+  background: #f0fdf4;
   padding: 12px;
 }
 
 .purhcase_dashboard_chart_wrappper .monthly_spends_div_wrappper .tag_boxs .cdiv.green p {
-  color: #00A63E;
+  color: #00a63e;
 }
 
 .purhcase_dashboard_chart_wrappper .monthly_spends_div_wrappper .tag_boxs .cdiv.green h4 {
@@ -8625,39 +8624,39 @@ select option:not(:first-child) {
 
 .purhcase_dashboard_chart_wrappper .monthly_spends_div_wrappper .tag_boxs .cdiv.purple {
   border-radius: 10px;
-  border: 1px solid #E9D4FF;
-  background: #FAF5FF;
+  border: 1px solid #e9d4ff;
+  background: #faf5ff;
   padding: 12px;
 }
 
 .purhcase_dashboard_chart_wrappper .monthly_spends_div_wrappper .tag_boxs .cdiv.purple p {
-  color: #9810FA;
+  color: #9810fa;
 }
 
 .purhcase_dashboard_chart_wrappper .monthly_spends_div_wrappper .tag_boxs .cdiv.purple h4 {
-  color: #6E11B0;
+  color: #6e11b0;
 }
 
 .purhcase_dashboard_chart_wrappper .monthly_spends_div_wrappper .tag_boxs .cdiv.red {
   border-radius: 10px;
-  border: 1px solid #FFD6A7;
-  background: #FFF7ED;
+  border: 1px solid #ffd6a7;
+  background: #fff7ed;
   padding: 12px;
 }
 
 .purhcase_dashboard_chart_wrappper .monthly_spends_div_wrappper .tag_boxs .cdiv.red p {
-  color: #F54900;
+  color: #f54900;
 }
 
 .purhcase_dashboard_chart_wrappper .monthly_spends_div_wrappper .tag_boxs .cdiv.red {
-  color: #9F2D00;
+  color: #9f2d00;
 }
 
 .spending_vs_bujet_Chart .chart,
 .purchase_odr_per_month_chart_wrapper .chart {
   border-radius: 14px;
-  border: 1px solid #E2E8F0;
-  background: linear-gradient(135deg, #EFF6FF 0%, #F8FAFC 100%);
+  border: 1px solid #e2e8f0;
+  background: linear-gradient(135deg, #eff6ff 0%, #f8fafc 100%);
   padding: 16px 16px 16px 20px;
 }
 
@@ -8683,8 +8682,8 @@ select option:not(:first-child) {
   width: 100%;
   padding: 17px;
   border-radius: 14px;
-  border: 1px solid #E2E8F0;
-  background: linear-gradient(135deg, #F8FAFC 0%, #EFF6FF 100%);
+  border: 1px solid #e2e8f0;
+  background: linear-gradient(135deg, #f8fafc 0%, #eff6ff 100%);
 }
 
 #priceChart {
@@ -8693,13 +8692,13 @@ select option:not(:first-child) {
 
 .chart_remaining_data_list .box_list_container .bx {
   border-radius: 10px;
-  border: 1px solid #E2E8F0;
+  border: 1px solid #e2e8f0;
   background: var(--white);
   padding: 14px;
 }
 
 .chart_remaining_data_list .box_list_container .bx h3 {
-  color: #1D293D;
+  color: #1d293d;
   font-size: 14px;
   font-weight: 400;
   margin: 0;
@@ -8713,14 +8712,14 @@ select option:not(:first-child) {
 }
 
 .chart_remaining_data_list .box_list_container .bx .icon {
-  color: #E7000B;
+  color: #e7000b;
   font-size: 12px;
   font-weight: 400;
 }
 
 .chart_remaining_data_list .box_list_container .bx p {
   margin: 0;
-  color: #62748E;
+  color: #62748e;
   font-size: 12px;
   font-weight: 400;
 }
@@ -8734,22 +8733,22 @@ select option:not(:first-child) {
 .chart_remaining_data_list .bottom_row .box {
   padding: 14px;
   border-radius: 10px;
-  border: 1px solid #FFC9C9;
-  background: #FEF2F2;
+  border: 1px solid #ffc9c9;
+  background: #fef2f2;
 }
 
 .chart_remaining_data_list .bottom_row .box h4 {
   display: flex;
   align-items: center;
   gap: 8px;
-  color: #9F0712;
+  color: #9f0712;
   font-size: 12px;
   font-weight: 400;
   margin: 0;
 }
 
 .chart_remaining_data_list .bottom_row .box p {
-  color: #E7000B;
+  color: #e7000b;
   font-size: 14px;
   font-weight: 400;
   margin: 0;
@@ -8758,8 +8757,8 @@ select option:not(:first-child) {
 .chart_remaining_data_list .bottom_row .box2 {
   padding: 14px;
   border-radius: 10px;
-  border: 1px solid #B9F8CF;
-  background: #F0FDF4;
+  border: 1px solid #b9f8cf;
+  background: #f0fdf4;
 }
 
 .chart_remaining_data_list .bottom_row .box2 h4 {
@@ -8773,7 +8772,7 @@ select option:not(:first-child) {
 }
 
 .chart_remaining_data_list .bottom_row .box2 p {
-  color: #00A63E;
+  color: #00a63e;
   font-size: 14px;
   font-weight: 400;
   margin: 0;
@@ -8781,16 +8780,17 @@ select option:not(:first-child) {
 
 .purhcase_dashboard_chart_wrappper .right_section_wrapper .payment_status_box_wrapper {
   border-radius: 14px;
-  border: 1px solid #E2E8F0;
+  border: 1px solid #e2e8f0;
   background: var(--white);
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.10), 0 2px 4px -2px rgba(0, 0, 0, 0.10);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -2px rgba(0, 0, 0, 0.1);
   padding: clamp(16px, 2vw, 24px);
 }
 
 .purhcase_dashboard_chart_wrappper .right_section_wrapper .payment_status_box_wrapper .heading h4 {
   display: flex;
   align-items: center;
-  color: #1D293D;
+  color: #1d293d;
   font-size: 16px;
   font-weight: 400;
   gap: 8px;
@@ -8802,7 +8802,7 @@ select option:not(:first-child) {
   font-size: 12px;
   font-weight: 400;
   border-radius: 8px;
-  border: 1px solid rgba(0, 0, 0, 0.00);
+  border: 1px solid rgba(0, 0, 0, 0);
   background: var(--neutral-primay, #005399);
   padding: 2px 8px;
   width: max-content;
@@ -8810,8 +8810,8 @@ select option:not(:first-child) {
 
 .purhcase_dashboard_chart_wrappper .right_section_wrapper .pending_payment_wrapper .box {
   border-radius: 8px;
-  background: #CDD7ED;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.10), 0 1px 2px -1px rgba(0, 0, 0, 0.10);
+  background: #cdd7ed;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -8836,60 +8836,63 @@ select option:not(:first-child) {
 
 .purhcase_dashboard_chart_wrappper .right_section_wrapper .pending_payment_wrapper .box.red h5,
 .purhcase_dashboard_chart_wrappper .right_section_wrapper .pending_payment_wrapper .box.red p {
-  color: #A70A0A;
+  color: #a70a0a;
 }
 
 .purhcase_dashboard_chart_wrappper .right_section_wrapper .pending_payment_wrapper .box.green h5,
 .purhcase_dashboard_chart_wrappper .right_section_wrapper .pending_payment_wrapper .box.green p {
-  color: #0E8826;
+  color: #0e8826;
 }
 
 .purhcase_dashboard_chart_wrappper .right_section_wrapper .pending_payment_wrapper {
   border-radius: 10px;
-  background: linear-gradient(94deg, #005399 1.25%, #005399 1.38%, #BCD7EE 86.07%);
+  background: linear-gradient(94deg,
+      #005399 1.25%,
+      #005399 1.38%,
+      #bcd7ee 86.07%);
   padding: 17px;
 }
 
 .purhcase_dashboard_chart_wrappper .right_section_wrapper .pending_payment_wrapper>h5 {
-  color: #F2F6FA;
+  color: #f2f6fa;
   font-size: 12px;
   font-weight: 400;
 }
 
 .purhcase_dashboard_chart_wrappper .right_section_wrapper .pending_payment_wrapper>h4 {
   font-size: 24px;
-  color: #F2F6FA;
+  color: #f2f6fa;
   font-weight: 400;
   margin-bottom: 10px;
 }
 
 .purhcase_dashboard_chart_wrappper .right_section_wrapper .pending_list_data .tag {
   border-radius: 12px;
-  background: #CECECE;
+  background: #cecece;
   font-size: 14px;
   color: var(--text-5C);
   padding: 4px 8px;
 }
 
 .purhcase_dashboard_chart_wrappper .right_section_wrapper .pending_list_data .tag.red {
-  background: #FB2C36;
+  background: #fb2c36;
   color: var(--white);
 }
 
 .purhcase_dashboard_chart_wrappper .right_section_wrapper .pending_list_data .tag.green {
-  background: #00C950;
+  background: #00c950;
   color: var(--white);
 }
 
 .purhcase_dashboard_chart_wrappper .right_section_wrapper .pending_list_data .c_heading h4 {
-  color: #1D293D;
+  color: #1d293d;
   font-size: 14px;
   font-weight: 400;
   margin: 0;
 }
 
 .purhcase_dashboard_chart_wrappper .right_section_wrapper .pending_list_data .c_heading p {
-  color: #45556C;
+  color: #45556c;
   font-size: 12px;
   font-weight: 400;
   margin: 0;
@@ -8897,13 +8900,13 @@ select option:not(:first-child) {
 
 .purhcase_dashboard_chart_wrappper .right_section_wrapper .pending_list_data .box {
   border-radius: 10px;
-  border: 1px solid #E2E8F0;
+  border: 1px solid #e2e8f0;
   background: var(--white);
   padding: 16px;
 }
 
 .purhcase_dashboard_chart_wrappper .right_section_wrapper .pending_list_data .box>h3 {
-  color: #1D293D;
+  color: #1d293d;
   font-size: 14px;
   font-weight: 400;
   margin: 0;
@@ -8912,20 +8915,20 @@ select option:not(:first-child) {
 
 .purhcase_dashboard_chart_wrappper .right_section_wrapper .pending_list_data .box .last_div p:first-child {
   margin: 0;
-  color: #62748E;
+  color: #62748e;
   font-size: 12px;
   font-weight: 400;
 }
 
 .purhcase_dashboard_chart_wrappper .right_section_wrapper .pending_list_data .box .last_div p {
-  color: #45556C;
+  color: #45556c;
   font-size: 12px;
   margin: 0;
   font-weight: 400;
 }
 
 .purhcase_dashboard_chart_wrappper .right_section_wrapper .pending_list_data .box .last_div p.red {
-  color: #E7000B;
+  color: #e7000b;
   font-size: 12px;
   margin: 0;
   font-weight: 400;
@@ -8945,15 +8948,15 @@ select option:not(:first-child) {
 
 .purhcase_dashboard_chart_wrappper .right_section_wrapper .action_box {
   border-radius: 10px;
-  border: 1px solid #FFC9C9;
-  background: #FEF2F2;
+  border: 1px solid #ffc9c9;
+  background: #fef2f2;
   padding: 14px;
   margin-top: 32px;
   position: relative;
 }
 
 .purhcase_dashboard_chart_wrappper .right_section_wrapper .action_box::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -16px;
   left: 0;
@@ -8963,7 +8966,7 @@ select option:not(:first-child) {
 }
 
 .purhcase_dashboard_chart_wrappper .right_section_wrapper .action_box h4 {
-  color: #9F0712;
+  color: #9f0712;
   font-size: 12px;
   font-weight: 400;
   margin: 0;
@@ -8971,7 +8974,7 @@ select option:not(:first-child) {
 
 .purhcase_dashboard_chart_wrappper .right_section_wrapper .action_box p {
   margin: 0;
-  color: #E7000B;
+  color: #e7000b;
   font-size: 12px;
   font-weight: 400;
   font-family: var(--inter);
@@ -8979,25 +8982,26 @@ select option:not(:first-child) {
 
 .purhcase_dashboard_chart_wrappper .right_section_wrapper .recent_supplier_box_wrapper {
   border-radius: 14px;
-  border: 1px solid #E2E8F0;
+  border: 1px solid #e2e8f0;
   background: var(--white);
   padding: clamp(16px, 2vw, 24px);
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.10), 0 2px 4px -2px rgba(0, 0, 0, 0.10);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -2px rgba(0, 0, 0, 0.1);
 }
 
 .purhcase_dashboard_chart_wrappper .right_section_wrapper .recent_supplier_box_wrapper .heading h4 {
   display: flex;
   align-items: center;
   gap: 8px;
-  color: #1D293D;
+  color: #1d293d;
   font-size: 16px;
   font-weight: 400;
 }
 
 .purhcase_dashboard_chart_wrappper .right_section_wrapper .recent_supplier_box_wrapper .heading .top_tag {
   border-radius: 8px;
-  border: 1px solid #8EC5FF;
-  color: #155DFC;
+  border: 1px solid #8ec5ff;
+  color: #155dfc;
   font-size: 12px;
   font-weight: 400;
   padding: 4px 8px;
@@ -9007,8 +9011,8 @@ select option:not(:first-child) {
 .purhcase_dashboard_chart_wrappper .right_section_wrapper .call_active_box_wrapper .call_box {
   padding: 16px;
   border-radius: 10px;
-  border: 1px solid #E2E8F0;
-  background: #FFF;
+  border: 1px solid #e2e8f0;
+  background: #fff;
 }
 
 .purhcase_dashboard_chart_wrappper .right_section_wrapper .call_active_box_wrapper .call_box .left_div .name_bx {
@@ -9019,42 +9023,42 @@ select option:not(:first-child) {
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  background: linear-gradient(135deg, #2B7FFF 0%, #155DFC 100%);
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.10), 0 1px 2px -1px rgba(0, 0, 0, 0.10);
+  background: linear-gradient(135deg, #2b7fff 0%, #155dfc 100%);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
   font-size: 14px;
   color: var(--white);
 }
 
 .purhcase_dashboard_chart_wrappper .right_section_wrapper .call_active_box_wrapper .call_box .left_div .name_bx.grey {
-  background: linear-gradient(135deg, #62748E 0%, #45556C 100%);
+  background: linear-gradient(135deg, #62748e 0%, #45556c 100%);
 }
 
 .purhcase_dashboard_chart_wrappper .right_section_wrapper .call_active_box_wrapper .call_box .left_div .name_bx.orange {
-  background: linear-gradient(135deg, #FF6900 0%, #F54900 100%);
+  background: linear-gradient(135deg, #ff6900 0%, #f54900 100%);
 }
 
 .purhcase_dashboard_chart_wrappper .right_section_wrapper .call_active_box_wrapper .call_box .left_div .name_bx.purple {
-  background: linear-gradient(135deg, #AD46FF 0%, #9810FA 100%);
+  background: linear-gradient(135deg, #ad46ff 0%, #9810fa 100%);
 }
 
 .purhcase_dashboard_chart_wrappper .right_section_wrapper .call_active_box_wrapper .call_box .left_div .name_bx.green {
-  background: linear-gradient(135deg, #00C950 0%, #00A63E 100%);
+  background: linear-gradient(135deg, #00c950 0%, #00a63e 100%);
 }
 
 .purhcase_dashboard_chart_wrappper .right_section_wrapper .call_active_box_wrapper .call_box .rating_order_bx {
-  color: #45556C;
+  color: #45556c;
   font-size: 12px;
   font-weight: 400;
 }
 
 .purhcase_dashboard_chart_wrappper .right_section_wrapper .call_active_box_wrapper .call_box .rating_order_bx .order {
-  color: #45556C;
+  color: #45556c;
   font-size: 12px;
   font-weight: 400;
 }
 
 .purhcase_dashboard_chart_wrappper .right_section_wrapper .call_active_box_wrapper .call_box .fist_div .details h3 {
-  color: #1D293D;
+  color: #1d293d;
   font-size: 14px;
   font-weight: 400;
   margin: 0;
@@ -9062,7 +9066,7 @@ select option:not(:first-child) {
 }
 
 .purhcase_dashboard_chart_wrappper .right_section_wrapper .call_active_box_wrapper .call_box .fist_div .details h6 {
-  color: #62748E;
+  color: #62748e;
   font-size: 12px;
   font-weight: 400;
 }
@@ -9072,8 +9076,8 @@ select option:not(:first-child) {
   font-weight: 400;
   color: var(--white);
   border-radius: 12px;
-  border: 1px solid rgba(0, 0, 0, 0.00);
-  background: #00C950;
+  border: 1px solid rgba(0, 0, 0, 0);
+  background: #00c950;
   padding: 4px 8px;
   width: max-content;
 }
@@ -9087,7 +9091,7 @@ select option:not(:first-child) {
 
 .purhcase_dashboard_chart_wrappper .right_section_wrapper .call_active_box_wrapper .call_box .button_div button {
   border-radius: 8px;
-  border: 1px solid #CAD5E2;
+  border: 1px solid #cad5e2;
   background: var(--white);
   width: 100%;
   padding: 5px 8px;
@@ -9118,7 +9122,7 @@ select option:not(:first-child) {
 }
 
 .purhcase_dashboard_chart_wrappper .right_section_wrapper .recent_supplier_box_wrapper .active_div_wrappper::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: -16px;
@@ -9128,12 +9132,12 @@ select option:not(:first-child) {
 }
 
 .purhcase_dashboard_chart_wrappper .right_section_wrapper .recent_supplier_box_wrapper .active_div_wrappper .box {
-  color: #193CB8;
+  color: #193cb8;
   font-size: 12px;
   font-weight: 400;
   border-radius: 10px;
-  border: 1px solid #BEDBFF;
-  background: #EFF6FF;
+  border: 1px solid #bedbff;
+  background: #eff6ff;
   padding: 14px;
   display: flex;
   align-items: center;
@@ -9149,35 +9153,542 @@ select option:not(:first-child) {
 
 .purhcase_dashboard_chart_wrappper .right_section_wrapper .recent_supplier_box_wrapper .active_div_wrappper .box.green {
   color: #016630;
-  border: 1px solid #B9F8CF;
-  background: #F0FDF4;
+  border: 1px solid #b9f8cf;
+  background: #f0fdf4;
 }
 
 /* *************** PURCHASE DASHBOARD CSS ENDS ************** */
-
 
 /* ================ RECEPTIONIST DASHBOARD STARTS =================== */
 
 .purchase_dashboard_common_card_wrapper .common_card .clock_sign.white_bg {
   border-radius: 10px;
-  background: #EFF6FF;
+  background: #eff6ff;
 }
 
 .purchase_dashboard_common_card_wrapper .common_card .clock_sign.light_green {
-  background: #ECFDF5;
+  background: #ecfdf5;
 }
 
 .purchase_dashboard_common_card_wrapper .common_card .clock_sign.light_green2 {
-  background: #F5F3FF;
+  background: #f5f3ff;
 }
 
 .purchase_dashboard_common_card_wrapper .common_card .clock_sign.light_orange {
-  background: #FFFBEB;
+  background: #fffbeb;
+}
+
+.receiptionist_dashboard_data_container .left_div_wrapper .new_purchase_wrapper,
+.receiptionist_dashboard_data_container .left_div_wrapper .pending_approvals_wrapper {
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+  background: #fff;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  padding: clamp(16px, 2vw, 24px);
+}
+
+.receiptionist_dashboard_data_container .left_div_wrapper .new_purchase_wrapper h4 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #314158;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.receiptionist_dashboard_data_container .left_div_wrapper .new_purchase_wrapper button {
+  color: var(--white);
+  font-size: 14px;
+  border-radius: 8px;
+  background: #2b7fff;
+  border: none;
+  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.receiptionist_dashboard_data_container .left_div_wrapper .new_purchase_wrapper .sec_heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 0;
+}
+
+.receiptionist_dashboard_data_container .left_div_wrapper .new_purchase_wrapper .sec_heading h4 {
+  margin: 0;
+  color: #45556c;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.receiptionist_dashboard_data_container .left_div_wrapper .new_purchase_wrapper .sec_heading p {
+  color: #155dfc;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.receiptionist_dashboard_data_container .left_div_wrapper .new_purchase_wrapper .data_show_grid h4 {
+  color: #096;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.receiptionist_dashboard_data_container .left_div_wrapper .new_purchase_wrapper .data_show_grid .bx {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.receiptionist_dashboard_data_container .left_div_wrapper .new_purchase_wrapper .data_show_grid .box {
+  background: #eff6ff;
+}
+
+.receiptionist_dashboard_data_container .left_div_wrapper .new_purchase_wrapper .data_show_grid .box2 {
+  background: #f8fafc;
+}
+
+.receiptionist_dashboard_data_container .left_div_wrapper .new_purchase_wrapper .data_show_grid .bx h5 {
+  margin: 0;
+  color: #62748e;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.receiptionist_dashboard_data_container .left_div_wrapper .new_purchase_wrapper .data_show_grid .bx p {
+  margin: 0;
+  color: #155dfc;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.receiptionist_dashboard_data_container .left_div_wrapper .new_purchase_wrapper .data_show_grid .box2 p {
+  color: #314158;
+}
+
+.receiptionist_dashboard_data_container .left_div_wrapper .pending_approvals_wrapper .heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #314158;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.receiptionist_dashboard_data_container .left_div_wrapper .pending_approvals_wrapper .pending_text_wrapper .p_heading h4 {
+  margin: 0;
+  color: #45556c;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.receiptionist_dashboard_data_container .left_div_wrapper .pending_approvals_wrapper .pending_text_wrapper .p_heading p {
+  margin: 0;
+  color: #f54900;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.receiptionist_dashboard_data_container .left_div_wrapper .pending_approvals_wrapper .pending_text_wrapper .bx {
+  height: 22px;
+  width: 22px;
+  padding: 2px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.receiptionist_dashboard_data_container .left_div_wrapper .pending_approvals_wrapper .pending_text_wrapper .urgent h4 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #45556c;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.receiptionist_dashboard_data_container .left_div_wrapper .pending_approvals_wrapper .pending_text_wrapper .bx.light_red_bg {
+  border: 1px solid rgba(0, 0, 0, 0);
+  background: #ffe2e2;
+  color: #c10007;
+}
+
+.receiptionist_dashboard_data_container .left_div_wrapper .pending_approvals_wrapper .pending_text_wrapper .bx.light_orange_bg {
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  background: #ffedd4;
+  color: #ca3500;
+}
+
+.receiptionist_dashboard_data_container .left_div_wrapper .pending_approvals_wrapper .pending_text_wrapper .bx.light_blue_bg {
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  background: #dbeafe;
+  color: #1447e6;
+}
+
+.receiptionist_dashboard_data_container .left_div_wrapper .recent_purchase_wrapper {
+  padding: clamp(16px, 2vw, 24px);
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+  background: var(--white);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+}
+
+.receiptionist_dashboard_data_container .left_div_wrapper .recent_purchase_wrapper .heading {
+  color: #314158;
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.receiptionist_dashboard_data_container .left_div_wrapper .recent_purchase_wrapper .record_box_wrapper .record_box {
+  border-radius: 10px;
+  background: #f8fafc;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.receiptionist_dashboard_data_container .left_div_wrapper .recent_purchase_wrapper .record_box_wrapper .record_box .left h4 {
+  color: #1d293d;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.receiptionist_dashboard_data_container .left_div_wrapper .recent_purchase_wrapper .record_box_wrapper .record_box .left .date,
+.receiptionist_dashboard_data_container .left_div_wrapper .recent_purchase_wrapper .record_box_wrapper .record_box .left .builder {
+  color: #62748e;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.receiptionist_dashboard_data_container .left_div_wrapper .recent_purchase_wrapper .record_box_wrapper .record_box .right_price {
+  color: #096;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.receiptionist_dashboard_data_container .left_div_wrapper .recent_purchase_wrapper .record_box_wrapper {
+  max-height: 400px;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  cursor: pointer;
+}
+
+.receiptionist_dashboard_data_container .left_div_wrapper .recent_purchase_wrapper .record_box_wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.shifts_and_sites_wrapper {
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+  background: var(--white);
+  padding: clamp(16px, 2vw, 24px);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+}
+
+.shifts_and_sites_wrapper .heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #314158;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.shifts_and_sites_wrapper .inner_div_container .box_wrapper .left h3 {
+  color: #1d293d;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 6px;
+}
+
+.shifts_and_sites_wrapper .inner_div_container .box_wrapper .left .time {
+  color: #62748e;
+  font-size: 12px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.shifts_and_sites_wrapper .inner_div_container .box_wrapper .left .workers {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #45556c;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 2px 0;
+}
+
+.shifts_and_sites_wrapper .inner_div_container .box_wrapper .left .status {
+  color: #45556c;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.shifts_and_sites_wrapper .inner_div_container .box_wrapper .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  padding: 3px 10px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.shifts_and_sites_wrapper .inner_div_container .box_wrapper .right.morning {
+  color: #1447e6;
+  background: #dbeafe;
+  border-radius: 12px;
+}
+
+.shifts_and_sites_wrapper .inner_div_container .box_wrapper .right.afternoon {
+  color: #1447e6;
+  background: #ede9fe;
+  color: #7008e7;
+  border-radius: 12px;
+}
+
+.shifts_and_sites_wrapper .inner_div_container .box_wrapper {
+  border-radius: 10px;
+  background: #f8fafc;
+  padding: 14px;
+}
+
+.shifts_and_sites_wrapper .inner_div_container .box_wrapper:hover {
+  background: #f8fafc;
+}
+
+.shifts_and_sites_wrapper .inner_div_container {
+  max-height: 400px;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  cursor: pointer;
+}
+
+.shifts_and_sites_wrapper .inner_div_container::-webkit-scrollbar {
+  display: none;
+}
+
+.receiptionist_dashboard_data_container .right_div_wrapper .active_labour_details {
+  padding: clamp(16px, 2vw, 24px);
+  color: #dbeafe;
+  background-color: var(--neutral-primay);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  border-radius: 14px;
+}
+
+.receiptionist_dashboard_data_container .right_div_wrapper .active_labour_details .active_heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  color: var(--white);
+}
+
+.receiptionist_dashboard_data_container .right_div_wrapper .active_labour_details .center_div h4 {
+  margin: 0;
+  font-size: 16px;
+  color: var(--white);
+}
+
+.receiptionist_dashboard_data_container .right_div_wrapper .active_labour_details .center_div p {
+  margin: 0;
+  font-size: 14px;
+  margin: 0;
+}
+
+.receiptionist_dashboard_data_container .right_div_wrapper .active_labour_details .border_div {
+  border-top: 1px solid #51a2ff;
+  border-bottom: 1px solid #51a2ff;
+  margin-bottom: 16px;
+  padding: 14px 0;
+}
+
+.receiptionist_dashboard_data_container .right_div_wrapper .active_labour_details .border_div h4 {
+  color: #dbeafe;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.receiptionist_dashboard_data_container .right_div_wrapper .active_labour_details .border_div p {
+  margin: 0;
+  color: var(--white);
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.receiptionist_dashboard_data_container .right_div_wrapper .active_labour_details .bottom_text {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #dbeafe;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.receiptionist_dashboard_data_container .right_div_wrapper .wages_Summary_wrapper {
+  border-radius: 14px;
+  border: 1px solid #E2E8F0;
+  background: var(--white);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.10), 0 1px 2px -1px rgba(0, 0, 0, 0.10);
+  padding: clamp(16px, 2vw, 24px);
+}
+
+.receiptionist_dashboard_data_container .right_div_wrapper .wages_Summary_wrapper .heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #314158;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.receiptionist_dashboard_data_container .right_div_wrapper .wages_Summary_wrapper .total_paid .date {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #45556C;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.receiptionist_dashboard_data_container .right_div_wrapper .wages_Summary_wrapper .total_paid h4 {
+  color: #1D293D;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  padding: 5px 0;
+}
+
+.receiptionist_dashboard_data_container .right_div_wrapper .wages_Summary_wrapper .total_paid p {
+  margin: 0;
+  color: #62748E;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.receiptionist_dashboard_data_container .right_div_wrapper .wages_Summary_wrapper .previous_transaction {
+  border-top: 1px solid #F1F5F9;
+  border-bottom: 1px solid #F1F5F9;
+  padding: 14px 0;
+  margin-bottom: 16px;
+}
+
+.receiptionist_dashboard_data_container .right_div_wrapper .wages_Summary_wrapper .previous_transaction h4 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #F54900;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.receiptionist_dashboard_data_container .right_div_wrapper .wages_Summary_wrapper .previous_transaction p {
+  color: #62748E;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.receiptionist_dashboard_data_container .right_div_wrapper .wages_Summary_wrapper .work_data_show .left_row {
+  border-radius: 10px;
+  background: #F8FAFC;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.receiptionist_dashboard_data_container .right_div_wrapper .wages_Summary_wrapper .work_data_show .left_row h4 {
+  margin: 0;
+  color: #62748E;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.receiptionist_dashboard_data_container .right_div_wrapper .wages_Summary_wrapper .work_data_show .left_row p {
+  margin: 0;
+  color: #314158;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.receiptionist_dashboard_data_container .right_div_wrapper .wages_Summary_wrapper .work_data_show .right_row {
+  border-radius: 10px;
+  background: #ECFDF5;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.receiptionist_dashboard_data_container .right_div_wrapper .wages_Summary_wrapper .work_data_show .right_row h4 {
+  margin: 0;
+  color: #62748E;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.receiptionist_dashboard_data_container .right_div_wrapper .wages_Summary_wrapper .work_data_show .right_row p {
+  margin: 0;
+  color: #096;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.receiptionist_dashboard_data_container .right_div_wrapper .daily_task_wrapper {
+  border-radius: 14px;
+  border: 1px solid #E2E8F0;
+  background: var(--white);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.10), 0 1px 2px -1px rgba(0, 0, 0, 0.10);
+  padding: clamp(16px, 2vw, 24px);
+}
+
+.receiptionist_dashboard_data_container .right_div_wrapper .daily_task_wrapper .heading h4 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #314158;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.receiptionist_dashboard_data_container .right_div_wrapper .daily_task_wrapper .heading p {
+  color: #45556C;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
 }
 
 /* ================ RECEPTIONIST DASHBOARD ENDS  =================== */
-
-
 
 /* *********************** PRINT MEDIA CODE ******************** */
 /* vocuhar print css  */
