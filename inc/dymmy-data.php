@@ -1415,3 +1415,25 @@ $projects = [
         "color" => "dangerColor"
     ]
 ];
+
+
+$dailyTasks = [
+    [
+        "name" => "Log morning visitor entries",
+    ],
+    [
+        "name" => "Process leave requests (5)",
+    ],
+    [
+        "name" => "Update attendance records",
+    ],
+    [
+        "name" => "Process leave requests (5)",
+    ],
+    [
+        "name" => "Generate weekly report",
+    ],
+    [
+        "name" => "Call suppliers for quotes",
+    ]
+];

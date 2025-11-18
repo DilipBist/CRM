@@ -207,7 +207,8 @@ include 'inc/header.php';
             <div class="receiptionist_dashboard_data_container mt-4">
                 <!-- ROW  -->
                 <div class="row g-3">
-                    <div class="col-lg-8">
+                    <!-- LEFT DIV  -->
+                    <div class="col-lg-8 col-xxl-9">
                         <div class="left_div_wrapper">
                             <div class="row g-3">
                                 <div class="col-md-6">
@@ -334,6 +335,7 @@ include 'inc/header.php';
                                 </div>
                             </div>
 
+                            <!-- RECENT PURCHASE  -->
                             <div class="recent_purchase_wrapper mt-3">
                                 <div class="heading">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -601,7 +603,61 @@ include 'inc/header.php';
 
                                 </div>
                             </div>
+                            <!-- RECENT PURCHASE  -->
 
+                            <!-- CHART DATA  -->
+                            <div class="recep_das_chart_wrapper mt-3">
+                                <div class="row g-3">
+                                    <div class="col-md-6 col-lg-12 col-xxl-6">
+                                        <div class="exp_chart">
+                                            <div class="heading">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                    <path d="M13.332 5.83301H18.332V10.833" stroke="#2B7FFF" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M18.3346 5.83301L11.2513 12.9163L7.08464 8.74967L1.66797 14.1663" stroke="#2B7FFF" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                                Total Expenditure
+                                            </div>
+                                            <canvas id="expBarChart"></canvas>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6  col-lg-12 col-xxl-6">
+                                        <div class="att_chart">
+                                            <div class="heading">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                    <path d="M13.332 9.16667L14.9987 10.8333L18.332 7.5" stroke="#00BC7D" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M13.3346 17.5V15.8333C13.3346 14.9493 12.9834 14.1014 12.3583 13.4763C11.7332 12.8512 10.8854 12.5 10.0013 12.5H5.0013C4.11725 12.5 3.2694 12.8512 2.64428 13.4763C2.01916 14.1014 1.66797 14.9493 1.66797 15.8333V17.5" stroke="#00BC7D" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M7.5013 9.16667C9.34225 9.16667 10.8346 7.67428 10.8346 5.83333C10.8346 3.99238 9.34225 2.5 7.5013 2.5C5.66035 2.5 4.16797 3.99238 4.16797 5.83333C4.16797 7.67428 5.66035 9.16667 7.5013 9.16667Z" stroke="#00BC7D" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                                Attendance Overview
+                                            </div>
+                                            <div class="w-100 h-100 d-flex align-items-center justify-content-center position-relative">
+                                                <canvas id="attendanceChart"></canvas>
+                                                <div class="rel_data">
+                                                    <h5>Today's Attendance</h5>
+                                                    <p>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                            <g clip-path="url(#clip0_21329_93907)">
+                                                                <path d="M8 3.5H11V6.5" stroke="#009966" stroke-linecap="round" stroke-linejoin="round" />
+                                                                <path d="M11 3.5L6.75 7.75L4.25 5.25L1 8.5" stroke="#009966" stroke-linecap="round" stroke-linejoin="round" />
+                                                            </g>
+                                                            <defs>
+                                                                <clipPath id="clip0_21329_93907">
+                                                                    <rect width="12" height="12" fill="white" />
+                                                                </clipPath>
+                                                            </defs>
+                                                        </svg>
+                                                        +2% from yesterday
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- CHART DATA  -->
+
+                            <!-- SITE ASSIGNMENT  -->
                             <div class="shifts_and_sites_wrapper mt-3">
                                 <div class="heading">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -758,12 +814,16 @@ include 'inc/header.php';
                                     </div>
                                 </div>
                             </div>
+                            <!-- SITE ASSIGNMENT  -->
+
                         </div>
                     </div>
+                    <!-- LEFT DIV  -->
+
 
                     <!-- RIGHT DIV  -->
-                    <div class="col-lg-4">
-                        <div class="right_div_wrapper">
+                    <div class="col-lg-4 col-xxl-3">
+                        <div class="right_div_wrapper d-flex flex-column gap-3">
                             <div class="active_labour_details">
                                 <div class="active_heading">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -814,7 +874,7 @@ include 'inc/header.php';
                             </div>
 
                             <!-- wages summary  -->
-                            <div class="wages_Summary_wrapper mt-3">
+                            <div class="wages_Summary_wrapper">
                                 <div class="heading">
                                     <div class="icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -870,7 +930,7 @@ include 'inc/header.php';
                             <!-- wages summary  -->
 
                             <!-- daily task  -->
-                            <div class="daily_task_wrapper mt-3">
+                            <div class="daily_task_wrapper">
                                 <div class="heading mb-3 mb-lg-4 d-flex align-items-center gap-2 flex-wrap justify-content-between">
                                     <h4>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -881,10 +941,249 @@ include 'inc/header.php';
                                     </h4>
                                     <p>3/6</p>
                                 </div>
+
+                                <div class="daily_lists d-flex flex-column gap-3">
+                                    <?php foreach ($dailyTasks as $task): ?>
+                                        <div class="list d-flex align-items-center justify-content-between gap-2">
+                                            <div class="left d-flex align-items-center gap-2">
+                                                <div class="icon">
+                                                    <!-- SVG 1 (DEFAULT) -->
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                        <path d="M12.6667 2H3.33333C2.59695 2 2 2.59695 2 3.33333V12.6667C2 13.403 2.59695 14 3.33333 14H12.6667C13.403 14 14 13.403 14 12.6667V3.33333C14 2.59695 13.403 2 12.6667 2Z" stroke="#90A1B9" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                    <!-- SVG 2 (CHECKMARK) -->
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                        <path d="M14 7.104V12.6667C14 13.0203 13.8595 13.3594 13.6095 13.6095C13.3594 13.8595 13.0203 14 12.6667 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V3.33333C2 2.97971 2.14048 2.64057 2.39052 2.39052C2.64057 2.14048 2.97971 2 3.33333 2H11.5627" stroke="#00BC7D" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M6 7.33366L8 9.33366L14.6667 2.66699" stroke="#00BC7D" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </div>
+                                                <span>
+                                                    <?= $task["name"] ?>
+                                                </span>
+                                            </div>
+                                            <div class="dot">
+
+                                            </div>
+                                        </div>
+                                    <?php endforeach; ?>
+                                </div>
                             </div>
                             <!-- daily task  -->
+
+                            <!-- notification  -->
+                            <div class="notification_wrapper">
+                                <div class="d-flex align-items-center gap-3 justify-content-between">
+                                    <div class="heading">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                            <path d="M8.55469 17.5C8.70097 17.7533 8.91137 17.9637 9.16472 18.11C9.41808 18.2563 9.70547 18.3333 9.99802 18.3333C10.2906 18.3333 10.578 18.2563 10.8313 18.11C11.0847 17.9637 11.2951 17.7533 11.4414 17.5" stroke="#2B7FFF" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M2.71772 12.772C2.60886 12.8913 2.53702 13.0397 2.51094 13.1991C2.48486 13.3585 2.50566 13.522 2.57081 13.6698C2.63597 13.8176 2.74267 13.9433 2.87794 14.0316C3.0132 14.1198 3.17121 14.1669 3.33272 14.167H16.6661C16.8276 14.167 16.9856 14.1202 17.1209 14.0321C17.2563 13.944 17.3631 13.8184 17.4285 13.6708C17.4938 13.5231 17.5148 13.3596 17.4889 13.2001C17.4631 13.0407 17.3914 12.8923 17.2827 12.7728C16.1744 11.6303 14.9994 10.4162 14.9994 6.66699C14.9994 5.34091 14.4726 4.06914 13.5349 3.13146C12.5972 2.19378 11.3255 1.66699 9.99939 1.66699C8.67331 1.66699 7.40154 2.19378 6.46386 3.13146C5.52618 4.06914 4.99939 5.34091 4.99939 6.66699C4.99939 10.4162 3.82356 11.6303 2.71772 12.772Z" stroke="#2B7FFF" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        Notifications
+                                    </div>
+                                    <div class="count">
+                                        4
+                                    </div>
+                                </div>
+
+                                <div class="inner_wrapper mt-3 mt-lg-4 d-flex flex-column gap-3">
+                                    <div class="delayed d-flex gap-3 align-items-start">
+                                        <div class="icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M9.33203 12.0003V4.00033C9.33203 3.6467 9.19156 3.30756 8.94151 3.05752C8.69146 2.80747 8.35232 2.66699 7.9987 2.66699H2.66536C2.31174 2.66699 1.9726 2.80747 1.72256 3.05752C1.47251 3.30756 1.33203 3.6467 1.33203 4.00033V11.3337C1.33203 11.5105 1.40227 11.68 1.52729 11.8051C1.65232 11.9301 1.82189 12.0003 1.9987 12.0003H3.33203" stroke="#FF6900" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M10 12H6" stroke="#FF6900" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M12.6654 11.9997H13.9987C14.1755 11.9997 14.3451 11.9294 14.4701 11.8044C14.5951 11.6794 14.6654 11.5098 14.6654 11.333V8.89967C14.6651 8.74838 14.6134 8.60168 14.5187 8.48367L12.1987 5.58367C12.1363 5.50559 12.0572 5.44253 11.9672 5.39914C11.8772 5.35575 11.7786 5.33315 11.6787 5.33301H9.33203" stroke="#FF6900" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M11.3333 13.3337C12.0697 13.3337 12.6667 12.7367 12.6667 12.0003C12.6667 11.2639 12.0697 10.667 11.3333 10.667C10.597 10.667 10 11.2639 10 12.0003C10 12.7367 10.597 13.3337 11.3333 13.3337Z" stroke="#FF6900" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M4.66536 13.3337C5.40174 13.3337 5.9987 12.7367 5.9987 12.0003C5.9987 11.2639 5.40174 10.667 4.66536 10.667C3.92898 10.667 3.33203 11.2639 3.33203 12.0003C3.33203 12.7367 3.92898 13.3337 4.66536 13.3337Z" stroke="#FF6900" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <h4>Delayed material delivery from BuildMart</h4>
+                                            <p>10 mins ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="payment d-flex gap-3 align-items-start">
+                                        <div class="icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <g clip-path="url(#clip0_21318_93176)">
+                                                    <path d="M7.9987 14.6663C11.6806 14.6663 14.6654 11.6816 14.6654 7.99967C14.6654 4.31778 11.6806 1.33301 7.9987 1.33301C4.3168 1.33301 1.33203 4.31778 1.33203 7.99967C1.33203 11.6816 4.3168 14.6663 7.9987 14.6663Z" stroke="#2B7FFF" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M8 10.6667V8" stroke="#2B7FFF" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M8 5.33301H8.00667" stroke="#2B7FFF" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_21318_93176">
+                                                        <rect width="16" height="16" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <h4>Payment reminder: Invoice #2847 due tomorrow</h4>
+                                            <p>1 hour ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="purchase d-flex gap-3 align-items-start">
+                                        <div class="icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <g clip-path="url(#clip0_21318_93187)">
+                                                    <path d="M14.535 6.66666C14.8395 8.16086 14.6225 9.71427 13.9203 11.0679C13.218 12.4214 12.073 13.4934 10.6761 14.1049C9.27913 14.7164 7.71479 14.8305 6.24391 14.4282C4.77302 14.026 3.4845 13.1316 2.59323 11.8943C1.70195 10.657 1.26179 9.15148 1.34615 7.62892C1.43051 6.10635 2.0343 4.65872 3.05681 3.52744C4.07932 2.39616 5.45876 1.64961 6.96509 1.4123C8.47141 1.17498 10.0136 1.46123 11.3344 2.22333" stroke="#00BC7D" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M6 7.33366L8 9.33366L14.6667 2.66699" stroke="#00BC7D" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_21318_93187">
+                                                        <rect width="16" height="16" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <h4>Purchase order #1923 approved</h4>
+                                            <p>2 hours ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="urgent d-flex gap-3 align-items-start">
+                                        <div class="icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M14.4856 11.9995L9.15231 2.66617C9.03602 2.46097 8.86738 2.29029 8.66359 2.17154C8.45981 2.0528 8.22817 1.99023 7.99231 1.99023C7.75645 1.99023 7.52481 2.0528 7.32103 2.17154C7.11724 2.29029 6.9486 2.46097 6.83231 2.66617L1.49898 11.9995C1.38143 12.2031 1.3198 12.4341 1.32032 12.6692C1.32084 12.9042 1.3835 13.135 1.50194 13.338C1.62039 13.5411 1.79041 13.7092 1.99477 13.8254C2.19914 13.9415 2.43058 14.0016 2.66564 13.9995H13.3323C13.5662 13.9993 13.796 13.9375 13.9985 13.8204C14.201 13.7032 14.3691 13.5349 14.486 13.3322C14.6028 13.1296 14.6643 12.8998 14.6643 12.6658C14.6642 12.4319 14.6026 12.2021 14.4856 11.9995Z" stroke="#FB2C36" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M8 6V8.66667" stroke="#FB2C36" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M8 11.333H8.00667" stroke="#FB2C36" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <h4>3 urgent purchase approvals pending</h4>
+                                            <p>3 hours ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- notification  -->
+
+
+                            <!-- leave Request  -->
+                            <div class="leave_request_wrapper">
+                                <div class="heading">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M6.66797 1.66699V5.00033" stroke="#8E51FF" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M13.332 1.66699V5.00033" stroke="#8E51FF" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M15.8333 3.33301H4.16667C3.24619 3.33301 2.5 4.0792 2.5 4.99967V16.6663C2.5 17.5868 3.24619 18.333 4.16667 18.333H15.8333C16.7538 18.333 17.5 17.5868 17.5 16.6663V4.99967C17.5 4.0792 16.7538 3.33301 15.8333 3.33301Z" stroke="#8E51FF" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M2.5 8.33301H17.5" stroke="#8E51FF" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    Leave Requests
+                                </div>
+
+                                <div class="requests_list mt-3 mt-lg-4 d-flex flex-column gap-3">
+                                    <div class="bx d-flex justify-content-between flex-wrap gap-3">
+                                        <div class="left_content d-flex align-items-start gap-3">
+                                            <div class="icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                    <g clip-path="url(#clip0_21318_93217)">
+                                                        <path d="M8 4V8L10.6667 9.33333" stroke="#FF6900" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M7.9987 14.6663C11.6806 14.6663 14.6654 11.6816 14.6654 7.99967C14.6654 4.31778 11.6806 1.33301 7.9987 1.33301C4.3168 1.33301 1.33203 4.31778 1.33203 7.99967C1.33203 11.6816 4.3168 14.6663 7.9987 14.6663Z" stroke="#FF6900" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_21318_93217">
+                                                            <rect width="16" height="16" fill="white" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </div>
+                                            <div>
+                                                <h4>John Martinez</h4>
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <div class="date">
+                                                        Nov 7-8
+                                                    </div>
+                                                    <div class="dot"></div>
+                                                    <div class="text">
+                                                        Medical
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="right_status">
+                                            <div class="pending">
+                                                Pending
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="bx d-flex justify-content-between flex-wrap gap-3">
+                                        <div class="left_content d-flex align-items-start gap-3">
+                                            <div class="icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                    <g clip-path="url(#clip0_21318_93229)">
+                                                        <path d="M14.535 6.66666C14.8395 8.16086 14.6225 9.71427 13.9203 11.0679C13.218 12.4214 12.073 13.4934 10.6761 14.1049C9.27913 14.7164 7.71479 14.8305 6.24391 14.4282C4.77302 14.026 3.4845 13.1316 2.59323 11.8943C1.70195 10.657 1.26179 9.15148 1.34615 7.62892C1.43051 6.10635 2.0343 4.65872 3.05681 3.52744C4.07932 2.39616 5.45876 1.64961 6.96509 1.4123C8.47141 1.17498 10.0136 1.46123 11.3344 2.22333" stroke="#00BC7D" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M6 7.33366L8 9.33366L14.6667 2.66699" stroke="#00BC7D" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_21318_93229">
+                                                            <rect width="16" height="16" fill="white" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </div>
+                                            <div>
+                                                <h4>Sarah Wilson</h4>
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <div class="date">
+                                                        Nov 10-12
+                                                    </div>
+                                                    <div class="dot"></div>
+                                                    <div class="text">
+                                                        Personal
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="right_status">
+                                            <div class="approved">
+                                                Approved
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="bx d-flex justify-content-between flex-wrap gap-3">
+                                        <div class="left_content d-flex align-items-start gap-3">
+                                            <div class="icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                    <g clip-path="url(#clip0_21318_93253)">
+                                                        <path d="M7.9987 14.6663C11.6806 14.6663 14.6654 11.6816 14.6654 7.99967C14.6654 4.31778 11.6806 1.33301 7.9987 1.33301C4.3168 1.33301 1.33203 4.31778 1.33203 7.99967C1.33203 11.6816 4.3168 14.6663 7.9987 14.6663Z" stroke="#FB2C36" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M10 6L6 10" stroke="#FB2C36" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M6 6L10 10" stroke="#FB2C36" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_21318_93253">
+                                                            <rect width="16" height="16" fill="white" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </div>
+                                            <div>
+                                                <h4>Lisa Anderson</h4>
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <div class="date">
+                                                        Nov 9
+                                                    </div>
+                                                    <div class="dot"></div>
+                                                    <div class="text">
+                                                        Medical
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="right_status">
+                                            <div class="rejected">
+                                                Vacation
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- leave Request  -->
+
                         </div>
                     </div>
+                    <!-- RIGHT DIV  -->
 
                 </div>
                 <!-- ROW  -->

@@ -186,6 +186,7 @@ include 'inc/header.php';
 
             <div class="purhcase_dashboard_chart_wrappper mt-4">
                 <div class="row g-3">
+                    <!-- left div  -->
                     <div class="col-lg-7 col-xxl-8">
                         <div class="left_section_wrapper">
                             <div class="material_stock_chart">
@@ -216,6 +217,7 @@ include 'inc/header.php';
                                 </div>
                             </div>
 
+                            <!-- monthly spending  -->
                             <div class="monthly_spends_div_wrappper mt-4">
                                 <div class="heading d-flex align-items-center gap-3 flex-wrap justify-content-between mb-4">
                                     <h4>
@@ -280,7 +282,9 @@ include 'inc/header.php';
                                 </div>
 
                             </div>
+                            <!-- monthly spending  -->
 
+                            <!-- line doted chart  -->
                             <div class="chart_remaining_data_list mt-4">
 
                                 <div class="box_list_container mb-4">
@@ -401,9 +405,14 @@ include 'inc/header.php';
                                     </div>
                                 </div>
                             </div>
+                            <!-- line doted chart  -->
+
                         </div>
                     </div>
+                    <!-- left div  -->
 
+
+                    <!-- right div  -->
                     <div class="col-lg-5 col-xxl-4">
                         <div class="right_section_wrapper d-flex flex-column gap-4">
                             <div class="payment_status_box_wrapper">
@@ -638,7 +647,7 @@ include 'inc/header.php';
                                                         <h3>BuildMart Supplies</h3>
                                                         <h6>Cement & Concrete</h6>
                                                     </div>
-                                                    <div class="rating_order_bx d-flex align-items-center gap-4">
+                                                    <div class="rating_order_bx d-flex align-items-center gap-2">
                                                         <div class="rating d-flex align-items-center gap-2">
                                                             <div class="star">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
@@ -654,7 +663,7 @@ include 'inc/header.php';
                                                             </div>
                                                             4.8
                                                         </div>
-
+                                                        <div class="dot"></div>
                                                         <div class="order">
                                                             145 orders
                                                         </div>
@@ -690,7 +699,6 @@ include 'inc/header.php';
                                         </div>
                                     </div>
 
-
                                     <div class="call_box">
                                         <div class="fist_div d-flex align-items-start justify-content-between gap-2">
                                             <div class="left_div d-flex gap-2">
@@ -702,7 +710,7 @@ include 'inc/header.php';
                                                         <h3>BuildMart Supplies</h3>
                                                         <h6>Cement & Concrete</h6>
                                                     </div>
-                                                    <div class="rating_order_bx d-flex align-items-center gap-4">
+                                                    <div class="rating_order_bx d-flex align-items-center gap-2">
                                                         <div class="rating d-flex align-items-center gap-2">
                                                             <div class="star">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
@@ -718,7 +726,7 @@ include 'inc/header.php';
                                                             </div>
                                                             4.8
                                                         </div>
-
+                                                        <div class="dot"></div>
                                                         <div class="order">
                                                             145 orders
                                                         </div>
@@ -765,7 +773,7 @@ include 'inc/header.php';
                                                         <h3>BuildMart Supplies</h3>
                                                         <h6>Cement & Concrete</h6>
                                                     </div>
-                                                    <div class="rating_order_bx d-flex align-items-center gap-4">
+                                                    <div class="rating_order_bx d-flex align-items-center gap-2">
                                                         <div class="rating d-flex align-items-center gap-2">
                                                             <div class="star">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
@@ -781,7 +789,7 @@ include 'inc/header.php';
                                                             </div>
                                                             4.8
                                                         </div>
-
+                                                        <div class="dot"></div>
                                                         <div class="order">
                                                             145 orders
                                                         </div>
@@ -829,20 +837,26 @@ include 'inc/header.php';
                                                         <h6>Cement & Concrete</h6>
                                                     </div>
                                                     <div class="rating_order_bx d-flex align-items-center gap-4">
-                                                        <div class="rating d-flex align-items-center gap-2">
-                                                            <div class="star">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                                                                    <g clip-path="url(#clip0_21289_111242)">
-                                                                        <path d="M5.7634 1.14745C5.78531 1.10318 5.81916 1.06591 5.86113 1.03986C5.90309 1.01381 5.9515 1 6.0009 1C6.0503 1 6.09871 1.01381 6.14067 1.03986C6.18264 1.06591 6.21649 1.10318 6.2384 1.14745L7.3934 3.48695C7.46949 3.64093 7.58181 3.77415 7.72071 3.87517C7.85962 3.9762 8.02096 4.042 8.1909 4.06695L10.7739 4.44495C10.8228 4.45204 10.8688 4.47268 10.9066 4.50455C10.9445 4.53641 10.9726 4.57822 10.9879 4.62525C11.0032 4.67228 11.005 4.72265 10.9932 4.77066C10.9814 4.81868 10.9563 4.86242 10.9209 4.89695L9.0529 6.71595C8.92971 6.836 8.83754 6.98419 8.78432 7.14776C8.7311 7.31134 8.71843 7.48539 8.7474 7.65495L9.1884 10.2249C9.19704 10.2739 9.19176 10.3242 9.17315 10.3703C9.15454 10.4163 9.12336 10.4563 9.08317 10.4854C9.04298 10.5146 8.99539 10.5319 8.94583 10.5354C8.89628 10.5388 8.84675 10.5283 8.8029 10.5049L6.4939 9.29095C6.34176 9.21106 6.17249 9.16932 6.00065 9.16932C5.82881 9.16932 5.65954 9.21106 5.5074 9.29095L3.1989 10.5049C3.15507 10.5282 3.1056 10.5386 3.05613 10.5351C3.00665 10.5316 2.95916 10.5142 2.91905 10.4851C2.87894 10.4559 2.84782 10.416 2.82923 10.3701C2.81064 10.3241 2.80533 10.2738 2.8139 10.2249L3.2544 7.65545C3.2835 7.48581 3.27089 7.31165 3.21767 7.14797C3.16445 6.98429 3.0722 6.83602 2.9489 6.71595L1.0809 4.89745C1.0452 4.86296 1.0199 4.81914 1.00788 4.77098C0.995866 4.72282 0.997618 4.67226 1.01294 4.62504C1.02826 4.57783 1.05653 4.53587 1.09454 4.50394C1.13254 4.47201 1.17875 4.4514 1.2279 4.44445L3.8104 4.06695C3.98053 4.0422 4.14209 3.97648 4.28119 3.87544C4.42029 3.77441 4.53275 3.64108 4.6089 3.48695L5.7634 1.14745Z" fill="#F0B100" stroke="#F0B100" stroke-linecap="round" stroke-linejoin="round" />
-                                                                    </g>
-                                                                    <defs>
-                                                                        <clipPath id="clip0_21289_111242">
-                                                                            <rect width="12" height="12" fill="white" />
-                                                                        </clipPath>
-                                                                    </defs>
-                                                                </svg>
+                                                        <div class="rating_order_bx d-flex align-items-center gap-2">
+                                                            <div class="rating d-flex align-items-center gap-2">
+                                                                <div class="star">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                                        <g clip-path="url(#clip0_21289_111242)">
+                                                                            <path d="M5.7634 1.14745C5.78531 1.10318 5.81916 1.06591 5.86113 1.03986C5.90309 1.01381 5.9515 1 6.0009 1C6.0503 1 6.09871 1.01381 6.14067 1.03986C6.18264 1.06591 6.21649 1.10318 6.2384 1.14745L7.3934 3.48695C7.46949 3.64093 7.58181 3.77415 7.72071 3.87517C7.85962 3.9762 8.02096 4.042 8.1909 4.06695L10.7739 4.44495C10.8228 4.45204 10.8688 4.47268 10.9066 4.50455C10.9445 4.53641 10.9726 4.57822 10.9879 4.62525C11.0032 4.67228 11.005 4.72265 10.9932 4.77066C10.9814 4.81868 10.9563 4.86242 10.9209 4.89695L9.0529 6.71595C8.92971 6.836 8.83754 6.98419 8.78432 7.14776C8.7311 7.31134 8.71843 7.48539 8.7474 7.65495L9.1884 10.2249C9.19704 10.2739 9.19176 10.3242 9.17315 10.3703C9.15454 10.4163 9.12336 10.4563 9.08317 10.4854C9.04298 10.5146 8.99539 10.5319 8.94583 10.5354C8.89628 10.5388 8.84675 10.5283 8.8029 10.5049L6.4939 9.29095C6.34176 9.21106 6.17249 9.16932 6.00065 9.16932C5.82881 9.16932 5.65954 9.21106 5.5074 9.29095L3.1989 10.5049C3.15507 10.5282 3.1056 10.5386 3.05613 10.5351C3.00665 10.5316 2.95916 10.5142 2.91905 10.4851C2.87894 10.4559 2.84782 10.416 2.82923 10.3701C2.81064 10.3241 2.80533 10.2738 2.8139 10.2249L3.2544 7.65545C3.2835 7.48581 3.27089 7.31165 3.21767 7.14797C3.16445 6.98429 3.0722 6.83602 2.9489 6.71595L1.0809 4.89745C1.0452 4.86296 1.0199 4.81914 1.00788 4.77098C0.995866 4.72282 0.997618 4.67226 1.01294 4.62504C1.02826 4.57783 1.05653 4.53587 1.09454 4.50394C1.13254 4.47201 1.17875 4.4514 1.2279 4.44445L3.8104 4.06695C3.98053 4.0422 4.14209 3.97648 4.28119 3.87544C4.42029 3.77441 4.53275 3.64108 4.6089 3.48695L5.7634 1.14745Z" fill="#F0B100" stroke="#F0B100" stroke-linecap="round" stroke-linejoin="round" />
+                                                                        </g>
+                                                                        <defs>
+                                                                            <clipPath id="clip0_21289_111242">
+                                                                                <rect width="12" height="12" fill="white" />
+                                                                            </clipPath>
+                                                                        </defs>
+                                                                    </svg>
+                                                                </div>
+                                                                4.8
                                                             </div>
-                                                            4.8
+                                                            <div class="dot"></div>
+                                                            <div class="order">
+                                                                145 orders
+                                                            </div>
                                                         </div>
 
                                                         <div class="order">
@@ -891,7 +905,7 @@ include 'inc/header.php';
                                                         <h3>BuildMart Supplies</h3>
                                                         <h6>Cement & Concrete</h6>
                                                     </div>
-                                                    <div class="rating_order_bx d-flex align-items-center gap-4">
+                                                    <div class="rating_order_bx d-flex align-items-center gap-2">
                                                         <div class="rating d-flex align-items-center gap-2">
                                                             <div class="star">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
@@ -907,7 +921,7 @@ include 'inc/header.php';
                                                             </div>
                                                             4.8
                                                         </div>
-
+                                                        <div class="dot"></div>
                                                         <div class="order">
                                                             145 orders
                                                         </div>
@@ -953,7 +967,7 @@ include 'inc/header.php';
                                                         <h3>BuildMart Supplies</h3>
                                                         <h6>Cement & Concrete</h6>
                                                     </div>
-                                                    <div class="rating_order_bx d-flex align-items-center gap-4">
+                                                    <div class="rating_order_bx d-flex align-items-center gap-2">
                                                         <div class="rating d-flex align-items-center gap-2">
                                                             <div class="star">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
@@ -969,7 +983,7 @@ include 'inc/header.php';
                                                             </div>
                                                             4.8
                                                         </div>
-
+                                                        <div class="dot"></div>
                                                         <div class="order">
                                                             145 orders
                                                         </div>
@@ -1025,6 +1039,8 @@ include 'inc/header.php';
                             </div>
                         </div>
                     </div>
+                    <!-- right div  -->
+
                 </div>
             </div>
 

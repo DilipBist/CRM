@@ -82,8 +82,32 @@ document.addEventListener("DOMContentLoaded", () => {
   // Load the chart
   loadSpendChart();
   // Run the chart
-  loadStockPieChart();
-  loadPurhcaseOrdrChart();
+  loadPieChart(
+    "stockPie",
+    ["High Stock", "Low Stock", "Out of Stock"],
+    [55, 30, 15],
+    ["#10B981", "#EF4444", "#3B82F6"]
+  );
+  loadPieChart(
+    "attendanceChart",
+    ["Present", "On Leave", "Absent"],
+    [80, 10, 10],
+    ["#10B981", "#F59E0B", "#EF4444"]
+  );
+
+  renderBarChart({
+    canvasId: "purhcaseOrdrChart",
+    labels: ["Jan", "Feb", "Mar", "Apr"],
+    data: [120, 150, 180, 90],
+    color: "#005399"
+  });
+  renderBarChart({
+    canvasId: "expBarChart",
+    labels: ["Jun", "Jul", "Aug", "Sep", "Oct", "Nov"],
+    data: [40000, 45000, 60000, 48000, 52000, 75000],
+    color: "#3B82F6"
+  });
+  dailyTaskComplete();
 
 
   // ============
@@ -1180,28 +1204,21 @@ if (legendContainer) {
 
 // ++++++ Materials Stock Level chart ++++++++
 // Stock Pie
-function loadStockPieChart() {
-  const canvas = document.getElementById('stockPie');
+function loadPieChart(canvasId, labels, values, colors) {
+  const canvas = document.getElementById(canvasId);
   if (!canvas) return;
 
   const ctx = canvas.getContext("2d");
 
-  // Dummy data (replace with backend later)
-  const data = {
-    labels: ['High Stock', 'Low Stock', 'Out of Stock'],
-    values: [55, 30, 15],
-    colors: ['#10B981', '#EF4444', '#3B82F6']
-  };
-
   new Chart(ctx, {
     type: 'doughnut',
     data: {
-      labels: data.labels,
+      labels: labels,
       datasets: [{
-        data: data.values,
-        backgroundColor: data.colors,
+        data: values,
+        backgroundColor: colors,
         borderWidth: 0,
-        spacing: 5
+        spacing: 6
       }]
     },
 
@@ -1218,16 +1235,11 @@ function loadStockPieChart() {
             maxWidth: 1000
           }
         }
-      },
-      layout: {
-        padding: {
-          top: 0,
-          bottom: 0
-        }
       }
     }
   });
 }
+
 // bar chart
 function loadInventoryBarChart() {
   const canvas = document.getElementById('inventoryBar');
@@ -1372,8 +1384,8 @@ function buildSpendChart(ctx, data) {
 }
 
 // puchase order chart 
-function loadPurhcaseOrdrChart() {
-  const canvas = document.getElementById("purhcaseOrdrChart");
+function renderBarChart({ canvasId, labels, data, color }) {
+  const canvas = document.getElementById(canvasId);
   if (!canvas) return;
 
   const ctx = canvas.getContext("2d");
@@ -1381,12 +1393,11 @@ function loadPurhcaseOrdrChart() {
   new Chart(ctx, {
     type: "bar",
     data: {
-      labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "July"],
+      labels,
       datasets: [
         {
-          label: "Sales",
-          data: [120, 150, 180, 90, 200, 100, 180],
-          backgroundColor: "#005399",
+          data,
+          backgroundColor: color,
           borderRadius: 5
         }
       ]
@@ -1402,6 +1413,7 @@ function loadPurhcaseOrdrChart() {
     }
   });
 }
+
 function loadPriceChart() {
   const canvas = document.getElementById("priceChart");
   if (!canvas) return;
@@ -2595,3 +2607,25 @@ function addLedgerPopup() {
     });
   }
 }
+
+// receptionist page daily task click 
+function dailyTaskComplete() {
+  const container = document.querySelector('.receiptionist_dashboard_data_container .daily_lists');
+
+  if (!container) return;
+
+  container.addEventListener('click', (event) => {
+    const list = event.target.closest('.list');
+    if (!list) return; // Clicked outside a list item
+
+    const text = list.querySelector('.left span');
+    const icon = list.querySelector('.left .icon');
+    const dot = list.querySelector('.dot');
+
+    text.classList.toggle('active');
+    icon.classList.toggle('active');
+    dot.classList.toggle('active');
+  });
+}
+
+

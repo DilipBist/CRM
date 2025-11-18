@@ -9049,6 +9049,15 @@ select option:not(:first-child) {
   color: #45556c;
   font-size: 12px;
   font-weight: 400;
+  position: relative;
+}
+
+.purhcase_dashboard_chart_wrappper .right_section_wrapper .call_active_box_wrapper .call_box .rating_order_bx .dot {
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background-color: #45556c;
 }
 
 .purhcase_dashboard_chart_wrappper .right_section_wrapper .call_active_box_wrapper .call_box .rating_order_bx .order {
@@ -9106,6 +9115,7 @@ select option:not(:first-child) {
 
 .purhcase_dashboard_chart_wrappper .right_section_wrapper .call_active_box_wrapper {
   max-height: 520px;
+  padding-bottom: 20px;
   overflow-y: auto;
   scrollbar-width: none;
   -ms-overflow-style: none;
@@ -9208,6 +9218,10 @@ select option:not(:first-child) {
   align-items: center;
   justify-content: center;
   gap: 10px;
+}
+
+.receiptionist_dashboard_data_container .left_div_wrapper .new_purchase_wrapper button:hover {
+  background: var(--primary-color);
 }
 
 .receiptionist_dashboard_data_container .left_div_wrapper .new_purchase_wrapper .sec_heading {
@@ -9688,6 +9702,301 @@ select option:not(:first-child) {
   margin: 0;
 }
 
+.receiptionist_dashboard_data_container .right_div_wrapper .daily_task_wrapper .daily_lists .list {
+  cursor: pointer;
+}
+
+.receiptionist_dashboard_data_container .right_div_wrapper .daily_task_wrapper .daily_lists .list .dot {
+  width: 8px;
+  height: 8px;
+  background-color: #90A1B9;
+  border-radius: 50%;
+}
+
+.receiptionist_dashboard_data_container .right_div_wrapper .daily_task_wrapper .daily_lists .list .dot.active {
+  background-color: #FB2C36;
+}
+
+.receiptionist_dashboard_data_container .right_div_wrapper .daily_task_wrapper .daily_lists .list .icon svg:last-child {
+  display: none;
+}
+
+.receiptionist_dashboard_data_container .right_div_wrapper .daily_task_wrapper .daily_lists .list .icon.active svg:last-child {
+  display: inline-flex;
+}
+
+.receiptionist_dashboard_data_container .right_div_wrapper .daily_task_wrapper .daily_lists .list .icon.active svg:first-child {
+  display: none;
+}
+
+.receiptionist_dashboard_data_container .right_div_wrapper .daily_task_wrapper .daily_lists .list .left {
+  color: #314158;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.receiptionist_dashboard_data_container .right_div_wrapper .daily_task_wrapper .daily_lists .list .left span.active {
+  text-decoration: line-through;
+  color: #62748E;
+}
+
+.receiptionist_dashboard_data_container .right_div_wrapper .notification_wrapper .heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #314158;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.receiptionist_dashboard_data_container .right_div_wrapper .notification_wrapper {
+  border-radius: 14px;
+  border: 1px solid #E2E8F0;
+  background: var(--white);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.10), 0 1px 2px -1px rgba(0, 0, 0, 0.10);
+  padding: clamp(16px, 2vw, 24px);
+}
+
+.receiptionist_dashboard_data_container .right_div_wrapper .notification_wrapper .count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.00);
+  background: #DBEAFE;
+  height: 25px;
+  width: 25px;
+  padding: 4px;
+  color: #1447E6;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.receiptionist_dashboard_data_container .right_div_wrapper .notification_wrapper .inner_wrapper .delayed {
+  padding: 12px;
+  border-radius: 10px;
+  background: #FFF7ED;
+}
+
+.receiptionist_dashboard_data_container .right_div_wrapper .notification_wrapper .inner_wrapper .payment {
+  padding: 12px;
+  border-radius: 10px;
+  background: #EFF6FF;
+}
+
+.receiptionist_dashboard_data_container .right_div_wrapper .notification_wrapper .inner_wrapper .purchase {
+  padding: 12px;
+  border-radius: 10px;
+  background: #ECFDF5;
+}
+
+.receiptionist_dashboard_data_container .right_div_wrapper .notification_wrapper .inner_wrapper .urgent {
+  padding: 12px;
+  border-radius: 10px;
+  background: #FEF2F2;
+}
+
+.receiptionist_dashboard_data_container .right_div_wrapper .notification_wrapper .inner_wrapper .delayed h4 {
+  color: #CA3500;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 2px;
+}
+
+.receiptionist_dashboard_data_container .right_div_wrapper .notification_wrapper .inner_wrapper .delayed p {
+  margin: 0;
+  color: #62748E;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.receiptionist_dashboard_data_container .right_div_wrapper .notification_wrapper .inner_wrapper .payment h4 {
+  color: #1447E6;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 2px;
+}
+
+.receiptionist_dashboard_data_container .right_div_wrapper .notification_wrapper .inner_wrapper .payment p {
+  margin: 0;
+  color: #62748E;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.receiptionist_dashboard_data_container .right_div_wrapper .notification_wrapper .inner_wrapper .purchase h4 {
+  color: #007A55;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 2px;
+}
+
+.receiptionist_dashboard_data_container .right_div_wrapper .notification_wrapper .inner_wrapper .purchase p {
+  margin: 0;
+  color: #62748E;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.receiptionist_dashboard_data_container .right_div_wrapper .notification_wrapper .inner_wrapper .urgent h4 {
+  color: #C10007;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 2px;
+}
+
+.receiptionist_dashboard_data_container .right_div_wrapper .notification_wrapper .inner_wrapper .urgent p {
+  margin: 0;
+  color: #62748E;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.receiptionist_dashboard_data_container .right_div_wrapper .leave_request_wrapper {
+  padding: clamp(16px, 2vw, 24px);
+  border-radius: 14px;
+  border: 1px solid #E2E8F0;
+  background: var(--white);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.10), 0 1px 2px -1px rgba(0, 0, 0, 0.10);
+}
+
+.receiptionist_dashboard_data_container .right_div_wrapper .leave_request_wrapper .heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #314158;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.receiptionist_dashboard_data_container .right_div_wrapper .leave_request_wrapper .requests_list .bx {
+  padding: 12px;
+  border-radius: 10px;
+  background: #F8FAFC;
+}
+
+.receiptionist_dashboard_data_container .right_div_wrapper .leave_request_wrapper .requests_list .bx h4 {
+  margin: 0;
+  color: #1D293D;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 3px;
+}
+
+.receiptionist_dashboard_data_container .right_div_wrapper .leave_request_wrapper .requests_list .bx .date,
+.receiptionist_dashboard_data_container .right_div_wrapper .leave_request_wrapper .requests_list .bx .text {
+  color: #62748E;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.receiptionist_dashboard_data_container .right_div_wrapper .leave_request_wrapper .requests_list .bx .dot {
+  height: 4px;
+  width: 4px;
+  background-color: #62748E;
+  border-radius: 50%;
+}
+
+.receiptionist_dashboard_data_container .right_div_wrapper .leave_request_wrapper .requests_list .bx .right_status .pending {
+  color: #CA3500;
+  font-size: 12px;
+  font-weight: 400;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.00);
+  background: #FFEDD4;
+  padding: 2px 8px;
+}
+
+.receiptionist_dashboard_data_container .right_div_wrapper .leave_request_wrapper .requests_list .bx .right_status .approved {
+  color: #007A55;
+  font-size: 12px;
+  font-weight: 400;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.00);
+  background: #D0FAE5;
+  padding: 2px 8px;
+}
+
+.receiptionist_dashboard_data_container .right_div_wrapper .leave_request_wrapper .requests_list .bx .right_status .rejected {
+  color: #C10007;
+  font-size: 12px;
+  font-weight: 400;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.00);
+  background: #FFE2E2;
+  padding: 2px 8px;
+}
+
+/* receptionist chart section  */
+.recep_das_chart_wrapper .exp_chart,
+.recep_das_chart_wrapper .att_chart {
+  padding: clamp(16px, 2vw, 24px);
+  border-radius: 14px;
+  border: 1px solid #E2E8F0;
+  background: var(--white);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.10), 0 1px 2px -1px rgba(0, 0, 0, 0.10);
+  height: 420px;
+}
+
+.recep_das_chart_wrapper .exp_chart .heading,
+.recep_das_chart_wrapper .att_chart .heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #314158;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.recep_das_chart_wrapper .att_chart .heading {
+  margin: 0;
+}
+
+#expBarChart {
+  height: 300px !important;
+  width: 100% !important;
+}
+
+#attendanceChart {
+  width: 320px !important;
+  height: 320px !important;
+}
+
+.rel_data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.rel_data h5 {
+  font-size: 14px;
+  color: #45556C;
+  font-weight: 400;
+}
+
+.rel_data p {
+  margin: 0;
+  color: #096;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* receptionist chart section  */
 /* ================ RECEPTIONIST DASHBOARD ENDS  =================== */
 
 /* *********************** PRINT MEDIA CODE ******************** */
@@ -10492,10 +10801,34 @@ select option:not(:first-child) {
     max-width: 420px;
     width: 100%;
   }
+
+  #expBarChart {
+    height: 220px !important;
+  }
+
+  .recep_das_chart_wrapper .exp_chart .heading,
+  .recep_das_chart_wrapper .att_chart .heading {
+    margin-bottom: 24px;
+  }
+
+  #attendanceChart {
+    width: 300px !important;
+    height: 300px !important;
+  }
+
+  .recep_das_chart_wrapper .exp_chart,
+  .recep_das_chart_wrapper .att_chart {
+    height: auto;
+  }
 }
 
 @media (max-width: 420px) {
   .delete_inner_content_container {
     width: 320px;
+  }
+
+  #attendanceChart {
+    width: 280px !important;
+    height: 280px !important;
   }
 }
