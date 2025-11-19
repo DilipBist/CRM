@@ -44,7 +44,6 @@
                                 <a href="#"
                                     class="menu-item accordion-button <?php echo ($currentPage === 'projectlist' || $currentPage === 'subcontractor' || $currentPage === 'labourlist' || $currentPage === 'supervisor') ? '' : 'collapsed'; ?>"
                                     data-bs-toggle="collapse" data-bs-target="#menu-collapse-construction"
-                                    aria-expanded="<?php echo ($currentPage === 'userlist' || $currentPage === 'roles' || $currentPage === 'scopes' || $currentPage === 'supervisor') ? 'true' : 'false'; ?>"
                                     aria-controls="menu-collapse-construction">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
                                         fill="none">
@@ -188,7 +187,6 @@
                                 <a href="#"
                                     class="menu-item accordion-button <?php echo ($currentPage === 'Journal' || $currentPage === 'Payment' || $currentPage === 'Receipt' || $currentPage === 'PDC' || $currentPage === 'Contra' || $currentPage === 'GeneralLegder' || $currentPage === 'accountingGroup' || $currentPage === 'Ledger' || $currentPage === 'purchaseRequisation' || $currentPage === 'purchaseOrder' || $currentPage === 'quotation') ? '' : 'collapsed'; ?>"
                                     data-bs-toggle="collapse" data-bs-target="#menu-collapse-one"
-                                    aria-expanded="<?php echo ($currentPage === '' || $currentPage === '' || $currentPage === 'Receipt' || $currentPage === 'PDC' || $currentPage === 'Contra' || $currentPage === 'GeneralLegder' || $currentPage === 'accountingGroup' || $currentPage === 'Ledger' || $currentPage === 'purchaseRequisation' || $currentPage  === 'purchaseOrder' || $currentPage === 'quotation') ? 'true' : 'false'; ?>"
                                     aria-controls="menu-collapse-one">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
                                         fill="none">
@@ -224,7 +222,6 @@
                                                 <a href="#"
                                                     class="menu-item accordion-button <?php echo ($currentPage === 'Journal' || $currentPage === 'Payment' || $currentPage === 'Receipt' || $currentPage === 'PDC' || $currentPage === 'Contra' || $currentPage === 'GeneralLegder' || $currentPage === 'accountingGroup' || $currentPage === 'Ledger') ? '' : 'collapsed'; ?>"
                                                     data-bs-toggle="collapse" data-bs-target="#menu-collapse-inner"
-                                                    aria-expanded="<?php echo ($currentPage === 'Journal' || $currentPage === 'Payment' || $currentPage === 'Receipt' || $currentPage === 'PDC' || $currentPage === 'Contra' || $currentPage === 'GeneralLegder' || $currentPage === 'accountingGroup' || $currentPage === 'Ledger') ? 'true' : 'false'; ?>"
                                                     aria-controls="menu-collapse-one">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                                                         viewBox="0 0 24 24" fill="none">
@@ -335,7 +332,6 @@
                                                                     class="menu-item accordion-button <?php echo ($currentPage === 'GeneralLegder' || $currentPage === 'accountingGroup' || $currentPage === 'Ledger') ? '' : 'collapsed'; ?>"
                                                                     data-bs-toggle="collapse"
                                                                     data-bs-target="#menu-collapse-innerTwo"
-                                                                    aria-expanded="<?php echo ($currentPage === 'GeneralLegder' || $currentPage === 'accountingGroup' || $currentPage === 'Ledger') ? 'true' : 'false'; ?>"
                                                                     aria-controls="menu-collapse-innerTwo">
                                                                     <svg xmlns="http://www.w3.org/2000/svg" width="18"
                                                                         height="18" viewBox="0 0 24 24" fill="none">
@@ -449,7 +445,6 @@
                                                         class="menu-item accordion-button <?php echo ($currentPage === 'purchaseOrder' || $currentPage === 'purchaseRequisation' || $currentPage === 'quotation') ? '' : 'collapsed'; ?>"
                                                         data-bs-toggle="collapse"
                                                         data-bs-target="#menu-collapse-purchase"
-                                                        aria-expanded="<?php echo ($currentPage === '' || $currentPage === 'purchaseRequisation' || $currentPage === 'quotation') ? 'true' : 'false'; ?>"
                                                         aria-controls="menu-collapse-purchase">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                                                             viewBox="0 0 24 24" fill="none">
@@ -554,7 +549,6 @@
                                 <a href="#"
                                     class="menu-item accordion-button <?php echo ($currentPage === 'openTrail' || $currentPage === 'trailBalance' || $currentPage === 'balanceSheet' || $currentPage === 'profitLoss' || $currentPage === 'daybook' || $currentPage === 'gledger') ? '' : 'collapsed'; ?>"
                                     data-bs-toggle="collapse" data-bs-target="#menu-collapse-two"
-                                    aria-expanded="<?php echo ($currentPage === 'openTrail' || $currentPage === 'trailBalance' || $currentPage === 'balanceSheet' || $currentPage === 'profitLoss' || $currentPage === 'daybook' || $currentPage === 'gledger') ? 'true' : 'false'; ?>"
                                     aria-controls="menu-collapse-two">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
                                         fill="none">
@@ -716,7 +710,6 @@
                                 <a href="#"
                                     class="menu-item accordion-button <?php echo ($currentPage === 'employee' || $currentPage === 'payroll' || $currentPage === 'Holiday' || $currentPage === 'Assets' || $currentPage === 'Events' || $currentPage === 'leave' || $currentPage === 'employeeLeave' || $currentPage === 'employeeAttendance' || $currentPage === 'adminAttendance') ? '' : 'collapsed'; ?>"
                                     data-bs-toggle="collapse" data-bs-target="#menu-collapse-hrm"
-                                    aria-expanded="<?php echo ($currentPage === 'employee' || $currentPage === 'payroll' || $currentPage === 'Holiday' || $currentPage === 'Assets' || $currentPage === 'Events' || $currentPage === 'leave ' || $currentPage === 'employeeLeave' || $currentPage === 'employeeAttendance' || $currentPage === 'adminAttendance') ? 'true' : 'false'; ?>"
                                     aria-controls="menu-collapse-hrm">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
                                         fill="none">
@@ -918,9 +911,8 @@
                             <h2 class="accordion-header">
 
                                 <a href="#"
-                                    class="menu-item accordion-button <?php echo ($currentPage === '' || $currentPage === '' || $currentPage === '' || $currentPage === '') ? '' : 'collapsed'; ?>"
+                                    class="menu-item accordion-button <?php echo ($currentPage === 'crmaccount' || $currentPage === '' || $currentPage === '' || $currentPage === '') ? '' : 'collapsed'; ?>"
                                     data-bs-toggle="collapse" data-bs-target="#menu-collapse-construction"
-                                    aria-expanded="<?php echo ($currentPage === '' || $currentPage === '' || $currentPage === '' || $currentPage === '') ? 'true' : 'false'; ?>"
                                     aria-controls="menu-collapse-construction">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15" viewBox="0 0 16 18" fill="none">
                                         <mask id="path-1-inside-1_21822_87689" fill="white">
@@ -934,7 +926,7 @@
 
                             </h2>
                             <div id="menu-collapse-construction"
-                                class="accordion-collapse collapse <?php echo ($currentPage === '' || $currentPage === '' || $currentPage === '' || $currentPage === '') ? 'show' : ''; ?>"
+                                class="accordion-collapse collapse <?php echo ($currentPage === 'crmaccount' || $currentPage === '' || $currentPage === '' || $currentPage === '') ? 'show' : ''; ?>"
                                 data-bs-parent="#sidebar-accordion">
                                 <div class="accordion-body">
 
@@ -1003,8 +995,8 @@
                                         </svg>
                                         Campaigns
                                     </a>
-                                    <a href="#"
-                                        class="menu-item <?php echo ($currentPage === '') ? 'active' : ''; ?>">
+                                    <a href="crm-accounts.php"
+                                        class="menu-item <?php echo ($currentPage === 'crmaccount') ? 'active' : ''; ?>">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                                             <path d="M9.75 16.5H3.75C2.25 16.5 1.5 15.75 1.5 14.25V8.25C1.5 6.75 2.25 6 3.75 6H7.5V14.25C7.5 15.75 8.25 16.5 9.75 16.5Z" stroke="#F2F6FA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                                             <path d="M7.58249 3C7.52249 3.225 7.5 3.4725 7.5 3.75V6H3.75V4.5C3.75 3.675 4.425 3 5.25 3H7.58249Z" stroke="#F2F6FA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
@@ -1014,7 +1006,7 @@
                                             <path d="M4.5 9.75V12.75" stroke="#F2F6FA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                                             <path d="M7.5 14.25V3.75C7.5 2.25 8.25 1.5 9.75 1.5H14.25C15.75 1.5 16.5 2.25 16.5 3.75V14.25C16.5 15.75 15.75 16.5 14.25 16.5H9.75C8.25 16.5 7.5 15.75 7.5 14.25Z" stroke="#F2F6FA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                                         </svg>
-                                        Campaigns
+                                        Account
                                     </a>
 
                                 </div>

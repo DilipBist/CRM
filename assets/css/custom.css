@@ -10070,12 +10070,14 @@ select option:not(:first-child) {
   margin-bottom: 5px;
   color: var(--text-dark2);
 }
-.supervisor_list_box_wrapper p{
+
+.supervisor_list_box_wrapper p {
   margin: 0;
   font-size: 16px;
   color: var(--text-85);
   font-weight: 400;
 }
+
 .supervisor_list_box_wrapper .progress-bar {
   height: 6px;
   margin-top: 4px;
@@ -10091,13 +10093,62 @@ select option:not(:first-child) {
   background: #141414;
   transition: width 0.5s ease;
 }
-.supervisor_list_box_wrapper small{
+
+.supervisor_list_box_wrapper small {
   font-size: 16px;
   font-weight: 400;
   color: var(--text-dark2);
 }
 
 /* ************** SUPERVISOR DASHOBOARD CSS STARTS ********************* */
+
+
+
+/* +++++++++++++++++ CRM SECTION CSS STARTS ++++++++++++++++++++++ */
+
+/* accout page css  */
+.green_status {
+  border-radius: 12px;
+  background: #CCF0CE;
+  padding: 4px 16px;
+  color: rgba(0, 124, 25, 0.70);
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+}
+
+.red_staus {
+  border-radius: 12px;
+  background: #F2D2D1;
+  padding: 4px 16px;
+  color: #E87F7F;
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+}
+
+.blue_status {
+  border-radius: 12px;
+  background: #CCDDEB;
+  padding: 4px 16px;
+  color: #4B99D9;
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+}
+
+/* accout page css  */
+/* +++++++++++++++++ CRM SECTION CSS ENDS ++++++++++++++++++++++ */
+
 
 
 /* *********************** PRINT MEDIA CODE ******************** */
