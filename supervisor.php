@@ -1,4 +1,5 @@
 <?php
+$pageTitle = 'supervisor';
 include 'inc/header.php'
 ?>
 
@@ -134,14 +135,14 @@ include 'inc/header.php'
                                         <div class="user_active">
                                             Active
                                         </div>
-                                        <!-- use this for hold  --> 
+                                        <!-- use this for hold  -->
                                         <!-- <div class="user_inactive">
                                             Hold
                                         </div> -->
                                     </td>
                                     <td>
                                         <div class="table_actions">
-                                            <a href="#" title="View Details" class="">
+                                            <a href="supervisor-project-details.php" title="View Details" class="">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                                                     <path d="M11.6864 8.99945C11.6864 10.4845 10.4864 11.6845 9.00141 11.6845C7.51641 11.6845 6.31641 10.4845 6.31641 8.99945C6.31641 7.51445 7.51641 6.31445 9.00141 6.31445C10.4864 6.31445 11.6864 7.51445 11.6864 8.99945Z" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                                     <path d="M8.99891 15.2016C11.6464 15.2016 14.1139 13.6416 15.8314 10.9416C16.5064 9.88406 16.5064 8.10656 15.8314 7.04906C14.1139 4.34906 11.6464 2.78906 8.99891 2.78906C6.35141 2.78906 3.88391 4.34906 2.16641 7.04906C1.49141 8.10656 1.49141 9.88406 2.16641 10.9416C3.88391 13.6416 6.35141 15.2016 8.99891 15.2016Z" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -242,25 +243,25 @@ include 'inc/header.php'
 
                             <div class="col-md-6">
                                 <div class="form_input d-flex flex-column gap-2">
-                                    <label for="labour_number">Number of Total Labour<span>*</span> </label>
-                                    <input type="number" id="labour_number" name="Enter a Total Labour" placeholder="Enter a Project Address" required>
+                                    <label for="labour_number">Number of Total Labour </label>
+                                    <input type="number" id="labour_number" name="Enter a Total Labour" placeholder="Enter a Project Address">
                                 </div>
                             </div>
 
                             <div class="col-md-6">
                                 <div class="form_input d-flex flex-column gap-2">
-                                    <label for="phone_number">Phone Number<span>*</span> </label>
+                                    <label for="phone_number">Phone Number</label>
                                     <input type="tel" id="phone_number" name="phone_number" placeholder="Enter a phone Number" required oninput="this.value = this.value.replace(/[^0-9]/g, '');">
                                 </div>
                             </div>
 
                             <div class="col-md-6">
                                 <div class="slect-status">
-                                    <label for="Leave" class="mb-2">Status <span class="red">*</span></label>
+                                    <label for="Leave" class="mb-2">Status </label>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                         <path d="M16.6004 7.45898L11.1671 12.8923C10.5254 13.534 9.47539 13.534 8.83372 12.8923L3.40039 7.45898" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
-                                    <select class="form-select" aria-label="select" id="Leave" name="Leave" required>
+                                    <select class="form-select" aria-label="select" id="Leave" name="Leave">
                                         <option value="" disabled hidden selected>In Progress</option>
                                         <option value="Medical">Medical leave</option>
                                         <option value="Casual">Casual Leave</option>

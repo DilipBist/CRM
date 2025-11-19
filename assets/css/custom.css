@@ -1784,7 +1784,7 @@ SIDE BAR CSS ENDS
 }
 
 .purchase_request_container {
-  padding: 34px 43px;
+  padding: clamp(20px, 3vw, 34px) clamp(20px, 3vw, 44px);
   border: 1px solid var(--Button-soft-color, #ccddeb);
   border-radius: 29px;
   margin-top: clamp(44px, 5vw, 64px);
@@ -9999,14 +9999,42 @@ select option:not(:first-child) {
   font-size: 14px;
   font-weight: 400;
 }
-
 /* receptionist chart section  */
 /* ================ RECEPTIONIST DASHBOARD ENDS  =================== */
 
 
 /* ************** SUPERVISOR DASHOBOARD CSS STARTS ********************* */
-.hover-primary:hover svg path{
+.hover-primary:hover svg path {
   stroke: var(--primary-color) !important;
+}
+
+.summary-cls {
+  height: 150px;
+  width: 100%;
+  padding: 12px 16px;
+  background: var(--whiteFA);
+  border: 1px solid var(--Neutral-Separator);
+  border-radius: 10px;
+  color: var(--text-dark2);
+  outline: none;
+}
+
+.summary-cls::placeholder {
+  color: var(--text-85);
+}
+
+.moregap ul {
+  gap: clamp(20px, 3vw, 32px);
+}
+.image_upload_div{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.image_upload_div .image img{
+  height: 24px;
+  width: 24px;
+  object-fit: contain;
 }
 /* ************** SUPERVISOR DASHOBOARD CSS STARTS ********************* */
 
@@ -10831,6 +10859,12 @@ select option:not(:first-child) {
   .recep_das_chart_wrapper .exp_chart,
   .recep_das_chart_wrapper .att_chart {
     height: auto;
+  }
+
+  .right_fil_div .search,
+  .search_component .search {
+    max-width: 420px;
+    width: 100%;
   }
 }
 
