@@ -76,12 +76,24 @@
              </div>
          </div>
          <div>
-             <p class="p-title">All Projects</p>
+             <p class="p-title"><?= $chartData['projectTitle'] ?? 'All Projects' ?></p>
              <div class="legend">
-                 <div><span style="background-color: var(--green-donutchart)"></span> Complete</div>
-                 <div><span style="background-color: var(--blue-donutchart)"></span> Pending</div>
-                 <div><span style="background-color: var(--black-donutchart)"></span> Not Start</div>
+                 <div>
+                     <span style="background-color: var(--green-donutchart)"></span>
+                     <?= $chartData['legend']['complete'] ?? 'Complete' ?>
+                 </div>
+
+                 <div>
+                     <span style="background-color: var(--blue-donutchart)"></span>
+                     <?= $chartData['legend']['pending'] ?? 'Pending' ?>
+                 </div>
+
+                 <div>
+                     <span style="background-color: var(--black-donutchart)"></span>
+                     <?= $chartData['legend']['notstart'] ?? 'Not Start' ?>
+                 </div>
              </div>
+
          </div>
      </div>
  </div>

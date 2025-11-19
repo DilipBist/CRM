@@ -42,9 +42,9 @@
                             <h2 class="accordion-header">
 
                                 <a href="#"
-                                    class="menu-item accordion-button <?php echo ($currentPage === 'projectlist' || $currentPage === 'subcontractor' || $currentPage === 'labourlist') ? '' : 'collapsed'; ?>"
+                                    class="menu-item accordion-button <?php echo ($currentPage === 'projectlist' || $currentPage === 'subcontractor' || $currentPage === 'labourlist' || $currentPage === 'supervisor') ? '' : 'collapsed'; ?>"
                                     data-bs-toggle="collapse" data-bs-target="#menu-collapse-construction"
-                                    aria-expanded="<?php echo ($currentPage === 'userlist' || $currentPage === 'roles' || $currentPage === 'scopes') ? 'true' : 'false'; ?>"
+                                    aria-expanded="<?php echo ($currentPage === 'userlist' || $currentPage === 'roles' || $currentPage === 'scopes' || $currentPage === 'supervisor') ? 'true' : 'false'; ?>"
                                     aria-controls="menu-collapse-construction">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
                                         fill="none">
@@ -85,9 +85,23 @@
 
                             </h2>
                             <div id="menu-collapse-construction"
-                                class="accordion-collapse collapse <?php echo ($currentPage === 'projectlist' || $currentPage === 'subcontractor' || $currentPage === 'labourlist') ? 'show' : ''; ?>"
+                                class="accordion-collapse collapse <?php echo ($currentPage === 'projectlist' || $currentPage === 'subcontractor' || $currentPage === 'labourlist' || $currentPage === 'supervisor') ? 'show' : ''; ?>"
                                 data-bs-parent="#sidebar-accordion">
                                 <div class="accordion-body">
+
+                                    <a href="supervisor.php"
+                                        class="menu-item <?php echo ($currentPage === 'supervisor') ? 'active' : ''; ?>">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 18 18" fill="none">
+                                            <path
+                                                d="M10.5 5.0625H7.5C6.78 5.0625 5.4375 5.0625 5.4375 3C5.4375 0.9375 6.78 0.9375 7.5 0.9375H10.5C11.22 0.9375 12.5625 0.9375 12.5625 3C12.5625 3.72 12.5625 5.0625 10.5 5.0625ZM7.5 2.0625C6.7575 2.0625 6.5625 2.0625 6.5625 3C6.5625 3.9375 6.7575 3.9375 7.5 3.9375H10.5C11.4375 3.9375 11.4375 3.7425 11.4375 3C11.4375 2.0625 11.2425 2.0625 10.5 2.0625H7.5Z"
+                                                fill="#FCFCFC" />
+                                            <path
+                                                d="M11.25 17.0618H6.75C2.535 17.0618 1.6875 15.1268 1.6875 11.9993V7.49934C1.6875 4.07934 2.925 2.61684 5.97 2.45934C6.2775 2.44434 6.5475 2.67684 6.5625 2.99184C6.5775 3.30684 6.3375 3.56184 6.03 3.57684C3.9 3.69684 2.8125 4.33434 2.8125 7.49934V11.9993C2.8125 14.7743 3.36 15.9368 6.75 15.9368H11.25C14.64 15.9368 15.1875 14.7743 15.1875 11.9993V7.49934C15.1875 4.33434 14.1 3.69684 11.97 3.57684C11.6625 3.56184 11.4225 3.29184 11.4375 2.98434C11.4525 2.67684 11.7225 2.43684 12.03 2.45184C15.075 2.61684 16.3125 4.07934 16.3125 7.49184V11.9918C16.3125 15.1268 15.465 17.0618 11.25 17.0618Z"
+                                                fill="#FCFCFC" />
+                                        </svg>
+                                        Supervisor
+                                    </a>
 
                                     <a href="project-list.php?view=projects"
                                         class="menu-item <?php echo ($currentPage === 'projectlist') ? 'active' : ''; ?>">

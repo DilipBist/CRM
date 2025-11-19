@@ -9113,6 +9113,10 @@ select option:not(:first-child) {
   font-weight: 400;
 }
 
+.purhcase_dashboard_chart_wrappper .right_section_wrapper .call_active_box_wrapper .call_box .button_div button:hover {
+  background-color: var(--Button-soft-color);
+}
+
 .purhcase_dashboard_chart_wrappper .right_section_wrapper .call_active_box_wrapper {
   max-height: 520px;
   padding-bottom: 20px;
@@ -9998,6 +10002,14 @@ select option:not(:first-child) {
 
 /* receptionist chart section  */
 /* ================ RECEPTIONIST DASHBOARD ENDS  =================== */
+
+
+/* ************** SUPERVISOR DASHOBOARD CSS STARTS ********************* */
+.hover-primary:hover svg path{
+  stroke: var(--primary-color) !important;
+}
+/* ************** SUPERVISOR DASHOBOARD CSS STARTS ********************* */
+
 
 /* *********************** PRINT MEDIA CODE ******************** */
 /* vocuhar print css  */
