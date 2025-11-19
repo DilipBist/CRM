@@ -107,11 +107,56 @@ include 'inc/header.php'
 
 
                 <!-- details shocase box  -->
+                <div class="top_chart_container">
 
+                    <div class="card first_card">
+                        <div class="supervisor_list_box_wrapper">
+                            <h4>Material request</h4>
+                            <div class="number">
+                                128
+                            </div>
+                            <p>Lorem</p>
+                        </div>
+                    </div>
+
+
+                    <div class="card second_payment">
+                        <div class="supervisor_list_box_wrapper">
+                            <h4>Task</h4>
+                            <small>30%</small>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 60%;"></div>
+                            </div>
+                            <p>Pending Only 30% Task Completed</p>
+                        </div>
+                    </div>
+
+
+                    <div class="card payment_card">
+                        <div class="supervisor_list_box_wrapper">
+                            <h4>Labour Attendance</h4>
+                            <div class="number">
+                                13/20
+                            </div>
+                            <p>Lorem</p>
+                        </div>
+                    </div>
+
+
+                    <div class="card donut_chart">
+                        <div class="supervisor_list_box_wrapper">
+                            <h4>Petty cash </h4>
+                            <div class="number">
+                                Rs. 50,00,000
+                            </div>
+                            <p>Confirmed revenue from client projects.</p>
+                        </div>
+                    </div>
+                </div>
                 <!-- details shocase box  -->
 
                 <div class="mt46">
-                    <div class="row  g-4 g-lg-5">
+                    <div class="row  g-4 g-xxl-5">
                         <div class="col-xl-8">
                             <div class="project_expense_container">
                                 <div class="d-flex align-items-center gap-3 flex-wrap justify-content-between mb-2">
@@ -158,7 +203,6 @@ include 'inc/header.php'
                                                     <th scope="col">Remarks</th>
                                                 </tr>
                                             </thead>
-                                            <tbody>
                                             <tbody>
                                                 <?php foreach (array_slice($projectList, 0, 11) as $project): ?>
                                                     <tr>
@@ -208,8 +252,6 @@ include 'inc/header.php'
                                                         </td>
                                                     </tr>
                                                 <?php endforeach; ?>
-                                            </tbody>
-
                                             </tbody>
                                         </table>
                                     </div>
@@ -301,7 +343,7 @@ include 'inc/header.php'
                     <div class="purchase_heading_right d-flex align-items-center gap-2">
                         <?php include 'components/search.php' ?>
 
-                        <a href="add-purchase-requisation.php" class="add-labour-btn add_purchase_btn"
+                        <a href="#" class="add-labour-btn add_purchase_btn"
                             data-title="Add Labour">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                 <path d="M9.99935 18.3327C14.5827 18.3327 18.3327 14.5827 18.3327 9.99935C18.3327 5.41602 14.5827 1.66602 9.99935 1.66602C5.41602 1.66602 1.66602 5.41602 1.66602 9.99935C1.66602 14.5827 5.41602 18.3327 9.99935 18.3327Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -313,6 +355,7 @@ include 'inc/header.php'
                     </div>
                 </div>
 
+                <!-- table  -->
                 <div class="purchase_data_table common_table">
                     <div class="table-responsive">
                         <table class="table table-hover">
@@ -398,6 +441,8 @@ include 'inc/header.php'
                     </div>
 
                 </div>
+                <!-- table  -->
+
                 <div class="mt-3">
                     <?php include 'inc/pagination.php' ?>
                 </div>
@@ -435,8 +480,8 @@ include 'inc/header.php'
 
                                 <div class="col-md-6 col-lg-4">
                                     <div class="form_input d-flex flex-column gap-2 position-relative">
-                                        <label for="date">Date</label>
-                                        <input type="text" class="date-picker" id="date" placeholder="MM/DD/YYYY">
+                                        <label for="datepick">Date</label>
+                                        <input type="text" name="datepick" class="date-picker" id="datepick" placeholder="MM/DD/YYYY">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="calender" width="21" height="20" viewBox="0 0 21 20" fill="none">
                                             <path d="M7.33203 1.66602V4.16602" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                                             <path d="M14 1.66602V4.16602" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />

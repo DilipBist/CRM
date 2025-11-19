@@ -10,8 +10,8 @@
     <!-- Remix icons  -->
     <link rel="stylesheet" href="assets/css/remixicon.css">
     <!-- jquery ui  -->
-    <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
-    <link rel="stylesheet" href="assets/css/jquery-ui.theme.min.css">
+    <!-- <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.theme.min.css"> -->
     <!-- Swiper css  -->
     <link rel="stylesheet" href="assets/css/swiper-bundle.css">
     <!-- Flatpickr CSS -->

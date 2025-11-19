@@ -9,17 +9,24 @@
             </div>
 
             <div class="del_image">
-                <img src="assets/images/icons/delimage.svg" alt="delete image">
+                <img src="assets/images/icons/del.png" alt="delete image">
             </div>
+
             <h3>Delete Project Model</h3>
-            <p>You’re going to delete the “Project”.
-                Are you sure?</p>
+            <p>Type “Delete” to proceed.</p>
+            <div class="d-flex align-items-center justify-content-center">
+                <input
+                    id="deleteConfirmInput"
+                    type="text"
+                    placeholder='Type "Delete" to proceed.'
+                    class="delete_input" />
+            </div>
 
             <div class="del_comfirm_buttons d-flex align-items-center gap-3 justify-content-center">
-                <button class="delBtn">Yes, Delete!</button>
+                <button class="delBtn" disabled>Yes, Delete!</button>
                 <button class="keepBtn">No, keep it.</button>
             </div>
         </div>
     </div>
 </div>
-<!-- delete msg popup  ends -->
+<!-- delete msg popup ends -->

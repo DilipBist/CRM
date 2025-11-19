@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
   // calling the functions
   sideBarToggle();
+  // date picker 
+  initFormInputDatePickers();
   initToastMsg();
   initProfilePopup();
   initNotificationPopup();
@@ -22,7 +24,8 @@ document.addEventListener("DOMContentLoaded", () => {
   makeCellsEditable();
   initFileUpload();
   initFileImport();
-  initDelRow();
+  // delete row 
+  deleteTableRow();
   // Initialize Location Track Filter
   initFilter(".location_track_btns", ".track_filter_container");
   // Initialize Backup / Upload Filter
@@ -186,46 +189,91 @@ const sideBarToggle = () => {
   });
 };
 
+// date picker 
+function initFormInputDatePickers() {
+  const formInputs = document.querySelectorAll(".form_input");
+
+  if (!formInputs.length) return;
+
+  formInputs.forEach((form) => {
+    const input = form.querySelector(".date-picker");
+    const icon = form.querySelector(".calender");
+
+    if (!input) return;
+
+    // prevent double initialization
+    if (input.dataset.hasFlatpickr === "true") return;
+
+    const fp = flatpickr(input, {
+      dateFormat: "m/d/Y",
+      allowInput: true,
+    });
+
+    input.dataset.hasFlatpickr = "true";
+
+    if (icon) {
+      icon.addEventListener("click", () => fp.open(), {
+        passive: true,
+      });
+    }
+  });
+}
+
 // delete row of the table
-function initDelRow() {
+function deleteTableRow() {
   const tables = document.querySelectorAll(".common_table");
   const popup = document.querySelector(".delete_msg_bg");
+
   const delRowBtn = document.querySelector(".del_comfirm_buttons .delBtn");
   const keepBtn = document.querySelector(".del_comfirm_buttons .keepBtn");
   const closeBtn = document.querySelector(".del_close_btn svg");
-  let deleteTargetRow = null; // store the row to delete
+  const confirmInput = document.querySelector("#deleteConfirmInput");
 
-  if (tables.length > 0) {
-    tables.forEach((table) => {
-      table.addEventListener("click", function (e) {
-        const deleteLink = e.target.closest(".delete_row_btn");
-        if (deleteLink) {
-          e.preventDefault();
-          popup.classList.add("active");
-          deleteTargetRow = deleteLink.closest("tr");
-        }
-      });
-    });
-  }
-  // Single listener for the delete confirmation button
-  if (delRowBtn) {
-    delRowBtn.addEventListener("click", () => {
-      if (deleteTargetRow) {
-        deleteTargetRow.remove();
-        deleteTargetRow = null; // reset
-        popup.classList.remove("active");
-        showToast("Row deleted successfully!");
+  let deleteTargetRow = null;
+
+  // When clicking delete button on any table row
+  tables.forEach((table) => {
+    table.addEventListener("click", function (e) {
+      const deleteLink = e.target.closest(".delete_row_btn");
+      if (deleteLink) {
+        e.preventDefault();
+        popup.classList.add("active");
+
+        deleteTargetRow = deleteLink.closest("tr");
+
+        // Reset input + disable button on popup open
+        confirmInput.value = "";
+        delRowBtn.disabled = true;
+        delRowBtn.classList.remove("enabled");
       }
     });
-  }
-  if (keepBtn && closeBtn) {
-    keepBtn.addEventListener("click", () => {
+  });
+
+  // Enable/Disable delete button based on input
+  if (!confirmInput) return;
+  confirmInput.addEventListener("input", () => {
+    if (confirmInput.value === "Delete") {
+      delRowBtn.disabled = false;
+      delRowBtn.classList.add("enabled");
+    } else {
+      delRowBtn.disabled = true;
+      delRowBtn.classList.remove("enabled");
+    }
+  });
+
+  // Confirm delete row
+  delRowBtn.addEventListener("click", () => {
+    if (deleteTargetRow) {
+      deleteTargetRow.remove();
+      deleteTargetRow = null;
       popup.classList.remove("active");
-    });
-    closeBtn.addEventListener("click", () => {
-      popup.classList.remove("active");
-    });
-  }
+      showToast("Row deleted successfully!");
+    }
+  });
+
+  // Cancel delete
+  keepBtn.addEventListener("click", () => popup.classList.remove("active"));
+  closeBtn.addEventListener("click", () => popup.classList.remove("active"));
 }
 
 // ----- toast notification -----
@@ -510,19 +558,20 @@ function initAddAssetsPopup() {
     }
   }
 }
-// Initialize CKEditor
-let editorInstance;
 
-const EditorWraper = document.querySelectorAll(".editor-wrapper");
-if (EditorWraper) {
-  EditorWraper.forEach((wrapper) => {
+
+// Initialize CKEditor
+let editorInstances = [];
+const editorWrapper = document.querySelectorAll(".editor-wrapper");
+if (editorWrapper.length) {
+  editorWrapper.forEach((wrapper) => {
     const textarea = wrapper.querySelector(".editor");
     const toggleBtn = wrapper.querySelector("#toggleToolbar");
 
     ClassicEditor.create(textarea)
       .then((editor) => {
         const toolbar = editor.ui.view.toolbar.element;
-        toolbar.style.display = "none"; // Hide toolbar initially
+        toolbar.style.display = "none";
 
         toggleBtn.addEventListener("click", () => {
           toolbar.style.display =
@@ -535,20 +584,8 @@ if (EditorWraper) {
   });
 }
 
-$(function () {
-  // show date picker
-  $(".form_input").each(function () {
-    const $input = $(this).find(".date-picker");
-    $input.datepicker({
-      dateFormat: "mm/dd/yy",
-    });
 
-    $(this)
-      .find(".calender")
-      .click(function () {
-        $input.datepicker("show");
-      });
-  });
+$(function () {
 
   // show hide passwrd
   $(".input_password i").click(function () {
@@ -2616,7 +2653,7 @@ function dailyTaskComplete() {
 
   container.addEventListener('click', (event) => {
     const list = event.target.closest('.list');
-    if (!list) return; // Clicked outside a list item
+    if (!list) return;
 
     const text = list.querySelector('.left span');
     const icon = list.querySelector('.left .icon');

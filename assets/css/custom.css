@@ -3144,7 +3144,7 @@ DASHBORD PAGE CSS STATS
 /* top chart css  */
 .top_chart_container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 28px;
   font-family: var(--inter);
 }
@@ -4594,6 +4594,16 @@ select option:not(:first-child) {
   padding-bottom: 16px;
 }
 
+.delete_input {
+  width: 80%;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  border: 1px solid var(--Neutral-Separator, #EBEBEB);
+  outline: none;
+  background-color: transparent;
+  padding: 12px 16px;
+}
+
 .del_close_btn svg:hover {
   cursor: pointer;
   transform: scale(1.05);
@@ -4658,6 +4668,13 @@ select option:not(:first-child) {
   border: none;
   font-size: 14px;
   font-weight: 500;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.del_comfirm_buttons .delBtn.enabled {
+  cursor: pointer;
+  opacity: 1;
 }
 
 .del_comfirm_buttons .delBtn:hover {
@@ -9999,6 +10016,7 @@ select option:not(:first-child) {
   font-size: 14px;
   font-weight: 400;
 }
+
 /* receptionist chart section  */
 /* ================ RECEPTIONIST DASHBOARD ENDS  =================== */
 
@@ -10026,16 +10044,59 @@ select option:not(:first-child) {
 .moregap ul {
   gap: clamp(20px, 3vw, 32px);
 }
-.image_upload_div{
+
+.image_upload_div {
   display: flex;
   align-items: center;
   gap: 5px;
 }
-.image_upload_div .image img{
+
+.image_upload_div .image img {
   height: 24px;
   width: 24px;
   object-fit: contain;
 }
+
+.supervisor_list_box_wrapper h4 {
+  color: var(--text-85);
+  font-size: 20px;
+  font-weight: 500;
+  font-family: var(--lato);
+}
+
+.supervisor_list_box_wrapper .number {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: var(--text-dark2);
+}
+.supervisor_list_box_wrapper p{
+  margin: 0;
+  font-size: 16px;
+  color: var(--text-85);
+  font-weight: 400;
+}
+.supervisor_list_box_wrapper .progress-bar {
+  height: 6px;
+  margin-top: 4px;
+  margin-bottom: 8px;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #848484;
+}
+
+.supervisor_list_box_wrapper .progress {
+  height: 100%;
+  border-radius: 4px;
+  background: #141414;
+  transition: width 0.5s ease;
+}
+.supervisor_list_box_wrapper small{
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-dark2);
+}
+
 /* ************** SUPERVISOR DASHOBOARD CSS STARTS ********************* */
 
 

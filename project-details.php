@@ -242,7 +242,7 @@ include 'inc/header.php'
                 <?php endif; ?>
 
                 <div class="mt46">
-                    <div class="row  g-4 g-lg-5">
+                    <div class="row  g-4 g-xxl-5">
                         <div class="col-xl-8">
                             <div class="project_expense_container">
                                 <div class="d-flex align-items-center gap-3 flex-wrap justify-content-between mb-2">
