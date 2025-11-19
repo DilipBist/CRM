@@ -49,7 +49,7 @@ include 'inc/header.php'
         <!-- TOP PROFILE HEADER ENDS  -->
 
 
-        <div class="company_setting_container pl_pr">
+        <div class="company_setting_container pl_pr mb-5">
             <div class="company_setting_heading">
                 <h3>Company Setting</h3>
                 <p>You can view the Company Setting list accordingly.</p>
