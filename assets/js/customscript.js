@@ -1938,8 +1938,8 @@ function openVoucharPopup() {
     closeBtn.addEventListener("click", (e) => {
       e.preventDefault();
       popupBg.classList.remove("active");
-      journalForm.classList.remove("active");
-      paymentForm.classList.remove("active");
+      journalForm?.classList.remove("active");
+      paymentForm?.classList.remove("active");
     });
   }
 }

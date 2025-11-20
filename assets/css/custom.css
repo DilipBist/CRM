@@ -1332,7 +1332,8 @@ SIDE BAR CSS ENDS
   margin-left: 5px;
   color: var(--red);
 }
-.form_input .flatpickr-time{
+
+.form_input .flatpickr-time {
   max-height: 60px;
 }
 
@@ -3172,6 +3173,7 @@ DASHBORD PAGE CSS STATS
 .top_chart_container .legend {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 10px;
   color: #828690;
   font-size: 10px;
@@ -8075,7 +8077,7 @@ select option:not(:first-child) {
   background-color: var(--white);
   padding: 6px;
   border-radius: 12px;
-  min-width: 400px;
+  min-width: 320px;
   max-width: 860px;
   width: 95%;
 }
@@ -10151,9 +10153,60 @@ select option:not(:first-child) {
 }
 
 /* accout page css  */
+
+.approved_green {
+  color: rgba(0, 124, 25, 0.70);
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 12px;
+  background: #CCF0CE;
+  padding: 4px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+}
+
+.pending_orange {
+  color: #C57500;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 12px;
+  background: #FEE3BB;
+  padding: 4px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+}
+
+.hold_grey {
+  color: #5C5C5C;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 12px;
+  background: #CECECE;
+  padding: 4px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+}
+
+.rejected_red {
+  color: #E87F7F;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 12px;
+  background: #F2D2D1;
+  padding: 4px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+}
+
 /* +++++++++++++++++ CRM SECTION CSS ENDS ++++++++++++++++++++++ */
-
-
 
 /* *********************** PRINT MEDIA CODE ******************** */
 /* vocuhar print css  */

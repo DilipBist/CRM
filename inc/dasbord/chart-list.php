@@ -66,7 +66,7 @@
      </div>
 
 
-     <div class="d-flex align-items-center gap-4 donut_chart">
+     <div class="d-flex align-items-center gap-4 donut_chart overflow-hidden">
          <div class=" position-relative piechard_relative">
              <canvas id="pieChart">
              </canvas>
@@ -88,8 +88,8 @@
                      <?= $chartData['legend']['pending'] ?? 'Pending' ?>
                  </div>
 
-                 <div>
-                     <span style="background-color: var(--black-donutchart)"></span>
+                 <div class="text-break">
+                     <span class="flex-shrink-0" style="background-color: var(--black-donutchart)"></span>
                      <?= $chartData['legend']['notstart'] ?? 'Not Start' ?>
                  </div>
              </div>
