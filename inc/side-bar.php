@@ -911,7 +911,7 @@
                             <h2 class="accordion-header">
 
                                 <a href="#"
-                                    class="menu-item accordion-button <?php echo ($currentPage === 'crmaccount' || $currentPage === 'crmcampaigns' || $currentPage === 'crmmeeting' || $currentPage === 'crmtask' || $currentPage === 'crmlead'  || $currentPage === 'crmcontact')  ? '' : 'collapsed'; ?>"
+                                    class="menu-item accordion-button <?php echo ($currentPage === 'crmaccount' || $currentPage === 'crmcampaigns' || $currentPage === 'crmmeeting' || $currentPage === 'crmtask' || $currentPage === 'crmlead'  || $currentPage === 'crmcontact' || $currentPage === 'crmdeals')  ? '' : 'collapsed'; ?>"
                                     data-bs-toggle="collapse" data-bs-target="#menu-collapse-crm"
                                     aria-controls="menu-collapse-crm">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15" viewBox="0 0 16 18" fill="none">
@@ -926,7 +926,7 @@
 
                             </h2>
                             <div id="menu-collapse-crm"
-                                class="accordion-collapse collapse <?php echo ($currentPage === 'crmaccount' || $currentPage === 'crmcampaigns' || $currentPage === 'crmmeeting' || $currentPage === 'crmtask'  || $currentPage === 'crmlead'  || $currentPage === 'crmcontact')? 'show' : ''; ?>"
+                                class="accordion-collapse collapse <?php echo ($currentPage === 'crmaccount' || $currentPage === 'crmcampaigns' || $currentPage === 'crmmeeting' || $currentPage === 'crmtask'  || $currentPage === 'crmlead'  || $currentPage === 'crmcontact' || $currentPage === 'crmdeals')? 'show' : ''; ?>"
                                 data-bs-parent="#sidebar-accordion">
                                 <div class="accordion-body">
 
@@ -947,8 +947,8 @@
                                         Contact
                                     </a>
 
-                                    <a href="#"
-                                        class="menu-item <?php echo ($currentPage === '') ? 'active' : ''; ?>">
+                                    <a href="crm-deals.php"
+                                        class="menu-item <?php echo ($currentPage === 'crmdeals') ? 'active' : ''; ?>">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                                             <path d="M16.4992 9.46812V11.0131C16.4992 11.4331 16.1542 11.7781 15.7267 11.7781H14.2792C13.4692 11.7781 12.7267 11.1856 12.6592 10.3756C12.6142 9.90312 12.7942 9.46062 13.1092 9.15312C13.3867 8.86812 13.7692 8.70312 14.1892 8.70312H15.7267C16.1542 8.70312 16.4992 9.04812 16.4992 9.46812Z" fill="#F2F6FA" />
                                             <path d="M11.535 10.4669C11.4675 9.67938 11.7525 8.90688 12.3225 8.34438C12.8025 7.85687 13.47 7.57188 14.19 7.57188H14.6175C14.8275 7.57188 15 7.39937 14.97 7.18937C14.7675 5.73438 13.5075 4.60938 12 4.60938H4.5C2.8425 4.60938 1.5 5.95187 1.5 7.60937V12.8594C1.5 14.5169 2.8425 15.8594 4.5 15.8594H12C13.515 15.8594 14.7675 14.7344 14.97 13.2794C15 13.0694 14.8275 12.8969 14.6175 12.8969H14.28C12.855 12.8969 11.655 11.8319 11.535 10.4669ZM9.75 8.92187H5.25C4.9425 8.92187 4.6875 8.67437 4.6875 8.35937C4.6875 8.04437 4.9425 7.79687 5.25 7.79687H9.75C10.0575 7.79687 10.3125 8.05187 10.3125 8.35937C10.3125 8.66687 10.0575 8.92187 9.75 8.92187Z" fill="#F2F6FA" />

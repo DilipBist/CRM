@@ -10206,6 +10206,48 @@ select option:not(:first-child) {
   width: 100px;
 }
 
+.open_green {
+  display: flex;
+  width: 80px;
+  padding: 6px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+  background: #CCF0CE;
+  color: rgba(0, 124, 25, 0.70);
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.lost_red {
+  display: flex;
+  width: 83px;
+  padding: 6px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+  background: #F2D2D1;
+  color: #E87F7F;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.pending_green {
+  display: flex;
+  width: 80px;
+  padding: 6px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+  background: rgba(13, 153, 255, 0.40);
+  color: #4081B8;
+  font-weight: 700;
+  font-size: 14px;
+}
+
 /* +++++++++++++++++ CRM SECTION CSS ENDS ++++++++++++++++++++++ */
 
 /* *********************** PRINT MEDIA CODE ******************** */

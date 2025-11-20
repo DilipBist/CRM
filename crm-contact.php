@@ -10,7 +10,6 @@
 
   <section class="admin_container d-flex">
 
-
       <?php
         $currentPage = 'crmcontact';
         include 'inc/side-bar.php';
@@ -95,7 +94,12 @@
                               <?php foreach ($projectList as $project): ?>
                                   <tr>
                                       <td><?= $project['id'] ?></td>
-                                      <td>Complete CRM getting startd steps</td>
+                                      <td>
+                                          <div class="table_profile_image">
+                                              <img src="assets/images/profileimg.jpg" alt="profile image">
+                                              Rohan Dangol
+                                          </div>
+                                      </td>
                                       <td>rohanshrestha020@gmail.com</td>
                                       <td>9827339100</td>
                                       <td>Germany </td>
@@ -469,6 +473,7 @@
               </div>
           </div>
       </div>
-      <!-- Add Task pop up ends  -->
+  </div>
+  <!-- Add Task pop up ends  -->
 
-      <?php include 'inc/footer.php' ?>
+  <?php include 'inc/footer.php' ?>
