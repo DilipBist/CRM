@@ -1,5 +1,5 @@
  <?php
-    $pageTitle = 'CRM-Accounts';
+    $pageTitle = 'CRM-Campaigns';
     include 'inc/header.php'
     ?>
 
@@ -12,7 +12,7 @@
 
 
      <?php
-        $currentPage = 'crmaccount';
+        $currentPage = 'crmcampaigns';
         include 'inc/side-bar.php';
         ?>
 
@@ -45,8 +45,8 @@
 
          <div class="admin_list_heading d-flex align-items-center flex-wrap gap-3 justify-content-between outer_padding">
              <div class="left_heading">
-                 <h3>Accounts List</h3>
-                 <p>You can view the Accounts List accordingly.</p>
+                 <h3>Campaigns List</h3>
+                 <p>You can view the Campaigns List accordingly.</p>
              </div>
 
              <div class="right_fil_div d-flex align-items-center gap-2 flex-wrap justify-content-md-end">
@@ -61,13 +61,13 @@
 
                  <button
                      class="add_acc_group add_acc_groupBtn"
-                     data-heading="Add Accounts">
+                     data-heading="Add Campaign">
                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                          <path d="M9.99935 18.3346C14.5827 18.3346 18.3327 14.5846 18.3327 10.0013C18.3327 5.41797 14.5827 1.66797 9.99935 1.66797C5.41602 1.66797 1.66602 5.41797 1.66602 10.0013C1.66602 14.5846 5.41602 18.3346 9.99935 18.3346Z" stroke="#F5F5F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                          <path d="M6.66602 10H13.3327" stroke="#F5F5F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                          <path d="M10 13.3346V6.66797" stroke="#F5F5F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                      </svg>
-                     Add Accounts
+                     Add Campaign
                  </button>
              </div>
          </div>
@@ -80,12 +80,12 @@
                          <thead>
                              <tr>
                                  <th scope="col">SN</th>
-                                 <th scope="col">Account Name</th>
-                                 <th scope="col">Email</th>
-                                 <th scope="col">Website</th>
-                                 <th scope="col">Phone</th>
-                                 <th scope="col">Account Owner</th>
+                                 <th scope="col">Campaign Name</th>
+                                 <th scope="col">Start Date</th>
+                                 <th scope="col">End Date</th>
+                                 <th scope="col">Type</th>
                                  <th scope="col">Status</th>
+                                 <th scope="col">Campaign Owner</th>
                                  <th scope="col">Action</th>
                              </tr>
                          </thead>
@@ -95,40 +95,34 @@
                                  <tr>
                                      <td><?= $project['id'] ?></td>
                                      <td>Demo</td>
-                                     <td>rohanshrestha020@gmail.com</td>
-                                     <td>
-                                         <a href="#">www.loremifsum.com</a>
-                                     </td>
-                                     <td>9827339100</td>
-                                     <td>Rohan Shrestha</td>
+                                     <td>Jul 14 2024</td>
+                                     <td>Jul 14 2024</td>
+                                     <td>Weninar</td>
                                      <td>
                                          <!-- use the below status design  -->
                                          <div class="green_status">
-                                             Active
+                                             Completed
                                          </div>
                                          <!-- <div class="red_staus">
                                             Inactive
                                         </div>
                                         <div class="blue_status">
-                                            Hold
+                                            Planning 
                                         </div> -->
                                      </td>
+                                     <td>Rohan Shrestha</td>
                                      <td>
                                          <div class="table_actions">
-                                             <a
-                                                 href="#"
-                                                 title="View Details"
-                                                 class="add_acc_groupBtn"
-                                                 data-heading="View Accounts">
+                                             <a href="#" title="View Details" class="add_acc_groupBtn" data-heading="View Campaign">
                                                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                                                      <path d="M11.6854 8.99945C11.6854 10.4845 10.4854 11.6845 9.00043 11.6845C7.51543 11.6845 6.31543 10.4845 6.31543 8.99945C6.31543 7.51445 7.51543 6.31445 9.00043 6.31445C10.4854 6.31445 11.6854 7.51445 11.6854 8.99945Z" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                                      <path d="M8.99988 15.2016C11.6474 15.2016 14.1149 13.6416 15.8324 10.9416C16.5074 9.88406 16.5074 8.10656 15.8324 7.04906C14.1149 4.34906 11.6474 2.78906 8.99988 2.78906C6.35238 2.78906 3.88488 4.34906 2.16738 7.04906C1.49238 8.10656 1.49238 9.88406 2.16738 10.9416C3.88488 13.6416 6.35238 15.2016 8.99988 15.2016Z" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                                  </svg>
                                              </a>
-                                             <a href="#"
-                                                 aria-label="Edit user List"
+                                             <a
+                                                 href="#" aria-label="Edit user List"
                                                  class="add_acc_groupBtn"
-                                                 data-heading="Edit Accounts">
+                                                 data-heading="Edit Campaign">
                                                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                                                      <path d="M9.94452 2.70041L3.78702 9.21791C3.55452 9.46541 3.32952 9.95291 3.28452 10.2904L3.00702 12.7204C2.90952 13.5979 3.53952 14.1979 4.40952 14.0479L6.82452 13.6354C7.16202 13.5754 7.63452 13.3279 7.86702 13.0729L14.0245 6.55541C15.0895 5.43041 15.5695 4.14791 13.912 2.58041C12.262 1.02791 11.0095 1.57541 9.94452 2.70041Z" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                                                      <path d="M8.91797 3.78711C9.24047 5.85711 10.9205 7.43961 13.0055 7.64961" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
@@ -163,18 +157,17 @@
              <div class="mb-5 mt-3">
                  <?php include 'inc/pagination.php' ?>
              </div>
-
          </div>
      </div>
  </section>
 
 
- <!-- Add Accounts  pop up  -->
+ <!-- Add Campaigns  pop up  -->
  <div class="AttendancePopup">
      <div class="outer_layout">
          <div class="attendance_popup_content">
              <div class="monthly_heading">
-                 <span>Add Account</span>
+                 <span>Add Campaign</span>
 
                  <button type="button" id="CloseAttendancePopup">
                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -184,7 +177,7 @@
              </div>
 
              <div class="attendance_form mt-4">
-                 <h4>Add Accounts </h4>
+                 <h4>Add Campaign</h4>
                  <p>Please kindly complete the form to add Contact registration.</p>
                  <div class="common_form">
                      <form action="">
@@ -192,37 +185,30 @@
 
                              <div class="col-md-6 col-lg-4">
                                  <div class="form_input d-flex flex-column gap-2">
-                                     <label for="account_name">Account Name <span>*</span> </label>
-                                     <input type="text" id="account_name" name="account_name" placeholder="Enter a Account name" required>
+                                     <label for="campaign_owner">Campaign Owner <span>*</span> </label>
+                                     <input type="text" id="campaign_owner" name="campaign_owner" placeholder="Enter a Campaign name" required>
                                  </div>
                              </div>
 
                              <div class="col-md-6 col-lg-4">
                                  <div class="form_input d-flex flex-column gap-2">
-                                     <label for="email">Email <span>*</span> </label>
-                                     <input type="email" id="email" name="email" placeholder="Enter a Email" required>
+                                     <label for="campaign_name">Campaign Name <span>*</span> </label>
+                                     <input type="text" id="campaign_name" name="campaign_name" placeholder="Enter a Campaign name" required>
                                  </div>
                              </div>
 
                              <div class="col-md-6 col-lg-4">
-                                 <div class="form_input d-flex flex-column gap-2">
-                                     <label for="Phone">Phone<span>*</span> </label>
-                                     <input type="tel" id="Phone" name="Phone" placeholder="Enter a Number" required
-                                         oninput="this.value = this.value.replace(/[^0-9]/g, '');">
-                                 </div>
-                             </div>
-
-                             <div class="col-md-6 col-lg-4">
-                                 <div class="form_input d-flex flex-column gap-2">
-                                     <label for="Website">Website<span>*</span> </label>
-                                     <input type="url" id="Website" name="Website" placeholder="Enter Website url" required>
-                                 </div>
-                             </div>
-
-                             <div class="col-md-6 col-lg-4">
-                                 <div class="form_input d-flex flex-column gap-2">
-                                     <label for="account_owner">Account Owner <span>*</span> </label>
-                                     <input type="text" id="account_owner" name="account_owner" placeholder="Enter a Account Owner" required>
+                                 <div class="slect-status">
+                                     <label for="Type" class="mb-2">Type <span class="red">*</span></label>
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 15 8" fill="none">
+                                         <path d="M13.95 0.75L8.51667 6.18333C7.875 6.825 6.825 6.825 6.18333 6.18333L0.75 0.75" stroke="#848484" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                     </svg>
+                                     <select class="form-select" aria-label="select" id="Type" name="Type " required>
+                                         <option value="" disabled hidden selected>select</option>
+                                         <option value="active">Active</option>
+                                         <option value="inactive">Inactive</option>
+                                         <option value="hold">Hold</option>
+                                     </select>
                                  </div>
                              </div>
 
@@ -241,6 +227,51 @@
                                  </div>
                              </div>
 
+                             <div class="col-md-6 col-lg-4">
+                                 <div class="form_input d-flex flex-column gap-2 position-relative">
+                                     <label for="start_date">Start Date <span class="red">*</span></label>
+                                     <input type="text" class="date-picker" id="start_date " name="start_date " placeholder="MM/DD/YYYY">
+                                     <svg xmlns="http://www.w3.org/2000/svg" class="calender" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                         <path d="M7.33203 1.66602V4.16602" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                         <path d="M14 1.66602V4.16602" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                         <path d="M3.58203 7.57422H17.7487" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                         <path d="M18.166 7.08268V14.166C18.166 16.666 16.916 18.3327 13.9993 18.3327H7.33268C4.41602 18.3327 3.16602 16.666 3.16602 14.166V7.08268C3.16602 4.58268 4.41602 2.91602 7.33268 2.91602H13.9993C16.916 2.91602 18.166 4.58268 18.166 7.08268Z" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                         <path d="M13.7441 11.4167H13.7516" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                         <path d="M13.7441 13.9167H13.7516" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                         <path d="M10.6621 11.4167H10.6696" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                         <path d="M10.6621 13.9167H10.6696" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                         <path d="M7.5781 11.4167H7.58559" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                         <path d="M7.5781 13.9167H7.58559" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                     </svg>
+                                 </div>
+                             </div>
+
+                             <div class="col-md-6 col-lg-4">
+                                 <div class="form_input d-flex flex-column gap-2 position-relative">
+                                     <label for="end_date">End Date <span class="red">*</span></label>
+                                     <input type="text" class="date-picker" id="end_date " name="end_date " placeholder="MM/DD/YYYY">
+                                     <svg xmlns="http://www.w3.org/2000/svg" class="calender" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                         <path d="M7.33203 1.66602V4.16602" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                         <path d="M14 1.66602V4.16602" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                         <path d="M3.58203 7.57422H17.7487" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                         <path d="M18.166 7.08268V14.166C18.166 16.666 16.916 18.3327 13.9993 18.3327H7.33268C4.41602 18.3327 3.16602 16.666 3.16602 14.166V7.08268C3.16602 4.58268 4.41602 2.91602 7.33268 2.91602H13.9993C16.916 2.91602 18.166 4.58268 18.166 7.08268Z" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                         <path d="M13.7441 11.4167H13.7516" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                         <path d="M13.7441 13.9167H13.7516" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                         <path d="M10.6621 11.4167H10.6696" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                         <path d="M10.6621 13.9167H10.6696" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                         <path d="M7.5781 11.4167H7.58559" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                         <path d="M7.5781 13.9167H7.58559" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                     </svg>
+                                 </div>
+                             </div>
+
+                             <div class="col-md-6 col-lg-4">
+                                 <div class="form_input d-flex flex-column gap-2">
+                                     <label for="bujet_cost">Budgete Cost<span>*</span> </label>
+                                     <input type="number" id="bujet_cost" name="bujet_cost" placeholder="Rs" required>
+                                 </div>
+                             </div>
+
                              <div class="col-12">
                                  <div class="form_discard_save d-flex align-items-center gap-2 justify-content-end">
                                      <button class="discard" type="button">Back</button>
@@ -252,10 +283,8 @@
                  </div>
              </div>
          </div>
-     </div> 
+     </div>
  </div>
- <!-- Add Accounts pop up ends  -->
-
-
+ <!-- Add Campaigns pop up ends  -->
 
  <?php include 'inc/footer.php' ?>

@@ -599,6 +599,13 @@ $(function () {
       .toggleClass("ri-eye-off-line", isPassword);
   });
 
+  flatpickr(".flatpickr-time", {
+    enableTime: true,
+    noCalendar: true,
+    dateFormat: "h:i K", // 12-hour format with AM/PM
+    time_24hr: false
+  });
+
   // Show and hide monthly popup
   const $monthlyPopup = $("#monthly-popup");
   const $monthlyPopupcontent = $(".monthly_update_details");
@@ -626,7 +633,6 @@ $(function () {
 
   // show and hide attendance
   const monthAttBtn = $(".month_DaysContainer .month_Date");
-  // const addAccBtn = $('#add_acc_group');
   const addAccBtn = $(".add_acc_groupBtn");
   const AddLedgerBtn = $("#AddLedgerBtn");
   const AttendancePopup = $(".AttendancePopup");
@@ -648,7 +654,11 @@ $(function () {
       AttendancePopup.removeClass("show");
     }
   });
+  
   addAccBtn.click(function () {
+    let heading = $(this).data("heading"); 
+    $(".AttendancePopup .monthly_heading > span").text(heading);
+    $(".AttendancePopup .attendance_form > h4").text(heading);
     AttendancePopup.addClass("show");
   });
   AddLedgerBtn.click(function () {

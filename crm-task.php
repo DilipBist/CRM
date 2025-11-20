@@ -1,5 +1,5 @@
  <?php
-    $pageTitle = 'CRM-Accounts';
+    $pageTitle = 'CRM-Task';
     include 'inc/header.php'
     ?>
 
@@ -12,7 +12,7 @@
 
 
      <?php
-        $currentPage = 'crmaccount';
+        $currentPage = 'crmtask';
         include 'inc/side-bar.php';
         ?>
 
@@ -30,7 +30,7 @@
                  <div class="bread_crump_content d-flex align-items-center gap-2">
                      <a href="#">CRM </a>
                      <span>/</span>
-                     <p>Accounts</p>
+                     <p>Task </p>
                  </div>
              </div>
 
@@ -45,8 +45,8 @@
 
          <div class="admin_list_heading d-flex align-items-center flex-wrap gap-3 justify-content-between outer_padding">
              <div class="left_heading">
-                 <h3>Accounts List</h3>
-                 <p>You can view the Accounts List accordingly.</p>
+                 <h3>Task List</h3>
+                 <p>You can view the Task List accordingly.</p>
              </div>
 
              <div class="right_fil_div d-flex align-items-center gap-2 flex-wrap justify-content-md-end">
@@ -61,13 +61,13 @@
 
                  <button
                      class="add_acc_group add_acc_groupBtn"
-                     data-heading="Add Accounts">
+                     data-heading="Add Task ">
                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                          <path d="M9.99935 18.3346C14.5827 18.3346 18.3327 14.5846 18.3327 10.0013C18.3327 5.41797 14.5827 1.66797 9.99935 1.66797C5.41602 1.66797 1.66602 5.41797 1.66602 10.0013C1.66602 14.5846 5.41602 18.3346 9.99935 18.3346Z" stroke="#F5F5F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                          <path d="M6.66602 10H13.3327" stroke="#F5F5F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                          <path d="M10 13.3346V6.66797" stroke="#F5F5F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                      </svg>
-                     Add Accounts
+                     Add Task
                  </button>
              </div>
          </div>
@@ -80,12 +80,12 @@
                          <thead>
                              <tr>
                                  <th scope="col">SN</th>
-                                 <th scope="col">Account Name</th>
-                                 <th scope="col">Email</th>
-                                 <th scope="col">Website</th>
-                                 <th scope="col">Phone</th>
-                                 <th scope="col">Account Owner</th>
-                                 <th scope="col">Status</th>
+                                 <th scope="col">Subject</th>
+                                 <th scope="col">Due Date</th>
+                                 <th scope="col">Priority</th>
+                                 <th scope="col">Contact Name</th>
+                                 <th scope="col">Task Owner </th>
+                                 <th scope="col">Status </th>
                                  <th scope="col">Action</th>
                              </tr>
                          </thead>
@@ -94,41 +94,35 @@
                              <?php foreach ($projectList as $project): ?>
                                  <tr>
                                      <td><?= $project['id'] ?></td>
-                                     <td>Demo</td>
-                                     <td>rohanshrestha020@gmail.com</td>
-                                     <td>
-                                         <a href="#">www.loremifsum.com</a>
-                                     </td>
-                                     <td>9827339100</td>
-                                     <td>Rohan Shrestha</td>
+                                     <td>Complete CRM getting startd steps</td>
+                                     <td>Jul 14 2024</td>
+                                     <td>Highest</td>
+                                     <td>Rohan Shrestha </td>
+                                     <td>Rohan Shrestha </td>
                                      <td>
                                          <!-- use the below status design  -->
-                                         <div class="green_status">
-                                             Active
+                                         <!-- <div class="green_status">
+                                             Completed
+                                         </div> -->
+                                         <div class="red_staus">
+                                             Not started
                                          </div>
-                                         <!-- <div class="red_staus">
-                                            Inactive
-                                        </div>
-                                        <div class="blue_status">
-                                            Hold
+                                         <!-- <div class="blue_status">
+                                            In Progress 
                                         </div> -->
                                      </td>
                                      <td>
                                          <div class="table_actions">
-                                             <a
-                                                 href="#"
-                                                 title="View Details"
-                                                 class="add_acc_groupBtn"
-                                                 data-heading="View Accounts">
+                                             <a href="#" title="View Details" class="add_acc_groupBtn" data-heading="View Task">
                                                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                                                      <path d="M11.6854 8.99945C11.6854 10.4845 10.4854 11.6845 9.00043 11.6845C7.51543 11.6845 6.31543 10.4845 6.31543 8.99945C6.31543 7.51445 7.51543 6.31445 9.00043 6.31445C10.4854 6.31445 11.6854 7.51445 11.6854 8.99945Z" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                                      <path d="M8.99988 15.2016C11.6474 15.2016 14.1149 13.6416 15.8324 10.9416C16.5074 9.88406 16.5074 8.10656 15.8324 7.04906C14.1149 4.34906 11.6474 2.78906 8.99988 2.78906C6.35238 2.78906 3.88488 4.34906 2.16738 7.04906C1.49238 8.10656 1.49238 9.88406 2.16738 10.9416C3.88488 13.6416 6.35238 15.2016 8.99988 15.2016Z" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                                  </svg>
                                              </a>
-                                             <a href="#"
-                                                 aria-label="Edit user List"
+                                             <a
+                                                 href="#" aria-label="Edit user List"
                                                  class="add_acc_groupBtn"
-                                                 data-heading="Edit Accounts">
+                                                 data-heading="Edit Task">
                                                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                                                      <path d="M9.94452 2.70041L3.78702 9.21791C3.55452 9.46541 3.32952 9.95291 3.28452 10.2904L3.00702 12.7204C2.90952 13.5979 3.53952 14.1979 4.40952 14.0479L6.82452 13.6354C7.16202 13.5754 7.63452 13.3279 7.86702 13.0729L14.0245 6.55541C15.0895 5.43041 15.5695 4.14791 13.912 2.58041C12.262 1.02791 11.0095 1.57541 9.94452 2.70041Z" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                                                      <path d="M8.91797 3.78711C9.24047 5.85711 10.9205 7.43961 13.0055 7.64961" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
@@ -163,18 +157,17 @@
              <div class="mb-5 mt-3">
                  <?php include 'inc/pagination.php' ?>
              </div>
-
          </div>
      </div>
  </section>
 
 
- <!-- Add Accounts  pop up  -->
+ <!-- Add Campaigns  pop up  -->
  <div class="AttendancePopup">
      <div class="outer_layout">
          <div class="attendance_popup_content">
              <div class="monthly_heading">
-                 <span>Add Account</span>
+                 <span>Add Task</span>
 
                  <button type="button" id="CloseAttendancePopup">
                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -184,7 +177,7 @@
              </div>
 
              <div class="attendance_form mt-4">
-                 <h4>Add Accounts </h4>
+                 <h4>Add Task</h4>
                  <p>Please kindly complete the form to add Contact registration.</p>
                  <div class="common_form">
                      <form action="">
@@ -192,37 +185,58 @@
 
                              <div class="col-md-6 col-lg-4">
                                  <div class="form_input d-flex flex-column gap-2">
-                                     <label for="account_name">Account Name <span>*</span> </label>
-                                     <input type="text" id="account_name" name="account_name" placeholder="Enter a Account name" required>
+                                     <label for="task_owner">Task owner <span>*</span> </label>
+                                     <input type="text" id="task_owner" name="task_owner" placeholder="Enter a task owner name" required>
                                  </div>
                              </div>
 
                              <div class="col-md-6 col-lg-4">
                                  <div class="form_input d-flex flex-column gap-2">
-                                     <label for="email">Email <span>*</span> </label>
-                                     <input type="email" id="email" name="email" placeholder="Enter a Email" required>
+                                     <label for="Subject">Subject <span>*</span> </label>
+                                     <input type="text" id="Subject" name="Subject" placeholder="Enter a Subject" required>
+                                 </div>
+                             </div>
+
+
+                             <div class="col-md-6 col-lg-4">
+                                 <div class="form_input d-flex flex-column gap-2 position-relative">
+                                     <label for="Date"> Date </label>
+                                     <input type="text" class="date-picker" id="Date " name="Date " placeholder="MM/DD/YYYY">
+                                     <svg xmlns="http://www.w3.org/2000/svg" class="calender" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                         <path d="M7.33203 1.66602V4.16602" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                         <path d="M14 1.66602V4.16602" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                         <path d="M3.58203 7.57422H17.7487" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                         <path d="M18.166 7.08268V14.166C18.166 16.666 16.916 18.3327 13.9993 18.3327H7.33268C4.41602 18.3327 3.16602 16.666 3.16602 14.166V7.08268C3.16602 4.58268 4.41602 2.91602 7.33268 2.91602H13.9993C16.916 2.91602 18.166 4.58268 18.166 7.08268Z" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                         <path d="M13.7441 11.4167H13.7516" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                         <path d="M13.7441 13.9167H13.7516" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                         <path d="M10.6621 11.4167H10.6696" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                         <path d="M10.6621 13.9167H10.6696" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                         <path d="M7.5781 11.4167H7.58559" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                         <path d="M7.5781 13.9167H7.58559" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                     </svg>
+                                 </div>
+                             </div>
+
+
+                             <div class="col-md-6 col-lg-4">
+                                 <div class="slect-status">
+                                     <label for="Priority" class="mb-2">Priority <span class="red">*</span></label>
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 15 8" fill="none">
+                                         <path d="M13.95 0.75L8.51667 6.18333C7.875 6.825 6.825 6.825 6.18333 6.18333L0.75 0.75" stroke="#848484" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                     </svg>
+                                     <select class="form-select" aria-label="select" id="Priority" name="Priority " required>
+                                         <option value="" disabled hidden selected>Select Priority</option>
+                                         <option value="normal">Normal</option>
+                                         <option value="high">High</option>
+                                         <option value="low">Low</option>
+                                     </select>
                                  </div>
                              </div>
 
                              <div class="col-md-6 col-lg-4">
                                  <div class="form_input d-flex flex-column gap-2">
-                                     <label for="Phone">Phone<span>*</span> </label>
-                                     <input type="tel" id="Phone" name="Phone" placeholder="Enter a Number" required
-                                         oninput="this.value = this.value.replace(/[^0-9]/g, '');">
-                                 </div>
-                             </div>
-
-                             <div class="col-md-6 col-lg-4">
-                                 <div class="form_input d-flex flex-column gap-2">
-                                     <label for="Website">Website<span>*</span> </label>
-                                     <input type="url" id="Website" name="Website" placeholder="Enter Website url" required>
-                                 </div>
-                             </div>
-
-                             <div class="col-md-6 col-lg-4">
-                                 <div class="form_input d-flex flex-column gap-2">
-                                     <label for="account_owner">Account Owner <span>*</span> </label>
-                                     <input type="text" id="account_owner" name="account_owner" placeholder="Enter a Account Owner" required>
+                                     <label for="contact_name">Contact Name <span>*</span> </label>
+                                     <input type="text" id="contact_name" name="contact_name" placeholder="Enter a Name " required>
                                  </div>
                              </div>
 
@@ -234,10 +248,23 @@
                                      </svg>
                                      <select class="form-select" aria-label="select" id="Status" name="Status" required>
                                          <option value="" disabled hidden selected>select</option>
-                                         <option value="active">Active</option>
-                                         <option value="inactive">Inactive</option>
-                                         <option value="hold">Hold</option>
+                                         <option value="completed">Completed</option>
+                                         <option value="notstarted">Not Started</option>
+                                         <option value="inprogress">In Progress</option>
                                      </select>
+                                 </div>
+                             </div>
+                             <div class="col-12">
+                                 <div class="form_input d-flex flex-column gap-2">
+                                     <label for="des">Description <span>*</span></label>
+                                     <div class="position-relative editor-wrapper">
+                                         <textarea name="content" class="editor" placeholder="Write something awesome..."></textarea>
+                                         <button id="toggleToolbar" type="button">
+                                             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0.777778 1.55556C0.35 1.55556 0 1.20556 0 0.777778C0 0.35 0.35 0 0.777778 0H13.2222C13.65 0 14 0.35 14 0.777778C14 1.20556 13.65 1.55556 13.2222 1.55556H0.777778ZM8.55556 3.11111H0.777778C0.35 3.11111 0 3.46111 0 3.88889C0 4.31667 0.35 4.66667 0.777778 4.66667H8.55556C8.98333 4.66667 9.33333 4.31667 9.33333 3.88889C9.33333 3.46111 8.98333 3.11111 8.55556 3.11111ZM8.55556 9.33333H0.777778C0.35 9.33333 0 9.68333 0 10.1111C0 10.5389 0.35 10.8889 0.777778 10.8889H8.55556C8.98333 10.8889 9.33333 10.5389 9.33333 10.1111C9.33333 9.68333 8.98333 9.33333 8.55556 9.33333ZM13.2222 7.77778H0.777778C0.35 7.77778 0 7.42778 0 7C0 6.57222 0.35 6.22222 0.777778 6.22222H13.2222C13.65 6.22222 14 6.57222 14 7C14 7.42778 13.65 7.77778 13.2222 7.77778ZM0.777778 14H13.2222C13.65 14 14 13.65 14 13.2222C14 12.7944 13.65 12.4444 13.2222 12.4444H0.777778C0.35 12.4444 0 12.7944 0 13.2222C0 13.65 0.35 14 0.777778 14Z" fill="#141414" />
+                                             </svg>
+                                         </button>
+                                     </div>
                                  </div>
                              </div>
 
@@ -252,10 +279,8 @@
                  </div>
              </div>
          </div>
-     </div> 
+     </div>
  </div>
- <!-- Add Accounts pop up ends  -->
-
-
+ <!-- Add Campaigns pop up ends  -->
 
  <?php include 'inc/footer.php' ?>
