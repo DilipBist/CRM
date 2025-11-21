@@ -15,7 +15,7 @@
         include 'inc/side-bar.php';
         ?>
 
-       <div class="admin_right_content ms-auto user_list">
+       <div class="admin_right_content ms-auto">
            <!-- top profile header  -->
            <div class="admin_top_header d-flex align-items-center gap-3 justify-content-between">
                <div class="chart_bread_crump d-flex align-items-center gap-3">
@@ -58,16 +58,15 @@
 
                    </div>
 
-                   <button
-                       class="add_acc_group"
-                       data-heading="Add Deal">
+                   <a href="crm-deal-add.php"
+                       class="add_acc_group">
                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                            <path d="M9.99935 18.3346C14.5827 18.3346 18.3327 14.5846 18.3327 10.0013C18.3327 5.41797 14.5827 1.66797 9.99935 1.66797C5.41602 1.66797 1.66602 5.41797 1.66602 10.0013C1.66602 14.5846 5.41602 18.3346 9.99935 18.3346Z" stroke="#F5F5F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                            <path d="M6.66602 10H13.3327" stroke="#F5F5F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                            <path d="M10 13.3346V6.66797" stroke="#F5F5F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                        </svg>
                        Add Deal
-                   </button>
+                   </a>
                </div>
            </div>
 
@@ -123,7 +122,7 @@
                                                <a
                                                    href="#" aria-label="Edit user List"
                                                    class="add_acc_groupBtn"
-                                                   data-heading="Edit Contact">
+                                                   >
                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                                                        <path d="M9.94452 2.70041L3.78702 9.21791C3.55452 9.46541 3.32952 9.95291 3.28452 10.2904L3.00702 12.7204C2.90952 13.5979 3.53952 14.1979 4.40952 14.0479L6.82452 13.6354C7.16202 13.5754 7.63452 13.3279 7.86702 13.0729L14.0245 6.55541C15.0895 5.43041 15.5695 4.14791 13.912 2.58041C12.262 1.02791 11.0095 1.57541 9.94452 2.70041Z" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                                                        <path d="M8.91797 3.78711C9.24047 5.85711 10.9205 7.43961 13.0055 7.64961" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
@@ -134,7 +133,7 @@
                                                <a href="#"
                                                    title="Delete"
                                                    class="delete_row_btn delete"
-                                                   data-title="Edit User">
+                                                  >
                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                                                        <path d="M15.75 4.48438C13.2525 4.23687 10.74 4.10938 8.235 4.10938C6.75 4.10938 5.265 4.18438 3.78 4.33438L2.25 4.48438" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                                        <path d="M6.375 3.7275L6.54 2.745C6.66 2.0325 6.75 1.5 8.0175 1.5H9.9825C11.25 1.5 11.3475 2.0625 11.46 2.7525L11.625 3.7275" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -152,7 +151,6 @@
                            </tbody>
                        </table>
                    </div>
-
                </div>
 
                <div class="mb-5 mt-3">

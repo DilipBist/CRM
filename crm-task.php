@@ -16,7 +16,7 @@
         include 'inc/side-bar.php';
         ?>
 
-     <div class="admin_right_content ms-auto user_list">
+     <div class="admin_right_content ms-auto ">
          <!-- top profile header  -->
          <div class="admin_top_header d-flex align-items-center gap-3 justify-content-between">
              <div class="chart_bread_crump d-flex align-items-center gap-3">
