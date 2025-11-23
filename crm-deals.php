@@ -58,8 +58,9 @@
 
                    </div>
 
-                   <a href="crm-deal-add.php"
-                       class="add_acc_group">
+                   <a href="#"
+                       class="add_acc_groupBtn"
+                       data-heading="Add New Deals">
                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                            <path d="M9.99935 18.3346C14.5827 18.3346 18.3327 14.5846 18.3327 10.0013C18.3327 5.41797 14.5827 1.66797 9.99935 1.66797C5.41602 1.66797 1.66602 5.41797 1.66602 10.0013C1.66602 14.5846 5.41602 18.3346 9.99935 18.3346Z" stroke="#F5F5F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                            <path d="M6.66602 10H13.3327" stroke="#F5F5F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -103,7 +104,7 @@
                                            <!-- use the below status design  -->
                                            <div class="open_green">
                                                Open
-                                           </div> 
+                                           </div>
                                            <!-- <div class="pending_green">
                                                Pending
                                            </div>
@@ -113,7 +114,7 @@
                                        </td>
                                        <td>
                                            <div class="table_actions">
-                                               <a href="#" title="View Details" class="add_acc_groupBtn" data-heading="View Contact">
+                                               <a href="crm-deal-add.php" title="View Details">
                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                                                        <path d="M11.6854 8.99945C11.6854 10.4845 10.4854 11.6845 9.00043 11.6845C7.51543 11.6845 6.31543 10.4845 6.31543 8.99945C6.31543 7.51445 7.51543 6.31445 9.00043 6.31445C10.4854 6.31445 11.6854 7.51445 11.6854 8.99945Z" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                                        <path d="M8.99988 15.2016C11.6474 15.2016 14.1149 13.6416 15.8324 10.9416C16.5074 9.88406 16.5074 8.10656 15.8324 7.04906C14.1149 4.34906 11.6474 2.78906 8.99988 2.78906C6.35238 2.78906 3.88488 4.34906 2.16738 7.04906C1.49238 8.10656 1.49238 9.88406 2.16738 10.9416C3.88488 13.6416 6.35238 15.2016 8.99988 15.2016Z" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -122,7 +123,7 @@
                                                <a
                                                    href="#" aria-label="Edit user List"
                                                    class="add_acc_groupBtn"
-                                                   >
+                                                   data-heading="Edit New Deals">
                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                                                        <path d="M9.94452 2.70041L3.78702 9.21791C3.55452 9.46541 3.32952 9.95291 3.28452 10.2904L3.00702 12.7204C2.90952 13.5979 3.53952 14.1979 4.40952 14.0479L6.82452 13.6354C7.16202 13.5754 7.63452 13.3279 7.86702 13.0729L14.0245 6.55541C15.0895 5.43041 15.5695 4.14791 13.912 2.58041C12.262 1.02791 11.0095 1.57541 9.94452 2.70041Z" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                                                        <path d="M8.91797 3.78711C9.24047 5.85711 10.9205 7.43961 13.0055 7.64961" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
@@ -132,8 +133,7 @@
 
                                                <a href="#"
                                                    title="Delete"
-                                                   class="delete_row_btn delete"
-                                                  >
+                                                   class="delete_row_btn delete">
                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                                                        <path d="M15.75 4.48438C13.2525 4.23687 10.74 4.10938 8.235 4.10938C6.75 4.10938 5.265 4.18438 3.78 4.33438L2.25 4.48438" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                                        <path d="M6.375 3.7275L6.54 2.745C6.66 2.0325 6.75 1.5 8.0175 1.5H9.9825C11.25 1.5 11.3475 2.0625 11.46 2.7525L11.625 3.7275" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -159,6 +159,245 @@
            </div>
        </div>
    </section>
+
+
+
+   <!-- add deal popup  -->
+   <div class="AttendancePopup">
+       <div class="outer_layout">
+           <div class="attendance_popup_content">
+               <div class="monthly_heading">
+                   <span>Add New Deals</span>
+
+                   <button type="button" id="CloseAttendancePopup">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                           <path d="M9.99935 1.66602C5.40768 1.66602 1.66602 5.40768 1.66602 9.99935C1.66602 14.591 5.40768 18.3327 9.99935 18.3327C14.591 18.3327 18.3327 14.591 18.3327 9.99935C18.3327 5.40768 14.591 1.66602 9.99935 1.66602ZM12.7993 11.916C13.041 12.1577 13.041 12.5577 12.7993 12.7993C12.6743 12.9243 12.516 12.9827 12.3577 12.9827C12.1993 12.9827 12.041 12.9243 11.916 12.7993L9.99935 10.8827L8.08268 12.7993C7.95768 12.9243 7.79935 12.9827 7.64102 12.9827C7.48268 12.9827 7.32435 12.9243 7.19935 12.7993C6.95768 12.5577 6.95768 12.1577 7.19935 11.916L9.11602 9.99935L7.19935 8.08268C6.95768 7.84102 6.95768 7.44102 7.19935 7.19935C7.44102 6.95768 7.84102 6.95768 8.08268 7.19935L9.99935 9.11602L11.916 7.19935C12.1577 6.95768 12.5577 6.95768 12.7993 7.19935C13.041 7.44102 13.041 7.84102 12.7993 8.08268L10.8827 9.99935L12.7993 11.916Z" fill="#FF0000" />
+                       </svg>
+                   </button>
+               </div>
+
+               <div class="attendance_form mt-4">
+                   <h4>Add New Deals</h4>
+                   <p>Please kindly complete the form to add new deal registration.</p>
+                   <div class="common_form">
+                       <form action="">
+                           <div class="row g-3 align-items-end">
+
+                               <div class="col-md-6 col-lg-4">
+                                   <div class="form_input d-flex flex-column gap-2">
+                                       <label for="deal_name">Deal Name <span>*</span> </label>
+                                       <input type="text" id="deal_name" name="deal_name" placeholder="Enter Deal Name" required>
+                                   </div>
+                               </div>
+
+                               <div class="col-md-6 col-lg-4">
+                                   <div class="slect-status">
+                                       <label for="Pipeline " class="mb-2">Pipeline <span class="red">*</span></label>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 15 8" fill="none">
+                                           <path d="M13.95 0.75L8.51667 6.18333C7.875 6.825 6.825 6.825 6.18333 6.18333L0.75 0.75" stroke="#848484" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                       </svg>
+                                       <select class="form-select" aria-label="select" id="Pipeline " name="Pipeline  " required>
+                                           <option value="" disabled hidden selected>Select </option>
+                                           <option value="">Normal</option>
+                                           <option value="">High</option>
+                                           <option value="">Low</option>
+                                       </select>
+                                   </div>
+                               </div>
+
+                               <div class="col-md-6 col-lg-4">
+                                   <div class="form_input d-flex flex-column gap-2">
+                                       <label for="deal_value">Deal Value <span>*</span> </label>
+                                       <input type="number" id="deal_value" name="deal_value" placeholder="Enter Deal Value" required>
+                                   </div>
+                               </div>
+
+                               <div class="col-md-6 col-lg-4">
+                                   <div class="slect-status">
+                                       <label for="company_name" class="mb-2">Currency <span class="red">*</span></label>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 15 8" fill="none">
+                                           <path d="M13.95 0.75L8.51667 6.18333C7.875 6.825 6.825 6.825 6.18333 6.18333L0.75 0.75" stroke="#848484" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                       </svg>
+                                       <select class="form-select" aria-label="select" id="company_name" name="company_name" required>
+                                           <option value="" disabled hidden selected>Select</option>
+                                           <option value="">Normal</option>
+                                           <option value="">High</option>
+                                           <option value="">Low</option>
+                                       </select>
+                                   </div>
+                               </div>
+
+
+                               <div class="col-md-6 col-lg-4">
+                                   <div class="form_input d-flex flex-column gap-2">
+                                       <label for="Period">Period <span>*</span> </label>
+                                       <input type=" " id="Period" name="Period" placeholder="Period" required>
+                                   </div>
+                               </div>
+
+                               <div class="col-md-6 col-lg-4">
+                                   <div class="form_input d-flex flex-column gap-2">
+                                       <label for="period_value">Period Value <span>*</span> </label>
+                                       <input type="number" id="period_value" name="period_value" placeholder="" required>
+                                   </div>
+                               </div>
+
+                               <div class="col-md-6 col-lg-4">
+                                   <div class="form_input d-flex flex-column gap-2">
+                                       <label for="Contact">Contact <span>*</span> </label>
+                                       <input type="tel" id="Contact" name="Contact" placeholder="Enter Number" required oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+                                   </div>
+                               </div>
+
+                               <div class="col-md-6 col-lg-4">
+                                   <div class="slect-status">
+                                       <label for="Project" class="mb-2">Project <span class="red">*</span></label>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 15 8" fill="none">
+                                           <path d="M13.95 0.75L8.51667 6.18333C7.875 6.825 6.825 6.825 6.18333 6.18333L0.75 0.75" stroke="#848484" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                       </svg>
+                                       <select class="form-select" aria-label="select" id="Project" name="Project" required>
+                                           <option value="" disabled hidden selected>Select</option>
+                                           <option value="normal">Normal</option>
+                                           <option value="high">High</option>
+                                           <option value="low">Low</option>
+                                       </select>
+                                   </div>
+                               </div>
+
+
+                               <div class="col-md-6 col-lg-4">
+                                   <div class="form_input d-flex flex-column gap-2 position-relative">
+                                       <label for="due_date">Due Date </label>
+                                       <input type="text" class="date-picker" id="due_date " name="due_date " placeholder="MM/DD/YYYY">
+                                       <svg xmlns="http://www.w3.org/2000/svg" class="calender" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                           <path d="M7.33203 1.66602V4.16602" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                           <path d="M14 1.66602V4.16602" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                           <path d="M3.58203 7.57422H17.7487" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                           <path d="M18.166 7.08268V14.166C18.166 16.666 16.916 18.3327 13.9993 18.3327H7.33268C4.41602 18.3327 3.16602 16.666 3.16602 14.166V7.08268C3.16602 4.58268 4.41602 2.91602 7.33268 2.91602H13.9993C16.916 2.91602 18.166 4.58268 18.166 7.08268Z" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                           <path d="M13.7441 11.4167H13.7516" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                           <path d="M13.7441 13.9167H13.7516" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                           <path d="M10.6621 11.4167H10.6696" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                           <path d="M10.6621 13.9167H10.6696" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                           <path d="M7.5781 11.4167H7.58559" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                           <path d="M7.5781 13.9167H7.58559" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                       </svg>
+                                   </div>
+                               </div>
+
+                               <div class="col-md-6 col-lg-4">
+                                   <div class="form_input d-flex flex-column gap-2 position-relative">
+                                       <label for="closing_Date">Expected Closing Date </label>
+                                       <input type="text" class="date-picker" id="closing_Date " name="closing_Date " placeholder="MM/DD/YYYY">
+                                       <svg xmlns="http://www.w3.org/2000/svg" class="calender" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                           <path d="M7.33203 1.66602V4.16602" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                           <path d="M14 1.66602V4.16602" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                           <path d="M3.58203 7.57422H17.7487" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                           <path d="M18.166 7.08268V14.166C18.166 16.666 16.916 18.3327 13.9993 18.3327H7.33268C4.41602 18.3327 3.16602 16.666 3.16602 14.166V7.08268C3.16602 4.58268 4.41602 2.91602 7.33268 2.91602H13.9993C16.916 2.91602 18.166 4.58268 18.166 7.08268Z" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                           <path d="M13.7441 11.4167H13.7516" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                           <path d="M13.7441 13.9167H13.7516" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                           <path d="M10.6621 11.4167H10.6696" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                           <path d="M10.6621 13.9167H10.6696" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                           <path d="M7.5781 11.4167H7.58559" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                           <path d="M7.5781 13.9167H7.58559" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                       </svg>
+                                   </div>
+                               </div>
+
+                               <div class="col-md-6 col-lg-4">
+                                   <div class="slect-status">
+                                       <label for="Priority" class="mb-2">Priority <span class="red">*</span></label>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 15 8" fill="none">
+                                           <path d="M13.95 0.75L8.51667 6.18333C7.875 6.825 6.825 6.825 6.18333 6.18333L0.75 0.75" stroke="#848484" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                       </svg>
+                                       <select class="form-select" aria-label="select" id="Priority" name="Priority" required>
+                                           <option value="" disabled hidden selected>Select Status</option>
+                                           <option value="">lorem</option>
+                                           <option value="">loem</option>
+                                           <option value="">lksjfn</option>
+                                       </select>
+                                   </div>
+                               </div>
+
+
+                               <div class="col-md-6 col-lg-4">
+                                   <div class="form_input d-flex flex-column gap-2">
+                                       <label for="Assignee">Assignee <span>*</span> </label>
+                                       <input type="text" id="Assignee" name="Assignee" placeholder="" required>
+                                   </div>
+                               </div>
+
+                               <div class="col-md-6 col-lg-4">
+                                   <div class="form_input d-flex flex-column gap-2 position-relative">
+                                       <label for="followUp_date">Follow Up Date </label>
+                                       <input type="text" class="date-picker" id="followUp_date " name="followUp_date " placeholder="MM/DD/YYYY">
+                                       <svg xmlns="http://www.w3.org/2000/svg" class="calender" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                           <path d="M7.33203 1.66602V4.16602" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                           <path d="M14 1.66602V4.16602" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                           <path d="M3.58203 7.57422H17.7487" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                           <path d="M18.166 7.08268V14.166C18.166 16.666 16.916 18.3327 13.9993 18.3327H7.33268C4.41602 18.3327 3.16602 16.666 3.16602 14.166V7.08268C3.16602 4.58268 4.41602 2.91602 7.33268 2.91602H13.9993C16.916 2.91602 18.166 4.58268 18.166 7.08268Z" stroke="#121212" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                           <path d="M13.7441 11.4167H13.7516" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                           <path d="M13.7441 13.9167H13.7516" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                           <path d="M10.6621 11.4167H10.6696" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                           <path d="M10.6621 13.9167H10.6696" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                           <path d="M7.5781 11.4167H7.58559" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                           <path d="M7.5781 13.9167H7.58559" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                       </svg>
+                                   </div>
+                               </div>
+
+
+                               <div class="col-md-6 col-lg-4">
+                                   <div class="slect-status">
+                                       <label for="Source" class="mb-2">Source <span class="red">*</span></label>
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 15 8" fill="none">
+                                           <path d="M13.95 0.75L8.51667 6.18333C7.875 6.825 6.825 6.825 6.18333 6.18333L0.75 0.75" stroke="#848484" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                       </svg>
+                                       <select class="form-select" aria-label="select" id="Source" name="Source" required>
+                                           <option value="" disabled hidden selected>Select</option>
+                                           <option value="">af</option>
+                                           <option value="">fdfad</option>
+                                           <option value="">Lfdadsdow</option>
+                                       </select>
+                                   </div>
+                               </div>
+
+                               <div class="col-md-6 col-lg-4">
+                                   <div class="form_input d-flex flex-column gap-2">
+                                       <label for="Tags">Tags <span>*</span> </label>
+                                       <input type="text" id="Tags" name="Tags" placeholder="Tags" required>
+                                   </div>
+                               </div>
+
+
+                               <div class="col-12">
+                                   <div class="form_input d-flex flex-column gap-2">
+                                       <label for="des">Description <span>*</span></label>
+                                       <div class="position-relative editor-wrapper">
+                                           <textarea name="content" class="editor" placeholder="Write something awesome..."></textarea>
+                                           <button id="toggleToolbar" type="button">
+                                               <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                                   <path fill-rule="evenodd" clip-rule="evenodd" d="M0.777778 1.55556C0.35 1.55556 0 1.20556 0 0.777778C0 0.35 0.35 0 0.777778 0H13.2222C13.65 0 14 0.35 14 0.777778C14 1.20556 13.65 1.55556 13.2222 1.55556H0.777778ZM8.55556 3.11111H0.777778C0.35 3.11111 0 3.46111 0 3.88889C0 4.31667 0.35 4.66667 0.777778 4.66667H8.55556C8.98333 4.66667 9.33333 4.31667 9.33333 3.88889C9.33333 3.46111 8.98333 3.11111 8.55556 3.11111ZM8.55556 9.33333H0.777778C0.35 9.33333 0 9.68333 0 10.1111C0 10.5389 0.35 10.8889 0.777778 10.8889H8.55556C8.98333 10.8889 9.33333 10.5389 9.33333 10.1111C9.33333 9.68333 8.98333 9.33333 8.55556 9.33333ZM13.2222 7.77778H0.777778C0.35 7.77778 0 7.42778 0 7C0 6.57222 0.35 6.22222 0.777778 6.22222H13.2222C13.65 6.22222 14 6.57222 14 7C14 7.42778 13.65 7.77778 13.2222 7.77778ZM0.777778 14H13.2222C13.65 14 14 13.65 14 13.2222C14 12.7944 13.65 12.4444 13.2222 12.4444H0.777778C0.35 12.4444 0 12.7944 0 13.2222C0 13.65 0.35 14 0.777778 14Z" fill="#141414" />
+                                               </svg>
+                                           </button>
+                                       </div>
+                                   </div>
+                               </div>
+
+
+                               <div class="col-12">
+                                   <div class="form_discard_save d-flex align-items-center gap-2 justify-content-end">
+                                       <button class="discard" type="button">Back</button>
+                                       <button type="submit" class="submit">Save</button>
+                                   </div>
+                               </div>
+                           </div>
+                       </form>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+   <!-- add deal popup  -->
 
 
    <?php include 'inc/footer.php' ?>

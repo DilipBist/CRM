@@ -1922,6 +1922,7 @@ SIDE BAR CSS ENDS
   justify-content: center;
 }
 
+#closeCallUser,
 #CloseAttendancePopup,
 #closeChangeLedger,
 #closeAddLedger {
@@ -2162,6 +2163,24 @@ SIDE BAR CSS ENDS
   transition: opacity 0.3s ease-in-out;
 }
 
+.crm_edit_call_popup {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--common-pupbg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.crm_edit_call_popup_content,
 .attendance_popup_content,
 .change_ledger_group_popup_content,
 .add_account_group_popup_content {
@@ -2181,6 +2200,7 @@ SIDE BAR CSS ENDS
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
+
 
 .inner_salary_heading {
   padding: 10px;
@@ -2209,6 +2229,7 @@ SIDE BAR CSS ENDS
 
 .add_account_group_popup_content::-webkit-scrollbar,
 .change_ledger_group_popup_content::-webkit-scrollbar,
+.crm_edit_call_popup_content::-webkit-scrollbar,
 .attendance_popup_content::-webkit-scrollbar {
   display: none;
 }
@@ -2216,6 +2237,7 @@ SIDE BAR CSS ENDS
 /* Show state */
 .AttendancePopup.show,
 .change_ledger_group_popup.show,
+.crm_edit_call_popup.show,
 .add_account_group_popup.show {
   visibility: visible;
   opacity: 1;
@@ -2224,7 +2246,9 @@ SIDE BAR CSS ENDS
 .AttendancePopup.show .attendance_popup_content,
 .add_account_group_popup.show .add_account_group_popup_content,
 .change_ledger_group_popup.show .change_ledger_group_popup_content,
+.crm_edit_call_popup.show .crm_edit_call_popup_content,
 .change_ledger_group_popup.show .outer_layout,
+.crm_edit_call_popup.show .outer_layout,
 .add_account_group_popup.show .outer_layout {
   transform: scale(1);
 }
@@ -2233,10 +2257,12 @@ SIDE BAR CSS ENDS
   width: 100%;
 }
 
+.crm_edit_call_popup_content,
 .change_ledger_group_popup_content {
   width: 620px;
 }
 
+.crm_edit_call_popup,
 .change_ledger_group_popup,
 .add_account_group_popup {
   background: rgba(0, 0, 0, 0.6);
@@ -10568,7 +10594,7 @@ select option:not(:first-child) {
   font-weight: 600;
 }
 
-.comment_box_wrapper .left_div .three_dot {
+.three_dot_container .three_dot {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10582,25 +10608,25 @@ select option:not(:first-child) {
   position: relative;
 }
 
-.comment_box_wrapper .left_div .three_dot:hover {
+.three_dot_container .three_dot:hover {
   background: #b9bdc1;
 }
 
 @media (min-width: 992px) {
-  .comment_box_wrapper .left_div .three_dot:hover .dropdown {
+  .three_dot_container:hover .dropdown {
     visibility: visible;
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-.comment_box_wrapper .left_div .three_dot.active .dropdown {
+.three_dot_container.active .dropdown {
   visibility: visible;
   opacity: 1;
   transform: translateY(0);
 }
 
-.comment_box_wrapper .left_div .three_dot .dropdown {
+.three_dot_container .dropdown {
   position: absolute;
   top: 110%;
   right: 0;
@@ -10614,15 +10640,16 @@ select option:not(:first-child) {
   transition: all .3s ease-in-out;
 }
 
-.comment_box_wrapper .left_div .three_dot .dropdown div {
+.three_dot_container .dropdown div {
   width: max-content;
   padding: 6px 12px;
   width: 100%;
   color: var(--text-5C);
   font-weight: 600;
+  cursor: pointer;
 }
 
-.comment_box_wrapper .left_div .three_dot .dropdown div:hover {
+.three_dot_container .dropdown div:hover {
   background: #b9bdc1;
 }
 
@@ -10633,7 +10660,7 @@ select option:not(:first-child) {
   padding: 8px 0;
 }
 
-.comment_box_wrapper > p {
+.comment_box_wrapper>p {
   font-weight: 500;
   font-size: 14px;
   color: var(--text-85);
@@ -10701,14 +10728,116 @@ select option:not(:first-child) {
 
 .comment_box {
   max-height: 0;
-    overflow: hidden;
-    transition: max-height .3s ease;
+  overflow: hidden;
+  transition: max-height .3s ease;
 }
 
 .comment_box.active {
   max-height: 500px;
 }
 
+.call_box_details_wrapper .call_box_data {
+  border-radius: 8px;
+  border: 1px solid var(--whiteEB, #EBEBEB);
+  padding: 16px;
+}
+
+.call_box_details_wrapper .call_box_data .p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.call_box_details_wrapper .call_box_data .top_div .inner h4 {
+  color: var(--text-dark2);
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.call_box_details_wrapper .call_box_data .top_div .inner span {
+  color: var(--text-85);
+  font-size: 12px;
+  display: block;
+  font-weight: 500;
+}
+
+.call_status_select .slect-status svg {
+  top: 6px;
+  right: 10px;
+}
+
+.call_status_select .slect-status .form-select {
+  width: fit-content !important;
+  min-width: 80px;
+  border-radius: 9px;
+  border: 1px solid var(--neutral-primay, #005399);
+  background-color: transparent;
+  outline: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--neutral-primay);
+  height: 30px;
+  padding: 4px 12px;
+  padding-right: 35px;
+}
+.call_box_details_wrapper .call_box_data p{
+  margin: 0;
+  font-size: 14px;
+  color: var(--text-85);
+  font-weight: 600;
+}
+.files_Data_wrapper .files_Details{
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid var(--whiteEB, #EBEBEB);
+}
+.files_Data_wrapper .files_Details .top-div h4{
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  color: var(--text-dark2);
+}
+.files_Data_wrapper .files_Details .top-div p{
+  margin: 0;
+  font-size: 14px;
+  color: var(--text-85);
+  font-weight: 500;
+}
+.files_Data_wrapper .files_Details .top-div .button_Status button{
+  border: none;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 8px;
+}
+.files_Data_wrapper .files_Details .top-div .button_Status button.sent{
+  border-radius: 8px;
+    background: linear-gradient(0deg, rgba(96, 224, 121, 0.20) 0%, rgba(96, 224, 121, 0.20) 100%), var(--Button-soft-color, #CCDDEB);
+    color: #03861D;
+}
+.files_Data_wrapper .files_Details .top-div .button_Status button.proposal{
+  border-radius: 8px;
+    background: #F2D2D1;
+    color: #E87F7F;
+}
+.files_Data_wrapper .files_Details .top-div .button_Status button.draft{
+  border-radius: 8px;
+    background: var(--Button-soft-color, #CCDDEB);
+    color: var(--neutral-primay);
+}
+.files_Data_wrapper .files_Details .ower_tag{
+  padding: 6px 12px;
+  border-radius: 8px;
+    background: #CECECE;
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--text-5C);
+}
 /* deal page css ends */
 
 /* +++++++++++++++++ CRM SECTION CSS ENDS ++++++++++++++++++++++ */

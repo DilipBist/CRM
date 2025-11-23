@@ -41,7 +41,6 @@ document.addEventListener("DOMContentLoaded", () => {
   initSideBarUserDropdown();
   updateGender();
   setupAccordionSync();
-  initChangeLedgerPopup();
   initStockCheckboxToggles();
   initInventoryRowAdd();
   initAddVehicleRow();
@@ -115,6 +114,18 @@ document.addEventListener("DOMContentLoaded", () => {
   dailyTaskComplete();
   initializeThreeDotDropdown();
   initCommentToggle();
+  initPopup({
+    openButtonsSelector: ".change_ledger_btn",
+    popupSelector: ".change_ledger_group_popup",
+    closeButtonSelector: "#closeChangeLedger"
+  });
+  initPopup({
+    openButtonsSelector: ".edit_call_user_btn",
+    popupSelector: ".crm_edit_call_popup",
+    closeButtonSelector: "#closeCallUser"
+  });
+
+
 
 
   // ============
@@ -2183,27 +2194,30 @@ function initAddRole() {
     });
   }
 }
-// change ledger popup funciton
-function initChangeLedgerPopup() {
-  const buttons = document.querySelectorAll(".change_ledger_btn");
-  const popUp = document.querySelector(".change_ledger_group_popup");
 
-  if (!buttons || !popUp) return;
+// common popup function 
+function initPopup({ openButtonsSelector, popupSelector, closeButtonSelector }) {
+  const buttons = document.querySelectorAll(openButtonsSelector);
+  const popUp = document.querySelector(popupSelector);
+  const closeBtn = document.querySelector(closeButtonSelector);
 
+  if (!buttons.length || !popUp) return;
+
+  // Open popup
   buttons.forEach((btn) => {
     btn.addEventListener("click", () => {
       popUp.classList.add("show");
     });
   });
 
-  // Close only when clicking outside the content
+  // Close on background click
   popUp.addEventListener("click", (e) => {
     if (e.target === popUp) {
       popUp.classList.remove("show");
     }
   });
 
-  const closeBtn = document.querySelector("#closeChangeLedger");
+  // Close button
   if (closeBtn) {
     closeBtn.addEventListener("click", () => {
       popUp.classList.remove("show");
@@ -2683,35 +2697,31 @@ function dailyTaskComplete() {
 
 // Initialize the dropdown behavior
 function initializeThreeDotDropdown() {
-  const menuButtons = document.querySelectorAll('.three_dot');
+  const containers = document.querySelectorAll('.three_dot_container');
+  if (!containers.length) return;
 
-  menuButtons.forEach(button => {
-    button.addEventListener('click', event => {
-      event.stopPropagation();
-      toggleDropdown(button, menuButtons);
+  containers.forEach(container => {
+    const btn = container.querySelector('.three_dot');
+    if (!btn) return;
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      // Close other dropdowns
+      document.querySelectorAll('.three_dot_container').forEach(c => {
+        if (c !== container) c.classList.remove('active');
+      });
+      container.classList.toggle('active');
     });
-  });
-
-  // Close dropdown when clicking outside
+    // Prevent dropdown item click from closing the dropdown
+    container.querySelector('.dropdown').addEventListener('click', event => {
+      event.stopPropagation();
+    })
+  })
   document.addEventListener('click', closeAllDropdowns);
-}
-
-// Toggle the dropdown for the clicked button
-function toggleDropdown(currentButton, allButtons) {
-  // Close other open dropdowns
-  allButtons.forEach(button => {
-    if (button !== currentButton) {
-      button.classList.remove('active');
-    }
-  });
-
-  // Toggle the selected one
-  currentButton.classList.toggle('active');
 }
 // Close all dropdowns
 function closeAllDropdowns() {
-  const menuButtons = document.querySelectorAll('.three_dot');
-  menuButtons.forEach(button => button.classList.remove('active'));
+  document.querySelectorAll('.three_dot_container')
+    .forEach(container => container.classList.remove('active'));
 }
 
 // comment toggle crm deal 
