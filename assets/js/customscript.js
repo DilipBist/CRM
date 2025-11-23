@@ -27,9 +27,11 @@ document.addEventListener("DOMContentLoaded", () => {
   // delete row 
   deleteTableRow();
   // Initialize Location Track Filter
-  initFilter(".location_track_btns", ".track_filter_container");
+  setupFilter(".location_track_btns", ".track_filter_container");
   // Initialize Backup / Upload Filter
-  initFilter(".backup_filter_button_container", ".backupfilterable_data");
+  setupFilter(".backup_filter_button_container", ".backupfilterable_data");
+  // crm deal view filter 
+  setupFilter(".top_bar_btns_container", ".content_div_wrapper");
   initLabourPopup();
   initAddLabour();
   initUserPopup();
@@ -111,6 +113,8 @@ document.addEventListener("DOMContentLoaded", () => {
     color: "#3B82F6"
   });
   dailyTaskComplete();
+  initializeThreeDotDropdown();
+  initCommentToggle();
 
 
   // ============
@@ -654,9 +658,9 @@ $(function () {
       AttendancePopup.removeClass("show");
     }
   });
-  
+
   addAccBtn.click(function () {
-    let heading = $(this).data("heading"); 
+    let heading = $(this).data("heading");
     $(".AttendancePopup .monthly_heading > span").text(heading);
     $(".AttendancePopup .attendance_form > h4").text(heading);
     AttendancePopup.addClass("show");
@@ -2055,7 +2059,7 @@ function initFileImport() {
 
 //  ********* filter fucntionality on click (for location and the backuprestore page) ******************
 
-function initFilter(buttonContainerSelector, itemContainerSelector) {
+function setupFilter(buttonContainerSelector, itemContainerSelector) {
   const buttons = document.querySelectorAll(
     `${buttonContainerSelector} button`
   );
@@ -2672,6 +2676,72 @@ function dailyTaskComplete() {
     text.classList.toggle('active');
     icon.classList.toggle('active');
     dot.classList.toggle('active');
+  });
+}
+
+
+
+// Initialize the dropdown behavior
+function initializeThreeDotDropdown() {
+  const menuButtons = document.querySelectorAll('.three_dot');
+
+  menuButtons.forEach(button => {
+    button.addEventListener('click', event => {
+      event.stopPropagation();
+      toggleDropdown(button, menuButtons);
+    });
+  });
+
+  // Close dropdown when clicking outside
+  document.addEventListener('click', closeAllDropdowns);
+}
+
+// Toggle the dropdown for the clicked button
+function toggleDropdown(currentButton, allButtons) {
+  // Close other open dropdowns
+  allButtons.forEach(button => {
+    if (button !== currentButton) {
+      button.classList.remove('active');
+    }
+  });
+
+  // Toggle the selected one
+  currentButton.classList.toggle('active');
+}
+// Close all dropdowns
+function closeAllDropdowns() {
+  const menuButtons = document.querySelectorAll('.three_dot');
+  menuButtons.forEach(button => button.classList.remove('active'));
+}
+
+// comment toggle crm deal 
+function initCommentToggle() {
+  const addCommentBtn = document.querySelectorAll('.add_comment_button');
+  if (!addCommentBtn.length) return;
+
+  addCommentBtn.forEach(btn => {
+    btn.addEventListener('click', () => {
+
+      const wrapper = btn.closest('.comment_box_wrapper');
+      if (!wrapper) return;
+
+      const currentBox = wrapper.querySelector('.comment_box');
+      if (!currentBox) return;
+
+      // If it's already open, close it
+      if (currentBox.classList.contains('active')) {
+        currentBox.classList.remove('active');
+        return;
+      }
+
+      // Close any other open boxes
+      document.querySelectorAll('.comment_box.active').forEach(box => {
+        box.classList.remove('active');
+      });
+
+      // Open this one
+      currentBox.classList.add('active');
+    });
   });
 }
 

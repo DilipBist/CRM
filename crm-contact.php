@@ -95,10 +95,7 @@
                                   <tr>
                                       <td><?= $project['id'] ?></td>
                                       <td>
-                                          <div class="table_profile_image">
-                                              <img src="assets/images/profileimg.jpg" alt="profile image">
-                                              Rohan Dangol
-                                          </div>
+                                          
                                       </td>
                                       <td>rohanshrestha020@gmail.com</td>
                                       <td>9827339100</td>
