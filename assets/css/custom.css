@@ -882,7 +882,7 @@ SIDE BAR CSS STARTS
 .user_dropdown_wrapper {
   position: absolute;
   bottom: 60px;
-  left: 40px;
+  left: 62px;
   z-index: 100;
   transform: translateY(-16px);
   visibility: hidden;
@@ -899,7 +899,7 @@ SIDE BAR CSS STARTS
 .activity_dropdown_wrapper {
   position: absolute;
   bottom: 60px;
-  left: 24px;
+  left: 50px;
   z-index: 100;
   transform: translateY(-16px);
   visibility: hidden;
@@ -2330,7 +2330,7 @@ SIDE BAR CSS ENDS
   border-radius: 16px;
   background: #e5ecf6;
   width: 200px;
-  min-width: 200px;
+  min-width: 150px;
 }
 
 .track_list_container h4 {
@@ -4736,13 +4736,13 @@ select option:not(:first-child) {
 
 /* ========================= TRACK PROFILE COMPONENT CSS STARTS =================== */
 .tracking-data-wrapper {
-  display: flex;
+  /* display: flex;
   gap: 24px;
-  height: 700px;
-  overflow-y: auto;
+  height: 700px; */
+  /* overflow-y: auto;
 
   scrollbar-width: none;
-  -ms-overflow-style: none;
+  -ms-overflow-style: none; */
 }
 
 .tracking-data-wrapper::-webkit-scrollbar {
@@ -4757,15 +4757,19 @@ select option:not(:first-child) {
 }
 
 .tracking-data-wrapper .right_div {
-  max-width: 1600px;
+  /* max-width: 1600px;
   width: 99%;
   height: 100%;
   position: sticky;
   top: 0;
-  right: 0;
+  right: 0; */
+  min-height: 600px;
+  width: 100%;
+  max-height: 800px;
+  height: 100%;
   border-radius: 12px;
   overflow: hidden;
-  padding: 16px;
+  padding: clamp(8px, 1.5vw, 16px);
   border: 1px solid var(--Neutral-Separator, #ebebeb);
   background: var(--white);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
@@ -4899,11 +4903,12 @@ select option:not(:first-child) {
 }
 
 .live_Data_container {
-  width: 290px;
+  /* width: 290px; */
   background: var(--white);
   box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   overflow: hidden;
+  margin-bottom: 16px;
 }
 
 .live_Data_container .heading {
@@ -5100,7 +5105,7 @@ select option:not(:first-child) {
 
 .track_filter_container .track_item {
   visibility: hidden;
-  height: 0;
+  max-height: 0;
   opacity: 0;
   transition: all 0.5s ease-in-out;
 }
@@ -5108,7 +5113,7 @@ select option:not(:first-child) {
 .track_filter_container .active {
   visibility: visible;
   opacity: 1;
-  height: auto;
+  max-height: auto;
 }
 
 /* ========================= TRACK PROFILE COMPONENT CSS ENDS=================== */
@@ -10785,59 +10790,69 @@ select option:not(:first-child) {
   padding: 4px 12px;
   padding-right: 35px;
 }
-.call_box_details_wrapper .call_box_data p{
+
+.call_box_details_wrapper .call_box_data p {
   margin: 0;
   font-size: 14px;
   color: var(--text-85);
   font-weight: 600;
 }
-.files_Data_wrapper .files_Details{
+
+.files_Data_wrapper .files_Details {
   padding: 16px;
   border-radius: 8px;
   border: 1px solid var(--whiteEB, #EBEBEB);
 }
-.files_Data_wrapper .files_Details .top-div h4{
+
+.files_Data_wrapper .files_Details .top-div h4 {
   font-size: 18px;
   font-weight: 600;
   margin: 0;
   color: var(--text-dark2);
 }
-.files_Data_wrapper .files_Details .top-div p{
+
+.files_Data_wrapper .files_Details .top-div p {
   margin: 0;
   font-size: 14px;
   color: var(--text-85);
   font-weight: 500;
 }
-.files_Data_wrapper .files_Details .top-div .button_Status button{
+
+.files_Data_wrapper .files_Details .top-div .button_Status button {
   border: none;
   padding: 6px 12px;
   font-size: 14px;
   font-weight: 700;
   border-radius: 8px;
 }
-.files_Data_wrapper .files_Details .top-div .button_Status button.sent{
+
+.files_Data_wrapper .files_Details .top-div .button_Status button.sent {
   border-radius: 8px;
-    background: linear-gradient(0deg, rgba(96, 224, 121, 0.20) 0%, rgba(96, 224, 121, 0.20) 100%), var(--Button-soft-color, #CCDDEB);
-    color: #03861D;
+  background: linear-gradient(0deg, rgba(96, 224, 121, 0.20) 0%, rgba(96, 224, 121, 0.20) 100%), var(--Button-soft-color, #CCDDEB);
+  color: #03861D;
 }
-.files_Data_wrapper .files_Details .top-div .button_Status button.proposal{
+
+.files_Data_wrapper .files_Details .top-div .button_Status button.proposal {
   border-radius: 8px;
-    background: #F2D2D1;
-    color: #E87F7F;
+  background: #F2D2D1;
+  color: #E87F7F;
 }
-.files_Data_wrapper .files_Details .top-div .button_Status button.draft{
+
+.files_Data_wrapper .files_Details .top-div .button_Status button.draft {
   border-radius: 8px;
-    background: var(--Button-soft-color, #CCDDEB);
-    color: var(--neutral-primay);
+  background: var(--Button-soft-color, #CCDDEB);
+  color: var(--neutral-primay);
 }
-.files_Data_wrapper .files_Details .ower_tag{
+
+.files_Data_wrapper .files_Details .ower_tag {
   padding: 6px 12px;
   border-radius: 8px;
-    background: #CECECE;
-    font-size: 10px;
-    font-weight: 600;
-    color: var(--text-5C);
+  background: #CECECE;
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--text-5C);
 }
+
 /* deal page css ends */
 
 /* +++++++++++++++++ CRM SECTION CSS ENDS ++++++++++++++++++++++ */
@@ -11644,9 +11659,9 @@ select option:not(:first-child) {
   }
 
   .track_list_container>div {
-    width: max-content;
+    width: auto;
     max-width: 420px;
-    width: 100%;
+    /* width: 100%; */
   }
 
   #expBarChart {
