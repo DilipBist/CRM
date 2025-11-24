@@ -3706,7 +3706,7 @@ DASHBORD PAGE CSS STATS
 .monthly_purchase_heading .select_box svg {
   position: absolute;
   top: 10px;
-  right: 8px;
+  right: 16px;
 }
 
 .montly_purchase_tag h4 {
@@ -4735,20 +4735,8 @@ select option:not(:first-child) {
 /* +++++++++++ Delete popup css ends ++++++++++++++ */
 
 /* ========================= TRACK PROFILE COMPONENT CSS STARTS =================== */
-.tracking-data-wrapper {
-  /* display: flex;
-  gap: 24px;
-  height: 700px; */
-  /* overflow-y: auto;
 
-  scrollbar-width: none;
-  -ms-overflow-style: none; */
-}
-
-.tracking-data-wrapper::-webkit-scrollbar {
-  display: none;
-}
-
+.track_filter_container,
 .tracking-data-wrapper .left_div {
   display: flex;
   flex-direction: column;
@@ -4757,16 +4745,8 @@ select option:not(:first-child) {
 }
 
 .tracking-data-wrapper .right_div {
-  /* max-width: 1600px;
-  width: 99%;
-  height: 100%;
-  position: sticky;
-  top: 0;
-  right: 0; */
-  min-height: 600px;
   width: 100%;
-  max-height: 800px;
-  height: 100%;
+  height: 650px;
   border-radius: 12px;
   overflow: hidden;
   padding: clamp(8px, 1.5vw, 16px);
@@ -5104,16 +5084,11 @@ select option:not(:first-child) {
 }
 
 .track_filter_container .track_item {
-  visibility: hidden;
-  max-height: 0;
-  opacity: 0;
-  transition: all 0.5s ease-in-out;
+  display: none;
 }
 
 .track_filter_container .active {
-  visibility: visible;
-  opacity: 1;
-  max-height: auto;
+  display: block;
 }
 
 /* ========================= TRACK PROFILE COMPONENT CSS ENDS=================== */
@@ -9993,6 +9968,113 @@ select option:not(:first-child) {
   padding: 2px 8px;
 }
 
+.map_summary_tag {
+  padding: clamp(8px, 1vw, 16px) 8px;
+  border-radius: 16px;
+  background: var(--white);
+  position: absolute;
+  top: 140px;
+  left: 26px;
+  z-index: 5;
+  width: 250px;
+}
+
+.map_summary_tag .heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-dark2);
+  font-size: clamp(14px, 1.2vw, 18px);
+  font-weight: 600;
+  border-bottom: 1px solid var(--whiteEB);
+  padding: 8px 0;
+  padding-bottom: clamp(8px, 1vw, 14px);
+}
+
+.map_summary_tag .content_div .label {
+  display: flex;
+  width: 34px;
+  height: 34px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  aspect-ratio: 1/1;
+  border-radius: 6px;
+}
+
+.map_summary_tag .content_div h5 {
+  font-size: clamp(12px, 1vw, 14px);
+  font-weight: 500;
+  color: var(--text-dark2);
+  margin: 0;
+}
+
+.map_summary_tag .content_div .value {
+  font-size: clamp(12px, 1vw, 14px);
+  font-weight: 700;
+  color: var(--neutral-primay);
+}
+
+.map_summary_tag .content_div .value.orange {
+  color: #D16F15;
+}
+
+.map_summary_tag .content_div .label.blue_bg {
+  background: var(--neutral-primay, #005399);
+}
+
+.map_summary_tag .content_div .label.orange_bg {
+  border-radius: 6px;
+  background: linear-gradient(0deg, #E58F39 0%, #E58F39 100%), #005399;
+}
+
+.play_progress_bar_wrapper {
+  background-color: var(--white);
+  height: 40px;
+  padding: 16px 8px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  width: 85%;
+}
+
+.play_progress_bar_wrapper .play_icon {
+  cursor: pointer;
+}
+
+.play_progress_bar_wrapper .progress_bar .progress_bg {
+  height: 10px;
+  background: #D9D9D9;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.play_progress_bar_wrapper .progress_bar .progress_bg .progress_fill {
+  background-color: var(--neutral-primay);
+  height: 100%;
+  border-radius: 5px;
+}
+
+.play_progress_bar_wrapper .progress_bar .progress_bg .bar_btn {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  background-color: #BAD4E6;
+  border: 1px solid var(--neutral-primay);
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 64%;
+  transform: translateY(-50%);
+}
+
 /* receptionist chart section  */
 .recep_das_chart_wrapper .exp_chart,
 .recep_das_chart_wrapper .att_chart {
@@ -11525,18 +11607,34 @@ select option:not(:first-child) {
     width: 350px;
   }
 
-  .tracking-data-wrapper {
+  /* .tracking-data-wrapper {
     flex-direction: column;
     gap: 24px;
     height: auto;
-  }
+  } */
 
   .track_profile_container {
     width: 100%;
   }
 
-  .tracking-data-wrapper .right_div iframe {
-    height: 320px;
+  .tracking-data-wrapper .right_div {
+    height: 420px;
+  }
+
+  .map_summary_tag {
+    top: 80px;
+    left: 16px;
+    width: auto;
+  }
+
+  .map_summary_tag .content_div .label {
+    height: 20px;
+    width: 20px;
+  }
+
+  .map_summary_tag .content_div .label svg {
+    height: 10px;
+    width: 10px;
   }
 
   .labour_monlthly_attendance_container .month_DaysContainer .month_Date .plus_icon {

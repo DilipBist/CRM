@@ -90,7 +90,7 @@ include 'inc/header.php'
         <!-- tarcking data list showing ends  -->
 
 
-        <div class="tracking-data-wrapper pl_pr mt-5 mb-5">
+        <div class="tracking-data-wrapper d-flex gap-4 pl_pr mt-5 mb-5">
             <div class="left_div">
                 <div class="track_profile_container">
                     <div class="fist_div d-flex align-items-center gap-2 flex-wrap justify-content-between">
