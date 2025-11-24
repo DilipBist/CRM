@@ -85,7 +85,7 @@ include 'inc/header.php'
         <div class="tracking-data-wrapper pl_pr mt-3 mb-5">
             <div class="track_filter_container">
                 <!-- live data div  -->
-                <div class="track_item " data-category="live">
+                <div class="track_item active" data-category="live">
                     <div class="row g-4">
                         <div class="col-lg-3">
                             <div class="live_Data_container">
@@ -228,7 +228,7 @@ include 'inc/header.php'
                 <!-- live data div  -->
 
                 <!-- playback data  -->
-                <div class=" track_item active" data-category="playback">
+                <div class=" track_item " data-category="playback">
                     <div class="row g-4">
                         <div class="col-lg-3">
                             <div class="playback_data_container">
@@ -326,7 +326,7 @@ include 'inc/header.php'
                                     <div class="progress_bar w-100">
                                         <div class="progress_bg position-relative">
                                             <div class="bar_btn">
-                                                
+
                                             </div>
                                             <div class="progress_fill" style="width: 65%;"></div>
                                         </div>

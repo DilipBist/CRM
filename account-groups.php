@@ -66,7 +66,8 @@ include 'inc/header.php'
                     </svg>
                 </div> -->
 
-                <button class="add_acc_group add_acc_groupBtn">
+                <button class="add_acc_group add_acc_groupBtn"
+                    data-heading="Add Account Group">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                         <path d="M9.99935 18.3346C14.5827 18.3346 18.3327 14.5846 18.3327 10.0013C18.3327 5.41797 14.5827 1.66797 9.99935 1.66797C5.41602 1.66797 1.66602 5.41797 1.66602 10.0013C1.66602 14.5846 5.41602 18.3346 9.99935 18.3346Z" stroke="#F5F5F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                         <path d="M6.66602 10H13.3327" stroke="#F5F5F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -110,14 +111,15 @@ include 'inc/header.php'
                                     </td>
                                     <td>
                                         <div class="table_actions">
-                                            <a href="#" title="View Details" class="add_acc_groupBtn">
+                                            <a href="#" title="View Details" class="add_acc_groupBtn" data-heading="View Account Group">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                                                     <path d="M11.6854 8.99945C11.6854 10.4845 10.4854 11.6845 9.00043 11.6845C7.51543 11.6845 6.31543 10.4845 6.31543 8.99945C6.31543 7.51445 7.51543 6.31445 9.00043 6.31445C10.4854 6.31445 11.6854 7.51445 11.6854 8.99945Z" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                                     <path d="M8.99988 15.2016C11.6474 15.2016 14.1149 13.6416 15.8324 10.9416C16.5074 9.88406 16.5074 8.10656 15.8324 7.04906C14.1149 4.34906 11.6474 2.78906 8.99988 2.78906C6.35238 2.78906 3.88488 4.34906 2.16738 7.04906C1.49238 8.10656 1.49238 9.88406 2.16738 10.9416C3.88488 13.6416 6.35238 15.2016 8.99988 15.2016Z" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                                 </svg>
                                             </a>
 
-                                            <a href="#" aria-label="Edit Labout List" title="Edit Labour List" class="add_acc_groupBtn">
+                                            <a href="#" aria-label="Edit Labout List" title="Edit Labour List" class="add_acc_groupBtn"
+                                                data-heading="Edit Account Group">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                                                     <path d="M9.94452 2.70041L3.78702 9.21791C3.55452 9.46541 3.32952 9.95291 3.28452 10.2904L3.00702 12.7204C2.90952 13.5979 3.53952 14.1979 4.40952 14.0479L6.82452 13.6354C7.16202 13.5754 7.63452 13.3279 7.86702 13.0729L14.0245 6.55541C15.0895 5.43041 15.5695 4.14791 13.912 2.58041C12.262 1.02791 11.0095 1.57541 9.94452 2.70041Z" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                                                     <path d="M8.91797 3.78711C9.24047 5.85711 10.9205 7.43961 13.0055 7.64961" stroke="#141414" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
@@ -161,7 +163,7 @@ include 'inc/header.php'
     <div class="outer_layout">
         <div class="attendance_popup_content">
             <div class="monthly_heading">
-                Add Account Group
+                <span>Add Account Group</span>
 
                 <button type="button" id="CloseAttendancePopup">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -322,7 +324,7 @@ include 'inc/header.php'
 </div>
 <!-- Ledger Mapping popup ends  -->
 
-<!-- Add Account Group pop up  -->
+<!-- Add Account Group (inner) pop up  -->
 <div class="add_account_group_popup">
     <div class="outer_layout">
         <div class="add_account_group_popup_content">
