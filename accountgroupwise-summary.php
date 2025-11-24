@@ -1,10 +1,10 @@
-<!-- NOTE: select account groupwise summary then open this page design  -->
+<!-- NOTE: select account groupwise summary then open this page design (open trail page)  -->
 <?php
 $pageTitle = 'Account Groupwise Summary';
 include 'inc/header.php'
 ?>
 
-
+<h1 class="text-center">Tail balance groupwise page</h1>
 <section class="admin_container d-flex">
 
 

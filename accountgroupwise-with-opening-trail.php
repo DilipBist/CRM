@@ -1,8 +1,9 @@
-<!-- NOTE: select account groupwise open trail  then open this page design(this is the first page )  -->
+<!-- NOTE: select account groupwise open trail  then open this page design(this is the first page  opentrail page)  -->
 <?php
 $pageTitle = 'Trail Balance(Account Group Wise)';
 include 'inc/header.php'
 ?>
+<h1 class="text-center">Tail balance account groupwise with open trail page</h1>
 
 <section class="admin_container d-flex">
 
